@@ -1,8 +1,8 @@
 # lzx-mieeg-ai4s 讨论资料入口
 
 仓库：https://github.com/oldlady21/lzx-mieeg-ai4s-context
-导出时间（UTC）：2026-11-02T15:58:47.386494+00:00
-快照身份：`1ae372b8823c9010163119d24e4b69e2499b7a7af4fdfa145b535406e25d4e37`
+导出时间（UTC）：2026-11-02T16:04:01.580137+00:00
+快照身份：`879c54168abc6968d7dda88d4722b35795eff4a9783337d2faf58ae11561c1c7`
 
 这是本地已保存文件的公开讨论副本。来源与公开文件 SHA-256、脱敏计数、未公开引用见 [SYNC_MANIFEST.json](SYNC_MANIFEST.json)。
 机器字段已机械脱敏；保留原研究身份、冻结边界、预算、证据状态和历史。它不替代本地权威记录，不授予执行/恢复/改协议权限。
@@ -27,7 +27,11 @@
       "round_id": "ds07-r1-science1-readerfix1",
       "dispatch_status": "REMOTE_ACCEPTED"
     },
-    "active_operation": null
+    "active_operation": null,
+    "source_public_parts": [
+      "https://github.com/oldlady21/lzx-mieeg-ai4s-context/blob/main/ai4s/programs/dsainet/research/STATE.parts/part-001.md",
+      "https://github.com/oldlady21/lzx-mieeg-ai4s-context/blob/main/ai4s/programs/dsainet/research/STATE.parts/part-002.md"
+    ]
   },
   "mvcnet": {
     "source_path": "ai4s/programs/mvcnet/research/STATE.yaml",
@@ -55,7 +59,12 @@
       "round_id": "dbconformer-sgp-r1-budget1",
       "dispatch_status": "REMOTE_ACCEPTED"
     },
-    "active_operation": null
+    "active_operation": null,
+    "source_public_parts": [
+      "https://github.com/oldlady21/lzx-mieeg-ai4s-context/blob/main/ai4s/programs/dbconformer/research/STATE.parts/part-001.md",
+      "https://github.com/oldlady21/lzx-mieeg-ai4s-context/blob/main/ai4s/programs/dbconformer/research/STATE.parts/part-002.md",
+      "https://github.com/oldlady21/lzx-mieeg-ai4s-context/blob/main/ai4s/programs/dbconformer/research/STATE.parts/part-003.md"
+    ]
   },
   "sstdpn": {
     "source_path": "ai4s/programs/sstdpn/research/STATE.yaml",
@@ -98,13 +107,13 @@
 
 ## 跨 Program 阅读入口
 
-先比较各 Program 的研究认识和上方运行摘要；再按讨论对象读取 State、证据索引、L3及历史边界。无需每轮全文加载所有历史。跨 Program 可共享证据与设计约束，暂停、冻结和实验授权仍各自独立。State较大时可用raw链接读取正文，不把网页预览失败等同于未公开。
+先比较各 Program 的研究认识和上方运行摘要；再按讨论对象读取 State、证据索引、L3及历史边界。无需每轮全文加载所有历史。跨 Program 可共享证据与设计约束，暂停、冻结和实验授权仍各自独立。State较大时先读分段链接；这些是完整脱敏正文的连续片段，不能只读一段就宣称核验了全部State。不把连接的体积限制误判为未公开。
 
 | Program | 研究认识 | 配置 | State | 证据索引 |
 |---|---|---|---|---|
-| dsainet | [CURRENT_UNDERSTANDING.md](ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md) | [PROGRAM](ai4s/programs/dsainet/PROGRAM.yaml) | [STATE](ai4s/programs/dsainet/research/STATE.yaml) · [raw](https://raw.githubusercontent.com/oldlady21/lzx-mieeg-ai4s-context/main/ai4s/programs/dsainet/research/STATE.yaml) | [EVIDENCE_INDEX](ai4s/programs/dsainet/research/EVIDENCE_INDEX.yaml) |
+| dsainet | [CURRENT_UNDERSTANDING.md](ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md) | [PROGRAM](ai4s/programs/dsainet/PROGRAM.yaml) | [STATE](ai4s/programs/dsainet/research/STATE.yaml) · [raw](https://raw.githubusercontent.com/oldlady21/lzx-mieeg-ai4s-context/main/ai4s/programs/dsainet/research/STATE.yaml) · [分段1](ai4s/programs/dsainet/research/STATE.parts/part-001.md) · [分段2](ai4s/programs/dsainet/research/STATE.parts/part-002.md) | [EVIDENCE_INDEX](ai4s/programs/dsainet/research/EVIDENCE_INDEX.yaml) |
 | mvcnet | [CURRENT_UNDERSTANDING.md](ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md) | [PROGRAM](ai4s/programs/mvcnet/PROGRAM.yaml) | [STATE](ai4s/programs/mvcnet/research/STATE.yaml) · [raw](https://raw.githubusercontent.com/oldlady21/lzx-mieeg-ai4s-context/main/ai4s/programs/mvcnet/research/STATE.yaml) | [EVIDENCE_INDEX](ai4s/programs/mvcnet/research/EVIDENCE_INDEX.yaml) |
-| dbconformer | [CURRENT_UNDERSTANDING.md](ai4s/programs/dbconformer/research/CURRENT_UNDERSTANDING.md) | [PROGRAM](ai4s/programs/dbconformer/PROGRAM.yaml) | [STATE](ai4s/programs/dbconformer/research/STATE.yaml) · [raw](https://raw.githubusercontent.com/oldlady21/lzx-mieeg-ai4s-context/main/ai4s/programs/dbconformer/research/STATE.yaml) | [EVIDENCE_INDEX](ai4s/programs/dbconformer/research/EVIDENCE_INDEX.yaml) |
+| dbconformer | [CURRENT_UNDERSTANDING.md](ai4s/programs/dbconformer/research/CURRENT_UNDERSTANDING.md) | [PROGRAM](ai4s/programs/dbconformer/PROGRAM.yaml) | [STATE](ai4s/programs/dbconformer/research/STATE.yaml) · [raw](https://raw.githubusercontent.com/oldlady21/lzx-mieeg-ai4s-context/main/ai4s/programs/dbconformer/research/STATE.yaml) · [分段1](ai4s/programs/dbconformer/research/STATE.parts/part-001.md) · [分段2](ai4s/programs/dbconformer/research/STATE.parts/part-002.md) · [分段3](ai4s/programs/dbconformer/research/STATE.parts/part-003.md) | [EVIDENCE_INDEX](ai4s/programs/dbconformer/research/EVIDENCE_INDEX.yaml) |
 | sstdpn | [NEXT_RESEARCH.md](ai4s/programs/sstdpn/research/NEXT_RESEARCH.md) | [PROGRAM](ai4s/programs/sstdpn/PROGRAM.yaml) | [STATE](ai4s/programs/sstdpn/research/STATE.yaml) · [raw](https://raw.githubusercontent.com/oldlady21/lzx-mieeg-ai4s-context/main/ai4s/programs/sstdpn/research/STATE.yaml) | [EVIDENCE_INDEX](ai4s/programs/sstdpn/research/EVIDENCE_INDEX.yaml) |
 | ota | [CURRENT_UNDERSTANDING.md](ai4s/programs/ota/research/CURRENT_UNDERSTANDING.md) | [PROGRAM](ai4s/programs/ota/PROGRAM.yaml) | [STATE](ai4s/programs/ota/research/STATE.yaml) · [raw](https://raw.githubusercontent.com/oldlady21/lzx-mieeg-ai4s-context/main/ai4s/programs/ota/research/STATE.yaml) | [EVIDENCE_INDEX](ai4s/programs/ota/research/EVIDENCE_INDEX.yaml) |
 
@@ -127,12 +136,17 @@
 - [ai4s/programs/dbconformer/research/CURRENT_UNDERSTANDING.md](<ai4s/programs/dbconformer/research/CURRENT_UNDERSTANDING.md>)
 - [ai4s/programs/dbconformer/research/EVIDENCE_INDEX.yaml](<ai4s/programs/dbconformer/research/EVIDENCE_INDEX.yaml>)
 - [ai4s/programs/dbconformer/research/HISTORY_BOUNDARIES.md](<ai4s/programs/dbconformer/research/HISTORY_BOUNDARIES.md>)
+- [ai4s/programs/dbconformer/research/STATE.parts/part-001.md](<ai4s/programs/dbconformer/research/STATE.parts/part-001.md>)
+- [ai4s/programs/dbconformer/research/STATE.parts/part-002.md](<ai4s/programs/dbconformer/research/STATE.parts/part-002.md>)
+- [ai4s/programs/dbconformer/research/STATE.parts/part-003.md](<ai4s/programs/dbconformer/research/STATE.parts/part-003.md>)
 - [ai4s/programs/dbconformer/research/STATE.yaml](<ai4s/programs/dbconformer/research/STATE.yaml>)
 - [ai4s/programs/dsainet/PROGRAM.yaml](<ai4s/programs/dsainet/PROGRAM.yaml>)
 - [ai4s/programs/dsainet/PROJECT_PROMPT_v3.3.md](<ai4s/programs/dsainet/PROJECT_PROMPT_v3.3.md>)
 - [ai4s/programs/dsainet/research/CLAIM_LEDGER.yaml](<ai4s/programs/dsainet/research/CLAIM_LEDGER.yaml>)
 - [ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md](<ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md>)
 - [ai4s/programs/dsainet/research/EVIDENCE_INDEX.yaml](<ai4s/programs/dsainet/research/EVIDENCE_INDEX.yaml>)
+- [ai4s/programs/dsainet/research/STATE.parts/part-001.md](<ai4s/programs/dsainet/research/STATE.parts/part-001.md>)
+- [ai4s/programs/dsainet/research/STATE.parts/part-002.md](<ai4s/programs/dsainet/research/STATE.parts/part-002.md>)
 - [ai4s/programs/dsainet/research/STATE.yaml](<ai4s/programs/dsainet/research/STATE.yaml>)
 - [ai4s/programs/mvcnet/PROGRAM.yaml](<ai4s/programs/mvcnet/PROGRAM.yaml>)
 - [ai4s/programs/mvcnet/PROJECT_PROMPT_v3.3.md](<ai4s/programs/mvcnet/PROJECT_PROMPT_v3.3.md>)
