@@ -5,7 +5,7 @@
     "不自动递归补齐引用；未公开引用见每库SYNC_MANIFEST.json。",
     "不上传凭据、SSH配置、数据集、checkpoint、原始预测、机器日志或完整实验目录。"
   ],
-  "exported_at": "2026-11-02T15:14:55.910709+00:00",
+  "exported_at": "2026-11-02T15:42:35.668272+00:00",
   "files": [
     {
       "bytes": 10735,
@@ -197,7 +197,9 @@
         "round_id": "ds07-r1-science1-readerfix1"
       },
       "paused": false,
+      "source_in_this_repository": false,
       "source_path": "ai4s/programs/dsainet/research/STATE.yaml",
+      "source_public_url": "https://github.com/oldlady21/lzx-dsainet-ai4s-context/blob/main/ai4s/programs/dsainet/research/STATE.yaml",
       "source_sha256": "d422732db80c8fdb81391b69bbdaccd89c9e0952c0f5ebac33d7c8ceebdcf5ef",
       "source_updated_at": "2026-11-02T13:51:27.710314+00:00",
       "status": "WAITING_REMOTE"
@@ -209,7 +211,9 @@
         "round_id": "mvcnet-xsn-r1-screen-lab10-r1-budget480"
       },
       "paused": false,
+      "source_in_this_repository": false,
       "source_path": "ai4s/programs/mvcnet/research/STATE.yaml",
+      "source_public_url": "https://github.com/oldlady21/lzx-mvcnet-ai4s-context/blob/main/ai4s/programs/mvcnet/research/STATE.yaml",
       "source_sha256": "60803dac039854e02c6178a70eed45517992df818ea7a76b2306733d140ab8be",
       "source_updated_at": "2026-11-01T14:54:25.530999+00:00",
       "status": "WAITING_REMOTE"
@@ -217,7 +221,7 @@
   },
   "policy_version": "public-documents-v1",
   "repository": "oldlady21/lzx-mieeg-ai4s-context",
-  "snapshot_id": "5fe6284ada90475b8267a856205e22e03a12e7babc59d9b93d13b325f2e1c01b",
+  "snapshot_id": "a3ab386554565d1f5f7bcbc2a068a156d7d8b8f2a2d786522f5c21654ea69cfc",
   "unpublished_references": [
     {
       "from": "DECISIONS.md",
