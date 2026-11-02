@@ -1,0 +1,107 @@
+{
+  "admission_record": "ai4s/programs/ota/research/ADMISSION.md",
+  "direction_decisions": [
+    {
+      "control_standard": "ai4s/programs/dsainet/research/EXPERIMENT_CONTROL_STANDARD.md",
+      "historical_verdicts_unchanged": true,
+      "id": "ATTRIBUTION-STOP-20260921",
+      "record": "ai4s/programs/dsainet/research/ATTRIBUTION_BRANCH_CLOSURE_20260921.md",
+      "role": "user_direction_control_not_scientific_reclassification",
+      "status": "STOPPED_BY_USER"
+    }
+  ],
+  "imports": [],
+  "inheritance_boundary": {
+    "dsainet": "not_inherited",
+    "mvcnet": "not_inherited",
+    "scientific_evidence": "none_at_admission"
+  },
+  "program_id": "ota",
+  "round_evidence": [
+    {
+      "claim_status": "no_paper_claim",
+      "decision": "NO_SIGNAL",
+      "decision_record": "ai4s/programs/ota/research/ota-r01-v0.1-r2_decision.yaml",
+      "evidence_id": "AI4S-OTA-ota-r01-v0.1-r2",
+      "executor_id": "lab10",
+      "intake_status": "verified_ai4s_round",
+      "interpretation_boundary": "Exact OTA-v0.1 source-audit instance fails; not a target/general state-modeling claim. Original failed Transaction remains failed. No new seed, target evaluation, or rescue authorized.",
+      "prohibited_follow_up": "exact_candidate_rescue_or_recombination_under_the_frozen_contract",
+      "role": "exact_negative_boundary",
+      "round_contract": "ai4s/programs/ota/research/ota-r01-v0.1-r2.yaml",
+      "round_id": "ota-r01-v0.1-r2",
+      "run_id": "2026-09-17_ota_v0_1_r2-full-w1"
+    },
+    {
+      "claim_status": "no_paper_claim",
+      "decision": "DIAGNOSTIC_SUPPORT",
+      "decision_record": "ai4s/programs/ota/research/ota-rl-r01-v0.1-repair1_decision.yaml",
+      "evidence_id": "AI4S-OTA-ota-rl-r01-v0.1-repair1",
+      "executor_id": "lab10",
+      "intake_status": "verified_ai4s_round",
+      "interpretation_boundary": "Selection-used overlapping source audit; no causal/target claim; parent NO_SIGNAL remains; no successor authorized.",
+      "review_status": "incomplete",
+      "role": "retrospective_source_diagnostic",
+      "round_contract": "ai4s/programs/ota/research/ota-rl-r01-v0.1-repair1.yaml",
+      "round_id": "ota-rl-r01-v0.1-repair1",
+      "route": "MULTIPLE_DIAGNOSTIC_FLAGS",
+      "run_id": "2026-09-18_ota_rl_v0_1-repair1-full-w1"
+    },
+    {
+      "claim_status": "no_paper_claim",
+      "decision": "ANCHOR_NOT_QUALIFIED",
+      "decision_record": "ai4s/programs/ota/research/mcp-dual-r01-v0.1_decision.yaml",
+      "evidence_id": "AI4S-OTA-mcp-dual-r01-v0.1",
+      "intake_status": "verified_ai4s_round",
+      "interpretation_boundary": "source audit only; no cause attribution; no stage2 or target",
+      "review_status": "complete_with_warnings",
+      "role": "exact_content_anchor_negative_boundary",
+      "round_contract": "ai4s/programs/ota/research/mcp-dual-r01-v0.1.yaml",
+      "round_id": "mcp-dual-r01-v0.1",
+      "run_id": "2026-09-18_mcp_dual_v0_1_stage1-full-w1"
+    },
+    {
+      "claim_status": "no_paper_claim",
+      "decision": "STAGE_NOT_QUALIFIED",
+      "decision_record": "ai4s/programs/ota/research/dsa-ot-r01-v0.2-r1_decision.yaml",
+      "evidence_id": "AI4S-OTA-dsa-ot-r01-v0.2-r1",
+      "intake_status": "verified_ai4s_round",
+      "interpretation_boundary": "source audit only; B0 net gain retained; matched controls fail; no target, causal uniqueness, or dual-expert claim",
+      "review_status": "complete",
+      "role": "frozen_host_net_increment_without_joint_endpoint_specificity",
+      "round_contract": "ai4s/programs/ota/research/dsa-ot-r01-v0.2-r1.yaml",
+      "round_id": "dsa-ot-r01-v0.2-r1",
+      "run_id": "2026-09-18_dsa_ot_v0_2_r1-full-w1"
+    },
+    {
+      "claim_status": "no_paper_claim",
+      "decision": "ATTRIBUTION_UNRESOLVED",
+      "decision_record": "ai4s/programs/ota/research/dsa-fra-r01-v0.1_decision.yaml",
+      "evidence_id": "AI4S-OTA-dsa-fra-r01-v0.1",
+      "intake_status": "verified_ai4s_round",
+      "interpretation_boundary": "selection-used source audit; U0-B0 and U0-H0 pass, U0-L0 and D0-U0 fail; no equivalence, target, or unique mechanism claim",
+      "review_status": "not_triggered",
+      "role": "source_only_residual_adaptation_attribution",
+      "round_contract": "ai4s/programs/ota/research/dsa-fra-r01-v0.1.yaml",
+      "round_id": "dsa-fra-r01-v0.1",
+      "run_id": "2026-09-19_dsa_fra_v0_1-full-w1"
+    },
+    {
+      "claim_status": "no_paper_claim",
+      "decision": "NO_SIGNAL",
+      "decision_record": "ai4s/programs/ota/research/ota-sic-r1-repair1_decision.yaml",
+      "evidence_id": "AI4S-OTA-ota-sic-r1-repair1",
+      "executor_id": "lab10",
+      "follow_up_record": "ai4s/programs/ota/research/sic-r1/repair1/resourcefix1/analysis/REPORT.md",
+      "follow_up_status": "closed_exact_u_instance_design_constraint_recorded",
+      "intake_status": "verified_ai4s_round",
+      "interpretation_boundary": "See frozen decision record.",
+      "prohibited_follow_up": "exact_candidate_rescue_or_recombination_under_the_frozen_contract",
+      "role": "exact_negative_boundary",
+      "round_contract": "ai4s/programs/ota/research/sic-r1/repair1/resourcefix1/transaction_contract.yaml",
+      "round_id": "ota-sic-r1-repair1",
+      "run_id": "2026-10-30_ota_sic_r1-repair1-resourcefix1-full-w1"
+    }
+  ],
+  "schema_version": "mieeg-ai4s-evidence-index-v1"
+}

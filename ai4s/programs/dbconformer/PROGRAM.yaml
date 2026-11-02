@@ -1,0 +1,219 @@
+{
+  "admission_record": "ai4s/programs/dbconformer/research/ADMISSION.md",
+  "baseline_implementations": [
+    {
+      "compatibility_label": "native_reference",
+      "implementation_id": "dbconformer-author-native",
+      "protocol": "author_native_binary_EA",
+      "snapshot_status": "source_files_verified_at_admission_not_checkpoint_or_gpu_validation",
+      "sources": [
+        {
+          "path": "src/baselines/dbconformer.py",
+          "sha256": "aa67ea0d1ec5df0e1d8816b38a590904c28aa4f92a1d21766c12fca55d808032"
+        },
+        {
+          "path": "src/models/dbconformer/baseline.py",
+          "sha256": "01a6812bd2801c2b8b72554cb94f6a497751d03b78be45be19652bcc504ccd40"
+        },
+        {
+          "path": "refs/models/DBConformer-main/DBConformer-main/models/DBConformer.py",
+          "sha256": "2851923bbfe693d3cc450fa8c2306420184c0e258bb08e292cef4ecfeed5c199"
+        },
+        {
+          "path": "src/training/dbconformer_protocol.py",
+          "sha256": "c268465caef74ef6331bd26c1a0c2a49df6f0bccbe2d4ad12a0a8f132b1a6942"
+        },
+        {
+          "path": "scripts/verify_dbconformer_baseline.py",
+          "sha256": "58b3dfc96bfe681145a011ba8e449e0d05308c92ec307e80490b6c5e77ac7c2e"
+        },
+        {
+          "path": "scripts/run_dbconformer_bnci2014001.py",
+          "sha256": "4e8c8cbd6966a3ff6a097336f590ed60cd80c5751233688e7725b35f51ba4065"
+        },
+        {
+          "path": "scripts/run_dbconformer_bnci2014004.py",
+          "sha256": "ff0ffd1a7bc779f3d877834fea18f8858f197e429837fd622c3bc874de166be9"
+        }
+      ]
+    },
+    {
+      "compatibility_label": "exact-paired_if_contract_matched",
+      "implementation_id": "dbconformer-dsainet-uep",
+      "protocol": "mieeg-uep-v1.0 / tp-dsainet100-v1",
+      "snapshot_status": "source_files_verified_at_admission_not_checkpoint_or_gpu_validation",
+      "sources": [
+        {
+          "path": "src/models/dbconformer/dsainet_reference.py",
+          "sha256": "c7b04708287539ff4667631f8efcf7c72af1680b6bf2bd576b279c2f589b43b1"
+        },
+        {
+          "path": "refs/models/DSAINet-main/DSAINet-main/model/DBConformer.py",
+          "sha256": "141c9c64c55529093a406aa90552297e47a0417fd6bc72af1919f33e873f9248"
+        },
+        {
+          "path": "scripts/run_dsainet_bnci2014001.py",
+          "sha256": "23843319829974990b16ab6ef383670b3cac9d627b65ebdef91121c72dc7b062"
+        },
+        {
+          "path": "scripts/run_dbconformer_bnci2014001_dsainet_protocol.py",
+          "sha256": "ed4abbf3bb837b2686c4fbe01cc700b024eab9a23533385931975b6be09a39d0"
+        },
+        {
+          "path": "scripts/run_dbconformer_bnci2014004_dsainet_protocol.py",
+          "sha256": "16352b4b7b87cf136285e41379ef9560619d910ec626abce90509cc3c57ae55a"
+        },
+        {
+          "path": "experiments/configs/dbconformer/dbconformer_bnci2014001_loso_dsainet_protocol_official_preproc_local.yaml",
+          "sha256": "bb666ee29b40dca36bfa6fcc960c10453c36c00e67317141c6e15526b5212856"
+        },
+        {
+          "path": "experiments/configs/dbconformer/dbconformer_bnci2014004_dsainet_protocol_official_preproc_local.yaml",
+          "sha256": "ee5e60d4347f52e7b76192b36a10fdf8d6ff1f45006756fecd7fdef36e055135"
+        }
+      ]
+    }
+  ],
+  "baseline_selection": "UNSELECTED_BIND_IMPLEMENTATION_AND_PROTOCOL_PER_RESEARCH",
+  "controller": "ai4s/prompts/TRANSACTION_RUNTIME.md",
+  "default_executor_id": "lab10",
+  "defaults": {
+    "queue_time_policy": "exclude_resource_wait"
+  },
+  "executors": {
+    "ccmu_lab": {
+      "candidate_gpu_ids": [
+        0,
+        1
+      ],
+      "capacity_defaults": {
+        "admission_mode": "capacity",
+        "allow_external_compute": true,
+        "allow_same_owner": true,
+        "concurrency_policy": "memory_only",
+        "coordination": "short_admission_lock_and_per_task_gpu_reservations_v1",
+        "enabled": true,
+        "gpu_ids": [
+          0,
+          1
+        ],
+        "max_attempts_per_task": 2,
+        "max_jobs_per_gpu": null,
+        "max_temperature_c": 90,
+        "measurement_mode": "ordinary_accuracy",
+        "memory_estimate_policy": "increase_only",
+        "memory_headroom_policy": "lab_permissive_v1",
+        "memory_reserve_mib": 0,
+        "verified_profiles": {}
+      },
+      "conda_env": "portable-bda",
+      "execution_mode": "user_managed",
+      "host": "[REDACTED_MACHINE]",
+      "python": "[REDACTED_MACHINE]",
+      "remote_root": "[REDACTED_MACHINE]",
+      "scheduler": "scripts/remote/lab10_shared_executor.py",
+      "transaction_runtime": "scripts/ai4s/transaction.py"
+    },
+    "lab10": {
+      "candidate_gpu_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "capacity_defaults": {
+        "admission_mode": "capacity",
+        "allow_external_compute": true,
+        "allow_same_owner": true,
+        "concurrency_policy": "memory_only",
+        "coordination": "short_admission_lock_and_per_task_gpu_reservations_v1",
+        "enabled": true,
+        "max_attempts_per_task": 1,
+        "max_jobs_per_gpu": null,
+        "max_temperature_c": 90,
+        "measurement_mode": "ordinary_accuracy",
+        "memory_estimate_policy": "verified_profile",
+        "memory_headroom_policy": "lab_permissive_v1",
+        "memory_reserve_mib": 0,
+        "verified_profiles": {}
+      },
+      "conda_activation": "[REDACTED_MACHINE]",
+      "conda_env": "mieeg",
+      "execution_mode": "user_managed",
+      "gpu_capacity_acceptance": "NOT_RUN",
+      "host": "[REDACTED_MACHINE]",
+      "profile_source": "experiments/REMOTE_LAB10_AI4S.md",
+      "profile_status": "REGISTERED_CONFIG_NOT_PROGRAM_ACCEPTANCE",
+      "python": "[REDACTED_MACHINE]",
+      "remote_root": "[REDACTED_MACHINE]",
+      "runtime_anchor_status": "UNMEASURED",
+      "scheduler": "scripts/remote/lab10_shared_executor.py",
+      "transaction_runtime": "scripts/ai4s/transaction.py",
+      "transport_evidence": "ai4s/programs/dbconformer/research/cmn_r1/TRANSPORT_REROUTE.json",
+      "transport_status": "SAME_HOST_DIRECT_SSH_VERIFIED"
+    }
+  },
+  "external_repositories": "read_only",
+  "managed_write_paths": [
+    "ai4s/programs/dbconformer"
+  ],
+  "program_id": "dbconformer",
+  "prompt_governance": {
+    "expected_active_chain_id": "dbconformer-transaction-v3.3",
+    "index": "ai4s/PROMPT_INDEX.yaml",
+    "mismatch_policy": "BLOCK"
+  },
+  "repository": {
+    "root": "./",
+    "sentinel": "AGENTS.md"
+  },
+  "research_governance": {
+    "allowed_transitions": [
+      "REFINE_ONCE",
+      "DIAGNOSE_ONCE",
+      "CONFIRM_TO_CAP",
+      "MATURE_AND_FREEZE",
+      "RETIRE",
+      "DISCOVER_NEXT",
+      "SCREEN_NEW",
+      "EVALUATE_FROZEN"
+    ],
+    "authorization_transition_required_for_continuation": true,
+    "capability_not_execution_authorization": true,
+    "paired_seed_cap": 5,
+    "paired_seed_cap_basis": "shared_existing_program_default_not_a_training_budget; prior exposure/usage remains cumulative",
+    "required_contract_schema": "mieeg-ai4s-round-contract-v2",
+    "required_transition_fields": [
+      "decision",
+      "run_action",
+      "source_decision_record",
+      "source_evidence_ids",
+      "evidence_basis",
+      "remaining_uncertainty",
+      "expected_information",
+      "stop_rule",
+      "next_stage"
+    ],
+    "run_action_by_transition": {
+      "CONFIRM_TO_CAP": "RUN_ALLOWED",
+      "DIAGNOSE_ONCE": "RUN_ALLOWED",
+      "DISCOVER_NEXT": "DESIGN_ONLY",
+      "EVALUATE_FROZEN": "RUN_ALLOWED",
+      "MATURE_AND_FREEZE": "NO_RUN",
+      "REFINE_ONCE": "RUN_ALLOWED",
+      "RETIRE": "NO_RUN",
+      "SCREEN_NEW": "RUN_ALLOWED"
+    }
+  },
+  "schema_version": "mieeg-ai4s-program-v1",
+  "source_snapshot_taken_at": "2026-09-19T16:11:57.103973+08:00",
+  "status_authority": "ai4s/programs/dbconformer/research/STATE.yaml",
+  "technical_preflight_policy": "in_transaction_production_epoch_or_identity_matched_existing_verified",
+  "title": "DBConformer 时空表征与分支机制 AI4S Program"
+}

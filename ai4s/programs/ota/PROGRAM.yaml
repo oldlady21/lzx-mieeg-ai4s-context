@@ -1,0 +1,113 @@
+{
+  "baseline_implementation": {
+    "name": "OTA-v0.1",
+    "note": "Independent heterogeneous occupancy/lag-association model; native DSAINet B0 is a fresh comparator only.",
+    "reference": "ai4s/programs/ota/research/ota-v0.1/reference.py",
+    "source": "ai4s/programs/ota/research/ota-v0.1/model.py"
+  },
+  "controller": "ai4s/prompts/TRANSACTION_RUNTIME.md",
+  "default_executor_id": "lab10",
+  "defaults": {
+    "queue_time_policy": "exclude_resource_wait"
+  },
+  "diagnostic_adapters": {
+    "OTA-RL-v0.1": {
+      "no_change_to_parent_screen": true,
+      "path": "ai4s/programs/ota/research/ota-rl-v0.1/lifecycle.py",
+      "scope": "frozen source-only readouts; in-transaction zero-fit forward verification"
+    }
+  },
+  "executors": {
+    "lab10": {
+      "candidate_gpu_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "capacity_defaults": {
+        "admission_mode": "capacity",
+        "allow_external_compute": true,
+        "allow_same_owner": true,
+        "concurrency_policy": "memory_only",
+        "coordination": "short_admission_lock_and_per_task_gpu_reservations_v1",
+        "enabled": true,
+        "max_attempts_per_task": 1,
+        "max_jobs_per_gpu": null,
+        "max_temperature_c": 90,
+        "measurement_mode": "ordinary_accuracy",
+        "memory_estimate_policy": "verified_profile",
+        "memory_headroom_policy": "lab_permissive_v1",
+        "memory_reserve_mib": 0,
+        "verified_profiles": {}
+      },
+      "conda_activation": "[REDACTED_MACHINE]",
+      "conda_env": "mieeg",
+      "execution_mode": "user_managed",
+      "gpu_probe": {
+        "gpu_count": 10,
+        "gpu_model": "2080 Ti",
+        "status": "OBSERVED_NOT_ADMISSION",
+        "torch": "1.13.1+cu116"
+      },
+      "host": "[REDACTED_MACHINE]",
+      "python": "[REDACTED_MACHINE]",
+      "remote_root": "[REDACTED_MACHINE]",
+      "scheduler": "scripts/remote/lab10_shared_executor.py",
+      "ssh_options": [],
+      "transaction_runtime": "scripts/ai4s/transaction.py",
+      "transport_status": "DIRECT_SSH_VERIFIED_20260918"
+    }
+  },
+  "managed_write_paths": [
+    "ai4s/programs/ota"
+  ],
+  "program_id": "ota",
+  "prompt_governance": {
+    "expected_active_chain_id": "ota-transaction-v3.3",
+    "index": "ai4s/PROMPT_INDEX.yaml",
+    "mismatch_policy": "BLOCK"
+  },
+  "repository": {
+    "root": "./",
+    "sentinel": "AGENTS.md"
+  },
+  "research_governance": {
+    "allowed_transitions": [
+      "SCREEN_NEW",
+      "DIAGNOSE_ONCE"
+    ],
+    "authorization_transition_required_for_continuation": true,
+    "paired_seed_cap": 2,
+    "required_contract_schema": "mieeg-ai4s-round-contract-v2",
+    "required_transition_fields": [
+      "decision",
+      "run_action",
+      "evidence_basis",
+      "remaining_uncertainty",
+      "expected_information",
+      "stop_rule",
+      "next_stage"
+    ],
+    "run_action_by_transition": {
+      "DIAGNOSE_ONCE": "RUN_ALLOWED",
+      "SCREEN_NEW": "RUN_ALLOWED"
+    }
+  },
+  "runtime_anchor": {
+    "basis": "95 closed fit tasks / 21h allocated Transaction limit; no ETA claim. Technical epoch records provide the first actual timing.",
+    "not_a_measured_throughput": true,
+    "status": "unmeasured_budget_derived_admission_limit",
+    "tasks_per_hour": 4.523809523809524
+  },
+  "schema_version": "mieeg-ai4s-program-v1",
+  "status_authority": "ai4s/programs/ota/research/STATE.yaml",
+  "technical_preflight_policy": "in_transaction_production_epoch",
+  "title": "OTA 状态占据—滞后关联双分支 AI4S Program"
+}

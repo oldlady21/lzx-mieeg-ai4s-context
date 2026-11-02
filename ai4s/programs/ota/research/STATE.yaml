@@ -1,0 +1,2296 @@
+{
+  "active_operation": null,
+  "active_round": null,
+  "active_run": null,
+  "archived_campaigns": [
+    {
+      "administrative_reconciliation": true,
+      "campaign_id": "dsa-spar-v0.1-20260919",
+      "closed_at": "2026-10-29T14:34:57.142775+00:00",
+      "closing_decision": {
+        "claim_status": "no_paper_claim",
+        "decision": "INCOMPLETE",
+        "next_training_authorized": false,
+        "reason": "Historical role-observability gap remains; attribution branch stopped by user 2026-09-21. Administrative reconciliation only.",
+        "recorded_at": "2026-10-29T14:02:33.636314+00:00",
+        "review_status": "unavailable",
+        "round_id": "dsa-spar-r01-v0.1-repair1",
+        "route": "INCOMPLETE",
+        "run_action": "STOP"
+      },
+      "closing_decision_record": "ai4s/_work/ota_v33_activation_20261029/SPAR_RECONCILIATION.json",
+      "closing_round": "dsa-spar-r01-v0.1-repair1",
+      "closing_run": {
+        "artifact_manifest_sha256": "a607ee16ea261de7853e03e760dffd05c3fede46d6d48d58f23218cbd7d0b3cb",
+        "contract_sha256": "c0f900b1ee7fddfe6fa2caf3094707012d8216332da138d2bfaa37185bac5343",
+        "run_id": "2026-09-19_dsa_spar_v0_1-repair1-full-w1",
+        "transaction_id": "2026-09-19_dsa_spar_v0_1-repair1-tx",
+        "verification_record": "ai4s/_work/ota_v33_activation_20261029/SPAR_LOCAL_VERIFICATION.json",
+        "verified": true
+      },
+      "closing_run_identity": {
+        "bundle_id": "2026-09-19_dsa_spar_v0_1-repair1-bundle",
+        "bundle_path": "ai4s/programs/ota/research/spar-v0.1-repair1/bundle",
+        "contract": "ai4s/programs/ota/research/spar-r01-v0.1-repair1.yaml",
+        "contract_sha256": "c0f900b1ee7fddfe6fa2caf3094707012d8216332da138d2bfaa37185bac5343",
+        "diagnostic_adapter": "ai4s/programs/ota/research/spar-v0.1-repair1/lifecycle.py",
+        "executor_id": "lab10",
+        "intake_verified": true,
+        "last_transport": {
+          "action": "FETCH_VERIFY_INTAKE",
+          "run_id": "2026-09-19_dsa_spar_v0_1-repair1-full-w1",
+          "scientific_stop_boundary": "NEXT_SCIENTIFIC_DECISION",
+          "timing": {
+            "contract_sha256": "c0f900b1ee7fddfe6fa2caf3094707012d8216332da138d2bfaa37185bac5343",
+            "execution_seconds": 807.6921281814575,
+            "queue_seconds": 0.0,
+            "queue_time_policy": "exclude_resource_wait",
+            "run_id": "2026-09-19_dsa_spar_v0_1-repair1-full-w1",
+            "transaction_id": "2026-09-19_dsa_spar_v0_1-repair1-tx",
+            "waiting_for_resources": false,
+            "wall_seconds": 807.6921281814575
+          }
+        },
+        "parent_failed_run_id": "2026-09-19_dsa_spar_v0_1-full-w1",
+        "reconciliation_record": "ai4s/_work/ota_v33_activation_20261029/SPAR_RECONCILIATION.json",
+        "round_id": "dsa-spar-r01-v0.1-repair1",
+        "run_id": "2026-09-19_dsa_spar_v0_1-repair1-full-w1",
+        "run_prefix": "2026-09-19_dsa_spar_v0_1-repair1",
+        "scientific_status": "INCOMPLETE",
+        "status": "COMPLETE",
+        "transaction_operations": [
+          {
+            "operation": "upload",
+            "recorded_at": "2026-09-19T07:25:43.263062+00:00",
+            "result": {
+              "action": "UPLOADED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-09-19_dsa_spar_v0_1-repair1-full-w1"
+            }
+          },
+          {
+            "operation": "launch",
+            "recorded_at": "2026-09-19T07:26:05.879787+00:00",
+            "result": {
+              "action": "SUBMISSION_SENT_NOT_VERIFIED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-09-19_dsa_spar_v0_1-repair1-full-w1"
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-09-19T07:26:23.067187+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "smoke",
+              "run_id": "2026-09-19_dsa_spar_v0_1-repair1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "c0f900b1ee7fddfe6fa2caf3094707012d8216332da138d2bfaa37185bac5343",
+                "execution_seconds": 12.806652307510376,
+                "queue_seconds": 0.0,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-09-19_dsa_spar_v0_1-repair1-full-w1",
+                "transaction_id": "2026-09-19_dsa_spar_v0_1-repair1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 12.806652307510376
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-09-19T07:27:12.401140+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "screen",
+              "run_id": "2026-09-19_dsa_spar_v0_1-repair1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "c0f900b1ee7fddfe6fa2caf3094707012d8216332da138d2bfaa37185bac5343",
+                "execution_seconds": 62.12378907203674,
+                "queue_seconds": 0.0,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-09-19_dsa_spar_v0_1-repair1-full-w1",
+                "transaction_id": "2026-09-19_dsa_spar_v0_1-repair1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 62.12378907203674
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-09-19T10:49:00.855031+00:00",
+            "result": {
+              "action": "FETCH_VERIFY_INTAKE",
+              "run_id": "2026-09-19_dsa_spar_v0_1-repair1-full-w1",
+              "scientific_stop_boundary": "NEXT_SCIENTIFIC_DECISION",
+              "timing": {
+                "contract_sha256": "c0f900b1ee7fddfe6fa2caf3094707012d8216332da138d2bfaa37185bac5343",
+                "execution_seconds": 807.6921281814575,
+                "queue_seconds": 0.0,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-09-19_dsa_spar_v0_1-repair1-full-w1",
+                "transaction_id": "2026-09-19_dsa_spar_v0_1-repair1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 807.6921281814575
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-09-19T10:49:14.524149+00:00",
+            "result": {
+              "action": "FETCH_VERIFY_INTAKE",
+              "run_id": "2026-09-19_dsa_spar_v0_1-repair1-full-w1",
+              "scientific_stop_boundary": "NEXT_SCIENTIFIC_DECISION",
+              "timing": {
+                "contract_sha256": "c0f900b1ee7fddfe6fa2caf3094707012d8216332da138d2bfaa37185bac5343",
+                "execution_seconds": 807.6921281814575,
+                "queue_seconds": 0.0,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-09-19_dsa_spar_v0_1-repair1-full-w1",
+                "transaction_id": "2026-09-19_dsa_spar_v0_1-repair1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 807.6921281814575
+              }
+            }
+          }
+        ]
+      },
+      "closing_status": "PAUSED_FOR_HUMAN",
+      "closure_reason": "User explicitly authorized OTA-SIC-R1 U-only: four arms, two seeds, nine fixed source splits, 100 epochs, Lab10, 24h execution cap, zero automatic training retries, stop after this stage.",
+      "full_prior_campaign_snapshot": {
+        "campaign": {
+          "allowed_transitions": [
+            "SCREEN_NEW"
+          ],
+          "automatic_training_retries_used": 0,
+          "campaign_id": "dsa-spar-v0.1-20260919",
+          "closed_at": "2026-10-29T14:02:33.636314+00:00",
+          "closure_record": "ai4s/_work/ota_v33_activation_20261029/SPAR_RECONCILIATION.json",
+          "engineering_repairs_used": 1,
+          "execution_authorization": {
+            "allowed_operations": [
+              "upload",
+              "launch",
+              "probe",
+              "fetch",
+              "intake"
+            ],
+            "allowed_transitions": [
+              "SCREEN_NEW"
+            ],
+            "authorization_ref": "ai4s/programs/ota/research/spar-v0.1/EXECUTION_AUTHORIZATION.md",
+            "campaign_id": "dsa-spar-v0.1-20260919",
+            "executor_id": "lab10",
+            "recorded_at": "2026-09-19T07:03:41.389933+00:00",
+            "source_sha256": "d74764554e9b7e5aee873c919b2a9e330758e71548622f49060a8a64a18a58b6"
+          },
+          "purpose": "DSA-SPAR source-only scale-specific post-convergence refinement",
+          "queue_accounting": {},
+          "status": "STOPPED_BY_USER",
+          "stop_reason": "2026-09-21 user branch closure, now reconciled against verified historical intake; no execution authority restored"
+        },
+        "pending_execution_budget": {
+          "auto_budget_extension_authorized": true,
+          "automatic_training_retries": 0,
+          "duration_hours": 12,
+          "engineering_repairs": 1,
+          "extension_block_hours": 12,
+          "extension_scope": "same fixed first-stage matrix only; cumulative accounting",
+          "operations": [
+            "upload",
+            "launch",
+            "probe",
+            "fetch",
+            "intake"
+          ],
+          "stage2_authorized": false
+        },
+        "run_control": {
+          "continue_after_positive": false,
+          "max_rounds": 1,
+          "monitor": "blocking",
+          "night_budget_hours": 12,
+          "queue_time_policy": "exclude_resource_wait",
+          "round_index": 1,
+          "started_at": "2026-09-19T06:44:30.385765+00:00"
+        }
+      },
+      "full_prior_campaign_snapshot_sha256": "22ce34378764c8c699d2c569903d1efcce795f46bb7a92fe97833f4e42a6f764",
+      "reconciliation_ref": "ai4s/_work/ota_v33_activation_20261029/SPAR_RECONCILIATION.json"
+    }
+  ],
+  "campaign": {
+    "allowed_transitions": [
+      "SCREEN_NEW"
+    ],
+    "authorization_reason": "User explicitly authorized OTA-SIC-R1 U-only: four arms, two seeds, nine fixed source splits, 100 epochs, Lab10, 24h execution cap, zero automatic training retries, stop after this stage.",
+    "campaign_id": "ota-sic-r1-20261029",
+    "continuation_policy_version": "evidence_to_design_v1",
+    "decision_policy": "stop_at_positive",
+    "execution_authorization": {
+      "allowed_operations": [
+        "upload",
+        "launch",
+        "probe",
+        "fetch",
+        "intake"
+      ],
+      "allowed_transitions": [
+        "SCREEN_NEW"
+      ],
+      "authorization_ref": "ai4s/programs/ota/research/sic-r1/repair1/resourcefix1/AUTHORIZATION.md",
+      "campaign_id": "ota-sic-r1-20261029",
+      "executor_id": "lab10",
+      "recorded_at": "2026-10-30T05:39:17.192875+00:00",
+      "research_scope": {
+        "allow_new_module": false,
+        "allowed_module_ids": [
+          "sic-r1"
+        ],
+        "allowed_stages": [
+          "screen"
+        ],
+        "data_scope_id": "bnci2014001-exposed-source-audit-20260917",
+        "question_id": "ota-state-indexed-content-necessity"
+      },
+      "source_sha256": "dffe575e2352e0132444fce3522e8431b896c57f8b38d1b151b2a8e8b7f3398b"
+    },
+    "execution_authorization_history": [
+      {
+        "allowed_operations": [
+          "upload",
+          "launch",
+          "probe",
+          "fetch",
+          "intake"
+        ],
+        "allowed_transitions": [
+          "SCREEN_NEW"
+        ],
+        "authorization_ref": "ai4s/programs/ota/research/sic-r1/EXECUTION_AUTHORIZATION.md",
+        "campaign_id": "ota-sic-r1-20261029",
+        "executor_id": "lab10",
+        "recorded_at": "2026-10-29T14:35:04.997759+00:00",
+        "research_scope": {
+          "allow_new_module": true,
+          "allowed_module_ids": [
+            "sic-r1"
+          ],
+          "allowed_stages": [
+            "screen"
+          ],
+          "data_scope_id": "bnci2014001-exposed-source-audit-20260917",
+          "question_id": "ota-state-indexed-content-necessity"
+        },
+        "source_sha256": "d2337151ca923100240410d0d2928aa274ff50b53d1675dc957ae1f5be168399"
+      },
+      {
+        "allowed_operations": [
+          "upload",
+          "launch",
+          "probe",
+          "fetch",
+          "intake"
+        ],
+        "allowed_transitions": [
+          "SCREEN_NEW"
+        ],
+        "authorization_ref": "ai4s/programs/ota/research/sic-r1/repair1/AUTHORIZATION.md",
+        "campaign_id": "ota-sic-r1-20261029",
+        "executor_id": "lab10",
+        "recorded_at": "2026-10-30T04:23:13.622540+00:00",
+        "research_scope": {
+          "allow_new_module": false,
+          "allowed_module_ids": [
+            "sic-r1"
+          ],
+          "allowed_stages": [
+            "screen"
+          ],
+          "data_scope_id": "bnci2014001-exposed-source-audit-20260917",
+          "question_id": "ota-state-indexed-content-necessity"
+        },
+        "source_sha256": "736fdd0afca90c18a7b1256d86acefd04f5a08f9c69dbd30cd0dcedd44d63607"
+      },
+      {
+        "allowed_operations": [
+          "upload",
+          "launch",
+          "probe",
+          "fetch",
+          "intake"
+        ],
+        "allowed_transitions": [
+          "SCREEN_NEW"
+        ],
+        "authorization_ref": "ai4s/programs/ota/research/sic-r1/repair1/packfix1/AUTHORIZATION.md",
+        "campaign_id": "ota-sic-r1-20261029",
+        "executor_id": "lab10",
+        "recorded_at": "2026-10-30T04:39:09.610061+00:00",
+        "research_scope": {
+          "allow_new_module": false,
+          "allowed_module_ids": [
+            "sic-r1"
+          ],
+          "allowed_stages": [
+            "screen"
+          ],
+          "data_scope_id": "bnci2014001-exposed-source-audit-20260917",
+          "question_id": "ota-state-indexed-content-necessity"
+        },
+        "source_sha256": "2a5b60021ecf1a4c9264a8b1dcb252ea1e8a718f0729f04f9b9aed81c113210a"
+      }
+    ],
+    "governance_chain_id": "ota-transaction-v3.3",
+    "invalid_behavior": "fail_closed_without_advancing",
+    "positive_signal_behavior": "pause_for_human_review",
+    "purpose": "user-authorized bounded AI4S campaign",
+    "queue_accounting": {
+      "2026-10-29_ota_sic_r1-full-w1": {
+        "contract_sha256": "4dd9dbdc4f3b9624880c243a5464ee1d69d74729ff6b1ee5489cdd8ff7f26b30",
+        "queue_seconds": 1332.8358807563782,
+        "run_id": "2026-10-29_ota_sic_r1-full-w1",
+        "transaction_id": "2026-10-29_ota_sic_r1-tx"
+      },
+      "2026-10-30_ota_sic_r1-repair1-full-w1": {
+        "contract_sha256": "0ef79b4cab1b51628978ffc8ff171ec7efe9ad5fdc2ba7e5779732da7e467ce9",
+        "queue_seconds": 0.0,
+        "run_id": "2026-10-30_ota_sic_r1-repair1-full-w1",
+        "transaction_id": "2026-10-30_ota_sic_r1-repair1-tx"
+      },
+      "2026-10-30_ota_sic_r1-repair1-packfix1-full-w1": {
+        "contract_sha256": "6050faec7f717747303ff60bf7324c59677c84855167de10d398447140363ddb",
+        "queue_seconds": 2839.1706414222717,
+        "run_id": "2026-10-30_ota_sic_r1-repair1-packfix1-full-w1",
+        "transaction_id": "2026-10-30_ota_sic_r1-repair1-packfix1-tx"
+      },
+      "2026-10-30_ota_sic_r1-repair1-resourcefix1-full-w1": {
+        "contract_sha256": "fdffe436d27ce8745d60813f76c9652b71c0d7307afe53d1f1e2232d92bcf0a6",
+        "queue_seconds": 17279.09012246132,
+        "run_id": "2026-10-30_ota_sic_r1-repair1-resourcefix1-full-w1",
+        "transaction_id": "2026-10-30_ota_sic_r1-repair1-resourcefix1-tx"
+      }
+    },
+    "round_decisions": [
+      {
+        "decision": "NO_SIGNAL",
+        "decision_record": "ai4s/programs/ota/research/ota-sic-r1-repair1_decision.yaml",
+        "evidence_id": "AI4S-OTA-ota-sic-r1-repair1",
+        "recorded_at": "2026-10-30T17:05:54.495968+00:00",
+        "round_id": "ota-sic-r1-repair1"
+      }
+    ],
+    "started_at": "2026-10-29T14:34:57.143319+00:00"
+  },
+  "closed_campaigns": [
+    {
+      "allowed_transitions": [
+        "SCREEN_NEW"
+      ],
+      "authorization_reason": "用户确认接入 Program 并推进 OTA 实验；采用 24 小时、95 network fits、162 probes、一次仅接线或运输工程修复、零自动训练重试和 source-audit 决策后停止的预算。",
+      "automatic_training_retries_used": 0,
+      "budget_at_close": {
+        "budget_reset": false,
+        "elapsed_excluding_resource_wait_seconds": 19338.384684435227,
+        "remaining_seconds": 67061.61531556478
+      },
+      "campaign_id": "ota-v0.1-20260917",
+      "completed_at": "2026-09-18T00:44:47.551077+08:00",
+      "completed_fixed_probe_fits": 162,
+      "engineering_repairs_used": 1,
+      "execution_authorization": {
+        "allowed_operations": [
+          "upload",
+          "launch",
+          "probe",
+          "fetch",
+          "intake"
+        ],
+        "allowed_transitions": [
+          "SCREEN_NEW"
+        ],
+        "authorization_ref": "ai4s/programs/ota/research/EXECUTION_AUTHORIZATION.md",
+        "campaign_id": "ota-v0.1-20260917",
+        "executor_id": "lab10",
+        "recorded_at": "2026-09-17T19:29:14.002748+08:00",
+        "source_sha256": "c50aaa5b61b22e1916003991b6b9d2ba3fea4fc4d62fd080a765ce832258e8fc"
+      },
+      "manual_training_retry_authorizations": [
+        {
+          "automatic_retries": 0,
+          "campaign_budget_reset": false,
+          "campaign_id": "ota-v0.1-20260917",
+          "contract_sha256": "440a576670679993902d0a7bda69df457cf0ef542d3fc38ba4618526938ca201",
+          "manual_retries": 2,
+          "new_training_limit_seconds": 14400,
+          "recorded_at": "2026-09-17T23:34:56.542333+08:00",
+          "replacement_run_id": "2026-09-17_ota_v0_1_recovery1-full-w1",
+          "source_run_id": "2026-09-17_ota_v0_1_r2-full-w1",
+          "task_ids": [
+            "b0_s1_t3",
+            "p0_s0_t2"
+          ],
+          "user_request": "重跑两个失败实验"
+        }
+      ],
+      "purpose": "user-authorized bounded OTA AI4S campaign",
+      "queue_accounting": {
+        "2026-09-17_ota_v0_1_r2-full-w1": {
+          "contract_sha256": "6aa01373ab8885544b13949ed9bdd1d3a4fe2bb7457876dbee2118fb307dafc1",
+          "queue_seconds": 946.1663925647736,
+          "run_id": "2026-09-17_ota_v0_1_r2-full-w1",
+          "transaction_id": "2026-09-17_ota_v0_1_r2-tx"
+        }
+      },
+      "round_decisions": [
+        {
+          "decision": "NO_SIGNAL",
+          "decision_record": "ai4s/programs/ota/research/ota-r01-v0.1-r2_decision.yaml",
+          "evidence_id": "AI4S-OTA-ota-r01-v0.1-r2",
+          "recorded_at": "2026-09-18T00:44:47.551077+08:00",
+          "round_id": "ota-r01-v0.1-r2"
+        }
+      ],
+      "status": "COMPLETE",
+      "stop_reason": "source-audit decision reached; no successor authorized"
+    },
+    {
+      "allowed_transitions": [
+        "DIAGNOSE_ONCE"
+      ],
+      "authorization_reason": "用户要求按 OTA-RL 方案继续研究并回复采用上述预算",
+      "automatic_fitting_retries_used": 0,
+      "budget_at_close": {
+        "budget_reset": false,
+        "note": "No further execution after frozen run. Analysis completed on explicit later user request; manual trigger gap is not resource waiting.",
+        "remaining_seconds": 0,
+        "remote_execution_seconds": 2225.9622118473053,
+        "resource_wait_seconds": 0,
+        "wall_elapsed_seconds": 48264.780895
+      },
+      "campaign_id": "ota-rl-v0.1-20260918",
+      "completed_at": "2026-09-18T15:01:31.482988+08:00",
+      "engineering_repairs_used": 1,
+      "execution_authorization": {
+        "allowed_operations": [
+          "upload",
+          "launch",
+          "probe",
+          "fetch",
+          "intake"
+        ],
+        "allowed_transitions": [
+          "DIAGNOSE_ONCE"
+        ],
+        "authorization_ref": "ai4s/programs/ota/research/ota-rl-v0.1/EXECUTION_AUTHORIZATION.md",
+        "campaign_id": "ota-rl-v0.1-20260918",
+        "executor_id": "lab10",
+        "recorded_at": "2026-09-18T02:14:05.223824+08:00",
+        "source_sha256": "f67e81981f37cfcd645eaf7fe821a9c396bcf788f9d9cff7550d2fd6e151908a"
+      },
+      "network_fits": 0,
+      "new_probe_fits": 594,
+      "purpose": "OTA-RL independent frozen source diagnostic",
+      "queue_accounting": {},
+      "repair_record": "ai4s\\programs\\ota\\research\\ota-rl-v0.1\\repair1\\REPAIR_RECORD.json",
+      "reused_probe_candidates": 108,
+      "round_decisions": [
+        {
+          "claim_status": "no_paper_claim",
+          "decision": "DIAGNOSTIC_SUPPORT",
+          "next_question": "在固定状态表示的条件下，关系摘要是否应保留有判别价值的边际主效应，而不是预先要求与占据完全去重？",
+          "next_training_authorized": false,
+          "reason": "Primary Gpre below frozen magnitude gate; removed-main-effect and training-associated occupancy flags pass. Multiple noncausal diagnostic leads only.",
+          "recorded_at": "2026-09-18T15:01:31.482988+08:00",
+          "review_status": "incomplete",
+          "round_id": "ota-rl-r01-v0.1-repair1",
+          "route": "MULTIPLE_DIAGNOSTIC_FLAGS",
+          "run_action": "STOP"
+        }
+      ],
+      "selected_readouts": 234,
+      "status": "COMPLETE",
+      "stop_reason": "one diagnostic decision reached; no successor authorized"
+    },
+    {
+      "allowed_transitions": [
+        "SCREEN_NEW"
+      ],
+      "automatic_training_retries_used": 0,
+      "budget_at_close": {
+        "budget_reset": false,
+        "elapsed_seconds": 16249.029088,
+        "remaining_seconds": 26950.970912,
+        "resource_wait_seconds": 0
+      },
+      "campaign_id": "mcp-dual-stage1-20260918",
+      "completed_at": "2026-09-18T13:00:40.459523+00:00",
+      "completed_fits": 19,
+      "engineering_repairs_used": 0,
+      "execution_authorization": {
+        "allowed_operations": [
+          "upload",
+          "launch",
+          "probe",
+          "fetch",
+          "intake"
+        ],
+        "allowed_transitions": [
+          "SCREEN_NEW"
+        ],
+        "authorization_ref": "ai4s/programs/ota/research/mcp-dual-v0.1/EXECUTION_AUTHORIZATION.md",
+        "campaign_id": "mcp-dual-stage1-20260918",
+        "executor_id": "lab10",
+        "recorded_at": "2026-09-18T08:38:14.616176+00:00",
+        "source_sha256": "755ea7618cabaa6794f348a5e8b6f1a76f9377584c180d15a7309b808bbec86c"
+      },
+      "purpose": "MCP-Dual stage1 content-anchor qualification",
+      "queue_accounting": {},
+      "round_decisions": [
+        {
+          "claim_status": "no_paper_claim",
+          "decision": "ANCHOR_NOT_QUALIFIED",
+          "next_training_authorized": false,
+          "reason": "All frozen anchor qualification gates fail; exact stage1 closed, stage2 not started.",
+          "recorded_at": "2026-09-18T13:00:40.459523+00:00",
+          "review_status": "complete_with_warnings",
+          "round_id": "mcp-dual-r01-v0.1",
+          "run_action": "STOP"
+        }
+      ],
+      "status": "COMPLETE",
+      "stop_reason": "stage1 qualification decision reached; stage2 prohibited"
+    },
+    {
+      "allowed_transitions": [
+        "SCREEN_NEW"
+      ],
+      "automatic_training_retries_used": 0,
+      "budget_at_close": {
+        "budget_reset": false,
+        "elapsed_seconds": 11063.955913,
+        "remaining_seconds": 32136.044087000002,
+        "resource_wait_seconds": 0
+      },
+      "campaign_id": "dsa-ot-v0.2-r1-20260918",
+      "completed_at": "2026-09-18T15:58:56.485864+00:00",
+      "completed_fits": 76,
+      "engineering_repair_record": "ai4s/programs/ota/research/dsa-ot-v0.2-r1/ANALYSIS_COMPAT_REPAIR.md",
+      "engineering_repairs_used": 1,
+      "execution_authorization": {
+        "allowed_operations": [
+          "upload",
+          "launch",
+          "probe",
+          "fetch",
+          "intake"
+        ],
+        "allowed_transitions": [
+          "SCREEN_NEW"
+        ],
+        "authorization_ref": "ai4s/programs/ota/research/dsa-ot-v0.2-r1/EXECUTION_AUTHORIZATION.md",
+        "campaign_id": "dsa-ot-v0.2-r1-20260918",
+        "executor_id": "lab10",
+        "recorded_at": "2026-09-18T13:31:33.505747+00:00",
+        "source_sha256": "dabb93ccb20cb0cca742fba8de00a654572f6a8a88d0f8430195f1a708e6836b"
+      },
+      "purpose": "DSA-OT frozen-native endpoint increment",
+      "queue_accounting": {},
+      "round_decisions": [
+        {
+          "claim_status": "no_paper_claim",
+          "decision": "STAGE_NOT_QUALIFIED",
+          "harm_clear": true,
+          "mechanism_qualification_pass": false,
+          "net_increment_pass": true,
+          "next_training_authorized": false,
+          "reason": "P0-B0 net increment passes; C0/N0/S0 attribution gates all fail. Retain net effect and close this exact mechanism instance.",
+          "recorded_at": "2026-09-18T15:58:56.485864+00:00",
+          "review_status": "complete",
+          "round_id": "dsa-ot-r01-v0.2-r1",
+          "run_action": "STOP"
+        }
+      ],
+      "status": "COMPLETE",
+      "stop_reason": "one source-audit decision complete; no successor authorized"
+    },
+    {
+      "allowed_transitions": [
+        "SCREEN_NEW"
+      ],
+      "automatic_training_retries_used": 0,
+      "budget_at_close": {
+        "budget_reset": false,
+        "elapsed_seconds": 11778.331586,
+        "remaining_seconds": 31421.668414,
+        "remote_execution_seconds": 538.112447977066,
+        "resource_wait_seconds": 0
+      },
+      "campaign_id": "dsa-fra-v0.1-20260919",
+      "completed_at": "2026-09-19T05:34:53.886419+00:00",
+      "completed_fits": 57,
+      "engineering_repairs_used": 0,
+      "execution_authorization": {
+        "allowed_operations": [
+          "upload",
+          "launch",
+          "probe",
+          "fetch",
+          "intake"
+        ],
+        "allowed_transitions": [
+          "SCREEN_NEW"
+        ],
+        "authorization_ref": "ai4s/programs/ota/research/dsa-fra-v0.1/EXECUTION_AUTHORIZATION.md",
+        "campaign_id": "dsa-fra-v0.1-20260919",
+        "executor_id": "lab10",
+        "recorded_at": "2026-09-19T02:19:04.336677+00:00",
+        "source_sha256": "c530c551d35f482847f09b8e7ff8b767618e22ce8ec9d9f83a311b217d0f3cf7"
+      },
+      "purpose": "DSA-FRA source-only residual adaptation attribution",
+      "queue_accounting": {},
+      "round_decisions": [
+        {
+          "claim_status": "no_paper_claim",
+          "decision": "ATTRIBUTION_UNRESOLVED",
+          "gates": {
+            "D0-U0": false,
+            "U0-B0": true,
+            "U0-H0": true,
+            "U0-L0": false
+          },
+          "next_training_authorized": false,
+          "reason": "U0 exceeds B0 and classifier-only H0; U0-L0 and D0-U0 fail frozen superiority gates. No equivalence or unique residual mechanism established.",
+          "recorded_at": "2026-09-19T05:34:53.886419+00:00",
+          "review_status": "not_triggered",
+          "round_id": "dsa-fra-r01-v0.1",
+          "run_action": "STOP"
+        }
+      ],
+      "status": "COMPLETE",
+      "stop_reason": "one source-audit attribution decision complete; no successor authorized"
+    }
+  ],
+  "completed_rounds": [
+    {
+      "decision": {
+        "claim_status": "no_paper_claim",
+        "decision": "NO_SIGNAL",
+        "frozen_gate_decision": "NO_OCCUPANCY_INCREMENT",
+        "reason": "All frozen primary contrasts fail; P0 below S0 in both seeds and all nine paired fold means. Fixed probes are secondary and cannot override the locked primary gate.",
+        "recorded_at": "2026-09-18T00:44:47.551077+08:00",
+        "round_id": "ota-r01-v0.1-r2",
+        "run_action": "STOP"
+      },
+      "decision_record": "ai4s/programs/ota/research/ota-r01-v0.1-r2_decision.yaml",
+      "evidence_id": "AI4S-OTA-ota-r01-v0.1-r2",
+      "round_id": "ota-r01-v0.1-r2",
+      "run": {
+        "analysis_intake": {
+          "analysis": "ai4s/programs/ota/research/ota-v0.1/analysis/ANALYSIS.json",
+          "complete_scientific_tasks": 90,
+          "kind": "cross_run_merge",
+          "network_training_complete": true,
+          "original_successful_tasks": 88,
+          "probe_dispatch": "2026-09-18_ota_source_analysis1",
+          "probe_fits_authorized": 162,
+          "probe_pid": 2453747,
+          "proof": "ai4s/programs/ota/research/ota-v0.1/intake/merged/MERGED_INTAKE_PROOF.json",
+          "recovery_successful_tasks": 2,
+          "validation": "ai4s/programs/ota/research/ota-v0.1/recovery1/DATA_IDENTITY_CHECK.json"
+        },
+        "bundle_id": "2026-09-17_ota_v0_1_r2-bundle",
+        "dispatch_status": "REMOTE_ACCEPTED",
+        "estimated_training_hours": 21.0,
+        "execution_mode": "user_managed",
+        "executor_id": "lab10",
+        "operational_snapshot": "ai4s/programs/ota/research/ota-v0.1/EXECUTION_STATUS.json",
+        "planned_units": 95,
+        "recorded_at": "2026-09-17T19:30:31.386292+08:00",
+        "round_id": "ota-r01-v0.1-r2",
+        "run_prefix": "2026-09-17_ota_v0_1_r2",
+        "supplemental_recovery": {
+          "authorization": "./ai4s\\programs\\ota\\research\\ota-v0.1\\recovery1\\AUTHORIZATION.json",
+          "contract": "./ai4s\\programs\\ota\\research\\ota-v0.1\\recovery1\\CONTRACT.json",
+          "operations": [
+            {
+              "operation": "upload",
+              "recorded_at": "2026-09-17T23:35:57.57193+08:00",
+              "result": {
+                "action": "UPLOADED",
+                "monitor_powershell": "[REDACTED_MACHINE]",
+                "run_id": "2026-09-17_ota_v0_1_recovery1-full-w1"
+              }
+            },
+            {
+              "operation": "launch",
+              "recorded_at": "2026-09-17T23:36:16.236593+08:00",
+              "result": {
+                "action": "SUBMISSION_SENT_NOT_VERIFIED",
+                "monitor_powershell": "[REDACTED_MACHINE]",
+                "run_id": "2026-09-17_ota_v0_1_recovery1-full-w1"
+              }
+            },
+            {
+              "operation": "probe",
+              "recorded_at": "2026-09-17T23:36:26.083573+08:00",
+              "result": {
+                "action": "RECONCILE_SAME_NODE",
+                "node_id": "screen",
+                "run_id": "2026-09-17_ota_v0_1_recovery1-full-w1",
+                "status": "RUNNING",
+                "timing": {
+                  "contract_sha256": "440a576670679993902d0a7bda69df457cf0ef542d3fc38ba4618526938ca201",
+                  "execution_seconds": 10.28545331954956,
+                  "queue_seconds": 0.0,
+                  "queue_time_policy": "exclude_resource_wait",
+                  "run_id": "2026-09-17_ota_v0_1_recovery1-full-w1",
+                  "transaction_id": "2026-09-17_ota_v0_1_recovery1-tx",
+                  "waiting_for_resources": false,
+                  "wall_seconds": 10.28545331954956
+                }
+              }
+            },
+            {
+              "operation": "probe",
+              "recorded_at": "2026-09-18T00:09:35.177998+08:00",
+              "result": {
+                "action": "FETCH_VERIFY_INTAKE",
+                "run_id": "2026-09-17_ota_v0_1_recovery1-full-w1",
+                "scientific_stop_boundary": "NEXT_SCIENTIFIC_DECISION",
+                "timing": {
+                  "contract_sha256": "440a576670679993902d0a7bda69df457cf0ef542d3fc38ba4618526938ca201",
+                  "execution_seconds": 1248.2028288841248,
+                  "queue_seconds": 0.0,
+                  "queue_time_policy": "exclude_resource_wait",
+                  "run_id": "2026-09-17_ota_v0_1_recovery1-full-w1",
+                  "transaction_id": "2026-09-17_ota_v0_1_recovery1-tx",
+                  "waiting_for_resources": false,
+                  "wall_seconds": 1248.2028288841248
+                }
+              }
+            }
+          ],
+          "run_id": "2026-09-17_ota_v0_1_recovery1-full-w1",
+          "status": "FETCH_VERIFY_INTAKE"
+        },
+        "transaction_operations": [
+          {
+            "operation": "upload",
+            "recorded_at": "2026-09-17T19:33:33.736351+08:00",
+            "result": {
+              "action": "UPLOADED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-09-17_ota_v0_1_r2-full-w1"
+            }
+          },
+          {
+            "operation": "launch",
+            "recorded_at": "2026-09-17T19:33:44.283857+08:00",
+            "result": {
+              "action": "SUBMISSION_SENT_NOT_VERIFIED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-09-17_ota_v0_1_r2-full-w1"
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-09-17T20:54:41.649976+08:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "screen",
+              "run_id": "2026-09-17_ota_v0_1_r2-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "6aa01373ab8885544b13949ed9bdd1d3a4fe2bb7457876dbee2118fb307dafc1",
+                "execution_seconds": 3911.385367870331,
+                "queue_seconds": 946.1663925647736,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-09-17_ota_v0_1_r2-full-w1",
+                "transaction_id": "2026-09-17_ota_v0_1_r2-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 4857.551760435104
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-09-17T23:24:17.323924+08:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "screen",
+              "run_id": "2026-09-17_ota_v0_1_r2-full-w1",
+              "status": "FAILED",
+              "timing": {
+                "contract_sha256": "6aa01373ab8885544b13949ed9bdd1d3a4fe2bb7457876dbee2118fb307dafc1",
+                "execution_seconds": 10117.383656024933,
+                "queue_seconds": 946.1663925647736,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-09-17_ota_v0_1_r2-full-w1",
+                "transaction_id": "2026-09-17_ota_v0_1_r2-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 11063.550048589706
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "decision": {
+        "claim_status": "no_paper_claim",
+        "decision": "DIAGNOSTIC_SUPPORT",
+        "next_question": "在固定状态表示的条件下，关系摘要是否应保留有判别价值的边际主效应，而不是预先要求与占据完全去重？",
+        "next_training_authorized": false,
+        "reason": "Primary Gpre below frozen magnitude gate; removed-main-effect and training-associated occupancy flags pass. Multiple noncausal diagnostic leads only.",
+        "recorded_at": "2026-09-18T15:01:31.482988+08:00",
+        "review_status": "incomplete",
+        "round_id": "ota-rl-r01-v0.1-repair1",
+        "route": "MULTIPLE_DIAGNOSTIC_FLAGS",
+        "run_action": "STOP"
+      },
+      "evidence": {
+        "claim_status": "no_paper_claim",
+        "decision": "DIAGNOSTIC_SUPPORT",
+        "decision_record": "ai4s/programs/ota/research/ota-rl-r01-v0.1-repair1_decision.yaml",
+        "evidence_id": "AI4S-OTA-ota-rl-r01-v0.1-repair1",
+        "executor_id": "lab10",
+        "intake_status": "verified_ai4s_round",
+        "interpretation_boundary": "Selection-used overlapping source audit; no causal/target claim; parent NO_SIGNAL remains; no successor authorized.",
+        "review_status": "incomplete",
+        "role": "retrospective_source_diagnostic",
+        "round_contract": "ai4s/programs/ota/research/ota-rl-r01-v0.1-repair1.yaml",
+        "round_id": "ota-rl-r01-v0.1-repair1",
+        "route": "MULTIPLE_DIAGNOSTIC_FLAGS",
+        "run_id": "2026-09-18_ota_rl_v0_1-repair1-full-w1"
+      },
+      "recorded_at": "2026-09-18T15:01:31.482988+08:00",
+      "run": {
+        "bundle_id": "2026-09-18_ota_rl_v0_1-repair1-bundle",
+        "bundle_path": "ai4s\\programs\\ota\\research\\ota-rl-v0.1\\repair1\\bundle",
+        "contract": "ai4s\\programs\\ota\\research\\ota-rl-r01-v0.1-repair1.yaml",
+        "contract_sha256": "98a57e677280119641401707d78c2b1e712387c349485c7453d6e981b7fb00d0",
+        "diagnostic_adapter": "ai4s\\programs\\ota\\research\\ota-rl-v0.1\\lifecycle.py",
+        "executor_id": "lab10",
+        "intake_path": "ai4s\\programs\\ota\\research\\ota-rl-v0.1\\repair1\\intake",
+        "last_transport": {
+          "artifact_manifest_sha256": "6a8e55d9f12a81d590042bb03b839444ab4f8defab1cf906457174e0608e5a89",
+          "contract_sha256": "98a57e677280119641401707d78c2b1e712387c349485c7453d6e981b7fb00d0",
+          "run_id": "2026-09-18_ota_rl_v0_1-repair1-full-w1",
+          "source_closure_verified": true,
+          "source_receipt": "ai4s\\programs\\ota\\research\\ota-rl-v0.1\\repair1\\SOURCE_INTAKE_CHECK.json",
+          "transaction_id": "2026-09-18_ota_rl_v0_1-repair1-tx",
+          "verified": true
+        },
+        "round_id": "ota-rl-r01-v0.1-repair1",
+        "run_id": "2026-09-18_ota_rl_v0_1-repair1-full-w1",
+        "run_prefix": "2026-09-18_ota_rl_v0_1-repair1",
+        "source_acceptance": {
+          "contract_sha256": "98a57e677280119641401707d78c2b1e712387c349485c7453d6e981b7fb00d0",
+          "frozen_at": "2026-09-18T02:23:42.137594+08:00",
+          "guard_path": "ai4s\\programs\\ota\\research\\ota-rl-v0.1\\intake_source_guard.py",
+          "guard_sha256": "115f72fb826937b2b4c9833b48d2fed106b7d274b8539464e5c2478329748bc2",
+          "lifecycle_sha256": "71c18725cc5b24424c074fb1779adb2d4910eeffc77946ef24e3580e722f392d",
+          "receipt_path": "ai4s\\programs\\ota\\research\\ota-rl-v0.1\\repair1\\SOURCE_INTAKE_CHECK.json",
+          "scope": "stricter source-identity acceptance only; no protocol, feature, probe, threshold or fitting changes"
+        },
+        "status": "ANALYZED_AND_DECIDED",
+        "transaction_operations": [
+          {
+            "operation": "upload",
+            "recorded_at": "2026-09-18T02:20:36.388344+08:00",
+            "result": {
+              "action": "UPLOADED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-09-18_ota_rl_v0_1-repair1-full-w1"
+            }
+          },
+          {
+            "operation": "launch",
+            "recorded_at": "2026-09-18T02:23:57.209378+08:00",
+            "result": {
+              "action": "SUBMISSION_SENT_NOT_VERIFIED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-09-18_ota_rl_v0_1-repair1-full-w1"
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-09-18T02:24:13.390753+08:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "extract",
+              "run_id": "2026-09-18_ota_rl_v0_1-repair1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "98a57e677280119641401707d78c2b1e712387c349485c7453d6e981b7fb00d0",
+                "execution_seconds": 12.746081590652466,
+                "queue_seconds": 0.0,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-09-18_ota_rl_v0_1-repair1-full-w1",
+                "transaction_id": "2026-09-18_ota_rl_v0_1-repair1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 12.746081590652466
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-09-18T02:26:43.900124+08:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "extract",
+              "run_id": "2026-09-18_ota_rl_v0_1-repair1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "98a57e677280119641401707d78c2b1e712387c349485c7453d6e981b7fb00d0",
+                "execution_seconds": 163.25981330871582,
+                "queue_seconds": 0.0,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-09-18_ota_rl_v0_1-repair1-full-w1",
+                "transaction_id": "2026-09-18_ota_rl_v0_1-repair1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 163.25981330871582
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-09-18T02:28:55.796684+08:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "extract",
+              "run_id": "2026-09-18_ota_rl_v0_1-repair1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "98a57e677280119641401707d78c2b1e712387c349485c7453d6e981b7fb00d0",
+                "execution_seconds": 295.1576581001282,
+                "queue_seconds": 0.0,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-09-18_ota_rl_v0_1-repair1-full-w1",
+                "transaction_id": "2026-09-18_ota_rl_v0_1-repair1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 295.1576581001282
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-09-18T14:50:04.980671+08:00",
+            "result": {
+              "action": "FETCH_VERIFY_INTAKE",
+              "run_id": "2026-09-18_ota_rl_v0_1-repair1-full-w1",
+              "scientific_stop_boundary": "NEXT_SCIENTIFIC_DECISION",
+              "timing": {
+                "contract_sha256": "98a57e677280119641401707d78c2b1e712387c349485c7453d6e981b7fb00d0",
+                "execution_seconds": 2225.9622118473053,
+                "queue_seconds": 0.0,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-09-18_ota_rl_v0_1-repair1-full-w1",
+                "transaction_id": "2026-09-18_ota_rl_v0_1-repair1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 2225.9622118473053
+              }
+            }
+          },
+          {
+            "operation": "fetch",
+            "recorded_at": "2026-09-18T14:51:35.70673+08:00",
+            "result": {
+              "artifact_manifest_sha256": "6a8e55d9f12a81d590042bb03b839444ab4f8defab1cf906457174e0608e5a89",
+              "contract_sha256": "98a57e677280119641401707d78c2b1e712387c349485c7453d6e981b7fb00d0",
+              "run_id": "2026-09-18_ota_rl_v0_1-repair1-full-w1",
+              "source_closure_verified": true,
+              "source_receipt": "ai4s\\programs\\ota\\research\\ota-rl-v0.1\\repair1\\SOURCE_INTAKE_CHECK.json",
+              "transaction_id": "2026-09-18_ota_rl_v0_1-repair1-tx",
+              "verified": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "administrative_reconciliation": true,
+      "decision": {
+        "claim_status": "no_paper_claim",
+        "decision": "INCOMPLETE",
+        "next_training_authorized": false,
+        "reason": "Historical role-observability gap remains; attribution branch stopped by user 2026-09-21. Administrative reconciliation only.",
+        "recorded_at": "2026-10-29T14:02:33.636314+00:00",
+        "review_status": "unavailable",
+        "round_id": "dsa-spar-r01-v0.1-repair1",
+        "route": "INCOMPLETE",
+        "run_action": "STOP"
+      },
+      "decision_record": "ai4s/_work/ota_v33_activation_20261029/SPAR_RECONCILIATION.json",
+      "round_id": "dsa-spar-r01-v0.1-repair1",
+      "run": {
+        "bundle_id": "2026-09-19_dsa_spar_v0_1-repair1-bundle",
+        "bundle_path": "ai4s/programs/ota/research/spar-v0.1-repair1/bundle",
+        "contract": "ai4s/programs/ota/research/spar-r01-v0.1-repair1.yaml",
+        "contract_sha256": "c0f900b1ee7fddfe6fa2caf3094707012d8216332da138d2bfaa37185bac5343",
+        "diagnostic_adapter": "ai4s/programs/ota/research/spar-v0.1-repair1/lifecycle.py",
+        "executor_id": "lab10",
+        "intake_verified": true,
+        "last_transport": {
+          "action": "FETCH_VERIFY_INTAKE",
+          "run_id": "2026-09-19_dsa_spar_v0_1-repair1-full-w1",
+          "scientific_stop_boundary": "NEXT_SCIENTIFIC_DECISION",
+          "timing": {
+            "contract_sha256": "c0f900b1ee7fddfe6fa2caf3094707012d8216332da138d2bfaa37185bac5343",
+            "execution_seconds": 807.6921281814575,
+            "queue_seconds": 0.0,
+            "queue_time_policy": "exclude_resource_wait",
+            "run_id": "2026-09-19_dsa_spar_v0_1-repair1-full-w1",
+            "transaction_id": "2026-09-19_dsa_spar_v0_1-repair1-tx",
+            "waiting_for_resources": false,
+            "wall_seconds": 807.6921281814575
+          }
+        },
+        "parent_failed_run_id": "2026-09-19_dsa_spar_v0_1-full-w1",
+        "reconciliation_record": "ai4s/_work/ota_v33_activation_20261029/SPAR_RECONCILIATION.json",
+        "round_id": "dsa-spar-r01-v0.1-repair1",
+        "run_id": "2026-09-19_dsa_spar_v0_1-repair1-full-w1",
+        "run_prefix": "2026-09-19_dsa_spar_v0_1-repair1",
+        "scientific_status": "INCOMPLETE",
+        "status": "COMPLETE",
+        "transaction_operations": [
+          {
+            "operation": "upload",
+            "recorded_at": "2026-09-19T07:25:43.263062+00:00",
+            "result": {
+              "action": "UPLOADED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-09-19_dsa_spar_v0_1-repair1-full-w1"
+            }
+          },
+          {
+            "operation": "launch",
+            "recorded_at": "2026-09-19T07:26:05.879787+00:00",
+            "result": {
+              "action": "SUBMISSION_SENT_NOT_VERIFIED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-09-19_dsa_spar_v0_1-repair1-full-w1"
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-09-19T07:26:23.067187+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "smoke",
+              "run_id": "2026-09-19_dsa_spar_v0_1-repair1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "c0f900b1ee7fddfe6fa2caf3094707012d8216332da138d2bfaa37185bac5343",
+                "execution_seconds": 12.806652307510376,
+                "queue_seconds": 0.0,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-09-19_dsa_spar_v0_1-repair1-full-w1",
+                "transaction_id": "2026-09-19_dsa_spar_v0_1-repair1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 12.806652307510376
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-09-19T07:27:12.401140+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "screen",
+              "run_id": "2026-09-19_dsa_spar_v0_1-repair1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "c0f900b1ee7fddfe6fa2caf3094707012d8216332da138d2bfaa37185bac5343",
+                "execution_seconds": 62.12378907203674,
+                "queue_seconds": 0.0,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-09-19_dsa_spar_v0_1-repair1-full-w1",
+                "transaction_id": "2026-09-19_dsa_spar_v0_1-repair1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 62.12378907203674
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-09-19T10:49:00.855031+00:00",
+            "result": {
+              "action": "FETCH_VERIFY_INTAKE",
+              "run_id": "2026-09-19_dsa_spar_v0_1-repair1-full-w1",
+              "scientific_stop_boundary": "NEXT_SCIENTIFIC_DECISION",
+              "timing": {
+                "contract_sha256": "c0f900b1ee7fddfe6fa2caf3094707012d8216332da138d2bfaa37185bac5343",
+                "execution_seconds": 807.6921281814575,
+                "queue_seconds": 0.0,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-09-19_dsa_spar_v0_1-repair1-full-w1",
+                "transaction_id": "2026-09-19_dsa_spar_v0_1-repair1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 807.6921281814575
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-09-19T10:49:14.524149+00:00",
+            "result": {
+              "action": "FETCH_VERIFY_INTAKE",
+              "run_id": "2026-09-19_dsa_spar_v0_1-repair1-full-w1",
+              "scientific_stop_boundary": "NEXT_SCIENTIFIC_DECISION",
+              "timing": {
+                "contract_sha256": "c0f900b1ee7fddfe6fa2caf3094707012d8216332da138d2bfaa37185bac5343",
+                "execution_seconds": 807.6921281814575,
+                "queue_seconds": 0.0,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-09-19_dsa_spar_v0_1-repair1-full-w1",
+                "transaction_id": "2026-09-19_dsa_spar_v0_1-repair1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 807.6921281814575
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "decision": {
+        "claim_status": "no_paper_claim",
+        "decision": "NO_SIGNAL",
+        "gates": {
+          "U0-C0": {
+            "both_seed_acc": false,
+            "mean_acc": false,
+            "mean_nll": false,
+            "worst_subject": true
+          },
+          "U0-M0": {
+            "mean_acc": true,
+            "mean_nll": true
+          },
+          "U0-T0": {
+            "both_seed_acc": false,
+            "mean_acc": false,
+            "mean_nll": false,
+            "worst_subject": false
+          }
+        },
+        "next_training_authorized": false,
+        "reason": "one or more frozen descriptive investment gates were not met",
+        "round_id": "ota-sic-r1-repair1",
+        "route": "U_INDEX_NOT_SUPPORTED",
+        "run_action": "STOP"
+      },
+      "decision_record": "ai4s/programs/ota/research/ota-sic-r1-repair1_decision.yaml",
+      "evidence_id": "AI4S-OTA-ota-sic-r1-repair1",
+      "round_id": "ota-sic-r1-repair1",
+      "run": {
+        "bundle_id": "2026-10-30_ota_sic_r1-repair1-resourcefix1-bundle",
+        "concurrency_policy": "memory_only",
+        "contract": "ai4s/programs/ota/research/sic-r1/repair1/resourcefix1/transaction_contract.yaml",
+        "contract_sha256": "fdffe436d27ce8745d60813f76c9652b71c0d7307afe53d1f1e2232d92bcf0a6",
+        "dispatch_status": "REMOTE_ACCEPTED",
+        "estimated_training_hours": 1.326,
+        "execution_mode": "user_managed",
+        "executor_id": "lab10",
+        "memory_commitment_mib": 4096,
+        "memory_reserve_mib": 1024,
+        "new_fit_attempts_in_replaced_run": 0,
+        "parent_run_id": "2026-10-29_ota_sic_r1-full-w1",
+        "planned_units": 6,
+        "recorded_at": "2026-10-30T05:39:15.437885+00:00",
+        "repair_new_scientific_fits": 6,
+        "resource_requeue_of_run_id": "2026-10-30_ota_sic_r1-repair1-packfix1-full-w1",
+        "retry_of": "2026-10-30_ota_sic_r1-repair1-packfix1-full-w1",
+        "round_id": "ota-sic-r1-repair1",
+        "run_prefix": "2026-10-30_ota_sic_r1-repair1-resourcefix1",
+        "transaction_operations": [
+          {
+            "operation": "upload",
+            "recorded_at": "2026-10-30T05:39:37.122298+00:00",
+            "result": {
+              "action": "UPLOADED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-10-30_ota_sic_r1-repair1-resourcefix1-full-w1"
+            }
+          },
+          {
+            "operation": "launch",
+            "recorded_at": "2026-10-30T05:40:55.782819+00:00",
+            "result": {
+              "action": "SUBMISSION_SENT_NOT_VERIFIED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-10-30_ota_sic_r1-repair1-resourcefix1-full-w1"
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-10-30T05:41:30.862317+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "import",
+              "run_id": "2026-10-30_ota_sic_r1-repair1-resourcefix1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "fdffe436d27ce8745d60813f76c9652b71c0d7307afe53d1f1e2232d92bcf0a6",
+                "execution_seconds": 32.98597049713135,
+                "queue_seconds": 0.0,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-10-30_ota_sic_r1-repair1-resourcefix1-full-w1",
+                "transaction_id": "2026-10-30_ota_sic_r1-repair1-resourcefix1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 32.98597049713135
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-10-30T05:45:43.040894+00:00",
+            "result": {
+              "action": "WAIT_FOR_RESOURCES",
+              "node_id": "screen",
+              "run_id": "2026-10-30_ota_sic_r1-repair1-resourcefix1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "fdffe436d27ce8745d60813f76c9652b71c0d7307afe53d1f1e2232d92bcf0a6",
+                "execution_seconds": 59.49523186683655,
+                "queue_seconds": 225.64805722236633,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-10-30_ota_sic_r1-repair1-resourcefix1-full-w1",
+                "transaction_id": "2026-10-30_ota_sic_r1-repair1-resourcefix1-tx",
+                "waiting_for_resources": true,
+                "wall_seconds": 285.1432890892029
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-10-30T05:52:12.023710+00:00",
+            "result": {
+              "action": "WAIT_FOR_RESOURCES",
+              "node_id": "screen",
+              "run_id": "2026-10-30_ota_sic_r1-repair1-resourcefix1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "fdffe436d27ce8745d60813f76c9652b71c0d7307afe53d1f1e2232d92bcf0a6",
+                "execution_seconds": 60.27685546875,
+                "queue_seconds": 613.8714790344238,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-10-30_ota_sic_r1-repair1-resourcefix1-full-w1",
+                "transaction_id": "2026-10-30_ota_sic_r1-repair1-resourcefix1-tx",
+                "waiting_for_resources": true,
+                "wall_seconds": 674.1483345031738
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-10-30T05:56:40.285139+00:00",
+            "result": {
+              "action": "WAIT_FOR_RESOURCES",
+              "node_id": "screen",
+              "run_id": "2026-10-30_ota_sic_r1-repair1-resourcefix1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "fdffe436d27ce8745d60813f76c9652b71c0d7307afe53d1f1e2232d92bcf0a6",
+                "execution_seconds": 60.85822558403015,
+                "queue_seconds": 881.5518972873688,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-10-30_ota_sic_r1-repair1-resourcefix1-full-w1",
+                "transaction_id": "2026-10-30_ota_sic_r1-repair1-resourcefix1-tx",
+                "waiting_for_resources": true,
+                "wall_seconds": 942.4101228713989
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-10-30T08:02:49.651239+00:00",
+            "result": {
+              "action": "WAIT_FOR_RESOURCES",
+              "node_id": "screen",
+              "run_id": "2026-10-30_ota_sic_r1-repair1-resourcefix1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "fdffe436d27ce8745d60813f76c9652b71c0d7307afe53d1f1e2232d92bcf0a6",
+                "execution_seconds": 404.4661054611206,
+                "queue_seconds": 8107.480475664139,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-10-30_ota_sic_r1-repair1-resourcefix1-full-w1",
+                "transaction_id": "2026-10-30_ota_sic_r1-repair1-resourcefix1-tx",
+                "waiting_for_resources": true,
+                "wall_seconds": 8511.94658112526
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-10-30T16:38:54.030356+00:00",
+            "result": {
+              "action": "FETCH_VERIFY_INTAKE",
+              "run_id": "2026-10-30_ota_sic_r1-repair1-resourcefix1-full-w1",
+              "scientific_stop_boundary": "NEXT_SCIENTIFIC_DECISION",
+              "timing": {
+                "contract_sha256": "fdffe436d27ce8745d60813f76c9652b71c0d7307afe53d1f1e2232d92bcf0a6",
+                "execution_seconds": 1220.0031204223633,
+                "queue_seconds": 17279.09012246132,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-10-30_ota_sic_r1-repair1-resourcefix1-full-w1",
+                "transaction_id": "2026-10-30_ota_sic_r1-repair1-resourcefix1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 18499.093242883682
+              }
+            }
+          },
+          {
+            "operation": "fetch",
+            "recorded_at": "2026-10-30T17:04:22.339706+00:00",
+            "result": {
+              "analysis_receipt_sha256": "ed9712604447fc4db6029e1c61fd50288666c5efad9f0bd96b190eb04ef478e5",
+              "artifact_manifest_sha256": "f37ecbe846d61f285845a678e07928ac875bd41682095324f0be9bf2766b87fb",
+              "contract_sha256": "fdffe436d27ce8745d60813f76c9652b71c0d7307afe53d1f1e2232d92bcf0a6",
+              "full_payload_local": false,
+              "intake_scope": "analysis_v1",
+              "run_id": "2026-10-30_ota_sic_r1-repair1-resourcefix1-full-w1",
+              "transaction_id": "2026-10-30_ota_sic_r1-repair1-resourcefix1-tx",
+              "transfer_bytes": 8470765,
+              "verified": true
+            }
+          }
+        ],
+        "zero_fit_verified": true
+      }
+    }
+  ],
+  "current_research": "OTA-SIC-R1",
+  "diagnostic_contract": "ai4s\\programs\\ota\\research\\ota-rl-r01-v0.1-repair1.yaml",
+  "direction_control": {
+    "post_checkpoint_gain_attribution": {
+      "branches": [
+        "PCR",
+        "FRA",
+        "SPAR",
+        "DSA-OT"
+      ],
+      "date": "2026-09-21",
+      "record": "ai4s/programs/dsainet/research/ATTRIBUTION_BRANCH_CLOSURE_20260921.md",
+      "scope": "no new fits, diagnostic expansions or rescue; retain historical conclusions and evidence",
+      "status": "STOPPED_BY_USER"
+    }
+  },
+  "evidence_status": "campaign_active_with_archived_evidence_only_no_claim_release",
+  "failed_attempts": [
+    {
+      "cumulative_budget_hours": 24.0,
+      "cumulative_budget_started_at": "2026-10-29T14:34:57.143319+00:00",
+      "detail": "verified failed transaction snapshot; original parent Run had no formal intake",
+      "failed_run_id": "2026-10-29_ota_sic_r1-full-w1",
+      "failed_status": "failed",
+      "failed_transaction_evidence": {
+        "formal_intake": false,
+        "reuse_verification_sha256": "ab4ed544790721886fc9f1f731b2c48658e698edaadbed332287f55caedef204",
+        "source_snapshot_sha256": "2de4c4397d256687894de8daaafab2baa4daff3772af4f9e45f0cb83c0a41458",
+        "transaction_status_sha256": "4560893bba25cf3696308ef55af2b6d8753c27ed9fba94cf5532350108292147"
+      },
+      "failed_transaction_formal_intake": false,
+      "parent_contract": "ai4s/programs/ota/research/ota-sic-r1.yaml",
+      "parent_contract_sha256": "4dd9dbdc4f3b9624880c243a5464ee1d69d74729ff6b1ee5489cdd8ff7f26b30",
+      "prior_active_run_snapshot": {
+        "bundle_id": "2026-10-29_ota_sic_r1-bundle",
+        "dispatch_status": "REMOTE_ACCEPTED",
+        "estimated_training_hours": 16.8,
+        "execution_mode": "user_managed",
+        "executor_id": "lab10",
+        "planned_units": 76,
+        "recorded_at": "2026-10-29T14:40:41.006544+00:00",
+        "round_id": "ota-sic-r1",
+        "run_prefix": "2026-10-29_ota_sic_r1",
+        "transaction_operations": [
+          {
+            "operation": "upload",
+            "recorded_at": "2026-10-29T14:50:45.642601+00:00",
+            "result": {
+              "action": "UPLOADED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-10-29_ota_sic_r1-full-w1"
+            }
+          },
+          {
+            "operation": "launch",
+            "recorded_at": "2026-10-29T14:50:46.936889+00:00",
+            "result": {
+              "action": "SUBMISSION_SENT_NOT_VERIFIED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-10-29_ota_sic_r1-full-w1"
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-10-29T14:51:13.137486+00:00",
+            "result": {
+              "action": "WAIT_FOR_RESOURCES",
+              "node_id": "smoke",
+              "run_id": "2026-10-29_ota_sic_r1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "4dd9dbdc4f3b9624880c243a5464ee1d69d74729ff6b1ee5489cdd8ff7f26b30",
+                "execution_seconds": 9.797359943389893,
+                "queue_seconds": 13.42236042022705,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-10-29_ota_sic_r1-full-w1",
+                "transaction_id": "2026-10-29_ota_sic_r1-tx",
+                "waiting_for_resources": true,
+                "wall_seconds": 23.219720363616943
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-10-30T03:38:51.948275+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "screen",
+              "run_id": "2026-10-29_ota_sic_r1-full-w1",
+              "status": "FAILED",
+              "timing": {
+                "contract_sha256": "4dd9dbdc4f3b9624880c243a5464ee1d69d74729ff6b1ee5489cdd8ff7f26b30",
+                "execution_seconds": 10429.8217420578,
+                "queue_seconds": 1332.8358807563782,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-10-29_ota_sic_r1-full-w1",
+                "transaction_id": "2026-10-29_ota_sic_r1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 11762.657622814178
+              }
+            }
+          }
+        ]
+      },
+      "prior_planned_units": 76,
+      "reason": "2026-10-30 user explicitly authorized preservation and verification of 66 successes and one bounded refill of six failed/unstarted tasks; parent failed transaction retained; same campaign 24h cumulative budget, no automatic further retry.",
+      "recorded_at": "2026-10-30T04:18:53.606420+00:00",
+      "repair_planned_units": 6,
+      "repair_round_id": "ota-sic-r1-repair1",
+      "repaired_by_bundle_id": "2026-10-30_ota_sic_r1-repair1-bundle",
+      "repaired_by_run_prefix": "2026-10-30_ota_sic_r1-repair1",
+      "round_id": "ota-sic-r1"
+    },
+    {
+      "cumulative_budget_hours": 24.0,
+      "cumulative_budget_started_at": "2026-10-29T14:34:57.143319+00:00",
+      "detail": "verified zero-fit packaging failure; no formal intake or new fit attempt",
+      "failed_run_id": "2026-10-30_ota_sic_r1-repair1-full-w1",
+      "failed_status": "failed",
+      "failed_transaction_evidence": {
+        "formal_intake": false,
+        "new_fit_attempts": 0,
+        "packaging_elapsed_seconds": 51.399943828582764,
+        "repair_contract_sha256": "0ef79b4cab1b51628978ffc8ff171ec7efe9ad5fdc2ba7e5779732da7e467ce9",
+        "source_run_id": "2026-10-30_ota_sic_r1-repair1-full-w1",
+        "zero_fit_evidence_sha256": "0d62e09b221f5d7bf5743de825d93c1fc4191e145c7ac19499ab77bdf8990def"
+      },
+      "failed_transaction_formal_intake": false,
+      "new_fits_from_replaced_run": 0,
+      "packaging_failure_formal_intake": false,
+      "packaging_recovery_of": {
+        "authorized_task_ids": [
+          "t0_s1_t2",
+          "m0_s1_t0",
+          "m0_s1_t1",
+          "m0_s1_t5",
+          "m0_s1_t6",
+          "m0_s1_t7"
+        ],
+        "cumulative_max_fit_attempts": 79,
+        "failed_zero_fit_evidence_ref": {
+          "path": "ai4s/programs/ota/research/sic-r1/repair1/packfix1/PACKAGING_FAILURE_EVIDENCE.json",
+          "sha256": "0d62e09b221f5d7bf5743de825d93c1fc4191e145c7ac19499ab77bdf8990def"
+        },
+        "new_fit_count": 0,
+        "packaging_elapsed_seconds": 51.399943828582764,
+        "remaining_new_fit_authorization": 6,
+        "schema": "ota-sic-r1-packaging-recovery-binding-v1",
+        "source_bundle_id": "2026-10-30_ota_sic_r1-repair1-bundle",
+        "source_contract_ref": {
+          "byte_sha256": "60ea91ca43cf46d50859d161745a47d086b14685b7ec5494b814a8533465351b",
+          "path": "ai4s/programs/ota/research/sic-r1/repair1/transaction_contract.yaml",
+          "runtime_canonical_sha256": "0ef79b4cab1b51628978ffc8ff171ec7efe9ad5fdc2ba7e5779732da7e467ce9"
+        },
+        "source_round_id": "ota-sic-r1-repair1",
+        "source_run_id": "2026-10-30_ota_sic_r1-repair1-full-w1",
+        "zero_fit_verified": true
+      },
+      "parent_contract": "ai4s/programs/ota/research/ota-sic-r1.yaml",
+      "parent_contract_sha256": "4dd9dbdc4f3b9624880c243a5464ee1d69d74729ff6b1ee5489cdd8ff7f26b30",
+      "prior_active_run_snapshot": {
+        "bundle_id": "2026-10-30_ota_sic_r1-repair1-bundle",
+        "contract": "ai4s/programs/ota/research/sic-r1/repair1/transaction_contract.yaml",
+        "contract_sha256": "0ef79b4cab1b51628978ffc8ff171ec7efe9ad5fdc2ba7e5779732da7e467ce9",
+        "dispatch_status": "REMOTE_ACCEPTED",
+        "estimated_training_hours": 1.326,
+        "execution_mode": "user_managed",
+        "executor_id": "lab10",
+        "parent_run_id": "2026-10-29_ota_sic_r1-full-w1",
+        "planned_units": 6,
+        "recorded_at": "2026-10-30T04:18:53.608169+00:00",
+        "repair_new_scientific_fits": 6,
+        "retry_of": "2026-10-29_ota_sic_r1-full-w1",
+        "round_id": "ota-sic-r1-repair1",
+        "run_prefix": "2026-10-30_ota_sic_r1-repair1",
+        "transaction_operations": [
+          {
+            "operation": "upload",
+            "recorded_at": "2026-10-30T04:23:18.656737+00:00",
+            "result": {
+              "action": "UPLOADED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-10-30_ota_sic_r1-repair1-full-w1"
+            }
+          },
+          {
+            "operation": "launch",
+            "recorded_at": "2026-10-30T04:23:42.385902+00:00",
+            "result": {
+              "action": "SUBMISSION_SENT_NOT_VERIFIED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-10-30_ota_sic_r1-repair1-full-w1"
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-10-30T04:23:56.775274+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "import",
+              "run_id": "2026-10-30_ota_sic_r1-repair1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "0ef79b4cab1b51628978ffc8ff171ec7efe9ad5fdc2ba7e5779732da7e467ce9",
+                "execution_seconds": 12.093740701675415,
+                "queue_seconds": 0.0,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-10-30_ota_sic_r1-repair1-full-w1",
+                "transaction_id": "2026-10-30_ota_sic_r1-repair1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 12.093740701675415
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-10-30T04:24:57.015127+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "screen",
+              "run_id": "2026-10-30_ota_sic_r1-repair1-full-w1",
+              "status": "FAILED",
+              "timing": {
+                "contract_sha256": "0ef79b4cab1b51628978ffc8ff171ec7efe9ad5fdc2ba7e5779732da7e467ce9",
+                "execution_seconds": 51.399943828582764,
+                "queue_seconds": 0.0,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-10-30_ota_sic_r1-repair1-full-w1",
+                "transaction_id": "2026-10-30_ota_sic_r1-repair1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 51.399943828582764
+              }
+            }
+          }
+        ]
+      },
+      "prior_planned_units": 6,
+      "reason": "User-authorized six-gap recovery after verified zero-fit packaging failure; preserve 66 successes, immutable failures, same 24h clock and six-fit cap.",
+      "recorded_at": "2026-10-30T04:38:52.246551+00:00",
+      "repair_planned_units": 6,
+      "repair_round_id": "ota-sic-r1-repair1",
+      "repaired_by_bundle_id": "2026-10-30_ota_sic_r1-repair1-packfix1-bundle",
+      "repaired_by_run_prefix": "2026-10-30_ota_sic_r1-repair1-packfix1",
+      "round_id": "ota-sic-r1-repair1",
+      "zero_fit_packaging_failure_evidence": {
+        "formal_intake": false,
+        "new_fit_attempts": 0,
+        "packaging_elapsed_seconds": 51.399943828582764,
+        "repair_contract_sha256": "0ef79b4cab1b51628978ffc8ff171ec7efe9ad5fdc2ba7e5779732da7e467ce9",
+        "source_run_id": "2026-10-30_ota_sic_r1-repair1-full-w1",
+        "zero_fit_evidence_sha256": "0d62e09b221f5d7bf5743de825d93c1fc4191e145c7ac19499ab77bdf8990def"
+      }
+    },
+    {
+      "cumulative_budget_hours": 24.0,
+      "cumulative_budget_started_at": "2026-10-29T14:34:57.143319+00:00",
+      "detail": "verified zero-fit controlled resource-policy stop; no formal intake or new fit attempt",
+      "failed_run_id": "2026-10-30_ota_sic_r1-repair1-packfix1-full-w1",
+      "failed_status": "failed",
+      "failed_transaction_evidence": {
+        "formal_intake": false,
+        "new_fit_attempts": 0,
+        "queue_seconds": 2839.1706414222717,
+        "resource_requeue_evidence_sha256": "3692c13f1b9bce09674ab6fa7c4dc0dcd6b0c8c5acb4772fc30062e7c73f7e27",
+        "source_contract_sha256": "6050faec7f717747303ff60bf7324c59677c84855167de10d398447140363ddb",
+        "wall_seconds": 2902.6771745681763
+      },
+      "failed_transaction_formal_intake": false,
+      "new_fits_from_replaced_run": 0,
+      "parent_contract": "ai4s/programs/ota/research/ota-sic-r1.yaml",
+      "parent_contract_sha256": "4dd9dbdc4f3b9624880c243a5464ee1d69d74729ff6b1ee5489cdd8ff7f26b30",
+      "prior_active_run_snapshot": {
+        "bundle_id": "2026-10-30_ota_sic_r1-repair1-packfix1-bundle",
+        "contract": "ai4s/programs/ota/research/sic-r1/repair1/packfix1/transaction_contract.yaml",
+        "contract_sha256": "6050faec7f717747303ff60bf7324c59677c84855167de10d398447140363ddb",
+        "dispatch_status": "REMOTE_ACCEPTED",
+        "estimated_training_hours": 1.326,
+        "execution_mode": "user_managed",
+        "executor_id": "lab10",
+        "new_fit_attempts_in_replaced_run": 0,
+        "packaging_recovery_of_run_id": "2026-10-30_ota_sic_r1-repair1-full-w1",
+        "parent_run_id": "2026-10-29_ota_sic_r1-full-w1",
+        "planned_units": 6,
+        "recorded_at": "2026-10-30T04:38:52.248208+00:00",
+        "repair_new_scientific_fits": 6,
+        "retry_of": "2026-10-30_ota_sic_r1-repair1-full-w1",
+        "round_id": "ota-sic-r1-repair1",
+        "run_prefix": "2026-10-30_ota_sic_r1-repair1-packfix1",
+        "transaction_operations": [
+          {
+            "operation": "upload",
+            "recorded_at": "2026-10-30T04:39:15.584842+00:00",
+            "result": {
+              "action": "UPLOADED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-10-30_ota_sic_r1-repair1-packfix1-full-w1"
+            }
+          },
+          {
+            "operation": "launch",
+            "recorded_at": "2026-10-30T04:39:37.252018+00:00",
+            "result": {
+              "action": "SUBMISSION_SENT_NOT_VERIFIED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-10-30_ota_sic_r1-repair1-packfix1-full-w1"
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-10-30T04:40:23.069523+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "screen",
+              "run_id": "2026-10-30_ota_sic_r1-repair1-packfix1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "6050faec7f717747303ff60bf7324c59677c84855167de10d398447140363ddb",
+                "execution_seconds": 43.56693148612976,
+                "queue_seconds": 0.0,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-10-30_ota_sic_r1-repair1-packfix1-full-w1",
+                "transaction_id": "2026-10-30_ota_sic_r1-repair1-packfix1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 43.56693148612976
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-10-30T04:43:01.524759+00:00",
+            "result": {
+              "action": "WAIT_FOR_RESOURCES",
+              "node_id": "screen",
+              "run_id": "2026-10-30_ota_sic_r1-repair1-packfix1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "6050faec7f717747303ff60bf7324c59677c84855167de10d398447140363ddb",
+                "execution_seconds": 60.3617103099823,
+                "queue_seconds": 141.65610814094543,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-10-30_ota_sic_r1-repair1-packfix1-full-w1",
+                "transaction_id": "2026-10-30_ota_sic_r1-repair1-packfix1-tx",
+                "waiting_for_resources": true,
+                "wall_seconds": 202.01781845092773
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-10-30T04:50:28.497155+00:00",
+            "result": {
+              "action": "WAIT_FOR_RESOURCES",
+              "node_id": "screen",
+              "run_id": "2026-10-30_ota_sic_r1-repair1-packfix1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "6050faec7f717747303ff60bf7324c59677c84855167de10d398447140363ddb",
+                "execution_seconds": 61.00584673881531,
+                "queue_seconds": 587.989645242691,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-10-30_ota_sic_r1-repair1-packfix1-full-w1",
+                "transaction_id": "2026-10-30_ota_sic_r1-repair1-packfix1-tx",
+                "waiting_for_resources": true,
+                "wall_seconds": 648.9954919815063
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-10-30T05:06:00.219051+00:00",
+            "result": {
+              "action": "WAIT_FOR_RESOURCES",
+              "node_id": "screen",
+              "run_id": "2026-10-30_ota_sic_r1-repair1-packfix1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "6050faec7f717747303ff60bf7324c59677c84855167de10d398447140363ddb",
+                "execution_seconds": 61.89375877380371,
+                "queue_seconds": 1518.8523511886597,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-10-30_ota_sic_r1-repair1-packfix1-full-w1",
+                "transaction_id": "2026-10-30_ota_sic_r1-repair1-packfix1-tx",
+                "waiting_for_resources": true,
+                "wall_seconds": 1580.7461099624634
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-10-30T05:16:35.937869+00:00",
+            "result": {
+              "action": "WAIT_FOR_RESOURCES",
+              "node_id": "screen",
+              "run_id": "2026-10-30_ota_sic_r1-repair1-packfix1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "6050faec7f717747303ff60bf7324c59677c84855167de10d398447140363ddb",
+                "execution_seconds": 62.69535160064697,
+                "queue_seconds": 2153.7545561790466,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-10-30_ota_sic_r1-repair1-packfix1-full-w1",
+                "transaction_id": "2026-10-30_ota_sic_r1-repair1-packfix1-tx",
+                "waiting_for_resources": true,
+                "wall_seconds": 2216.4499077796936
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-10-30T05:22:53.650417+00:00",
+            "result": {
+              "action": "WAIT_FOR_RESOURCES",
+              "node_id": "screen",
+              "run_id": "2026-10-30_ota_sic_r1-repair1-packfix1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "6050faec7f717747303ff60bf7324c59677c84855167de10d398447140363ddb",
+                "execution_seconds": 63.309282541275024,
+                "queue_seconds": 2530.871376991272,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-10-30_ota_sic_r1-repair1-packfix1-full-w1",
+                "transaction_id": "2026-10-30_ota_sic_r1-repair1-packfix1-tx",
+                "waiting_for_resources": true,
+                "wall_seconds": 2594.180659532547
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-10-30T05:29:06.982774+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "screen",
+              "run_id": "2026-10-30_ota_sic_r1-repair1-packfix1-full-w1",
+              "status": "FAILED",
+              "timing": {
+                "contract_sha256": "6050faec7f717747303ff60bf7324c59677c84855167de10d398447140363ddb",
+                "execution_seconds": 63.50653314590454,
+                "queue_seconds": 2839.1706414222717,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-10-30_ota_sic_r1-repair1-packfix1-full-w1",
+                "transaction_id": "2026-10-30_ota_sic_r1-repair1-packfix1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 2902.6771745681763
+              }
+            }
+          }
+        ],
+        "zero_fit_verified": true
+      },
+      "prior_planned_units": 6,
+      "reason": "User explicitly selected memory-based admission with 4GiB task commitment and 1GiB per-GPU reserve. Previous queue was controllably stopped with all six pending and zero fit attempts; preserve original 66 and all costs, same six-fit cap and 24h clock.",
+      "recorded_at": "2026-10-30T05:39:15.435885+00:00",
+      "repair_planned_units": 6,
+      "repair_round_id": "ota-sic-r1-repair1",
+      "repaired_by_bundle_id": "2026-10-30_ota_sic_r1-repair1-resourcefix1-bundle",
+      "repaired_by_run_prefix": "2026-10-30_ota_sic_r1-repair1-resourcefix1",
+      "resource_requeue_formal_intake": false,
+      "resource_requeue_of": {
+        "concurrency_policy": "memory_only",
+        "cumulative_max_fit_attempts": 79,
+        "elapsed_queue_seconds": 2839.1706414222717,
+        "evidence_ref": {
+          "path": "ai4s/programs/ota/research/sic-r1/repair1/resourcefix1/PACKAGING_REQUEUE_EVIDENCE.json",
+          "sha256": "3692c13f1b9bce09674ab6fa7c4dc0dcd6b0c8c5acb4772fc30062e7c73f7e27"
+        },
+        "max_jobs_per_gpu": null,
+        "memory_commitment_mib": 4096,
+        "memory_reserve_mib": 1024,
+        "new_fit_attempts": 0,
+        "pending_task_ids": [
+          "t0_s1_t2",
+          "m0_s1_t0",
+          "m0_s1_t1",
+          "m0_s1_t5",
+          "m0_s1_t6",
+          "m0_s1_t7"
+        ],
+        "remaining_new_fit_authorization": 6,
+        "schema": "ota-sic-r1-resource-requeue-binding-v1",
+        "source_bundle_id": "2026-10-30_ota_sic_r1-repair1-packfix1-bundle",
+        "source_contract_ref": {
+          "byte_sha256": "f8281e0d7b82f5b32c236c926a6b29a1072c705140e74b90c2054b27747bb304",
+          "path": "ai4s/programs/ota/research/sic-r1/repair1/packfix1/transaction_contract.yaml",
+          "runtime_canonical_sha256": "6050faec7f717747303ff60bf7324c59677c84855167de10d398447140363ddb"
+        },
+        "source_round_id": "ota-sic-r1-repair1",
+        "source_run_id": "2026-10-30_ota_sic_r1-repair1-packfix1-full-w1",
+        "zero_fit_verified": true
+      },
+      "round_id": "ota-sic-r1-repair1",
+      "zero_fit_resource_stop_evidence": {
+        "formal_intake": false,
+        "new_fit_attempts": 0,
+        "queue_seconds": 2839.1706414222717,
+        "resource_requeue_evidence_sha256": "3692c13f1b9bce09674ab6fa7c4dc0dcd6b0c8c5acb4772fc30062e7c73f7e27",
+        "source_contract_sha256": "6050faec7f717747303ff60bf7324c59677c84855167de10d398447140363ddb",
+        "wall_seconds": 2902.6771745681763
+      }
+    }
+  ],
+  "failed_execution_attempts": [
+    {
+      "bundle_id": "2026-09-19_dsa_spar_v0_1-bundle",
+      "bundle_path": "ai4s/programs/ota/research/spar-v0.1/bundle",
+      "contract": "ai4s/programs/ota/research/spar-r01-v0.1.yaml",
+      "contract_sha256": "c7dcaf92cc62686052c887dd127b21566391da31fa0c32f40cc195fcb013d233",
+      "diagnostic_adapter": "ai4s/programs/ota/research/spar-v0.1/lifecycle.py",
+      "executor_id": "lab10",
+      "last_transport": {
+        "action": "RECONCILE_SAME_NODE",
+        "node_id": "smoke",
+        "run_id": "2026-09-19_dsa_spar_v0_1-full-w1",
+        "status": "FAILED",
+        "timing": {
+          "contract_sha256": "c7dcaf92cc62686052c887dd127b21566391da31fa0c32f40cc195fcb013d233",
+          "execution_seconds": 14.034495830535889,
+          "queue_seconds": 0.0,
+          "queue_time_policy": "exclude_resource_wait",
+          "run_id": "2026-09-19_dsa_spar_v0_1-full-w1",
+          "transaction_id": "2026-09-19_dsa_spar_v0_1-tx",
+          "waiting_for_resources": false,
+          "wall_seconds": 14.034495830535889
+        }
+      },
+      "round_id": "dsa-spar-r01-v0.1",
+      "run_id": "2026-09-19_dsa_spar_v0_1-full-w1",
+      "run_prefix": "2026-09-19_dsa_spar_v0_1",
+      "status": "FAILED",
+      "transaction_operations": [
+        {
+          "operation": "upload",
+          "recorded_at": "2026-09-19T07:09:09.124237+00:00",
+          "result": {
+            "action": "UPLOADED",
+            "monitor_powershell": "[REDACTED_MACHINE]",
+            "run_id": "2026-09-19_dsa_spar_v0_1-full-w1"
+          }
+        },
+        {
+          "operation": "launch",
+          "recorded_at": "2026-09-19T07:09:23.099367+00:00",
+          "result": {
+            "action": "SUBMISSION_SENT_NOT_VERIFIED",
+            "monitor_powershell": "[REDACTED_MACHINE]",
+            "run_id": "2026-09-19_dsa_spar_v0_1-full-w1"
+          }
+        },
+        {
+          "operation": "probe",
+          "recorded_at": "2026-09-19T07:09:41.230911+00:00",
+          "result": {
+            "action": "RECONCILE_SAME_NODE",
+            "node_id": "smoke",
+            "run_id": "2026-09-19_dsa_spar_v0_1-full-w1",
+            "status": "RUNNING",
+            "timing": {
+              "contract_sha256": "c7dcaf92cc62686052c887dd127b21566391da31fa0c32f40cc195fcb013d233",
+              "execution_seconds": 14.055396795272827,
+              "queue_seconds": 0.0,
+              "queue_time_policy": "exclude_resource_wait",
+              "run_id": "2026-09-19_dsa_spar_v0_1-full-w1",
+              "transaction_id": "2026-09-19_dsa_spar_v0_1-tx",
+              "waiting_for_resources": false,
+              "wall_seconds": 14.055396795272827
+            }
+          }
+        },
+        {
+          "operation": "probe",
+          "recorded_at": "2026-09-19T07:10:55.506523+00:00",
+          "result": {
+            "action": "RECONCILE_SAME_NODE",
+            "node_id": "smoke",
+            "run_id": "2026-09-19_dsa_spar_v0_1-full-w1",
+            "status": "FAILED",
+            "timing": {
+              "contract_sha256": "c7dcaf92cc62686052c887dd127b21566391da31fa0c32f40cc195fcb013d233",
+              "execution_seconds": 14.034495830535889,
+              "queue_seconds": 0.0,
+              "queue_time_policy": "exclude_resource_wait",
+              "run_id": "2026-09-19_dsa_spar_v0_1-full-w1",
+              "transaction_id": "2026-09-19_dsa_spar_v0_1-tx",
+              "waiting_for_resources": false,
+              "wall_seconds": 14.034495830535889
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "failed_runs": [
+    {
+      "failure_evidence": "ai4s\\programs\\ota\\research\\ota-rl-v0.1\\repair1\\failure",
+      "forward_tasks": 0,
+      "new_fits": 0,
+      "reason": "startup config loader identity assertion",
+      "run": {
+        "bundle_id": "2026-09-18_ota_rl_v0_1-bundle",
+        "bundle_path": "ai4s/programs/ota/research/ota-rl-v0.1/bundle",
+        "contract": "ai4s/programs/ota/research/ota-rl-r01-v0.1.yaml",
+        "contract_sha256": "438cf3d0eecff1ce6a438df428f5d8df1f1aba8a25645fc05377367870708f29",
+        "diagnostic_adapter": "ai4s/programs/ota/research/ota-rl-v0.1/lifecycle.py",
+        "executor_id": "lab10",
+        "last_transport": {
+          "action": "RECONCILE_SAME_NODE",
+          "node_id": "extract",
+          "run_id": "2026-09-18_ota_rl_v0_1-full-w1",
+          "status": "FAILED",
+          "timing": {
+            "contract_sha256": "438cf3d0eecff1ce6a438df428f5d8df1f1aba8a25645fc05377367870708f29",
+            "execution_seconds": 5.405754566192627,
+            "queue_seconds": 0.0,
+            "queue_time_policy": "exclude_resource_wait",
+            "run_id": "2026-09-18_ota_rl_v0_1-full-w1",
+            "transaction_id": "2026-09-18_ota_rl_v0_1-tx",
+            "waiting_for_resources": false,
+            "wall_seconds": 5.405754566192627
+          }
+        },
+        "round_id": "ota-rl-r01-v0.1",
+        "run_id": "2026-09-18_ota_rl_v0_1-full-w1",
+        "run_prefix": "2026-09-18_ota_rl_v0_1",
+        "status": "DISPATCH_PENDING",
+        "transaction_operations": [
+          {
+            "operation": "upload",
+            "recorded_at": "2026-09-18T02:15:02.389661+08:00",
+            "result": {
+              "action": "UPLOADED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-09-18_ota_rl_v0_1-full-w1"
+            }
+          },
+          {
+            "operation": "launch",
+            "recorded_at": "2026-09-18T02:16:12.098409+08:00",
+            "result": {
+              "action": "SUBMISSION_SENT_NOT_VERIFIED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-09-18_ota_rl_v0_1-full-w1"
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-09-18T02:16:26.7683+08:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "extract",
+              "run_id": "2026-09-18_ota_rl_v0_1-full-w1",
+              "status": "FAILED",
+              "timing": {
+                "contract_sha256": "438cf3d0eecff1ce6a438df428f5d8df1f1aba8a25645fc05377367870708f29",
+                "execution_seconds": 5.405754566192627,
+                "queue_seconds": 0.0,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-09-18_ota_rl_v0_1-full-w1",
+                "transaction_id": "2026-09-18_ota_rl_v0_1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 5.405754566192627
+              }
+            }
+          }
+        ]
+      },
+      "scientific_result": null
+    }
+  ],
+  "handoff": {
+    "completed_at": "2026-09-17",
+    "confirmed_by_user": true,
+    "decision_record": "ai4s/programs/ota/research/ota-rl-r01-v0.1-repair1_decision.yaml",
+    "next_training_authorized": false,
+    "reason": "one diagnostic decision reached",
+    "record": "ai4s/programs/ota/research/ADMISSION.md",
+    "report": "ai4s/programs/ota/research/ota-rl-v0.1/repair1/analysis/RESULT_ANALYSIS.md",
+    "status": "DIAGNOSTIC_CLOSED"
+  },
+  "last_completed_run": {
+    "bundle_id": "2026-09-19_dsa_spar_v0_1-repair1-bundle",
+    "bundle_path": "ai4s/programs/ota/research/spar-v0.1-repair1/bundle",
+    "contract": "ai4s/programs/ota/research/spar-r01-v0.1-repair1.yaml",
+    "contract_sha256": "c0f900b1ee7fddfe6fa2caf3094707012d8216332da138d2bfaa37185bac5343",
+    "diagnostic_adapter": "ai4s/programs/ota/research/spar-v0.1-repair1/lifecycle.py",
+    "executor_id": "lab10",
+    "intake_verified": true,
+    "last_transport": {
+      "action": "FETCH_VERIFY_INTAKE",
+      "run_id": "2026-09-19_dsa_spar_v0_1-repair1-full-w1",
+      "scientific_stop_boundary": "NEXT_SCIENTIFIC_DECISION",
+      "timing": {
+        "contract_sha256": "c0f900b1ee7fddfe6fa2caf3094707012d8216332da138d2bfaa37185bac5343",
+        "execution_seconds": 807.6921281814575,
+        "queue_seconds": 0.0,
+        "queue_time_policy": "exclude_resource_wait",
+        "run_id": "2026-09-19_dsa_spar_v0_1-repair1-full-w1",
+        "transaction_id": "2026-09-19_dsa_spar_v0_1-repair1-tx",
+        "waiting_for_resources": false,
+        "wall_seconds": 807.6921281814575
+      }
+    },
+    "parent_failed_run_id": "2026-09-19_dsa_spar_v0_1-full-w1",
+    "reconciliation_record": "ai4s/_work/ota_v33_activation_20261029/SPAR_RECONCILIATION.json",
+    "round_id": "dsa-spar-r01-v0.1-repair1",
+    "run_id": "2026-09-19_dsa_spar_v0_1-repair1-full-w1",
+    "run_prefix": "2026-09-19_dsa_spar_v0_1-repair1",
+    "scientific_status": "INCOMPLETE",
+    "status": "COMPLETE",
+    "transaction_operations": [
+      {
+        "operation": "upload",
+        "recorded_at": "2026-09-19T07:25:43.263062+00:00",
+        "result": {
+          "action": "UPLOADED",
+          "monitor_powershell": "[REDACTED_MACHINE]",
+          "run_id": "2026-09-19_dsa_spar_v0_1-repair1-full-w1"
+        }
+      },
+      {
+        "operation": "launch",
+        "recorded_at": "2026-09-19T07:26:05.879787+00:00",
+        "result": {
+          "action": "SUBMISSION_SENT_NOT_VERIFIED",
+          "monitor_powershell": "[REDACTED_MACHINE]",
+          "run_id": "2026-09-19_dsa_spar_v0_1-repair1-full-w1"
+        }
+      },
+      {
+        "operation": "probe",
+        "recorded_at": "2026-09-19T07:26:23.067187+00:00",
+        "result": {
+          "action": "RECONCILE_SAME_NODE",
+          "node_id": "smoke",
+          "run_id": "2026-09-19_dsa_spar_v0_1-repair1-full-w1",
+          "status": "RUNNING",
+          "timing": {
+            "contract_sha256": "c0f900b1ee7fddfe6fa2caf3094707012d8216332da138d2bfaa37185bac5343",
+            "execution_seconds": 12.806652307510376,
+            "queue_seconds": 0.0,
+            "queue_time_policy": "exclude_resource_wait",
+            "run_id": "2026-09-19_dsa_spar_v0_1-repair1-full-w1",
+            "transaction_id": "2026-09-19_dsa_spar_v0_1-repair1-tx",
+            "waiting_for_resources": false,
+            "wall_seconds": 12.806652307510376
+          }
+        }
+      },
+      {
+        "operation": "probe",
+        "recorded_at": "2026-09-19T07:27:12.401140+00:00",
+        "result": {
+          "action": "RECONCILE_SAME_NODE",
+          "node_id": "screen",
+          "run_id": "2026-09-19_dsa_spar_v0_1-repair1-full-w1",
+          "status": "RUNNING",
+          "timing": {
+            "contract_sha256": "c0f900b1ee7fddfe6fa2caf3094707012d8216332da138d2bfaa37185bac5343",
+            "execution_seconds": 62.12378907203674,
+            "queue_seconds": 0.0,
+            "queue_time_policy": "exclude_resource_wait",
+            "run_id": "2026-09-19_dsa_spar_v0_1-repair1-full-w1",
+            "transaction_id": "2026-09-19_dsa_spar_v0_1-repair1-tx",
+            "waiting_for_resources": false,
+            "wall_seconds": 62.12378907203674
+          }
+        }
+      },
+      {
+        "operation": "probe",
+        "recorded_at": "2026-09-19T10:49:00.855031+00:00",
+        "result": {
+          "action": "FETCH_VERIFY_INTAKE",
+          "run_id": "2026-09-19_dsa_spar_v0_1-repair1-full-w1",
+          "scientific_stop_boundary": "NEXT_SCIENTIFIC_DECISION",
+          "timing": {
+            "contract_sha256": "c0f900b1ee7fddfe6fa2caf3094707012d8216332da138d2bfaa37185bac5343",
+            "execution_seconds": 807.6921281814575,
+            "queue_seconds": 0.0,
+            "queue_time_policy": "exclude_resource_wait",
+            "run_id": "2026-09-19_dsa_spar_v0_1-repair1-full-w1",
+            "transaction_id": "2026-09-19_dsa_spar_v0_1-repair1-tx",
+            "waiting_for_resources": false,
+            "wall_seconds": 807.6921281814575
+          }
+        }
+      },
+      {
+        "operation": "probe",
+        "recorded_at": "2026-09-19T10:49:14.524149+00:00",
+        "result": {
+          "action": "FETCH_VERIFY_INTAKE",
+          "run_id": "2026-09-19_dsa_spar_v0_1-repair1-full-w1",
+          "scientific_stop_boundary": "NEXT_SCIENTIFIC_DECISION",
+          "timing": {
+            "contract_sha256": "c0f900b1ee7fddfe6fa2caf3094707012d8216332da138d2bfaa37185bac5343",
+            "execution_seconds": 807.6921281814575,
+            "queue_seconds": 0.0,
+            "queue_time_policy": "exclude_resource_wait",
+            "run_id": "2026-09-19_dsa_spar_v0_1-repair1-full-w1",
+            "transaction_id": "2026-09-19_dsa_spar_v0_1-repair1-tx",
+            "waiting_for_resources": false,
+            "wall_seconds": 807.6921281814575
+          }
+        }
+      }
+    ]
+  },
+  "last_decision": {
+    "claim_status": "no_paper_claim",
+    "decision": "NO_SIGNAL",
+    "gates": {
+      "U0-C0": {
+        "both_seed_acc": false,
+        "mean_acc": false,
+        "mean_nll": false,
+        "worst_subject": true
+      },
+      "U0-M0": {
+        "mean_acc": true,
+        "mean_nll": true
+      },
+      "U0-T0": {
+        "both_seed_acc": false,
+        "mean_acc": false,
+        "mean_nll": false,
+        "worst_subject": false
+      }
+    },
+    "next_training_authorized": false,
+    "reason": "one or more frozen descriptive investment gates were not met",
+    "round_id": "ota-sic-r1-repair1",
+    "route": "U_INDEX_NOT_SUPPORTED",
+    "run_action": "STOP"
+  },
+  "last_round_evidence": {
+    "decision_record": "ai4s/programs/ota/research/ota-sic-r1-repair1_decision.yaml",
+    "evidence_id": "AI4S-OTA-ota-sic-r1-repair1",
+    "role": "exact_negative_boundary"
+  },
+  "last_run_reconciliation": "ai4s/_work/ota_v33_activation_20261029/SPAR_RECONCILIATION.json",
+  "last_verified_intake": {
+    "analysis_receipt_sha256": "ed9712604447fc4db6029e1c61fd50288666c5efad9f0bd96b190eb04ef478e5",
+    "artifact_manifest_sha256": "f37ecbe846d61f285845a678e07928ac875bd41682095324f0be9bf2766b87fb",
+    "contract_sha256": "fdffe436d27ce8745d60813f76c9652b71c0d7307afe53d1f1e2232d92bcf0a6",
+    "full_payload_local": false,
+    "intake_path": "results/logs/remote/2026-10-30_ota_sic_r1-repair1-resourcefix1-full-w1",
+    "intake_scope": "analysis_v1",
+    "run_id": "2026-10-30_ota_sic_r1-repair1-resourcefix1-full-w1",
+    "run_status": "complete",
+    "transaction_id": "2026-10-30_ota_sic_r1-repair1-resourcefix1-tx",
+    "transfer_bytes": 8470765,
+    "verified": true,
+    "verified_at": null
+  },
+  "paused": true,
+  "pending_execution_budget": {
+    "auto_budget_extension_authorized": false,
+    "automatic_training_retries": 0,
+    "concurrency_policy": "memory_only",
+    "cumulative_max_fit_attempts": 79,
+    "duration_hours": 24,
+    "engineering_repairs": 1,
+    "memory_commitment_mib": 4096,
+    "memory_reserve_mib": 1024,
+    "new_scientific_fits": 6,
+    "operations": [
+      "upload",
+      "launch",
+      "probe",
+      "fetch",
+      "intake"
+    ],
+    "parent_actual_fit_attempts": 73,
+    "parent_network_fit_budget": 76,
+    "prior_pending_execution_budget": {
+      "auto_budget_extension_authorized": false,
+      "automatic_training_retries": 0,
+      "cumulative_max_fit_attempts": 79,
+      "duration_hours": 24,
+      "engineering_repairs": 1,
+      "new_scientific_fits": 6,
+      "operations": [
+        "upload",
+        "launch",
+        "probe",
+        "fetch",
+        "intake"
+      ],
+      "packaging_elapsed_seconds": 51.399943828582764,
+      "packaging_recovery_source_run_id": "2026-10-30_ota_sic_r1-repair1-full-w1",
+      "parent_actual_fit_attempts": 73,
+      "parent_network_fit_budget": 76,
+      "repair_authorization_ref": "ai4s/programs/ota/research/sic-r1/repair1/packfix1/AUTHORIZATION.md",
+      "repair_authorization_source_sha256": "2a5b60021ecf1a4c9264a8b1dcb252ea1e8a718f0729f04f9b9aed81c113210a",
+      "repair_contract_sha256": "6050faec7f717747303ff60bf7324c59677c84855167de10d398447140363ddb",
+      "stage2_authorized": false,
+      "zero_fit_packaging_evidence_sha256": "0d62e09b221f5d7bf5743de825d93c1fc4191e145c7ac19499ab77bdf8990def"
+    },
+    "repair_authorization_ref": "ai4s/programs/ota/research/sic-r1/repair1/resourcefix1/AUTHORIZATION.md",
+    "repair_authorization_source_sha256": "dffe575e2352e0132444fce3522e8431b896c57f8b38d1b151b2a8e8b7f3398b",
+    "repair_contract_sha256": "fdffe436d27ce8745d60813f76c9652b71c0d7307afe53d1f1e2232d92bcf0a6",
+    "resource_requeue_queue_seconds": 2839.1706414222717,
+    "resource_requeue_source_run_id": "2026-10-30_ota_sic_r1-repair1-packfix1-full-w1",
+    "resource_requeue_wall_seconds": null,
+    "stage2_authorized": false,
+    "zero_fit_resource_evidence_sha256": "3692c13f1b9bce09674ab6fa7c4dc0dcd6b0c8c5acb4772fc30062e7c73f7e27"
+  },
+  "program_id": "ota",
+  "run_control": {
+    "continuation_policy_version": "evidence_to_design_v1",
+    "continue_after_positive": false,
+    "max_rounds": 1,
+    "monitor": "blocking",
+    "night_budget_hours": 24.0,
+    "queue_time_policy": "exclude_resource_wait",
+    "round_index": 1,
+    "started_at": "2026-10-29T14:34:57.143319+00:00"
+  },
+  "schema_version": "mieeg-ai4s-state-v1",
+  "status": "COMPLETE_MAX_ROUNDS",
+  "updated_at": "2026-10-30T17:05:54.495968+00:00",
+  "user_stop_note": "2026-09-21 branch stop preserved. Historical SPAR pointer reconciled 2026-10-29 from verified existing intake; INCOMPLETE unchanged. No successor authorized.",
+  "v3_follow_up": {
+    "decision_record": "ai4s/programs/ota/research/ota-sic-r1-repair1_decision.yaml",
+    "evidence_id": "AI4S-OTA-ota-sic-r1-repair1",
+    "next_design": null,
+    "reason": "round_limit"
+  }
+}
