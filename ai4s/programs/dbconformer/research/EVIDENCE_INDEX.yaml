@@ -1291,6 +1291,46 @@
       "role": "operational_progress_not_scientific_result",
       "run_id": "2026-10-31_dbconformer_sgp_r1_lab10_budget1-full-w1",
       "scientific_intake_verified": false
+    },
+    {
+      "claim_release": false,
+      "contract_sha256": "01c415c4eece0d26c3f9581adc14adfd62fda0b2b9cafd26bd1040233e97f7a0",
+      "counts": {
+        "completed": 49,
+        "failed": 0,
+        "pending": 5,
+        "running": 0,
+        "total": 54
+      },
+      "evidence_id": "AI4S-DBCONFORMER-SGP-R1-BUDGET1-STATUS_CHECK_20261103",
+      "follow_up": "wait same Run54SCI then frozen fetch/verify/intake/analyze;no intermediate effects",
+      "report": {
+        "path": "ai4s/programs/dbconformer/research/sgp_r1_budget1/status_check_20261103/REPORT.json",
+        "sha256": "4a15eb4bbbad444c25faf2025687abe12f81279084565ef06e4098c038428a89"
+      },
+      "role": "operational_progress_not_scientific_result",
+      "run_id": "2026-10-31_dbconformer_sgp_r1_lab10_budget1-full-w1",
+      "scientific_intake_verified": false
+    },
+    {
+      "claim_release": false,
+      "contract_sha256": "01c415c4eece0d26c3f9581adc14adfd62fda0b2b9cafd26bd1040233e97f7a0",
+      "counts": {
+        "completed": 54,
+        "failed": 0,
+        "pending": 0,
+        "running": 0,
+        "total": 54
+      },
+      "evidence_id": "AI4S-DBCONFORMER-SGP-R1-BUDGET1-STATUS_CHECK_20261104",
+      "follow_up": "wait same Run54SCI then frozen fetch/verify/intake/analyze;no intermediate effects",
+      "report": {
+        "path": "ai4s/programs/dbconformer/research/sgp_r1_budget1/status_check_20261104/REPORT.json",
+        "sha256": "910be7edda0f13d093a5cc1df90640bda802c0da09ad2995ab6e14b118f5e601"
+      },
+      "role": "operational_progress_not_scientific_result",
+      "run_id": "2026-10-31_dbconformer_sgp_r1_lab10_budget1-full-w1",
+      "scientific_intake_verified": false
     }
   ],
   "follow_up_dispositions": [
@@ -1567,6 +1607,19 @@
       },
       "scope": "Preserve SQK frozen stop; prospective alternatives are paper design only, no new compute authorization.",
       "source_evidence_id": "AI4S-DBCONFORMER-dbconformer-sqk-r1"
+    },
+    {
+      "claim_release": false,
+      "disposition": "STOP_FIXED_INSTANCE_INDIVIDUAL_RISK_GATE_FAILED",
+      "frozen_composite_gate_pass": false,
+      "mean_comparison_signal": true,
+      "next_action": "preserve baseline and evidence;no automatic successor or posthoc rescue;new research needs separate selection/authorization",
+      "recorded_at": "2026-11-04T05:58:44.591738+00:00",
+      "report": {
+        "path": "ai4s/programs/dbconformer/research/sgp_r1_budget1/FINAL_REPORT.md",
+        "sha256": "2d0ebe9e5bb98f861ebcb65e579b804eeea98a10829805f3bb35630f7bc96cd1"
+      },
+      "source_evidence_id": "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1"
     }
   ],
   "history_navigation": "ai4s/programs/dbconformer/research/HISTORY_BOUNDARIES.md",
@@ -4809,6 +4862,24 @@
       "round_contract": "ai4s/programs/dbconformer/research/sqk_r1/transaction_contract_packfix1.yaml",
       "round_id": "dbconformer-sqk-r1",
       "run_id": "2026-10-29_dbconformer_sqk_r1_packfix1_lab10_r1-full-w1"
+    },
+    {
+      "claim_status": "no_paper_claim",
+      "decision": "SGP_R1_GROUP_STRUCTURE_UTILITY_NOT_ESTABLISHED_STOP",
+      "decision_record": "ai4s/programs/dbconformer/research/dbconformer-sgp-r1-budget1_decision.yaml",
+      "evidence_id": "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1",
+      "executor_id": "lab10",
+      "final_report": {
+        "path": "ai4s/programs/dbconformer/research/sgp_r1_budget1/FINAL_REPORT.md",
+        "sha256": "2d0ebe9e5bb98f861ebcb65e579b804eeea98a10829805f3bb35630f7bc96cd1"
+      },
+      "follow_up_status": "closed_fixed_instance_individual_risk_gate_failed_no_successor",
+      "intake_status": "verified_ai4s_round",
+      "interpretation_boundary": "Both mean/statistical gates passed;both18-pair individual risk gates failed;exposed exploratory scope only;no Claim or automatic successor.",
+      "role": "screen_inconclusive",
+      "round_contract": "ai4s/programs/dbconformer/research/dbconformer-sgp-r1-budget1.yaml",
+      "round_id": "dbconformer-sgp-r1-budget1",
+      "run_id": "2026-10-31_dbconformer_sgp_r1_lab10_budget1-full-w1"
     }
   ],
   "schema_version": "mieeg-ai4s-evidence-index-v1",

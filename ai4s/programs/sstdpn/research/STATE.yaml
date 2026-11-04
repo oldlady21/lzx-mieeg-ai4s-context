@@ -1,8 +1,68 @@
 {
   "active_operation": null,
-  "active_research": "FRR-v0.1",
-  "active_round": null,
-  "active_run": null,
+  "active_research": "SD-02-three-arm-v0.1",
+  "active_round": "sd02-three-arm-v0.1-entryfix2",
+  "active_run": {
+    "authorization_binding": "ai4s/programs/sstdpn/research/sd02-three-arm-v0.1/execution/ENTRYFIX2_AUTHORIZATION_BINDING_20261104.json",
+    "authorization_binding_sha256": "1de270a1f24d45b938deb6bc61c8f72998aa96f8847db997199ae2815f1a8144",
+    "automatic_retries": 0,
+    "bundle_id": "2026-11-04_sstdpn_sd02_three_arm_v0_1_entryfix2-bundle",
+    "dispatch_status": "REMOTE_ACCEPTED",
+    "entryfix2_repair_of": "2026-11-04_sstdpn_sd02_three_arm_v0_1_bootstrapfix1-full-w1",
+    "estimated_training_hours": 7.986,
+    "execution_mode": "user_managed",
+    "executor_id": "lab10",
+    "planned_units": 31,
+    "recorded_at": "2026-11-04T07:16:45.269856+00:00",
+    "repair_authorization": "ai4s/programs/sstdpn/research/sd02-three-arm-v0.1/ENTRYFIX2_BUDGET_EXTENSION_AUTHORIZATION_20261104.md",
+    "repair_authorization_sha256": "32e488cd96801c21d713888a5f073105188c010bfd44129d18a5e431e1b7d44b",
+    "replacement_reason_class": "USER_AUTHORIZED_REDEPLOYMENT",
+    "replaces_interrupted_run": "2026-11-04_sstdpn_sd02_three_arm_v0_1_bootstrapfix1-full-w1",
+    "round_id": "sd02-three-arm-v0.1-entryfix2",
+    "run_prefix": "2026-11-04_sstdpn_sd02_three_arm_v0_1_entryfix2",
+    "source_scientific_fits": 0,
+    "source_task_attempts": 3,
+    "transaction_operations": [
+      {
+        "operation": "upload",
+        "recorded_at": "2026-11-04T07:23:22.563907+00:00",
+        "result": {
+          "action": "UPLOADED",
+          "monitor_powershell": "[REDACTED_MACHINE]",
+          "run_id": "2026-11-04_sstdpn_sd02_three_arm_v0_1_entryfix2-full-w1"
+        }
+      },
+      {
+        "operation": "launch",
+        "recorded_at": "2026-11-04T07:23:24.150179+00:00",
+        "result": {
+          "action": "SUBMISSION_SENT_NOT_VERIFIED",
+          "monitor_powershell": "[REDACTED_MACHINE]",
+          "run_id": "2026-11-04_sstdpn_sd02_three_arm_v0_1_entryfix2-full-w1"
+        }
+      },
+      {
+        "operation": "probe",
+        "recorded_at": "2026-11-04T07:26:00.418101+00:00",
+        "result": {
+          "action": "RECONCILE_SAME_NODE",
+          "node_id": "technical",
+          "run_id": "2026-11-04_sstdpn_sd02_three_arm_v0_1_entryfix2-full-w1",
+          "status": "FAILED",
+          "timing": {
+            "contract_sha256": "288e1ead559fa828a5c863eeebaf41580986e1f8bac40b186f8ba8f50e1448f4",
+            "execution_seconds": 12.53926968574524,
+            "queue_seconds": 0.9891033172607422,
+            "queue_time_policy": "exclude_resource_wait",
+            "run_id": "2026-11-04_sstdpn_sd02_three_arm_v0_1_entryfix2-full-w1",
+            "transaction_id": "2026-11-04_sstdpn_sd02_three_arm_v0_1_bootstrapfix1-tx",
+            "waiting_for_resources": false,
+            "wall_seconds": 13.528373003005981
+          }
+        }
+      }
+    ]
+  },
   "active_run_history": [
     {
       "bundle_id": "2026-10-12_sstdpn_sfp_stability_r01_v0_1-bundle",
@@ -1804,6 +1864,234 @@
       },
       "closing_status": "COMPLETE_MAX_ROUNDS",
       "closure_reason": "用户明确授权按FRR-R1固定方案在lab10启动；2h执行6h全轮；24科学ridge+1技术ridge，0编码器训练，零重试；旧FTA成本保留"
+    },
+    {
+      "campaign_id": "sstdpn-frr-r01-20261024",
+      "closed_at": "2026-11-03T15:46:42.941147+00:00",
+      "closing_decision": {
+        "claim_status": "no_paper_claim",
+        "contract_sha256": "264e83d984cdca0de661f07834c12b4159e3f75b2dbd6ece0b991541d8e6784e",
+        "decision": "NO_SIGNAL",
+        "numeric_analysis": {
+          "R_minus_B_pass": false,
+          "cells": [
+            {
+              "B_correct": 289,
+              "R_correct": 253,
+              "delta_pp": -6.25,
+              "seed": 2,
+              "subject": 2
+            },
+            {
+              "B_correct": 259,
+              "R_correct": 267,
+              "delta_pp": 1.3888888888888888,
+              "seed": 3,
+              "subject": 2
+            },
+            {
+              "B_correct": 278,
+              "R_correct": 238,
+              "delta_pp": -6.944444444444445,
+              "seed": 4,
+              "subject": 2
+            },
+            {
+              "B_correct": 369,
+              "R_correct": 341,
+              "delta_pp": -4.861111111111111,
+              "seed": 2,
+              "subject": 3
+            },
+            {
+              "B_correct": 351,
+              "R_correct": 360,
+              "delta_pp": 1.5625,
+              "seed": 3,
+              "subject": 3
+            },
+            {
+              "B_correct": 362,
+              "R_correct": 335,
+              "delta_pp": -4.6875,
+              "seed": 4,
+              "subject": 3
+            },
+            {
+              "B_correct": 327,
+              "R_correct": 301,
+              "delta_pp": -4.513888888888889,
+              "seed": 2,
+              "subject": 4
+            },
+            {
+              "B_correct": 347,
+              "R_correct": 303,
+              "delta_pp": -7.638888888888889,
+              "seed": 3,
+              "subject": 4
+            },
+            {
+              "B_correct": 350,
+              "R_correct": 322,
+              "delta_pp": -4.861111111111111,
+              "seed": 4,
+              "subject": 4
+            },
+            {
+              "B_correct": 308,
+              "R_correct": 296,
+              "delta_pp": -2.0833333333333335,
+              "seed": 2,
+              "subject": 5
+            },
+            {
+              "B_correct": 304,
+              "R_correct": 298,
+              "delta_pp": -1.0416666666666667,
+              "seed": 3,
+              "subject": 5
+            },
+            {
+              "B_correct": 349,
+              "R_correct": 299,
+              "delta_pp": -8.680555555555555,
+              "seed": 4,
+              "subject": 5
+            },
+            {
+              "B_correct": 322,
+              "R_correct": 284,
+              "delta_pp": -6.597222222222222,
+              "seed": 2,
+              "subject": 6
+            },
+            {
+              "B_correct": 313,
+              "R_correct": 289,
+              "delta_pp": -4.166666666666667,
+              "seed": 3,
+              "subject": 6
+            },
+            {
+              "B_correct": 291,
+              "R_correct": 281,
+              "delta_pp": -1.7361111111111112,
+              "seed": 4,
+              "subject": 6
+            },
+            {
+              "B_correct": 387,
+              "R_correct": 350,
+              "delta_pp": -6.423611111111111,
+              "seed": 2,
+              "subject": 7
+            },
+            {
+              "B_correct": 382,
+              "R_correct": 346,
+              "delta_pp": -6.25,
+              "seed": 3,
+              "subject": 7
+            },
+            {
+              "B_correct": 384,
+              "R_correct": 354,
+              "delta_pp": -5.208333333333333,
+              "seed": 4,
+              "subject": 7
+            },
+            {
+              "B_correct": 380,
+              "R_correct": 311,
+              "delta_pp": -11.979166666666666,
+              "seed": 2,
+              "subject": 8
+            },
+            {
+              "B_correct": 351,
+              "R_correct": 318,
+              "delta_pp": -5.729166666666667,
+              "seed": 3,
+              "subject": 8
+            },
+            {
+              "B_correct": 381,
+              "R_correct": 319,
+              "delta_pp": -10.76388888888889,
+              "seed": 4,
+              "subject": 8
+            },
+            {
+              "B_correct": 350,
+              "R_correct": 329,
+              "delta_pp": -3.6458333333333335,
+              "seed": 2,
+              "subject": 9
+            },
+            {
+              "B_correct": 369,
+              "R_correct": 369,
+              "delta_pp": 0.0,
+              "seed": 3,
+              "subject": 9
+            },
+            {
+              "B_correct": 371,
+              "R_correct": 315,
+              "delta_pp": -9.722222222222221,
+              "seed": 4,
+              "subject": 9
+            }
+          ],
+          "gates": {
+            "each_seed_gt_0": false,
+            "each_subject_ge_minus3": false,
+            "overall_ge_1": false
+          },
+          "overall_mean_pp": -5.034722222222222,
+          "schema": "sstdpn-frr-r01-analysis-v1",
+          "seed_means_pp": {
+            "2": -5.794270833333334,
+            "3": -2.734375,
+            "4": -6.575520833333334
+          },
+          "subject_means_pp": {
+            "2": -3.935185185185185,
+            "3": -2.6620370370370368,
+            "4": -5.671296296296297,
+            "5": -3.935185185185185,
+            "6": -4.166666666666667,
+            "7": -5.960648148148148,
+            "8": -9.49074074074074,
+            "9": -4.456018518518518
+          }
+        },
+        "program_id": "sstdpn",
+        "research_id": "FRR-v0.1",
+        "research_stage": "exposed_development_frozen_encoder_readout_screen",
+        "round_id": "frr-r01-v0.1-repair1b",
+        "scientific_outcome": "NO_SIGNAL"
+      },
+      "closing_round": "frr-r01-v0.1-repair1b",
+      "closing_run": {
+        "artifact_manifest_sha256": "db359c982b6dc249fa408b458211161801d66481c2d8c76d81e8cde315d1606a",
+        "contract_sha256": "264e83d984cdca0de661f07834c12b4159e3f75b2dbd6ece0b991541d8e6784e",
+        "current_local_manifest_complete": false,
+        "intake_path": "results/logs/remote/2026-10-24_sstdpn_frr_r01_v0_1_repair1b-full-w1",
+        "latest_local_retention_record": {
+          "note": "2026-10-27 全库清理：该 Run 的大文件（特征/轨迹/诊断）已删除，本地保留全部证据小文件与原 manifest；current_local_manifest_complete=false；恢复按 RETENTION.json 从 Lab10 原件按需取回",
+          "record": "ai4s/_work/historical_asset_cleanup_all_20261027_0320/RETENTION.json",
+          "updated_at": "2026-10-27T15:28:19+0800"
+        },
+        "run_id": "2026-10-24_sstdpn_frr_r01_v0_1_repair1b-full-w1",
+        "run_status": "complete",
+        "transaction_id": "2026-10-24_sstdpn_frr_r01_v0_1_repair1b-tx",
+        "verified": true,
+        "verified_at": null
+      },
+      "closing_status": "PAUSED_FOR_HUMAN",
+      "closure_reason": "User-authorized SD-02 three-arm v3.3 campaign; one round, 8h execution cap and 12h cumulative nonqueue cap anchored at frozen authorization time 2026-11-03T14:11:15.5971232Z; preparation included, 900s unknown pre-anchor reserve, zero retries; no effects before completion."
     }
   ],
   "asg_repair_recovery": {
@@ -1827,8 +2115,8 @@
     "allowed_transitions": [
       "SCREEN_NEW"
     ],
-    "authorization_reason": "User authorized FRR-R1 on lab10; 2h execution / 6h total; 24 science ridge + 1 technical ridge; no encoder training; one round, zero automatic retries; historical cost retained.",
-    "campaign_id": "sstdpn-frr-r01-20261024",
+    "authorization_reason": "User-authorized SD-02 three-arm v3.3 campaign; one round, 8h execution cap and 12h cumulative nonqueue cap anchored at frozen authorization time 2026-11-03T14:11:15.5971232Z; preparation included, 900s unknown pre-anchor reserve, zero retries; no effects before completion.",
+    "campaign_id": "sstdpn-sd02-three-arm-20261103",
     "continuation_policy_version": "evidence_to_design_v1",
     "decision_policy": "stop_at_positive",
     "execution_authorization": {
@@ -1842,132 +2130,61 @@
       "allowed_transitions": [
         "SCREEN_NEW"
       ],
-      "authorization_ref": "ai4s/programs/sstdpn/research/frr-r01-v0.1-repair1b/REPAIR_AUTHORIZATION.md",
-      "campaign_id": "sstdpn-frr-r01-20261024",
+      "authorization_ref": "ai4s/programs/sstdpn/research/sd02-three-arm-v0.1/EXECUTION_AUTHORIZATION_20261103.md",
+      "campaign_id": "sstdpn-sd02-three-arm-20261103",
       "executor_id": "lab10",
-      "recorded_at": "2026-10-24T07:36:35.725047+00:00",
+      "recorded_at": "2026-11-03T15:46:44.763694+00:00",
       "research_scope": {
-        "allow_new_module": false,
+        "allow_new_module": true,
         "allowed_module_ids": [
-          "source_union_trace_scaled_ridge_readout"
+          "sd02_three_arm_moment_comparison"
         ],
         "allowed_stages": [
-          "exposed_development_frozen_encoder_readout_screen"
+          "exposed_development_three_arm_comparison"
         ],
-        "data_scope_id": "bnci2014001-s02-s09-seeds2-3-4-exposed-development-frr-v1",
-        "question_id": "fixed_representation_source_readout_replaceability"
+        "data_scope_id": "bnci2014001-s02-s05-s08-exposed-development",
+        "question_id": "sd02_three_arm_development_utility"
       },
-      "source_sha256": "4d371fc08632d31a7d09799409be7176e55839c5b01ae09d98354d6da1283207"
+      "source_sha256": "36db86b66fbf4daceff386c80f3a5d74fe6ec9898b5b6cd4ca2896eeaf19921f"
     },
-    "execution_authorization_history": [
-      {
-        "allowed_operations": [
-          "upload",
-          "launch",
-          "probe",
-          "fetch",
-          "intake"
-        ],
-        "allowed_transitions": [
-          "SCREEN_NEW"
-        ],
-        "authorization_ref": "ai4s/programs/sstdpn/research/frr-r01-v0.1/LAUNCH_AUTHORIZATION.md",
-        "campaign_id": "sstdpn-frr-r01-20261024",
-        "executor_id": "lab10",
-        "recorded_at": "2026-10-24T04:25:10.378621+00:00",
-        "research_scope": {
-          "allow_new_module": false,
-          "allowed_module_ids": [
-            "source_union_trace_scaled_ridge_readout"
-          ],
-          "allowed_stages": [
-            "exposed_development_frozen_encoder_readout_screen"
-          ],
-          "data_scope_id": "bnci2014001-s02-s09-seeds2-3-4-exposed-development-frr-v1",
-          "question_id": "fixed_representation_source_readout_replaceability"
-        },
-        "source_sha256": "e9b33793fa891a29edf5b0d509d3c7e864f9e872cc7d12fe98807534f1d1e4bb"
-      },
-      {
-        "allowed_operations": [
-          "upload",
-          "launch",
-          "probe",
-          "fetch",
-          "intake"
-        ],
-        "allowed_transitions": [
-          "SCREEN_NEW"
-        ],
-        "authorization_ref": "ai4s/programs/sstdpn/research/frr-r01-v0.1-repair1/REPAIR_AUTHORIZATION.md",
-        "campaign_id": "sstdpn-frr-r01-20261024",
-        "executor_id": "lab10",
-        "recorded_at": "2026-10-24T07:31:31.961697+00:00",
-        "research_scope": {
-          "allow_new_module": false,
-          "allowed_module_ids": [
-            "source_union_trace_scaled_ridge_readout"
-          ],
-          "allowed_stages": [
-            "exposed_development_frozen_encoder_readout_screen"
-          ],
-          "data_scope_id": "bnci2014001-s02-s09-seeds2-3-4-exposed-development-frr-v1",
-          "question_id": "fixed_representation_source_readout_replaceability"
-        },
-        "source_sha256": "70618f88af0d5fc2280e54b520f3ca2775a47ad7b5e80cea05ee075e27cb74cf"
-      }
-    ],
     "extensions": [
       {
-        "additional_hours": 6.0,
-        "authorized_at": "2026-10-24T15:15:22.573230+00:00",
+        "additional_hours": 12.0,
+        "authorization_binding_ref": "ai4s/programs/sstdpn/research/sd02-three-arm-v0.1/execution/ENTRYFIX2_AUTHORIZATION_BINDING_20261104.json",
+        "authorization_binding_sha256": "1de270a1f24d45b938deb6bc61c8f72998aa96f8847db997199ae2815f1a8144",
+        "authorization_ref": "ai4s/programs/sstdpn/research/sd02-three-arm-v0.1/ENTRYFIX2_BUDGET_EXTENSION_AUTHORIZATION_20261104.md",
+        "authorization_sha256": "32e488cd96801c21d713888a5f073105188c010bfd44129d18a5e431e1b7d44b",
+        "authorized_at": "2026-11-04T07:16:25.897221+00:00",
         "budget_argument_semantics": "night_budget_hours is the new cumulative campaign total, not an increment",
+        "budget_reset": false,
         "new_max_rounds": 1,
-        "new_night_budget_hours": 12.0,
+        "new_night_budget_hours": 24.0,
         "previous_max_rounds": 1,
-        "previous_night_budget_hours": 6.0,
-        "reason": "User explicitly authorizes necessary closeout-only budget for FRR-R1 repair1b fetch verify intake analysis decision; retain original start all elapsed costs and logs; no new fitting or experiment."
+        "previous_night_budget_hours": 12.0,
+        "reason": "用户批准追加12小时非排队预算，沿用2026-11-03T14:11:15.5971232Z原anchor；累计cap从12h扩至24h，保存两次既往Run失败与排队/执行计时，不重置预算，仅允许entryfix2一次。",
+        "same_campaign_anchor": true
       }
     ],
-    "governance_chain_id": "sstdpn-transaction-v3.2",
+    "governance_chain_id": "sstdpn-transaction-v3.3",
     "invalid_behavior": "fail_closed_without_advancing",
     "positive_signal_behavior": "pause_for_human_review",
-    "preparation_accounting": {
-      "basis": "earliest measured authorization preparation timestamp retained",
-      "included_pre_registration_seconds": 22.970965,
-      "registered_at": "2026-10-24T04:23:37.970965+00:00"
-    },
     "purpose": "user-authorized bounded AI4S campaign",
     "queue_accounting": {
-      "2026-10-24_sstdpn_frr_r01_v0_1-full-w1": {
-        "contract_sha256": "94b16aead293bbb96a83b2f882c10fde2adfb9def73a4ea78f010ed18a0275c2",
-        "queue_seconds": 0.0,
-        "run_id": "2026-10-24_sstdpn_frr_r01_v0_1-full-w1",
-        "transaction_id": "2026-10-24_sstdpn_frr_r01_v0_1-tx"
+      "2026-11-04_sstdpn_sd02_three_arm_v0_1_bootstrapfix1-full-w1": {
+        "contract_sha256": "c404669e4829dfb00007f800f9845aebffc45324b055de23d22ec414f0797a23",
+        "queue_seconds": 9391.208293914795,
+        "run_id": "2026-11-04_sstdpn_sd02_three_arm_v0_1_bootstrapfix1-full-w1",
+        "transaction_id": "2026-11-04_sstdpn_sd02_three_arm_v0_1_bootstrapfix1-tx"
       },
-      "2026-10-24_sstdpn_frr_r01_v0_1_repair1-full-w1": {
-        "contract_sha256": "cc44f3f9092b524f93d68a7e5b162b5d3559e78f8711dbee1975c8d01294e89d",
-        "queue_seconds": 0.0,
-        "run_id": "2026-10-24_sstdpn_frr_r01_v0_1_repair1-full-w1",
-        "transaction_id": "2026-10-24_sstdpn_frr_r01_v0_1_repair1-tx"
-      },
-      "2026-10-24_sstdpn_frr_r01_v0_1_repair1b-full-w1": {
-        "contract_sha256": "264e83d984cdca0de661f07834c12b4159e3f75b2dbd6ece0b991541d8e6784e",
-        "queue_seconds": 60.42439818382263,
-        "run_id": "2026-10-24_sstdpn_frr_r01_v0_1_repair1b-full-w1",
-        "transaction_id": "2026-10-24_sstdpn_frr_r01_v0_1_repair1b-tx"
+      "2026-11-04_sstdpn_sd02_three_arm_v0_1_entryfix2-full-w1": {
+        "contract_sha256": "288e1ead559fa828a5c863eeebaf41580986e1f8bac40b186f8ba8f50e1448f4",
+        "queue_seconds": 0.9891033172607422,
+        "run_id": "2026-11-04_sstdpn_sd02_three_arm_v0_1_entryfix2-full-w1",
+        "transaction_id": "2026-11-04_sstdpn_sd02_three_arm_v0_1_bootstrapfix1-tx"
       }
     },
-    "round_decisions": [
-      {
-        "decision": "NO_SIGNAL",
-        "decision_record": "ai4s/programs/sstdpn/research/frr-r01-v0.1-repair1b_decision.yaml",
-        "evidence_id": "AI4S-SSTDPN-frr-r01-v0.1-repair1b",
-        "recorded_at": "2026-10-24T15:24:21.894440+00:00",
-        "round_id": "frr-r01-v0.1-repair1b"
-      }
-    ],
-    "started_at": "2026-10-24T04:23:15+00:00"
+    "round_decisions": [],
+    "started_at": "2026-11-03T15:46:42.941147+00:00"
   },
   "campaign_history": [
     {
@@ -8048,16 +8265,16 @@
     "technical_epoch_tasks": 4,
     "updated_at": "2026-10-16T18:34:02.164041+00:00"
   },
-  "evidence_status": "verified_complete_frr_fixed_readout_no_signal_no_paper_claim",
+  "evidence_status": "sd02_entryfix2_active_source_technical_failure_three_attempts_no_scientific_claim",
   "external_interruption_recovery": {
-    "failed_run_id": "2026-10-24_sstdpn_frr_r01_v0_1_repair1-full-w1",
+    "failed_run_id": "2026-11-04_sstdpn_sd02_three_arm_v0_1_bootstrapfix1-full-w1",
     "reason_class": "USER_AUTHORIZED_REDEPLOYMENT",
-    "recorded_at": "2026-10-24T07:36:34.601032+00:00",
-    "replacement_round_id": "frr-r01-v0.1-repair1b",
-    "report": "ai4s/programs/sstdpn/research/frr-r01-v0.1-repair1b/execution/REDEPLOYMENT_REPORT.json",
+    "recorded_at": "2026-11-04T07:16:45.269856+00:00",
+    "replacement_round_id": "sd02-three-arm-v0.1-entryfix2",
+    "report": "ai4s/programs/sstdpn/research/sd02-three-arm-v0.1/execution/ENTRYFIX2_ACCEPTANCE_20261104/ROOT_RECOVERY_DRY_REPORT.json",
     "research_gate": {
-      "hypothesis_id": "fixed_representation_source_readout_replaceability",
-      "module_id": "source_union_trace_scaled_ridge_readout",
+      "hypothesis_id": "sstdpn-sd02-kurtosis-beyond-covariance",
+      "module_id": "sstdpn-sd02-three-arm-moment-package",
       "paired_seed_cap": 5,
       "paired_seeds_after_freeze": [
         2,
@@ -8425,6 +8642,198 @@
       "recorded_at": "2026-10-24T07:36:34.599775+00:00",
       "redeployment_report": "ai4s/programs/sstdpn/research/frr-r01-v0.1-repair1b/execution/REDEPLOYMENT_REPORT.json",
       "round_id": "frr-r01-v0.1-repair1"
+    },
+    {
+      "attempt_class": "user_authorized_sd02_bootstrap_repair_registered_unuploaded",
+      "engineering_reason": "User-authorized single SD-02 bootstrap dependency repair after verified zero-attempt failure; preserve original Run and 12h anchor; no scientific intake.",
+      "failed_run": {
+        "bundle_id": "2026-11-03_sstdpn_sd02_three_arm_v0_1-bundle",
+        "dispatch_status": "PENDING_UPLOAD",
+        "estimated_training_hours": 8.0,
+        "execution_mode": "user_managed",
+        "executor_id": "lab10",
+        "planned_units": 31,
+        "recorded_at": "2026-11-03T15:52:36.944271+00:00",
+        "round_id": "sd02-three-arm-v0.1",
+        "run_prefix": "2026-11-03_sstdpn_sd02_three_arm_v0_1",
+        "transaction_operations": [
+          {
+            "operation": "upload",
+            "recorded_at": "2026-11-03T15:53:27.632219+00:00",
+            "result": {
+              "action": "UPLOADED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-03_sstdpn_sd02_three_arm_v0_1-full-w1"
+            }
+          },
+          {
+            "operation": "launch",
+            "recorded_at": "2026-11-03T15:53:30.315763+00:00",
+            "result": {
+              "action": "SUBMISSION_SENT_NOT_VERIFIED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-03_sstdpn_sd02_three_arm_v0_1-full-w1"
+            }
+          }
+        ]
+      },
+      "failed_run_id": "2026-11-03_sstdpn_sd02_three_arm_v0_1-full-w1",
+      "partial_artifacts_eligible": false,
+      "recorded_at": "2026-11-03T16:36:04.379433+00:00",
+      "redeployment_report": "ai4s/programs/sstdpn/research/sd02-three-arm-v0.1/execution/BOOTSTRAP_REPAIR_REPORT_20261104.json",
+      "remote_quiescence_probe": "ai4s/programs/sstdpn/research/sd02-three-arm-v0.1/execution/REMOTE_QUIESCENCE_PROBE_20261104.json",
+      "remote_quiescence_probe_sha256": "b34c4394fa8506e49288c1d0d2940613c53a23b07c3d6f285158499f4b72b197",
+      "round_id": "sd02-three-arm-v0.1",
+      "scientific_fits": 0,
+      "scientific_intake": false,
+      "source_failure_record": "ai4s/programs/sstdpn/research/sd02-three-arm-v0.1/execution/BOOTSTRAP_FAILURE_RECORD_20261103.json",
+      "source_failure_record_sha256": "6b2157b89a5c3cc7861ea495ae7fe328909c3f4ae07c486ec679d9eb031c6851",
+      "task_attempts": 0,
+      "transaction_initialized": false,
+      "user_authorization": "ai4s/programs/sstdpn/research/sd02-three-arm-v0.1/BOOTSTRAP_REPAIR_AUTHORIZATION_20261104.md",
+      "user_authorization_sha256": "91e0de33443f0d7576cac4e238619ba3dcadf798325acfa981fb46471c0f6020"
+    },
+    {
+      "attempt_class": "user_authorized_sd02_entryfix2_failed_technical_repair",
+      "authorization_binding": "ai4s/programs/sstdpn/research/sd02-three-arm-v0.1/execution/ENTRYFIX2_AUTHORIZATION_BINDING_20261104.json",
+      "authorization_binding_sha256": "1de270a1f24d45b938deb6bc61c8f72998aa96f8847db997199ae2815f1a8144",
+      "engineering_reason": "用户批准的单次entryfix2独立修复。父bootstrapfix1已完成身份核验，三项技术任务均失败（3次已实际attempt），无科学fit；保留原Run、计时及全部失败证据，不计作科学INVALID或NO_SIGNAL。",
+      "evidence_status": "source_bootstrapfix1_failed_before_training_no_scientific_intake_or_claim",
+      "failed_run": {
+        "automatic_retries": 0,
+        "bootstrap_repair_of": "2026-11-03_sstdpn_sd02_three_arm_v0_1-full-w1",
+        "bundle_id": "2026-11-04_sstdpn_sd02_three_arm_v0_1_bootstrapfix1-bundle",
+        "dispatch_status": "REMOTE_ACCEPTED",
+        "estimated_training_hours": 8.0,
+        "execution_mode": "user_managed",
+        "executor_id": "lab10",
+        "planned_units": 31,
+        "recorded_at": "2026-11-03T16:36:04.383430+00:00",
+        "repair_authorization": "ai4s/programs/sstdpn/research/sd02-three-arm-v0.1/BOOTSTRAP_REPAIR_AUTHORIZATION_20261104.md",
+        "repair_authorization_sha256": "91e0de33443f0d7576cac4e238619ba3dcadf798325acfa981fb46471c0f6020",
+        "replacement_reason_class": "USER_AUTHORIZED_REDEPLOYMENT",
+        "replaces_interrupted_run": "2026-11-03_sstdpn_sd02_three_arm_v0_1-full-w1",
+        "round_id": "sd02-three-arm-v0.1-bootstrapfix1",
+        "run_prefix": "2026-11-04_sstdpn_sd02_three_arm_v0_1_bootstrapfix1",
+        "source_scientific_fits": 0,
+        "source_task_attempts": 0,
+        "transaction_operations": [
+          {
+            "operation": "upload",
+            "recorded_at": "2026-11-03T16:36:29.589005+00:00",
+            "result": {
+              "action": "UPLOADED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-04_sstdpn_sd02_three_arm_v0_1_bootstrapfix1-full-w1"
+            }
+          },
+          {
+            "operation": "launch",
+            "recorded_at": "2026-11-03T16:36:31.550868+00:00",
+            "result": {
+              "action": "SUBMISSION_SENT_NOT_VERIFIED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-04_sstdpn_sd02_three_arm_v0_1_bootstrapfix1-full-w1"
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-03T16:36:39.252763+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "identity",
+              "run_id": "2026-11-04_sstdpn_sd02_three_arm_v0_1_bootstrapfix1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "c404669e4829dfb00007f800f9845aebffc45324b055de23d22ec414f0797a23",
+                "execution_seconds": 6.241299629211426,
+                "queue_seconds": 0.0,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-04_sstdpn_sd02_three_arm_v0_1_bootstrapfix1-full-w1",
+                "transaction_id": "2026-11-04_sstdpn_sd02_three_arm_v0_1_bootstrapfix1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 6.241299629211426
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-03T16:36:59.558112+00:00",
+            "result": {
+              "action": "WAIT_FOR_RESOURCES",
+              "node_id": "technical",
+              "run_id": "2026-11-04_sstdpn_sd02_three_arm_v0_1_bootstrapfix1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "c404669e4829dfb00007f800f9845aebffc45324b055de23d22ec414f0797a23",
+                "execution_seconds": 8.71942949295044,
+                "queue_seconds": 17.821510553359985,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-04_sstdpn_sd02_three_arm_v0_1_bootstrapfix1-full-w1",
+                "transaction_id": "2026-11-04_sstdpn_sd02_three_arm_v0_1_bootstrapfix1-tx",
+                "waiting_for_resources": true,
+                "wall_seconds": 26.540940046310425
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-04T05:48:58.268918+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "technical",
+              "run_id": "2026-11-04_sstdpn_sd02_three_arm_v0_1_bootstrapfix1-full-w1",
+              "status": "FAILED",
+              "timing": {
+                "contract_sha256": "c404669e4829dfb00007f800f9845aebffc45324b055de23d22ec414f0797a23",
+                "execution_seconds": 51.446179151535034,
+                "queue_seconds": 9391.208293914795,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-04_sstdpn_sd02_three_arm_v0_1_bootstrapfix1-full-w1",
+                "transaction_id": "2026-11-04_sstdpn_sd02_three_arm_v0_1_bootstrapfix1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 9442.65447306633
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-04T05:51:18.508137+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "technical",
+              "run_id": "2026-11-04_sstdpn_sd02_three_arm_v0_1_bootstrapfix1-full-w1",
+              "status": "FAILED",
+              "timing": {
+                "contract_sha256": "c404669e4829dfb00007f800f9845aebffc45324b055de23d22ec414f0797a23",
+                "execution_seconds": 51.446179151535034,
+                "queue_seconds": 9391.208293914795,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-04_sstdpn_sd02_three_arm_v0_1_bootstrapfix1-full-w1",
+                "transaction_id": "2026-11-04_sstdpn_sd02_three_arm_v0_1_bootstrapfix1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 9442.65447306633
+              }
+            }
+          }
+        ]
+      },
+      "failed_run_id": "2026-11-04_sstdpn_sd02_three_arm_v0_1_bootstrapfix1-full-w1",
+      "identity_status": "PASS",
+      "parent_transaction_execution_seconds": 51.446179151535034,
+      "parent_transaction_queue_seconds": 9391.208293914795,
+      "parent_transaction_status_sha256": "00f1135a88fcd7c3b7ec1050cb50460b693a9f6047f3137148bf886a202db45a",
+      "partial_artifacts_eligible": false,
+      "recorded_at": "2026-11-04T07:16:45.268856+00:00",
+      "redeployment_report": "ai4s/programs/sstdpn/research/sd02-three-arm-v0.1/execution/ENTRYFIX2_ACCEPTANCE_20261104/ROOT_RECOVERY_DRY_REPORT.json",
+      "round_id": "sd02-three-arm-v0.1-bootstrapfix1",
+      "scientific_fits": 0,
+      "scientific_intake": false,
+      "task_attempts": 3,
+      "technical_status": "FAILED",
+      "transaction_initialized": true,
+      "user_authorization": "ai4s/programs/sstdpn/research/sd02-three-arm-v0.1/ENTRYFIX2_BUDGET_EXTENSION_AUTHORIZATION_20261104.md",
+      "user_authorization_sha256": "32e488cd96801c21d713888a5f073105188c010bfd44129d18a5e431e1b7d44b"
     }
   ],
   "failed_runs": [
@@ -9191,7 +9600,7 @@
       "user_instruction": "那就暂停 SST-DPN program，整理已有研究的主要结论、负结果边界和未来重启条件，保留全部实验资产。"
     }
   },
-  "paused": true,
+  "paused": false,
   "pending_continuation": null,
   "prelaunch_package_rejections": [
     {
@@ -9752,14 +10161,16 @@
     }
   ],
   "run_control": {
+    "accounting_anchor_basis": "SD-02 frozen contract budget_gate; preparation included; no reset",
     "continuation_policy_version": "evidence_to_design_v1",
     "continue_after_positive": false,
     "max_rounds": 1,
-    "monitor": "blocking",
-    "night_budget_hours": 12.0,
+    "monitor": "heartbeat",
+    "night_budget_hours": 24.0,
+    "preparation_included": true,
     "queue_time_policy": "exclude_resource_wait",
-    "round_index": 1,
-    "started_at": "2026-10-24T04:23:15+00:00"
+    "round_index": 0,
+    "started_at": "2026-11-03T14:11:15.597123+00:00"
   },
   "schema_version": "mieeg-ai4s-state-v1",
   "source_metadata": {
@@ -9920,8 +10331,8 @@
       "technical_status": "PASS"
     }
   ],
-  "status": "PAUSED_FOR_HUMAN",
-  "updated_at": "2026-10-24T16:28:38.028731+00:00",
+  "status": "WAITING_REMOTE",
+  "updated_at": "2026-11-04T07:26:00.418101+00:00",
   "v3_follow_up": {
     "decision_record": "ai4s/programs/sstdpn/research/frr-r01-v0.1-repair1b_decision.yaml",
     "evidence_id": "AI4S-SSTDPN-frr-r01-v0.1-repair1b",

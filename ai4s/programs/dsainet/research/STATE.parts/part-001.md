@@ -2,7 +2,7 @@
 
 完整脱敏文件：`ai4s/programs/dsainet/research/STATE.yaml`（[原文件](../STATE.yaml)）。
 
-完整公开文件 SHA-256：`1f0d9357fbcff9406eb24e153a516868f12970335d8e748c39b3ff11220c1289`。UTF-8 字节范围：[0, 500000) / 952349。
+完整公开文件 SHA-256：`912a816cbf491ba29dfefb73e6e79385d28003265849e1431d582002d1516910`。UTF-8 字节范围：[0, 500000) / 982731。
 
 这是连续文本片段，可能从 JSON 字段中间开始；按分段顺序拼接代码块可恢复完整脱敏正文。不是单独有效的 State，也不授予执行权限。
 
@@ -11,93 +11,53 @@
   "active_local_experiment": null,
   "active_operation": null,
   "active_research": "ds07-r1",
-  "active_round": "ds07-r1-science1-readerfix1",
+  "active_round": "ds07-r1-science1-devicefix1",
   "active_run": {
-    "bundle_id": "2026-11-02_dsainet_ds07_r1_science1-readerfix1",
+    "bundle_id": "2026-11-04_dsainet_ds07_r1_science1-devicefix1",
     "dispatch_status": "REMOTE_ACCEPTED",
-    "estimated_training_hours": 39.0,
+    "estimated_training_hours": 47.0,
     "execution_mode": "user_managed",
     "executor_id": "lab10",
     "planned_units": 2,
-    "recorded_at": "2026-11-02T13:45:45.558543+00:00",
-    "round_id": "ds07-r1-science1-readerfix1",
-    "run_prefix": "2026-11-02_dsainet_ds07_r1_science1-readerfix1",
+    "recorded_at": "2026-11-04T06:26:56.603601+00:00",
+    "round_id": "ds07-r1-science1-devicefix1",
+    "run_prefix": "2026-11-04_dsainet_ds07_r1_science1-devicefix1",
     "transaction_operations": [
       {
         "operation": "upload",
-        "recorded_at": "2026-11-02T13:47:08.648857+00:00",
+        "recorded_at": "2026-11-04T06:35:37.164147+00:00",
         "result": {
           "action": "UPLOADED",
           "monitor_powershell": "[REDACTED_MACHINE]",
-          "run_id": "2026-11-02_dsainet_ds07_r1_science1-readerfix1-full-w1"
+          "run_id": "2026-11-04_dsainet_ds07_r1_science1-devicefix1-full-w1"
         }
       },
       {
         "operation": "launch",
-        "recorded_at": "2026-11-02T13:48:29.044661+00:00",
+        "recorded_at": "2026-11-04T06:38:02.203078+00:00",
         "result": {
           "action": "SUBMISSION_SENT_NOT_VERIFIED",
           "monitor_powershell": "[REDACTED_MACHINE]",
-          "run_id": "2026-11-02_dsainet_ds07_r1_science1-readerfix1-full-w1"
+          "run_id": "2026-11-04_dsainet_ds07_r1_science1-devicefix1-full-w1"
         }
       },
       {
         "operation": "probe",
-        "recorded_at": "2026-11-02T13:48:45.189302+00:00",
-        "result": {
-          "action": "WAIT_FOR_RESOURCES",
-          "node_id": "technical_reuse",
-          "run_id": "2026-11-02_dsainet_ds07_r1_science1-readerfix1-full-w1",
-          "status": "RUNNING",
-          "timing": {
-            "contract_sha256": "d82104284d7dadd6a47831998c32727a97bca76aff0236c224fd56bfad02f243",
-            "execution_seconds": 4.447636604309082,
-            "queue_seconds": 9.206525564193726,
-            "queue_time_policy": "exclude_resource_wait",
-            "run_id": "2026-11-02_dsainet_ds07_r1_science1-readerfix1-full-w1",
-            "transaction_id": "dsainet-ds07-r1-science1-readerfix1",
-            "waiting_for_resources": true,
-            "wall_seconds": 13.654162168502808
-          }
-        }
-      },
-      {
-        "operation": "probe",
-        "recorded_at": "2026-11-02T13:51:27.710314+00:00",
-        "result": {
-          "action": "WAIT_FOR_RESOURCES",
-          "node_id": "technical_reuse",
-          "run_id": "2026-11-02_dsainet_ds07_r1_science1-readerfix1-full-w1",
-          "status": "RUNNING",
-          "timing": {
-            "contract_sha256": "d82104284d7dadd6a47831998c32727a97bca76aff0236c224fd56bfad02f243",
-            "execution_seconds": 4.974616765975952,
-            "queue_seconds": 171.19521069526672,
-            "queue_time_policy": "exclude_resource_wait",
-            "run_id": "2026-11-02_dsainet_ds07_r1_science1-readerfix1-full-w1",
-            "transaction_id": "dsainet-ds07-r1-science1-readerfix1",
-            "waiting_for_resources": true,
-            "wall_seconds": 176.16982746124268
-          }
-        }
-      },
-      {
-        "operation": "probe",
-        "recorded_at": "2026-11-02T15:46:48.540867+00:00",
+        "recorded_at": "2026-11-04T06:38:47.163479+00:00",
         "result": {
           "action": "RECONCILE_SAME_NODE",
-          "node_id": "technical_reuse",
-          "run_id": "2026-11-02_dsainet_ds07_r1_science1-readerfix1-full-w1",
-          "status": "FAILED",
+          "node_id": "science",
+          "run_id": "2026-11-04_dsainet_ds07_r1_science1-devicefix1-full-w1",
+          "status": "RUNNING",
           "timing": {
-            "contract_sha256": "d82104284d7dadd6a47831998c32727a97bca76aff0236c224fd56bfad02f243",
-            "execution_seconds": 200.95534825325012,
-            "queue_seconds": 5744.736851215363,
+            "contract_sha256": "b9824b039bc8dcaaaa907ac8a1c7cdfd0d03b90cbb7a73cc82438edce1c748ef",
+            "execution_seconds": 42.21297478675842,
+            "queue_seconds": 0.8287975788116455,
             "queue_time_policy": "exclude_resource_wait",
-            "run_id": "2026-11-02_dsainet_ds07_r1_science1-readerfix1-full-w1",
-            "transaction_id": "dsainet-ds07-r1-science1-readerfix1",
+            "run_id": "2026-11-04_dsainet_ds07_r1_science1-devicefix1-full-w1",
+            "transaction_id": "dsainet-ds07-r1-science1-devicefix1",
             "waiting_for_resources": false,
-            "wall_seconds": 5945.692199468613
+            "wall_seconds": 43.04177236557007
           }
         }
       }
@@ -2177,6 +2137,57 @@
       "technical_ceiling_hours": 2,
       "total": 266,
       "transaction_ceiling_hours": 39
+    },
+    {
+      "additional": 10,
+      "authorization": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/telemetryfix1/EXPLICIT_TARGET_REPLY.json",
+      "authorization_sha256": "e5613e9df8044c3e259a58c32955ba30f8075cdf7eb70e170e7ac6f2a2868242",
+      "closeout_hours": 4,
+      "original_start_preserved": "2026-10-23T13:28:00+00:00",
+      "previous_total": 266,
+      "record_id": "DS07-R1-SCIENCE1-TELEMETRYFIX1-276H",
+      "recorded_at": "2026-11-02T16:43:58.805000+00:00",
+      "request_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/telemetryfix1/BUDGET_TRANSPORT_REQUEST.json",
+      "request_sha256": "af57fa49bd338444d9a7e8f569e6f69018050e0da50b72cb0424849f33c07495",
+      "research_id": "ds07-r1",
+      "science_ceiling_hours": 41,
+      "technical_ceiling_hours": 2,
+      "total": 276,
+      "transaction_ceiling_hours": 47
+    },
+    {
+      "additional": 20,
+      "authorization": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/summaryfix1/EXPLICIT_TARGET_REPLY.json",
+      "authorization_sha256": "600cc78238ff5e94a4c35bcd6b1109f5966cc17e8554f5f79f88039d21c838ed",
+      "closeout_hours": 4,
+      "original_start_preserved": "2026-10-23T13:28:00+00:00",
+      "previous_total": 276,
+      "record_id": "DS07-R1-SCIENCE1-SUMMARYFIX1-296H",
+      "recorded_at": "2026-11-03T14:08:00.226000+00:00",
+      "request_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/summaryfix1/BUDGET_TRANSPORT_REQUEST.json",
+      "request_sha256": "fcbd58420dbd3b8c25ac9a4baa0ee6a4d8e1e6321db9dbde8d4009e2afa3fa66",
+      "research_id": "ds07-r1",
+      "science_ceiling_hours": 41,
+      "technical_ceiling_hours": 2,
+      "total": 296,
+      "transaction_ceiling_hours": 47
+    },
+    {
+      "additional": 16,
+      "authorization": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/devicefix1/EXPLICIT_TARGET_REPLY.json",
+      "authorization_sha256": "181ee8c457ce45998cc06f3dabcad7c126a5ffeabde56d69974c5b7c64f25913",
+      "closeout_hours": 4,
+      "original_start_preserved": "2026-10-23T13:28:00+00:00",
+      "previous_total": 296,
+      "record_id": "DS07-R1-SCIENCE1-DEVICEFIX1-312H",
+      "recorded_at": "2026-11-04T06:23:37.244000+00:00",
+      "request_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/devicefix1/BUDGET_TRANSPORT_REQUEST.json",
+      "request_sha256": "ce60ed7690718d2e675ef816570963d60acce2ef2f76e15569d09119121236f2",
+      "research_id": "ds07-r1",
+      "science_ceiling_hours": 41,
+      "technical_ceiling_hours": 2,
+      "total": 312,
+      "transaction_ceiling_hours": 47
     }
   ],
   "budget_extension_pending": {
@@ -2198,9 +2209,9 @@
   },
   "campaign": {
     "activation_contract_sha256": "39305fc39830c027f59b70f430ca261c95c2a6528c327a0a45515216d324e059",
-    "authorization_reason": "DS07-R1-SCIENCE1-266H-20261102",
+    "authorization_reason": "DS07-R1-SCIENCE1-DEVICEFIX1-312H",
     "budget_origin": "2026-10-23T13:28:00+00:00",
-    "budget_origin_total_hours": 266,
+    "budget_origin_total_hours": 312,
     "budget_policy": {
       "exclude_verified_stopped_seconds": true
     },
@@ -2218,8 +2229,8 @@
       "allowed_transitions": [
         "ENGINEERING_REPAIR"
       ],
-      "authorization_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/proofs/USER_APPROVAL266.json",
-      "authorization_sha256": "3da978a48b669541ea6fb4e831c1e90db762bc3a018a3303fb4887fff0589c69",
+      "authorization_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/devicefix1/EXPLICIT_TARGET_REPLY.json",
+      "authorization_sha256": "181ee8c457ce45998cc06f3dabcad7c126a5ffeabde56d69974c5b7c64f25913",
       "campaign_id": "dsainet-ds07-r1",
       "executor_id": "lab10",
       "readerfix1_transport_authorization_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/readerfix1/EXPLICIT_TARGET_REPLY.json",
@@ -2234,7 +2245,11 @@
         ],
         "data_scope_id": "dsainet.ds07-r1-cue4-source6-select1-audit1-exposed-development",
         "question_id": "dsainet.ds07-r1.ce100-four-arm-comparison"
-      }
+      },
+      "summaryfix1_reply_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/summaryfix1/EXPLICIT_TARGET_REPLY.json",
+      "summaryfix1_reply_sha256": "600cc78238ff5e94a4c35bcd6b1109f5966cc17e8554f5f79f88039d21c838ed",
+      "telemetryfix1_transport_reply_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/telemetryfix1/EXPLICIT_TARGET_REPLY.json",
+      "telemetryfix1_transport_reply_sha256": "e5613e9df8044c3e259a58c32955ba30f8075cdf7eb70e170e7ac6f2a2868242"
     },
     "governance_chain_id": "dsainet-transaction-v3.3",
     "invalid_behavior": "fail_closed_without_advancing",
@@ -2251,9 +2266,33 @@
       },
       "2026-11-02_dsainet_ds07_r1_science1-readerfix1-full-w1": {
         "contract_sha256": "d82104284d7dadd6a47831998c32727a97bca76aff0236c224fd56bfad02f243",
+        "proof_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/telemetryfix1/FAILURE_PROOF.json",
+        "proof_sha256": "09c3bfa6b5498a16f01a7e306015e318c8e5af403f9937d9c5bd5d27a73c195c",
         "queue_seconds": 5744.736851215363,
         "run_id": "2026-11-02_dsainet_ds07_r1_science1-readerfix1-full-w1",
         "transaction_id": "dsainet-ds07-r1-science1-readerfix1"
+      },
+      "2026-11-03_dsainet_ds07_r1_science1-summaryfix1-full-w1": {
+        "contract_sha256": "e72dd5f020f21d4b52fb749265c08a3759befee5507f392ccf5b7355e019b59e",
+        "proof_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/devicefix1/FAILURE_PROOF.json",
+        "proof_sha256": "3b73f29709b6e739e0306dd39a3ab2a93eae20f2a60f5228e747e0572fd7af2f",
+        "queue_seconds": 1498.042162656784,
+        "run_id": "2026-11-03_dsainet_ds07_r1_science1-summaryfix1-full-w1",
+        "transaction_id": "dsainet-ds07-r1-science1-summaryfix1"
+      },
+      "2026-11-03_dsainet_ds07_r1_science1-telemetryfix1-full-w1": {
+        "contract_sha256": "ee394e5bc6ddf2b0bf5603fd8dc10419e5b88e2e36f9c032db8df5e8d77afb68",
+        "proof_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/summaryfix1/FAILURE_PROOF.json",
+        "proof_sha256": "ddc071fdf3a34d914d644d1e72b403f01388fee0002883b0e41a3d9bb3270893",
+        "queue_seconds": 1763.9529342651367,
+        "run_id": "2026-11-03_dsainet_ds07_r1_science1-telemetryfix1-full-w1",
+        "transaction_id": "dsainet-ds07-r1-science1-telemetryfix1"
+      },
+      "2026-11-04_dsainet_ds07_r1_science1-devicefix1-full-w1": {
+        "contract_sha256": "b9824b039bc8dcaaaa907ac8a1c7cdfd0d03b90cbb7a73cc82438edce1c748ef",
+        "queue_seconds": 0.8287975788116455,
+        "run_id": "2026-11-04_dsainet_ds07_r1_science1-devicefix1-full-w1",
+        "transaction_id": "dsainet-ds07-r1-science1-devicefix1"
       },
       "historical-resource-credit-1": {
         "proof_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/proofs/AUTHORIZATION212.json",
@@ -2296,6 +2335,27 @@
         "evidence_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/readerfix1/TRANSPORT_REQUEST.json",
         "source_run_id": "2026-11-02_dsainet_ds07_r1_science1-full-w1",
         "start": "2026-11-02T13:22:18.396823+00:00"
+      },
+      {
+        "authorization_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/telemetryfix1/EXPLICIT_TARGET_REPLY.json",
+        "end": "2026-11-02T16:43:58.805000+00:00",
+        "evidence_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/telemetryfix1/BUDGET_TRANSPORT_REQUEST.json",
+        "source_run_id": "2026-11-02_dsainet_ds07_r1_science1-readerfix1-full-w1",
+        "start": "2026-11-02T16:43:41.167980+00:00"
+      },
+      {
+        "authorization_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/summaryfix1/EXPLICIT_TARGET_REPLY.json",
+        "end": "2026-11-03T14:08:00.226000+00:00",
+        "evidence_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/summaryfix1/BUDGET_TRANSPORT_REQUEST.json",
+        "source_run_id": "2026-11-03_dsainet_ds07_r1_science1-telemetryfix1-full-w1",
+        "start": "2026-11-03T14:00:45.114436+00:00"
+      },
+      {
+        "authorization_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/devicefix1/EXPLICIT_TARGET_REPLY.json",
+        "end": "2026-11-04T06:23:37.244000+00:00",
+        "evidence_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/devicefix1/BUDGET_TRANSPORT_REQUEST.json",
+        "source_run_id": "2026-11-03_dsainet_ds07_r1_science1-summaryfix1-full-w1",
+        "start": "2026-11-04T06:08:53.613403+00:00"
       }
     ]
   },
@@ -9311,6 +9371,26 @@
     ],
     "whole_claim_requires_both": true
   },
+  "devicefix1_recovery": {
+    "budget_authority_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/devicefix1/BUDGET_AUTHORITY.json",
+    "budget_authority_sha256": "0d5cd9313870c766edfc238d571b1147ff8cebe6d830ff677104a0c31a1cf7f5",
+    "campaign_id": "dsainet-ds07-r1",
+    "failure_proof_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/devicefix1/FAILURE_PROOF.json",
+    "failure_proof_sha256": "3b73f29709b6e739e0306dd39a3ab2a93eae20f2a60f5228e747e0572fd7af2f",
+    "local_replay_receipt_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/devicefix1/LOCAL_REPLAY_RECEIPT.json",
+    "local_replay_receipt_sha256": "5d3399bea2811185d5071a37f1ffba4c49a188c8b4aab1fa88df34b137420a7c",
+    "previous_total_hours": 296,
+    "recovered_at": "2026-11-04T06:25:28.927092+00:00",
+    "replacement_round_id": "ds07-r1-science1-devicefix1",
+    "reuse_contract_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/summaryfix1/REUSE_CONTRACT.json",
+    "reuse_contract_sha256": "80030c85e3f00bbdb57d50c7076cbcc65d70a4e93ca74bd45efaccf4733dba77",
+    "science_ceiling_hours": 41,
+    "source_run_id": "2026-11-03_dsainet_ds07_r1_science1-summaryfix1-full-w1",
+    "status": "READY_NOT_REGISTERED",
+    "technical_ceiling_hours": 2,
+    "total_hours": 312,
+    "transaction_ceiling_hours": 47
+  },
   "direction_control": {
     "attention_scale": {
       "date": "2026-09-17",
@@ -9579,6 +9659,36 @@
       "replacement_round_id": "ds07-r1-science1-readerfix1",
       "scientific_disposition": "NONE",
       "source_run_id": "2026-11-02_dsainet_ds07_r1_science1-full-w1",
+      "status": "ENGINEERING_INVALID_SOURCE_ARCHIVED"
+    },
+    {
+      "contract_sha256": "ee394e5bc6ddf2b0bf5603fd8dc10419e5b88e2e36f9c032db8df5e8d77afb68",
+      "failure_proof_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/telemetryfix1/FAILURE_PROOF.json",
+      "failure_proof_sha256": "09c3bfa6b5498a16f01a7e306015e318c8e5af403f9937d9c5bd5d27a73c195c",
+      "repair_id": "telemetryfix1",
+      "replacement_round_id": "ds07-r1-science1-telemetryfix1",
+      "scientific_disposition": "NONE",
+      "source_run_id": "2026-11-02_dsainet_ds07_r1_science1-readerfix1-full-w1",
+      "status": "ENGINEERING_INVALID_SOURCE_ARCHIVED"
+    },
+    {
+      "contract_sha256": "e72dd5f020f21d4b52fb749265c08a3759befee5507f392ccf5b7355e019b59e",
+      "failure_proof_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/summaryfix1/FAILURE_PROOF.json",
+      "failure_proof_sha256": "ddc071fdf3a34d914d644d1e72b403f01388fee0002883b0e41a3d9bb3270893",
+      "repair_id": "summaryfix1",
+      "replacement_round_id": "ds07-r1-science1-summaryfix1",
+      "scientific_disposition": "NONE",
+      "source_run_id": "2026-11-03_dsainet_ds07_r1_science1-telemetryfix1-full-w1",
+      "status": "ENGINEERING_INVALID_SOURCE_ARCHIVED"
+    },
+    {
+      "contract_sha256": "b9824b039bc8dcaaaa907ac8a1c7cdfd0d03b90cbb7a73cc82438edce1c748ef",
+      "failure_proof_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/devicefix1/FAILURE_PROOF.json",
+      "failure_proof_sha256": "3b73f29709b6e739e0306dd39a3ab2a93eae20f2a60f5228e747e0572fd7af2f",
+      "repair_id": "devicefix1",
+      "replacement_round_id": "ds07-r1-science1-devicefix1",
+      "scientific_disposition": "NONE",
+      "source_run_id": "2026-11-03_dsainet_ds07_r1_science1-summaryfix1-full-w1",
       "status": "ENGINEERING_INVALID_SOURCE_ARCHIVED"
     }
   ],
@@ -11464,184 +11574,5 @@
         "P0_s0_t0__SELF__real",
         "P0_s0_t0__SELF__within_subject_permuted",
         "P0_s0_t1__CROSS__real",
-        "P0_s0_t1__CROSS__within_subject_permuted",
-        "P0_s0_t1__DIRECT__real",
-        "P0_s0_t1__DIRECT__within_subject_permuted",
-        "P0_s0_t1__SELF__real",
-        "P0_s0_t1__SELF__within_subject_permuted",
-        "P0_s0_t2__CROSS__real",
-        "P0_s0_t2__CROSS__within_subject_permuted",
-        "P0_s0_t2__DIRECT__real",
-        "P0_s0_t2__DIRECT__within_subject_permuted",
-        "P0_s0_t2__SELF__real",
-        "P0_s0_t2__SELF__within_subject_permuted",
-        "P0_s0_t3__CROSS__real",
-        "P0_s0_t3__CROSS__within_subject_permuted",
-        "P0_s0_t3__DIRECT__real",
-        "P0_s0_t3__DIRECT__within_subject_permuted",
-        "P0_s0_t3__SELF__real",
-        "P0_s0_t3__SELF__within_subject_permuted",
-        "P0_s0_t4__CROSS__real",
-        "P0_s0_t4__CROSS__within_subject_permuted",
-        "P0_s0_t4__DIRECT__real",
-        "P0_s0_t4__DIRECT__within_subject_permuted",
-        "P0_s0_t4__SELF__real",
-        "P0_s0_t4__SELF__within_subject_permuted",
-        "P0_s0_t5__CROSS__real",
-        "P0_s0_t5__CROSS__within_subject_permuted",
-        "P0_s0_t5__SELF__real",
-        "P0_s0_t5__SELF__within_subject_permuted",
-        "P0_s0_t6__CROSS__real",
-        "P0_s0_t6__CROSS__within_subject_permuted",
-        "P0_s0_t6__SELF__real",
-        "P0_s0_t6__SELF__within_subject_permuted",
-        "P0_s0_t7__CROSS__real",
-        "P0_s0_t7__CROSS__within_subject_permuted",
-        "P0_s0_t7__SELF__real",
-        "P0_s0_t7__SELF__within_subject_permuted",
-        "P0_s0_t8__CROSS__real",
-        "P0_s0_t8__CROSS__within_subject_permuted",
-        "P0_s0_t8__SELF__real",
-        "P0_s0_t8__SELF__within_subject_permuted",
-        "P0_s1_t0__CROSS__real",
-        "P0_s1_t0__CROSS__within_subject_permuted",
-        "P0_s1_t0__SELF__real",
-        "P0_s1_t0__SELF__within_subject_permuted",
-        "P0_s1_t1__CROSS__real",
-        "P0_s1_t1__CROSS__within_subject_permuted",
-        "P0_s1_t1__SELF__real",
-        "P0_s1_t1__SELF__within_subject_permuted",
-        "P0_s1_t2__CROSS__real",
-        "P0_s1_t2__CROSS__within_subject_permuted",
-        "P0_s1_t2__SELF__real",
-        "P0_s1_t2__SELF__within_subject_permuted",
-        "P0_s1_t3__CROSS__real",
-        "P0_s1_t3__CROSS__within_subject_permuted",
-        "P0_s1_t3__SELF__real",
-        "P0_s1_t3__SELF__within_subject_permuted",
-        "P0_s1_t4__CROSS__real",
-        "P0_s1_t4__CROSS__within_subject_permuted",
-        "P0_s1_t4__SELF__real",
-        "P0_s1_t4__SELF__within_subject_permuted",
-        "P0_s1_t5__CROSS__real",
-        "P0_s1_t5__CROSS__within_subject_permuted",
-        "P0_s1_t5__SELF__real",
-        "P0_s1_t5__SELF__within_subject_permuted",
-        "P0_s1_t6__CROSS__real",
-        "P0_s1_t6__CROSS__within_subject_permuted",
-        "P0_s1_t6__DIRECT__within_subject_permuted",
-        "P0_s1_t6__SELF__real",
-        "P0_s1_t6__SELF__within_subject_permuted",
-        "P0_s1_t7__CROSS__real",
-        "P0_s1_t7__CROSS__within_subject_permuted",
-        "P0_s1_t7__SELF__real",
-        "P0_s1_t7__SELF__within_subject_permuted",
-        "P0_s1_t8__CROSS__real",
-        "P0_s1_t8__CROSS__within_subject_permuted",
-        "P0_s1_t8__SELF__real",
-        "P0_s1_t8__SELF__within_subject_permuted",
-        "S0_s0_t0__CROSS__real",
-        "S0_s0_t0__CROSS__within_subject_permuted",
-        "S0_s0_t0__DIRECT__real",
-        "S0_s0_t0__DIRECT__within_subject_permuted",
-        "S0_s0_t0__SELF__real",
-        "S0_s0_t0__SELF__within_subject_permuted",
-        "S0_s0_t1__CROSS__real",
-        "S0_s0_t1__CROSS__within_subject_permuted",
-        "S0_s0_t1__DIRECT__real",
-        "S0_s0_t1__DIRECT__within_subject_permuted",
-        "S0_s0_t1__SELF__real",
-        "S0_s0_t1__SELF__within_subject_permuted",
-        "S0_s0_t2__CROSS__real",
-        "S0_s0_t2__CROSS__within_subject_permuted",
-        "S0_s0_t2__DIRECT__real",
-        "S0_s0_t2__DIRECT__within_subject_permuted",
-        "S0_s0_t2__SELF__real",
-        "S0_s0_t2__SELF__within_subject_permuted",
-        "S0_s0_t3__CROSS__real",
-        "S0_s0_t3__CROSS__within_subject_permuted",
-        "S0_s0_t3__DIRECT__real",
-        "S0_s0_t3__DIRECT__within_subject_permuted",
-        "S0_s0_t3__SELF__real",
-        "S0_s0_t3__SELF__within_subject_permuted",
-        "S0_s0_t4__CROSS__real",
-        "S0_s0_t4__CROSS__within_subject_permuted",
-        "S0_s0_t4__DIRECT__real",
-        "S0_s0_t4__DIRECT__within_subject_permuted",
-        "S0_s0_t4__SELF__real",
-        "S0_s0_t4__SELF__within_subject_permuted",
-        "S0_s0_t5__CROSS__real",
-        "S0_s0_t5__CROSS__within_subject_permuted",
-        "S0_s0_t5__DIRECT__real",
-        "S0_s0_t5__DIRECT__within_subject_permuted",
-        "S0_s0_t5__SELF__real",
-        "S0_s0_t5__SELF__within_subject_permuted",
-        "S0_s0_t6__CROSS__real",
-        "S0_s0_t6__CROSS__within_subject_permuted",
-        "S0_s0_t6__SELF__real",
-        "S0_s0_t6__SELF__within_subject_permuted",
-        "S0_s0_t7__CROSS__real",
-        "S0_s0_t7__CROSS__within_subject_permuted",
-        "S0_s0_t7__SELF__real",
-        "S0_s0_t7__SELF__within_subject_permuted",
-        "S0_s0_t8__CROSS__real",
-        "S0_s0_t8__CROSS__within_subject_permuted",
-        "S0_s0_t8__SELF__real",
-        "S0_s0_t8__SELF__within_subject_permuted",
-        "S0_s1_t0__CROSS__real",
-        "S0_s1_t0__CROSS__within_subject_permuted",
-        "S0_s1_t0__SELF__real",
-        "S0_s1_t0__SELF__within_subject_permuted",
-        "S0_s1_t1__CROSS__real",
-        "S0_s1_t1__CROSS__within_subject_permuted",
-        "S0_s1_t1__SELF__real",
-        "S0_s1_t1__SELF__within_subject_permuted",
-        "S0_s1_t2__CROSS__real",
-        "S0_s1_t2__CROSS__within_subject_permuted",
-        "S0_s1_t2__SELF__real",
-        "S0_s1_t2__SELF__within_subject_permuted",
-        "S0_s1_t3__CROSS__real",
-        "S0_s1_t3__CROSS__within_subject_permuted",
-        "S0_s1_t3__SELF__real",
-        "S0_s1_t3__SELF__within_subject_permuted",
-        "S0_s1_t4__CROSS__real",
-        "S0_s1_t4__CROSS__within_subject_permuted",
-        "S0_s1_t4__SELF__real",
-        "S0_s1_t4__SELF__within_subject_permuted",
-        "S0_s1_t5__CROSS__real",
-        "S0_s1_t5__CROSS__within_subject_permuted",
-        "S0_s1_t5__SELF__real",
-        "S0_s1_t5__SELF__within_subject_permuted",
-        "S0_s1_t6__CROSS__real",
-        "S0_s1_t6__CROSS__within_subject_permuted",
-        "S0_s1_t6__SELF__real",
-        "S0_s1_t6__SELF__within_subject_permuted",
-        "S0_s1_t7__CROSS__real",
-        "S0_s1_t7__CROSS__within_subject_permuted",
-        "S0_s1_t7__DIRECT__real",
-        "S0_s1_t7__SELF__real",
-        "S0_s1_t7__SELF__within_subject_permuted",
-        "S0_s1_t8__CROSS__real",
-        "S0_s1_t8__CROSS__within_subject_permuted",
-        "S0_s1_t8__SELF__real",
-        "S0_s1_t8__SELF__within_subject_permuted"
-      ],
-      "scientific_decision": false,
-      "source_ledger_ref": {
-        "path": "ai4s/programs/dsainet/research/dsa-fut-v0.1/repair3/SOURCE_REUSE_MANIFEST.json",
-        "sha256": "64b6ba170687cedfd18a96d7ef4490a44f8e8477b120214475bfe683a6dc2e2d"
-      }
-    },
-    {
-      "attempt_class": "explicit_fut_capacity_repair",
-      "authorization_ref": "ai4s/programs/dsainet/research/dsa-fut-v0.1/repair4/AUTHORIZATION.md",
-      "campaign_id": "dsainet-fut-v0.1-20260924",
-      "failed_run_id": "2026-09-24_dsainet_fut_v0_1_repair3-full-w1",
-      "previous_active_run": {
-        "bundle_id": "2026-09-24_dsainet_fut_v0_1_repair3-bundle",
-        "dispatch_status": "REMOTE_ACCEPTED",
-        "estimated_training_hours": 3.691,
-        "execution_mode": "user_managed",
-        "executor_id": "lab10",
-    
+  
 ```

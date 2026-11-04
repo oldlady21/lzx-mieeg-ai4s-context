@@ -2,12 +2,191 @@
 
 完整脱敏文件：`ai4s/programs/dsainet/research/STATE.yaml`（[原文件](../STATE.yaml)）。
 
-完整公开文件 SHA-256：`1f0d9357fbcff9406eb24e153a516868f12970335d8e748c39b3ff11220c1289`。UTF-8 字节范围：[500000, 952349) / 952349。
+完整公开文件 SHA-256：`912a816cbf491ba29dfefb73e6e79385d28003265849e1431d582002d1516910`。UTF-8 字节范围：[500000, 982731) / 982731。
 
 这是连续文本片段，可能从 JSON 字段中间开始；按分段顺序拼接代码块可恢复完整脱敏正文。不是单独有效的 State，也不授予执行权限。
 
 ```yaml
-    "planned_units": 433,
+      "P0_s0_t1__CROSS__within_subject_permuted",
+        "P0_s0_t1__DIRECT__real",
+        "P0_s0_t1__DIRECT__within_subject_permuted",
+        "P0_s0_t1__SELF__real",
+        "P0_s0_t1__SELF__within_subject_permuted",
+        "P0_s0_t2__CROSS__real",
+        "P0_s0_t2__CROSS__within_subject_permuted",
+        "P0_s0_t2__DIRECT__real",
+        "P0_s0_t2__DIRECT__within_subject_permuted",
+        "P0_s0_t2__SELF__real",
+        "P0_s0_t2__SELF__within_subject_permuted",
+        "P0_s0_t3__CROSS__real",
+        "P0_s0_t3__CROSS__within_subject_permuted",
+        "P0_s0_t3__DIRECT__real",
+        "P0_s0_t3__DIRECT__within_subject_permuted",
+        "P0_s0_t3__SELF__real",
+        "P0_s0_t3__SELF__within_subject_permuted",
+        "P0_s0_t4__CROSS__real",
+        "P0_s0_t4__CROSS__within_subject_permuted",
+        "P0_s0_t4__DIRECT__real",
+        "P0_s0_t4__DIRECT__within_subject_permuted",
+        "P0_s0_t4__SELF__real",
+        "P0_s0_t4__SELF__within_subject_permuted",
+        "P0_s0_t5__CROSS__real",
+        "P0_s0_t5__CROSS__within_subject_permuted",
+        "P0_s0_t5__SELF__real",
+        "P0_s0_t5__SELF__within_subject_permuted",
+        "P0_s0_t6__CROSS__real",
+        "P0_s0_t6__CROSS__within_subject_permuted",
+        "P0_s0_t6__SELF__real",
+        "P0_s0_t6__SELF__within_subject_permuted",
+        "P0_s0_t7__CROSS__real",
+        "P0_s0_t7__CROSS__within_subject_permuted",
+        "P0_s0_t7__SELF__real",
+        "P0_s0_t7__SELF__within_subject_permuted",
+        "P0_s0_t8__CROSS__real",
+        "P0_s0_t8__CROSS__within_subject_permuted",
+        "P0_s0_t8__SELF__real",
+        "P0_s0_t8__SELF__within_subject_permuted",
+        "P0_s1_t0__CROSS__real",
+        "P0_s1_t0__CROSS__within_subject_permuted",
+        "P0_s1_t0__SELF__real",
+        "P0_s1_t0__SELF__within_subject_permuted",
+        "P0_s1_t1__CROSS__real",
+        "P0_s1_t1__CROSS__within_subject_permuted",
+        "P0_s1_t1__SELF__real",
+        "P0_s1_t1__SELF__within_subject_permuted",
+        "P0_s1_t2__CROSS__real",
+        "P0_s1_t2__CROSS__within_subject_permuted",
+        "P0_s1_t2__SELF__real",
+        "P0_s1_t2__SELF__within_subject_permuted",
+        "P0_s1_t3__CROSS__real",
+        "P0_s1_t3__CROSS__within_subject_permuted",
+        "P0_s1_t3__SELF__real",
+        "P0_s1_t3__SELF__within_subject_permuted",
+        "P0_s1_t4__CROSS__real",
+        "P0_s1_t4__CROSS__within_subject_permuted",
+        "P0_s1_t4__SELF__real",
+        "P0_s1_t4__SELF__within_subject_permuted",
+        "P0_s1_t5__CROSS__real",
+        "P0_s1_t5__CROSS__within_subject_permuted",
+        "P0_s1_t5__SELF__real",
+        "P0_s1_t5__SELF__within_subject_permuted",
+        "P0_s1_t6__CROSS__real",
+        "P0_s1_t6__CROSS__within_subject_permuted",
+        "P0_s1_t6__DIRECT__within_subject_permuted",
+        "P0_s1_t6__SELF__real",
+        "P0_s1_t6__SELF__within_subject_permuted",
+        "P0_s1_t7__CROSS__real",
+        "P0_s1_t7__CROSS__within_subject_permuted",
+        "P0_s1_t7__SELF__real",
+        "P0_s1_t7__SELF__within_subject_permuted",
+        "P0_s1_t8__CROSS__real",
+        "P0_s1_t8__CROSS__within_subject_permuted",
+        "P0_s1_t8__SELF__real",
+        "P0_s1_t8__SELF__within_subject_permuted",
+        "S0_s0_t0__CROSS__real",
+        "S0_s0_t0__CROSS__within_subject_permuted",
+        "S0_s0_t0__DIRECT__real",
+        "S0_s0_t0__DIRECT__within_subject_permuted",
+        "S0_s0_t0__SELF__real",
+        "S0_s0_t0__SELF__within_subject_permuted",
+        "S0_s0_t1__CROSS__real",
+        "S0_s0_t1__CROSS__within_subject_permuted",
+        "S0_s0_t1__DIRECT__real",
+        "S0_s0_t1__DIRECT__within_subject_permuted",
+        "S0_s0_t1__SELF__real",
+        "S0_s0_t1__SELF__within_subject_permuted",
+        "S0_s0_t2__CROSS__real",
+        "S0_s0_t2__CROSS__within_subject_permuted",
+        "S0_s0_t2__DIRECT__real",
+        "S0_s0_t2__DIRECT__within_subject_permuted",
+        "S0_s0_t2__SELF__real",
+        "S0_s0_t2__SELF__within_subject_permuted",
+        "S0_s0_t3__CROSS__real",
+        "S0_s0_t3__CROSS__within_subject_permuted",
+        "S0_s0_t3__DIRECT__real",
+        "S0_s0_t3__DIRECT__within_subject_permuted",
+        "S0_s0_t3__SELF__real",
+        "S0_s0_t3__SELF__within_subject_permuted",
+        "S0_s0_t4__CROSS__real",
+        "S0_s0_t4__CROSS__within_subject_permuted",
+        "S0_s0_t4__DIRECT__real",
+        "S0_s0_t4__DIRECT__within_subject_permuted",
+        "S0_s0_t4__SELF__real",
+        "S0_s0_t4__SELF__within_subject_permuted",
+        "S0_s0_t5__CROSS__real",
+        "S0_s0_t5__CROSS__within_subject_permuted",
+        "S0_s0_t5__DIRECT__real",
+        "S0_s0_t5__DIRECT__within_subject_permuted",
+        "S0_s0_t5__SELF__real",
+        "S0_s0_t5__SELF__within_subject_permuted",
+        "S0_s0_t6__CROSS__real",
+        "S0_s0_t6__CROSS__within_subject_permuted",
+        "S0_s0_t6__SELF__real",
+        "S0_s0_t6__SELF__within_subject_permuted",
+        "S0_s0_t7__CROSS__real",
+        "S0_s0_t7__CROSS__within_subject_permuted",
+        "S0_s0_t7__SELF__real",
+        "S0_s0_t7__SELF__within_subject_permuted",
+        "S0_s0_t8__CROSS__real",
+        "S0_s0_t8__CROSS__within_subject_permuted",
+        "S0_s0_t8__SELF__real",
+        "S0_s0_t8__SELF__within_subject_permuted",
+        "S0_s1_t0__CROSS__real",
+        "S0_s1_t0__CROSS__within_subject_permuted",
+        "S0_s1_t0__SELF__real",
+        "S0_s1_t0__SELF__within_subject_permuted",
+        "S0_s1_t1__CROSS__real",
+        "S0_s1_t1__CROSS__within_subject_permuted",
+        "S0_s1_t1__SELF__real",
+        "S0_s1_t1__SELF__within_subject_permuted",
+        "S0_s1_t2__CROSS__real",
+        "S0_s1_t2__CROSS__within_subject_permuted",
+        "S0_s1_t2__SELF__real",
+        "S0_s1_t2__SELF__within_subject_permuted",
+        "S0_s1_t3__CROSS__real",
+        "S0_s1_t3__CROSS__within_subject_permuted",
+        "S0_s1_t3__SELF__real",
+        "S0_s1_t3__SELF__within_subject_permuted",
+        "S0_s1_t4__CROSS__real",
+        "S0_s1_t4__CROSS__within_subject_permuted",
+        "S0_s1_t4__SELF__real",
+        "S0_s1_t4__SELF__within_subject_permuted",
+        "S0_s1_t5__CROSS__real",
+        "S0_s1_t5__CROSS__within_subject_permuted",
+        "S0_s1_t5__SELF__real",
+        "S0_s1_t5__SELF__within_subject_permuted",
+        "S0_s1_t6__CROSS__real",
+        "S0_s1_t6__CROSS__within_subject_permuted",
+        "S0_s1_t6__SELF__real",
+        "S0_s1_t6__SELF__within_subject_permuted",
+        "S0_s1_t7__CROSS__real",
+        "S0_s1_t7__CROSS__within_subject_permuted",
+        "S0_s1_t7__DIRECT__real",
+        "S0_s1_t7__SELF__real",
+        "S0_s1_t7__SELF__within_subject_permuted",
+        "S0_s1_t8__CROSS__real",
+        "S0_s1_t8__CROSS__within_subject_permuted",
+        "S0_s1_t8__SELF__real",
+        "S0_s1_t8__SELF__within_subject_permuted"
+      ],
+      "scientific_decision": false,
+      "source_ledger_ref": {
+        "path": "ai4s/programs/dsainet/research/dsa-fut-v0.1/repair3/SOURCE_REUSE_MANIFEST.json",
+        "sha256": "64b6ba170687cedfd18a96d7ef4490a44f8e8477b120214475bfe683a6dc2e2d"
+      }
+    },
+    {
+      "attempt_class": "explicit_fut_capacity_repair",
+      "authorization_ref": "ai4s/programs/dsainet/research/dsa-fut-v0.1/repair4/AUTHORIZATION.md",
+      "campaign_id": "dsainet-fut-v0.1-20260924",
+      "failed_run_id": "2026-09-24_dsainet_fut_v0_1_repair3-full-w1",
+      "previous_active_run": {
+        "bundle_id": "2026-09-24_dsainet_fut_v0_1_repair3-bundle",
+        "dispatch_status": "REMOTE_ACCEPTED",
+        "estimated_training_hours": 3.691,
+        "execution_mode": "user_managed",
+        "executor_id": "lab10",
+        "planned_units": 433,
         "recorded_at": "2026-09-24T13:52:31.445065+00:00",
         "round_id": "dsa-fut-v0.1-repair3",
         "run_prefix": "2026-09-24_dsainet_fut_v0_1_repair3",
@@ -7368,6 +7547,318 @@
       "recorded_at": "2026-11-02T13:45:25.816291+00:00",
       "round_id": "ds07-r1-science1",
       "scientific_decision": false
+    },
+    {
+      "attempt_class": "engineering_invalid_pre_science_telemetryfix1",
+      "campaign_id": "dsainet-ds07-r1",
+      "engineering_disposition": "INVALID_ENGINEERING_N_TELEMETRY",
+      "failed_run": {
+        "bundle_id": "2026-11-02_dsainet_ds07_r1_science1-readerfix1",
+        "dispatch_status": "REMOTE_ACCEPTED",
+        "estimated_training_hours": 39.0,
+        "execution_mode": "user_managed",
+        "executor_id": "lab10",
+        "planned_units": 2,
+        "recorded_at": "2026-11-02T13:45:45.558543+00:00",
+        "round_id": "ds07-r1-science1-readerfix1",
+        "run_prefix": "2026-11-02_dsainet_ds07_r1_science1-readerfix1",
+        "transaction_operations": [
+          {
+            "operation": "upload",
+            "recorded_at": "2026-11-02T13:47:08.648857+00:00",
+            "result": {
+              "action": "UPLOADED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-02_dsainet_ds07_r1_science1-readerfix1-full-w1"
+            }
+          },
+          {
+            "operation": "launch",
+            "recorded_at": "2026-11-02T13:48:29.044661+00:00",
+            "result": {
+              "action": "SUBMISSION_SENT_NOT_VERIFIED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-02_dsainet_ds07_r1_science1-readerfix1-full-w1"
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-02T13:48:45.189302+00:00",
+            "result": {
+              "action": "WAIT_FOR_RESOURCES",
+              "node_id": "technical_reuse",
+              "run_id": "2026-11-02_dsainet_ds07_r1_science1-readerfix1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "d82104284d7dadd6a47831998c32727a97bca76aff0236c224fd56bfad02f243",
+                "execution_seconds": 4.447636604309082,
+                "queue_seconds": 9.206525564193726,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-02_dsainet_ds07_r1_science1-readerfix1-full-w1",
+                "transaction_id": "dsainet-ds07-r1-science1-readerfix1",
+                "waiting_for_resources": true,
+                "wall_seconds": 13.654162168502808
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-02T13:51:27.710314+00:00",
+            "result": {
+              "action": "WAIT_FOR_RESOURCES",
+              "node_id": "technical_reuse",
+              "run_id": "2026-11-02_dsainet_ds07_r1_science1-readerfix1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "d82104284d7dadd6a47831998c32727a97bca76aff0236c224fd56bfad02f243",
+                "execution_seconds": 4.974616765975952,
+                "queue_seconds": 171.19521069526672,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-02_dsainet_ds07_r1_science1-readerfix1-full-w1",
+                "transaction_id": "dsainet-ds07-r1-science1-readerfix1",
+                "waiting_for_resources": true,
+                "wall_seconds": 176.16982746124268
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-02T15:46:48.540867+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "technical_reuse",
+              "run_id": "2026-11-02_dsainet_ds07_r1_science1-readerfix1-full-w1",
+              "status": "FAILED",
+              "timing": {
+                "contract_sha256": "d82104284d7dadd6a47831998c32727a97bca76aff0236c224fd56bfad02f243",
+                "execution_seconds": 200.95534825325012,
+                "queue_seconds": 5744.736851215363,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-02_dsainet_ds07_r1_science1-readerfix1-full-w1",
+                "transaction_id": "dsainet-ds07-r1-science1-readerfix1",
+                "waiting_for_resources": false,
+                "wall_seconds": 5945.692199468613
+              }
+            }
+          }
+        ]
+      },
+      "failed_run_id": "2026-11-02_dsainet_ds07_r1_science1-readerfix1-full-w1",
+      "failure_proof_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/telemetryfix1/FAILURE_PROOF.json",
+      "failure_proof_sha256": "09c3bfa6b5498a16f01a7e306015e318c8e5af403f9937d9c5bd5d27a73c195c",
+      "partial_artifacts_eligible": false,
+      "recorded_at": "2026-11-02T16:50:07.348007+00:00",
+      "round_id": "ds07-r1-science1-readerfix1",
+      "scientific_decision": false,
+      "scientific_disposition": "NONE; N checkpoint retained but not qualified or reusable"
+    },
+    {
+      "attempt_class": "engineering_invalid_summaryfix1_tech_closure",
+      "campaign_id": "dsainet-ds07-r1",
+      "engineering_disposition": "INVALID_TECH_SUMMARY_INTERFACE",
+      "failed_run": {
+        "bundle_id": "2026-11-03_dsainet_ds07_r1_science1-telemetryfix1",
+        "dispatch_status": "REMOTE_ACCEPTED",
+        "estimated_training_hours": 47.0,
+        "execution_mode": "user_managed",
+        "executor_id": "lab10",
+        "planned_units": 2,
+        "recorded_at": "2026-11-02T16:50:29.882840+00:00",
+        "round_id": "ds07-r1-science1-telemetryfix1",
+        "run_prefix": "2026-11-03_dsainet_ds07_r1_science1-telemetryfix1",
+        "transaction_operations": [
+          {
+            "operation": "upload",
+            "recorded_at": "2026-11-02T16:51:09.837173+00:00",
+            "result": {
+              "action": "UPLOADED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-03_dsainet_ds07_r1_science1-telemetryfix1-full-w1"
+            }
+          },
+          {
+            "operation": "launch",
+            "recorded_at": "2026-11-02T16:51:13.456023+00:00",
+            "result": {
+              "action": "SUBMISSION_SENT_NOT_VERIFIED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-03_dsainet_ds07_r1_science1-telemetryfix1-full-w1"
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-02T16:52:11.815333+00:00",
+            "result": {
+              "action": "WAIT_FOR_RESOURCES",
+              "node_id": "technical_reuse",
+              "run_id": "2026-11-03_dsainet_ds07_r1_science1-telemetryfix1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "ee394e5bc6ddf2b0bf5603fd8dc10419e5b88e2e36f9c032db8df5e8d77afb68",
+                "execution_seconds": 4.650516986846924,
+                "queue_seconds": 50.88400745391846,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-03_dsainet_ds07_r1_science1-telemetryfix1-full-w1",
+                "transaction_id": "dsainet-ds07-r1-science1-telemetryfix1",
+                "waiting_for_resources": true,
+                "wall_seconds": 55.53452444076538
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-02T16:54:23.631079+00:00",
+            "result": {
+              "action": "WAIT_FOR_RESOURCES",
+              "node_id": "technical_reuse",
+              "run_id": "2026-11-03_dsainet_ds07_r1_science1-telemetryfix1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "ee394e5bc6ddf2b0bf5603fd8dc10419e5b88e2e36f9c032db8df5e8d77afb68",
+                "execution_seconds": 5.271691083908081,
+                "queue_seconds": 182.07463479042053,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-03_dsainet_ds07_r1_science1-telemetryfix1-full-w1",
+                "transaction_id": "dsainet-ds07-r1-science1-telemetryfix1",
+                "waiting_for_resources": true,
+                "wall_seconds": 187.3463258743286
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-03T13:09:53.853737+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "technical_reuse",
+              "run_id": "2026-11-03_dsainet_ds07_r1_science1-telemetryfix1-full-w1",
+              "status": "FAILED",
+              "timing": {
+                "contract_sha256": "ee394e5bc6ddf2b0bf5603fd8dc10419e5b88e2e36f9c032db8df5e8d77afb68",
+                "execution_seconds": 164.34781575202942,
+                "queue_seconds": 1763.9529342651367,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-03_dsainet_ds07_r1_science1-telemetryfix1-full-w1",
+                "transaction_id": "dsainet-ds07-r1-science1-telemetryfix1",
+                "waiting_for_resources": false,
+                "wall_seconds": 1928.3007500171661
+              }
+            }
+          }
+        ]
+      },
+      "failed_run_id": "2026-11-03_dsainet_ds07_r1_science1-telemetryfix1-full-w1",
+      "failure_proof_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/summaryfix1/FAILURE_PROOF.json",
+      "failure_proof_sha256": "ddc071fdf3a34d914d644d1e72b403f01388fee0002883b0e41a3d9bb3270893",
+      "partial_artifacts_eligible": false,
+      "recorded_at": "2026-11-03T14:09:52.027274+00:00",
+      "round_id": "ds07-r1-science1-telemetryfix1",
+      "scientific_decision": false,
+      "scientific_disposition": "NONE; N/C/S/R qualified parent results remain reusable only through CPU evidence replay"
+    },
+    {
+      "attempt_class": "engineering_invalid_device_index_before_training",
+      "campaign_id": "dsainet-ds07-r1",
+      "engineering_disposition": "INVALID_CUDA_DEVICE_INDEX_BEFORE_TRAINING",
+      "failed_run": {
+        "bundle_id": "2026-11-03_dsainet_ds07_r1_science1-summaryfix1",
+        "dispatch_status": "REMOTE_ACCEPTED",
+        "estimated_training_hours": 47.0,
+        "execution_mode": "user_managed",
+        "executor_id": "lab10",
+        "planned_units": 2,
+        "recorded_at": "2026-11-03T14:11:11.000321+00:00",
+        "round_id": "ds07-r1-science1-summaryfix1",
+        "run_prefix": "2026-11-03_dsainet_ds07_r1_science1-summaryfix1",
+        "transaction_operations": [
+          {
+            "operation": "upload",
+            "recorded_at": "2026-11-03T14:13:38.472077+00:00",
+            "result": {
+              "action": "UPLOADED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-03_dsainet_ds07_r1_science1-summaryfix1-full-w1"
+            }
+          },
+          {
+            "operation": "launch",
+            "recorded_at": "2026-11-03T14:13:42.763647+00:00",
+            "result": {
+              "action": "SUBMISSION_SENT_NOT_VERIFIED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-03_dsainet_ds07_r1_science1-summaryfix1-full-w1"
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-03T14:14:23.572639+00:00",
+            "result": {
+              "action": "WAIT_FOR_RESOURCES",
+              "node_id": "science",
+              "run_id": "2026-11-03_dsainet_ds07_r1_science1-summaryfix1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "e72dd5f020f21d4b52fb749265c08a3759befee5507f392ccf5b7355e019b59e",
+                "execution_seconds": 6.7571306228637695,
+                "queue_seconds": 30.665966987609863,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-03_dsainet_ds07_r1_science1-summaryfix1-full-w1",
+                "transaction_id": "dsainet-ds07-r1-science1-summaryfix1",
+                "waiting_for_resources": true,
+                "wall_seconds": 37.42309761047363
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-03T14:20:35.583175+00:00",
+            "result": {
+              "action": "WAIT_FOR_RESOURCES",
+              "node_id": "science",
+              "run_id": "2026-11-03_dsainet_ds07_r1_science1-summaryfix1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "e72dd5f020f21d4b52fb749265c08a3759befee5507f392ccf5b7355e019b59e",
+                "execution_seconds": 8.093563795089722,
+                "queue_seconds": 400.7561135292053,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-03_dsainet_ds07_r1_science1-summaryfix1-full-w1",
+                "transaction_id": "dsainet-ds07-r1-science1-summaryfix1",
+                "waiting_for_resources": true,
+                "wall_seconds": 408.84967732429504
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-04T05:42:34.314015+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "science",
+              "run_id": "2026-11-03_dsainet_ds07_r1_science1-summaryfix1-full-w1",
+              "status": "FAILED",
+              "timing": {
+                "contract_sha256": "e72dd5f020f21d4b52fb749265c08a3759befee5507f392ccf5b7355e019b59e",
+                "execution_seconds": 19.086092948913574,
+                "queue_seconds": 1498.042162656784,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-03_dsainet_ds07_r1_science1-summaryfix1-full-w1",
+                "transaction_id": "dsainet-ds07-r1-science1-summaryfix1",
+                "waiting_for_resources": false,
+                "wall_seconds": 1517.1282556056976
+              }
+            }
+          }
+        ]
+      },
+      "failed_run_id": "2026-11-03_dsainet_ds07_r1_science1-summaryfix1-full-w1",
+      "failure_proof_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/devicefix1/FAILURE_PROOF.json",
+      "failure_proof_sha256": "3b73f29709b6e739e0306dd39a3ab2a93eae20f2a60f5228e747e0572fd7af2f",
+      "partial_artifacts_eligible": false,
+      "recorded_at": "2026-11-04T06:25:28.927092+00:00",
+      "round_id": "ds07-r1-science1-summaryfix1",
+      "scientific_decision": false,
+      "scientific_disposition": "NONE; parent TECH PASS and prior qualified evidence remain reusable only through bound CPU replay"
     }
   ],
   "follow_up": {
@@ -8377,6 +8868,50 @@
     "total_hours": 266,
     "updated_at": "2026-11-02T12:25:46.884997+00:00"
   },
+  "last_ds07_devicefix1_launch_check": {
+    "audit_completed": 0,
+    "budget_gate": "PASS",
+    "checked_at_utc": "2026-11-04T06:51:46.391226+00:00",
+    "cost_gate": "PASS",
+    "failed_macro_tasks": 0,
+    "formal_TECH": "PASS",
+    "remaining_hours_at_check": 48.77682771965664,
+    "report": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/devicefix1/LAUNCH_STATUS_REPORT.md",
+    "run_id": "2026-11-04_dsainet_ds07_r1_science1-devicefix1-full-w1",
+    "science_node": "RUNNING",
+    "scientific_training_worker_started": true,
+    "training_completed": 1,
+    "waiting_for_resources": false
+  },
+  "last_ds07_devicefix1_status_check": {
+    "TECH": "PASS",
+    "audit_completed": 0,
+    "audit_expected": 72,
+    "audit_output_directories": 0,
+    "checked_at_beijing": "2026-11-04T20:30:07.431453+08:00",
+    "contract_sha256": "b9824b039bc8dcaaaa907ac8a1c7cdfd0d03b90cbb7a73cc82438edce1c748ef",
+    "fit_output_directories": 40,
+    "last_completed_task": "ds07-fit-S-c01-s0",
+    "latest_budget_gate": "PASS",
+    "latest_budget_gate_issued_at": 1793795278.5002203,
+    "observed_memory_mib": 1395,
+    "physical_gpu": 0,
+    "remaining_hours": 43.13764987884099,
+    "report": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/devicefix1/STATUS_CHECK_LATEST_REPORT.md",
+    "resource_queue_seconds": 0.8287975788116455,
+    "resource_wait": false,
+    "run_id": "2026-11-04_dsainet_ds07_r1_science1-devicefix1-full-w1",
+    "scheduler_failed": 0,
+    "scheduler_running": 1,
+    "science_active_hours": 5.868181998067432,
+    "science_ceiling_remaining_hours": 35.131818001932565,
+    "science_node": "RUNNING",
+    "scientific_effects_read": false,
+    "total_budget_hours": 312,
+    "training_completed": 39,
+    "training_expected": 72,
+    "transaction_ceiling_remaining_hours": 41.13158414661884
+  },
   "last_ds07_operator_stop": {
     "failure_proof": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/readerfix1/FAILURE_PROOF.json",
     "frozen_sources_modified": false,
@@ -8424,6 +8959,45 @@
     "science_dispatched": false,
     "status": "READY_PENDING_NUMERIC_BUDGET_AND_REAL_N_TECH",
     "updated_at": "2026-11-02T11:42:31.033614+00:00"
+  },
+  "last_ds07_summaryfix1_launch_check": {
+    "approved_total_hours": 296,
+    "audit_completed": 0,
+    "checked_at_utc": "2026-11-03T14:22:32.413716+00:00",
+    "contract_sha256": "e72dd5f020f21d4b52fb749265c08a3759befee5507f392ccf5b7355e019b59e",
+    "cost_gate": "PASS",
+    "formal_TECH": "PASS",
+    "original_start": "2026-10-23T13:28:00+00:00",
+    "remaining_hours_conservative_at_check": 48.71355884924205,
+    "report": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/summaryfix1/LAUNCH_STATUS_REPORT.md",
+    "run_id": "2026-11-03_dsainet_ds07_r1_science1-summaryfix1-full-w1",
+    "science_pre_dispatch_budget_gate": "PASS",
+    "scientific_fit_completed": 0,
+    "status": "SCIENCE_SUBMITTED_WAITING_FOR_GPU"
+  },
+  "last_ds07_telemetryfix1_launch_check": {
+    "approved_total_hours": 276,
+    "checked_at_utc": "2026-11-02T16:55:01.553314+00:00",
+    "contract_sha256": "ee394e5bc6ddf2b0bf5603fd8dc10419e5b88e2e36f9c032db8df5e8d77afb68",
+    "remaining_hours_conservative_at_check": 49.50053507842921,
+    "report": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/telemetryfix1/LAUNCH_STATUS_REPORT.md",
+    "run_id": "2026-11-03_dsainet_ds07_r1_science1-telemetryfix1-full-w1",
+    "status": "RUNNING_WAIT_FOR_RESOURCES"
+  },
+  "last_ds07_telemetryfix1_status_check": {
+    "N_epochs": 5,
+    "N_qualification": "PASS",
+    "approved_total_hours": 276.0,
+    "audit_completed": 0,
+    "checked_at_utc": "2026-11-03T13:14:13.789445+00:00",
+    "cost_gate": "PASS",
+    "formal_TECH_node": "FAILED_SUMMARY_NOT_ACCEPTED",
+    "original_start": "2026-10-23T13:28:00+00:00",
+    "remaining_hours": 29.61988012524904,
+    "report": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/telemetryfix1/status_20261103_2110/STATUS_REPORT.md",
+    "run_id": "2026-11-03_dsainet_ds07_r1_science1-telemetryfix1-full-w1",
+    "scientific_training_completed": 0,
+    "status": "FAILED_TECH_SUMMARY_INTERFACE_AFTER_SUCCESSFUL_N_AND_COST"
   },
   "last_engineering_repair": {
     "budget_extended": false,
@@ -9323,6 +9897,42 @@
       "source_request": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/readerfix1/TRANSPORT_REQUEST.json",
       "source_request_sha256": "4cd4bb3706bea6546ea66d4e35add7b6ec87a812ff6079d992dab448b62c9f9d",
       "start_utc": "2026-11-02T13:22:18.396823+00:00"
+    },
+    {
+      "approval_source_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/telemetryfix1/EXPLICIT_TARGET_REPLY.json",
+      "approval_source_sha256": "e5613e9df8044c3e259a58c32955ba30f8075cdf7eb70e170e7ac6f2a2868242",
+      "authorization": "explicit_user_approved_single_interval",
+      "end_utc": "2026-11-02T16:43:58.805000+00:00",
+      "no_remote_tasks_running": true,
+      "resume_at_end": true,
+      "seconds": 17.63702,
+      "source_request": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/telemetryfix1/BUDGET_TRANSPORT_REQUEST.json",
+      "source_request_sha256": "af57fa49bd338444d9a7e8f569e6f69018050e0da50b72cb0424849f33c07495",
+      "start_utc": "2026-11-02T16:43:41.167980+00:00"
+    },
+    {
+      "approval_source_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/summaryfix1/EXPLICIT_TARGET_REPLY.json",
+      "approval_source_sha256": "600cc78238ff5e94a4c35bcd6b1109f5966cc17e8554f5f79f88039d21c838ed",
+      "authorization": "explicit_user_approved_single_interval",
+      "end_utc": "2026-11-03T14:08:00.226000+00:00",
+      "no_remote_tasks_running": true,
+      "resume_at_end": true,
+      "seconds": 435.111564,
+      "source_request": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/summaryfix1/BUDGET_TRANSPORT_REQUEST.json",
+      "source_request_sha256": "fcbd58420dbd3b8c25ac9a4baa0ee6a4d8e1e6321db9dbde8d4009e2afa3fa66",
+      "start_utc": "2026-11-03T14:00:45.114436+00:00"
+    },
+    {
+      "approval_source_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/devicefix1/EXPLICIT_TARGET_REPLY.json",
+      "approval_source_sha256": "181ee8c457ce45998cc06f3dabcad7c126a5ffeabde56d69974c5b7c64f25913",
+      "authorization": "explicit_user_approved_single_interval",
+      "end_utc": "2026-11-04T06:23:37.244000+00:00",
+      "no_remote_tasks_running": true,
+      "resume_at_end": true,
+      "seconds": 883.630597,
+      "source_request": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/devicefix1/BUDGET_TRANSPORT_REQUEST.json",
+      "source_request_sha256": "ce60ed7690718d2e675ef816570963d60acce2ef2f76e15569d09119121236f2",
+      "start_utc": "2026-11-04T06:08:53.613403+00:00"
     }
   ],
   "manual_physionet_resume": {
@@ -10151,7 +10761,7 @@
     "continue_after_positive": false,
     "max_rounds": 1,
     "monitor": "blocking",
-    "night_budget_hours": 266,
+    "night_budget_hours": 312,
     "queue_time_policy": "exclude_resource_wait",
     "round_index": 0,
     "started_at": "2026-10-23T13:28:00+00:00"
@@ -10170,6 +10780,26 @@
     "scope_closed": true
   },
   "status": "WAITING_REMOTE",
+  "summaryfix1_recovery": {
+    "budget_authority_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/summaryfix1/BUDGET_AUTHORITY.json",
+    "budget_authority_sha256": "81de064bb3b1abb886f28a8ed8bd441030de829782e514c0ad3a107e59d0cb3b",
+    "campaign_id": "dsainet-ds07-r1",
+    "failure_proof_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/summaryfix1/FAILURE_PROOF.json",
+    "failure_proof_sha256": "ddc071fdf3a34d914d644d1e72b403f01388fee0002883b0e41a3d9bb3270893",
+    "local_replay_receipt_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/summaryfix1/LOCAL_REPLAY_RECEIPT.json",
+    "local_replay_receipt_sha256": "22ff29d281114958d9e69baa11f4d4cc9020a493a026a3582f5bd4e772f56d47",
+    "previous_total_hours": 276,
+    "recovered_at": "2026-11-03T14:09:52.027274+00:00",
+    "replacement_round_id": "ds07-r1-science1-summaryfix1",
+    "reuse_contract_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/summaryfix1/REUSE_CONTRACT.json",
+    "reuse_contract_sha256": "80030c85e3f00bbdb57d50c7076cbcc65d70a4e93ca74bd45efaccf4733dba77",
+    "science_ceiling_hours": 41,
+    "source_run_id": "2026-11-03_dsainet_ds07_r1_science1-telemetryfix1-full-w1",
+    "status": "READY_NOT_REGISTERED",
+    "technical_ceiling_hours": 2,
+    "total_hours": 296,
+    "transaction_ceiling_hours": 47
+  },
   "target_recovery_preparation": {
     "added_budget_seconds": 0,
     "guard_relocation_synthetic_validation": "PASS",
@@ -10180,7 +10810,22 @@
     "status": "RUNNING",
     "zero_forward_proof": "ai4s/programs/dsainet/research/dsa-pfc-xds-v0.1-physionet-target-resume13/TARGET_ZERO_FORWARD_PROOF.json"
   },
-  "updated_at": "2026-11-02T15:46:48.540867+00:00",
+  "telemetryfix1_recovery": {
+    "budget_authority_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/telemetryfix1/BUDGET_AUTHORITY.json",
+    "budget_authority_sha256": "c7f7349ef80d8845c1ffadb4e0f0a58a8b2afa313b91e1604709db59158d9a97",
+    "campaign_id": "dsainet-ds07-r1",
+    "failure_proof_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/telemetryfix1/FAILURE_PROOF.json",
+    "failure_proof_sha256": "09c3bfa6b5498a16f01a7e306015e318c8e5af403f9937d9c5bd5d27a73c195c",
+    "previous_total_hours": 266,
+    "recovered_at": "2026-11-02T16:50:07.348007+00:00",
+    "replacement_round_id": "ds07-r1-science1-telemetryfix1",
+    "science_ceiling_hours": 41,
+    "source_run_id": "2026-11-02_dsainet_ds07_r1_science1-readerfix1-full-w1",
+    "status": "READY_NOT_REGISTERED",
+    "total_hours": 276,
+    "transaction_ceiling_hours": 47
+  },
+  "updated_at": "2026-11-04T06:38:47.163479+00:00",
   "user_pause": {
     "archive_reason": "解除 PhysioNet 用户暂停：恢复指令见本轮 AUTHORIZATION.md。",
     "archived": true,

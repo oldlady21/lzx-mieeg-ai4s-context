@@ -1,5 +1,21 @@
 # SST-DPN 当前研究总览与接续
 
+## 2026-11-03：SD-02 模型与判定工程实现（无实验）
+
+用户进一步授权三臂模型实现、判定接线和必要工程验收，明确不启动实验。代码位于 `research/sd02-three-arm-v0.1/`，共享控制器已增加独立SD02识别/结果绑定/分类分支；[工程验收报告](../../../_work/sstdpn_sd02_assessment_20261103/implementation/REPORT.md)区分已覆盖通路与未验收范围。仅运行CPU合成检查，无科研数据加载或科学拟合。原生初态/BN/eval输出经参考实现核对；按本设计使用functional ISP renorm，训练梯度语义不能声称与reference的`.data`原地投影逐步一致。草稿预测产物显式标记ENGINEERING_ONLY，当前无新执行授权时合同门保持关闭。科学Run、GPU资格、调度/回传和完整生产事务均未验收，Program继续暂停，State/Evidence Index和旧实验判定不变。
+
+## 2026-11-03：SD-02 候选投入判断（设计记录）
+
+同日后续，用户要求具体化三臂比较：详见[三臂设计 brief](../../../_work/sstdpn_sd02_assessment_20261103/research_brief.md)与唯一未冻结的[数值配置](../../../_work/sstdpn_sd02_assessment_20261103/DESIGN_CONFIG.json)。拟定原生完整DPL B／完整48维协方差残差 S／四阶累积量残差 K；S/K同窗、同MLP、同参数与零初始化残差，各新增144240参数。它是原card-v1的明确简化版本，无attention或低秩投影。开发矩阵S02/S05/S08×seeds2/3/4，共27次新科学训练；固定100+30端点配方不等同原生validation-best profile。K−B与K−S各自均值≥1pp、每seed均值>0、每人均值≥−3pp才支持考虑后续投入；不是正式统计确认。新增定义通过[独立增量反驳与处置](../../../_work/sstdpn_sd02_assessment_20261103/review/three_arm_delta/REVIEW_DISPOSITION.md)，模型/判定路径尚未实现，数据载荷与成本未验收，8h执行/12h全轮仅是未批建议上限。当前仍只设计，不安排派发，不改State或Evidence Index。
+
+用户指定 `IF-20261029-02 / IF-20261029-SD-02 / card-v1`，沿已激活的 `sstdpn-transaction-v3.3` 审阅。[本轮 brief](../../../_work/sstdpn_sd02_assessment_20261103/research_brief.md)记录源码/原文对应、相关历史证据、有界一手来源核对及[独立 Grok 反驳和处置](../../../_work/sstdpn_sd02_assessment_20261103/review/REVIEW_DISPOSITION.md)。**值得继续收敛有限判别方案，尚不支持恢复自动运行或作为论文主方法投入。** 这是设计判断更新，无新增经验性证据，不登记新研究或运行对象。
+
+本轮依赖的源码事实已定向核对：wrapper 为 F2=48、池化窗50/100/200；`model.py` 的 `x_chan` 在 Mixer 前保留逐时激活，Mixer 按三组坐标作局部方差并展平。前端 SSA、BN、ELU 使其非线性，不能从方差池化推断整个模型没有高阶信息。SD-02 的统计应在 pre-Mixer 上读，不能从池化输出恢复；参考源码身份与 Program 登记一致，本轮不宣称 wrapper 全文件或全模型复现已验收。
+
+设计后果：优先区分完整二阶与显式四阶在同接口/同外壳/同选择成本下的效用，保留原生完整宿主主比较。累积量 K 是四阶矩 M 与协方差 C 的确定性重参数化；对角峰度、投影混合、有限窗误差、异常峰及融合容量均是竞争解释。初筛不能单独证明双支互补、减 Gaussian 配对项必要或生理机制。只有有价值的净效用证据才支持继续为这些归因付费；若匹配完整二阶复现增量，停止当前高阶特异故事。具体实现、数据角色/曝光、阈值、矩阵、成本与新执行授权仍待明确，当前不安排派发。
+
+原 TEO/FRR 只约束各自冻结探针/读出包，不否定本案联合训练，也不为它背书。Program 保持 `PAUSED_FOR_HUMAN`；State、Evidence Index、旧 FRR/FTA 判定、合同及预算未改。下方“当前没有下一项对照”等均保留其历史日期语义，运行仍以 State 为准。
+
 ## 基模来源与认识边界
 
 同一论文的加工材料不作独立证据计数。路径从本文件位置解析：

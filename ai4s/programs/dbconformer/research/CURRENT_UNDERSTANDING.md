@@ -19,6 +19,8 @@
 
 ## 当前综合、反例与未决问题
 
+**2026-11-04 SGP-R1 budget1 冻结收尾**：54SCI及3旧TECH复用已完成核验/intake/分析/决策；P-B0 +1.2539pp（p=.0234375）、P-C +1.9387pp（p=.00390625），均有平均统计改善，但各1/18配对低于−3pp（subject7 seed3对B0−3.125pp，seed4对C−3.6458pp），冻结判定GROUP_STRUCTURE_UTILITY_NOT_ESTABLISHED_STOP。关闭固定实例，不放宽风险门或事后剔人；不把9人已暴露筛查改称独立确认或已找到可部署适用条件。State COMPLETE_MAX_ROUNDS/paused，无active Run/operation，0后继/Claim。[结果及核验证据](sgp_r1_budget1/FINAL_REPORT.md)，证据AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1。下方运行/等待段为历史快照。
+
 **2026-10-31 SGP-R1 budget1 授权修订并启动**：保留原3TECH资格与成本停止；累计预算72→144h、原起点/账本不变，单并发保守估算112.68h，120hSCI/126hTransaction/6h收尾。原3TECH独立入库与源闭集重新核验，新Run只54fresh SCI，标准控制器已确认远端接收。三臂科学配方/双对照/风险判定不变、无重试/后继。下方原成本停止为历史边界，本次不抹除；科学效用仍待完整SCI与intake。[修订启动记录](sgp_r1_budget1/STARTUP_REPORT.md)。
 
 **2026-10-31 SGP-R1 实际成本停止**：三臂完整GPU TECH已通过并由冻结验证器复核；SCI派发前成本门失败，54SCI预计112.68h超过50h上限，实际SCI为0。当前不是NO_SIGNAL或方法负结果；P-B0与P-C效用及个体风险未检验。标准完整科学回传尚未形成，保留同Run失败，不重试或改预算。[现场核验](sgp_r1/status_check_20261031/REPORT.md)。此前启动段为历史快照。

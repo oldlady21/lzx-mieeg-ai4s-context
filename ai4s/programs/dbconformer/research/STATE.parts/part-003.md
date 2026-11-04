@@ -2,12 +2,57 @@
 
 完整脱敏文件：`ai4s/programs/dbconformer/research/STATE.yaml`（[原文件](../STATE.yaml)）。
 
-完整公开文件 SHA-256：`755ba3e88a0bb3e050c39fb1101f26a0dc2603f13a373bc7cd2b37584d65733b`。UTF-8 字节范围：[1000000, 1165333) / 1165333。
+完整公开文件 SHA-256：`2186a6c6abd15d7d9bf4449ab6157f5b7f21c7e35c21cf5e1e0b072a183adbc6`。UTF-8 字节范围：[1000000, 1171181) / 1171181。
 
 这是连续文本片段，可能从 JSON 字段中间开始；按分段顺序拼接代码块可恢复完整脱敏正文。不是单独有效的 State，也不授予执行权限。
 
 ```yaml
-ed0/diagnostic/gpu_target_predictions.npz",
+ormer/research/bsp_r1/baseline_reference/b0/B0_s2_seed0/diagnostic/config_used.json",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s2_seed0/diagnostic/cpu_source_valid_replay.npz",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s2_seed0/diagnostic/cpu_target_replay.npz",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s2_seed0/diagnostic/gpu_source_valid_predictions.npz",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s2_seed0/diagnostic/gpu_target_predictions.npz",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s2_seed0/diagnostic/provenance.json",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s2_seed0/diagnostic/selection_trace.json",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s2_seed0/diagnostic/split_indices.npz",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s2_seed0/diagnostic/task_result.json",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s2_seed0/diagnostic/train.log",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s2_seed0/evidence.json",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s2_seed0/source_evidence.json",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s3_seed0/diagnostic/canonical_source_valid_predictions.npz",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s3_seed0/diagnostic/checkpoint.pt",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s3_seed0/diagnostic/config_used.json",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s3_seed0/diagnostic/cpu_source_valid_replay.npz",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s3_seed0/diagnostic/cpu_target_replay.npz",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s3_seed0/diagnostic/gpu_source_valid_predictions.npz",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s3_seed0/diagnostic/gpu_target_predictions.npz",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s3_seed0/diagnostic/provenance.json",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s3_seed0/diagnostic/selection_trace.json",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s3_seed0/diagnostic/split_indices.npz",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s3_seed0/diagnostic/task_result.json",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s3_seed0/diagnostic/train.log",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s3_seed0/evidence.json",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s3_seed0/source_evidence.json",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s4_seed0/diagnostic/canonical_source_valid_predictions.npz",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s4_seed0/diagnostic/checkpoint.pt",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s4_seed0/diagnostic/config_used.json",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s4_seed0/diagnostic/cpu_source_valid_replay.npz",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s4_seed0/diagnostic/cpu_target_replay.npz",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s4_seed0/diagnostic/gpu_source_valid_predictions.npz",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s4_seed0/diagnostic/gpu_target_predictions.npz",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s4_seed0/diagnostic/provenance.json",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s4_seed0/diagnostic/selection_trace.json",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s4_seed0/diagnostic/split_indices.npz",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s4_seed0/diagnostic/task_result.json",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s4_seed0/diagnostic/train.log",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s4_seed0/evidence.json",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s5_seed0/diagnostic/canonical_source_valid_predictions.npz",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s5_seed0/diagnostic/checkpoint.pt",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s5_seed0/diagnostic/config_used.json",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s5_seed0/diagnostic/cpu_source_valid_replay.npz",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s5_seed0/diagnostic/cpu_target_replay.npz",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s5_seed0/diagnostic/gpu_source_valid_predictions.npz",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s5_seed0/diagnostic/gpu_target_predictions.npz",
                   "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s5_seed0/diagnostic/provenance.json",
                   "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s5_seed0/diagnostic/selection_trace.json",
                   "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s5_seed0/diagnostic/split_indices.npz",
@@ -2304,13 +2349,13 @@ ed0/diagnostic/gpu_target_predictions.npz",
       }
     }
   ],
-  "status": "WAITING_REMOTE",
-  "updated_at": "2026-11-02T15:45:04.891432+00:00",
+  "status": "COMPLETE_MAX_ROUNDS",
+  "updated_at": "2026-11-04T05:58:38.570613+00:00",
   "v3_follow_up": {
-    "decision_record": "ai4s/programs/dbconformer/research/dbconformer-sqk-r1_decision.yaml",
-    "evidence_id": "AI4S-DBCONFORMER-dbconformer-sqk-r1",
+    "decision_record": "ai4s/programs/dbconformer/research/dbconformer-sgp-r1-budget1_decision.yaml",
+    "evidence_id": "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1",
     "next_design": null,
-    "reason": "sqk_r1_single_round_no_automatic_r2"
+    "reason": "sgp_r1_single_round_no_automatic_r2"
   },
   "verified_intake_history": [
     {

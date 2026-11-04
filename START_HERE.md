@@ -1,8 +1,8 @@
 # lzx-mieeg-ai4s 讨论资料入口
 
 仓库：https://github.com/oldlady21/lzx-mieeg-ai4s-context
-导出时间（UTC）：2026-11-02T16:04:01.580137+00:00
-快照身份：`879c54168abc6968d7dda88d4722b35795eff4a9783337d2faf58ae11561c1c7`
+导出时间（UTC）：2026-11-04T12:33:16.611006+00:00
+快照身份：`0991d3b8e75c5c32a58312258758a851fa425b88a0b20beb0a223bc42c21d400`
 
 这是本地已保存文件的公开讨论副本。来源与公开文件 SHA-256、脱敏计数、未公开引用见 [SYNC_MANIFEST.json](SYNC_MANIFEST.json)。
 机器字段已机械脱敏；保留原研究身份、冻结边界、预算、证据状态和历史。它不替代本地权威记录，不授予执行/恢复/改协议权限。
@@ -17,14 +17,14 @@
 {
   "dsainet": {
     "source_path": "ai4s/programs/dsainet/research/STATE.yaml",
-    "source_sha256": "b9483b986e4e766041f2f466553879b2d480e2dd0c5aa21b595d4dac1f32f85a",
+    "source_sha256": "28bf59339b71b2e612beecc4090580fc2d44e674b64c791c14f1bc4551a7692f",
     "source_public_url": "https://github.com/oldlady21/lzx-mieeg-ai4s-context/blob/main/ai4s/programs/dsainet/research/STATE.yaml",
     "source_in_this_repository": true,
-    "source_updated_at": "2026-11-02T15:46:48.540867+00:00",
+    "source_updated_at": "2026-11-04T06:38:47.163479+00:00",
     "status": "WAITING_REMOTE",
     "paused": false,
     "active_run": {
-      "round_id": "ds07-r1-science1-readerfix1",
+      "round_id": "ds07-r1-science1-devicefix1",
       "dispatch_status": "REMOTE_ACCEPTED"
     },
     "active_operation": null,
@@ -35,10 +35,10 @@
   },
   "mvcnet": {
     "source_path": "ai4s/programs/mvcnet/research/STATE.yaml",
-    "source_sha256": "9a218d0f058e38c3f09b5d4af20aeebc93278ade2a4b67c80b2ab88ec769656a",
+    "source_sha256": "a6cb8f9ff2dff17bfb2b6bfbe9576adfc2334b4ab79335252a8b9558fac5d65b",
     "source_public_url": "https://github.com/oldlady21/lzx-mieeg-ai4s-context/blob/main/ai4s/programs/mvcnet/research/STATE.yaml",
     "source_in_this_repository": true,
-    "source_updated_at": "2026-11-02T15:46:35.823536+00:00",
+    "source_updated_at": "2026-11-04T12:30:27.876234+00:00",
     "status": "WAITING_REMOTE",
     "paused": false,
     "active_run": {
@@ -49,16 +49,13 @@
   },
   "dbconformer": {
     "source_path": "ai4s/programs/dbconformer/research/STATE.yaml",
-    "source_sha256": "0bb44c059616773d39f3328d56a13aa44b0c899e3a1c26760d114a3261c6826f",
+    "source_sha256": "2e9dad9be42979b9bb30e087f1fd1b9be203ceb16b8648c98df5dd895d7920fc",
     "source_public_url": "https://github.com/oldlady21/lzx-mieeg-ai4s-context/blob/main/ai4s/programs/dbconformer/research/STATE.yaml",
     "source_in_this_repository": true,
-    "source_updated_at": "2026-11-02T15:45:04.891432+00:00",
-    "status": "WAITING_REMOTE",
-    "paused": false,
-    "active_run": {
-      "round_id": "dbconformer-sgp-r1-budget1",
-      "dispatch_status": "REMOTE_ACCEPTED"
-    },
+    "source_updated_at": "2026-11-04T05:58:38.570613+00:00",
+    "status": "COMPLETE_MAX_ROUNDS",
+    "paused": true,
+    "active_run": null,
     "active_operation": null,
     "source_public_parts": [
       "https://github.com/oldlady21/lzx-mieeg-ai4s-context/blob/main/ai4s/programs/dbconformer/research/STATE.parts/part-001.md",
@@ -68,13 +65,16 @@
   },
   "sstdpn": {
     "source_path": "ai4s/programs/sstdpn/research/STATE.yaml",
-    "source_sha256": "113b75edcf6989d280367b730d108a61f5e7118d53a1078f6e4b16c2bcd9c850",
+    "source_sha256": "f23496a91b2b282910fdb7aca583db0f81045156dab1b7bf28e0f3cc6c608a07",
     "source_public_url": "https://github.com/oldlady21/lzx-mieeg-ai4s-context/blob/main/ai4s/programs/sstdpn/research/STATE.yaml",
     "source_in_this_repository": true,
-    "source_updated_at": "2026-10-24T16:28:38.028731+00:00",
-    "status": "PAUSED_FOR_HUMAN",
-    "paused": true,
-    "active_run": null,
+    "source_updated_at": "2026-11-04T07:26:00.418101+00:00",
+    "status": "WAITING_REMOTE",
+    "paused": false,
+    "active_run": {
+      "round_id": "sd02-three-arm-v0.1-entryfix2",
+      "dispatch_status": "REMOTE_ACCEPTED"
+    },
     "active_operation": null
   },
   "ota": {

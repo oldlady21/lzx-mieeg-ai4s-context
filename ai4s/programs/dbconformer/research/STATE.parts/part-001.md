@@ -2,7 +2,7 @@
 
 完整脱敏文件：`ai4s/programs/dbconformer/research/STATE.yaml`（[原文件](../STATE.yaml)）。
 
-完整公开文件 SHA-256：`755ba3e88a0bb3e050c39fb1101f26a0dc2603f13a373bc7cd2b37584d65733b`。UTF-8 字节范围：[0, 500000) / 1165333。
+完整公开文件 SHA-256：`2186a6c6abd15d7d9bf4449ab6157f5b7f21c7e35c21cf5e1e0b072a183adbc6`。UTF-8 字节范围：[0, 500000) / 1171181。
 
 这是连续文本片段，可能从 JSON 字段中间开始；按分段顺序拼接代码块可恢复完整脱敏正文。不是单独有效的 State，也不授予执行权限。
 
@@ -10,164 +10,8 @@
 {
   "active_operation": null,
   "active_research": "sgp_r1",
-  "active_round": "dbconformer-sgp-r1-budget1",
-  "active_run": {
-    "automatic_retries": 0,
-    "bundle_id": "2026-10-31_dbconformer_sgp_r1_lab10_budget1_bundle",
-    "contract": "ai4s/programs/dbconformer/research/dbconformer-sgp-r1-budget1.yaml",
-    "contract_sha256": "01c415c4eece0d26c3f9581adc14adfd62fda0b2b9cafd26bd1040233e97f7a0",
-    "dispatch_status": "REMOTE_ACCEPTED",
-    "estimated_training_hours": 126.0,
-    "execution_mode": "user_managed",
-    "executor_id": "lab10",
-    "new_scientific_fits": 54,
-    "planned_units": 54,
-    "recorded_at": "2026-10-31T13:20:34.366451+00:00",
-    "replaces_cost_stopped_run": "2026-10-31_dbconformer_sgp_r1_lab10_r1-full-w1",
-    "round_id": "dbconformer-sgp-r1-budget1",
-    "run_prefix": "2026-10-31_dbconformer_sgp_r1_lab10_budget1",
-    "source_technical_fits_reused": 3,
-    "transaction_operations": [
-      {
-        "operation": "upload",
-        "recorded_at": "2026-10-31T13:22:20.209948+00:00",
-        "result": {
-          "action": "UPLOADED",
-          "monitor_powershell": "[REDACTED_MACHINE]",
-          "run_id": "2026-10-31_dbconformer_sgp_r1_lab10_budget1-full-w1"
-        }
-      },
-      {
-        "operation": "launch",
-        "recorded_at": "2026-10-31T13:22:53.321257+00:00",
-        "result": {
-          "action": "SUBMISSION_SENT_NOT_VERIFIED",
-          "monitor_powershell": "[REDACTED_MACHINE]",
-          "run_id": "2026-10-31_dbconformer_sgp_r1_lab10_budget1-full-w1"
-        }
-      },
-      {
-        "operation": "probe",
-        "recorded_at": "2026-10-31T13:23:08.527088+00:00",
-        "result": {
-          "action": "RECONCILE_SAME_NODE",
-          "node_id": "screen",
-          "run_id": "2026-10-31_dbconformer_sgp_r1_lab10_budget1-full-w1",
-          "status": "RUNNING",
-          "timing": {
-            "contract_sha256": "01c415c4eece0d26c3f9581adc14adfd62fda0b2b9cafd26bd1040233e97f7a0",
-            "execution_seconds": 6.522171974182129,
-            "queue_seconds": 6.6141908168792725,
-            "queue_time_policy": "exclude_resource_wait",
-            "run_id": "2026-10-31_dbconformer_sgp_r1_lab10_budget1-full-w1",
-            "transaction_id": "dbconformer-sgp-r1-budget1-tx",
-            "waiting_for_resources": false,
-            "wall_seconds": 13.136362791061401
-          }
-        }
-      },
-      {
-        "operation": "probe",
-        "recorded_at": "2026-11-01T04:44:34.952055+00:00",
-        "result": {
-          "action": "RECONCILE_SAME_NODE",
-          "node_id": "screen",
-          "run_id": "2026-10-31_dbconformer_sgp_r1_lab10_budget1-full-w1",
-          "status": "RUNNING",
-          "timing": {
-            "contract_sha256": "01c415c4eece0d26c3f9581adc14adfd62fda0b2b9cafd26bd1040233e97f7a0",
-            "execution_seconds": 55280.006229162216,
-            "queue_seconds": 20.785329818725586,
-            "queue_time_policy": "exclude_resource_wait",
-            "run_id": "2026-10-31_dbconformer_sgp_r1_lab10_budget1-full-w1",
-            "transaction_id": "dbconformer-sgp-r1-budget1-tx",
-            "waiting_for_resources": false,
-            "wall_seconds": 55300.79155898094
-          }
-        }
-      },
-      {
-        "operation": "probe",
-        "recorded_at": "2026-11-01T14:58:39.012979+00:00",
-        "result": {
-          "action": "RECONCILE_SAME_NODE",
-          "node_id": "screen",
-          "run_id": "2026-10-31_dbconformer_sgp_r1_lab10_budget1-full-w1",
-          "status": "RUNNING",
-          "timing": {
-            "contract_sha256": "01c415c4eece0d26c3f9581adc14adfd62fda0b2b9cafd26bd1040233e97f7a0",
-            "execution_seconds": 92109.31137776375,
-            "queue_seconds": 33.95929718017578,
-            "queue_time_policy": "exclude_resource_wait",
-            "run_id": "2026-10-31_dbconformer_sgp_r1_lab10_budget1-full-w1",
-            "transaction_id": "dbconformer-sgp-r1-budget1-tx",
-            "waiting_for_resources": false,
-            "wall_seconds": 92143.27067494392
-          }
-        }
-      },
-      {
-        "operation": "probe",
-        "recorded_at": "2026-11-01T15:09:26.578635+00:00",
-        "result": {
-          "action": "RECONCILE_SAME_NODE",
-          "node_id": "screen",
-          "run_id": "2026-10-31_dbconformer_sgp_r1_lab10_budget1-full-w1",
-          "status": "RUNNING",
-          "timing": {
-            "contract_sha256": "01c415c4eece0d26c3f9581adc14adfd62fda0b2b9cafd26bd1040233e97f7a0",
-            "execution_seconds": 92756.86038422585,
-            "queue_seconds": 33.95929718017578,
-            "queue_time_policy": "exclude_resource_wait",
-            "run_id": "2026-10-31_dbconformer_sgp_r1_lab10_budget1-full-w1",
-            "transaction_id": "dbconformer-sgp-r1-budget1-tx",
-            "waiting_for_resources": false,
-            "wall_seconds": 92790.81968140602
-          }
-        }
-      },
-      {
-        "operation": "probe",
-        "recorded_at": "2026-11-02T06:27:59.848913+00:00",
-        "result": {
-          "action": "RECONCILE_SAME_NODE",
-          "node_id": "screen",
-          "run_id": "2026-10-31_dbconformer_sgp_r1_lab10_budget1-full-w1",
-          "status": "RUNNING",
-          "timing": {
-            "contract_sha256": "01c415c4eece0d26c3f9581adc14adfd62fda0b2b9cafd26bd1040233e97f7a0",
-            "execution_seconds": 144921.20635700226,
-            "queue_seconds": 2984.112132549286,
-            "queue_time_policy": "exclude_resource_wait",
-            "run_id": "2026-10-31_dbconformer_sgp_r1_lab10_budget1-full-w1",
-            "transaction_id": "dbconformer-sgp-r1-budget1-tx",
-            "waiting_for_resources": false,
-            "wall_seconds": 147905.31848955154
-          }
-        }
-      },
-      {
-        "operation": "probe",
-        "recorded_at": "2026-11-02T15:45:04.891432+00:00",
-        "result": {
-          "action": "RECONCILE_SAME_NODE",
-          "node_id": "screen",
-          "run_id": "2026-10-31_dbconformer_sgp_r1_lab10_budget1-full-w1",
-          "status": "RUNNING",
-          "timing": {
-            "contract_sha256": "01c415c4eece0d26c3f9581adc14adfd62fda0b2b9cafd26bd1040233e97f7a0",
-            "execution_seconds": 173757.60745954514,
-            "queue_seconds": 7571.148936748505,
-            "queue_time_policy": "exclude_resource_wait",
-            "run_id": "2026-10-31_dbconformer_sgp_r1_lab10_budget1-full-w1",
-            "transaction_id": "dbconformer-sgp-r1-budget1-tx",
-            "waiting_for_resources": false,
-            "wall_seconds": 181328.75639629364
-          }
-        }
-      }
-    ]
-  },
+  "active_round": null,
+  "active_run": null,
   "active_run_history": [
     {
       "bundle_id": "2026-10-18_dbconformer_bsp_r1_lab10_bundle_r1",
@@ -7948,7 +7792,7 @@
     "queue_accounting": {
       "2026-10-31_dbconformer_sgp_r1_lab10_budget1-full-w1": {
         "contract_sha256": "01c415c4eece0d26c3f9581adc14adfd62fda0b2b9cafd26bd1040233e97f7a0",
-        "queue_seconds": 7571.148936748505,
+        "queue_seconds": 71279.37181305885,
         "run_id": "2026-10-31_dbconformer_sgp_r1_lab10_budget1-full-w1",
         "transaction_id": "dbconformer-sgp-r1-budget1-tx"
       },
@@ -7959,7 +7803,15 @@
         "transaction_id": "dbconformer-sgp-r1-tx"
       }
     },
-    "round_decisions": [],
+    "round_decisions": [
+      {
+        "decision": "SGP_R1_GROUP_STRUCTURE_UTILITY_NOT_ESTABLISHED_STOP",
+        "decision_record": "ai4s/programs/dbconformer/research/dbconformer-sgp-r1-budget1_decision.yaml",
+        "evidence_id": "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1",
+        "recorded_at": "2026-11-04T05:58:38.570613+00:00",
+        "round_id": "dbconformer-sgp-r1-budget1"
+      }
+    ],
     "started_at": "2026-10-31T06:27:21.493849+00:00"
   },
   "closure_budget_accounting": {
@@ -11505,5 +11357,156 @@
                 47.91666666666667,
                 47.74305555555556,
                 40.79861111111111,
-                32.6388888888
+                32.63888888888889,
+                59.72222222222222,
+                40.45138888888889,
+                53.298611111111114
+              ],
+              "task_id": "B0_s2_seed2"
+            },
+            {
+              "backbone_seed": 1,
+              "checkpoint_sha256": "4aea046c5051a104f0bc6d1166c777722eaa92269ce31f0a3948e060960d2e08",
+              "difference_vs_seed0_clean_pp": 1.3888888888888928,
+              "difference_vs_seed0_missing_pp": -0.38667929292930125,
+              "historical_seed0_clean_acc_pp": 50.34722222222222,
+              "historical_seed0_missing_acc_pp": 38.99147727272727,
+              "source_valid_best_epoch": 91,
+              "source_valid_clean_acc_pp": 79.84913793103449,
+              "subject": 3,
+              "target_clean_acc_pp": 51.736111111111114,
+              "target_missing_acc_pp": 38.60479797979797,
+              "target_missing_per_channel_acc_pp": [
+                46.875,
+                45.83333333333333,
+                50.69444444444444,
+                43.57638888888889,
+                44.44444444444444,
+                39.0625,
+                44.27083333333333,
+                27.430555555555557,
+                33.85416666666667,
+                34.375,
+                40.27777777777778,
+                31.25,
+                47.74305555555556,
+                27.77777777777778,
+                47.56944444444444,
+                44.61805555555556,
+                27.604166666666668,
+                37.5,
+                26.041666666666668,
+                53.81944444444444,
+                25.520833333333332,
+                29.166666666666668
+              ],
+              "task_id": "B0_s3_seed1"
+            },
+            {
+              "backbone_seed": 2,
+              "checkpoint_sha256": "4959383f762e094f21b93bcbf657d3f7da48930928d566f2e8c497ce289212ea",
+              "difference_vs_seed0_clean_pp": -3.2986111111111143,
+              "difference_vs_seed0_missing_pp": -2.012310606060602,
+              "historical_seed0_clean_acc_pp": 50.34722222222222,
+              "historical_seed0_missing_acc_pp": 38.99147727272727,
+              "source_valid_best_epoch": 92,
+              "source_valid_clean_acc_pp": 80.60344827586206,
+              "subject": 3,
+              "target_clean_acc_pp": 47.04861111111111,
+              "target_missing_acc_pp": 36.97916666666667,
+              "target_missing_per_channel_acc_pp": [
+                43.75,
+                39.0625,
+                43.40277777777778,
+                47.04861111111111,
+                41.49305555555556,
+                36.11111111111111,
+                41.14583333333333,
+                26.73611111111111,
+                37.15277777777778,
+                33.68055555555556,
+                37.15277777777778,
+                29.86111111111111,
+                43.75,
+                30.03472222222222,
+                46.35416666666667,
+                42.88194444444444,
+                34.20138888888889,
+                38.54166666666667,
+                25.520833333333332,
+                42.01388888888889,
+                28.645833333333332,
+                25.0
+              ],
+              "task_id": "B0_s3_seed2"
+            },
+            {
+              "backbone_seed": 1,
+              "checkpoint_sha256": "c4627c2430e5889278c43e3c1027d739cb5d7a83b925726609ddb74ba95b5001",
+              "difference_vs_seed0_clean_pp": -1.0416666666666572,
+              "difference_vs_seed0_missing_pp": 1.2468434343434325,
+              "historical_seed0_clean_acc_pp": 44.27083333333333,
+              "historical_seed0_missing_acc_pp": 34.540719696969695,
+              "source_valid_best_epoch": 86,
+              "source_valid_clean_acc_pp": 81.46551724137932,
+              "subject": 4,
+              "target_clean_acc_pp": 43.22916666666667,
+              "target_missing_acc_pp": 35.78756313131313,
+              "target_missing_per_channel_acc_pp": [
+                42.88194444444444,
+                28.819444444444443,
+                44.09722222222222,
+                43.57638888888889,
+                26.21527777777778,
+                29.166666666666668,
+                42.01388888888889,
+                44.44444444444444,
+                39.93055555555556,
+                34.54861111111111,
+                35.41666666666667,
+                27.256944444444443,
+                31.07638888888889,
+                25.868055555555557,
+                36.80555555555556,
+                36.63194444444444,
+                28.47222222222222,
+                35.76388888888889,
+                25.0,
+                51.388888888888886,
+                26.90972222222222,
+                51.041666666666664
+              ],
+              "task_id": "B0_s4_seed1"
+            },
+            {
+              "backbone_seed": 2,
+              "checkpoint_sha256": "180fdc7bde7efd4ac1ec2c39000da067cf434bd4f48681c7f316a8a37a51eeae",
+              "difference_vs_seed0_clean_pp": -0.86805555555555,
+              "difference_vs_seed0_missing_pp": 0.09469696969696173,
+              "historical_seed0_clean_acc_pp": 44.27083333333333,
+              "historical_seed0_missing_acc_pp": 34.540719696969695,
+              "source_valid_best_epoch": 100,
+              "source_valid_clean_acc_pp": 79.95689655172413,
+              "subject": 4,
+              "target_clean_acc_pp": 43.40277777777778,
+              "target_missing_acc_pp": 34.63541666666666,
+              "target_missing_per_channel_acc_pp": [
+                45.3125,
+                36.45833333333333,
+                45.83333333333333,
+                38.54166666666667,
+                29.34027777777778,
+                33.15972222222222,
+                36.28472222222222,
+                42.53472222222222,
+                32.29166666666667,
+                37.84722222222222,
+                37.84722222222222,
+                31.59722222222222,
+                42.88194444444444,
+                25.520833333333332,
+                28.645833333333332,
+                25.17361111111111,
+                34.20138888888889,
+                
 ```
