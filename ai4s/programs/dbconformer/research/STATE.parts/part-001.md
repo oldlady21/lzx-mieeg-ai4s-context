@@ -2,14 +2,14 @@
 
 完整脱敏文件：`ai4s/programs/dbconformer/research/STATE.yaml`（[原文件](../STATE.yaml)）。
 
-完整公开文件 SHA-256：`2186a6c6abd15d7d9bf4449ab6157f5b7f21c7e35c21cf5e1e0b072a183adbc6`。UTF-8 字节范围：[0, 500000) / 1171181。
+完整公开文件 SHA-256：`57de2a9f43d5a19010bb5ed726d92ddfa0f4308878c7559200b892fb881fdb1a`。UTF-8 字节范围：[0, 500000) / 1184815。
 
 这是连续文本片段，可能从 JSON 字段中间开始；按分段顺序拼接代码块可恢复完整脱敏正文。不是单独有效的 State，也不授予执行权限。
 
 ```yaml
 {
   "active_operation": null,
-  "active_research": "sgp_r1",
+  "active_research": "source_geometry_r1",
   "active_round": null,
   "active_run": null,
   "active_run_history": [
@@ -7662,6 +7662,83 @@
         }
       },
       "full_prior_campaign_snapshot_sha256": "9e9f86e4664d989223a0ce40b52367e512366eaa0b3b3bc9734054dd4390dba5"
+    },
+    {
+      "campaign_id": "dbconformer-sgp-r1-campaign",
+      "closed_at": "2026-11-04T15:55:51.329902+00:00",
+      "closing_decision": {
+        "automatic_continuation": false,
+        "claim_release": false,
+        "comparisons": {
+          "P-B0": {
+            "all_subject_seed_pairs_ge_minus_3pp": false,
+            "mean_positive_and_p_le_0_05": true,
+            "one_sided_exact_subject_signflip_p": 0.0234375,
+            "seed_mean_delta_pp": {
+              "3": 1.2538580246913582,
+              "4": 1.253858024691358
+            },
+            "signflip_assignments": 512,
+            "subject_delta_pp": {
+              "0": 1.0416666666666667,
+              "1": 2.170138888888889,
+              "2": 2.7777777777777777,
+              "3": 3.125,
+              "4": -0.08680555555555558,
+              "5": -0.26041666666666674,
+              "6": 2.083333333333333,
+              "7": -1.3020833333333333,
+              "8": 1.7361111111111112
+            },
+            "subject_mean_delta_pp": 1.2538580246913578,
+            "supported": false,
+            "worst_subject_seed_delta_pp": -3.125
+          },
+          "P-C": {
+            "all_subject_seed_pairs_ge_minus_3pp": false,
+            "mean_positive_and_p_le_0_05": true,
+            "one_sided_exact_subject_signflip_p": 0.00390625,
+            "seed_mean_delta_pp": {
+              "3": 2.006172839506173,
+              "4": 1.871141975308642
+            },
+            "signflip_assignments": 512,
+            "subject_delta_pp": {
+              "0": -0.3472222222222222,
+              "1": 1.9965277777777777,
+              "2": 2.951388888888889,
+              "3": 0.954861111111111,
+              "4": 0.7812499999999999,
+              "5": 2.517361111111111,
+              "6": 3.5590277777777777,
+              "7": 0.4340277777777779,
+              "8": 4.600694444444445
+            },
+            "subject_mean_delta_pp": 1.9386574074074072,
+            "supported": false,
+            "worst_subject_seed_delta_pp": -3.6458333333333335
+          }
+        },
+        "decision": "SGP_R1_GROUP_STRUCTURE_UTILITY_NOT_ESTABLISHED_STOP",
+        "round_id": "dbconformer-sgp-r1-budget1"
+      },
+      "closing_round": "dbconformer-sgp-r1-budget1",
+      "closing_run": {
+        "analysis_receipt_sha256": "d9f7e6dc8a6487d5b8ab679b59aa4fe58b8126cef78dda8170294f940be25235",
+        "artifact_manifest_sha256": "f05c1a5ffc15ae17b543b7736d717d1e2fa251ffda2d05173c99596d10037c25",
+        "contract_sha256": "01c415c4eece0d26c3f9581adc14adfd62fda0b2b9cafd26bd1040233e97f7a0",
+        "full_payload_local": false,
+        "intake_path": "results/logs/remote/2026-10-31_dbconformer_sgp_r1_lab10_budget1-full-w1",
+        "intake_scope": "analysis_v1",
+        "run_id": "2026-10-31_dbconformer_sgp_r1_lab10_budget1-full-w1",
+        "run_status": "complete",
+        "transaction_id": "dbconformer-sgp-r1-budget1-tx",
+        "transfer_bytes": 2186155559,
+        "verified": true,
+        "verified_at": null
+      },
+      "closing_status": "COMPLETE_MAX_ROUNDS",
+      "closure_reason": "User authorized exactly four source-only encoder fits after qualification; SGP direct optimization remains stopped."
     }
   ],
   "bounded_recovery": {
@@ -7753,8 +7830,8 @@
     "allowed_transitions": [
       "SCREEN_NEW"
     ],
-    "authorization_reason": "User authorized production wiring GPU qualification three-arm decision and formal scientific training; new 72h envelope anchored 2026-10-31T06:03:45+00:00 includes preparation; 57 fresh fits no retry no successor.",
-    "campaign_id": "dbconformer-sgp-r1-campaign",
+    "authorization_reason": "User authorized exactly four source-only encoder fits after qualification; SGP direct optimization remains stopped.",
+    "campaign_id": "dbconformer-source-geometry-r1-campaign",
     "continuation_policy_version": "evidence_to_design_v1",
     "decision_policy": "stop_at_positive",
     "execution_authorization": {
@@ -7768,51 +7845,45 @@
       "allowed_transitions": [
         "SCREEN_NEW"
       ],
-      "authorization_ref": "ai4s/programs/dbconformer/research/sgp_r1/EXECUTION_AUTHORIZATION.md",
-      "campaign_id": "dbconformer-sgp-r1-campaign",
+      "authorization_ref": "ai4s/programs/dbconformer/research/source_geometry_r1/EXECUTION_AUTHORIZATION.md",
+      "campaign_id": "dbconformer-source-geometry-r1-campaign",
       "executor_id": "lab10",
-      "recorded_at": "2026-10-31T06:27:31.017056+00:00",
+      "recorded_at": "2026-11-04T15:56:01.659586+00:00",
       "research_scope": {
         "allow_new_module": false,
         "allowed_module_ids": [
-          "same-forward-real-prefix-source-group-symmetric-projection-v1"
+          "CE-only-class-geometry-descriptor-v1"
         ],
         "allowed_stages": [
-          "source_group_projection_screen"
+          "source_geometry_identifiability"
         ],
-        "data_scope_id": "bnci2014001-exposed-loso-cue0_4s-seeds3_4",
-        "question_id": "dbconformer-source-group-projection-applicability"
+        "data_scope_id": "bnci2014001-cue0_4s-source1_8",
+        "question_id": "source-session-class-geometry-identifiability"
       },
-      "source_sha256": "2346ca80d7c80525ffdd3b635e732ad2052718a821b668b0cce23d725b714d90"
+      "source_sha256": "611f0f8afe0bffcf6e36983617645850eb62c21c9e2d11d77bdb6d6640822237"
     },
     "governance_chain_id": "dbconformer-transaction-v3.3",
     "invalid_behavior": "fail_closed_without_advancing",
     "positive_signal_behavior": "pause_for_human_review",
     "purpose": "user-authorized bounded AI4S campaign",
     "queue_accounting": {
-      "2026-10-31_dbconformer_sgp_r1_lab10_budget1-full-w1": {
-        "contract_sha256": "01c415c4eece0d26c3f9581adc14adfd62fda0b2b9cafd26bd1040233e97f7a0",
-        "queue_seconds": 71279.37181305885,
-        "run_id": "2026-10-31_dbconformer_sgp_r1_lab10_budget1-full-w1",
-        "transaction_id": "dbconformer-sgp-r1-budget1-tx"
-      },
-      "2026-10-31_dbconformer_sgp_r1_lab10_r1-full-w1": {
-        "contract_sha256": "6f9e6fea42781c442530511fed798c6b3e2a97147651c54fc9ef9b4965228977",
-        "queue_seconds": 12193.73873090744,
-        "run_id": "2026-10-31_dbconformer_sgp_r1_lab10_r1-full-w1",
-        "transaction_id": "dbconformer-sgp-r1-tx"
+      "2026-11-04_dbconformer_source_geometry_r1_lab10-full-w1": {
+        "contract_sha256": "fb7a6bee05afc75997d53233a9b70e4b7ac87fc14c608742cc9ff043e6bef74c",
+        "queue_seconds": 5.630229949951172,
+        "run_id": "2026-11-04_dbconformer_source_geometry_r1_lab10-full-w1",
+        "transaction_id": "dbconformer-source-geometry-r1-tx"
       }
     },
     "round_decisions": [
       {
-        "decision": "SGP_R1_GROUP_STRUCTURE_UTILITY_NOT_ESTABLISHED_STOP",
-        "decision_record": "ai4s/programs/dbconformer/research/dbconformer-sgp-r1-budget1_decision.yaml",
-        "evidence_id": "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1",
-        "recorded_at": "2026-11-04T05:58:38.570613+00:00",
-        "round_id": "dbconformer-sgp-r1-budget1"
+        "decision": "INCONCLUSIVE",
+        "decision_record": "ai4s/programs/dbconformer/research/dbconformer-source-geometry-r1_decision.yaml",
+        "evidence_id": "AI4S-DBCONFORMER-dbconformer-source-geometry-r1",
+        "recorded_at": "2026-11-05T11:39:27.618042+00:00",
+        "round_id": "dbconformer-source-geometry-r1"
       }
     ],
-    "started_at": "2026-10-31T06:27:21.493849+00:00"
+    "started_at": "2026-11-04T15:55:51.329902+00:00"
   },
   "closure_budget_accounting": {
     "accounted_hours": 82.67377071914012,
@@ -11442,71 +11513,5 @@
             },
             {
               "backbone_seed": 1,
-              "checkpoint_sha256": "c4627c2430e5889278c43e3c1027d739cb5d7a83b925726609ddb74ba95b5001",
-              "difference_vs_seed0_clean_pp": -1.0416666666666572,
-              "difference_vs_seed0_missing_pp": 1.2468434343434325,
-              "historical_seed0_clean_acc_pp": 44.27083333333333,
-              "historical_seed0_missing_acc_pp": 34.540719696969695,
-              "source_valid_best_epoch": 86,
-              "source_valid_clean_acc_pp": 81.46551724137932,
-              "subject": 4,
-              "target_clean_acc_pp": 43.22916666666667,
-              "target_missing_acc_pp": 35.78756313131313,
-              "target_missing_per_channel_acc_pp": [
-                42.88194444444444,
-                28.819444444444443,
-                44.09722222222222,
-                43.57638888888889,
-                26.21527777777778,
-                29.166666666666668,
-                42.01388888888889,
-                44.44444444444444,
-                39.93055555555556,
-                34.54861111111111,
-                35.41666666666667,
-                27.256944444444443,
-                31.07638888888889,
-                25.868055555555557,
-                36.80555555555556,
-                36.63194444444444,
-                28.47222222222222,
-                35.76388888888889,
-                25.0,
-                51.388888888888886,
-                26.90972222222222,
-                51.041666666666664
-              ],
-              "task_id": "B0_s4_seed1"
-            },
-            {
-              "backbone_seed": 2,
-              "checkpoint_sha256": "180fdc7bde7efd4ac1ec2c39000da067cf434bd4f48681c7f316a8a37a51eeae",
-              "difference_vs_seed0_clean_pp": -0.86805555555555,
-              "difference_vs_seed0_missing_pp": 0.09469696969696173,
-              "historical_seed0_clean_acc_pp": 44.27083333333333,
-              "historical_seed0_missing_acc_pp": 34.540719696969695,
-              "source_valid_best_epoch": 100,
-              "source_valid_clean_acc_pp": 79.95689655172413,
-              "subject": 4,
-              "target_clean_acc_pp": 43.40277777777778,
-              "target_missing_acc_pp": 34.63541666666666,
-              "target_missing_per_channel_acc_pp": [
-                45.3125,
-                36.45833333333333,
-                45.83333333333333,
-                38.54166666666667,
-                29.34027777777778,
-                33.15972222222222,
-                36.28472222222222,
-                42.53472222222222,
-                32.29166666666667,
-                37.84722222222222,
-                37.84722222222222,
-                31.59722222222222,
-                42.88194444444444,
-                25.520833333333332,
-                28.645833333333332,
-                25.17361111111111,
-                34.20138888888889,
-                
+              "checkpoint_sha256": "c4627c2430e588927
 ```

@@ -2,12 +2,209 @@
 
 完整脱敏文件：`ai4s/programs/dbconformer/research/STATE.yaml`（[原文件](../STATE.yaml)）。
 
-完整公开文件 SHA-256：`2186a6c6abd15d7d9bf4449ab6157f5b7f21c7e35c21cf5e1e0b072a183adbc6`。UTF-8 字节范围：[1000000, 1171181) / 1171181。
+完整公开文件 SHA-256：`57de2a9f43d5a19010bb5ed726d92ddfa0f4308878c7559200b892fb881fdb1a`。UTF-8 字节范围：[1000000, 1184815) / 1184815。
 
 这是连续文本片段，可能从 JSON 字段中间开始；按分段顺序拼接代码块可恢复完整脱敏正文。不是单独有效的 State，也不授予执行权限。
 
 ```yaml
-ormer/research/bsp_r1/baseline_reference/b0/B0_s2_seed0/diagnostic/config_used.json",
+        "path": "refs/models/DSAINet-main/DSAINet-main/model/DBConformer.py",
+                "sha256": "141c9c64c55529093a406aa90552297e47a0417fd6bc72af1919f33e873f9248"
+              },
+              "baseline_reference.py": {
+                "path": "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference.py",
+                "sha256": "5fcbca187e43d74e9d1bbe90b8367eb2a07feeb94f17c2253ad606f24741735e"
+              },
+              "canonical_trainer": {
+                "path": "scripts/run_dsainet_bnci2014001.py",
+                "sha256": "23843319829974990b16ab6ef383670b3cac9d627b65ebdef91121c72dc7b062"
+              },
+              "controller_support.py": {
+                "path": "ai4s/programs/dbconformer/research/bsp_r1/controller_support.py",
+                "sha256": "b3cda137883b1a04708cc88280e6e293d8476d61d3320c54ba6395d9dc7fcd9e"
+              },
+              "lab10_capacity": {
+                "path": "scripts/remote/lab10_capacity.py",
+                "sha256": "610d3e43af07d64b4ea00dc2533b6db35896dec420e2e7533ddec14af5953719"
+              },
+              "lab10_reservations": {
+                "path": "scripts/remote/lab10_reservations.py",
+                "sha256": "68c8cd8b196fbc0ee264d398c0c7a6038dc289ccc0c69a6e97ae827ac41adac5"
+              },
+              "node.py": {
+                "path": "ai4s/programs/dbconformer/research/bsp_r1/node.py",
+                "sha256": "af8cb09de89372dd42d10b3c73febce3f47f5532c9d9217b6848cf3471ed2393"
+              },
+              "prepare_contract.py": {
+                "path": "ai4s/programs/dbconformer/research/bsp_r1/prepare_contract.py",
+                "sha256": "ff7060a52d7cacfd42425bac40dc6af44d3882ea44573c9c484a321d1e1a3b9d"
+              },
+              "program_controller": {
+                "path": "scripts/ai4s/program_controller.py",
+                "sha256": "b76ae60f0bf59219d9ed0edfab750d8cbda9898d9aaf812c64cac483e5553387"
+              },
+              "reference_adapter": {
+                "path": "src/models/dbconformer/dsainet_reference.py",
+                "sha256": "c7b04708287539ff4667631f8efcf7c72af1680b6bf2bd576b279c2f589b43b1"
+              },
+              "reference_util": {
+                "path": "refs/models/DSAINet-main/DSAINet-main/utils/util.py",
+                "sha256": "31c5e4c8c4686e53ce995870ecbc1d19233bded877b1d1f827edfcb5f150ec0f"
+              },
+              "replay_in_training_environment.py": {
+                "path": "ai4s/programs/dbconformer/research/bsp_r1/replay_in_training_environment.py",
+                "sha256": "39f3f9bdfbff57b596dea3770aa073a18304d02333402f891d9c6cdb4012503d"
+              },
+              "run_task.py": {
+                "path": "ai4s/programs/dbconformer/research/bsp_r1/run_task.py",
+                "sha256": "605b438265e7e2f500dc1a4409ee2968efd57ec18b3c4fa1dc3db5256e507aa4"
+              },
+              "runtime_model.py": {
+                "path": "ai4s/programs/dbconformer/research/bsp_r1/runtime_model.py",
+                "sha256": "d1ea68cad5fbb5c5e2b15804e2a4b503462c28cd2ac4db7f1c1e3a6f3d3ba527"
+              },
+              "shared_executor": {
+                "path": "scripts/remote/lab10_shared_executor.py",
+                "sha256": "6988ec8f7fc535aa887760478e02cda70c48cdc2166c1eedfe678cabb1647555"
+              },
+              "training_trajectory.py": {
+                "path": "ai4s/programs/dbconformer/research/bsp_r1/training_trajectory.py",
+                "sha256": "e14100324c63b0e1565b36aed7c3adca24837c79e16d33037391a2f346bfd744"
+              },
+              "transaction": {
+                "path": "scripts/ai4s/transaction.py",
+                "sha256": "8b6982250f287f284e6570e18946421a8018fb4ab6d6a422250419fd2d757b9a"
+              },
+              "validate_artifacts.py": {
+                "path": "ai4s/programs/dbconformer/research/bsp_r1/validate_artifacts.py",
+                "sha256": "d1d9ceadbd05af87e39af803cc39f241157a9659442feb44421cb398575ce9dd"
+              }
+            },
+            "maximum_rounds": 1,
+            "metric_unit": "percentage_points",
+            "model_config": {
+              "path": "ai4s/programs/dbconformer/research/bsp_r1/model_config.yaml",
+              "sha256": "bb666ee29b40dca36bfa6fcc960c10453c36c00e67317141c6e15526b5212856"
+            },
+            "program_id": "dbconformer",
+            "protocol_id": "exploratory-loso-cue0_4s-v1",
+            "replay_policy": {
+              "atol": "1e-05",
+              "classify_only_if_all_subject_and_loo_subgates_are_invariant_over_bounds": true,
+              "policy_id": "frozen-tolerance-possible-winners-v1",
+              "rtol": "1e-05"
+            },
+            "research_id": "bsp_r1",
+            "research_identity": {
+              "data_scope_id": "bnci2014001-official-cue0-4s-loso-seed0",
+              "hypothesis": "Band-specific spatial energy yields bounded exploratory utility over B0 and both controls.",
+              "hypothesis_id": "dbconformer-bsp-r1-band-spatial-utility",
+              "intervention_id": "band-specific-spatial-energy-v01",
+              "module_id": "band-specific-spatial-energy-v01",
+              "question_id": "dbconformer-bsp-r1-band-spatial-utility",
+              "research_id": "bsp_r1"
+            },
+            "research_saturation_key": {
+              "baseline_implementation_revision": "141c9c64c55529093a406aa90552297e47a0417fd6bc72af1919f33e873f9248",
+              "checkpoint_rule": "source_valid_accuracy_then_loss_then_earliest",
+              "data_scope_id": "bnci2014001-official-cue0-4s-loso-seed0",
+              "dataset": "BNCI2014001",
+              "epochs": 100,
+              "hypothesis_family_id": "dbconformer-bsp-r1-band-spatial-utility",
+              "metric": "accuracy_percentage_points",
+              "module_family_id": "band-specific-spatial-energy-v01",
+              "preprocessing": "official_preprocessed_cue0_4s",
+              "protocol": "tp-dsainet100-v1",
+              "split": "official_loso_subject0_8_seed0",
+              "subjects": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8
+              ]
+            },
+            "research_stage": "band_specific_spatial_energy_joint_screen",
+            "round_id": "dbconformer-bsp-r1",
+            "run_prefix": "2026-10-18_dbconformer_bsp_r1_lab10_r1",
+            "schema_version": "mieeg-ai4s-round-contract-v2",
+            "split_sha256_by_subject": {
+              "0": "391b0aa801daf7e7eb9b2ea71eaff545940b52b0f2468f2cad9940f7fc4293f0",
+              "1": "940bc7ae06fdb49b05a3816f3385726a74c90f1e13a6265c9771e49406fae014",
+              "2": "e3d5539bd6cc47f79f210e20d27701a108ba959620077569eb61fbc86733e568",
+              "3": "43d8922f7db8a6544b16871192060af4141cef708db32a134812c9bea972ff0f",
+              "4": "a4ac172984408c4eaf2ae3412e1f2cd84e86d266eb8070ebb5a3763b355c2a2c",
+              "5": "126a919f79578e51a6cb933b1e900df8e9036a5158152de06a80e7e61ff3fd70",
+              "6": "32c0ad5d1da936b5e5245a2c710cec91a951983e729840c510df420c9e97da72",
+              "7": "ad338b9a5169441ade40a749f99427701cfe76e4daf0b482b28441333f2198db",
+              "8": "34a23d98274b88cc75ec477993085a6cd9a03b2f447bf5149b40e43dadaf458d"
+            },
+            "status": "frozen",
+            "task_scopes": {
+              "screen": {
+                "command": [
+                  "[REDACTED_MACHINE]",
+                  "-B",
+                  "ai4s/programs/dbconformer/research/bsp_r1/node.py"
+                ],
+                "requirements": [
+                  "ai4s/programs/dbconformer/research/bsp_r1/B0_BSP_REPLAY_QUALIFICATION.json",
+                  "ai4s/programs/dbconformer/research/bsp_r1/B0_REUSE_LOCAL.json",
+                  "ai4s/programs/dbconformer/research/bsp_r1/BUDGET_AUTHORIZATION.json",
+                  "ai4s/programs/dbconformer/research/bsp_r1/BUDGET_PROPOSAL.json",
+                  "ai4s/programs/dbconformer/research/bsp_r1/DESIGN_PROVENANCE.json",
+                  "ai4s/programs/dbconformer/research/bsp_r1/EXECUTION_AUTHORIZATION.json",
+                  "ai4s/programs/dbconformer/research/bsp_r1/EXECUTION_AUTHORIZATION.md",
+                  "ai4s/programs/dbconformer/research/bsp_r1/FINAL_PREPARATION_INDEPENDENT_CHECK.json",
+                  "ai4s/programs/dbconformer/research/bsp_r1/FIRST_QUARTET_PLAN.json",
+                  "ai4s/programs/dbconformer/research/bsp_r1/GPU_PROFILE.json",
+                  "ai4s/programs/dbconformer/research/bsp_r1/MAIN_IMPLEMENTATION_ACCEPTANCE.json",
+                  "ai4s/programs/dbconformer/research/bsp_r1/OBSERVATIONAL_PROFILE_PLAN.json",
+                  "ai4s/programs/dbconformer/research/bsp_r1/PREPARATION_AUTHORIZATION.json",
+                  "ai4s/programs/dbconformer/research/bsp_r1/PROFILE_EVIDENCE_RECEIPT.json",
+                  "ai4s/programs/dbconformer/research/bsp_r1/PROFILE_QUALIFICATION_DISPOSITION.json",
+                  "ai4s/programs/dbconformer/research/bsp_r1/PROSPECTIVE_BUNDLE_PREPARATION.json",
+                  "ai4s/programs/dbconformer/research/bsp_r1/REMOTE_CPU_ACCEPTANCE.json",
+                  "ai4s/programs/dbconformer/research/bsp_r1/REMOTE_ENVIRONMENT_SNAPSHOT.json",
+                  "ai4s/programs/dbconformer/research/bsp_r1/RESOURCE_ESTIMATE.json",
+                  "ai4s/programs/dbconformer/research/bsp_r1/SCIENTIFIC_SPEC.json",
+                  "ai4s/programs/dbconformer/research/bsp_r1/analyze.py",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference.py",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/BASELINE_REFERENCE.json",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s0_seed0/diagnostic/canonical_source_valid_predictions.npz",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s0_seed0/diagnostic/checkpoint.pt",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s0_seed0/diagnostic/config_used.json",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s0_seed0/diagnostic/cpu_source_valid_replay.npz",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s0_seed0/diagnostic/cpu_target_replay.npz",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s0_seed0/diagnostic/gpu_source_valid_predictions.npz",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s0_seed0/diagnostic/gpu_target_predictions.npz",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s0_seed0/diagnostic/provenance.json",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s0_seed0/diagnostic/selection_trace.json",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s0_seed0/diagnostic/split_indices.npz",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s0_seed0/diagnostic/task_result.json",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s0_seed0/diagnostic/train.log",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s0_seed0/evidence.json",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s0_seed0/source_evidence.json",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s1_seed0/diagnostic/canonical_source_valid_predictions.npz",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s1_seed0/diagnostic/checkpoint.pt",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s1_seed0/diagnostic/config_used.json",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s1_seed0/diagnostic/cpu_source_valid_replay.npz",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s1_seed0/diagnostic/cpu_target_replay.npz",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s1_seed0/diagnostic/gpu_source_valid_predictions.npz",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s1_seed0/diagnostic/gpu_target_predictions.npz",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s1_seed0/diagnostic/provenance.json",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s1_seed0/diagnostic/selection_trace.json",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s1_seed0/diagnostic/split_indices.npz",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s1_seed0/diagnostic/task_result.json",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s1_seed0/diagnostic/train.log",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s1_seed0/evidence.json",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s1_seed0/source_evidence.json",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s2_seed0/diagnostic/canonical_source_valid_predictions.npz",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s2_seed0/diagnostic/checkpoint.pt",
+                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s2_seed0/diagnostic/config_used.json",
                   "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s2_seed0/diagnostic/cpu_source_valid_replay.npz",
                   "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s2_seed0/diagnostic/cpu_target_replay.npz",
                   "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s2_seed0/diagnostic/gpu_source_valid_predictions.npz",
@@ -2350,12 +2547,12 @@ ormer/research/bsp_r1/baseline_reference/b0/B0_s2_seed0/diagnostic/config_used.j
     }
   ],
   "status": "COMPLETE_MAX_ROUNDS",
-  "updated_at": "2026-11-04T05:58:38.570613+00:00",
+  "updated_at": "2026-11-05T11:39:27.618042+00:00",
   "v3_follow_up": {
-    "decision_record": "ai4s/programs/dbconformer/research/dbconformer-sgp-r1-budget1_decision.yaml",
-    "evidence_id": "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1",
+    "decision_record": "ai4s/programs/dbconformer/research/dbconformer-source-geometry-r1_decision.yaml",
+    "evidence_id": "AI4S-DBCONFORMER-dbconformer-source-geometry-r1",
     "next_design": null,
-    "reason": "sgp_r1_single_round_no_automatic_r2"
+    "reason": "round_limit"
   },
   "verified_intake_history": [
     {

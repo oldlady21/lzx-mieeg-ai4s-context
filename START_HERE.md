@@ -1,8 +1,8 @@
 # lzx-mieeg-ai4s 讨论资料入口
 
 仓库：https://github.com/oldlady21/lzx-mieeg-ai4s-context
-导出时间（UTC）：2026-11-04T12:33:16.611006+00:00
-快照身份：`0991d3b8e75c5c32a58312258758a851fa425b88a0b20beb0a223bc42c21d400`
+导出时间（UTC）：2026-11-05T13:48:29.048549+00:00
+快照身份：`8ad3f9c1f3ce5b7cd23827ec04485fd03d681997fe48490ca7498b2efbc4d2c0`
 
 这是本地已保存文件的公开讨论副本。来源与公开文件 SHA-256、脱敏计数、未公开引用见 [SYNC_MANIFEST.json](SYNC_MANIFEST.json)。
 机器字段已机械脱敏；保留原研究身份、冻结边界、预算、证据状态和历史。它不替代本地权威记录，不授予执行/恢复/改协议权限。
@@ -17,42 +17,37 @@
 {
   "dsainet": {
     "source_path": "ai4s/programs/dsainet/research/STATE.yaml",
-    "source_sha256": "28bf59339b71b2e612beecc4090580fc2d44e674b64c791c14f1bc4551a7692f",
+    "source_sha256": "4ef0f3c4228815d8817087a085c44164036f9a4d3220a7754ad8d2ea4955ceea",
     "source_public_url": "https://github.com/oldlady21/lzx-mieeg-ai4s-context/blob/main/ai4s/programs/dsainet/research/STATE.yaml",
     "source_in_this_repository": true,
-    "source_updated_at": "2026-11-04T06:38:47.163479+00:00",
-    "status": "WAITING_REMOTE",
-    "paused": false,
-    "active_run": {
-      "round_id": "ds07-r1-science1-devicefix1",
-      "dispatch_status": "REMOTE_ACCEPTED"
-    },
+    "source_updated_at": "2026-11-05T13:09:08.803027+00:00",
+    "status": "COMPLETE_MAX_ROUNDS",
+    "paused": true,
+    "active_run": null,
     "active_operation": null,
     "source_public_parts": [
       "https://github.com/oldlady21/lzx-mieeg-ai4s-context/blob/main/ai4s/programs/dsainet/research/STATE.parts/part-001.md",
-      "https://github.com/oldlady21/lzx-mieeg-ai4s-context/blob/main/ai4s/programs/dsainet/research/STATE.parts/part-002.md"
+      "https://github.com/oldlady21/lzx-mieeg-ai4s-context/blob/main/ai4s/programs/dsainet/research/STATE.parts/part-002.md",
+      "https://github.com/oldlady21/lzx-mieeg-ai4s-context/blob/main/ai4s/programs/dsainet/research/STATE.parts/part-003.md"
     ]
   },
   "mvcnet": {
     "source_path": "ai4s/programs/mvcnet/research/STATE.yaml",
-    "source_sha256": "a6cb8f9ff2dff17bfb2b6bfbe9576adfc2334b4ab79335252a8b9558fac5d65b",
+    "source_sha256": "1a1ad39582bf6b3373c536394aead7e2f4fa9a54d908ed81f5d7cd5b3c71c6d4",
     "source_public_url": "https://github.com/oldlady21/lzx-mieeg-ai4s-context/blob/main/ai4s/programs/mvcnet/research/STATE.yaml",
     "source_in_this_repository": true,
-    "source_updated_at": "2026-11-04T12:30:27.876234+00:00",
-    "status": "WAITING_REMOTE",
-    "paused": false,
-    "active_run": {
-      "round_id": "mvcnet-xsn-r1-screen-lab10-r1-budget480",
-      "dispatch_status": "REMOTE_ACCEPTED"
-    },
+    "source_updated_at": "2026-11-05T13:35:52.182281+00:00",
+    "status": "COMPLETE_MAX_ROUNDS",
+    "paused": true,
+    "active_run": null,
     "active_operation": null
   },
   "dbconformer": {
     "source_path": "ai4s/programs/dbconformer/research/STATE.yaml",
-    "source_sha256": "2e9dad9be42979b9bb30e087f1fd1b9be203ceb16b8648c98df5dd895d7920fc",
+    "source_sha256": "9b788d809c8b084683e0781dfdbf6679502156266a417230efde60e6494e16f5",
     "source_public_url": "https://github.com/oldlady21/lzx-mieeg-ai4s-context/blob/main/ai4s/programs/dbconformer/research/STATE.yaml",
     "source_in_this_repository": true,
-    "source_updated_at": "2026-11-04T05:58:38.570613+00:00",
+    "source_updated_at": "2026-11-05T11:39:27.618042+00:00",
     "status": "COMPLETE_MAX_ROUNDS",
     "paused": true,
     "active_run": null,
@@ -65,16 +60,13 @@
   },
   "sstdpn": {
     "source_path": "ai4s/programs/sstdpn/research/STATE.yaml",
-    "source_sha256": "f23496a91b2b282910fdb7aca583db0f81045156dab1b7bf28e0f3cc6c608a07",
+    "source_sha256": "eb7f498725293661e00f4166d3bf06c2f27ccce44baca925a0abd5232bd011ba",
     "source_public_url": "https://github.com/oldlady21/lzx-mieeg-ai4s-context/blob/main/ai4s/programs/sstdpn/research/STATE.yaml",
     "source_in_this_repository": true,
-    "source_updated_at": "2026-11-04T07:26:00.418101+00:00",
-    "status": "WAITING_REMOTE",
-    "paused": false,
-    "active_run": {
-      "round_id": "sd02-three-arm-v0.1-entryfix2",
-      "dispatch_status": "REMOTE_ACCEPTED"
-    },
+    "source_updated_at": "2026-11-05T12:15:39.972563+00:00",
+    "status": "COMPLETE_MAX_ROUNDS",
+    "paused": true,
+    "active_run": null,
     "active_operation": null
   },
   "ota": {
@@ -111,7 +103,7 @@
 
 | Program | 研究认识 | 配置 | State | 证据索引 |
 |---|---|---|---|---|
-| dsainet | [CURRENT_UNDERSTANDING.md](ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md) | [PROGRAM](ai4s/programs/dsainet/PROGRAM.yaml) | [STATE](ai4s/programs/dsainet/research/STATE.yaml) · [raw](https://raw.githubusercontent.com/oldlady21/lzx-mieeg-ai4s-context/main/ai4s/programs/dsainet/research/STATE.yaml) · [分段1](ai4s/programs/dsainet/research/STATE.parts/part-001.md) · [分段2](ai4s/programs/dsainet/research/STATE.parts/part-002.md) | [EVIDENCE_INDEX](ai4s/programs/dsainet/research/EVIDENCE_INDEX.yaml) |
+| dsainet | [CURRENT_UNDERSTANDING.md](ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md) | [PROGRAM](ai4s/programs/dsainet/PROGRAM.yaml) | [STATE](ai4s/programs/dsainet/research/STATE.yaml) · [raw](https://raw.githubusercontent.com/oldlady21/lzx-mieeg-ai4s-context/main/ai4s/programs/dsainet/research/STATE.yaml) · [分段1](ai4s/programs/dsainet/research/STATE.parts/part-001.md) · [分段2](ai4s/programs/dsainet/research/STATE.parts/part-002.md) · [分段3](ai4s/programs/dsainet/research/STATE.parts/part-003.md) | [EVIDENCE_INDEX](ai4s/programs/dsainet/research/EVIDENCE_INDEX.yaml) |
 | mvcnet | [CURRENT_UNDERSTANDING.md](ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md) | [PROGRAM](ai4s/programs/mvcnet/PROGRAM.yaml) | [STATE](ai4s/programs/mvcnet/research/STATE.yaml) · [raw](https://raw.githubusercontent.com/oldlady21/lzx-mieeg-ai4s-context/main/ai4s/programs/mvcnet/research/STATE.yaml) | [EVIDENCE_INDEX](ai4s/programs/mvcnet/research/EVIDENCE_INDEX.yaml) |
 | dbconformer | [CURRENT_UNDERSTANDING.md](ai4s/programs/dbconformer/research/CURRENT_UNDERSTANDING.md) | [PROGRAM](ai4s/programs/dbconformer/PROGRAM.yaml) | [STATE](ai4s/programs/dbconformer/research/STATE.yaml) · [raw](https://raw.githubusercontent.com/oldlady21/lzx-mieeg-ai4s-context/main/ai4s/programs/dbconformer/research/STATE.yaml) · [分段1](ai4s/programs/dbconformer/research/STATE.parts/part-001.md) · [分段2](ai4s/programs/dbconformer/research/STATE.parts/part-002.md) · [分段3](ai4s/programs/dbconformer/research/STATE.parts/part-003.md) | [EVIDENCE_INDEX](ai4s/programs/dbconformer/research/EVIDENCE_INDEX.yaml) |
 | sstdpn | [NEXT_RESEARCH.md](ai4s/programs/sstdpn/research/NEXT_RESEARCH.md) | [PROGRAM](ai4s/programs/sstdpn/PROGRAM.yaml) | [STATE](ai4s/programs/sstdpn/research/STATE.yaml) · [raw](https://raw.githubusercontent.com/oldlady21/lzx-mieeg-ai4s-context/main/ai4s/programs/sstdpn/research/STATE.yaml) | [EVIDENCE_INDEX](ai4s/programs/sstdpn/research/EVIDENCE_INDEX.yaml) |
@@ -147,6 +139,7 @@
 - [ai4s/programs/dsainet/research/EVIDENCE_INDEX.yaml](<ai4s/programs/dsainet/research/EVIDENCE_INDEX.yaml>)
 - [ai4s/programs/dsainet/research/STATE.parts/part-001.md](<ai4s/programs/dsainet/research/STATE.parts/part-001.md>)
 - [ai4s/programs/dsainet/research/STATE.parts/part-002.md](<ai4s/programs/dsainet/research/STATE.parts/part-002.md>)
+- [ai4s/programs/dsainet/research/STATE.parts/part-003.md](<ai4s/programs/dsainet/research/STATE.parts/part-003.md>)
 - [ai4s/programs/dsainet/research/STATE.yaml](<ai4s/programs/dsainet/research/STATE.yaml>)
 - [ai4s/programs/mvcnet/PROGRAM.yaml](<ai4s/programs/mvcnet/PROGRAM.yaml>)
 - [ai4s/programs/mvcnet/PROJECT_PROMPT_v3.3.md](<ai4s/programs/mvcnet/PROJECT_PROMPT_v3.3.md>)

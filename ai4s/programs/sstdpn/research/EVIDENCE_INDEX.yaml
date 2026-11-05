@@ -2572,6 +2572,25 @@
       "round_contract": "ai4s/programs/sstdpn/research/frr-r01-v0.1-repair1b.yaml",
       "round_id": "frr-r01-v0.1-repair1b",
       "run_id": "2026-10-24_sstdpn_frr_r01_v0_1_repair1b-full-w1"
+    },
+    {
+      "claim_status": "no_paper_claim",
+      "decision": "NO_SIGNAL",
+      "decision_record": "ai4s/programs/sstdpn/research/sd02-three-arm-v0.1-closurefix5_decision.yaml",
+      "design_constraint": "Do not advance or rescue the same fixed covariance/kurtosis residual recipe: both K-B and K-S fail all frozen utility/stability/safety gates; retain this exact negative evidence. No new experiment authorized.",
+      "disposition_ref": "ai4s/programs/sstdpn/research/sd02-three-arm-v0.1/closeout_20261105/RESULT_SUMMARY.md",
+      "evidence_id": "AI4S-SSTDPN-sd02-three-arm-v0.1-closurefix5",
+      "executor_id": "lab10",
+      "follow_up_status": "exact_fixed_SD02_recipe_retired_no_automatic_followup",
+      "full_payload_local": false,
+      "intake_scope": "analysis_v1_recovery",
+      "intake_status": "verified_ai4s_round",
+      "interpretation_boundary": "Exact SD02 three-arm v0.1 fixed recipe on exposed development subjects S02/S05/S08, seeds2/3/4; no higher-order-mechanism, untouched-test, population or paper efficacy claim.",
+      "prohibited_follow_up": "exact_candidate_rescue_or_recombination_under_the_frozen_contract",
+      "role": "exact_negative_boundary",
+      "round_contract": "ai4s/programs/sstdpn/research/sd02-three-arm-v0.1-closurefix5.yaml",
+      "round_id": "sd02-three-arm-v0.1-closurefix5",
+      "run_id": "2026-11-04_sstdpn_sd02_three_arm_v0_1_closurefix5-full-w1"
     }
   ],
   "schema_version": "mieeg-ai4s-evidence-index-v1",

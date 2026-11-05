@@ -2,7 +2,7 @@
 
 完整脱敏文件：`ai4s/programs/dsainet/research/STATE.yaml`（[原文件](../STATE.yaml)）。
 
-完整公开文件 SHA-256：`912a816cbf491ba29dfefb73e6e79385d28003265849e1431d582002d1516910`。UTF-8 字节范围：[0, 500000) / 982731。
+完整公开文件 SHA-256：`546294f490c37739bda04797b439fd05243a3b3cd8b4b5effc331321bba2400a`。UTF-8 字节范围：[0, 500000) / 1036464。
 
 这是连续文本片段，可能从 JSON 字段中间开始；按分段顺序拼接代码块可恢复完整脱敏正文。不是单独有效的 State，也不授予执行权限。
 
@@ -10,59 +10,9 @@
 {
   "active_local_experiment": null,
   "active_operation": null,
-  "active_research": "ds07-r1",
-  "active_round": "ds07-r1-science1-devicefix1",
-  "active_run": {
-    "bundle_id": "2026-11-04_dsainet_ds07_r1_science1-devicefix1",
-    "dispatch_status": "REMOTE_ACCEPTED",
-    "estimated_training_hours": 47.0,
-    "execution_mode": "user_managed",
-    "executor_id": "lab10",
-    "planned_units": 2,
-    "recorded_at": "2026-11-04T06:26:56.603601+00:00",
-    "round_id": "ds07-r1-science1-devicefix1",
-    "run_prefix": "2026-11-04_dsainet_ds07_r1_science1-devicefix1",
-    "transaction_operations": [
-      {
-        "operation": "upload",
-        "recorded_at": "2026-11-04T06:35:37.164147+00:00",
-        "result": {
-          "action": "UPLOADED",
-          "monitor_powershell": "[REDACTED_MACHINE]",
-          "run_id": "2026-11-04_dsainet_ds07_r1_science1-devicefix1-full-w1"
-        }
-      },
-      {
-        "operation": "launch",
-        "recorded_at": "2026-11-04T06:38:02.203078+00:00",
-        "result": {
-          "action": "SUBMISSION_SENT_NOT_VERIFIED",
-          "monitor_powershell": "[REDACTED_MACHINE]",
-          "run_id": "2026-11-04_dsainet_ds07_r1_science1-devicefix1-full-w1"
-        }
-      },
-      {
-        "operation": "probe",
-        "recorded_at": "2026-11-04T06:38:47.163479+00:00",
-        "result": {
-          "action": "RECONCILE_SAME_NODE",
-          "node_id": "science",
-          "run_id": "2026-11-04_dsainet_ds07_r1_science1-devicefix1-full-w1",
-          "status": "RUNNING",
-          "timing": {
-            "contract_sha256": "b9824b039bc8dcaaaa907ac8a1c7cdfd0d03b90cbb7a73cc82438edce1c748ef",
-            "execution_seconds": 42.21297478675842,
-            "queue_seconds": 0.8287975788116455,
-            "queue_time_policy": "exclude_resource_wait",
-            "run_id": "2026-11-04_dsainet_ds07_r1_science1-devicefix1-full-w1",
-            "transaction_id": "dsainet-ds07-r1-science1-devicefix1",
-            "waiting_for_resources": false,
-            "wall_seconds": 43.04177236557007
-          }
-        }
-      }
-    ]
-  },
+  "active_research": null,
+  "active_round": null,
+  "active_run": null,
   "archived_campaigns": [
     {
       "campaign_id": "pre-campaign-c1-exploration",
@@ -2229,8 +2179,8 @@
       "allowed_transitions": [
         "ENGINEERING_REPAIR"
       ],
-      "authorization_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/devicefix1/EXPLICIT_TARGET_REPLY.json",
-      "authorization_sha256": "181ee8c457ce45998cc06f3dabcad7c126a5ffeabde56d69974c5b7c64f25913",
+      "authorization_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/r18fix1/AUTHORIZATION.json",
+      "authorization_sha256": "2a1102c4f247c51f5db45a017278cc36dd6264ec787880a31b5d1ae47dd8de0b",
       "campaign_id": "dsainet-ds07-r1",
       "executor_id": "lab10",
       "readerfix1_transport_authorization_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/readerfix1/EXPLICIT_TARGET_REPLY.json",
@@ -2294,6 +2244,12 @@
         "run_id": "2026-11-04_dsainet_ds07_r1_science1-devicefix1-full-w1",
         "transaction_id": "dsainet-ds07-r1-science1-devicefix1"
       },
+      "2026-11-05_dsainet_ds07_r1_audit18-r18fix1-full-w1": {
+        "contract_sha256": "95372fc340bc257e5b42dd11c80ec909ab53e5f81defd1202693f750d6749caa",
+        "queue_seconds": 0.8470947742462158,
+        "run_id": "2026-11-05_dsainet_ds07_r1_audit18-r18fix1-full-w1",
+        "transaction_id": "dsainet-ds07-r1-audit18-r18fix1"
+      },
       "historical-resource-credit-1": {
         "proof_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/proofs/AUTHORIZATION212.json",
         "proof_sha256": "5fd3c09766a8ace704933b0ef137b0abc173a6b5c716c4f2e19df4a92a1de745",
@@ -2305,8 +2261,16 @@
         "queue_seconds": 20067.248963356018
       }
     },
-    "round_decisions": [],
+    "round_decisions": [
+      {
+        "decision": "STOP_FIXED_DS07_R1_NO_AUTOMATIC_EXPANSION",
+        "evidence_id": "DSAINET-DS07-R1-MERGED-VERIFIED-ANALYSIS-20261105",
+        "record": "ai4s/programs/dsainet/research/ds07-r1/analysis_20261105/DECISION.json",
+        "round_id": "ds07-r1-audit18-r18fix1"
+      }
+    ],
     "started_at": "2026-10-23T13:28:00+00:00",
+    "status": "CLOSED_FIXED_SCREEN_NO_SIGNAL",
     "stopped_accounting": [
       {
         "authorization_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/proofs/manual_wait1_request.json",
@@ -7861,6 +7825,99 @@
           }
         ]
       }
+    },
+    {
+      "completed_at": "2026-11-05T13:09:08.803027+00:00",
+      "decision": "STOP_FIXED_DS07_R1_NO_AUTOMATIC_EXPANSION",
+      "decision_record": "ai4s/programs/dsainet/research/ds07-r1/analysis_20261105/DECISION.json",
+      "evidence_id": "DSAINET-DS07-R1-MERGED-VERIFIED-ANALYSIS-20261105",
+      "mixed_provenance": true,
+      "round_id": "ds07-r1-audit18-r18fix1",
+      "run": {
+        "bundle_id": "2026-11-05_dsainet_ds07_r1_audit18-r18fix1",
+        "dispatch_status": "REMOTE_ACCEPTED",
+        "estimated_training_hours": 6.5,
+        "execution_mode": "user_managed",
+        "executor_id": "lab10",
+        "planned_units": 2,
+        "recorded_at": "2026-11-05T12:11:18.488398+00:00",
+        "round_id": "ds07-r1-audit18-r18fix1",
+        "run_prefix": "2026-11-05_dsainet_ds07_r1_audit18-r18fix1",
+        "transaction_operations": [
+          {
+            "operation": "upload",
+            "recorded_at": "2026-11-05T12:12:57.701803+00:00",
+            "result": {
+              "action": "UPLOADED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-05_dsainet_ds07_r1_audit18-r18fix1-full-w1"
+            }
+          },
+          {
+            "operation": "launch",
+            "recorded_at": "2026-11-05T12:18:13.335709+00:00",
+            "result": {
+              "action": "SUBMISSION_SENT_NOT_VERIFIED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-05_dsainet_ds07_r1_audit18-r18fix1-full-w1"
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-05T12:18:47.080909+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "science",
+              "run_id": "2026-11-05_dsainet_ds07_r1_audit18-r18fix1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "95372fc340bc257e5b42dd11c80ec909ab53e5f81defd1202693f750d6749caa",
+                "execution_seconds": 32.21760702133179,
+                "queue_seconds": 0.8470947742462158,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-05_dsainet_ds07_r1_audit18-r18fix1-full-w1",
+                "transaction_id": "dsainet-ds07-r1-audit18-r18fix1",
+                "waiting_for_resources": false,
+                "wall_seconds": 33.064701795578
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-05T12:22:30.670116+00:00",
+            "result": {
+              "action": "FETCH_VERIFY_INTAKE",
+              "run_id": "2026-11-05_dsainet_ds07_r1_audit18-r18fix1-full-w1",
+              "scientific_stop_boundary": "NEXT_SCIENTIFIC_DECISION",
+              "timing": {
+                "contract_sha256": "95372fc340bc257e5b42dd11c80ec909ab53e5f81defd1202693f750d6749caa",
+                "execution_seconds": 83.5814757347107,
+                "queue_seconds": 0.8470947742462158,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-05_dsainet_ds07_r1_audit18-r18fix1-full-w1",
+                "transaction_id": "dsainet-ds07-r1-audit18-r18fix1",
+                "waiting_for_resources": false,
+                "wall_seconds": 84.42857050895691
+              }
+            }
+          },
+          {
+            "operation": "fetch",
+            "recorded_at": "2026-11-05T12:53:34.876208+00:00",
+            "result": {
+              "analysis_receipt_sha256": "50d281479aef6a12015c6c0c058c89b245db75e39326ab6107800b1c9c9d72d0",
+              "artifact_manifest_sha256": "472328bb9c78bbf8b431cfaa8d1c6dd01fc061b6ff56f24d03c7f873e36bcc9c",
+              "contract_sha256": "95372fc340bc257e5b42dd11c80ec909ab53e5f81defd1202693f750d6749caa",
+              "full_payload_local": false,
+              "intake_scope": "analysis_v1",
+              "run_id": "2026-11-05_dsainet_ds07_r1_audit18-r18fix1-full-w1",
+              "transaction_id": "dsainet-ds07-r1-audit18-r18fix1",
+              "transfer_bytes": 1101797,
+              "verified": true
+            }
+          }
+        ]
+      }
     }
   ],
   "continuation_history": [
@@ -9692,7 +9749,7 @@
       "status": "ENGINEERING_INVALID_SOURCE_ARCHIVED"
     }
   ],
-  "evidence_status": "p0_ord_ec_r1_verified_complete_no_signal",
+  "evidence_status": "ds07_r1_mixed_verified_no_net_utility",
   "external_interruption_recovery": {
     "failed_run_id": "2026-10-13_dsainet_rcd_v0_1_resume1-full-w1",
     "reason_class": "USER_AUTHORIZED_REDEPLOYMENT",
@@ -11504,75 +11561,5 @@
         "C0_s0_t2__SELF__real",
         "C0_s0_t2__SELF__within_subject_permuted",
         "C0_s0_t3__CROSS__real",
-        "C0_s0_t3__CROSS__within_subject_permuted",
-        "C0_s0_t3__DIRECT__real",
-        "C0_s0_t3__DIRECT__within_subject_permuted",
-        "C0_s0_t3__SELF__real",
-        "C0_s0_t3__SELF__within_subject_permuted",
-        "C0_s0_t4__CROSS__real",
-        "C0_s0_t4__CROSS__within_subject_permuted",
-        "C0_s0_t4__DIRECT__real",
-        "C0_s0_t4__DIRECT__within_subject_permuted",
-        "C0_s0_t4__SELF__real",
-        "C0_s0_t4__SELF__within_subject_permuted",
-        "C0_s0_t5__CROSS__real",
-        "C0_s0_t5__CROSS__within_subject_permuted",
-        "C0_s0_t5__SELF__real",
-        "C0_s0_t5__SELF__within_subject_permuted",
-        "C0_s0_t6__CROSS__real",
-        "C0_s0_t6__CROSS__within_subject_permuted",
-        "C0_s0_t6__SELF__real",
-        "C0_s0_t6__SELF__within_subject_permuted",
-        "C0_s0_t7__CROSS__real",
-        "C0_s0_t7__CROSS__within_subject_permuted",
-        "C0_s0_t7__SELF__real",
-        "C0_s0_t7__SELF__within_subject_permuted",
-        "C0_s0_t8__CROSS__real",
-        "C0_s0_t8__CROSS__within_subject_permuted",
-        "C0_s0_t8__SELF__real",
-        "C0_s0_t8__SELF__within_subject_permuted",
-        "C0_s1_t0__CROSS__real",
-        "C0_s1_t0__CROSS__within_subject_permuted",
-        "C0_s1_t0__SELF__real",
-        "C0_s1_t0__SELF__within_subject_permuted",
-        "C0_s1_t1__CROSS__real",
-        "C0_s1_t1__CROSS__within_subject_permuted",
-        "C0_s1_t1__SELF__real",
-        "C0_s1_t1__SELF__within_subject_permuted",
-        "C0_s1_t2__CROSS__real",
-        "C0_s1_t2__CROSS__within_subject_permuted",
-        "C0_s1_t2__SELF__real",
-        "C0_s1_t2__SELF__within_subject_permuted",
-        "C0_s1_t3__CROSS__real",
-        "C0_s1_t3__CROSS__within_subject_permuted",
-        "C0_s1_t3__SELF__real",
-        "C0_s1_t3__SELF__within_subject_permuted",
-        "C0_s1_t4__CROSS__real",
-        "C0_s1_t4__CROSS__within_subject_permuted",
-        "C0_s1_t4__SELF__real",
-        "C0_s1_t4__SELF__within_subject_permuted",
-        "C0_s1_t5__CROSS__real",
-        "C0_s1_t5__CROSS__within_subject_permuted",
-        "C0_s1_t5__SELF__real",
-        "C0_s1_t5__SELF__within_subject_permuted",
-        "C0_s1_t6__CROSS__real",
-        "C0_s1_t6__CROSS__within_subject_permuted",
-        "C0_s1_t6__SELF__real",
-        "C0_s1_t6__SELF__within_subject_permuted",
-        "C0_s1_t7__CROSS__real",
-        "C0_s1_t7__CROSS__within_subject_permuted",
-        "C0_s1_t7__SELF__real",
-        "C0_s1_t7__SELF__within_subject_permuted",
-        "C0_s1_t8__CROSS__real",
-        "C0_s1_t8__CROSS__within_subject_permuted",
-        "C0_s1_t8__SELF__real",
-        "C0_s1_t8__SELF__within_subject_permuted",
-        "P0_s0_t0__CROSS__real",
-        "P0_s0_t0__CROSS__within_subject_permuted",
-        "P0_s0_t0__DIRECT__real",
-        "P0_s0_t0__DIRECT__within_subject_permuted",
-        "P0_s0_t0__SELF__real",
-        "P0_s0_t0__SELF__within_subject_permuted",
-        "P0_s0_t1__CROSS__real",
-  
+        "C0_s0_t3__CROSS__within_sub
 ```

@@ -1148,6 +1148,26 @@
         "path": "ai4s/programs/dbconformer/research/sgp_r1_budget1/TECH_REUSE_INTAKE.json",
         "sha256": "cbe86cdd3dbc5479ed03c75f6fdef8b28c762510b77b41a62179a5019d98d922"
       }
+    },
+    {
+      "claim_release": false,
+      "contract_sha256": "fb7a6bee05afc75997d53233a9b70e4b7ac87fc14c608742cc9ff043e6bef74c",
+      "evidence_id": "AI4S-DBCONFORMER-SOURCE-GEOMETRY-R1-STARTUP-20261105",
+      "fit_cap": 4,
+      "follow_up": "same original SCI4 then frozen verified intake/analysis STOP; preserve SGP stop and all failure/cost history",
+      "readable_report": {
+        "path": "ai4s/programs/dbconformer/research/source_geometry_r1/STARTUP_REPORT.md",
+        "sha256": "ebe9d8d464d94bd3feb5fd0648d43b8073f63acea6ae0b87e557ad2d61975e94"
+      },
+      "recorded_at": "2026-11-04T16:11:08.136929+00:00",
+      "report": {
+        "path": "ai4s/programs/dbconformer/research/source_geometry_r1/STARTUP_REPORT.json",
+        "sha256": "71465e5aa2a35110e696ab22daf42282b0ae0e83f55a0402088c02b52e92a511"
+      },
+      "role": "source_identification_training_startup_and_metadata_reconciliation_not_scientific_result",
+      "run_id": "2026-11-04_dbconformer_source_geometry_r1_lab10-full-w1",
+      "technical_fit_cap": 0,
+      "technical_forward_tasks": 1
     }
   ],
   "engineering_status_checks": [
@@ -1620,6 +1640,36 @@
         "sha256": "2d0ebe9e5bb98f861ebcb65e579b804eeea98a10829805f3bb35630f7bc96cd1"
       },
       "source_evidence_id": "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1"
+    },
+    {
+      "also_based_on": [
+        "AI4S-DBCONFORMER-SGP-ATTRIBUTION-20261104"
+      ],
+      "claim_release": false,
+      "disposition": "USER_STOP_SGP_DIRECT_OPTIMIZATION_PRESERVE_AS_DESIGN_CONSTRAINTS",
+      "next_action": "Design next core research question only; no SGP successor or diagnostic default; no training, forward, new Run or transferred budget.",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261104_post_sgp/DESIGN_RECORD.json",
+        "sha256": "17fc77ad07ed1b8175e0d8a4cadecb682461273d1fb7973e2c3995651c20064a"
+      },
+      "recorded_at": "2026-11-04T14:32:59.276793+00:00",
+      "source_evidence_id": "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1",
+      "supersedes_follow_up_priority_not_scientific_result": "Previous conditional constrained-projection or extra-direction-diagnostic path is no longer the default."
+    },
+    {
+      "claim_release": false,
+      "disposition": "STOP_CURRENT_GEOMETRY_OBJECT_INCONCLUSIVE_FROZEN_NOISE_RELATIVE_GATE",
+      "next_action": "Preserve partial positive C and replication limits; no loss/module/subgroup/seed rescue or automatic successor; SGP remains stopped",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/source_geometry_r1/CLOSEOUT_REPORT.json",
+        "sha256": "8389c4fb9dfe3d625d7d4db0b81231a341dc306c550767362e86f1c49381c07d"
+      },
+      "recorded_at": "2026-11-05T11:45:10.646127+00:00",
+      "report": {
+        "path": "ai4s/programs/dbconformer/research/source_geometry_r1/FINAL_REPORT.md",
+        "sha256": "6718796281343d90e60fca5d15fca4b3e935a8f26b13924c19c1b7e9938d42a5"
+      },
+      "source_evidence_id": "AI4S-DBCONFORMER-dbconformer-source-geometry-r1"
     }
   ],
   "history_navigation": "ai4s/programs/dbconformer/research/HISTORY_BOUNDARIES.md",
@@ -2787,6 +2837,112 @@
         "sha256": "35fe535179b5788db5207a7b484ef43750643905443ad3e7509c3c2a1673f7f3"
       },
       "user_instruction": "进行适用条件研究"
+    },
+    {
+      "claim_release": false,
+      "evidence_id": "AI4S-DBCONFORMER-SGP-ATTRIBUTION-20261104",
+      "follow_up_status": "pause_no_identified_risk_mechanism_no_candidate_or_training",
+      "new_candidate": false,
+      "outcome": "COMPLETE_DESCRIPTIVE_DIAGNOSIS_MECHANISM_INCONCLUSIVE",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/sgp_r1_budget1/attribution_20261104/DISPOSITION.json",
+        "sha256": "04933978f40563181c22ab9ada4f90c10796d1b9b29c8871d71f369fcb7abd1e"
+      },
+      "report": {
+        "path": "ai4s/programs/dbconformer/research/sgp_r1_budget1/attribution_20261104/REPORT.md",
+        "sha256": "a0372c3c270e7c6f697990ea2807550175cc0a2a29134534cccc97500fd3c814"
+      },
+      "role": "posthoc_frozen_trace_diagnosis_no_new_fit",
+      "source_evidence_ids": [
+        "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1"
+      ],
+      "stage2_entry_gate": "NOT_MET_NO_DISTINGUISHABLE_RISK_MECHANISM",
+      "stop_boundary": "If a future single constrained candidate still improves mean but fails preregistered individual risk,stop SGP method-line expansion. Only joint mechanism/risk improvement permits considering independent dataset and paper value;no automatic permission."
+    },
+    {
+      "chain_id": "dbconformer-transaction-v3.3",
+      "claim_release": false,
+      "constraints": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261104_post_sgp/SGP_DESIGN_CONSTRAINTS.md",
+        "sha256": "e04de65325c25c7ad8e8816098afdefb79ed9fdfc5e87a6cd6779b2e5db80dd0"
+      },
+      "decision": "RETIRE_SGP_DIRECT_OPTIMIZATION_AND_DISCOVER_NEXT",
+      "design_id": "DBCONFORMER-POST-SGP-RESEARCH-DESIGN-20261104",
+      "external_review_verdict": "NEEDS_REVISION",
+      "new_fits": 0,
+      "new_inference": 0,
+      "next_run_authorized": false,
+      "post_review_revision_externally_re_reviewed": false,
+      "priority_problem": "D2_session_reproducible_class_geometry_identifiability",
+      "program_id": "dbconformer",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261104_post_sgp/DESIGN_RECORD.json",
+        "sha256": "17fc77ad07ed1b8175e0d8a4cadecb682461273d1fb7973e2c3995651c20064a"
+      },
+      "recorded_at": "2026-11-04T14:32:59.276793+00:00",
+      "research_brief": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261104_post_sgp/research_brief.md",
+        "sha256": "43cc8423b7cbfad34b947e40a01893a9fe7a7ff560cfd26fe30f6e570da31e67"
+      },
+      "role": "research_direction_and_resource_disposition_not_new_science",
+      "run_action": "DESIGN_ONLY",
+      "selected_core_method": null,
+      "source_evidence_ids": [
+        "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1",
+        "AI4S-DBCONFORMER-SGP-ATTRIBUTION-20261104"
+      ],
+      "state_mutated": false
+    },
+    {
+      "claim_release": false,
+      "design_id": "DBCONFORMER-SOURCE-IDENTIFICATION-PREPARATION-20261104",
+      "new_fits": 0,
+      "new_inference": 0,
+      "next_run_authorized": false,
+      "parent_design_id": "DBCONFORMER-POST-SGP-RESEARCH-DESIGN-20261104",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261104_post_sgp/source_identification_design/PREPARATION_RECORD.json",
+        "sha256": "f651c68bb3ebdf9c33a069ca2db594fa3c97400495b7de10dd9d754931ae3d9a"
+      },
+      "role": "source_metadata_design_qualification_not_new_scientific_result",
+      "source_evidence_ids": [
+        "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1",
+        "AI4S-DBCONFORMER-SGP-ATTRIBUTION-20261104"
+      ],
+      "status": "METADATA_QUALIFIED_PROTOCOL_DRAFT_EXECUTION_NOT_READY"
+    },
+    {
+      "all_six_core_method_candidates_unqualified": true,
+      "chain_id": "dbconformer-transaction-v3.3",
+      "claim_release": false,
+      "decision": "NO_QUALIFIED_CORE_DIRECTION_CONDITIONAL_MEASUREMENT_QUESTION_ONLY",
+      "design_id": "DBCONFORMER-POST-GEOMETRY-REASSESSMENT-20261105",
+      "external_review_verdict": "NO_QUALIFIED_CORE_DIRECTION",
+      "new_fits": 0,
+      "new_inference": 0,
+      "next_run_authorized": false,
+      "post_review_revision_externally_re_reviewed": false,
+      "priority_problem": "identifiable_measurement_shift_versus_neural_task_variation",
+      "program_id": "dbconformer",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261105_post_geometry/DESIGN_RECORD.json",
+        "sha256": "2378b13e414d0ec07c76c0cb94e35ae19df1b0534b0cca3c62b7fc1ce1fb697a"
+      },
+      "recorded_at": "2026-11-05T12:09:44.973108+00:00",
+      "research_brief": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261105_post_geometry/research_brief.md",
+        "sha256": "de0172134a3d87e5a48ee630bd92990baa71de0c91c7abdeb0724c9e4451adf2"
+      },
+      "role": "design_and_resource_disposition_not_scientific_evidence",
+      "run_action": "DESIGN_ONLY",
+      "selected_core_method": null,
+      "source_evidence_ids": [
+        "AI4S-DBCONFORMER-dbconformer-source-geometry-r1",
+        "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1",
+        "AI4S-DBCONFORMER-SGP-ATTRIBUTION-20261104",
+        "AI4S-DBCONFORMER-dbconformer-fca-r1"
+      ],
+      "state_mutated": false
     }
   ],
   "round_evidence": [
@@ -4880,8 +5036,22 @@
       "round_contract": "ai4s/programs/dbconformer/research/dbconformer-sgp-r1-budget1.yaml",
       "round_id": "dbconformer-sgp-r1-budget1",
       "run_id": "2026-10-31_dbconformer_sgp_r1_lab10_budget1-full-w1"
+    },
+    {
+      "claim_status": "no_paper_claim",
+      "decision": "INCONCLUSIVE",
+      "decision_record": "ai4s/programs/dbconformer/research/dbconformer-source-geometry-r1_decision.yaml",
+      "evidence_id": "AI4S-DBCONFORMER-dbconformer-source-geometry-r1",
+      "executor_id": "lab10",
+      "follow_up_status": "v3_record_design_constraint_or_precise_closure",
+      "intake_status": "verified_ai4s_round",
+      "interpretation_boundary": "See frozen decision record.",
+      "role": "source_only_geometry_identification_no_claim",
+      "round_contract": "ai4s/programs/dbconformer/research/dbconformer-source-geometry-r1.yaml",
+      "round_id": "dbconformer-source-geometry-r1",
+      "run_id": "2026-11-04_dbconformer_source_geometry_r1_lab10-full-w1"
     }
   ],
   "schema_version": "mieeg-ai4s-evidence-index-v1",
-  "updated_at": "2026-10-31"
+  "updated_at": "2026-11-05T12:09:44.973108+00:00"
 }

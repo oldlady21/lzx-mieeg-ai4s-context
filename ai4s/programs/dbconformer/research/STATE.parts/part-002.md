@@ -2,12 +2,78 @@
 
 完整脱敏文件：`ai4s/programs/dbconformer/research/STATE.yaml`（[原文件](../STATE.yaml)）。
 
-完整公开文件 SHA-256：`2186a6c6abd15d7d9bf4449ab6157f5b7f21c7e35c21cf5e1e0b072a183adbc6`。UTF-8 字节范围：[500000, 1000000) / 1171181。
+完整公开文件 SHA-256：`57de2a9f43d5a19010bb5ed726d92ddfa0f4308878c7559200b892fb881fdb1a`。UTF-8 字节范围：[500000, 1000000) / 1184815。
 
 这是连续文本片段，可能从 JSON 字段中间开始；按分段顺序拼接代码块可恢复完整脱敏正文。不是单独有效的 State，也不授予执行权限。
 
 ```yaml
-26.041666666666668,
+8c43e3c1027d739cb5d7a83b925726609ddb74ba95b5001",
+              "difference_vs_seed0_clean_pp": -1.0416666666666572,
+              "difference_vs_seed0_missing_pp": 1.2468434343434325,
+              "historical_seed0_clean_acc_pp": 44.27083333333333,
+              "historical_seed0_missing_acc_pp": 34.540719696969695,
+              "source_valid_best_epoch": 86,
+              "source_valid_clean_acc_pp": 81.46551724137932,
+              "subject": 4,
+              "target_clean_acc_pp": 43.22916666666667,
+              "target_missing_acc_pp": 35.78756313131313,
+              "target_missing_per_channel_acc_pp": [
+                42.88194444444444,
+                28.819444444444443,
+                44.09722222222222,
+                43.57638888888889,
+                26.21527777777778,
+                29.166666666666668,
+                42.01388888888889,
+                44.44444444444444,
+                39.93055555555556,
+                34.54861111111111,
+                35.41666666666667,
+                27.256944444444443,
+                31.07638888888889,
+                25.868055555555557,
+                36.80555555555556,
+                36.63194444444444,
+                28.47222222222222,
+                35.76388888888889,
+                25.0,
+                51.388888888888886,
+                26.90972222222222,
+                51.041666666666664
+              ],
+              "task_id": "B0_s4_seed1"
+            },
+            {
+              "backbone_seed": 2,
+              "checkpoint_sha256": "180fdc7bde7efd4ac1ec2c39000da067cf434bd4f48681c7f316a8a37a51eeae",
+              "difference_vs_seed0_clean_pp": -0.86805555555555,
+              "difference_vs_seed0_missing_pp": 0.09469696969696173,
+              "historical_seed0_clean_acc_pp": 44.27083333333333,
+              "historical_seed0_missing_acc_pp": 34.540719696969695,
+              "source_valid_best_epoch": 100,
+              "source_valid_clean_acc_pp": 79.95689655172413,
+              "subject": 4,
+              "target_clean_acc_pp": 43.40277777777778,
+              "target_missing_acc_pp": 34.63541666666666,
+              "target_missing_per_channel_acc_pp": [
+                45.3125,
+                36.45833333333333,
+                45.83333333333333,
+                38.54166666666667,
+                29.34027777777778,
+                33.15972222222222,
+                36.28472222222222,
+                42.53472222222222,
+                32.29166666666667,
+                37.84722222222222,
+                37.84722222222222,
+                31.59722222222222,
+                42.88194444444444,
+                25.520833333333332,
+                28.645833333333332,
+                25.17361111111111,
+                34.20138888888889,
+                26.041666666666668,
                 25.0,
                 47.22222222222222,
                 26.041666666666668,
@@ -6242,6 +6308,126 @@
           }
         ]
       }
+    },
+    {
+      "decision": {
+        "automatic_continuation": false,
+        "claim_release": false,
+        "decision": "INCONCLUSIVE",
+        "interpretation": "descriptive_noise_relative_investment_gate_only_no_significance_no_unbiased_estimate_no_utility_no_claim",
+        "next_training_authorized": false,
+        "no_paper_claim": true,
+        "round_id": "dbconformer-source-geometry-r1",
+        "run_action": "STOP"
+      },
+      "decision_record": "ai4s/programs/dbconformer/research/dbconformer-source-geometry-r1_decision.yaml",
+      "evidence_id": "AI4S-DBCONFORMER-dbconformer-source-geometry-r1",
+      "round_id": "dbconformer-source-geometry-r1",
+      "run": {
+        "bundle_id": "2026-11-04_dbconformer_source_geometry_r1_lab10_bundle",
+        "dispatch_status": "REMOTE_ACCEPTED",
+        "estimated_training_hours": 14.0,
+        "execution_mode": "user_managed",
+        "executor_id": "lab10",
+        "planned_units": 5,
+        "recorded_at": "2026-11-04T15:56:18.448314+00:00",
+        "round_id": "dbconformer-source-geometry-r1",
+        "run_prefix": "2026-11-04_dbconformer_source_geometry_r1_lab10",
+        "transaction_operations": [
+          {
+            "operation": "upload",
+            "recorded_at": "2026-11-04T15:57:30.318427+00:00",
+            "result": {
+              "action": "UPLOADED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-04_dbconformer_source_geometry_r1_lab10-full-w1"
+            }
+          },
+          {
+            "operation": "launch",
+            "recorded_at": "2026-11-04T15:57:32.733159+00:00",
+            "result": {
+              "action": "SUBMISSION_SENT_NOT_VERIFIED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-04_dbconformer_source_geometry_r1_lab10-full-w1"
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-04T15:57:50.113817+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "smoke",
+              "run_id": "2026-11-04_dbconformer_source_geometry_r1_lab10-full-w1",
+              "status": "FAILED",
+              "timing": {
+                "contract_sha256": "fb7a6bee05afc75997d53233a9b70e4b7ac87fc14c608742cc9ff043e6bef74c",
+                "execution_seconds": 14.347025632858276,
+                "queue_seconds": 1.5589683055877686,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-04_dbconformer_source_geometry_r1_lab10-full-w1",
+                "transaction_id": "dbconformer-source-geometry-r1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 15.905993938446045
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-04T16:07:53.819935+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "screen",
+              "run_id": "2026-11-04_dbconformer_source_geometry_r1_lab10-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "fb7a6bee05afc75997d53233a9b70e4b7ac87fc14c608742cc9ff043e6bef74c",
+                "execution_seconds": 616.8959472179413,
+                "queue_seconds": 3.285648822784424,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-04_dbconformer_source_geometry_r1_lab10-full-w1",
+                "transaction_id": "dbconformer-source-geometry-r1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 620.1815960407257
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-05T11:36:19.786586+00:00",
+            "result": {
+              "action": "FETCH_VERIFY_INTAKE",
+              "run_id": "2026-11-04_dbconformer_source_geometry_r1_lab10-full-w1",
+              "scientific_stop_boundary": "NEXT_SCIENTIFIC_DECISION",
+              "timing": {
+                "contract_sha256": "fb7a6bee05afc75997d53233a9b70e4b7ac87fc14c608742cc9ff043e6bef74c",
+                "execution_seconds": 1254.7386133670807,
+                "queue_seconds": 5.630229949951172,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-04_dbconformer_source_geometry_r1_lab10-full-w1",
+                "transaction_id": "dbconformer-source-geometry-r1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 1260.3688433170319
+              }
+            }
+          },
+          {
+            "operation": "fetch",
+            "recorded_at": "2026-11-05T11:36:38.032514+00:00",
+            "result": {
+              "analysis_receipt_sha256": "3c218016cf23912cd52294c04fcde5d3d5ea6ab01d68cee5ea631ac586e4e8de",
+              "artifact_manifest_sha256": "bdbb1203dd07e3340c639382ff422e7806288b489d5ba1ed7fa47897f3ed0d56",
+              "contract_sha256": "fb7a6bee05afc75997d53233a9b70e4b7ac87fc14c608742cc9ff043e6bef74c",
+              "full_payload_local": false,
+              "intake_scope": "analysis_v1",
+              "run_id": "2026-11-04_dbconformer_source_geometry_r1_lab10-full-w1",
+              "transaction_id": "dbconformer-source-geometry-r1-tx",
+              "transfer_bytes": 2891722,
+              "verified": true
+            }
+          }
+        ]
+      }
     }
   ],
   "deployment_continuation_history": [
@@ -8713,7 +8899,7 @@
       "transaction_timeout_seconds": 14400
     }
   ],
-  "evidence_status": "sgp_r1_budget1_verified_intake_decision_registered_no_claim",
+  "evidence_status": "campaign_active_with_archived_evidence_only_no_claim_release",
   "execution_block_history": [
     {
       "authorization_ref": "ai4s/programs/dbconformer/research/bas_r1/DESTINATION_AUTHORIZATION.json",
@@ -9339,58 +9525,12 @@
   "last_decision": {
     "automatic_continuation": false,
     "claim_release": false,
-    "comparisons": {
-      "P-B0": {
-        "all_subject_seed_pairs_ge_minus_3pp": false,
-        "mean_positive_and_p_le_0_05": true,
-        "one_sided_exact_subject_signflip_p": 0.0234375,
-        "seed_mean_delta_pp": {
-          "3": 1.2538580246913582,
-          "4": 1.253858024691358
-        },
-        "signflip_assignments": 512,
-        "subject_delta_pp": {
-          "0": 1.0416666666666667,
-          "1": 2.170138888888889,
-          "2": 2.7777777777777777,
-          "3": 3.125,
-          "4": -0.08680555555555558,
-          "5": -0.26041666666666674,
-          "6": 2.083333333333333,
-          "7": -1.3020833333333333,
-          "8": 1.7361111111111112
-        },
-        "subject_mean_delta_pp": 1.2538580246913578,
-        "supported": false,
-        "worst_subject_seed_delta_pp": -3.125
-      },
-      "P-C": {
-        "all_subject_seed_pairs_ge_minus_3pp": false,
-        "mean_positive_and_p_le_0_05": true,
-        "one_sided_exact_subject_signflip_p": 0.00390625,
-        "seed_mean_delta_pp": {
-          "3": 2.006172839506173,
-          "4": 1.871141975308642
-        },
-        "signflip_assignments": 512,
-        "subject_delta_pp": {
-          "0": -0.3472222222222222,
-          "1": 1.9965277777777777,
-          "2": 2.951388888888889,
-          "3": 0.954861111111111,
-          "4": 0.7812499999999999,
-          "5": 2.517361111111111,
-          "6": 3.5590277777777777,
-          "7": 0.4340277777777779,
-          "8": 4.600694444444445
-        },
-        "subject_mean_delta_pp": 1.9386574074074072,
-        "supported": false,
-        "worst_subject_seed_delta_pp": -3.6458333333333335
-      }
-    },
-    "decision": "SGP_R1_GROUP_STRUCTURE_UTILITY_NOT_ESTABLISHED_STOP",
-    "round_id": "dbconformer-sgp-r1-budget1"
+    "decision": "INCONCLUSIVE",
+    "interpretation": "descriptive_noise_relative_investment_gate_only_no_significance_no_unbiased_estimate_no_utility_no_claim",
+    "next_training_authorized": false,
+    "no_paper_claim": true,
+    "round_id": "dbconformer-source-geometry-r1",
+    "run_action": "STOP"
   },
   "last_failure_analysis": {
     "partial_effects_analyzed": false,
@@ -9402,21 +9542,21 @@
     "task_id": "s2_seed1"
   },
   "last_round_evidence": {
-    "decision_record": "ai4s/programs/dbconformer/research/dbconformer-sgp-r1-budget1_decision.yaml",
-    "evidence_id": "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1",
-    "role": "screen_inconclusive"
+    "decision_record": "ai4s/programs/dbconformer/research/dbconformer-source-geometry-r1_decision.yaml",
+    "evidence_id": "AI4S-DBCONFORMER-dbconformer-source-geometry-r1",
+    "role": "source_only_geometry_identification_no_claim"
   },
   "last_verified_intake": {
-    "analysis_receipt_sha256": "d9f7e6dc8a6487d5b8ab679b59aa4fe58b8126cef78dda8170294f940be25235",
-    "artifact_manifest_sha256": "f05c1a5ffc15ae17b543b7736d717d1e2fa251ffda2d05173c99596d10037c25",
-    "contract_sha256": "01c415c4eece0d26c3f9581adc14adfd62fda0b2b9cafd26bd1040233e97f7a0",
+    "analysis_receipt_sha256": "3c218016cf23912cd52294c04fcde5d3d5ea6ab01d68cee5ea631ac586e4e8de",
+    "artifact_manifest_sha256": "bdbb1203dd07e3340c639382ff422e7806288b489d5ba1ed7fa47897f3ed0d56",
+    "contract_sha256": "fb7a6bee05afc75997d53233a9b70e4b7ac87fc14c608742cc9ff043e6bef74c",
     "full_payload_local": false,
-    "intake_path": "results/logs/remote/2026-10-31_dbconformer_sgp_r1_lab10_budget1-full-w1",
+    "intake_path": "results/logs/remote/2026-11-04_dbconformer_source_geometry_r1_lab10-full-w1",
     "intake_scope": "analysis_v1",
-    "run_id": "2026-10-31_dbconformer_sgp_r1_lab10_budget1-full-w1",
+    "run_id": "2026-11-04_dbconformer_source_geometry_r1_lab10-full-w1",
     "run_status": "complete",
-    "transaction_id": "dbconformer-sgp-r1-budget1-tx",
-    "transfer_bytes": 2186155559,
+    "transaction_id": "dbconformer-source-geometry-r1-tx",
+    "transfer_bytes": 2891722,
     "verified": true,
     "verified_at": null
   },
@@ -9788,6 +9928,145 @@
       },
       "research_id": "fsa_r1",
       "status": "CLOSED_VERIFIED_NEGATIVE_SCREEN"
+    }
+  ],
+  "preserved_campaigns": [
+    {
+      "campaign": {
+        "authorization_reason": "User authorized exactly four source-only encoder fits after qualification; SGP direct optimization remains stopped.",
+        "campaign_id": "dbconformer-source-geometry-r1-campaign",
+        "continuation_policy_version": "evidence_to_design_v1",
+        "decision_policy": "stop_at_positive",
+        "governance_chain_id": "dbconformer-transaction-v3.3",
+        "invalid_behavior": "fail_closed_without_advancing",
+        "positive_signal_behavior": "pause_for_human_review",
+        "purpose": "user-authorized bounded AI4S campaign",
+        "round_decisions": [],
+        "started_at": "2026-11-04T15:55:51.329902+00:00"
+      },
+      "capture_status": "POST_START_ALIAS_CAPTURE_NOT_THE_OLD_SGP_SNAPSHOT",
+      "closure_budget_accounting": {
+        "accounted_hours": 82.67377071914012,
+        "accounting_started_at": "2026-10-24T12:23:48.589375+08:00",
+        "all_costs_preserved": true,
+        "budget_increased_this_recovery": false,
+        "closed_at": "2026-10-28T15:56:30.750481+08:00",
+        "elapsed_hours": 99.54504475166667,
+        "interpretation": "Training completed earlier within the authorized envelope; delayed retrieval/repair/closeout wall accounting is retained, not erased.",
+        "limit_hours": 80,
+        "overrun_hours": 2.6737707191401228,
+        "verified_queue_excluded_hours": 16.871274032526546,
+        "verified_stopped_excluded_hours": 0.0
+      },
+      "pending_execution_budget": null,
+      "reason": "New source identification, SGP closed, no budget transfer",
+      "run_control": {
+        "continuation_policy_version": "evidence_to_design_v1",
+        "continue_after_positive": false,
+        "max_rounds": 1,
+        "monitor": "blocking",
+        "night_budget_hours": 24.0,
+        "queue_time_policy": "exclude_resource_wait",
+        "round_index": 0,
+        "started_at": "2026-11-04T15:55:51.329902+00:00"
+      }
+    },
+    {
+      "campaign": {
+        "allowed_transitions": [
+          "SCREEN_NEW"
+        ],
+        "authorization_reason": "User authorized production wiring GPU qualification three-arm decision and formal scientific training; new 72h envelope anchored 2026-10-31T06:03:45+00:00 includes preparation; 57 fresh fits no retry no successor.",
+        "campaign_id": "dbconformer-sgp-r1-campaign",
+        "continuation_policy_version": "evidence_to_design_v1",
+        "decision_policy": "stop_at_positive",
+        "execution_authorization": {
+          "allowed_operations": [
+            "upload",
+            "launch",
+            "probe",
+            "fetch",
+            "intake"
+          ],
+          "allowed_transitions": [
+            "SCREEN_NEW"
+          ],
+          "authorization_ref": "ai4s/programs/dbconformer/research/sgp_r1/EXECUTION_AUTHORIZATION.md",
+          "campaign_id": "dbconformer-sgp-r1-campaign",
+          "executor_id": "lab10",
+          "recorded_at": "2026-10-31T06:27:31.017056+00:00",
+          "research_scope": {
+            "allow_new_module": false,
+            "allowed_module_ids": [
+              "same-forward-real-prefix-source-group-symmetric-projection-v1"
+            ],
+            "allowed_stages": [
+              "source_group_projection_screen"
+            ],
+            "data_scope_id": "bnci2014001-exposed-loso-cue0_4s-seeds3_4",
+            "question_id": "dbconformer-source-group-projection-applicability"
+          },
+          "source_sha256": "2346ca80d7c80525ffdd3b635e732ad2052718a821b668b0cce23d725b714d90"
+        },
+        "governance_chain_id": "dbconformer-transaction-v3.3",
+        "invalid_behavior": "fail_closed_without_advancing",
+        "positive_signal_behavior": "pause_for_human_review",
+        "purpose": "user-authorized bounded AI4S campaign",
+        "queue_accounting": {
+          "2026-10-31_dbconformer_sgp_r1_lab10_budget1-full-w1": {
+            "contract_sha256": "01c415c4eece0d26c3f9581adc14adfd62fda0b2b9cafd26bd1040233e97f7a0",
+            "queue_seconds": 71279.37181305885,
+            "run_id": "2026-10-31_dbconformer_sgp_r1_lab10_budget1-full-w1",
+            "transaction_id": "dbconformer-sgp-r1-budget1-tx"
+          },
+          "2026-10-31_dbconformer_sgp_r1_lab10_r1-full-w1": {
+            "contract_sha256": "6f9e6fea42781c442530511fed798c6b3e2a97147651c54fc9ef9b4965228977",
+            "queue_seconds": 12193.73873090744,
+            "run_id": "2026-10-31_dbconformer_sgp_r1_lab10_r1-full-w1",
+            "transaction_id": "dbconformer-sgp-r1-tx"
+          }
+        },
+        "round_decisions": [
+          {
+            "decision": "SGP_R1_GROUP_STRUCTURE_UTILITY_NOT_ESTABLISHED_STOP",
+            "decision_record": "ai4s/programs/dbconformer/research/dbconformer-sgp-r1-budget1_decision.yaml",
+            "evidence_id": "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1",
+            "recorded_at": "2026-11-04T05:58:38.570613+00:00",
+            "round_id": "dbconformer-sgp-r1-budget1"
+          }
+        ],
+        "started_at": "2026-10-31T06:27:21.493849+00:00"
+      },
+      "captured_at": "2026-11-04T16:14:12.067167+00:00",
+      "closure_budget_accounting": {
+        "accounted_hours": 82.67377071914012,
+        "accounting_started_at": "2026-10-24T12:23:48.589375+08:00",
+        "all_costs_preserved": true,
+        "budget_increased_this_recovery": false,
+        "closed_at": "2026-10-28T15:56:30.750481+08:00",
+        "elapsed_hours": 99.54504475166667,
+        "interpretation": "Training completed earlier within the authorized envelope; delayed retrieval/repair/closeout wall accounting is retained, not erased.",
+        "limit_hours": 80,
+        "overrun_hours": 2.6737707191401228,
+        "verified_queue_excluded_hours": 16.871274032526546,
+        "verified_stopped_excluded_hours": 0.0
+      },
+      "pending_execution_budget": null,
+      "reason": "Verified original SGP closure/budget from immutable pre-start State; no transfer",
+      "run_control": {
+        "accounting_anchor_basis": "First time check in this authorized launch turn; includes all preparation and does not reset at registration/launch",
+        "continuation_policy_version": "evidence_to_design_v1",
+        "continue_after_positive": false,
+        "max_rounds": 1,
+        "monitor": "blocking",
+        "night_budget_hours": 144.0,
+        "preparation_included": true,
+        "queue_time_policy": "exclude_resource_wait",
+        "round_index": 1,
+        "started_at": "2026-10-31T06:03:45+00:00"
+      },
+      "source_sha256": "2e9dad9be42979b9bb30e087f1fd1b9be203ceb16b8648c98df5dd895d7920fc",
+      "source_snapshot": "ai4s/programs/dbconformer/research/source_geometry_r1/STATE_BEFORE.yaml"
     }
   ],
   "program_id": "dbconformer",
@@ -10433,18 +10712,19 @@
     }
   ],
   "run_control": {
-    "accounting_anchor_basis": "First time check in this authorized launch turn; includes all preparation and does not reset at registration/launch",
+    "accounting_anchor_basis": "Conservative hour-floor before first budget check 15:15:46UTC; includes preparation already done in this authorized turn. New independent budget, no SGP cost transfer.",
     "continuation_policy_version": "evidence_to_design_v1",
     "continue_after_positive": false,
     "max_rounds": 1,
     "monitor": "blocking",
-    "night_budget_hours": 144.0,
+    "night_budget_hours": 24.0,
     "preparation_included": true,
     "queue_time_policy": "exclude_resource_wait",
     "round_index": 1,
-    "started_at": "2026-10-31T06:03:45+00:00"
+    "started_at": "2026-11-04T15:00:00+00:00"
   },
   "schema_version": "mieeg-ai4s-state-v1",
+  "sgp_direct_optimization": "STOPPED",
   "source_recovery_history": [
     {
       "budget_admission": {
@@ -11134,202 +11414,5 @@
                 "sha256": "364231c5d88bf26b3e0a88d3ddb276b7f8b8ea579efa499aead0033125737080"
               },
               "base_reference": {
-                "path": "refs/models/DSAINet-main/DSAINet-main/model/DBConformer.py",
-                "sha256": "141c9c64c55529093a406aa90552297e47a0417fd6bc72af1919f33e873f9248"
-              },
-              "baseline_reference.py": {
-                "path": "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference.py",
-                "sha256": "5fcbca187e43d74e9d1bbe90b8367eb2a07feeb94f17c2253ad606f24741735e"
-              },
-              "canonical_trainer": {
-                "path": "scripts/run_dsainet_bnci2014001.py",
-                "sha256": "23843319829974990b16ab6ef383670b3cac9d627b65ebdef91121c72dc7b062"
-              },
-              "controller_support.py": {
-                "path": "ai4s/programs/dbconformer/research/bsp_r1/controller_support.py",
-                "sha256": "b3cda137883b1a04708cc88280e6e293d8476d61d3320c54ba6395d9dc7fcd9e"
-              },
-              "lab10_capacity": {
-                "path": "scripts/remote/lab10_capacity.py",
-                "sha256": "610d3e43af07d64b4ea00dc2533b6db35896dec420e2e7533ddec14af5953719"
-              },
-              "lab10_reservations": {
-                "path": "scripts/remote/lab10_reservations.py",
-                "sha256": "68c8cd8b196fbc0ee264d398c0c7a6038dc289ccc0c69a6e97ae827ac41adac5"
-              },
-              "node.py": {
-                "path": "ai4s/programs/dbconformer/research/bsp_r1/node.py",
-                "sha256": "af8cb09de89372dd42d10b3c73febce3f47f5532c9d9217b6848cf3471ed2393"
-              },
-              "prepare_contract.py": {
-                "path": "ai4s/programs/dbconformer/research/bsp_r1/prepare_contract.py",
-                "sha256": "ff7060a52d7cacfd42425bac40dc6af44d3882ea44573c9c484a321d1e1a3b9d"
-              },
-              "program_controller": {
-                "path": "scripts/ai4s/program_controller.py",
-                "sha256": "b76ae60f0bf59219d9ed0edfab750d8cbda9898d9aaf812c64cac483e5553387"
-              },
-              "reference_adapter": {
-                "path": "src/models/dbconformer/dsainet_reference.py",
-                "sha256": "c7b04708287539ff4667631f8efcf7c72af1680b6bf2bd576b279c2f589b43b1"
-              },
-              "reference_util": {
-                "path": "refs/models/DSAINet-main/DSAINet-main/utils/util.py",
-                "sha256": "31c5e4c8c4686e53ce995870ecbc1d19233bded877b1d1f827edfcb5f150ec0f"
-              },
-              "replay_in_training_environment.py": {
-                "path": "ai4s/programs/dbconformer/research/bsp_r1/replay_in_training_environment.py",
-                "sha256": "39f3f9bdfbff57b596dea3770aa073a18304d02333402f891d9c6cdb4012503d"
-              },
-              "run_task.py": {
-                "path": "ai4s/programs/dbconformer/research/bsp_r1/run_task.py",
-                "sha256": "605b438265e7e2f500dc1a4409ee2968efd57ec18b3c4fa1dc3db5256e507aa4"
-              },
-              "runtime_model.py": {
-                "path": "ai4s/programs/dbconformer/research/bsp_r1/runtime_model.py",
-                "sha256": "d1ea68cad5fbb5c5e2b15804e2a4b503462c28cd2ac4db7f1c1e3a6f3d3ba527"
-              },
-              "shared_executor": {
-                "path": "scripts/remote/lab10_shared_executor.py",
-                "sha256": "6988ec8f7fc535aa887760478e02cda70c48cdc2166c1eedfe678cabb1647555"
-              },
-              "training_trajectory.py": {
-                "path": "ai4s/programs/dbconformer/research/bsp_r1/training_trajectory.py",
-                "sha256": "e14100324c63b0e1565b36aed7c3adca24837c79e16d33037391a2f346bfd744"
-              },
-              "transaction": {
-                "path": "scripts/ai4s/transaction.py",
-                "sha256": "8b6982250f287f284e6570e18946421a8018fb4ab6d6a422250419fd2d757b9a"
-              },
-              "validate_artifacts.py": {
-                "path": "ai4s/programs/dbconformer/research/bsp_r1/validate_artifacts.py",
-                "sha256": "d1d9ceadbd05af87e39af803cc39f241157a9659442feb44421cb398575ce9dd"
-              }
-            },
-            "maximum_rounds": 1,
-            "metric_unit": "percentage_points",
-            "model_config": {
-              "path": "ai4s/programs/dbconformer/research/bsp_r1/model_config.yaml",
-              "sha256": "bb666ee29b40dca36bfa6fcc960c10453c36c00e67317141c6e15526b5212856"
-            },
-            "program_id": "dbconformer",
-            "protocol_id": "exploratory-loso-cue0_4s-v1",
-            "replay_policy": {
-              "atol": "1e-05",
-              "classify_only_if_all_subject_and_loo_subgates_are_invariant_over_bounds": true,
-              "policy_id": "frozen-tolerance-possible-winners-v1",
-              "rtol": "1e-05"
-            },
-            "research_id": "bsp_r1",
-            "research_identity": {
-              "data_scope_id": "bnci2014001-official-cue0-4s-loso-seed0",
-              "hypothesis": "Band-specific spatial energy yields bounded exploratory utility over B0 and both controls.",
-              "hypothesis_id": "dbconformer-bsp-r1-band-spatial-utility",
-              "intervention_id": "band-specific-spatial-energy-v01",
-              "module_id": "band-specific-spatial-energy-v01",
-              "question_id": "dbconformer-bsp-r1-band-spatial-utility",
-              "research_id": "bsp_r1"
-            },
-            "research_saturation_key": {
-              "baseline_implementation_revision": "141c9c64c55529093a406aa90552297e47a0417fd6bc72af1919f33e873f9248",
-              "checkpoint_rule": "source_valid_accuracy_then_loss_then_earliest",
-              "data_scope_id": "bnci2014001-official-cue0-4s-loso-seed0",
-              "dataset": "BNCI2014001",
-              "epochs": 100,
-              "hypothesis_family_id": "dbconformer-bsp-r1-band-spatial-utility",
-              "metric": "accuracy_percentage_points",
-              "module_family_id": "band-specific-spatial-energy-v01",
-              "preprocessing": "official_preprocessed_cue0_4s",
-              "protocol": "tp-dsainet100-v1",
-              "split": "official_loso_subject0_8_seed0",
-              "subjects": [
-                0,
-                1,
-                2,
-                3,
-                4,
-                5,
-                6,
-                7,
-                8
-              ]
-            },
-            "research_stage": "band_specific_spatial_energy_joint_screen",
-            "round_id": "dbconformer-bsp-r1",
-            "run_prefix": "2026-10-18_dbconformer_bsp_r1_lab10_r1",
-            "schema_version": "mieeg-ai4s-round-contract-v2",
-            "split_sha256_by_subject": {
-              "0": "391b0aa801daf7e7eb9b2ea71eaff545940b52b0f2468f2cad9940f7fc4293f0",
-              "1": "940bc7ae06fdb49b05a3816f3385726a74c90f1e13a6265c9771e49406fae014",
-              "2": "e3d5539bd6cc47f79f210e20d27701a108ba959620077569eb61fbc86733e568",
-              "3": "43d8922f7db8a6544b16871192060af4141cef708db32a134812c9bea972ff0f",
-              "4": "a4ac172984408c4eaf2ae3412e1f2cd84e86d266eb8070ebb5a3763b355c2a2c",
-              "5": "126a919f79578e51a6cb933b1e900df8e9036a5158152de06a80e7e61ff3fd70",
-              "6": "32c0ad5d1da936b5e5245a2c710cec91a951983e729840c510df420c9e97da72",
-              "7": "ad338b9a5169441ade40a749f99427701cfe76e4daf0b482b28441333f2198db",
-              "8": "34a23d98274b88cc75ec477993085a6cd9a03b2f447bf5149b40e43dadaf458d"
-            },
-            "status": "frozen",
-            "task_scopes": {
-              "screen": {
-                "command": [
-                  "[REDACTED_MACHINE]",
-                  "-B",
-                  "ai4s/programs/dbconformer/research/bsp_r1/node.py"
-                ],
-                "requirements": [
-                  "ai4s/programs/dbconformer/research/bsp_r1/B0_BSP_REPLAY_QUALIFICATION.json",
-                  "ai4s/programs/dbconformer/research/bsp_r1/B0_REUSE_LOCAL.json",
-                  "ai4s/programs/dbconformer/research/bsp_r1/BUDGET_AUTHORIZATION.json",
-                  "ai4s/programs/dbconformer/research/bsp_r1/BUDGET_PROPOSAL.json",
-                  "ai4s/programs/dbconformer/research/bsp_r1/DESIGN_PROVENANCE.json",
-                  "ai4s/programs/dbconformer/research/bsp_r1/EXECUTION_AUTHORIZATION.json",
-                  "ai4s/programs/dbconformer/research/bsp_r1/EXECUTION_AUTHORIZATION.md",
-                  "ai4s/programs/dbconformer/research/bsp_r1/FINAL_PREPARATION_INDEPENDENT_CHECK.json",
-                  "ai4s/programs/dbconformer/research/bsp_r1/FIRST_QUARTET_PLAN.json",
-                  "ai4s/programs/dbconformer/research/bsp_r1/GPU_PROFILE.json",
-                  "ai4s/programs/dbconformer/research/bsp_r1/MAIN_IMPLEMENTATION_ACCEPTANCE.json",
-                  "ai4s/programs/dbconformer/research/bsp_r1/OBSERVATIONAL_PROFILE_PLAN.json",
-                  "ai4s/programs/dbconformer/research/bsp_r1/PREPARATION_AUTHORIZATION.json",
-                  "ai4s/programs/dbconformer/research/bsp_r1/PROFILE_EVIDENCE_RECEIPT.json",
-                  "ai4s/programs/dbconformer/research/bsp_r1/PROFILE_QUALIFICATION_DISPOSITION.json",
-                  "ai4s/programs/dbconformer/research/bsp_r1/PROSPECTIVE_BUNDLE_PREPARATION.json",
-                  "ai4s/programs/dbconformer/research/bsp_r1/REMOTE_CPU_ACCEPTANCE.json",
-                  "ai4s/programs/dbconformer/research/bsp_r1/REMOTE_ENVIRONMENT_SNAPSHOT.json",
-                  "ai4s/programs/dbconformer/research/bsp_r1/RESOURCE_ESTIMATE.json",
-                  "ai4s/programs/dbconformer/research/bsp_r1/SCIENTIFIC_SPEC.json",
-                  "ai4s/programs/dbconformer/research/bsp_r1/analyze.py",
-                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference.py",
-                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/BASELINE_REFERENCE.json",
-                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s0_seed0/diagnostic/canonical_source_valid_predictions.npz",
-                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s0_seed0/diagnostic/checkpoint.pt",
-                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s0_seed0/diagnostic/config_used.json",
-                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s0_seed0/diagnostic/cpu_source_valid_replay.npz",
-                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s0_seed0/diagnostic/cpu_target_replay.npz",
-                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s0_seed0/diagnostic/gpu_source_valid_predictions.npz",
-                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s0_seed0/diagnostic/gpu_target_predictions.npz",
-                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s0_seed0/diagnostic/provenance.json",
-                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s0_seed0/diagnostic/selection_trace.json",
-                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s0_seed0/diagnostic/split_indices.npz",
-                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s0_seed0/diagnostic/task_result.json",
-                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s0_seed0/diagnostic/train.log",
-                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s0_seed0/evidence.json",
-                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s0_seed0/source_evidence.json",
-                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s1_seed0/diagnostic/canonical_source_valid_predictions.npz",
-                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s1_seed0/diagnostic/checkpoint.pt",
-                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s1_seed0/diagnostic/config_used.json",
-                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s1_seed0/diagnostic/cpu_source_valid_replay.npz",
-                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s1_seed0/diagnostic/cpu_target_replay.npz",
-                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s1_seed0/diagnostic/gpu_source_valid_predictions.npz",
-                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s1_seed0/diagnostic/gpu_target_predictions.npz",
-                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s1_seed0/diagnostic/provenance.json",
-                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s1_seed0/diagnostic/selection_trace.json",
-                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s1_seed0/diagnostic/split_indices.npz",
-                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s1_seed0/diagnostic/task_result.json",
-                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s1_seed0/diagnostic/train.log",
-                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s1_seed0/evidence.json",
-                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s1_seed0/source_evidence.json",
-                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s2_seed0/diagnostic/canonical_source_valid_predictions.npz",
-                  "ai4s/programs/dbconformer/research/bsp_r1/baseline_reference/b0/B0_s2_seed0/diagnostic/checkpoint.pt",
-                  "ai4s/programs/dbconf
+        
 ```
