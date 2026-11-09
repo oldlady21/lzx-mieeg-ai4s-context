@@ -2943,6 +2943,1281 @@
         "AI4S-DBCONFORMER-dbconformer-fca-r1"
       ],
       "state_mutated": false
+    },
+    {
+      "chain_id": "dbconformer-transaction-v3.3",
+      "claim_release": false,
+      "decision": "NO_QUALIFIED_DIRECTION",
+      "design_id": "DBCONFORMER-POST-PJDD-REASSESSMENT-20261106",
+      "external_review_verdict": "NO_QUALIFIED_DIRECTION",
+      "new_fits": 0,
+      "new_inference": 0,
+      "next_run_authorized": false,
+      "post_review_revision_externally_re_reviewed": false,
+      "priority_problem": "visual_stimulus_by_imagery_intention_independent_assignment_asset_qualification_only",
+      "program_id": "dbconformer",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_pjdd/DESIGN_RECORD.json",
+        "sha256": "52f1c2a46bc416c76512049e3c53d22bf05ace0c5d5dd30c59f9b76bdbb7cd08"
+      },
+      "recorded_at": "2026-11-06T02:08:49.758826+08:00",
+      "research_brief": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_pjdd/research_brief.md",
+        "sha256": "1ddf4fcc96c6f891df6db88b16786cbdaeb109a23c964181dfee76400232eb94"
+      },
+      "role": "design_and_resource_disposition_not_scientific_evidence",
+      "run_action": "DESIGN_ONLY",
+      "selected_core_method": null,
+      "source_evidence_ids": [
+        "AI4S-DBCONFORMER-dbconformer-source-geometry-r1",
+        "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1",
+        "AI4S-DBCONFORMER-dbconformer-srt-r1-repair3"
+      ],
+      "state_mutated": false
+    },
+    {
+      "asset_status": "PUBLIC_PROTOCOL_CHECKED_FILE_LEVEL_AND_CONFIRMATION_PENDING",
+      "chain_id": "dbconformer-transaction-v3.3",
+      "claim_release": false,
+      "decision": "NO_QUALIFIED_DIRECTION_CONDITIONAL_SOURCE_COVERAGE_DESIGN_ONLY",
+      "design_id": "DBCONFORMER-SOURCE-COVERAGE-REASSESSMENT-20261106",
+      "new_fits": 0,
+      "new_inference": 0,
+      "next_run_authorized": false,
+      "prior_design_id": "DBCONFORMER-POST-PJDD-REASSESSMENT-20261106",
+      "prior_visual_assignment_disposition": "STOP_CURRENT_ASSET_ROUTE_NO_QUALIFYING_ASSET_FOUND",
+      "priority_problem": "matched_trial_and_visit_allocation_within_person_revisits_vs_more_source_people",
+      "program_id": "dbconformer",
+      "recorded_at": "2026-11-06T10:51:09.484321+08:00",
+      "research_brief": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261106_source_coverage/research_brief.md",
+        "sha256": "2918f52cb9806aa458725657aacc87ca0c8cfb127c5ce26d7346b47f0a8a852d"
+      },
+      "role": "design_and_resource_disposition_not_scientific_evidence",
+      "run_action": "DESIGN_ONLY",
+      "selected_core_method": null,
+      "source_evidence_ids": [
+        "AI4S-DBCONFORMER-dbconformer-source-geometry-r1",
+        "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1"
+      ],
+      "state_mutated": false
+    },
+    {
+      "blocking_conditions": [
+        "authoritative_visit_order_unresolved",
+        "independent_confirmation_precision_unqualified"
+      ],
+      "chain_id": "dbconformer-transaction-v3.3",
+      "claim_release": false,
+      "decision": "NOT_QUALIFIED_CURRENT_ASSETS_STOP_BEFORE_FREEZE",
+      "design_id": "DBCONFORMER-SOURCE-COVERAGE-ASSET-QUALIFICATION-20261106",
+      "new_fits": 0,
+      "new_inference": 0,
+      "next_run_authorized": false,
+      "prior_design_id": "DBCONFORMER-SOURCE-COVERAGE-REASSESSMENT-20261106",
+      "program_id": "dbconformer",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261106_source_coverage/asset_qualification.md",
+        "sha256": "86980d378832505c59e24a52ccf0c0bf4b1992c6f52e95f25d072c9f05fa8dee"
+      },
+      "recorded_at": "2026-11-06T11:45:32.108239+08:00",
+      "role": "metadata_qualification_and_resource_disposition_not_effect_evidence",
+      "run_action": "DESIGN_ONLY",
+      "source_evidence_ids": [
+        "AI4S-DBCONFORMER-dbconformer-source-geometry-r1",
+        "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1"
+      ],
+      "state_mutated": false
+    },
+    {
+      "chain_id": "dbconformer-transaction-v3.3",
+      "claim_release": false,
+      "decision": "KEEP_SOURCE_COVERAGE_STOP_NO_QUALIFIED_CORE_DIRECTION",
+      "design_id": "DBCONFORMER-POST-SOURCE-COVERAGE-REASSESSMENT-20261106",
+      "new_fits": 0,
+      "new_inference": 0,
+      "next_run_authorized": false,
+      "prior_design_id": "DBCONFORMER-SOURCE-COVERAGE-ASSET-QUALIFICATION-20261106",
+      "priority_problem": "directional_previous_class_bias_on_multiclass_within_run_switches_concept_only",
+      "program_id": "dbconformer",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/research_brief.md",
+        "sha256": "c5c79d9192d545fda001297d3627ecf21aa268f064424268ecb6823e6430d1fb"
+      },
+      "recorded_at": "2026-11-06T12:08:32.324418+08:00",
+      "role": "metadata_qualification_and_design_disposition_not_scientific_effect_evidence",
+      "run_action": "DESIGN_ONLY",
+      "selected_core_method": null,
+      "source_coverage_action": "STOP_BEFORE_FREEZE",
+      "source_evidence_ids": [
+        "AI4S-DBCONFORMER-dbconformer-source-geometry-r1",
+        "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1",
+        "AI4S-DBCONFORMER-dbconformer-srt-r1-repair3"
+      ],
+      "state_mutated": false
+    },
+    {
+      "chain_id": "dbconformer-transaction-v3.3",
+      "claim_release": false,
+      "confirmatory_asset": null,
+      "decision": "MATCHED_EVENT_SUPPORT_FUTURE_PLACEBO_UNQUALIFIED_DESIGN_ONLY",
+      "design_id": "DBCONFORMER-SWITCH-PREDECESSOR-CONCEPT-20261106",
+      "new_fits": 0,
+      "new_inference": 0,
+      "next_run_authorized": false,
+      "prior_design_id": "DBCONFORMER-POST-SOURCE-COVERAGE-REASSESSMENT-20261106",
+      "program_id": "dbconformer",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/switch_predecessor_concept.md",
+        "sha256": "b4f807f9ef285428363d411063347ab351c35811e501ef06a5d728243766b81c"
+      },
+      "recorded_at": "2026-11-06T12:23:54.701805+08:00",
+      "role": "event_metadata_and_concept_verification_not_model_effect_evidence",
+      "run_action": "DESIGN_ONLY",
+      "selected_core_method": null,
+      "source_evidence_ids": [
+        "AI4S-DBCONFORMER-dbconformer-source-geometry-r1",
+        "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1",
+        "AI4S-DBCONFORMER-dbconformer-srt-r1-repair3"
+      ],
+      "state_mutated": false
+    },
+    {
+      "chain_id": "dbconformer-transaction-v3.3",
+      "claim_release": false,
+      "confirmatory_asset": null,
+      "decision": "STOP_BEFORE_FREEZE_DESCRIPTIVE_DESIGN_ONLY",
+      "design_id": "DBCONFORMER-SWITCH-FREEZE-READINESS-20261106",
+      "new_fits": 0,
+      "new_inference": 0,
+      "next_run_authorized": false,
+      "prior_design_id": "DBCONFORMER-SWITCH-PREDECESSOR-CONCEPT-20261106",
+      "program_id": "dbconformer",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/switch_freeze_readiness.md",
+        "sha256": "2b65fbb68330b8ec64b21975148af19449f4aec6098ee32627036a7a40935a45"
+      },
+      "recorded_at": "2026-11-06T12:51:07.269577+08:00",
+      "role": "source_marker_and_design_qualification_not_effect_evidence",
+      "run_action": "DESIGN_ONLY",
+      "source_evidence_ids": [
+        "AI4S-DBCONFORMER-dbconformer-source-geometry-r1",
+        "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1",
+        "AI4S-DBCONFORMER-dbconformer-srt-r1-repair3"
+      ]
+    },
+    {
+      "chain_id": "dbconformer-transaction-v3.3",
+      "claim_release": false,
+      "confirmatory_asset": null,
+      "decision": "DESCRIPTIVE_PLAN_COMPLETE_MECHANISM_STOP_BEFORE_FREEZE",
+      "design_id": "DBCONFORMER-SWITCH-DESCRIPTIVE-PLAN-20261106",
+      "new_fits": 0,
+      "new_inference": 0,
+      "next_run_authorized": false,
+      "prior_design_id": "DBCONFORMER-SWITCH-FREEZE-READINESS-20261106",
+      "program_id": "dbconformer",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/switch_descriptive_plan.md",
+        "sha256": "1b2c6ad3e5bc1f49cd61a3ad5ab593452c39aaba14df18e4981d497a4d87a660"
+      },
+      "recorded_at": "2026-11-06T12:59:47.118329+08:00",
+      "role": "descriptive_design_and_stop_not_effect_evidence",
+      "run_action": "DESIGN_ONLY",
+      "source_evidence_ids": [
+        "AI4S-DBCONFORMER-dbconformer-source-geometry-r1",
+        "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1",
+        "AI4S-DBCONFORMER-dbconformer-srt-r1-repair3"
+      ]
+    },
+    {
+      "chain_id": "dbconformer-transaction-v3.3",
+      "claim_release": false,
+      "decision": "NO_QUALIFIED_CORE_DIRECTION_CONDITIONAL_MEASUREMENT_CANDIDATE",
+      "design_id": "DBCONFORMER-PERIPHERAL-SHORTCUT-SCREEN-20261106",
+      "new_fits": 0,
+      "new_inference": 0,
+      "next_gate": "independent_calibration_and_scalp_space_mapping_public_metadata_only",
+      "next_run_authorized": false,
+      "prior_design_id": "DBCONFORMER-SWITCH-DESCRIPTIVE-PLAN-20261106",
+      "program_id": "dbconformer",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/peripheral_shortcut_screen.md",
+        "sha256": "3568ec04c7fc41caea130007c6f52b23ab5ba4d79b44965c4acd44882ddde664"
+      },
+      "recorded_at": "2026-11-06T12:59:47.118329+08:00",
+      "role": "candidate_and_metadata_screen_not_effect_evidence",
+      "run_action": "DESIGN_ONLY",
+      "selected_core_method": null,
+      "source_evidence_ids": [
+        "AI4S-DBCONFORMER-dbconformer-source-geometry-r1",
+        "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1",
+        "AI4S-DBCONFORMER-dbconformer-srt-r1-repair3"
+      ]
+    },
+    {
+      "chain_id": "dbconformer-transaction-v3.3",
+      "claim_release": false,
+      "decision": "PERIPHERAL_MAPPING_NOT_IDENTIFIED_STOP_BEFORE_FREEZE",
+      "design_id": "DBCONFORMER-PERIPHERAL-MAPPING-QUALIFICATION-20261108",
+      "new_fits": 0,
+      "new_inference": 0,
+      "next_run_authorized": false,
+      "prior_design_id": "DBCONFORMER-PERIPHERAL-SHORTCUT-SCREEN-20261106",
+      "program_id": "dbconformer",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/peripheral_mapping_qualification.md",
+        "sha256": "28968eb09690cd17fa517b121e76269176ce8dd6fcc74ecf7200616133d090d8"
+      },
+      "recorded_on": "2026-11-08",
+      "role": "primary_source_and_metadata_qualification_not_effect_evidence",
+      "run_action": "DESIGN_ONLY",
+      "source_evidence_ids": [
+        "AI4S-DBCONFORMER-dbconformer-source-geometry-r1",
+        "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1",
+        "AI4S-DBCONFORMER-dbconformer-srt-r1-repair3"
+      ]
+    },
+    {
+      "chain_id": "dbconformer-transaction-v3.3",
+      "claim_release": false,
+      "decision": "NO_QUALIFIED_CORE_DIRECTION_FEEDBACK_POLICY_ASSET_CHECK",
+      "design_id": "DBCONFORMER-FEEDBACK-POLICY-RANK-SCREEN-20261108",
+      "new_fits": 0,
+      "new_inference": 0,
+      "next_run_authorized": false,
+      "prior_design_id": "DBCONFORMER-PERIPHERAL-MAPPING-QUALIFICATION-20261108",
+      "program_id": "dbconformer",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/feedback_policy_rank_screen.md",
+        "sha256": "8f9e63c4f3265b1ab354b57f2fc0bdbc907d707776978ed8230c5304973e275f"
+      },
+      "recorded_on": "2026-11-08",
+      "role": "candidate_and_metadata_screen_not_effect_evidence",
+      "run_action": "DESIGN_ONLY",
+      "source_evidence_ids": [
+        "AI4S-DBCONFORMER-dbconformer-source-geometry-r1",
+        "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1",
+        "AI4S-DBCONFORMER-dbconformer-srt-r1-repair3"
+      ]
+    },
+    {
+      "chain_id": "dbconformer-transaction-v3.3",
+      "claim_release": false,
+      "decision": "DESCRIPTIVE_ONLY_STOP_BEFORE_FREEZE",
+      "design_id": "DBCONFORMER-SHIN-FEEDBACK-QUALIFICATION-20261108",
+      "new_fits": 0,
+      "new_inference": 0,
+      "next_run_authorized": false,
+      "per_run_metadata": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/shin_raw_run_audit.json",
+        "sha256": "ec3e27c279ebae1af994257a48bbc4dbe0a93af97c5804629d848a3684c1b8fb"
+      },
+      "prior_design_id": "DBCONFORMER-FEEDBACK-POLICY-RANK-SCREEN-20261108",
+      "program_id": "dbconformer",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/shin_feedback_qualification.md",
+        "sha256": "aa49e1a7d4b9304eb87ee0f68cf4b017b912494dfa3d46a6ffafa9a5e266da6a"
+      },
+      "recorded_on": "2026-11-08",
+      "role": "raw_state_and_design_qualification_not_model_effect_evidence",
+      "run_action": "DESIGN_ONLY",
+      "source_evidence_ids": [
+        "AI4S-DBCONFORMER-dbconformer-source-geometry-r1",
+        "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1",
+        "AI4S-DBCONFORMER-dbconformer-srt-r1-repair3"
+      ]
+    },
+    {
+      "chain_id": "dbconformer-transaction-v3.3",
+      "claim_release": false,
+      "decision": "NO_QUALIFIED_CORE_DIRECTION_TARGET_CONTEXT_EVALUATION_CANDIDATE",
+      "design_id": "DBCONFORMER-EA-CONTEXT-INVARIANCE-SCREEN-20261108",
+      "new_fits": 0,
+      "new_inference": 0,
+      "next_run_authorized": false,
+      "prior_design_id": "DBCONFORMER-SHIN-FEEDBACK-QUALIFICATION-20261108",
+      "program_id": "dbconformer",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/ea_context_invariance_screen.md",
+        "sha256": "99088b7415464c2589799410a1ed57a58dc0112a5d12ce1bd3f08482ee1ca1c3"
+      },
+      "recorded_on": "2026-11-08",
+      "role": "concept_screen_not_effect_evidence",
+      "run_action": "DESIGN_ONLY",
+      "source_evidence_ids": [
+        "AI4S-DBCONFORMER-dbconformer-source-geometry-r1",
+        "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1",
+        "AI4S-DBCONFORMER-dbconformer-srt-r1-repair3"
+      ]
+    },
+    {
+      "chain_id": "dbconformer-transaction-v3.3",
+      "claim_release": false,
+      "decision": "PAIR_AND_CONTROLS_VERIFIED_EMPIRICAL_RANKING_UNKNOWN_DESIGN_ONLY",
+      "design_id": "DBCONFORMER-EA-CONTEXT-QUALIFICATION-20261108",
+      "new_fits": 0,
+      "new_real_model_inference": 0,
+      "next_run_authorized": false,
+      "prior_design_id": "DBCONFORMER-EA-CONTEXT-INVARIANCE-SCREEN-20261108",
+      "program_id": "dbconformer",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/ea_context_qualification.md",
+        "sha256": "e6cbcbfb3412fafbd44386c67c4d6cee95ef4f2d4a74d747b540be147a1859c5"
+      },
+      "recorded_on": "2026-11-08",
+      "role": "code_metadata_and_synthetic_verification_not_real_model_effect_evidence",
+      "run_action": "DESIGN_ONLY",
+      "source_evidence_ids": [
+        "AI4S-DBCONFORMER-dbconformer-source-geometry-r1",
+        "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1",
+        "AI4S-DBCONFORMER-dbconformer-srt-r1-repair3"
+      ],
+      "synthetic_checks": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/ea_context_synthetic_checks.json",
+        "sha256": "58fc6bcf5ac045bf566000d6ea1735f93e5d063017a0b324754f55b3f58679d9"
+      }
+    },
+    {
+      "chain_id": "dbconformer-transaction-v3.3",
+      "claim_release": false,
+      "decision": "STOP_BEFORE_REPLAY_WEIGHTS_AND_CONFIRMATION_NOT_QUALIFIED",
+      "design_id": "DBCONFORMER-EA-CONTEXT-REPLAY-GATE-20261108",
+      "new_fits": 0,
+      "new_inference": 0,
+      "prior_design_id": "DBCONFORMER-EA-CONTEXT-QUALIFICATION-20261108",
+      "program_id": "dbconformer",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/ea_context_replay_gate.md",
+        "sha256": "076b2e6d204f379ceec670311bf969db80c0c82545b0004bbf198c8e6802f43d"
+      },
+      "recorded_on": "2026-11-08",
+      "role": "raw_quality_and_asset_qualification_not_model_effect_evidence",
+      "run_action": "DESIGN_ONLY",
+      "source_evidence_ids": [
+        "AI4S-DBCONFORMER-dbconformer-source-geometry-r1",
+        "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1",
+        "AI4S-DBCONFORMER-dbconformer-srt-r1-repair3"
+      ]
+    },
+    {
+      "chain_id": "dbconformer-transaction-v3.3",
+      "claim_release": false,
+      "decision": "NO_QUALIFIED_CORE_DIRECTION_PROVENANCE_SPLIT_FEASIBILITY",
+      "design_id": "DBCONFORMER-PROVENANCE-GROUP-SPLIT-SCREEN-20261108",
+      "new_fits": 0,
+      "new_inference": 0,
+      "prior_design_id": "DBCONFORMER-EA-CONTEXT-REPLAY-GATE-20261108",
+      "program_id": "dbconformer",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/provenance_group_split_screen.md",
+        "sha256": "8051e681b7a71d8f3704c3ed3fc3218e7b398fe2ca2df4703efbb98bbaa9e33a"
+      },
+      "recorded_on": "2026-11-08",
+      "role": "candidate_and_metadata_screen_not_effect_evidence",
+      "run_action": "DESIGN_ONLY",
+      "source_evidence_ids": [
+        "AI4S-DBCONFORMER-dbconformer-source-geometry-r1",
+        "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1",
+        "AI4S-DBCONFORMER-dbconformer-srt-r1-repair3"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/liu_provenance_source_fingerprints.json",
+          "sha256": "fe40c37254d90f7b544c971aec37aca58390540ba85b1b13aa1cb4fe5f095c33"
+        },
+        {
+          "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/liu_provenance_converted_fingerprints.json",
+          "sha256": "d9ef4f5099b21e25e5d25e9503c4978f0cf6608340edd9685d517cd304eab918"
+        }
+      ],
+      "chain_id": "dbconformer-transaction-v3.3",
+      "claim_release": false,
+      "decision": "STOP_BEFORE_FREEZE_DATASET_INTEGRITY_ONLY",
+      "design_id": "DBCONFORMER-LIU-PROVENANCE-QUALIFICATION-20261108",
+      "new_fits": 0,
+      "new_inference": 0,
+      "prior_design_id": "DBCONFORMER-PROVENANCE-GROUP-SPLIT-SCREEN-20261108",
+      "program_id": "dbconformer",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/liu_provenance_qualification.md",
+        "sha256": "efb18864063b849d0b90e8d63359b83255422ca44a9b142df63d91a0f7f2436e"
+      },
+      "recorded_on": "2026-11-08",
+      "role": "public_source_and_converted_integrity_qualification",
+      "run_action": "DESIGN_ONLY",
+      "source_evidence_ids": [
+        "AI4S-DBCONFORMER-dbconformer-source-geometry-r1",
+        "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1",
+        "AI4S-DBCONFORMER-dbconformer-srt-r1-repair3"
+      ]
+    },
+    {
+      "chain_id": "dbconformer-transaction-v3.3",
+      "claim_release": false,
+      "decision": "SCREEN_ONLY_EVENT_CLOCK_AND_CONFIRMATION_OPEN",
+      "design_id": "DBCONFORMER-CUE-ORDER-PREDICTABILITY-SCREEN-20261108",
+      "new_fits": 0,
+      "new_inference": 0,
+      "prior_design_id": "DBCONFORMER-LIU-PROVENANCE-QUALIFICATION-20261108",
+      "program_id": "dbconformer",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/cue_order_predictability_screen.md",
+        "sha256": "743b008acc5ae95526179e807af68324b11479f9cc003f4e0ebc865dbe0934cb"
+      },
+      "recorded_on": "2026-11-08",
+      "role": "candidate_and_metadata_screen_not_effect_evidence",
+      "run_action": "DESIGN_ONLY",
+      "source_evidence_ids": [
+        "AI4S-DBCONFORMER-dbconformer-source-geometry-r1",
+        "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1",
+        "AI4S-DBCONFORMER-dbconformer-srt-r1-repair3"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/cue_order_event_audit.json",
+          "sha256": "c6612fdd32545fcc6fbeae9db6c57567a6fce3d82db880b5b4c5c9f62a89733d"
+        },
+        {
+          "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/cue_order_raw_clock_audit.json",
+          "sha256": "52108994b45eb4474839fdfe0e2a91c3459801948fd3832110ec2bb4765e8bf1"
+        },
+        {
+          "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/cue_order_block_audit.json",
+          "sha256": "b560f34486d491907ddc1c61dab7e7ac13ab4b2ab4729852f5c0204dc6a46124"
+        },
+        {
+          "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/cue_order_edf_header_audit.json",
+          "sha256": "fc20e5cd338ea5197f9ece54a2721557fbcbc7035e61279db8f909fc19a30a5b"
+        }
+      ],
+      "chain_id": "dbconformer-transaction-v3.3",
+      "claim_release": false,
+      "decision": "STOP_BEFORE_FREEZE_ORDER_PROVENANCE_AND_CONFIRMATION",
+      "design_id": "DBCONFORMER-CUE-ORDER-PREDICTABILITY-QUALIFICATION-20261108",
+      "new_fits": 0,
+      "new_inference": 0,
+      "prior_design_id": "DBCONFORMER-CUE-ORDER-PREDICTABILITY-SCREEN-20261108",
+      "program_id": "dbconformer",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/cue_order_predictability_qualification.md",
+        "sha256": "4ab5a6c845a4291886eb46cd625375fd7ca25152058700827b96f57e528dfa22"
+      },
+      "recorded_on": "2026-11-08",
+      "role": "public_event_clock_and_matching_qualification_not_model_effect_evidence",
+      "run_action": "DESIGN_ONLY",
+      "source_evidence_ids": [
+        "AI4S-DBCONFORMER-dbconformer-source-geometry-r1",
+        "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1",
+        "AI4S-DBCONFORMER-dbconformer-srt-r1-repair3"
+      ]
+    },
+    {
+      "chain_id": "dbconformer-transaction-v3.3",
+      "claim_release": false,
+      "decision": "SCREEN_ONLY_ME_PROXY_RUN_ORDER_PRECISION_OPEN",
+      "design_id": "DBCONFORMER-ME-PROXY-MODEL-SELECTION-SCREEN-20261109",
+      "new_fits": 0,
+      "new_inference": 0,
+      "prior_design_id": "DBCONFORMER-CUE-ORDER-PREDICTABILITY-QUALIFICATION-20261108",
+      "program_id": "dbconformer",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/me_proxy_model_selection_screen.md",
+        "sha256": "c67a48d040fa0e140df70d599ed1e10af902b0a9f77d6d1b51e3718ea64f86d9"
+      },
+      "recorded_on": "2026-11-09",
+      "role": "candidate_and_public_protocol_screen_not_effect_evidence",
+      "run_action": "DESIGN_ONLY",
+      "source_evidence_ids": [
+        "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1",
+        "AI4S-DBCONFORMER-dbconformer-source-geometry-r1",
+        "AI4S-DBCONFORMER-dbconformer-svs-r1-repair2",
+        "AI4S-DBCONFORMER-dbconformer-srt-r1-repair3"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/eye_bci_original_inventory.json",
+          "sha256": "b7415100441c6d3662e9661f30223f6d756d75901fbf8bbd235bdcc68c124e9b"
+        },
+        {
+          "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/eye_bci_event_metadata.json",
+          "sha256": "18e454ddf57e1c7596e6631a6e252fe8fc8554e15b7d2caba98f51ee1fcdf0a7"
+        }
+      ],
+      "chain_id": "dbconformer-transaction-v3.3",
+      "claim_release": false,
+      "decision": "STOP_BEFORE_FREEZE_ME_PROXY_CONFIRMATION_UNQUALIFIED",
+      "design_id": "DBCONFORMER-ME-PROXY-MODEL-SELECTION-QUALIFICATION-20261109",
+      "new_fits": 0,
+      "new_inference": 0,
+      "prior_design_id": "DBCONFORMER-ME-PROXY-MODEL-SELECTION-SCREEN-20261109",
+      "program_id": "dbconformer",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/me_proxy_model_selection_qualification.md",
+        "sha256": "2be98f70ebd55b1edf6a80f64e5a77b8d55441c168a3a0003d3be2f36cd2ddce"
+      },
+      "recorded_on": "2026-11-09",
+      "role": "public_original_event_and_confirmation_precision_qualification",
+      "run_action": "DESIGN_ONLY",
+      "source_evidence_ids": [
+        "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1",
+        "AI4S-DBCONFORMER-dbconformer-source-geometry-r1",
+        "AI4S-DBCONFORMER-dbconformer-svs-r1-repair2",
+        "AI4S-DBCONFORMER-dbconformer-srt-r1-repair3"
+      ]
+    },
+    {
+      "chain_id": "dbconformer-transaction-v3.3",
+      "claim_release": false,
+      "decision": "NO_QUALIFIED_CORE_DIRECTION_DEADLINE_DESIGN_SCREEN_ONLY",
+      "design_id": "DBCONFORMER-DECISION-DEADLINE-SCREEN-20261109",
+      "new_fits": 0,
+      "new_inference": 0,
+      "prior_design_id": "DBCONFORMER-ME-PROXY-MODEL-SELECTION-QUALIFICATION-20261109",
+      "program_id": "dbconformer",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/decision_deadline_screen.md",
+        "sha256": "e7027b59bcc41c44e7629a7b0c0b1e4711dc58f6bab164cb03651dddaeafc40e"
+      },
+      "recorded_on": "2026-11-09",
+      "role": "candidate_and_public_protocol_screen_not_effect_evidence",
+      "run_action": "DESIGN_ONLY",
+      "source_evidence_ids": [
+        "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1",
+        "AI4S-DBCONFORMER-dbconformer-source-geometry-r1",
+        "AI4S-DBCONFORMER-dbconformer-svs-r1-repair2",
+        "AI4S-DBCONFORMER-dbconformer-srt-r1-repair3"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/physionet_deadline_event_audit.json",
+          "sha256": "31d279bc6a5ca8996ea9015cca6d819b2e8bcf7d7a77116336615f212ab128ca"
+        },
+        {
+          "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/deadline_prefix_synthetic_check.json",
+          "sha256": "92631ded26e00446990823c376a54423ae152cb128e4bf10487ae3c6c74a1a42"
+        }
+      ],
+      "chain_id": "dbconformer-transaction-v3.3",
+      "claim_release": false,
+      "decision": "STOP_BEFORE_FREEZE_DEADLINE_IDLE_CONFIRMATION_UNQUALIFIED",
+      "design_id": "DBCONFORMER-DECISION-DEADLINE-QUALIFICATION-20261109",
+      "new_fits": 0,
+      "new_inference": 0,
+      "prior_design_id": "DBCONFORMER-DECISION-DEADLINE-SCREEN-20261109",
+      "program_id": "dbconformer",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/decision_deadline_qualification.md",
+        "sha256": "96213def91a14290b68389771a64668e4a0747864ceec50c80aa9827bb20e6b3"
+      },
+      "recorded_on": "2026-11-09",
+      "role": "original_event_clock_and_causal_prefix_qualification",
+      "run_action": "DESIGN_ONLY",
+      "source_evidence_ids": [
+        "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1",
+        "AI4S-DBCONFORMER-dbconformer-source-geometry-r1",
+        "AI4S-DBCONFORMER-dbconformer-svs-r1-repair2",
+        "AI4S-DBCONFORMER-dbconformer-srt-r1-repair3"
+      ]
+    },
+    {
+      "chain_id": "dbconformer-transaction-v3.3",
+      "claim_release": false,
+      "decision": "NO_QUALIFIED_CORE_DIRECTION_MATCHED_AUDITORY_ATTENTION_SCREEN_ONLY",
+      "design_id": "DBCONFORMER-AUDITORY-ATTENTION-INTERFERENCE-SCREEN-20261109",
+      "new_fits": 0,
+      "new_inference": 0,
+      "prior_design_id": "DBCONFORMER-DECISION-DEADLINE-QUALIFICATION-20261109",
+      "program_id": "dbconformer",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/auditory_attention_interference_screen.md",
+        "sha256": "1dd340768eadbc81e9f0f740ad42984c0209712ad77f7196ca6c687142e5cbae"
+      },
+      "recorded_on": "2026-11-09",
+      "role": "candidate_and_public_protocol_screen_not_effect_evidence",
+      "run_action": "DESIGN_ONLY",
+      "source_evidence_ids": [
+        "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1",
+        "AI4S-DBCONFORMER-dbconformer-source-geometry-r1",
+        "AI4S-DBCONFORMER-dbconformer-svs-r1-repair2",
+        "AI4S-DBCONFORMER-dbconformer-srt-r1-repair3"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/brandl_original_marker_audit.json",
+          "sha256": "5c08ad492b2af295519f898a177c2a801cfe18073a397aa0c45c604167dc8342"
+        },
+        {
+          "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/brandl_converted_event_audit.json",
+          "sha256": "0907a5b3913c04191c14e284f302844b4a3ab4dbba6328449747fbbedcfadf02"
+        }
+      ],
+      "chain_id": "dbconformer-transaction-v3.3",
+      "claim_release": false,
+      "decision": "STOP_BEFORE_FREEZE_AUDIO_ATTENTION_CROSSOVER_UNAVAILABLE",
+      "design_id": "DBCONFORMER-AUDITORY-ATTENTION-INTERFERENCE-QUALIFICATION-20261109",
+      "new_fits": 0,
+      "new_inference": 0,
+      "prior_design_id": "DBCONFORMER-AUDITORY-ATTENTION-INTERFERENCE-SCREEN-20261109",
+      "program_id": "dbconformer",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/auditory_attention_interference_qualification.md",
+        "sha256": "e1f96911ce0ff7da6c1a3cbabdaac2d16eb77208121e120ba4828384bb8f6914"
+      },
+      "recorded_on": "2026-11-09",
+      "role": "original_marker_and_audio_attention_qualification",
+      "run_action": "DESIGN_ONLY",
+      "source_evidence_ids": [
+        "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1",
+        "AI4S-DBCONFORMER-dbconformer-source-geometry-r1",
+        "AI4S-DBCONFORMER-dbconformer-svs-r1-repair2",
+        "AI4S-DBCONFORMER-dbconformer-srt-r1-repair3"
+      ]
+    },
+    {
+      "chain_id": "dbconformer-transaction-v3.3",
+      "claim_release": false,
+      "decision": "NO_QUALIFIED_CORE_DIRECTION_FEEDBACK_CONTINGENCY_PROBE_SCREEN_ONLY",
+      "design_id": "DBCONFORMER-FEEDBACK-CONTINGENCY-PROBE-SCREEN-20261109",
+      "new_fits": 0,
+      "new_inference": 0,
+      "prior_design_id": "DBCONFORMER-AUDITORY-ATTENTION-INTERFERENCE-QUALIFICATION-20261109",
+      "program_id": "dbconformer",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/feedback_contingency_transfer_screen.md",
+        "sha256": "94ad342b264f2d60d26ba3f9ab84054e9b9f4574d72df777b182146006036723"
+      },
+      "recorded_on": "2026-11-09",
+      "role": "candidate_and_public_protocol_screen_not_effect_evidence",
+      "run_action": "DESIGN_ONLY",
+      "source_evidence_ids": [
+        "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1",
+        "AI4S-DBCONFORMER-dbconformer-source-geometry-r1",
+        "AI4S-DBCONFORMER-dbconformer-svs-r1-repair2",
+        "AI4S-DBCONFORMER-dbconformer-srt-r1-repair3"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/bmi_hdeeg_feedback_event_audit.json",
+          "sha256": "95d4f01e1a539aa45aacdd0236f7505ffc98f5f6b5426220a97453c96302e55c"
+        },
+        {
+          "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/dreyer_feedback_original_asset_audit.json",
+          "sha256": "404a41a3187d320de36938f5071976e389e09c8b068c2bd43e4593de54d4972c"
+        }
+      ],
+      "chain_id": "dbconformer-transaction-v3.3",
+      "claim_release": false,
+      "decision": "STOP_BEFORE_FREEZE_FEEDBACK_DOSE_AND_BILATERAL_PROBE_UNQUALIFIED",
+      "design_id": "DBCONFORMER-FEEDBACK-CONTINGENCY-PROBE-QUALIFICATION-20261109",
+      "new_fits": 0,
+      "new_inference": 0,
+      "prior_design_id": "DBCONFORMER-FEEDBACK-CONTINGENCY-PROBE-SCREEN-20261109",
+      "program_id": "dbconformer",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/feedback_contingency_transfer_qualification.md",
+        "sha256": "dc548f4021936e7d1b1412124b5b2aad9822ea2e5e2583cb8e6a4fbb27cf8967"
+      },
+      "recorded_on": "2026-11-09",
+      "role": "original_protocol_events_and_dose_qualification",
+      "run_action": "DESIGN_ONLY",
+      "source_evidence_ids": [
+        "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1",
+        "AI4S-DBCONFORMER-dbconformer-source-geometry-r1",
+        "AI4S-DBCONFORMER-dbconformer-svs-r1-repair2",
+        "AI4S-DBCONFORMER-dbconformer-srt-r1-repair3"
+      ]
+    },
+    {
+      "chain_id": "dbconformer-transaction-v3.3",
+      "claim_release": false,
+      "decision": "NO_QUALIFIED_CORE_DIRECTION_SENSORY_TRAINING_RETENTION_SCREEN_ONLY",
+      "design_id": "DBCONFORMER-SENSORY-TRAINING-RETENTION-SCREEN-20261109",
+      "new_fits": 0,
+      "new_inference": 0,
+      "prior_design_id": "DBCONFORMER-FEEDBACK-CONTINGENCY-PROBE-QUALIFICATION-20261109",
+      "program_id": "dbconformer",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/sensory_training_retention_screen.md",
+        "sha256": "d786228508e01002182fdebb0094ff1b9c8b34ad6cdc20927c83b2a4df70640f"
+      },
+      "recorded_on": "2026-11-09",
+      "role": "candidate_and_public_protocol_screen_not_effect_evidence",
+      "run_action": "DESIGN_ONLY",
+      "source_evidence_ids": [
+        "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1",
+        "AI4S-DBCONFORMER-dbconformer-source-geometry-r1",
+        "AI4S-DBCONFORMER-dbconformer-svs-r1-repair2",
+        "AI4S-DBCONFORMER-dbconformer-srt-r1-repair3"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/wang_sensory_training_source_audit.json",
+          "sha256": "2bee59e4ef53c1eb12b2bc8a3c403671431a720b4bcc481a49c70bdd02536081"
+        }
+      ],
+      "chain_id": "dbconformer-transaction-v3.3",
+      "claim_release": false,
+      "decision": "STOP_BEFORE_FREEZE_WANG_PROBE_STATE_AND_INDEPENDENT_REPLICATION_UNQUALIFIED",
+      "design_id": "DBCONFORMER-SENSORY-TRAINING-RETENTION-QUALIFICATION-20261109",
+      "new_fits": 0,
+      "new_inference": 0,
+      "prior_design_id": "DBCONFORMER-SENSORY-TRAINING-RETENTION-SCREEN-20261109",
+      "program_id": "dbconformer",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/sensory_training_retention_qualification.md",
+        "sha256": "80b950ac94fc0f3479b39551c76494892106444b9d022d36f30ed504c425f904"
+      },
+      "recorded_on": "2026-11-09",
+      "role": "author_archive_trial_field_and_independent_cohort_qualification",
+      "run_action": "DESIGN_ONLY",
+      "source_evidence_ids": [
+        "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1",
+        "AI4S-DBCONFORMER-dbconformer-source-geometry-r1",
+        "AI4S-DBCONFORMER-dbconformer-svs-r1-repair2",
+        "AI4S-DBCONFORMER-dbconformer-srt-r1-repair3"
+      ]
+    },
+    {
+      "chain_id": "dbconformer-transaction-v3.3",
+      "claim_release": false,
+      "decision": "NO_QUALIFIED_CORE_DIRECTION_FATIGUE_RECOVERY_SCREEN_ONLY",
+      "design_id": "DBCONFORMER-FATIGUE-RECOVERY-SCREEN-20261109",
+      "new_fits": 0,
+      "new_inference": 0,
+      "prior_design_id": "DBCONFORMER-SENSORY-TRAINING-RETENTION-QUALIFICATION-20261109",
+      "program_id": "dbconformer",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/fatigue_recovery_screen.md",
+        "sha256": "3f597eedc30f8a7541c3accf29bb44ab0a95227b4fe308a71ddf4c648c7db2f5"
+      },
+      "recorded_on": "2026-11-09",
+      "role": "candidate_and_public_protocol_screen_not_effect_evidence",
+      "run_action": "DESIGN_ONLY",
+      "source_evidence_ids": [
+        "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1",
+        "AI4S-DBCONFORMER-dbconformer-source-geometry-r1",
+        "AI4S-DBCONFORMER-dbconformer-svs-r1-repair2",
+        "AI4S-DBCONFORMER-dbconformer-srt-r1-repair3"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/fatigue_recovery_source_audit.json",
+          "sha256": "bfb83d74fdecd03bd583e4058169066b39930e17d1d609bde82c0fa9b219b8b6"
+        }
+      ],
+      "chain_id": "dbconformer-transaction-v3.3",
+      "claim_release": false,
+      "decision": "STOP_BEFORE_FREEZE_REST_CONTRAST_AND_INDEPENDENT_REPLICATION_UNQUALIFIED",
+      "design_id": "DBCONFORMER-FATIGUE-RECOVERY-QUALIFICATION-20261109",
+      "new_fits": 0,
+      "new_inference": 0,
+      "prior_design_id": "DBCONFORMER-FATIGUE-RECOVERY-SCREEN-20261109",
+      "program_id": "dbconformer",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/fatigue_recovery_qualification.md",
+        "sha256": "849623a13ced9673f512e90ee9278e6e47b8386340db51ec411f9d641d9033af"
+      },
+      "recorded_on": "2026-11-09",
+      "role": "original_block_marker_dose_and_independent_cohort_qualification",
+      "run_action": "DESIGN_ONLY",
+      "source_evidence_ids": [
+        "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1",
+        "AI4S-DBCONFORMER-dbconformer-source-geometry-r1",
+        "AI4S-DBCONFORMER-dbconformer-svs-r1-repair2",
+        "AI4S-DBCONFORMER-dbconformer-srt-r1-repair3"
+      ]
+    },
+    {
+      "chain_id": "dbconformer-transaction-v3.3",
+      "claim_release": false,
+      "decision": "NO_QUALIFIED_CORE_DIRECTION_GAZE_HAND_DECOUPLING_SCREEN_ONLY",
+      "design_id": "DBCONFORMER-GAZE-HAND-DECOUPLING-SCREEN-20261109",
+      "new_fits": 0,
+      "new_inference": 0,
+      "prior_design_id": "DBCONFORMER-FATIGUE-RECOVERY-QUALIFICATION-20261109",
+      "program_id": "dbconformer",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/gaze_hand_decoupling_screen.md",
+        "sha256": "54161c46e2b4e86d64ee98d97c067e0282c0fcaaef8d1e97d43a6877a32610ed"
+      },
+      "recorded_on": "2026-11-09",
+      "role": "candidate_and_public_protocol_screen_not_effect_evidence",
+      "run_action": "DESIGN_ONLY",
+      "source_evidence_ids": [
+        "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1",
+        "AI4S-DBCONFORMER-dbconformer-source-geometry-r1",
+        "AI4S-DBCONFORMER-dbconformer-svs-r1-repair2",
+        "AI4S-DBCONFORMER-dbconformer-srt-r1-repair3"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/gaze_hand_source_audit.json",
+          "sha256": "54243b061d41c916e18845747bcb49702944a82ce73b5f27a62d907c8a75fbf9"
+        }
+      ],
+      "chain_id": "dbconformer-transaction-v3.3",
+      "claim_release": false,
+      "decision": "STOP_BEFORE_FREEZE_GAZE_HAND_ASSIGNMENT_AND_INDEPENDENT_REPLICATION_UNQUALIFIED",
+      "design_id": "DBCONFORMER-GAZE-HAND-DECOUPLING-QUALIFICATION-20261109",
+      "new_fits": 0,
+      "new_inference": 0,
+      "prior_design_id": "DBCONFORMER-GAZE-HAND-DECOUPLING-SCREEN-20261109",
+      "program_id": "dbconformer",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/gaze_hand_decoupling_qualification.md",
+        "sha256": "e36bedb8cefc5717547a48a0bbcbd21538a54e80553c9474f5842fb375f77259"
+      },
+      "recorded_on": "2026-11-09",
+      "role": "original_cue_ocular_clock_and_independent_cohort_qualification",
+      "run_action": "DESIGN_ONLY",
+      "source_evidence_ids": [
+        "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1",
+        "AI4S-DBCONFORMER-dbconformer-source-geometry-r1",
+        "AI4S-DBCONFORMER-dbconformer-svs-r1-repair2",
+        "AI4S-DBCONFORMER-dbconformer-srt-r1-repair3"
+      ]
+    },
+    {
+      "chain_id": "dbconformer-transaction-v3.3",
+      "claim_release": false,
+      "decision": "NO_QUALIFIED_CORE_DIRECTION_HEMISPHERE_REFLECTION_SCREEN_ONLY",
+      "design_id": "DBCONFORMER-HEMISPHERE-REFLECTION-SCREEN-20261109",
+      "new_fits": 0,
+      "new_inference": 0,
+      "prior_design_id": "DBCONFORMER-GAZE-HAND-DECOUPLING-QUALIFICATION-20261109",
+      "program_id": "dbconformer",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/hemisphere_reflection_screen.md",
+        "sha256": "37d2747429b7bfd5a1d678d8498da09ef83962748fb4421d437345c15a6ca47a"
+      },
+      "recorded_on": "2026-11-09",
+      "role": "candidate_and_public_protocol_screen_not_effect_evidence",
+      "run_action": "DESIGN_ONLY",
+      "source_evidence_ids": [
+        "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1",
+        "AI4S-DBCONFORMER-dbconformer-source-geometry-r1",
+        "AI4S-DBCONFORMER-dbconformer-svs-r1-repair2",
+        "AI4S-DBCONFORMER-dbconformer-srt-r1-repair3"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/hemisphere_reflection_source_audit.json",
+          "sha256": "48e2f96271393cab0ddc51a326031af17ed0fcbfe047dbfe83cfc09dab7a586c"
+        }
+      ],
+      "chain_id": "dbconformer-transaction-v3.3",
+      "claim_release": false,
+      "decision": "STOP_BEFORE_FREEZE_MIRROR_SYNTHETIC_ONLY_AND_CONFIRMATION_UNQUALIFIED",
+      "design_id": "DBCONFORMER-HEMISPHERE-REFLECTION-QUALIFICATION-20261109",
+      "new_fits": 0,
+      "new_inference": 0,
+      "prior_design_id": "DBCONFORMER-HEMISPHERE-REFLECTION-SCREEN-20261109",
+      "program_id": "dbconformer",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/hemisphere_reflection_qualification.md",
+        "sha256": "c98aca5f19ebd4acd5ea22f47580397e58a8849372afdc6ece69fd9e22d5aa38"
+      },
+      "recorded_on": "2026-11-09",
+      "role": "original_montage_reference_and_independent_cohort_qualification",
+      "run_action": "DESIGN_ONLY",
+      "source_evidence_ids": [
+        "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1",
+        "AI4S-DBCONFORMER-dbconformer-source-geometry-r1",
+        "AI4S-DBCONFORMER-dbconformer-svs-r1-repair2",
+        "AI4S-DBCONFORMER-dbconformer-srt-r1-repair3"
+      ]
+    },
+    {
+      "chain_id": "dbconformer-transaction-v3.3",
+      "claim_release": false,
+      "decision": "NO_QUALIFIED_CORE_DIRECTION_EFFECTOR_SIDE_TRANSFER_SCREEN_ONLY",
+      "design_id": "DBCONFORMER-EFFECTOR-SIDE-TRANSFER-SCREEN-20261109",
+      "new_fits": 0,
+      "new_inference": 0,
+      "prior_design_id": "DBCONFORMER-HEMISPHERE-REFLECTION-QUALIFICATION-20261109",
+      "program_id": "dbconformer",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/effector_side_transfer_screen.md",
+        "sha256": "a6be06aeae1d1b3aed3b9b8ac599d502516c21aa5b230ea38c4dc233fd8c0f8b"
+      },
+      "recorded_on": "2026-11-09",
+      "role": "candidate_and_public_protocol_screen_not_effect_evidence",
+      "run_action": "DESIGN_ONLY",
+      "source_evidence_ids": [
+        "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1",
+        "AI4S-DBCONFORMER-dbconformer-source-geometry-r1",
+        "AI4S-DBCONFORMER-dbconformer-svs-r1-repair2",
+        "AI4S-DBCONFORMER-dbconformer-srt-r1-repair3"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/effector_side_transfer_source_audit.json",
+          "sha256": "2954a2d763b1d005993ea269e6772c0fd5d8c0f94e5ba489c909a4ac3a994faa"
+        }
+      ],
+      "chain_id": "dbconformer-transaction-v3.3",
+      "claim_release": false,
+      "decision": "STOP_BEFORE_FREEZE_EFFECTOR_ORDER_CUE_EMG_AND_CONFIRMATION_UNQUALIFIED",
+      "design_id": "DBCONFORMER-EFFECTOR-SIDE-TRANSFER-QUALIFICATION-20261109",
+      "new_fits": 0,
+      "new_inference": 0,
+      "prior_design_id": "DBCONFORMER-EFFECTOR-SIDE-TRANSFER-SCREEN-20261109",
+      "program_id": "dbconformer",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/effector_side_transfer_qualification.md",
+        "sha256": "ad96e8b298a45584e0f397d6768fd998fdb0b78c20e7aa28baf22595bdbee1f4"
+      },
+      "recorded_on": "2026-11-09",
+      "role": "original_run_order_trigger_emg_and_independent_cohort_qualification",
+      "run_action": "DESIGN_ONLY",
+      "source_evidence_ids": [
+        "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1",
+        "AI4S-DBCONFORMER-dbconformer-source-geometry-r1",
+        "AI4S-DBCONFORMER-dbconformer-svs-r1-repair2",
+        "AI4S-DBCONFORMER-dbconformer-srt-r1-repair3"
+      ]
+    },
+    {
+      "chain_id": "dbconformer-transaction-v3.3",
+      "claim_release": false,
+      "decision": "NO_QUALIFIED_CORE_DIRECTION_IMAGINED_FORCE_TRANSFER_SCREEN_ONLY",
+      "design_id": "DBCONFORMER-IMAGINED-FORCE-TRANSFER-SCREEN-20261109",
+      "new_fits": 0,
+      "new_inference": 0,
+      "prior_design_id": "DBCONFORMER-EFFECTOR-SIDE-TRANSFER-QUALIFICATION-20261109",
+      "program_id": "dbconformer",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/imagined_force_transfer_screen.md",
+        "sha256": "5c96a5e0fae6abd6c8f58d4c9bc3d238ad3dcabc71b33cb1f08ec8de6044b2a3"
+      },
+      "recorded_on": "2026-11-09",
+      "role": "candidate_and_public_protocol_screen_not_effect_evidence",
+      "run_action": "DESIGN_ONLY",
+      "source_evidence_ids": [
+        "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1",
+        "AI4S-DBCONFORMER-dbconformer-source-geometry-r1",
+        "AI4S-DBCONFORMER-dbconformer-svs-r1-repair2",
+        "AI4S-DBCONFORMER-dbconformer-srt-r1-repair3"
+      ]
+    },
+    {
+      "chain_id": "dbconformer-transaction-v3.3",
+      "claim_release": false,
+      "decision": "STOP_BEFORE_FREEZE_FORCE_CUE_BASELINE_AND_CONFIRMATION_UNQUALIFIED",
+      "design_id": "DBCONFORMER-IMAGINED-FORCE-TRANSFER-QUALIFICATION-20261109",
+      "new_fits": 0,
+      "new_inference": 0,
+      "prior_design_id": "DBCONFORMER-IMAGINED-FORCE-TRANSFER-SCREEN-20261109",
+      "program_id": "dbconformer",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/imagined_force_transfer_qualification.md",
+        "sha256": "fb0313aa00b3d6218bb843c9b6aa5df5500299873db0fa82c366add63c873e15"
+      },
+      "recorded_on": "2026-11-09",
+      "role": "original_data_qualification_and_stop_not_effect_evidence",
+      "run_action": "DESIGN_ONLY",
+      "source_audit": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/imagined_force_transfer_source_audit.json",
+        "sha256": "282e5e0fd86b4117c2dcb16131838549dc29a8a7eb55e6efba53b659fdb50647"
+      },
+      "source_evidence_ids": [
+        "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1",
+        "AI4S-DBCONFORMER-dbconformer-source-geometry-r1",
+        "AI4S-DBCONFORMER-dbconformer-svs-r1-repair2",
+        "AI4S-DBCONFORMER-dbconformer-srt-r1-repair3"
+      ]
+    },
+    {
+      "chain_id": "dbconformer-transaction-v3.3",
+      "claim_release": false,
+      "decision": "NO_QUALIFIED_CORE_DIRECTION_CUE_MODALITY_SCREEN_ONLY",
+      "design_id": "DBCONFORMER-CUE-MODALITY-TRANSFER-SCREEN-20261109",
+      "new_fits": 0,
+      "new_inference": 0,
+      "prior_design_id": "DBCONFORMER-IMAGINED-FORCE-TRANSFER-QUALIFICATION-20261109",
+      "program_id": "dbconformer",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/cue_modality_transfer_screen.md",
+        "sha256": "9954890e79b713b3f52d7dcff5ddbfe0626ab916a975699c42ea34112951b5cd"
+      },
+      "recorded_on": "2026-11-09",
+      "role": "candidate_and_public_protocol_screen_not_effect_evidence",
+      "run_action": "DESIGN_ONLY",
+      "source_evidence_ids": [
+        "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1",
+        "AI4S-DBCONFORMER-dbconformer-source-geometry-r1",
+        "AI4S-DBCONFORMER-dbconformer-svs-r1-repair2",
+        "AI4S-DBCONFORMER-dbconformer-srt-r1-repair3"
+      ]
+    },
+    {
+      "chain_id": "dbconformer-transaction-v3.3",
+      "claim_release": false,
+      "decision": "STOP_BEFORE_FREEZE_CUE_MODALITY_TRIAL_TIMING_AND_CONTROLS_UNQUALIFIED",
+      "design_id": "DBCONFORMER-CUE-MODALITY-TRANSFER-QUALIFICATION-20261109",
+      "new_fits": 0,
+      "new_inference": 0,
+      "prior_design_id": "DBCONFORMER-CUE-MODALITY-TRANSFER-SCREEN-20261109",
+      "program_id": "dbconformer",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/cue_modality_transfer_qualification.md",
+        "sha256": "48010041878184f43e6f9e5a10726969f6ea2d2441cd41b9e131d09801c05ef4"
+      },
+      "recorded_on": "2026-11-09",
+      "role": "original_protocol_and_access_qualification_stop_not_effect_evidence",
+      "run_action": "DESIGN_ONLY",
+      "source_evidence_ids": [
+        "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1",
+        "AI4S-DBCONFORMER-dbconformer-source-geometry-r1",
+        "AI4S-DBCONFORMER-dbconformer-svs-r1-repair2",
+        "AI4S-DBCONFORMER-dbconformer-srt-r1-repair3"
+      ]
+    },
+    {
+      "chain_id": "dbconformer-transaction-v3.3",
+      "claim_release": false,
+      "decision": "NO_QUALIFIED_CORE_DIRECTION_POSTURE_DIRECTION_SCREEN_ONLY",
+      "design_id": "DBCONFORMER-POSTURE-DIRECTION-TRANSFER-SCREEN-20261109",
+      "new_fits": 0,
+      "new_inference": 0,
+      "prior_design_id": "DBCONFORMER-CUE-MODALITY-TRANSFER-QUALIFICATION-20261109",
+      "program_id": "dbconformer",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/posture_direction_transfer_screen.md",
+        "sha256": "84c23e7e77e3542dc0cf06332c0b928cb2f53469ae10340f0f9fee4eb888f786"
+      },
+      "recorded_on": "2026-11-09",
+      "role": "candidate_and_public_protocol_screen_not_effect_evidence",
+      "run_action": "DESIGN_ONLY",
+      "source_evidence_ids": [
+        "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1",
+        "AI4S-DBCONFORMER-dbconformer-source-geometry-r1",
+        "AI4S-DBCONFORMER-dbconformer-svs-r1-repair2",
+        "AI4S-DBCONFORMER-dbconformer-srt-r1-repair3"
+      ]
+    },
+    {
+      "chain_id": "dbconformer-transaction-v3.3",
+      "claim_release": false,
+      "decision": "STOP_BEFORE_FREEZE_POSTURE_ACTION_SEMANTICS_AND_CONTROLS_UNQUALIFIED",
+      "design_id": "DBCONFORMER-POSTURE-DIRECTION-TRANSFER-QUALIFICATION-20261109",
+      "new_fits": 0,
+      "new_inference": 0,
+      "prior_design_id": "DBCONFORMER-POSTURE-DIRECTION-TRANSFER-SCREEN-20261109",
+      "program_id": "dbconformer",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/posture_direction_transfer_qualification.md",
+        "sha256": "acbe9e53a7f4369b080e71cf973c82c8af0cd24de038e429a5451a6082753928"
+      },
+      "recorded_on": "2026-11-09",
+      "role": "original_data_qualification_and_stop_not_effect_evidence",
+      "run_action": "DESIGN_ONLY",
+      "source_audit": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/posture_direction_source_audit.json",
+        "sha256": "66992455101ad5b6e4d59f2c01484d49950612f75c4bc50351348aac0d776509"
+      },
+      "source_evidence_ids": [
+        "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1",
+        "AI4S-DBCONFORMER-dbconformer-source-geometry-r1",
+        "AI4S-DBCONFORMER-dbconformer-svs-r1-repair2",
+        "AI4S-DBCONFORMER-dbconformer-srt-r1-repair3"
+      ]
+    },
+    {
+      "chain_id": "dbconformer-transaction-v3.3",
+      "claim_release": false,
+      "decision": "NO_QUALIFIED_CORE_DIRECTION_SAME_CUE_PASSIVE_ACTIVATION_SCREEN_ONLY",
+      "design_id": "DBCONFORMER-SAME-CUE-PASSIVE-ACTIVATION-SCREEN-20261109",
+      "new_fits": 0,
+      "new_inference": 0,
+      "prior_design_id": "DBCONFORMER-POSTURE-DIRECTION-TRANSFER-QUALIFICATION-20261109",
+      "program_id": "dbconformer",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/same_cue_passive_activation_screen.md",
+        "sha256": "5e10766c594a74864d73fe0d63f740aa38843b401069e11eec4496764fefe5ed"
+      },
+      "recorded_on": "2026-11-09",
+      "role": "candidate_and_public_protocol_screen_not_effect_evidence",
+      "run_action": "DESIGN_ONLY",
+      "source_evidence_ids": [
+        "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1",
+        "AI4S-DBCONFORMER-dbconformer-source-geometry-r1",
+        "AI4S-DBCONFORMER-dbconformer-svs-r1-repair2",
+        "AI4S-DBCONFORMER-dbconformer-srt-r1-repair3"
+      ]
+    },
+    {
+      "chain_id": "dbconformer-transaction-v3.3",
+      "claim_release": false,
+      "decision": "STOP_BEFORE_FREEZE_PASSIVE_CUE_CROSS_SESSION_ONLY",
+      "design_id": "DBCONFORMER-SAME-CUE-PASSIVE-ACTIVATION-QUALIFICATION-20261109",
+      "new_fits": 0,
+      "new_inference": 0,
+      "prior_design_id": "DBCONFORMER-SAME-CUE-PASSIVE-ACTIVATION-SCREEN-20261109",
+      "program_id": "dbconformer",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/same_cue_passive_activation_qualification.md",
+        "sha256": "ff24f331f57b9ba5f396ead7013c48bb5e435bf8a3917d6cd85ea7a3086da1b7"
+      },
+      "recorded_on": "2026-11-09",
+      "role": "original_data_qualification_and_stop_not_effect_evidence",
+      "run_action": "DESIGN_ONLY",
+      "source_audit": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/same_cue_passive_source_audit.json",
+        "sha256": "1e3a6ca9abc8622cf1638ee10ab668d9013e794eefd1b21f95a7d0ad61409743"
+      },
+      "source_evidence_ids": [
+        "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1",
+        "AI4S-DBCONFORMER-dbconformer-source-geometry-r1",
+        "AI4S-DBCONFORMER-dbconformer-svs-r1-repair2",
+        "AI4S-DBCONFORMER-dbconformer-srt-r1-repair3"
+      ]
+    },
+    {
+      "chain_id": "dbconformer-transaction-v3.3",
+      "claim_release": false,
+      "decision": "NO_QUALIFIED_CORE_DIRECTION_EYE_STATE_AUDITORY_MI_SCREEN_ONLY",
+      "design_id": "DBCONFORMER-EYE-STATE-AUDITORY-MI-SCREEN-20261109",
+      "new_fits": 0,
+      "new_inference": 0,
+      "prior_design_id": "DBCONFORMER-SAME-CUE-PASSIVE-ACTIVATION-QUALIFICATION-20261109",
+      "program_id": "dbconformer",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/eye_state_auditory_mi_screen.md",
+        "sha256": "fe9318c4de0fea941a9f0773bdea049c87e28f818695237424f3c80578cf6a36"
+      },
+      "recorded_on": "2026-11-09",
+      "role": "candidate_and_public_protocol_screen_not_effect_evidence",
+      "run_action": "DESIGN_ONLY",
+      "source_evidence_ids": [
+        "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1",
+        "AI4S-DBCONFORMER-dbconformer-source-geometry-r1",
+        "AI4S-DBCONFORMER-dbconformer-svs-r1-repair2",
+        "AI4S-DBCONFORMER-dbconformer-srt-r1-repair3"
+      ]
+    },
+    {
+      "chain_id": "dbconformer-transaction-v3.3",
+      "claim_release": false,
+      "decision": "STOP_BEFORE_FREEZE_EYE_STATE_VERIFICATION_AND_CONFIRMATION_UNQUALIFIED",
+      "design_id": "DBCONFORMER-EYE-STATE-AUDITORY-MI-QUALIFICATION-20261109",
+      "new_fits": 0,
+      "new_inference": 0,
+      "prior_design_id": "DBCONFORMER-EYE-STATE-AUDITORY-MI-SCREEN-20261109",
+      "program_id": "dbconformer",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/eye_state_auditory_mi_qualification.md",
+        "sha256": "2fd2ad157d64d5901036626bac3ef7666f03810caca1a56aae19f5e671e42892"
+      },
+      "recorded_on": "2026-11-09",
+      "role": "original_data_qualification_and_stop_not_effect_evidence",
+      "run_action": "DESIGN_ONLY",
+      "source_audit": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/eye_state_auditory_source_audit.json",
+        "sha256": "6e17590282da97fa0e5fbd36b06f01a47a540105659108fbb35402bb498dbef2"
+      },
+      "source_evidence_ids": [
+        "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1",
+        "AI4S-DBCONFORMER-dbconformer-source-geometry-r1",
+        "AI4S-DBCONFORMER-dbconformer-svs-r1-repair2",
+        "AI4S-DBCONFORMER-dbconformer-srt-r1-repair3"
+      ]
+    },
+    {
+      "chain_id": "dbconformer-transaction-v3.3",
+      "claim_release": false,
+      "decision": "NO_QUALIFIED_CORE_DIRECTION_IMAGERY_STRATEGY_TRANSFER_SCREEN_ONLY",
+      "design_id": "DBCONFORMER-IMAGERY-STRATEGY-TRANSFER-SCREEN-20261109",
+      "new_fits": 0,
+      "new_inference": 0,
+      "prior_design_id": "DBCONFORMER-EYE-STATE-AUDITORY-MI-QUALIFICATION-20261109",
+      "program_id": "dbconformer",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/imagery_strategy_transfer_screen.md",
+        "sha256": "5039d8650ca56856f82be2aa2d574cfec15f0b05da8d90068056698b074e90af"
+      },
+      "recorded_on": "2026-11-09",
+      "role": "candidate_and_public_protocol_screen_not_effect_evidence",
+      "run_action": "DESIGN_ONLY",
+      "source_evidence_ids": [
+        "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1",
+        "AI4S-DBCONFORMER-dbconformer-source-geometry-r1",
+        "AI4S-DBCONFORMER-dbconformer-svs-r1-repair2",
+        "AI4S-DBCONFORMER-dbconformer-srt-r1-repair3"
+      ]
+    },
+    {
+      "chain_id": "dbconformer-transaction-v3.3",
+      "claim_release": false,
+      "decision": "STOP_BEFORE_FREEZE_STRATEGY_AND_PRECEDING_TASK_CONFOUNDED",
+      "design_id": "DBCONFORMER-IMAGERY-STRATEGY-TRANSFER-QUALIFICATION-20261109",
+      "new_fits": 0,
+      "new_inference": 0,
+      "prior_design_id": "DBCONFORMER-IMAGERY-STRATEGY-TRANSFER-SCREEN-20261109",
+      "program_id": "dbconformer",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/imagery_strategy_transfer_qualification.md",
+        "sha256": "f389f5c95412f75d91c94033fb03b20d5924f03afd0e4e9615e2a48b895d85ba"
+      },
+      "recorded_on": "2026-11-09",
+      "role": "original_protocol_access_qualification_and_stop_not_effect_evidence",
+      "run_action": "DESIGN_ONLY",
+      "source_audit": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/imagery_strategy_source_audit.json",
+        "sha256": "bf9c40b98ca098ee0e728ff16008c275ee7d0b2163457f6e91413797a8cad0d3"
+      },
+      "source_evidence_ids": [
+        "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1",
+        "AI4S-DBCONFORMER-dbconformer-source-geometry-r1",
+        "AI4S-DBCONFORMER-dbconformer-svs-r1-repair2",
+        "AI4S-DBCONFORMER-dbconformer-srt-r1-repair3"
+      ]
+    },
+    {
+      "chain_id": "dbconformer-transaction-v3.3",
+      "claim_release": false,
+      "decision": "NO_QUALIFIED_CORE_DIRECTION_IMAGERY_STOP_COMMAND_SCREEN_ONLY",
+      "design_id": "DBCONFORMER-IMAGERY-STOP-COMMAND-SCREEN-20261109",
+      "new_fits": 0,
+      "new_inference": 0,
+      "prior_design_id": "DBCONFORMER-IMAGERY-STRATEGY-TRANSFER-QUALIFICATION-20261109",
+      "program_id": "dbconformer",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/imagery_stop_command_screen.md",
+        "sha256": "88f1db89ea76e2fe6af7888cd73ba84cd8b2351b300dcd699f70773f3c0af01d"
+      },
+      "recorded_on": "2026-11-09",
+      "role": "candidate_and_public_protocol_screen_not_effect_evidence",
+      "run_action": "DESIGN_ONLY",
+      "source_evidence_ids": [
+        "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1",
+        "AI4S-DBCONFORMER-dbconformer-source-geometry-r1",
+        "AI4S-DBCONFORMER-dbconformer-svs-r1-repair2",
+        "AI4S-DBCONFORMER-dbconformer-srt-r1-repair3"
+      ]
     }
   ],
   "round_evidence": [

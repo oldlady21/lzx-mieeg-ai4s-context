@@ -19,6 +19,63 @@
 
 ## 当前综合、反例与未决问题
 
+**2026-11-09 同动作跨想象策略停在冻结前。** Yang 2021 的两次 ME→KMI 与两次 VO→VMI 只支持任务组合的名义跨会话比较，策略与前置活动完全绑定。PMC 原始论文附件未发布逐试次 EEG 或轨迹，5 V TTL 只报告会话前同步。Zapała 公开目录只有派生表，Inamoto 只有单动作方向，未取得同估计量确认。下一项仅筛停止想象指令后的原手别残留输出。0 新拟合与推理。[停止记录](reassessment_20261106_post_source_coverage/imagery_strategy_transfer_qualification.md) · [来源审计](reassessment_20261106_post_source_coverage/imagery_strategy_source_audit.json) · [后续初筛](reassessment_20261106_post_source_coverage/imagery_stop_command_screen.md)。
+
+**2026-11-09 同听觉手别指令的睁闭眼方向停在冻结前。** Brandl 16 份原始 MAT 共 96 个反馈 run，两条件在同一阶段且先后可变，事件支持等量同试次名义配对。缺逐试次闭眼与独立眼电，静息 alpha 只支持静息操纵，既往反馈与在线自适应未隔离。Zapała 2023 是 24 人的策略研究，初筛所链接的单人说法更正，仍无同任务独立复核。下一条仅筛同动作跨想象策略。0 新拟合与推理。[停止记录](reassessment_20261106_post_source_coverage/eye_state_auditory_mi_qualification.md) · [原件审计](reassessment_20261106_post_source_coverage/eye_state_auditory_source_audit.json) · [后续初筛](reassessment_20261106_post_source_coverage/imagery_strategy_transfer_screen.md)。
+
+**2026-11-09 同一手别提示下的误触发停在冻结前。** Kaya 七人公开清单显示两种条件分会话，F/M 名义次序与论文统一描述冲突。K 两份原件重核后保留 319 对同手别、同前提示和等长前后窗。两份第 22 列同步可复算，但 marker 由该列对齐回填，无法校验真实屏幕刷新。其余六人未取得可复算原件，现有独立近邻缺同估计量。下一项只筛相同听觉指令的睁闭眼条件，尚无合格核心。0 新拟合与推理。[停止记录](reassessment_20261106_post_source_coverage/same_cue_passive_activation_qualification.md) · [原件审计](reassessment_20261106_post_source_coverage/same_cue_passive_source_audit.json) · [后续初筛](reassessment_20261106_post_source_coverage/eye_state_auditory_mi_screen.md)。
+
+**2026-11-09 坐站姿势间想象方向判别停在冻结前。** 两人四原会话抽查 34 个触发，22 人转换事件支持名义等量同测试，但同箭头分别包含实际起始姿势下的转换和静态意图。转换记录首个姿势均为坐，原件抽查有两种编排与肌电覆盖缺口，圆形静息无法匹配箭头提示，无同估计量独立复核。下一条初筛为 Kaya 相同手别提示下被动观看的误触发，候选顺序和独立精度待核。0 新拟合与推理。[停止记录](reassessment_20261106_post_source_coverage/posture_direction_transfer_qualification.md) · [原件审计](reassessment_20261106_post_source_coverage/posture_direction_source_audit.json) · [后续初筛](reassessment_20261106_post_source_coverage/same_cue_passive_activation_screen.md)。
+
+**2026-11-09 视觉／听觉提示切换停在冻结前。** Choi 有名义双向组合，未取得原始试次、实际声光时点、实采次序或只提示不想象。BCI IV-1 的 4 个真人固定先视觉后语音，时程和环境一并变化；Samek 五人的左手／足部材料未核定可用原件。固定晚窗、同提示不想象和独立精度是后续门槛。转入坐站起始姿势的四码筛查，仍需先解决动作语义及独立复核。0 新拟合和推理。[停止记录](reassessment_20261106_post_source_coverage/cue_modality_transfer_qualification.md) · [后续筛查](reassessment_20261106_post_source_coverage/posture_direction_transfer_screen.md)。
+
+**2026-11-09 留出想象握力等级停在冻结前。** 2024 全部 60 份原件有等量跨文件名义配对，0% 段是想象松手，公开原件缺同步 FDS EMG 与真实触发。2025 的 200 份规范文件每人每档只有一次独立录制，另有一份哈希重复，无法分开换力度与换文件。两批缺可追溯的跨力度次序与合格独立复核。保留等量同试次、仅提示、仅真实文件次序及逐人误激活与漏检的设计约束。下一项只筛跨提示模态下晚期想象窗的排序与风险，已有直接近邻且缺合格语料。0 新拟合与推理。[停止记录](reassessment_20261106_post_source_coverage/imagined_force_transfer_qualification.md) · [原件审计](reassessment_20261106_post_source_coverage/imagined_force_transfer_source_audit.json) · [后续筛查](reassessment_20261106_post_source_coverage/cue_modality_transfer_screen.md)。
+
+**2026-11-09 留出动作左右侧判别停在冻结前。** IMU-MI_A 原 DPA 的五人文件开始顺序相同，25 份原 CEO 中 24 份共用一个经典左右码序列。抽查 5 份 CDT 的 664 个事件与 Trigger 低字节完全对齐，但没有独立左右码表、实际屏幕锚或双侧 EMG 标定。双阶段时长与文档不合，且大部分文件缺阶段码。等量共用测试在名义上成立，动作与区块无法拆分，独立复核未合格。后续保留想象力度留出线索，当前无合格论文核心方向。0 新拟合与推理。[停止记录](reassessment_20261106_post_source_coverage/effector_side_transfer_qualification.md) · [后续筛查](reassessment_20261106_post_source_coverage/imagined_force_transfer_screen.md)。
+
+**2026-11-09 左右半球镜像一致性停在冻结前。** 2a 原 GDF 头和 OpenBMI 原 MAT 通道顺序已核，二者同名闭合交集 21 导，OpenBMI 缺 FCz 且有两个颞侧标签未配对。2a 左乳突参考无法合成真实对侧参考。已有原／镜像同参数双前向前作，OpenBMI 亦已被 DBConformer 原论文使用。保留同试次合成诊断，真实手别错误与个人风险单独判读。随后筛查留出动作类型的左右侧判别，公开 IMU-MI_A 仅 5 人且动作、区块与独立复核未闭合，仍无合格论文核心方向。0 新拟合与推理。[停止记录](reassessment_20261106_post_source_coverage/hemisphere_reflection_qualification.md) · [后续筛查](reassessment_20261106_post_source_coverage/effector_side_transfer_screen.md)。
+
+**2026-11-09 注视方向与想象手别停在冻结前。** Eye-BCI 原提示日志只有手别，三份有公共锚的抽样会话每手至多 0–6 对自然反向偏移，另两份无 Tobii 共同时钟。Shin 同步 HEOG/VEOG 可作代理，未独立操纵注视。Meng 已研究左右手 MI 与注视交叉，原始数据须材料转让且未获可复核配对。现有材料仅支持条件关联。随后筛查左右半球镜像一致性，保留合成诊断边界及直接前作，当前仍无合格论文核心方向。0 新拟合和推理。[停止记录](reassessment_20261106_post_source_coverage/gaze_hand_decoupling_qualification.md) · [后续筛查](reassessment_20261106_post_source_coverage/hemisphere_reflection_screen.md)。
+
+**2026-11-09 短休恢复方向停在冻结前。** MI-rest/MI-rTMS 两组均休息，分别配假刺激与真刺激。两份原始 BDF 能定位四个 50 标记区块，不能直接由标记间隔复算休息和刺激起止。Evetović 的原始文件有 8 人的配对区块，但控制会话为被动观看，缺少等量左右手探针及可对齐的个体疲劳量。Yang、Pan、Kaya 缺相同休息对照，未满足独立复核。后续仅保留眼动与手别可区分性的筛查线索，当前无合格论文核心方向。0 新拟合和推理。[短休停止记录](reassessment_20261106_post_source_coverage/fatigue_recovery_qualification.md) · [眼动方向筛查](reassessment_20261106_post_source_coverage/gaze_hand_decoupling_screen.md)。
+
+**2026-11-09 Wang 感觉引导联合训练停在冻结前。** CMU v1 三随机臂 31 人均有两次会话的首轮候选文件。联合学习和触觉对照的抽样首轮均无在线输出字段，BCI2000 对照的真实反馈状态仍有论文表述冲突及状态缺口。NEMAR 转换丢弃短段，另缺触觉组一人，保留计数不作为物理剂量。缺少原始显示/触觉日志及同估计量独立复核，故该资料只支持来源与配对资格核查。已继续筛查等剂量左右手 MI 后的短休恢复对照，现有两份材料均无法同时支撑共同探针与独立确认，仍无合格论文核心方向。0 新拟合和推理。[Wang 停止记录](reassessment_20261106_post_source_coverage/sensory_training_retention_qualification.md) · [短休方向筛查](reassessment_20261106_post_source_coverage/fatigue_recovery_screen.md)。
+
+**2026-11-09 真实反馈向无反馈测试资格核验**。随机真／假反馈近邻的共同开环前后测是右手想象与放松。BMI-HDEEG 公布事件缺分组和回放配对，EDF 抽查有试次越界。Dreyer 左右手条件的假与真反馈按校准／在线固定排序。未获得共同左右手无反馈前后测及独立复核，停在冻结前。下一项只筛感觉引导训练包是否改变下一会话的无辅助校准选模。[停止记录](reassessment_20261106_post_source_coverage/feedback_contingency_transfer_qualification.md) · [后续筛查](reassessment_20261106_post_source_coverage/sensory_training_retention_screen.md)
+
+**2026-11-09 同一声流注意要求资格核验**。Brandl 原始事件可识别新闻、无分心、数字搜索和反馈，未发布可配对的原始新闻声流及主动／被动操纵。双任务前作无相同声流和延后答题证据，也未找到合格独立语料。停在冻结前。后续仅筛真反馈训练后的相对模型优势能否留到统一无反馈测试，尚无核心资格。[停止记录](reassessment_20261106_post_source_coverage/auditory_attention_interference_qualification.md) · [后续筛查](reassessment_20261106_post_source_coverage/feedback_contingency_transfer_screen.md)
+
+**2026-11-09 外部决策截止资格核验**。PhysioNet 327 份任务事件侧车及 18 个任务 EDF 已核，12 个异常 run 的事件采用原始 EDF 内嵌标注。旧整段预处理在合成检查中读入截止后信息；T0 只支持协议休息，独立自由空闲及风险精度未闭合，停在冻结前。下一项初筛同声流下主动与被动注意的差异，当前仍无合格论文核心。[截止停止记录](reassessment_20261106_post_source_coverage/decision_deadline_qualification.md) · [后续筛查](reassessment_20261106_post_source_coverage/auditory_attention_interference_screen.md)
+
+**2026-11-09 真实动作选模资格核验**。Eye-BCI 的原始 E-Prime 日志和派生事件支持 51 个同人同会话 ME／MI 配对；跨独立后续 MI 运行有 16 人，档案最多 17 人。SEFMEID V5 受限，原始配对与时序未知，停止方案冻结。下一项只筛相同因果前缀下外部决策截止是否改变排序和逐人风险，尚无核心资格。[停止记录](reassessment_20261106_post_source_coverage/me_proxy_model_selection_qualification.md) · [后续筛查](reassessment_20261106_post_source_coverage/decision_deadline_screen.md)
+
+**2026-11-09 下一方向筛选**。保留 ds008446 停止原判，把实际区块可追溯、独立确认和全试次与匹配子集分开判读列为设计约束。优先核“少量真实动作能否在固定源域模型之间选出后续 MI 更可靠的解码器”。以源域固定规则、等量目标 MI 选模、标签置换作对照。PhysioNet 为开发资料，Eye-BCI 与 SEFMEID 待核次序、校准和测试隔离及独立精度。尚未进入冻结，SGP 直接优化继续停止。[选择依据和停止条件](reassessment_20261106_post_source_coverage/me_proxy_model_selection_screen.md)
+
+**2026-11-08 ds008446 提示顺序资格核验**。原始 CSV 的四段 Marker 支持转换表时钟修正。区块日志和运行侧车均标 10∶10，但有 12/20 人互相冲突，EDF 时戳不能裁决。同人、同转移、等窗的宽位置配对有 661 对，精确位置仅 111 对，且未找到独立复核采集。停在方案冻结前，保留全风险集与匹配子集分开判读的设计约束。[核验与停止](reassessment_20261106_post_source_coverage/cue_order_predictability_qualification.md)
+
+**2026-11-08 Liu 来源分组核验**。三对的原始发布 EDF 和 NEMAR 转换件呈信号重叠或高度相似。原始 MAT 的带内相关较弱，公开材料未闭合采集身份。20+20 事件支持名义等量替换，三个疑似来源簇及缺少独立语料限制排序和个体风险判断。停在冻结前，保留完整性记录。下一项筛提示顺序可预测性及提示前后模型差，先核原始事件钟与独立语料。[停止记录](reassessment_20261106_post_source_coverage/liu_provenance_qualification.md) · [后续筛选](reassessment_20261106_post_source_coverage/cue_order_predictability_screen.md)
+
+**2026-11-08 EA 未来批次回放资格**。Zhou 原始八窗抽查提示高幅，18/22 导与已核 2a 权重吻合，未定位匹配固定权重及独立确认，停在回放前，效果未知。下一方向核公开 ID 与独立采集来源是否一致，以来源簇隔离与等训练量 ID 隔离的配对差为候选，尚无核心方向。[回放停止记录](reassessment_20261106_post_source_coverage/ea_context_replay_gate.md) · [方向筛选](reassessment_20261106_post_source_coverage/provenance_group_split_screen.md)
+
+**2026-11-08 未来批次依赖核验**。原生整批 EA 的同试次合成配对可变；原生 LOSO 实际评分用逐试次 EA。固定早期校准和不读目标批次均严格不变。Zhou 有 120 个会话具元数据配对支持，真实模型排序、逐人判定和独立确认仍未知。[代码、合成与停止判据](reassessment_20261106_post_source_coverage/ea_context_qualification.md)
+
+**2026-11-08 Shin 反馈限速原始核验**。110 文件头、40 个 CV 原件哈希及 960 段状态已核，9 人四档同序、S01 名义 300 异日且参数异常，全试次共同窗口仅 0.128 秒。与次序无法分离，独立复核未闭合，停在描述层。下一项筛固定同一试次时未来批次组成是否改变 EA 下的模型选择，仍为设计。[限速资格核验](reassessment_20261106_post_source_coverage/shin_feedback_qualification.md) · [下一方向](reassessment_20261106_post_source_coverage/ea_context_invariance_screen.md)
+
+**2026-11-08 外周干扰资格核验与下一方向**。Cho 非任务干扰和 Jeong 真实动作可作外周测量正对照，独立左右头皮耦合尚未识别，同一 MI 试次的真实等剂量方向对照停在冻结前。下一项核闭环参数变化是否使离线模型排序改变。Shin 2022 有参数族内随机次序和四档光标限速目录，尚须追溯原始 run、时间窗和独立确认。[外周停止记录](reassessment_20261106_post_source_coverage/peripheral_mapping_qualification.md) · [反馈方向筛选](reassessment_20261106_post_source_coverage/feedback_policy_rank_screen.md)
+
+**2026-11-06 最小切换诊断与下一方向筛选**。固定当前类的两种切换用于判定错类分数是否向上一类偏移，切换对重复用于估计总体困难。Jeong 仅作跨任务复核候选，独立确认人数与精度未闭合。保留机制冻结前停止。下一项只核外周干扰方向是否有独立校准与可追溯的头皮测量映射，论文核心方法仍未选定。[描述性诊断](reassessment_20261106_post_source_coverage/switch_descriptive_plan.md) · [方向筛选](reassessment_20261106_post_source_coverage/peripheral_shortcut_screen.md)
+
+**2026-11-06 上一类偏移概念核验**。Zhou 严格匹配有 982 个前类配对，20 人三类均有支持。类别配额产生前后标签依赖，严格未来比较只有 151 对，同格四组合只剩 2 人。未来类仅作辅助诊断。Jeong 三抓握事件有独立采集且跨任务匹配支持，原始边界、计时和确认角色待核；2a 保留既有暴露。使用两个错误类别之间的分数份额，与切换对重复的总体损失分开判读。[概念核验与停止条件](reassessment_20261106_post_source_coverage/switch_predecessor_concept.md)。
+
+**2026-11-06 来源复访再核与下一方向**。Yang 仍缺可追溯日序；Stieger 的日期、随机组和一维左右任务码有作者定义，但原版与 EEG 共封装，公开转换件未保留可直接核验的映射。保持跨日复访冻结前停止。下一项优先核验多类指令切换后是否定向偏向上一类，以固定当前类及同一候选错误类、未来类别安慰剂和简单模型区分一般切换困难。Zhou 事件的六类有向对已有粗支持，尚无确认队列或论文核心方法。[复核与下一方向](reassessment_20261106_post_source_coverage/research_brief.md)。
+
+**2026-11-06 来源数据配置资料核验完成**。处置 `NOT_QUALIFIED_CURRENT_ASSETS / STOP_BEFORE_FREEZE`。Ma、Yang 和 Zhou 七日数据的公开事件计数足够，但 Yang 51 人仅 20 人的三个扫描日期与会话编号同序，两个转换均复现该差异。Zhou 来自独立团队，公开日期列不能复核日序，按原 12 名来源人的配置最多剩 8 名独立确认目标。要重开须取得权威访视映射并补足独立确认精度。[资料资格核验](reassessment_20261106_source_coverage/asset_qualification.md)。
+
+**2026-11-06 来源数据配置核验（仅设计）**。已完成上轮独立视觉刺激的限定资产核验，未找到合格的现成同人四格 MI 数据，停止该实例。将下一项资料核验转为固定原始试次数、被试×访视单元数及访视构成下，比较增加来源被试与对同一来源被试跨日复访，重点检验未见被试的后续访视。2026 年 EEG scaling 预印本已经比较等窗口量的人数与每人窗口分配，区别限于真实复访和后续访视交互。Ma 2022 与 Yang 2025 的协议具备候选结构，文件、暴露和独立确认仍待核。当前未选定论文核心方法或授权 Run。[选择依据、关键对照与停止条件](reassessment_20261106_source_coverage/research_brief.md)。
+
+
+**2026-11-06 PJDD 后方向重评**。当前裁决 `NO_QUALIFIED_DIRECTION`。SGP 的均值与个体风险分开，几何 R1 和 PJDD 的描述性观察不足以确定方法效用。优先保留一次资料核验，寻找能在同一被试中独立分配视觉刺激方向和指令想象手的范式。2a 与已核 Eye-BCI 的类别线索仍绑定，Trocellier 等已有 cue 起点切窗对照。若无独立交叉资产就停止此实例。若查到资产，只进入诊断设计，估计指定刺激对解码输出的总效应，并用任务负荷、训练关联及同输入简单模型限制解释。固定试次数下的来源人数与采集块覆盖暂列备选。Grok 原判与处置见[本轮简报](reassessment_20261106_post_pjdd/research_brief.md)。
+
 **2026-11-05 几何R1后下一轮重评（仅设计）**：完整比较三视角六候选并限定核对一手前作，当前仍无论文核心方法；独立Grok原判NO_QUALIFIED_CORE_DIRECTION、备选NONE，主Agent接受。只把“可独立识别的测量迁移能否与神经/任务差异分开”作为有退出条件的资料/理论问题，不接受模板inverse＋loss或低秩/平滑的换名版本。共享模板不观测个体L_s，前向零重建可能代数恒可满足，破坏算子还可能被后层学回；须先关闭识别、非等价控制及真实测量资产缺口。原几何合同仅注册四项EEG/标签/身份/metadata，未注册个体测量识别材料，不据此声称外部不存在。若这些门不能关闭，停止该实例及同信息等价改名扩展，不把L1检索或L2拒判递补核心。原宿主源码另更正T显式radix=1，不把默认radix=2当实际多尺度或性能缺陷。0新训练/前向/EEG特征目标分析/Run/合同/预算/Claim，SGP直接优化和旧几何对象仍停止，State/旧合同与成本不变。审后控制补充是主Agent修订，未伪称外审改判。[选择依据、关键对照与停止条件](reassessment_20261105_post_geometry/research_brief.md)、[原判与处置](reassessment_20261105_post_geometry/review/DISPOSITION.md)。
 
 **2026-11-05 源内识别R1完整收尾**：4次100epoch/3600步、单次attempt全部完成，原SCI封装错误经同Run元数据重放恢复，0重训；远端全量核验、2.89MB精简回传/intake、冻结分析、独立全特征重算与标准决策已完成。INCONCLUSIVE/STOP：16个C均正，但仅11/16观测过噪声相对门、4/8人在两个encoder下均过，不满足冻结全面一致性。正号不是信噪保证，不能选择子组/更佳encoder补救；不支持据此建session关系loss，也不证明整个类别几何家族无效。共享encoder和历史暴露保留，0Claim/后继。State暂停、无活动Run，SGP直接优化继续停。[结果、局限与处置](source_geometry_r1/FINAL_REPORT.md)。下方启动段均为历史快照。
