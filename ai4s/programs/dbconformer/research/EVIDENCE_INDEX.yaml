@@ -4218,6 +4218,150 @@
         "AI4S-DBCONFORMER-dbconformer-svs-r1-repair2",
         "AI4S-DBCONFORMER-dbconformer-srt-r1-repair3"
       ]
+    },
+    {
+      "chain_id": "dbconformer-transaction-v3.3",
+      "claim_release": false,
+      "decision": "STOP_BEFORE_FREEZE_IMAGERY_ONSET_AND_SAME_SOUND_CONTROL_UNQUALIFIED",
+      "design_id": "DBCONFORMER-IMAGERY-STOP-COMMAND-QUALIFICATION-20261109",
+      "new_fits": 0,
+      "new_inference": 0,
+      "prior_design_id": "DBCONFORMER-IMAGERY-STOP-COMMAND-SCREEN-20261109",
+      "program_id": "dbconformer",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/imagery_stop_command_qualification.md",
+        "sha256": "306249770db37f41ab75c375b30b9e75d8052b0e9bcf827f16f91e3cbe6614f3"
+      },
+      "recorded_on": "2026-11-09",
+      "role": "original_protocol_access_qualification_and_stop_not_effect_evidence",
+      "run_action": "DESIGN_ONLY",
+      "source_audit": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/imagery_stop_command_source_audit.json",
+        "sha256": "584b1b19a510f4b2fa7e14220a5c15039ee963b8fa49b686682871cd17688367"
+      },
+      "source_evidence_ids": [
+        "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1",
+        "AI4S-DBCONFORMER-dbconformer-source-geometry-r1",
+        "AI4S-DBCONFORMER-dbconformer-svs-r1-repair2",
+        "AI4S-DBCONFORMER-dbconformer-srt-r1-repair3"
+      ]
+    },
+    {
+      "chain_id": "dbconformer-transaction-v3.3",
+      "claim_release": false,
+      "decision": "NO_QUALIFIED_DIRECTION",
+      "design_id": "DBCONFORMER-TRIAL-VIVIDNESS-SCREEN-20261109",
+      "new_fits": 0,
+      "new_inference": 0,
+      "prior_design_id": "DBCONFORMER-IMAGERY-STOP-COMMAND-QUALIFICATION-20261109",
+      "program_id": "dbconformer",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/trial_vividness_screen.md",
+        "sha256": "9d3aef46500f67f47057991b30e974683ac96f5c908bb1f8f3e41797c3fa9539"
+      },
+      "recorded_on": "2026-11-09",
+      "role": "candidate_and_public_protocol_screen_not_effect_evidence",
+      "run_action": "DESIGN_ONLY",
+      "source_evidence_ids": [
+        "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1",
+        "AI4S-DBCONFORMER-dbconformer-source-geometry-r1",
+        "AI4S-DBCONFORMER-dbconformer-svs-r1-repair2",
+        "AI4S-DBCONFORMER-dbconformer-srt-r1-repair3"
+      ]
+    },
+    {
+      "chain_id": "dbconformer-transaction-v3.3",
+      "claim_release": false,
+      "decision": "PRIORITIZE_PRE_CUE_BASELINE_PAIRING_QUALIFICATION_ONLY",
+      "design_id": "DBCONFORMER-PRE-CUE-BASELINE-PAIRING-SCREEN-20261109",
+      "new_fits": 0,
+      "new_inference": 0,
+      "prior_design_id": "DBCONFORMER-TRIAL-VIVIDNESS-SCREEN-20261109",
+      "program_id": "dbconformer",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/pre_cue_baseline_pairing_screen.md",
+        "sha256": "9f8481b1dcc414951977a33e7e14ce756ac7b259e2cd7386045cab6822fe8a47"
+      },
+      "recorded_on": "2026-11-09",
+      "role": "public_protocol_screen_and_candidate_prioritization_not_effect_evidence",
+      "run_action": "DESIGN_ONLY",
+      "source_audit": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/environment_mi_screen_source_audit.json",
+        "sha256": "e3c595f2516a3ed2dc148b1930366e15470e8e65fcc9e0bca07f91ce6be9ff70"
+      },
+      "source_evidence_ids": [
+        "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1",
+        "AI4S-DBCONFORMER-dbconformer-source-geometry-r1",
+        "AI4S-DBCONFORMER-dbconformer-sqk-r1"
+      ]
+    },
+    {
+      "chain_id": "dbconformer-transaction-v3.3",
+      "claim_release": false,
+      "decision": "STOP_BEFORE_FREEZE_PRE_CUE_BASELINE_INDEPENDENT_CONFIRMATION_UNQUALIFIED",
+      "design_id": "DBCONFORMER-PRE-CUE-BASELINE-PAIRING-QUALIFICATION-20261109",
+      "new_fits": 0,
+      "new_inference": 0,
+      "prior_design_id": "DBCONFORMER-PRE-CUE-BASELINE-PAIRING-SCREEN-20261109",
+      "program_id": "dbconformer",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/pre_cue_baseline_pairing_qualification.md",
+        "sha256": "b61b85baff9ebfc6fa28323914ef61248653ce8d81e1ad196c12607cdc470253"
+      },
+      "recorded_on": "2026-11-09",
+      "role": "raw_event_availability_and_stop_not_effect_evidence",
+      "run_action": "DESIGN_ONLY",
+      "source_audit": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/pre_cue_baseline_pairing_source_audit.json",
+        "sha256": "73fac757d22da8aac0ae8ed6bae66bc64c11808680844742a0c6d9dec4dcc9d3"
+      },
+      "source_evidence_ids": [
+        "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1",
+        "AI4S-DBCONFORMER-dbconformer-source-geometry-r1",
+        "AI4S-DBCONFORMER-dbconformer-sqk-r1"
+      ]
+    },
+    {
+      "chain_id": "dbconformer-transaction-v3.3",
+      "claim_release": false,
+      "decision": "NO_QUALIFIED_DIRECTION",
+      "design_id": "DBCONFORMER-HAND-DOMINANCE-RISK-SCREEN-20261109",
+      "new_fits": 0,
+      "new_inference": 0,
+      "prior_design_id": "DBCONFORMER-PRE-CUE-BASELINE-PAIRING-QUALIFICATION-20261109",
+      "program_id": "dbconformer",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/hand_dominance_risk_screen.md",
+        "sha256": "608c8125c58255349e431565f9a95a7473512302cde9dc204762c918d32fd54a"
+      },
+      "recorded_on": "2026-11-09",
+      "role": "public_candidate_screen_not_effect_evidence",
+      "run_action": "DESIGN_ONLY",
+      "source_evidence_ids": [
+        "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1",
+        "AI4S-DBCONFORMER-dbconformer-source-geometry-r1",
+        "AI4S-DBCONFORMER-dbconformer-sqk-r1"
+      ]
+    },
+    {
+      "chain_id": "dbconformer-transaction-v3.3",
+      "claim_release": false,
+      "decision": "CONCEPT_VALID_NARROW_DIAGNOSTIC_NOT_READY_TO_FREEZE",
+      "design_id": "DBCONFORMER-DBF-A-CROSS-WINDOW-CONCEPT-20261109",
+      "new_fits": 0,
+      "new_inference": 0,
+      "program_id": "dbconformer",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/reassessment_20261106_post_source_coverage/dbf_a_cross_window_concept.md",
+        "sha256": "4cefd1474fa6d34c68d3f6d28ac4fbbd69aa5e285d22598d29b9cb56590a1611"
+      },
+      "recorded_on": "2026-11-09",
+      "role": "concept_and_synthetic_counterexample_not_eeg_effect_evidence",
+      "run_action": "DESIGN_ONLY",
+      "source_evidence_ids": [
+        "AI4S-DBCONFORMER-SCR-R1-MERGED-20261015",
+        "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1"
+      ]
     }
   ],
   "round_evidence": [

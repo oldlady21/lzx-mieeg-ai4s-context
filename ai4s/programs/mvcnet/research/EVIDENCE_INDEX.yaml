@@ -482,6 +482,240 @@
   "program_id": "mvcnet",
   "research_preparations": [
     {
+      "audit_script": "ai4s/programs/mvcnet/research/next_core_direction_20261106/audit_mvc05_completion.py",
+      "audit_script_sha256": "0c9ecc0f12dcc0cb5244331102f343c2763bde0ab5cdeb8f6af7d915cadf2804",
+      "candidate_id": "IF-20261110-MVC-05",
+      "candidate_revision": "card-v1",
+      "candidate_source_run": "IF-20261110-MVC-PF01",
+      "certified_by_nominal_class": {
+        "left_hand": [
+          0,
+          5
+        ],
+        "right_hand": [
+          45,
+          124
+        ]
+      },
+      "certified_total": 45,
+      "equal_acceptance_comparison_executed": false,
+      "evidence_id": "MVCNET-MVC05-LINEAR-COMPLETION-ZERO-TRAINING-20261110",
+      "hidden_inclusion_macro": 0.9215367965367964,
+      "lowest_subject_hidden_inclusion": {
+        "inside": 16,
+        "subject": 9,
+        "total": 21
+      },
+      "mat_files": 14,
+      "new_run_started": false,
+      "protocol": "ai4s/programs/mvcnet/research/next_core_direction_20261106/MVC05_ZERO_TRAINING_PROTOCOL_20261110.md",
+      "protocol_sha256": "4ac02ccaacc605bffdd19d89d107a63283a6becc1f663972947023b7b69c6069",
+      "receipt": "ai4s/programs/mvcnet/research/next_core_direction_20261106/MVC05_ZERO_TRAINING_20261110.json",
+      "receipt_sha256": "a8097364e9b347dfca79457175fe987a4b5a6f5744789697c76b81aa71102fc7",
+      "report": "ai4s/programs/mvcnet/research/next_core_direction_20261106/MVC05_ZERO_TRAINING_RESULT_20261110.md",
+      "report_sha256": "1d355caa6f0803e6df577e4861dfa0b3f07225ecee4c40d2b16a4f2c0a943aeb",
+      "role": "fixed_linear_completion_invariance_and_coverage_screen",
+      "scientific_fit_count": 0,
+      "source_asset_evidence_id": "MVCNET-MVC04-PROSPECTIVE-GROUP-SAMPLING-ZERO-TRAINING-20261110",
+      "source_e_runs": 20,
+      "source_e_trials": 129,
+      "source_t_trials": 812,
+      "status": "STOP_COVERAGE_GATE"
+    },
+    {
+      "candidate_id": "IF-20261110-MVC-04",
+      "candidate_revision": "card-v1",
+      "effect_comparison_executed": false,
+      "evidence_id": "MVCNET-MVC04-PROSPECTIVE-GROUP-SAMPLING-DIRECTION-CLOSE-20261110",
+      "max_visibility_delta": 0.0,
+      "new_run_started": false,
+      "retained_zero_training_status": "STOP_NONDEGENERACY_GATE",
+      "role": "user_directed_research_direction_closeout",
+      "scientific_fit_count": 0,
+      "sealfix2_decision_preserved": "NO_SIGNAL",
+      "selection_disagreement_floor": 0.1,
+      "selection_disagreement_trials": 5,
+      "source_evidence_id": "MVCNET-MVC04-PROSPECTIVE-GROUP-SAMPLING-ZERO-TRAINING-20261110",
+      "source_validation_trials": 129,
+      "status": "CLOSED_FIXED_GROUP_SELECTION_NONDEGENERACY_GATE",
+      "visibility_checks": 13174
+    },
+    {
+      "audit_script": "ai4s/programs/mvcnet/research/next_core_direction_20261106/audit_mvc04_sampling.py",
+      "audit_script_sha256": "d85d1f60e8bec72cb42c97e80672a0207ddb0a5851f29717cfc5a0bff547506c",
+      "candidate_id": "IF-20261110-MVC-04",
+      "candidate_revision": "card-v1",
+      "candidate_source_run": "IF-20261110-MVC-PF01",
+      "effect_comparison_executed": false,
+      "evidence_id": "MVCNET-MVC04-PROSPECTIVE-GROUP-SAMPLING-ZERO-TRAINING-20261110",
+      "mat_files": 14,
+      "max_visibility_delta": 0.0,
+      "new_run_started": false,
+      "protocol": "ai4s/programs/mvcnet/research/next_core_direction_20261106/MVC04_ZERO_TRAINING_PROTOCOL_20261110.md",
+      "protocol_sha256": "61806e1ad634b1166900d671ba44cfc6d003f826f84889cbc3d6c1012c8c61c3",
+      "receipt": "ai4s/programs/mvcnet/research/next_core_direction_20261106/MVC04_ZERO_TRAINING_20261110.json",
+      "receipt_sha256": "cfe57ee5b349bacb71fc7f192b59563c590052c557cceae55fc694ccf3d84146",
+      "report": "ai4s/programs/mvcnet/research/next_core_direction_20261106/MVC04_ZERO_TRAINING_RESULT_20261110.md",
+      "report_sha256": "89692478428aabd0a9ef4a93362fb2c6f1c4402177de1982454c9a87f544b2f9",
+      "role": "paired_future_group_selection_visibility_and_nondegeneracy_screen",
+      "scientific_fit_count": 0,
+      "selection_disagreement_floor": 0.1,
+      "selection_disagreement_trials": 5,
+      "source_validation_runs": 20,
+      "source_validation_trials": 129,
+      "status": "STOP_NONDEGENERACY_GATE",
+      "supplied_portfolio_sha256": "15631dac65ebcb7a396a32ad559b619583fa1da86f1268d0b9f95931ff7e8888",
+      "visibility_checks": 13174
+    },
+    {
+      "assmt_executed": false,
+      "audit_script": "ai4s/programs/mvcnet/research/next_core_direction_20261106/audit_mvc01_identifiability.py",
+      "audit_script_sha256": "f8ba1e356a7926fc458ed6f1175aab9c8c932988e595558fafdd848e058ca4ff",
+      "candidate_id": "IF-20261109-MVC-01",
+      "candidate_revision": "card-v1",
+      "candidate_source_run": "IF-20261109-MVC-PF01",
+      "comparisons": {
+        "0.5": {
+          "comparator": "dense_short",
+          "false_alarm_gap_pp": 0.18333333333333332,
+          "gain_pp": 0.1,
+          "passed": false
+        },
+        "1.0": {
+          "comparator": "dense_short",
+          "false_alarm_gap_pp": 0.18333333333333332,
+          "gain_pp": 0.675,
+          "passed": false
+        }
+      },
+      "evidence_id": "MVCNET-MVC01-SYNTHETIC-IDENTIFIABILITY-20261110",
+      "new_run_started": false,
+      "protocol": "ai4s/programs/mvcnet/research/next_core_direction_20261106/MVC01_IDENTIFIABILITY_PROTOCOL_20261110.md",
+      "protocol_sha256": "920d58b09a55cae2624f6bd81f6f086d623e239a3b04b8f2e36b32490372a855",
+      "real_eeg_read": false,
+      "receipt": "ai4s/programs/mvcnet/research/next_core_direction_20261106/MVC01_IDENTIFIABILITY_20261110.json",
+      "receipt_sha256": "2e4c7d355dda40e4696f2f36fe0b33e1f6aa8ac4ad49e1db5d14d2d11de50fbe",
+      "report": "ai4s/programs/mvcnet/research/next_core_direction_20261106/MVC01_IDENTIFIABILITY_RESULT_20261110.md",
+      "report_sha256": "4cdee6f426c0fcedfc6e03781fa92a3342d40d811be4cf40365a5e19711b8d6b",
+      "role": "synthetic_observation_identifiability_and_pulse_detection_screen",
+      "scientific_fit_count": 0,
+      "status": "STOP_FIXED_SYNTHETIC_OPERATOR_GATE",
+      "supplied_portfolio_sha256": "0eeb27fcae26d3a1f30f8a8537a02bf8355807f3993a5ffc7e848e7110bf2bc2"
+    },
+    {
+      "archive_sha256": "b7e204a70b726356037f1507f1d00a24e22e950cb645065158b6461613993df4",
+      "audit_script": "ai4s/programs/mvcnet/research/next_core_direction_20261106/audit_common_trial_protocol_interaction.py",
+      "audit_script_sha256": "89f56222634a059d485a6981eaab403700ba630e139572b05325c14ad837d267",
+      "datasets": {
+        "001": {
+          "common_interaction": 1.7052469135802468,
+          "directional_subjects": 6,
+          "equal_strata_interaction": -0.06730705125682117,
+          "gates": {
+            "magnitude": true,
+            "strata": false,
+            "subjects": true
+          }
+        },
+        "004": {
+          "common_interaction": -1.5486111111111112,
+          "directional_subjects": 5,
+          "equal_strata_interaction": 2.8922625604936125,
+          "gates": {
+            "magnitude": true,
+            "strata": false,
+            "subjects": false
+          }
+        }
+      },
+      "design_review_entered": false,
+      "evidence_id": "MVCNET-COMMON-TRIAL-PROTOCOL-INTERACTION-ZERO-TRAINING-20261109",
+      "model_forward_count": 0,
+      "new_run_started": false,
+      "prediction_files": 360,
+      "receipt": "ai4s/programs/mvcnet/research/next_core_direction_20261106/COMMON_TRIAL_PROTOCOL_INTERACTION_ZERO_TRAINING_20261109.json",
+      "receipt_sha256": "8f657c18a2fdd0054eae7d2ed68a801c6c68d494b9977625b416b9f23a53ec0e",
+      "report": "ai4s/programs/mvcnet/research/next_core_direction_20261106/COMMON_TRIAL_PROTOCOL_INTERACTION_ZERO_TRAINING_20261109.md",
+      "report_sha256": "48ff3f35cf7e84394de7076bb50631081ee14f41b4d03a16a7f75e30e7c6fe22",
+      "role": "paired_common_trial_protocol_sensitivity_check",
+      "scientific_fit_count": 0,
+      "source_evidence_id": "MVCNET-COMMON-TRIAL-PROTOCOL-INTERACTION-DESIGN-20261109",
+      "status": "STOP_COMMON_TRIAL_PROTOCOL_GATE"
+    },
+    {
+      "archive": "output/backups/vcn_p1_s8_20261106/s8_outputs.tar",
+      "archive_sha256": "b7e204a70b726356037f1507f1d00a24e22e950cb645065158b6461613993df4",
+      "common_trials_per_seed": {
+        "001": 2592,
+        "004": 2840
+      },
+      "evidence_id": "MVCNET-COMMON-TRIAL-PROTOCOL-INTERACTION-DESIGN-20261109",
+      "new_effects_read": false,
+      "new_run_started": false,
+      "report": "ai4s/programs/mvcnet/research/next_core_direction_20261106/COMMON_TRIAL_PROTOCOL_INTERACTION_DESIGN_20261109.md",
+      "report_sha256": "400b1115582684584a4d2d43a20378febc5d19c1b8f05dc03594cd4f99a8beea",
+      "role": "design_and_frozen_prediction_identity_only",
+      "scientific_fit_count": 0,
+      "source_evidence_ids": [
+        "MVCNET-VCN-VIEW-AFFINE-TRANSFER-DIRECTION-CLOSE-20261109",
+        "VCN-P1-S8-SCOPED-2026-08-28"
+      ],
+      "status": "DESIGN_ONLY_ZERO_TRAINING_GATE_FIRST",
+      "verified_identity_entries": 360
+    },
+    {
+      "T_bidirectional_subjects": [
+        3,
+        5,
+        9
+      ],
+      "T_pass_counts": [
+        5,
+        4
+      ],
+      "T_trials": 896,
+      "evidence_id": "MVCNET-VCN-VIEW-AFFINE-TRANSFER-DIRECTION-CLOSE-20261109",
+      "new_run_started": false,
+      "raw_gate_executed": false,
+      "receipt": "ai4s/programs/mvcnet/research/next_core_direction_20261106/VCN_VIEW_AFFINE_TRANSFER_ZERO_TRAINING_20261109.json",
+      "receipt_sha256": "4e873bd355e63b759f7fde7575251269614b7918668d4e8010072240958c589b",
+      "report": "ai4s/programs/mvcnet/research/next_core_direction_20261106/VCN_VIEW_AFFINE_TRANSFER_ZERO_TRAINING_20261109.md",
+      "report_sha256": "d0d81e9759512672ccabee67a53a324dc7a6b9481dabb36a033ae0bca809ecf9",
+      "retained_zero_training_status": "STOP_T_DIRECTION_GATE",
+      "role": "user_directed_research_direction_closeout",
+      "scientific_fit_count": 0,
+      "source_evidence_id": "MVCNET-VCN-VIEW-AFFINE-TRANSFER-ZERO-TRAINING-20261109",
+      "status": "CLOSED_T_DIRECTION_REPRODUCIBILITY_GATE",
+      "technical_gate": "PASS"
+    },
+    {
+      "T_bidirectional_subjects": [
+        3,
+        5,
+        9
+      ],
+      "T_pass_counts": [
+        5,
+        4
+      ],
+      "T_trials": 896,
+      "audit_script": "ai4s/programs/mvcnet/research/next_core_direction_20261106/audit_vcn_view_affine_transfer.py",
+      "audit_script_sha256": "49c6720644855d6f040bc9aad170849589e15460d0bc9fbbede2913473fa9329",
+      "evidence_id": "MVCNET-VCN-VIEW-AFFINE-TRANSFER-ZERO-TRAINING-20261109",
+      "new_run_started": false,
+      "optimizer_steps": 0,
+      "raw_gate_executed": false,
+      "receipt": "ai4s/programs/mvcnet/research/next_core_direction_20261106/VCN_VIEW_AFFINE_TRANSFER_ZERO_TRAINING_20261109.json",
+      "receipt_sha256": "4e873bd355e63b759f7fde7575251269614b7918668d4e8010072240958c589b",
+      "report": "ai4s/programs/mvcnet/research/next_core_direction_20261106/VCN_VIEW_AFFINE_TRANSFER_ZERO_TRAINING_20261109.md",
+      "report_sha256": "d0d81e9759512672ccabee67a53a324dc7a6b9481dabb36a033ae0bca809ecf9",
+      "role": "zero_training_frozen_affine_direction_probe",
+      "scientific_fit_count": 0,
+      "source_evidence_id": "MVCNET-VCN-VIEW-AFFINE-TRANSFER-DESIGN-20261109",
+      "status": "STOP_T_DIRECTION_GATE",
+      "technical_gate": "PASS"
+    },
+    {
       "anchor_availability": "verified_historical_manifest_only_not_in_local_intake",
       "anchor_checkpoint_manifest_path": "science/2026-11-06_mvcnet_cue4_b0_ce_lab10_full_r1_py39fix1_sealfix2-full-w1/artifacts/fit-CE-seed73-outer0/selected.pt",
       "anchor_checkpoint_sha256": "b8670160ec0d3da33a2979e051085d445d4cf76ecb9ac73c35f60fe08aa2375b",

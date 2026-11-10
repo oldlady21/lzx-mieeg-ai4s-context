@@ -309,3 +309,33 @@ Grok 4.6 对原设计独立反驳为 `HOLD_FOR_DESIGN_FIX`。修订后保留同�
 ### U40 VCN-P1 保留为阶段性创新，登记逐视图 affine 可迁移性判据
 
 `MVCNET-VCN-VIEW-AFFINE-TRANSFER-DESIGN-20261109` 仅设计。历史 P1−B0 和参数匹配 N1 支持仍限原协议。原最小结构结论 `STOP_AS_NEW_MAIN_INNOVATION` 保留。本次筛的是 raw 已独立后，增强 affine 的额外方向是否跨人和记录可复用，能否经共享主干更有利于另一会话的 raw 目标。关键对照为按增强视图分别计算批统计的 raw／增强双 BN、冻结方向后五种同范数错配和三路相同视图。固定折元数据支持七名源被试的 896 条 T 探针与 400 条 E 源验证。单份封存 CE 权重只由历史清单定位，本地精简包无该文件，未验证远端可达性。当前不确立新主线，未执行零训练探针或启动 Run。既有关闭结论与 `sealfix2` 的 `NO_SIGNAL` 均保留。[筛查设计与停止门](next_core_direction_20261106/VCN_VIEW_AFFINE_TRANSFER_DESIGN_20261109.md)
+
+### U41 逐视图 affine 方向在 T 记录互换门停止
+
+登记 `MVCNET-VCN-VIEW-AFFINE-TRANSFER-ZERO-TRAINING-20261109`。Lab10 CPU 就地核验指定封存 CE 权重及源侧索引，技术门通过。896 条 T 试次的两次记录互换分别有 5/7 和 4/7 人过门，同一被试双向通过仅 3/7，低于 5/7。按原规则停止主线筛查，未执行 E raw 梯度门。阶段性 VCN-P1 证据、既有关闭与 `sealfix2` 的 `NO_SIGNAL` 保留。零优化器步，零新 Run。[核查报告](next_core_direction_20261106/VCN_VIEW_AFFINE_TRANSFER_ZERO_TRAINING_20261109.md)
+
+### U42 逐视图 affine 主线关闭，登记固定试次的协议交互设计
+
+依用户指令登记 `MVCNET-VCN-VIEW-AFFINE-TRANSFER-DIRECTION-CLOSE-20261109`。保留 896 条 T 试次技术门通过、两方向 5/7 与 4/7、双向 3/7 和 E raw 未执行。VCN-P1 保留为阶段性创新。
+
+`MVCNET-COMMON-TRIAL-PROTOCOL-INTERACTION-DESIGN-20261109` 仅设计。S8 两套数据的原全测试集 P1 增量在 CO 与 LOSO 间呈相反排序。只读核对了 360 个预测文件的索引和真实标签，两套数据每 seed 分别有 2,592 与 2,840 条共同试次。拟在同一试次计算 P1−B0 的协议差中差，并做基线同对／同错敏感性分析。未读取预测类别或启动训练。既有关闭、Subject K 核查和 `sealfix2` 的 `NO_SIGNAL` 保留。[设计与停止门](next_core_direction_20261106/COMMON_TRIAL_PROTOCOL_INTERACTION_DESIGN_20261109.md)
+
+### U43 共同试次协议交互在稳健性门停止
+
+登记 `MVCNET-COMMON-TRIAL-PROTOCOL-INTERACTION-ZERO-TRAINING-20261109`。360 个冻结预测与历史 ACC 复算通过。共同试次差中差为 001 +1.705 点、004 −1.549 点，方向人数分别 6/9、5/9。B0 同对／同错两层等权后为 −0.067 和 +2.892 点，均未保留原方向。按原门停止该核心候选，未进入设计复核。保留 VCN-P1 历史限定支持、既有关闭、Subject K 核查和 `sealfix2` 的 `NO_SIGNAL`。无模型重放、训练或新 Run。[核查报告](next_core_direction_20261106/COMMON_TRIAL_PROTOCOL_INTERACTION_ZERO_TRAINING_20261109.md)
+
+### U44 MVC-01 的固定观测组合停在合成实用增量门
+
+登记 `MVCNET-MVC01-SYNTHETIC-IDENTIFIABILITY-20261110`。嵌套长窗和重复短窗均未增秩。Hann 权重使秩从 7 升至 14，并打破一个明确的潜在轨迹混叠反例。相对加密矩形短窗，两档脉冲的检出且定位增量为 +0.100 和 +0.675 点，均低于 +5 点预设门。固定观测组停在合成层，未比较 ASSMT、未读真实 EEG、未训练。保留 VCN-P1 历史限定支持、既有关闭与 `sealfix2` 的 `NO_SIGNAL`。[核查报告](next_core_direction_20261106/MVC01_IDENTIFIABILITY_RESULT_20261110.md)
+
+### U45 MVC-04 的同步选组停在真实试次非退化门
+
+登记 `MVCNET-MVC04-PROSPECTIVE-GROUP-SAMPLING-ZERO-TRAINING-20261110`。14 份 MAT、941 条绑定试次与 13,174 项不可见样本扰动检查通过。合成相位控制保持单通道功率与边际选组，改变同步选组。E 源验证的 20 个匹配 run 中，同步和边际规则仅 5/129 条选组不同（3.88%），低于 10% 门，按 `STOP_NONDEGENERACY_GATE` 停止该固定规则。未计算三臂准确率，未进入设计复核。保留既有关闭、Subject K 核查与 `sealfix2` 的 `NO_SIGNAL`。零训练、零模型重放、零新 Run。[核查报告](next_core_direction_20261106/MVC04_ZERO_TRAINING_RESULT_20261110.md)
+
+### U46 MVC-04 当前两段两组选组方案关闭
+
+依用户指令登记 `MVCNET-MVC04-PROSPECTIVE-GROUP-SAMPLING-DIRECTION-CLOSE-20261110`。保留不可见样本扰动通过、同步和单通道规则仅 5/129 条选组不同（3.88%）且未进入三臂效果比较的记录。既有关闭结论与 `sealfix2` 的 `NO_SIGNAL` 均保留。[零训练核查](next_core_direction_20261106/MVC04_ZERO_TRAINING_RESULT_20261110.md)
+
+### U47 MVC-05 固定线性读出停在覆盖门
+
+登记 `MVCNET-MVC05-LINEAR-COMPLETION-ZERO-TRAINING-20261110`。14 份 MAT、129 条 E 评分试次的证书端点和隐藏通道扰动检查通过。两档真实隐藏贡献入集率逐人等权 92.15%，但 A09 仅 16/21（76.19%），低于 80%。总体签发 45/129（34.88%），名义左手 0/5、右手 45/124，左手未过 20% 门。按 `STOP_COVERAGE_GATE` 停止固定方案，未做等接收数效果比较或进入设计复核。保留 MVC-04 关闭、既有关闭及 `sealfix2` 的 `NO_SIGNAL`。零训练、零新 Run。[核查报告](next_core_direction_20261106/MVC05_ZERO_TRAINING_RESULT_20261110.md)

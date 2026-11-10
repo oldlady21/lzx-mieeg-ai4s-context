@@ -19,6 +19,14 @@
 
 ## 当前综合、反例与未决问题
 
+**2026-11-09 DBF-A 概念核对。** SCR 两臂都跨试次重组，只改变供体被试一致性。独立编码后可构造无波形接缝的配对对照，原生全段 T 卷积及 S 池化不满足窗口隔离。合成反例表明，固定单窗边际仍可改变加性读出 CE，原差值判据不足。只保留固定局部表征上的加性与低阶交互诊断，尚无独立确认和论文核心资格。0 新拟合与推理。[概念记录](reassessment_20261106_post_source_coverage/dbf_a_cross_window_concept.md)。
+
+**2026-11-09 本试次提示前基线停在冻结前。** 2a 原 GDF 的 5,184 个开始与类别标记均隔 500 样本，2,139 个左右手试次通过名义共同条件。Dreyer 前两轮是假反馈，Cho 有 52 人独立顺序档，尚缺原矩阵与 run 对账及独立资格。后续只筛解剖侧与优势手能否区分逐人错误风险，未选定论文核心。0 新拟合与推理。[停止记录](reassessment_20261106_post_source_coverage/pre_cue_baseline_pairing_qualification.md) · [来源核验](reassessment_20261106_post_source_coverage/pre_cue_baseline_pairing_source_audit.json) · [后续筛查](reassessment_20261106_post_source_coverage/hand_dominance_risk_screen.md)。
+
+**2026-11-09 下一轮方向筛查。** 保留停止想象及生动度的原裁决。优先核同一左右手想象窗使用本试次提示前基线，能否优于同 run 等量历史基线与因果滚动基线。2a 有名义连续开发窗，Dreyer 与 Cho 的原始时序、暴露和独立角色待核。ds007221 的 14 人双 Graz 会话无可追溯环境及实际次序，真实故障与 EEG–MEG 的配对复核也缺资产。当前无合格论文核心，0 新拟合与推理。[筛查与停止条件](reassessment_20261106_post_source_coverage/pre_cue_baseline_pairing_screen.md) · [环境语料核验](reassessment_20261106_post_source_coverage/environment_mi_screen_source_audit.json)。
+
+**2026-11-09 停止想象指令后的原手别输出停在冻结前。** González-Villar 2016 的停止音按计划在箭头后 300 ms 播放，箭头持续 500 ms。只有无声继续，缺可复核的物理时点与独立想象启动证据。2022 加了等亮度绿箭头继续，仍无同声继续或合格独立复核。后续初筛中，Leeuwis 与 Cho 的问卷粒度和 YOTO 的任务都无法满足逐试次左右手自评，当前无合格核心方向。0 新拟合与推理。[停止记录](reassessment_20261106_post_source_coverage/imagery_stop_command_qualification.md) · [来源审计](reassessment_20261106_post_source_coverage/imagery_stop_command_source_audit.json) · [后续初筛](reassessment_20261106_post_source_coverage/trial_vividness_screen.md)。
+
 **2026-11-09 同动作跨想象策略停在冻结前。** Yang 2021 的两次 ME→KMI 与两次 VO→VMI 只支持任务组合的名义跨会话比较，策略与前置活动完全绑定。PMC 原始论文附件未发布逐试次 EEG 或轨迹，5 V TTL 只报告会话前同步。Zapała 公开目录只有派生表，Inamoto 只有单动作方向，未取得同估计量确认。下一项仅筛停止想象指令后的原手别残留输出。0 新拟合与推理。[停止记录](reassessment_20261106_post_source_coverage/imagery_strategy_transfer_qualification.md) · [来源审计](reassessment_20261106_post_source_coverage/imagery_strategy_source_audit.json) · [后续初筛](reassessment_20261106_post_source_coverage/imagery_stop_command_screen.md)。
 
 **2026-11-09 同听觉手别指令的睁闭眼方向停在冻结前。** Brandl 16 份原始 MAT 共 96 个反馈 run，两条件在同一阶段且先后可变，事件支持等量同试次名义配对。缺逐试次闭眼与独立眼电，静息 alpha 只支持静息操纵，既往反馈与在线自适应未隔离。Zapała 2023 是 24 人的策略研究，初筛所链接的单人说法更正，仍无同任务独立复核。下一条仅筛同动作跨想象策略。0 新拟合与推理。[停止记录](reassessment_20261106_post_source_coverage/eye_state_auditory_mi_qualification.md) · [原件审计](reassessment_20261106_post_source_coverage/eye_state_auditory_source_audit.json) · [后续初筛](reassessment_20261106_post_source_coverage/imagery_strategy_transfer_screen.md)。
