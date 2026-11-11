@@ -339,3 +339,23 @@ Grok 4.6 对原设计独立反驳为 `HOLD_FOR_DESIGN_FIX`。修订后保留同�
 ### U47 MVC-05 固定线性读出停在覆盖门
 
 登记 `MVCNET-MVC05-LINEAR-COMPLETION-ZERO-TRAINING-20261110`。14 份 MAT、129 条 E 评分试次的证书端点和隐藏通道扰动检查通过。两档真实隐藏贡献入集率逐人等权 92.15%，但 A09 仅 16/21（76.19%），低于 80%。总体签发 45/129（34.88%），名义左手 0/5、右手 45/124，左手未过 20% 门。按 `STOP_COVERAGE_GATE` 停止固定方案，未做等接收数效果比较或进入设计复核。保留 MVC-04 关闭、既有关闭及 `sealfix2` 的 `NO_SIGNAL`。零训练、零新 Run。[核查报告](next_core_direction_20261106/MVC05_ZERO_TRAINING_RESULT_20261110.md)
+
+### U48 MVC-05 当前线性证书方案关闭
+
+按用户授权和 v3.4 研究判断登记 `MVCNET-MVC05-LINEAR-COMPLETION-DIRECTION-CLOSE-20261111`。原覆盖门失败足以关闭固定 CP3/CP4 掩码、线性读出和两档半径实例。即使更换阈值，二分类区间证书仍与同半径的归一化间隔排序等价。原核查结果和未执行的等接收数比较按原语义归档，保留 MVC-04 关闭和 `sealfix2` 的 `NO_SIGNAL`。[原始核查](next_core_direction_20261106/MVC05_ZERO_TRAINING_RESULT_20261110.md)
+
+### U49 v3.4 首选结构候选为非相邻片段条件时域卷积
+
+登记 `MVCNET-NONADJACENT-CONTEXT-TEMPORAL-FILTER-DESIGN-20261111`。历史末端融合、分类前残差和池化后乘积的负结果使首选干预转到原生 IFNet 池化前的时域卷积。用同一试次另一非相邻片段决定本段的残差核系数，依次对照原生固定核、同段条件和全试次条件，判断跨段依赖是否值得投入。已有动态卷积是直接近邻。首项拟议检验为隔离 CPU 的反事实输入与作用路径核查。当前为候选设计，独立科研反驳和执行均待定。[研究简报](next_core_direction_20261106/nonadjacent_context_temporal_filter/research_brief.md)
+
+### U50 非相邻片段条件时域卷积通过隔离 CPU 核查
+
+登记 `MVCNET-NONADJACENT-CONTEXT-TEMPORAL-FILTER-ZERO-FIT-20261111`。固定局部卷积输入时，跨段条件只响应指定远段，同段和全试次条件分别呈现预期依赖。关闭及系数置零恢复原生 logits，四视图、raw CE 梯度与严格重载检查通过。完整 stem 的训练态共享 BN 另有跨段路径，归因需固定局部输入并注明所测位置。新增 4,055 参数，单线程 B1 raw 前向 p95 由 3.45 增至 6.42 ms。真实解码效用、目标机成本和独立科研反驳仍待核对。零拟合、零新 Run。[核查报告](next_core_direction_20261106/nonadjacent_context_temporal_filter/ZERO_FIT_RESULT_20261111.md)
+
+### U51 限定查新及独立科研反驳后暂缓配对开发
+
+登记 `MVCNET-NONADJACENT-CONTEXT-TEMPORAL-FILTER-REVIEW-20261111`。动态滤波与 TAdaConv 已覆盖条件调核和逐位置跨时上下文，保留指定远段相对同段与全试次等参数条件的窄检验。共享 BN 和 1,651 点连续 FIR 共同限制机制解释。完成一次 agy 实质审查，实际模型标识未返回。三拟议折的源验证在匹配幅度前均有 807/807 条可做同 run、原始支撑分离的错配。先补源侧片段原始支撑、条件可配对性和目标机成本，拟议 12 fit＋12 check 的矩阵限 9 process-hours（含 20% 余量），尚待测量与冻结。零拟合、零新 Run。[查新、反驳与处置](next_core_direction_20261106/nonadjacent_context_temporal_filter/NOVELTY_AND_DEVELOPMENT_20261111.md)
+
+### U52 开发门已冻结，Lab10 四臂资格等待隔离 GPU
+
+冻结原 Cue4 的离线四臂配对设计及 seed73-outer0/3/6，预先固定 B0、N0、C0 效用差、逐被试风险与错配机制门，矩阵成本限 9 进程小时含 20% 余量。核验 18 份原始 MAT；在同 run、原始支撑分离和四段幅度约束下分别匹配 707、660、679/807 条，均过 80% 门。真实 cue radix=1、63 点原生支路四臂接线的隔离 CPU 检查通过。资格 Run `2026-11-11_mvcnet_context_filter_lab10_qual1` 已在 Lab10 核验不可变包并启动调度，22:39 快照为 4 待、0 运行、0 完成、0 失败，等待 GPU 3 无驻留计算。目标机成本未知，12 次科学拟合尚未派发。[准备及调度记录](next_core_direction_20261106/nonadjacent_context_temporal_filter/DEVELOPMENT_PREPARATION_20261111.md)
