@@ -359,3 +359,7 @@ Grok 4.6 对原设计独立反驳为 `HOLD_FOR_DESIGN_FIX`。修订后保留同�
 ### U52 开发门已冻结，Lab10 四臂资格等待隔离 GPU
 
 冻结原 Cue4 的离线四臂配对设计及 seed73-outer0/3/6，预先固定 B0、N0、C0 效用差、逐被试风险与错配机制门，矩阵成本限 9 进程小时含 20% 余量。核验 18 份原始 MAT；在同 run、原始支撑分离和四段幅度约束下分别匹配 707、660、679/807 条，均过 80% 门。真实 cue radix=1、63 点原生支路四臂接线的隔离 CPU 检查通过。资格 Run `2026-11-11_mvcnet_context_filter_lab10_qual1` 已在 Lab10 核验不可变包并启动调度，22:39 快照为 4 待、0 运行、0 完成、0 失败，等待 GPU 3 无驻留计算。目标机成本未知，12 次科学拟合尚未派发。[准备及调度记录](next_core_direction_20261106/nonadjacent_context_temporal_filter/DEVELOPMENT_PREPARATION_20261111.md)
+
+### U53 Lab10 四臂资格与成本门通过
+
+原资格 Run 四臂齐套，失败为 0。Lab10 核验四个检查点，本地核验九份核心回执。原 12 次拟合＋12 次检查估算为 6.8594 进程小时，计入 20% 余量为 8.2313 小时，低于 9 小时上限。下一步是完成科学轮正式派发及精简验收判读接线，继续使用冻结四臂三折和全拟合封存规则。科学任务当前尚未派发。[资格验收与成本复算](next_core_direction_20261106/nonadjacent_context_temporal_filter/qualification/QUALIFICATION_CLOSEOUT_20261112.md)

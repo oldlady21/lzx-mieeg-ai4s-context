@@ -482,6 +482,26 @@
   "program_id": "mvcnet",
   "research_preparations": [
     {
+      "core": "ai4s/programs/mvcnet/research/next_core_direction_20261106/nonadjacent_context_temporal_filter/qualification/QUALIFICATION_CORE_20261112.json",
+      "core_sha256": "f02665b21ee1a01b841ddee42070342f1ed1cd35ab0adbf9c203249553ab98a4",
+      "cost_verification": "ai4s/programs/mvcnet/research/next_core_direction_20261106/nonadjacent_context_temporal_filter/qualification/QUALIFICATION_COST_VERIFIED_20261112.json",
+      "cost_verification_sha256": "26718d5299d8949744b0dc0a43bd94737c3d3503c1a1e60865f10f3a68173643",
+      "decision_chain_id": "mvcnet-transaction-v3.4",
+      "estimated_process_hours": 6.859422173394511,
+      "estimated_process_hours_with_20pct_reserve": 8.231306608073414,
+      "evidence_id": "MVCNET-NONADJACENT-CONTEXT-TEMPORAL-FILTER-QUALIFICATION-CLOSEOUT-20261112",
+      "limit_process_hours": 9,
+      "qualification_completed": 4,
+      "qualification_failed": 0,
+      "report": "ai4s/programs/mvcnet/research/next_core_direction_20261106/nonadjacent_context_temporal_filter/qualification/QUALIFICATION_CLOSEOUT_20261112.md",
+      "role": "verified_source_only_lab10_qualification_and_cost",
+      "run_id": "2026-11-11_mvcnet_context_filter_lab10_qual1",
+      "scientific_check_count": 0,
+      "scientific_fit_count": 0,
+      "source_evidence_id": "MVCNET-NONADJACENT-CONTEXT-TEMPORAL-FILTER-QUALIFICATION-LAUNCH-20261111",
+      "status": "QUALIFICATION_COMPLETE_COST_PASS_SCIENCE_UNDISPATCHED"
+    },
+    {
       "decision_chain_id": "mvcnet-transaction-v3.4",
       "evidence_id": "MVCNET-NONADJACENT-CONTEXT-TEMPORAL-FILTER-QUALIFICATION-LAUNCH-20261111",
       "production_cpu_receipt": "ai4s/programs/mvcnet/research/next_core_direction_20261106/nonadjacent_context_temporal_filter/PRODUCTION_CPU_20261111.json",
