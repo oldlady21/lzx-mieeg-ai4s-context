@@ -1,6 +1,12 @@
 # SST-DPN 当前研究总览与接续
 
-## 2026-11-03：SD-02 模型与判定工程实现（无实验）
+## SD-02 closurefix5｜已完成并关闭固定配方
+
+证据 `AI4S-SSTDPN-sd02-three-arm-v0.1-closurefix5`。固定三臂完成 27/27 个科学节点，冻结判定为 **NO_SIGNAL**。四阶 K 对原生 B 和匹配二阶 S 分别为 −25.35 pp 和 −8.29 pp，两项对比的均值、seed 与逐人风险门均未通过。结论限于已曝光开发被试 S02/S05/S08、seed 2/3/4 与本次固定 48 坐标残差配方，正式 Claim 和机制均未建立。该具体实例已关闭，保留原停止条件和曝光边界。未来有不同的可检验结构预测时，按原边界核对新设计及授权。 [冻结结果](sd02-three-arm-v0.1/closeout_20261105/RESULT_SUMMARY.md) · [决策记录](sd02-three-arm-v0.1-closurefix5_decision.yaml)
+
+以下两节保留 2026-11-03 的工程与设计快照。运行状态见 State。
+
+## 2026-11-03：SD-02 模型与判定工程实现（历史，当时未启动实验）
 
 用户进一步授权三臂模型实现、判定接线和必要工程验收，明确不启动实验。代码位于 `research/sd02-three-arm-v0.1/`，共享控制器已增加独立SD02识别/结果绑定/分类分支；[工程验收报告](../../../_work/sstdpn_sd02_assessment_20261103/implementation/REPORT.md)区分已覆盖通路与未验收范围。仅运行CPU合成检查，无科研数据加载或科学拟合。原生初态/BN/eval输出经参考实现核对；按本设计使用functional ISP renorm，训练梯度语义不能声称与reference的`.data`原地投影逐步一致。草稿预测产物显式标记ENGINEERING_ONLY，当前无新执行授权时合同门保持关闭。科学Run、GPU资格、调度/回传和完整生产事务均未验收，Program继续暂停，State/Evidence Index和旧实验判定不变。
 

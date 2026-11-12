@@ -17,7 +17,7 @@
 
 下文是当前可修正综合。作者报告、阅读推断、代码行为、本地观测应按所引来源理解；MVCNet的视图隔离和配套监督不能单凭结构推断互补机制成立。重要结论应能回到原文/源码及Evidence ID，并说明适用范围和何种新证据会改变取舍。历史轮次保留在原报告；其中运行状态只代表记录时点，当前状态以 STATE.yaml 为准。
 
-2026-10-29补充核对：论文阅读材料中“raw-only推理仍保留两分支”的解释属于论文v4。**当前本地VCN-P1分类实现不同**：`src/baselines/mvcnet.py:212` 和原生参考 `_work/augmentation_readout_source_r1/ai4s/programs/mvcnet/research/augmentation_readout/train.py:28` 的推理均仅用CNN/IFNet→分类头；Transformer/投影器只参与训练对比目标。原生CVC沿batch轴拼接两种分支表示，仍含跨分支负项；因此不能假设去掉CMC某侧梯度就隔绝所有分支影响。本轮只是静态事实核对，不改基模、L3、历史合同或结果。后续依赖此事实的方向必须绑定实际native实现，不能套用论文融合分类图。直接核对及源码哈希见[下一辅助方向上下文](next_auxiliary_20261029/CONTEXT_MANIFEST.json)。
+本地实现核对（2026-10-29，2026-11-12复核）。论文 v4 Algorithm 1 第 25 步对未增强测试试次采用 CNN／Transformer 特征拼接分类。本地规范 UEP baseline 的 `MVCNetAdapter.forward`（`src/baselines/mvcnet.py:212`）和本地留存 native runner（`ai4s/_work/augmentation_readout_source_r1/ai4s/programs/mvcnet/research/augmentation_readout/train.py:28`）均走 CNN/IFNet → 分类头。已核对的 VCN-P1 和 VBR-R1 改动 IFNet 归一化，仍走这一分类路径。Transformer／投影器经训练对比损失影响参数；本地 CVC 沿 batch 轴拼接两种分支表示并包含跨分支负项，切断 CMC 一侧的梯度仍可能保留 CVC 的跨分支影响。其他变体绑定其实际 adapter 和调用路径。[2026-10-29 的来源与源码哈希](next_auxiliary_20261029/CONTEXT_MANIFEST.json)。
 
 ## 当前综合与关键缺口
 
