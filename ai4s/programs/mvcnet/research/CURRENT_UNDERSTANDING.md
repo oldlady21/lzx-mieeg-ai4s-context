@@ -363,3 +363,15 @@ Grok 4.6 对原设计独立反驳为 `HOLD_FOR_DESIGN_FIX`。修订后保留同�
 ### U53 Lab10 四臂资格与成本门通过
 
 原资格 Run 四臂齐套，失败为 0。Lab10 核验四个检查点，本地核验九份核心回执。原 12 次拟合＋12 次检查估算为 6.8594 进程小时，计入 20% 余量为 8.2313 小时，低于 9 小时上限。下一步是完成科学轮正式派发及精简验收判读接线，继续使用冻结四臂三折和全拟合封存规则。科学任务当前尚未派发。[资格验收与成本复算](next_core_direction_20261106/nonadjacent_context_temporal_filter/qualification/QUALIFICATION_CLOSEOUT_20261112.md)
+
+### U54 四臂封存、精简判读与 Lab10 CPU 入口通过验收
+
+容量调度接入四臂全拟合封存，检查在封存后开放，精简包接入专用效应及条件机制判读。合成完整链路覆盖通过与停止分支，目标 Lab10 的 Python 3.9、包哈希、冻结数据和正式入口通过 CPU 验收。原 12＋12 科学轮尚无任务派发，等待共享控制器所需的独立累计执行上限。[派发验收记录](next_core_direction_20261106/nonadjacent_context_temporal_filter/DEPLOYMENT_ACCEPTANCE_20261112.md)
+
+### U55 Lab10 科学轮已启动
+
+用户确认独立累计 12 小时后，Lab10 接收原四臂三折矩阵。23:50:37 核对 12 项拟合中 2 项运行、10 项待运行，完成及失败均为 0。检查按全拟合封存顺序开放。原资格 Run 保留，成本门复算仍为含余量 8.2313 进程小时。[启动记录](next_core_direction_20261106/nonadjacent_context_temporal_filter/DEPLOYMENT_ACCEPTANCE_20261112.md#正式启动核验)
+
+### U56 四臂科学轮效应门停止
+
+12 拟合与 12 检查齐套并通过正式精简 intake。P0 对 B0 与 C0 增量不足，且仅 1/3 人同时优于三臂，登记 `STOP_EFFECT_GATE`。源侧错配未触发。实测 34.250 进程小时，Transaction 执行 7.825 小时，原口径累计至登记 18.134 小时。[收尾记录](next_core_direction_20261106/nonadjacent_context_temporal_filter/SCIENCE_CLOSEOUT_20261114.md)
