@@ -4,6 +4,14 @@
 
 OTA 当前依据是本 Program 自身的状态占据—滞后关联实现，不把其他基模论文当作 OTA 原论文。实现与设计材料：[model.py](ota-v0.1/model.py)、[node.py](ota-v0.1/node.py)、[reference.py](ota-v0.1/reference.py)、[analyze.py](ota-v0.1/analyze.py)、[LITERATURE.md](ota-v0.1/LITERATURE.md)、[PROBLEM.md](ota-v0.1/PROBLEM.md)、[RESEARCH_PLAN.md](ota-v0.1/RESEARCH_PLAN.md)。精确来源文献依 `LITERATURE.md` 核验；不把后续文献解读冒充本地实验结果。
 
+## 基模设计先验
+
+本节是稳定的来源与事实索引：作者论文陈述、阅读解释、本地实现及本 Program 已有结果分别按下列直接来源理解，不能互相替代。v4.0 的 L3 在“阅读与研究认识入口”链接到本节；本节本身不记录活动状态、权限或当前 Run 结论。
+OTA 没有被假定的外部基模原文；方法来源是本 Program 的 ota-v0.1/model.py、node.py、reference.py、LITERATURE.md 与 RESEARCH_PLAN.md §§1–2。本地结构事实和跨 Program 结果分别按本总览的直接文件及报告链接解释。
+
+- **信息来源与载体。** 占据读状态均值，关联读有限滞后联合表的 log 与双中心化结果。两者都源自共享软状态编码；共享状态或代数上可恢复部分摘要，并不能保证保留粗时间信息。（下方「基础理解与边界」及 SIC-R1）
+- **对照反映不同替代解释。** 同初始函数的自由读出便于定位关联约束效应。对状态索引内容机制，既有 C0、T0 分别提供匹配内容与粗时间替代；采用相应控制才能把收益归给结构。（本总览的配对构造及 SIC-R1 收尾）
+
 ## 基础理解与边界
 
 原设计的共享局部方差编码先形成软状态序列；占据支读取状态均值，关联支读取有限滞后的联合表经 log 与双中心化后的特征。状态是学习型局部模式，不等同 EEG microstate；联合表不等于条件转移矩阵，也不预设 Markov 性。`model.py/build_paired_models` 将候选状态复制给匹配控制，并为自由关联读出构造同初始函数；这些是实现与设计事实，不证明两支互补或新效用。依据为上列研究计划 §1–2、model.py 与 reference.py。
