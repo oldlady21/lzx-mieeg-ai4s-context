@@ -225,6 +225,23 @@
       "role": "formal_core_intake_log_alias_recovery_and_closeout",
       "run_id": "2026-10-29_dbconformer_sbn_r1_packfix1_lab10_r1-full-w1",
       "status": "COMPLETE_FORMAL_RECOVERY_INTAKE_ANALYZED_FIXED_GATE_NOT_MET_STOP"
+    },
+    {
+      "at": "2026-11-18T17:46:19.201442+00:00",
+      "claim_release": false,
+      "evidence_id": "DBCONFORMER-GAHST-R1-SOURCE-SEAL-20261119",
+      "formal_intake": true,
+      "full_payload_local": false,
+      "intake_scope": "analysis_v1",
+      "report": {
+        "path": "ai4s/programs/dbconformer/research/gahst_pair_d0_20261118/tracefix3/SOURCE_FIT_ACCEPTANCE.json",
+        "sha256": "de0aeaa15a8671c959ea133b89d2c1357b30aacbed8136d10159fa601bfd1f9c"
+      },
+      "role": "verified_source_checkpoints_pending_target_scoring",
+      "run_id": "2026-11-19_dbconformer_gahst_source_r1_tracefix3_lab10-full-w1",
+      "scientific_effect_evaluated": false,
+      "source_T_run": "2026-11-19_dbconformer_gahst_source_r1_lab10-full-w1",
+      "status": "SEALED_TARGET_LOCKED"
     }
   ],
   "engineering_repair_preparations": [
@@ -4362,6 +4379,260 @@
         "AI4S-DBCONFORMER-SCR-R1-MERGED-20261015",
         "AI4S-DBCONFORMER-dbconformer-sgp-r1-budget1"
       ]
+    },
+    {
+      "chain_id": "dbconformer-transaction-v4.0",
+      "claim_release": false,
+      "decision": "MEASURABILITY_PASS_BOTH_WINDOWS_DESIGN_WARRANTED",
+      "evidence_id": "AI4S-DBCONFORMER-CLOSURE-PHASE-MEASURABILITY-20261117",
+      "new_fits": 0,
+      "new_inference": 0,
+      "next_action": "Design matched comparisons with B0, same-information late readout and same-position complex-edge readout.",
+      "preregistration": {
+        "path": "ai4s/programs/dbconformer/research/closure_phase_measurability_20261117/research_brief.md",
+        "sha256": "69fa0a5f7355cacf2d2fb79a886a317627b82e18a49b19c167015002d2683930"
+      },
+      "program_id": "dbconformer",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/closure_phase_measurability_20261117/REPORT.md",
+        "sha256": "821605befd6345f4c102935fff1d4897a900514d66f0256ea3c7e111275297a0"
+      },
+      "recorded_on": "2026-11-17",
+      "result": {
+        "path": "ai4s/programs/dbconformer/research/closure_phase_measurability_20261117/RESULTS.json",
+        "sha256": "e4be9f6276171d201eea02964b37e82ed60b62d910c22787e8a72761d50cea1a"
+      },
+      "role": "source_only_label_free_measurement_diagnostic",
+      "run_action": "DESIGN_ONLY",
+      "source_trials": 2304,
+      "window_pass_counts": {
+        "cue_0_to_2": "8/8",
+        "uep_cue_minus2_to_2": "8/8"
+      }
+    },
+    {
+      "authorization_request": {
+        "path": "ai4s/programs/dbconformer/research/gahst_pair_d0_20261118/tracefix3/target_score_once/packet/request.json",
+        "sha256": "402ce0b297a4c9e78df8200ef56b272b7989c3740439f84dd481795b05e908a4"
+      },
+      "chain_id": "dbconformer-transaction-v4.0",
+      "claim_release": false,
+      "decision": "STOP_NO_PROMOTION",
+      "evidence_id": "DBCONFORMER-GAHST-R1-TARGET-ONCE-20261119",
+      "new_fits": 0,
+      "next_action": "Archive the frozen candidate and its developer-screen result.",
+      "program_id": "dbconformer",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/gahst_pair_d0_20261118/tracefix3/target_score_once/TARGET_REPORT.md",
+        "sha256": "3593c9395d8ff316ee319801c9b649ee5a85fdbb3ac424b47f1d2e66a95f641b"
+      },
+      "recorded_on": "2026-11-19",
+      "result": {
+        "path": "ai4s/programs/dbconformer/research/gahst_pair_d0_20261118/tracefix3/target_score_once/TARGET_DECISION.json",
+        "sha256": "d61074391f907483c927f800ab0a1124c43afe10557d110f4cc814a5b470a77c"
+      },
+      "role": "exposed_development_paired_target_screen",
+      "run_action": "STOP",
+      "source_evidence_ids": [
+        "DBCONFORMER-GAHST-R1-SOURCE-SEAL-20261119"
+      ],
+      "source_run_id": "2026-11-19_dbconformer_gahst_source_r1_tracefix3_lab10-full-w1",
+      "target_accesses": 1,
+      "target_manifest": {
+        "path": "ai4s/programs/dbconformer/research/gahst_pair_d0_20261118/tracefix3/target_score_once/verified_intake/artifact_manifest.json",
+        "sha256": "1e31fffd09f5a6b29983a447e1e60e8a62573d40e8eef4a8a45773aaed216640"
+      }
+    },
+    {
+      "chain_id": "dbconformer-transaction-v4.0",
+      "claim_release": false,
+      "decision": "STOP_NO_PROMOTION",
+      "evidence_id": "DBCONFORMER-GAHST-R1-TARGET-ATTRIBUTION-20261119",
+      "new_fits": 0,
+      "new_target_scoring": 0,
+      "program_id": "dbconformer",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/gahst_pair_d0_20261118/tracefix3/target_score_once/ATTRIBUTION_REPORT.md",
+        "sha256": "e88dbca0de20215bb5820267f45681462309956e95900c10222609ae43f71bb6"
+      },
+      "role": "post_hoc_existing_paired_predictions_attribution",
+      "run_action": "STOP",
+      "source_evidence_ids": [
+        "DBCONFORMER-GAHST-R1-TARGET-ONCE-20261119"
+      ],
+      "source_run_id": "2026-11-19_dbconformer_gahst_source_r1_tracefix3_lab10-full-w1",
+      "source_target_manifest_sha256": "1e31fffd09f5a6b29983a447e1e60e8a62573d40e8eef4a8a45773aaed216640",
+      "trial_table": {
+        "path": "ai4s/programs/dbconformer/research/gahst_pair_d0_20261118/tracefix3/target_score_once/ATTRIBUTION_TRIALS.csv",
+        "sha256": "d1fa8ac48ef1885309f281f773bf82712a48e7cb9b65eba787f7046030d03760"
+      }
+    },
+    {
+      "chain_id": "dbconformer-transaction-v4.0",
+      "claim_release": false,
+      "decision": "STOP_NO_PROMOTION",
+      "evidence_id": "DBCONFORMER-GAHST-R1-TARGET-LAYOUT-ATTRIBUTION-20261119",
+      "new_fits": 0,
+      "new_target_scoring": 0,
+      "program_id": "dbconformer",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/gahst_pair_d0_20261118/tracefix3/target_score_once/LAYOUT_ATTRIBUTION_REPORT.md",
+        "sha256": "71339561b15455f2f67e4868e22f7c9011c07c45d300b3b3f18c8355bc52d6ca"
+      },
+      "role": "post_hoc_same_trial_layout_attribution",
+      "run_action": "STOP",
+      "source_evidence_ids": [
+        "DBCONFORMER-GAHST-R1-TARGET-ATTRIBUTION-20261119"
+      ],
+      "source_run_id": "2026-11-19_dbconformer_gahst_source_r1_tracefix3_lab10-full-w1",
+      "source_target_manifest_sha256": "1e31fffd09f5a6b29983a447e1e60e8a62573d40e8eef4a8a45773aaed216640",
+      "trial_table": {
+        "path": "ai4s/programs/dbconformer/research/gahst_pair_d0_20261118/tracefix3/target_score_once/LAYOUT_ATTRIBUTION_TRIALS.csv",
+        "sha256": "b106f56e70a61cb2902975d07c457e0312195b04743ce8806e1b7dd3926073d4"
+      }
+    },
+    {
+      "chain_id": "dbconformer-transaction-v4.0",
+      "claim_release": false,
+      "decision": "STOP_NO_PROMOTION",
+      "evidence_id": "DBCONFORMER-GAHST-R1-TARGET-SEED-ATTRIBUTION-20261119",
+      "new_fits": 0,
+      "new_target_scoring": 0,
+      "program_id": "dbconformer",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/gahst_pair_d0_20261118/tracefix3/target_score_once/SEED_ATTRIBUTION_REPORT.md",
+        "sha256": "fb19e1e43f11f89e4bd3c666dd87900d1a7c4e76410837ce4e676a2f33e12cf0"
+      },
+      "role": "post_hoc_same_trial_cross_seed_attribution",
+      "run_action": "STOP",
+      "source_evidence_ids": [
+        "DBCONFORMER-GAHST-R1-TARGET-LAYOUT-ATTRIBUTION-20261119"
+      ],
+      "source_run_id": "2026-11-19_dbconformer_gahst_source_r1_tracefix3_lab10-full-w1",
+      "source_target_manifest_sha256": "1e31fffd09f5a6b29983a447e1e60e8a62573d40e8eef4a8a45773aaed216640",
+      "trial_table": {
+        "path": "ai4s/programs/dbconformer/research/gahst_pair_d0_20261118/tracefix3/target_score_once/SEED_ATTRIBUTION_TRIALS.csv",
+        "sha256": "20f7d76b1e52aea888fb7e5ca2086711901f08bf2897adeba5e9f3af8606ebca"
+      }
+    },
+    {
+      "chain_id": "dbconformer-transaction-v4.0",
+      "claim_release": false,
+      "decision": "STOP_NO_PROMOTION",
+      "evidence_id": "DBCONFORMER-GAHST-R1-TARGET-MARGIN-ATTRIBUTION-20261119",
+      "new_fits": 0,
+      "new_target_scoring": 0,
+      "program_id": "dbconformer",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/gahst_pair_d0_20261118/tracefix3/target_score_once/MARGIN_ATTRIBUTION_REPORT.md",
+        "sha256": "3b9bd104d06e89788e621b0bab815b658b2e1f2c9320b5cb1acc8eb7bc0dc4d1"
+      },
+      "role": "post_hoc_same_trial_margin_attribution",
+      "run_action": "STOP",
+      "source_correction": "Overlap 4 seed4 central_3 joint recovery=3, not 4; row 1515 remains wrong.",
+      "source_evidence_ids": [
+        "DBCONFORMER-GAHST-R1-TARGET-SEED-ATTRIBUTION-20261119"
+      ],
+      "source_run_id": "2026-11-19_dbconformer_gahst_source_r1_tracefix3_lab10-full-w1",
+      "source_target_manifest_sha256": "1e31fffd09f5a6b29983a447e1e60e8a62573d40e8eef4a8a45773aaed216640",
+      "trial_table": {
+        "path": "ai4s/programs/dbconformer/research/gahst_pair_d0_20261118/tracefix3/target_score_once/MARGIN_ATTRIBUTION_TRIALS.csv",
+        "sha256": "8918a53c36c669a345b9fc73f1b48c0fe88e0325ac223a4782dd100b34a89356"
+      }
+    },
+    {
+      "at": "2026-11-19T10:42:06.846103+00:00",
+      "chain_id": "dbconformer-transaction-v4.0",
+      "claim_release": false,
+      "decision": "STOP_NO_PROMOTION",
+      "decision_record": {
+        "path": "ai4s/programs/dbconformer/research/dbconformer-gahst-source-r1-tracefix3_decision.yaml",
+        "sha256": "11cd0bfa57e196fcc995ece1205f346ae8b387160b1f4d7937edf6c4e58b8b54"
+      },
+      "evidence_id": "DBCONFORMER-GAHST-R1-ARCHIVED-20261119",
+      "new_fits": 0,
+      "new_target_scoring": 0,
+      "program_id": "dbconformer",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/gahst_pair_d0_20261118/tracefix3/target_score_once/ARCHIVE.md",
+        "sha256": "815b47a4ca79db2ac6452c050181f6d0658de1f0241e6f0dca91b962c95ea8b6"
+      },
+      "result": {
+        "path": "ai4s/programs/dbconformer/research/gahst_pair_d0_20261118/tracefix3/target_score_once/TARGET_DECISION.json",
+        "sha256": "d61074391f907483c927f800ab0a1124c43afe10557d110f4cc814a5b470a77c"
+      },
+      "role": "archived_exposed_development_screen",
+      "run_action": "STOP",
+      "run_id": "2026-11-19_dbconformer_gahst_source_r1_tracefix3_lab10-full-w1",
+      "source_evidence_ids": [
+        "DBCONFORMER-GAHST-R1-TARGET-ONCE-20261119",
+        "DBCONFORMER-GAHST-R1-TARGET-MARGIN-ATTRIBUTION-20261119"
+      ],
+      "target_manifest": {
+        "path": "ai4s/programs/dbconformer/research/gahst_pair_d0_20261118/tracefix3/target_score_once/verified_intake/artifact_manifest.json",
+        "sha256": "1e31fffd09f5a6b29983a447e1e60e8a62573d40e8eef4a8a45773aaed216640"
+      }
+    },
+    {
+      "at": "2026-11-19T10:42:06.846103+00:00",
+      "chain_id": "dbconformer-transaction-v4.0",
+      "claim_release": false,
+      "decision": "RETAIN_BOUNDED_DESIGN_CANDIDATE",
+      "evidence_id": "DBCONFORMER-ADDITIONAL-LEAD-STABILITY-DESIGN-20261119",
+      "new_fits": 0,
+      "new_target_scoring": 0,
+      "next_action": "independent_data_eligibility_only",
+      "paired_development_table": {
+        "path": "ai4s/programs/dbconformer/research/additional_lead_stability_20261119/DEVELOPMENT_LAYOUT_PAIRS.csv",
+        "sha256": "5a5741fb9a2d8929a7e0f1a659aa885f6ef7dd6e6f8df746bd17d276bf55b8fd"
+      },
+      "program_id": "dbconformer",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/additional_lead_stability_20261119/RESEARCH_BRIEF.md",
+        "sha256": "e199c2aa7c4c6d33646fdecc86ca095ab3ae9ccbb4430508a7f74b801b63f3ad"
+      },
+      "role": "proposal_from_exposed_development_predictions",
+      "run_action": "DESIGN_ONLY",
+      "source_evidence_ids": [
+        "DBCONFORMER-GAHST-R1-ARCHIVED-20261119",
+        "DBCONFORMER-GAHST-R1-TARGET-MARGIN-ATTRIBUTION-20261119"
+      ]
+    },
+    {
+      "at": "2026-11-19T11:57:32.087314+00:00",
+      "chain_id": "dbconformer-transaction-v4.0",
+      "claim_release": false,
+      "decision": "NO_READY_INDEPENDENT_TARGET_OPENBMI_PENDING",
+      "evidence_id": "DBCONFORMER-ADDITIONAL-LEAD-DATA-ELIGIBILITY-20261119",
+      "new_fits": 0,
+      "new_target_scoring": 0,
+      "program_id": "dbconformer",
+      "record": {
+        "path": "ai4s/programs/dbconformer/research/additional_lead_stability_20261119/DATA_ELIGIBILITY.md",
+        "sha256": "f8c5855b578dc9d2d8a59c163103387f49ee40c54b664c2237856a97cc76f5cf"
+      },
+      "role": "dataset_eligibility_and_conditional_design",
+      "run_action": "DESIGN_ONLY",
+      "source_evidence_ids": [
+        "DBCONFORMER-ADDITIONAL-LEAD-STABILITY-DESIGN-20261119"
+      ]
+    },
+    {
+      "chain_id": "dbconformer-transaction-v4.0",
+      "claim_release": false,
+      "date": "2026-11-19",
+      "decision": "HOLD_OPENBMI_ELIGIBILITY_PENDING",
+      "evidence_id": "DBCONFORMER-ADDITIONAL-LEAD-OPENBMI-HOLD-20261119",
+      "new_fits": 0,
+      "new_target_scoring": 0,
+      "program_id": "dbconformer",
+      "resumption_condition": "When this direction is resumed, resolve OpenBMI asset identity, channel and label semantics, and exposure eligibility before proposing any formal evaluation.",
+      "role": "user_directed_research_hold",
+      "run_action": "NO_RUN",
+      "source_evidence_ids": [
+        "DBCONFORMER-GAHST-R1-ARCHIVED-20261119",
+        "DBCONFORMER-ADDITIONAL-LEAD-DATA-ELIGIBILITY-20261119"
+      ]
     }
   ],
   "round_evidence": [
@@ -6469,8 +6740,89 @@
       "round_contract": "ai4s/programs/dbconformer/research/dbconformer-source-geometry-r1.yaml",
       "round_id": "dbconformer-source-geometry-r1",
       "run_id": "2026-11-04_dbconformer_source_geometry_r1_lab10-full-w1"
+    },
+    {
+      "claim_status": "no_paper_claim",
+      "decision": "INVALID",
+      "decision_record": "ai4s/programs/dbconformer/research/dbconformer-closure-phase-r1_decision.yaml",
+      "evidence_id": "AI4S-DBCONFORMER-dbconformer-closure-phase-r1",
+      "failure_input_sha256": "35ff565264c8f912b0a0c7eb22676da0a61be77e8b79e29b2f6958f4cb524d3c",
+      "follow_up_status": "repair_requires_new_immutable_run_and_frozen_contract",
+      "intake_status": "verified_failure_metadata_only",
+      "interpretation_boundary": "Only metadata-only engineering failure evidence was verified; scientific effects were not evaluated and partial artifacts are ineligible.",
+      "partial_artifacts_eligible": false,
+      "role": "invalid_non_scientific_record",
+      "round_id": "dbconformer-closure-phase-r1",
+      "run_id": "2026-11-18_dbconformer_closure_phase_r1_publisherfix_lab10-full-w1",
+      "scientific_effect_evaluated": false
+    },
+    {
+      "claim_status": "no_paper_claim",
+      "decision": "NO_SIGNAL",
+      "decision_record": "ai4s/programs/dbconformer/research/dbconformer-closure-edge-wd0_decision.yaml",
+      "evidence_id": "AI4S-DBCONFORMER-dbconformer-closure-edge-wd0",
+      "executor_id": "lab10",
+      "follow_up_status": "v3_record_design_constraint_or_precise_closure",
+      "intake_status": "verified_ai4s_round",
+      "interpretation_boundary": "One exposed development matrix with reused B0/EARLY/LATE and fresh EDGE WD0; no independent confirmation.",
+      "prohibited_follow_up": "exact_candidate_rescue_or_recombination_under_the_frozen_contract",
+      "role": "exact_negative_boundary",
+      "round_contract": "ai4s/programs/dbconformer/research/dbconformer-closure-edge-wd0.yaml",
+      "round_id": "dbconformer-closure-edge-wd0",
+      "run_id": "2026-11-18_dbconformer_closure_edge_wd0_lab10-full-w1"
+    },
+    {
+      "decision": "EVALUATION_COMPLETE",
+      "decision_record": "ai4s/programs/dbconformer/research/dbconformer-wang-late-r1_decision.yaml",
+      "evaluation_plan": {
+        "path": "ai4s/programs/dbconformer/research/closure_late_validation_20261118/WANG_LATE_EVALUATION_PLAN.json",
+        "scope_id": "wang-mi4-calibration-2a-source",
+        "sha256": "a1ef9fa00df41813c8d914f3e784be59b148eed2aeadf4f117deb11e2975353f"
+      },
+      "evidence_id": "AI4S-DBCONFORMER-dbconformer-wang-late-r1",
+      "executor_id": "lab10",
+      "follow_up_status": "v3_record_design_constraint_or_precise_closure",
+      "intake_status": "verified_ai4s_round",
+      "interpretation_boundary": "See frozen decision record.",
+      "outcome_exposure": "untouched",
+      "role": "formal_evaluation_complete",
+      "round_contract": "ai4s/programs/dbconformer/research/dbconformer-wang-late-r1.yaml",
+      "round_id": "dbconformer-wang-late-r1",
+      "run_id": "2026-11-18_dbconformer_wang_late_r1_lab10-full-w1",
+      "verification_marker": "tmp/remote_download/2026-11-18_dbconformer_wang_late_r1_lab10-full-w1/verification.json",
+      "verified_intake": "results/logs/remote/2026-11-18_dbconformer_wang_late_r1_lab10-full-w1"
+    },
+    {
+      "claim_status": "no_paper_claim",
+      "decision": "INVALID",
+      "decision_record": "ai4s/programs/dbconformer/research/dbconformer-gahst-source-r1_decision.yaml",
+      "evidence_id": "AI4S-DBCONFORMER-dbconformer-gahst-source-r1",
+      "failure_input_sha256": "1cfb3f6a729243e7b7f7c6e7e0c7d7d08e1d8b2afc43fc8de14826f70e100dff",
+      "follow_up_status": "repair_requires_new_immutable_run_and_frozen_contract",
+      "intake_status": "verified_failure_metadata_only",
+      "interpretation_boundary": "Only metadata-only engineering failure evidence was verified; scientific effects were not evaluated and partial artifacts are ineligible.",
+      "partial_artifacts_eligible": false,
+      "role": "invalid_non_scientific_record",
+      "round_id": "dbconformer-gahst-source-r1",
+      "run_id": "2026-11-19_dbconformer_gahst_source_r1_lab10-full-w1",
+      "scientific_effect_evaluated": false
+    },
+    {
+      "claim_status": "no_paper_claim",
+      "decision": "INVALID",
+      "decision_record": "ai4s/programs/dbconformer/research/dbconformer-gahst-source-r1-tracefix1_decision.yaml",
+      "evidence_id": "AI4S-DBCONFORMER-dbconformer-gahst-source-r1-tracefix1",
+      "failure_input_sha256": "586995b1ee0522de2a3780b2a9e1f056a2f23c8bddf603696b980bc44ec220d0",
+      "follow_up_status": "repair_requires_new_immutable_run_and_frozen_contract",
+      "intake_status": "verified_failure_metadata_only",
+      "interpretation_boundary": "Only metadata-only engineering failure evidence was verified; scientific effects were not evaluated and partial artifacts are ineligible.",
+      "partial_artifacts_eligible": false,
+      "role": "invalid_non_scientific_record",
+      "round_id": "dbconformer-gahst-source-r1-tracefix1",
+      "run_id": "2026-11-19_dbconformer_gahst_source_r1_tracefix1_lab10-full-w1",
+      "scientific_effect_evaluated": false
     }
   ],
   "schema_version": "mieeg-ai4s-evidence-index-v1",
-  "updated_at": "2026-11-05T12:09:44.973108+00:00"
+  "updated_at": "2026-11-19T11:57:32.087314+00:00"
 }

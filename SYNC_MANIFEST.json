@@ -5,7 +5,7 @@
     "不自动递归补齐引用；未公开引用见每库SYNC_MANIFEST.json。",
     "不上传凭据、SSH配置、数据集、checkpoint、原始预测、机器日志或完整实验目录。"
   ],
-  "exported_at": "2026-11-17T11:05:57.471511+00:00",
+  "exported_at": "2026-11-25T10:57:17.633824+00:00",
   "files": [
     {
       "bytes": 10818,
@@ -19,26 +19,26 @@
       "source_sha256": "28fb1f1c6752c6868aec887aeb3481d075d09412732077f715f88f1eb716f2d4"
     },
     {
-      "bytes": 711892,
+      "bytes": 712258,
       "path": "DECISIONS.md",
-      "public_git_blob_sha1": "8279a3376645e4a3c4c9bc4c925a8c8c7d4a678b",
-      "public_sha256": "625f8e08ecef43937319838f4beebbe9f0b38ab850f3e588c7f4bf6b44d559b1",
+      "public_git_blob_sha1": "fe6f355d78f7f08e6ddc76c9776a32953a6d5919",
+      "public_sha256": "53e2bf0efefab7a760236d4aed82d13215e778c0e3cf7e69a0476d8ae7faa894",
       "redactions": {
         "host_alias": 16,
         "ipv4": 2,
         "unix_home_path": 5
       },
-      "source_sha256": "7fa2bb3ee6048652f7d350f4f554fc81307cdc5914ce4fcaf6eacd069a4aebf3"
+      "source_sha256": "bdf0c41398231eaf1f52efd5c5bd9c46ed15979613bc83396332416d6386badd"
     },
     {
-      "bytes": 312136,
+      "bytes": 312460,
       "path": "PAPER.md",
-      "public_git_blob_sha1": "a2049855374fd3fa4f24276f06d5195b60d16640",
-      "public_sha256": "31108c4dafeff2c18822036a21a6fea53e907fc2fb7b17b0eb9e42f02f49ae68",
+      "public_git_blob_sha1": "eff56bc90988824377f215a030888e6248801a07",
+      "public_sha256": "141d79befb88bb80070f6f40372ef5198e3dc00b343eea24399b1616a6f32811",
       "redactions": {
         "host_alias": 1
       },
-      "source_sha256": "d2615cbeaf363dd9c8f871550b21923c1f7d5e5cd94274ac350521137b04f6fb"
+      "source_sha256": "e840e449793854eba066067c48d93661cdc8838b5e616ce14128311084ce5f31"
     },
     {
       "bytes": 10385,
@@ -49,43 +49,43 @@
       "source_sha256": "8783ba6211cc754ba274f367ccfd036860507297c371788ffeecc2dd373912f7"
     },
     {
-      "bytes": 376410,
+      "bytes": 376652,
       "path": "TASKS.md",
-      "public_git_blob_sha1": "f5856b7dd5e49c762b595fb25584d695fde0a732",
-      "public_sha256": "b63f3cf92b5c8b89ab5b29a0f6fedf5b239d94a2df7a35cceccf8983f978185d",
+      "public_git_blob_sha1": "f899e158dc309aada0b003a50a6a380380eebbd3",
+      "public_sha256": "91ba76696b66b8f42e61e4d6491c4f35725a02428a37a1c9f211a2673ed318e0",
       "redactions": {
         "host_alias": 9
       },
-      "source_sha256": "1a7337947f0337e25de7cf54357aef3f3a4bdbee170cc64a3af8439a192fcfa5"
+      "source_sha256": "54dc6ee06d0e806612853b3e160ef0fb591a70ed86e615dab3057dbfab40c36e"
     },
     {
-      "bytes": 153655,
+      "bytes": 168313,
       "path": "ai4s/PROMPT_INDEX.yaml",
-      "public_git_blob_sha1": "df614be58d1ce6b10d204dae4245e31e0da2fd4a",
-      "public_sha256": "88612b2e8e927895afbc9321f5ee4ecbd8726992205db2d1ba2cfbfe0a77c247",
+      "public_git_blob_sha1": "ea0630ba289c32b9dd45185f3dd17683cd6a43c0",
+      "public_sha256": "3c216b09922734d0dc09abc9553e1582244e4009ce04329e54cdd8a4194cd7cd",
       "redactions": {},
-      "source_sha256": "6dc768a45ba69a915f75e679a18b0ee349addc2e1b07a8c96cdf6101d3637c27"
+      "source_sha256": "fd6ab526ca4a622a65ebd1afa6e4be8063c48dfd8d8dcfc1919f82e3952655c2"
     },
     {
-      "bytes": 12624,
+      "bytes": 13974,
       "path": "ai4s/README.md",
-      "public_git_blob_sha1": "cda7f3fdb825167354a295827f58b5d344b8e165",
-      "public_sha256": "e2489efe96a923dc922b2cbc5a2acce797c7a3f98475abaa0084b29ad89f2573",
+      "public_git_blob_sha1": "ef6afdf4dfabb6dccfb8905e1e0a49262f5f6536",
+      "public_sha256": "255e18c65c3d5b071832b33dc849aafb9fe10e20998026d51692f2e9eb3251f1",
       "redactions": {
         "host_alias": 4
       },
-      "source_sha256": "3ab9f6fe60aec956148a86fcc7a01f2d90bf5c1f1e095229cac014c94e565693"
+      "source_sha256": "98e44ae41e8c49b1c200f0465b09618c2d5faed0867be7c27d4ef96eb0effbd4"
     },
     {
       "bytes": 8013,
       "path": "ai4s/programs/dbconformer/PROGRAM.yaml",
-      "public_git_blob_sha1": "dbb214370d739154111a7c5a280aabfc586ee822",
-      "public_sha256": "f76ff98505559eb946fa593037d8b750c131857456da7f375af85acc09083f5b",
+      "public_git_blob_sha1": "2344f4f2f0b86f753e09833cf1c77d39358c333c",
+      "public_sha256": "92be7def87786610a68146f9473c3e9f9aa6bb23b0b40dc3c0d354110218db46",
       "redactions": {
         "machine_field": 7,
         "workspace_prefix": 1
       },
-      "source_sha256": "466aecaaf9d9c59c2ee43537f16284cd8f0296d7e2ec2ee55a7d99336cac7aa4"
+      "source_sha256": "a3b9e509734c7cd6dedac68bcd7d2cdd3c1e758bf244bd9abbccac09e861cbef"
     },
     {
       "bytes": 8315,
@@ -104,6 +104,14 @@
       "source_sha256": "55d24f06f777b4325fe72efe149ee7b45d442d1810fa6be95942185d077ec8b4"
     },
     {
+      "bytes": 8166,
+      "path": "ai4s/programs/dbconformer/PROJECT_PROMPT_v4.0.md",
+      "public_git_blob_sha1": "23e57396060b3c5e2c30011c345ceb3050e00f30",
+      "public_sha256": "2a62b48cad26382b561ab76ae6b83368e5b9292b46a89cb8b2f931ce7fd3a9b0",
+      "redactions": {},
+      "source_sha256": "2a62b48cad26382b561ab76ae6b83368e5b9292b46a89cb8b2f931ce7fd3a9b0"
+    },
+    {
       "bytes": 2705,
       "path": "ai4s/programs/dbconformer/research/ADMISSION.md",
       "public_git_blob_sha1": "fd7a2f3a02bf2580ad814cac4c80437167af7032",
@@ -112,22 +120,22 @@
       "source_sha256": "f0a75e79216e08196b6cce597c30dc75b5f19a5927b73d4bda819a010f3c1253"
     },
     {
-      "bytes": 50248,
+      "bytes": 62713,
       "path": "ai4s/programs/dbconformer/research/CURRENT_UNDERSTANDING.md",
-      "public_git_blob_sha1": "7dd85a43c77dd93ae57b60d76fd5b888479d43d7",
-      "public_sha256": "0a4b1b2fab4e33baae9ae7b7961e20e99b32008065a4f5a03701370fc1de31c7",
+      "public_git_blob_sha1": "1a9c61810f640e4e1f3bbbfa769d6a02a389c3c3",
+      "public_sha256": "6297449eef1e8a3ea0639686625b496e93e5cdbbdfd07029f6ee71cf67e94531",
       "redactions": {},
-      "source_sha256": "0a4b1b2fab4e33baae9ae7b7961e20e99b32008065a4f5a03701370fc1de31c7"
+      "source_sha256": "6297449eef1e8a3ea0639686625b496e93e5cdbbdfd07029f6ee71cf67e94531"
     },
     {
-      "bytes": 301593,
+      "bytes": 319485,
       "path": "ai4s/programs/dbconformer/research/EVIDENCE_INDEX.yaml",
-      "public_git_blob_sha1": "9761614b88d9a141abd6a8f97acb14a72f97fbbb",
-      "public_sha256": "294ad477ff13980749e83c091a55a876b5e419e98d3388497ea3544fc81eb76e",
+      "public_git_blob_sha1": "a513e7ba549f9985b0fcb2664fc1369f1b6df4bd",
+      "public_sha256": "30d92d61f46ec6d8b8f973d277f876314c8af903e281dd7af83e09a63432a3e5",
       "redactions": {
         "machine_field": 3
       },
-      "source_sha256": "d032a17a5b12acd7c4f0572263f669cabca0d6316d23a60c2e5b2da8ec4cd12d"
+      "source_sha256": "29d66107a4c9cdb459015b4cfa80af34b2a36487baabb0d320ef1f2314edbcd8"
     },
     {
       "bytes": 3014,
@@ -138,74 +146,74 @@
       "source_sha256": "f36840348a1367bc2056e8f17c3f706313bcf7e1f0b113902ac3f1f9ec7114b4"
     },
     {
-      "bytes": 1184815,
-      "path": "ai4s/programs/dbconformer/research/STATE.yaml",
-      "public_git_blob_sha1": "a75d8d75b5368ce1bf43de8e5cadf4dab69c07df",
-      "public_sha256": "57de2a9f43d5a19010bb5ed726d92ddfa0f4308878c7559200b892fb881fdb1a",
-      "redactions": {
-        "host_alias": 4,
-        "machine_field": 158,
-        "unix_home_path": 34,
-        "workspace_prefix": 13
-      },
-      "source_sha256": "9b788d809c8b084683e0781dfdbf6679502156266a417230efde60e6494e16f5"
-    },
-    {
       "bytes": 500469,
       "derivative": "public_state_text_part",
       "path": "ai4s/programs/dbconformer/research/STATE.parts/part-001.md",
-      "public_git_blob_sha1": "edf4cb21e1259a7337c64ccefdfe9cad0e426bd4",
-      "public_sha256": "7733a68c33b8afae0d98187ac520ee33ab887581fb7592c3e820a486e8b48bae",
+      "public_git_blob_sha1": "571f3d877a8870f4bc6e7d30bcbb24170e9951b9",
+      "public_sha256": "628252cf32e5f60e55e4a49452557d01c40b89ff5682a53bf61230902f274b5a",
       "redactions": {},
       "source_byte_range": [
         0,
         500000
       ],
       "source_path": "ai4s/programs/dbconformer/research/STATE.yaml",
-      "source_public_sha256": "57de2a9f43d5a19010bb5ed726d92ddfa0f4308878c7559200b892fb881fdb1a",
-      "source_sha256": "9b788d809c8b084683e0781dfdbf6679502156266a417230efde60e6494e16f5"
+      "source_public_sha256": "5c1745b0f312c6c287b59e4373865066c2a479f1cbe5b36e16d76ba9a3522e22",
+      "source_sha256": "3e77e575aa48f5113b2466987428d37ad78bbf2b18bf437f89fb14420ba15e09"
     },
     {
       "bytes": 500475,
       "derivative": "public_state_text_part",
       "path": "ai4s/programs/dbconformer/research/STATE.parts/part-002.md",
-      "public_git_blob_sha1": "311cfdfb7d8bc4ea2a0158e634d5578513f2e0ac",
-      "public_sha256": "b37545ea8776ed2f9fe154aa4227d285511eed6d62898b638d686e23613206ed",
+      "public_git_blob_sha1": "8e7499bb43f3ccb30ed0e3723eb1451a32f04b56",
+      "public_sha256": "4cf1d7e37390cc30207b01944af4e4d929b2eeefe0300594d442f9851d79d117",
       "redactions": {},
       "source_byte_range": [
         500000,
         1000000
       ],
       "source_path": "ai4s/programs/dbconformer/research/STATE.yaml",
-      "source_public_sha256": "57de2a9f43d5a19010bb5ed726d92ddfa0f4308878c7559200b892fb881fdb1a",
-      "source_sha256": "9b788d809c8b084683e0781dfdbf6679502156266a417230efde60e6494e16f5"
+      "source_public_sha256": "5c1745b0f312c6c287b59e4373865066c2a479f1cbe5b36e16d76ba9a3522e22",
+      "source_sha256": "3e77e575aa48f5113b2466987428d37ad78bbf2b18bf437f89fb14420ba15e09"
     },
     {
-      "bytes": 185291,
+      "bytes": 212368,
       "derivative": "public_state_text_part",
       "path": "ai4s/programs/dbconformer/research/STATE.parts/part-003.md",
-      "public_git_blob_sha1": "9aba7d1f8cf2ade8377cb73236d3b4676eccd27b",
-      "public_sha256": "a8e66904c5174810a70ce61896485b67d17bd59710810fda229e1b909b1dd5aa",
+      "public_git_blob_sha1": "c8a4a666235a7a783ed7065901382263f0ed1747",
+      "public_sha256": "cf098f4747d0f569b68ee8986422f27f55cd401d84070b7f15fc78b890151472",
       "redactions": {},
       "source_byte_range": [
         1000000,
-        1184815
+        1211892
       ],
       "source_path": "ai4s/programs/dbconformer/research/STATE.yaml",
-      "source_public_sha256": "57de2a9f43d5a19010bb5ed726d92ddfa0f4308878c7559200b892fb881fdb1a",
-      "source_sha256": "9b788d809c8b084683e0781dfdbf6679502156266a417230efde60e6494e16f5"
+      "source_public_sha256": "5c1745b0f312c6c287b59e4373865066c2a479f1cbe5b36e16d76ba9a3522e22",
+      "source_sha256": "3e77e575aa48f5113b2466987428d37ad78bbf2b18bf437f89fb14420ba15e09"
     },
     {
-      "bytes": 6039,
-      "path": "ai4s/programs/dsainet/PROGRAM.yaml",
-      "public_git_blob_sha1": "b8df1ace3ff10a56c68dbee582f6eaedcf935a66",
-      "public_sha256": "454e47e8d946972c200e6c1d886c772c554d65dfd53911cc26857f8603539241",
+      "bytes": 1211892,
+      "path": "ai4s/programs/dbconformer/research/STATE.yaml",
+      "public_git_blob_sha1": "7d76809d8cca423235e59dfffb0a8b546587c025",
+      "public_sha256": "5c1745b0f312c6c287b59e4373865066c2a479f1cbe5b36e16d76ba9a3522e22",
       "redactions": {
-        "host_alias": 1,
+        "host_alias": 4,
+        "machine_field": 166,
+        "unix_home_path": 34,
+        "workspace_prefix": 13
+      },
+      "source_sha256": "3e77e575aa48f5113b2466987428d37ad78bbf2b18bf437f89fb14420ba15e09"
+    },
+    {
+      "bytes": 6195,
+      "path": "ai4s/programs/dsainet/PROGRAM.yaml",
+      "public_git_blob_sha1": "208e8a126b6ba677e43538e320cd333459147eda",
+      "public_sha256": "0b4ef48a3dab305540f260c5115d46578551337ff8b2fa84f959bf5d6d717c85",
+      "redactions": {
+        "host_alias": 2,
         "machine_field": 9,
         "workspace_prefix": 1
       },
-      "source_sha256": "b5c3c390880e66a88406c86aec3694b09bd3adc7d768ad0e330be1c6602d4465"
+      "source_sha256": "0af868fe92bb8fb991e17364566cfc96f59c36f35c60423379a84d15ad2e49db"
     },
     {
       "bytes": 7442,
@@ -232,6 +240,14 @@
       "source_sha256": "c27fa5d05f8f5fccd213a3f8e5b8844b266db4ad47d0247b92d1f2e5c5cf926a"
     },
     {
+      "bytes": 9249,
+      "path": "ai4s/programs/dsainet/PROJECT_PROMPT_v4.1.md",
+      "public_git_blob_sha1": "9b8c54b5639a5fe6c64c19b865e97d2d6d81a323",
+      "public_sha256": "192d44bc43fb869f0265a166935a6ff4d7e34b11ad0a5ef94cffeb28b47cd613",
+      "redactions": {},
+      "source_sha256": "192d44bc43fb869f0265a166935a6ff4d7e34b11ad0a5ef94cffeb28b47cd613"
+    },
+    {
       "bytes": 7521,
       "path": "ai4s/programs/dsainet/research/CLAIM_LEDGER.yaml",
       "public_git_blob_sha1": "aa85f5a8e87efcac9b606d68b33c105567cc4109",
@@ -240,93 +256,93 @@
       "source_sha256": "8835b27d84df860eafbe5e51b6f3588d39e5eb1bc36b2f79bd22f4c4f8501b46"
     },
     {
-      "bytes": 58909,
+      "bytes": 128583,
       "path": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
-      "public_git_blob_sha1": "336504b26adaa2cd7b2c28f01b1ad685794107f4",
-      "public_sha256": "87aca8e9eaed77872e7bc5387b9af5a934d2a4fcee18a3cb211daa55e922ed07",
+      "public_git_blob_sha1": "272659ce360fd6e36a86450150251f7461019677",
+      "public_sha256": "e40af3029b2df969fdfa58bfb3873be514d44f6290b3b23114487f962980a1bb",
       "redactions": {},
-      "source_sha256": "87aca8e9eaed77872e7bc5387b9af5a934d2a4fcee18a3cb211daa55e922ed07"
+      "source_sha256": "e40af3029b2df969fdfa58bfb3873be514d44f6290b3b23114487f962980a1bb"
     },
     {
-      "bytes": 507145,
+      "bytes": 723712,
       "path": "ai4s/programs/dsainet/research/EVIDENCE_INDEX.yaml",
-      "public_git_blob_sha1": "8a9b812b9ac68f8e2a3f7511ce638239118b7fd3",
-      "public_sha256": "e00dae1486424260e038a57911c05cd49bdfe5b4cd75ca6e1fc666ebcd336f99",
+      "public_git_blob_sha1": "ec57b0a30a93e20b5211b5d6c223b9e72bac2248",
+      "public_sha256": "fe87d7b58cd76adbaef7263dcf30b4dcd0704b8fa24e1d60fc7628e772a48a4b",
       "redactions": {
         "machine_field": 19,
-        "unix_home_path": 7,
+        "unix_home_path": 8,
         "workspace_prefix": 7
       },
-      "source_sha256": "df12fdfbaff2c020888fe93e25f7309d4f7b8034d29fcd8575337edb17b03ae9"
-    },
-    {
-      "bytes": 1036464,
-      "path": "ai4s/programs/dsainet/research/STATE.yaml",
-      "public_git_blob_sha1": "74b1c08ff9647340a73662caa7bcf5b4f6e748df",
-      "public_sha256": "546294f490c37739bda04797b439fd05243a3b3cd8b4b5effc331321bba2400a",
-      "redactions": {
-        "host_alias": 7,
-        "machine_field": 160,
-        "unix_home_path": 9
-      },
-      "source_sha256": "4ef0f3c4228815d8817087a085c44164036f9a4d3220a7754ad8d2ea4955ceea"
+      "source_sha256": "06eb47ab49fb7fbe543cf1a12c9dc3aa437c477ba2889085a10c670ed74c4bcf"
     },
     {
       "bytes": 500465,
       "derivative": "public_state_text_part",
       "path": "ai4s/programs/dsainet/research/STATE.parts/part-001.md",
-      "public_git_blob_sha1": "fd26542c23acf69b221ae81b330dd36cd9581d9f",
-      "public_sha256": "9fe7718f9454bb162b35fc78aed770490acd4a698b87947765a4a7364f6d3f60",
+      "public_git_blob_sha1": "096303c6c086233f704719be30faabbc1660220e",
+      "public_sha256": "36d9cfcd1807c91ecb70a4d02c4a6df37df885cc63b61434bc840cd70db35584",
       "redactions": {},
       "source_byte_range": [
         0,
         500000
       ],
       "source_path": "ai4s/programs/dsainet/research/STATE.yaml",
-      "source_public_sha256": "546294f490c37739bda04797b439fd05243a3b3cd8b4b5effc331321bba2400a",
-      "source_sha256": "4ef0f3c4228815d8817087a085c44164036f9a4d3220a7754ad8d2ea4955ceea"
+      "source_public_sha256": "5facb7140fb8c0d253b3f264b975d0fec60c9086af9553f6322c9439338ea52b",
+      "source_sha256": "a0c881b1eceae38fd5830a035dc77440b454c0ce26def467d4d33987aa5b2291"
     },
     {
       "bytes": 500471,
       "derivative": "public_state_text_part",
       "path": "ai4s/programs/dsainet/research/STATE.parts/part-002.md",
-      "public_git_blob_sha1": "bfa3d63900774a464804241048d0b167e75ee22f",
-      "public_sha256": "1a4dc3d92359dba725ad9c003ce8497aacee035c20086e20686818e62536f29b",
+      "public_git_blob_sha1": "e2a12367468a12b5fefcf27755e3e3cbd3adda28",
+      "public_sha256": "7ac9024d1cfe47bfc687e1442f0db2d583d2732b6524215b4c6a6f3954fcab0a",
       "redactions": {},
       "source_byte_range": [
         500000,
         1000000
       ],
       "source_path": "ai4s/programs/dsainet/research/STATE.yaml",
-      "source_public_sha256": "546294f490c37739bda04797b439fd05243a3b3cd8b4b5effc331321bba2400a",
-      "source_sha256": "4ef0f3c4228815d8817087a085c44164036f9a4d3220a7754ad8d2ea4955ceea"
+      "source_public_sha256": "5facb7140fb8c0d253b3f264b975d0fec60c9086af9553f6322c9439338ea52b",
+      "source_sha256": "a0c881b1eceae38fd5830a035dc77440b454c0ce26def467d4d33987aa5b2291"
     },
     {
-      "bytes": 36936,
+      "bytes": 87194,
       "derivative": "public_state_text_part",
       "path": "ai4s/programs/dsainet/research/STATE.parts/part-003.md",
-      "public_git_blob_sha1": "3916a87f560936e8274400f2c4ac3caf56f9f27a",
-      "public_sha256": "04c070e8a3b9854a08c372abd60b2685d97f36474c2c73c35f90e9e0cf663fb3",
+      "public_git_blob_sha1": "d568e27c2d52be6860d165df1216e9518a4181f9",
+      "public_sha256": "f86feb9da46a4153dd1ecef4bc771f40a4152032f2b7f4ee851c6a7fbf223026",
       "redactions": {},
       "source_byte_range": [
         1000000,
-        1036464
+        1086722
       ],
       "source_path": "ai4s/programs/dsainet/research/STATE.yaml",
-      "source_public_sha256": "546294f490c37739bda04797b439fd05243a3b3cd8b4b5effc331321bba2400a",
-      "source_sha256": "4ef0f3c4228815d8817087a085c44164036f9a4d3220a7754ad8d2ea4955ceea"
+      "source_public_sha256": "5facb7140fb8c0d253b3f264b975d0fec60c9086af9553f6322c9439338ea52b",
+      "source_sha256": "a0c881b1eceae38fd5830a035dc77440b454c0ce26def467d4d33987aa5b2291"
+    },
+    {
+      "bytes": 1086722,
+      "path": "ai4s/programs/dsainet/research/STATE.yaml",
+      "public_git_blob_sha1": "9c9912355ad5a9fda6f9dc0c783812a1ca726756",
+      "public_sha256": "5facb7140fb8c0d253b3f264b975d0fec60c9086af9553f6322c9439338ea52b",
+      "redactions": {
+        "host_alias": 7,
+        "machine_field": 188,
+        "unix_home_path": 9
+      },
+      "source_sha256": "a0c881b1eceae38fd5830a035dc77440b454c0ce26def467d4d33987aa5b2291"
     },
     {
       "bytes": 7526,
       "path": "ai4s/programs/mvcnet/PROGRAM.yaml",
-      "public_git_blob_sha1": "c60d55e4b9fff23e02604062d01c9951c9d4ddea",
-      "public_sha256": "1c4e8ed7b206ee80c8bdeda66585f5c8c3937c9c6325a7e1ac3777e0f4807401",
+      "public_git_blob_sha1": "8ad4c1edb3ab6b43ab83403d6e81fd789c904810",
+      "public_sha256": "c00d1fd2e6608b0fe7159cd5104836898cb810420f97397d71169f9dab58fb7d",
       "redactions": {
         "host_alias": 3,
         "machine_field": 9,
         "workspace_prefix": 1
       },
-      "source_sha256": "ff11ed53c86101c3b565a7b3162aa9ba000ab7d68af47a9e2ee79863eff9a453"
+      "source_sha256": "2c3482d7f1be81321968da0b0aba9f6b9945117c0e82c68f7c6c1fc58fd7844f"
     },
     {
       "bytes": 8126,
@@ -345,32 +361,70 @@
       "source_sha256": "6962a6592ec7d05a04b2e7598b5ba709ada7a0f634ee99effb2955d4d2620147"
     },
     {
-      "bytes": 62114,
+      "bytes": 10063,
+      "path": "ai4s/programs/mvcnet/PROJECT_PROMPT_v4.1.md",
+      "public_git_blob_sha1": "d5e547f1c35f076be872c72aff8f47677ba6843b",
+      "public_sha256": "50866de88691e37bcf77bb14484cbe488d15b3927e43a91d383dc56124c87ebd",
+      "redactions": {},
+      "source_sha256": "50866de88691e37bcf77bb14484cbe488d15b3927e43a91d383dc56124c87ebd"
+    },
+    {
+      "bytes": 111042,
       "path": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
-      "public_git_blob_sha1": "d6f911c07f43a63facb645959619c629e4586df7",
-      "public_sha256": "0c6cfbf9e8c4496bae2715282189fe4e9ce6be75081923a13ee6806cbb6bccb2",
+      "public_git_blob_sha1": "f9a1779cef8bc34e85496d502bf9d73efc4a8ff2",
+      "public_sha256": "65189548a1d9abf9b2de5d277bf4b0b1c13cded91ee8b99a694f5a21610655d8",
       "redactions": {},
-      "source_sha256": "0c6cfbf9e8c4496bae2715282189fe4e9ce6be75081923a13ee6806cbb6bccb2"
+      "source_sha256": "65189548a1d9abf9b2de5d277bf4b0b1c13cded91ee8b99a694f5a21610655d8"
     },
     {
-      "bytes": 196258,
+      "bytes": 249715,
       "path": "ai4s/programs/mvcnet/research/EVIDENCE_INDEX.yaml",
-      "public_git_blob_sha1": "5900570d714645fc0fbe74e6b1afa2f2b3e05370",
-      "public_sha256": "7f5d0b6befeea9320c5cc06e4c067cf2bc429da2cb5edbbb63624453e7fe639b",
+      "public_git_blob_sha1": "4c657b30ae4aae27180a455ec56bdefcefa92dd8",
+      "public_sha256": "f0508d15ea0d3d963d290d9a4003bfd520d305740527fd5741df205b939398b1",
       "redactions": {},
-      "source_sha256": "eb4192f4b3c7da79ec06e8e742bcb9983f11ab14260350ff013972de2c3cdb9f"
+      "source_sha256": "62c30da190ff357f8c0dbe29e334a282b473ece7335dac51cef69d99dfcd831d"
     },
     {
-      "bytes": 517766,
+      "bytes": 500463,
+      "derivative": "public_state_text_part",
+      "path": "ai4s/programs/mvcnet/research/STATE.parts/part-001.md",
+      "public_git_blob_sha1": "1d4112a2faeb0e82227c82542edb55bf47589729",
+      "public_sha256": "27193f9b1b4ba25da1996479a9104ae5b51b7c8cd7cb27661b534fee28fe54cf",
+      "redactions": {},
+      "source_byte_range": [
+        0,
+        500000
+      ],
+      "source_path": "ai4s/programs/mvcnet/research/STATE.yaml",
+      "source_public_sha256": "e4bbd71f1b3f7c159d00b49a944954388e7ce38af1dbe9ad75ac1ca7064ce86b",
+      "source_sha256": "ac86f8f563319791435b5eb52894f68554a7959ccdd2f3f4369d171db38c299d"
+    },
+    {
+      "bytes": 305464,
+      "derivative": "public_state_text_part",
+      "path": "ai4s/programs/mvcnet/research/STATE.parts/part-002.md",
+      "public_git_blob_sha1": "c9e58a437f837b4c37297663fd1f4bdd6ff7d57c",
+      "public_sha256": "0a94d26abfed99feb08096c516d207b4f583118b3296e09b4f0c5d2faba7a508",
+      "redactions": {},
+      "source_byte_range": [
+        500000,
+        804996
+      ],
+      "source_path": "ai4s/programs/mvcnet/research/STATE.yaml",
+      "source_public_sha256": "e4bbd71f1b3f7c159d00b49a944954388e7ce38af1dbe9ad75ac1ca7064ce86b",
+      "source_sha256": "ac86f8f563319791435b5eb52894f68554a7959ccdd2f3f4369d171db38c299d"
+    },
+    {
+      "bytes": 804996,
       "path": "ai4s/programs/mvcnet/research/STATE.yaml",
-      "public_git_blob_sha1": "7fc1fc2e561b3dfb827e781ec1201b62c6d2377a",
-      "public_sha256": "4713b9c7d40c6eec7b7e1e6a8f57fc2b88164ce08d72587944d38c78b087cbb8",
+      "public_git_blob_sha1": "8fbcd7be4f38eb6e62561e97f06d81b09295804c",
+      "public_sha256": "e4bbd71f1b3f7c159d00b49a944954388e7ce38af1dbe9ad75ac1ca7064ce86b",
       "redactions": {
         "host_alias": 18,
-        "machine_field": 55,
-        "unix_home_path": 1
+        "machine_field": 89,
+        "unix_home_path": 2
       },
-      "source_sha256": "7a7238443dfd96bf7626d4bd37b7afa1cacc689dd0a4e87529b24de85f76be10"
+      "source_sha256": "ac86f8f563319791435b5eb52894f68554a7959ccdd2f3f4369d171db38c299d"
     },
     {
       "bytes": 3584,
@@ -572,15 +626,15 @@
       "source_sha256": "15fa1846421cdaee7f9cbe79c57360fee299bfd7e4270ca955e34a48a0f8c715"
     },
     {
-      "bytes": 9320,
+      "bytes": 10349,
       "path": "ai4s/prompts/MIEEG_AI4S_SKILL_ROUTER.md",
-      "public_git_blob_sha1": "132ede4fbfaf565eb39bcfd38b6424c37b72f3f3",
-      "public_sha256": "15b9d5971ef79b9b5a4280ade303fea6b33883b67688f7a7d8230425cb45d4bd",
+      "public_git_blob_sha1": "4e3a061490ec890d17117abb78290e50b6b0b4bb",
+      "public_sha256": "3ab4002bb79ebd6b6681ab3ef3b48b303fec408277ce0f8d509fc4e997f0b930",
       "redactions": {
-        "windows_path": 1,
+        "windows_path": 2,
         "workspace_prefix": 1
       },
-      "source_sha256": "af3d86340269cb290f76df2a162b907c9cdf1dfe2027f26538739116461f9a1f"
+      "source_sha256": "a662e9f3ed5739fb52b550afcd0ac251490fb608687013c1549586cf0ffff37e"
     },
     {
       "bytes": 3101,
@@ -591,14 +645,14 @@
       "source_sha256": "16b000be4b862fa6618cb494abdcb0dcf5b113fc33c623b49db85c8f4b6ee6de"
     },
     {
-      "bytes": 39162,
+      "bytes": 39165,
       "path": "ai4s/prompts/TRANSACTION_RUNTIME.md",
-      "public_git_blob_sha1": "1037988c2fe36130fcc7471c150ca68af1e64e9f",
-      "public_sha256": "0783480e66fa24de2e9832a8b55f63d5c8d1dd53062ae590074692e1ddf2eab7",
+      "public_git_blob_sha1": "045e6e87190471bed04e7c6bba3169c9a947f3d5",
+      "public_sha256": "4a338109b94c52306dffe7277e4ee41e27b3c296ead6e60d77d477d3308cef80",
       "redactions": {
         "host_alias": 4
       },
-      "source_sha256": "fd753f578650ed879294f1c9c4bad685421037b03e763a9e0c86a90c0d46fca6"
+      "source_sha256": "b4b55a3c19971618f28d06f80500bb7f5ba6e2b612542d07868c6034ccce13d1"
     },
     {
       "bytes": 20850,
@@ -635,22 +689,20 @@
       "source_sha256": "9b3c19e66aee3bf48aa9e927bb18e5c1fdbae3ad1b74ad233f0544fdec35f5d5"
     },
     {
-      "bytes": 26830,
+      "bytes": 43160,
       "path": "refs/paper-cards/dbconformer/DBConformer-note.md",
-      "public_git_blob_sha1": "fa3c283dae03513ea889e88b526d1a54f9b666f7",
-      "public_sha256": "b72b936fe0d3d2b2cc9f2695d0ee135df2632b9de397233d6860d13a919155a5",
+      "public_git_blob_sha1": "8ab11a4f2a137ca36fed202872d74c7e5a566ba5",
+      "public_sha256": "d516333d8e34203a34fd60d3df847496e37fb61d09e664db8027a25be552de03",
       "redactions": {},
-      "source_sha256": "b72b936fe0d3d2b2cc9f2695d0ee135df2632b9de397233d6860d13a919155a5"
+      "source_sha256": "d516333d8e34203a34fd60d3df847496e37fb61d09e664db8027a25be552de03"
     },
     {
-      "bytes": 26811,
+      "bytes": 51845,
       "path": "refs/paper-cards/lidsn/LI-DSN-note.md",
-      "public_git_blob_sha1": "d9edeb3cb146c5a8bf70609fdcc1348eb7f2dc25",
-      "public_sha256": "1b16b5fa5b7774c49ec086eac29a007c0cc1653670571a8df789bfbbfb2a6504",
-      "redactions": {
-        "workspace_prefix": 11
-      },
-      "source_sha256": "fa0683df8226b6e2bf16d16e5a9e2165a27d359557adefe4166acf505c6a2b66"
+      "public_git_blob_sha1": "94715289f91edebd6ca864d6e199fb355c0d9334",
+      "public_sha256": "86b34fccd4dfd03223d49493e46c375b4bcc6b043b74ffadc1acbe8fd1ffa012",
+      "redactions": {},
+      "source_sha256": "86b34fccd4dfd03223d49493e46c375b4bcc6b043b74ffadc1acbe8fd1ffa012"
     }
   ],
   "local_only_required_paths": [
@@ -670,8 +722,8 @@
         "https://github.com/oldlady21/lzx-mieeg-ai4s-context/blob/main/ai4s/programs/dbconformer/research/STATE.parts/part-003.md"
       ],
       "source_public_url": "https://github.com/oldlady21/lzx-mieeg-ai4s-context/blob/main/ai4s/programs/dbconformer/research/STATE.yaml",
-      "source_sha256": "9b788d809c8b084683e0781dfdbf6679502156266a417230efde60e6494e16f5",
-      "source_updated_at": "2026-11-05T11:39:27.618042+00:00",
+      "source_sha256": "3e77e575aa48f5113b2466987428d37ad78bbf2b18bf437f89fb14420ba15e09",
+      "source_updated_at": "2026-11-19T10:42:06.891086+00:00",
       "status": "COMPLETE_MAX_ROUNDS"
     },
     "dsainet": {
@@ -686,20 +738,27 @@
         "https://github.com/oldlady21/lzx-mieeg-ai4s-context/blob/main/ai4s/programs/dsainet/research/STATE.parts/part-003.md"
       ],
       "source_public_url": "https://github.com/oldlady21/lzx-mieeg-ai4s-context/blob/main/ai4s/programs/dsainet/research/STATE.yaml",
-      "source_sha256": "4ef0f3c4228815d8817087a085c44164036f9a4d3220a7754ad8d2ea4955ceea",
-      "source_updated_at": "2026-11-05T13:09:08.803027+00:00",
+      "source_sha256": "a0c881b1eceae38fd5830a035dc77440b454c0ce26def467d4d33987aa5b2291",
+      "source_updated_at": "2026-11-24T17:37:18.425137+00:00",
       "status": "COMPLETE_MAX_ROUNDS"
     },
     "mvcnet": {
       "active_operation": null,
-      "active_run": null,
-      "paused": true,
+      "active_run": {
+        "dispatch_status": "REMOTE_ACCEPTED",
+        "round_id": "mvcnet-cvcdropout-001-development-v1"
+      },
+      "paused": false,
       "source_in_this_repository": true,
       "source_path": "ai4s/programs/mvcnet/research/STATE.yaml",
+      "source_public_parts": [
+        "https://github.com/oldlady21/lzx-mieeg-ai4s-context/blob/main/ai4s/programs/mvcnet/research/STATE.parts/part-001.md",
+        "https://github.com/oldlady21/lzx-mieeg-ai4s-context/blob/main/ai4s/programs/mvcnet/research/STATE.parts/part-002.md"
+      ],
       "source_public_url": "https://github.com/oldlady21/lzx-mieeg-ai4s-context/blob/main/ai4s/programs/mvcnet/research/STATE.yaml",
-      "source_sha256": "7a7238443dfd96bf7626d4bd37b7afa1cacc689dd0a4e87529b24de85f76be10",
-      "source_updated_at": "2026-11-16T15:44:37.744328+00:00",
-      "status": "COMPLETE_MAX_ROUNDS"
+      "source_sha256": "ac86f8f563319791435b5eb52894f68554a7959ccdd2f3f4369d171db38c299d",
+      "source_updated_at": "2026-11-25T09:31:18.893921+00:00",
+      "status": "WAITING_REMOTE"
     },
     "ota": {
       "active_operation": null,
@@ -726,7 +785,20 @@
   },
   "policy_version": "public-documents-v1",
   "repository": "oldlady21/lzx-mieeg-ai4s-context",
-  "snapshot_id": "8bb38f0c9d59c0e40c9dd9aaa2229ad13b50387131552b37aa05b29fb1fbd30b",
+  "retained_prompt_paths": [
+    "ai4s/programs/dbconformer/PROJECT_PROMPT_v3.3.md",
+    "ai4s/programs/dbconformer/PROJECT_PROMPT_v3.4.md",
+    "ai4s/programs/dsainet/PROJECT_PROMPT_v3.3.md",
+    "ai4s/programs/dsainet/PROJECT_PROMPT_v3.4.md",
+    "ai4s/programs/dsainet/PROJECT_PROMPT_v4.0.md",
+    "ai4s/programs/mvcnet/PROJECT_PROMPT_v3.3.md",
+    "ai4s/programs/mvcnet/PROJECT_PROMPT_v3.4.md",
+    "ai4s/programs/ota/PROJECT_PROMPT_v3.3.md",
+    "ai4s/programs/sstdpn/PROJECT_PROMPT_v3.3.md",
+    "ai4s/prompts/LEVEL1_RESEARCH_v3.3.md",
+    "ai4s/prompts/LEVEL2_EXECUTION_v3.3.md"
+  ],
+  "snapshot_id": "937047caac2dd976701fbe32e36c71935298372cec2ebd3e719c3f1b938a30e5",
   "unpublished_references": [
     {
       "from": "DECISIONS.md",
@@ -1294,6 +1366,10 @@
     },
     {
       "from": "DECISIONS.md",
+      "not_in_snapshot": "experiments/BNCI2014002_EVALUATION_PROTOCOL.md"
+    },
+    {
+      "from": "DECISIONS.md",
       "not_in_snapshot": "experiments/records/physionet_mi/2026-09-25_full_analysis/RESULT_ANALYSIS.md"
     },
     {
@@ -1851,6 +1927,10 @@
     {
       "from": "PAPER.md",
       "not_in_snapshot": "draft/README.md"
+    },
+    {
+      "from": "PAPER.md",
+      "not_in_snapshot": "experiments/BNCI2014002_EVALUATION_PROTOCOL.md"
     },
     {
       "from": "PAPER.md",
@@ -2530,6 +2610,10 @@
     },
     {
       "from": "TASKS.md",
+      "not_in_snapshot": "experiments/BNCI2014002_EVALUATION_PROTOCOL.md"
+    },
+    {
+      "from": "TASKS.md",
       "not_in_snapshot": "experiments/records/dsainet/zhou2016_3class_loso.md"
     },
     {
@@ -2630,6 +2714,14 @@
     },
     {
       "from": "ai4s/programs/dbconformer/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/additional_lead_stability_20261119/DATA_ELIGIBILITY.md"
+    },
+    {
+      "from": "ai4s/programs/dbconformer/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/additional_lead_stability_20261119/RESEARCH_BRIEF.md"
+    },
+    {
+      "from": "ai4s/programs/dbconformer/research/CURRENT_UNDERSTANDING.md",
       "not_in_snapshot": "ai4s/programs/dbconformer/research/architecture_next_20261005/CLOSEOUT.md"
     },
     {
@@ -2658,6 +2750,46 @@
     },
     {
       "from": "ai4s/programs/dbconformer/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/closure_late_validation_20261118/A04E_CROSS_HEAD_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dbconformer/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/closure_late_validation_20261118/A04E_CROSS_HEAD_SEED3_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dbconformer/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/closure_late_validation_20261118/A04E_HEAD_ATTRIBUTION.md"
+    },
+    {
+      "from": "ai4s/programs/dbconformer/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/closure_late_validation_20261118/A04E_LAYER_INTERACTION_SEED3_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dbconformer/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/closure_late_validation_20261118/A04E_LOGIT_INTERACTION_SEED3_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dbconformer/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/closure_late_validation_20261118/A04E_OPENBMI_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dbconformer/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/closure_late_validation_20261118/A04E_SINGLE_HEAD_SEED3_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dbconformer/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/closure_late_validation_20261118/WANG_LATE_FINAL_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dbconformer/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/closure_late_validation_20261118/WANG_LATE_RISK_ATTRIBUTION.md"
+    },
+    {
+      "from": "ai4s/programs/dbconformer/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/closure_phase_measurability_20261117/REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dbconformer/research/CURRENT_UNDERSTANDING.md",
       "not_in_snapshot": "ai4s/programs/dbconformer/research/dbconformer-sgp-r1.yaml"
     },
     {
@@ -2671,6 +2803,42 @@
     {
       "from": "ai4s/programs/dbconformer/research/CURRENT_UNDERSTANDING.md",
       "not_in_snapshot": "ai4s/programs/dbconformer/research/fca_r1_repair5_packfix80/intake_recovery_v1/CLOSEOUT_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dbconformer/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/gahst_pair_d0_20261118/DESIGN_REVIEW_DISPOSITION.md"
+    },
+    {
+      "from": "ai4s/programs/dbconformer/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/gahst_pair_d0_20261118/RESEARCH_BRIEF.md"
+    },
+    {
+      "from": "ai4s/programs/dbconformer/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/gahst_pair_d0_20261118/tracefix3/SOURCE_VALIDATION_ANALYSIS.md"
+    },
+    {
+      "from": "ai4s/programs/dbconformer/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/gahst_pair_d0_20261118/tracefix3/target_score_once/ARCHIVE.md"
+    },
+    {
+      "from": "ai4s/programs/dbconformer/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/gahst_pair_d0_20261118/tracefix3/target_score_once/ATTRIBUTION_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dbconformer/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/gahst_pair_d0_20261118/tracefix3/target_score_once/LAYOUT_ATTRIBUTION_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dbconformer/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/gahst_pair_d0_20261118/tracefix3/target_score_once/MARGIN_ATTRIBUTION_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dbconformer/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/gahst_pair_d0_20261118/tracefix3/target_score_once/SEED_ATTRIBUTION_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dbconformer/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/gahst_pair_d0_20261118/tracefix3/target_score_once/TARGET_REPORT.md"
     },
     {
       "from": "ai4s/programs/dbconformer/research/CURRENT_UNDERSTANDING.md",
@@ -2982,6 +3150,22 @@
     },
     {
       "from": "ai4s/programs/dbconformer/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/reassessment_v4_post_ffn_20261118/SPATIAL_SKIP_SCREEN_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dbconformer/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/reassessment_v4_post_ffn_20261118/research_brief.md"
+    },
+    {
+      "from": "ai4s/programs/dbconformer/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/reassessment_v4_post_wang_20261118/FFN_SOURCE_REPLAY_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dbconformer/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dbconformer/research/reassessment_v4_post_wang_20261118/research_brief.md"
+    },
+    {
+      "from": "ai4s/programs/dbconformer/research/CURRENT_UNDERSTANDING.md",
       "not_in_snapshot": "ai4s/programs/dbconformer/research/sbn_r1/STARTUP_REPORT.md"
     },
     {
@@ -3042,6 +3226,422 @@
     },
     {
       "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_asymmetric_token_grid_20261122/DISPATCH_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_asymmetric_token_grid_20261122/TRAINING_PLAN.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_asymmetric_token_grid_20261122_py39fix1/DISPATCH_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_asymmetric_token_grid_20261122_py39fix1/SCREEN_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_boundary_selectivity_20261122/CONTINUATION_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_branch_gain_factor_20261122/research_brief.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_cached_native_moments_20261125_175520/RESULT_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_class_conditioned_pooling_20261125_180706/RESULT_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_class_conditioned_pooling_20261125_180706/TECHNICAL_REPLAY.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_class_cooccurrence_20261125/RESULT_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_convtime_dc_split_20261123/CONTINUATION_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_convtime_dc_split_20261123/DISPATCH_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_convtime_dc_split_20261123/SCREEN_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_convtime_decoupling_20261122/AUTONOMOUS_SOURCE_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_convtime_decoupling_20261122/SCREEN_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_convtime_decoupling_20261122/TRAINING_PLAN.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_convtime_even_ridge_20261125/RESULT_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_convtime_group_topology_20261124/CONTINUATION_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_convtime_joint_moments_20261124/RESULT.json"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_convtime_mirror_updates_20261124/RESULT.json"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_convtime_pointwise_tying_20261123/DISPATCH_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_convtime_pointwise_tying_20261123/SCREEN_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_convtime_pointwise_tying_20261123/TRAJECTORY_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_cross_scale_score_alignment_20261124/RESULT.json"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_cross_scale_time_centers_20261125_175909/RESULT_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_cross_source_scale_exchange_20261125/RESULT_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_cue_anchor_20261122/research_brief.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_curvature_half_recovery_20261125_183515/RESULT_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_curvature_half_recovery_20261125_183515/TARGETED_REVIEW.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_dual_scale_intra_distance_bias_20261124/RESULT.json"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_dynamic_token_pairs_20261125/RESULT_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_first_filter_passband_updates_20261124/RESULT.json"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_half_scouts_20261125_184427/CONTINUATION_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_half_scouts_20261125_184427/RESULT_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_inter_ffn_center_20261124/CONTINUATION_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_inter_ffn_center_20261124/DISPATCH_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_inter_ffn_center_20261124/SCREEN_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_inter_ffn_curvature_20261125/RESULT_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_inter_ffn_expected_readout_20261124/RESULT.json"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_inter_ffn_mask_visible_20261124/RESULT.json"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_inter_ffn_readout_subspace_20261124/RESULT.json"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_inter_qk_diagonal_gauge_20261125_181710/RESULT_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_inter_qk_orthogonal_gauge_20261125_181710/RESULT_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_inter_qkv_axis_budget_20261125/RESULT_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_inter_shared_role_basis_20261125/CONTINUATION_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_inter_shared_role_basis_20261125/RESULT_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_inter_shared_role_basis_20261125/TARGETED_REVIEW.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_inter_temporal_mode_20261125/RESULT_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_intra_dropout_gauge_20261124/RESULT.json"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_intra_ffn_affine_quotient_20261124/CONTINUATION_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_intra_ffn_affine_quotient_20261124/DISPATCH_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_intra_ffn_affine_quotient_20261124/SCREEN_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_intra_symmetric_content_20261125/RESULT_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_late_bn_buffers_20261125/RESULT_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_late_classifier_update_20261125/RESULT_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_late_scale_agreement_20261125/RESULT_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_late_scale_agreement_20261125/TARGETED_REVIEW.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_late_spatial_source_contrast_20261125/RESULT_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_late_token_choice_20261125/RESULT_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_local_score_support_20261124/RESULT.json"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_mu_beta_detuned_sidebands_20261125_182842/RESULT_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_observed_time_support_20261125_173251/RESULT_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_pair_gain_compression_20261124/RESULT.json"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_patch_preelu_polyphase_20261124/DISPATCH_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_patch_preelu_polyphase_20261124/QUALIFICATION_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_patch_preelu_polyphase_20261124/SCREEN_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_pointwise_one_end_20261125/CONTINUATION_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_pool_score_gradient_20261125/RESULT_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_readout_antithetic_20261124/RESULT.json"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_reciprocal_affinity_20261122/AUTONOMOUS_SOURCE_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_recording_run_drift_20261125/CONTINUATION_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_recording_run_drift_20261125/RESULT_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_residual_axis_transfer_20261125/RESULT_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_residual_lag_order_20261125/RESULT_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_residual_start_pairs_20261123/CONTINUATION_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_shared_pool_antialias_20261124/RESULT.json"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_shared_tokenizer_input_basis_20261125/RESULT_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_smooth_position_updates_20261124/RESULT.json"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_source_bn_ensemble_20261125/RESULT_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_source_class_alignment_20261125/RESULT_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_source_disagreement_axes_20261125/CONTINUATION_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_spatial_filter_radius_20261123/CONTINUATION_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_spatial_filter_radius_20261123/DISPATCH_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_spatial_filter_radius_repair1_gpu1_20261123/SCREEN_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_spatial_first_20261123/DISPATCH_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_spatial_first_20261123/SCREEN_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_spatial_first_20261123/TRAJECTORY_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_spatial_first_exact_moments_20261125/RESULT_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_spatial_graph_basis_20261124/SCREEN_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_structural_reliability_20261122/AUTONOMOUS_SOURCE_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_windowed_spatial_allocation_20261122/QUALIFICATION_R1_RESULT.json"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_windowed_spatial_allocation_20261122/SCREEN_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_windowed_spatial_allocation_20261122/TRAINING_PLAN.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/b0_windowed_spatial_allocation_20261122/research_brief.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/bounded_coarse_correction_20261118/QUALIFICATION_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/bounded_coarse_correction_20261118/REASSESSMENT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/branch_rank_evidence_20261119/ORIGIN_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/branch_rank_evidence_20261119/QUALIFICATION_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/branch_rank_evidence_20261119/research_brief.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/candidate_set_mass_20261119/QUALIFICATION_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/candidate_set_mass_20261119/SHARED_QUALIFICATION_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/candidate_set_mass_20261119/research_brief.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/coarse_context_correction_20261119/QUALIFICATION_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/coarse_context_correction_20261119/research_brief.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
       "not_in_snapshot": "ai4s/programs/dsainet/research/compositional_mi_20261116/research_brief.md"
     },
     {
@@ -3055,6 +3655,22 @@
     {
       "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
       "not_in_snapshot": "ai4s/programs/dsainet/research/cue_grid_direction_review_20261106/ASSESSMENT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/direct_update_alignment_20261119/ORTHOGONAL_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/direct_update_alignment_20261119/S_AXIS_ENDPOINT_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/direct_update_direction_20261119/QUALIFICATION_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/direct_update_pairing_20261119/QUALIFICATION_REPORT.md"
     },
     {
       "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
@@ -3098,6 +3714,14 @@
     },
     {
       "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/electrode_delay_projection_20261118/QUALIFICATION_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/electrode_delay_projection_20261118/research_brief.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
       "not_in_snapshot": "ai4s/programs/dsainet/research/foundry_if20261029_03_reassessment_20261106/ASSESSMENT.md"
     },
     {
@@ -3119,6 +3743,34 @@
     {
       "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
       "not_in_snapshot": "ai4s/programs/dsainet/research/foundry_if20261029_03_review_20261101/ASSESSMENT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/homologous_mu_reactivity_20261121/QUALIFICATION_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/homologous_mu_reactivity_20261121/research_brief.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/intra_residual_readout_20261119/QUALIFICATION_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/intra_residual_readout_20261119/research_brief.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/local_beta_residual_pooling_20261122/J_EQUAL_DOSE_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/local_beta_residual_pooling_20261122/QUALIFICATION_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/local_beta_residual_pooling_20261122/research_brief.md"
     },
     {
       "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
@@ -3175,6 +3827,26 @@
     {
       "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
       "not_in_snapshot": "ai4s/programs/dsainet/research/next_direction_20261106/supernumerary_v3/REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/ocular_attention_routing_20261118/CUE4_QUALIFICATION_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/ocular_attention_routing_20261118/CUE4_TE_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/ocular_attention_routing_20261118/MISSING_MATCH_CLOSEOUT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/ocular_attention_routing_20261118/QUALIFICATION_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/ocular_attention_routing_20261118/research_brief.md"
     },
     {
       "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
@@ -3298,6 +3970,22 @@
     },
     {
       "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/portfolio_if_20261118_dsai/AEPI_QUALIFICATION_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/portfolio_if_20261118_dsai/ASSESSMENT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/portfolio_n1_n4_20261118/ASSESSMENT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/portfolio_n1_n4_20261118/N3_QUALIFICATION_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
       "not_in_snapshot": "ai4s/programs/dsainet/research/portfolio_review_20261113/OBSERVABILITY_REPORT.md"
     },
     {
@@ -3310,6 +3998,114 @@
     },
     {
       "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/s0_convtime_removal_20261122/AUTONOMOUS_SOURCE_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/scale_interaction_attribution_20261119/QUALIFICATION_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/scale_spatial_contrasts_20261121/QUALIFICATION_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/scale_spatial_contrasts_20261121/SCREEN_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/scale_spatial_contrasts_20261121/research_brief.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/sensor_mu_persistence_20261121/QUALIFICATION_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/sensor_mu_persistence_20261121/research_brief.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/shared_frequency_alignment_20261121/QUALIFICATION_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/shared_frequency_alignment_20261121/research_brief.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/shared_input_pooling_20261118/DOSE_DIAGNOSTIC_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/shared_input_pooling_20261118/QUALIFICATION_R1_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/shared_input_pooling_20261118/QUALIFICATION_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/shared_input_pooling_20261118/research_brief.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/shared_pattern_pooling_20261121/QUALIFICATION_R1_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/shared_pattern_pooling_20261121/QUALIFICATION_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/shared_pattern_pooling_20261121/SCREEN_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/shared_pattern_pooling_20261121/research_brief.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/spatial_rank_allocation_20261118/ADD_ONE_DIRECTION_DESIGN.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/spatial_rank_allocation_20261118/ADD_ONE_ERROR_REVIEW.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/spatial_rank_allocation_20261118/ADD_ONE_QUALIFICATION_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/spatial_rank_allocation_20261118/ADD_ONE_SCREEN_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/spatial_rank_allocation_20261118/QUALIFICATION_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/spatial_rank_allocation_20261118/research_brief.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/spatial_relation_persistence_20261118/QUALIFICATION_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/spatial_relation_persistence_20261118/research_brief.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/spatial_residual_coupling_20261121/QUALIFICATION_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/spatial_residual_coupling_20261121/research_brief.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
       "not_in_snapshot": "ai4s/programs/dsainet/research/structure_reassessment_20261111/STAGE_A_RESULTS.md"
     },
     {
@@ -3318,11 +4114,27 @@
     },
     {
       "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/structure_screen_20261118/EXECUTION_20261118.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/structure_screen_20261118/PAIRING_CONTROL_SCREEN.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/structure_screen_20261118/REVIEW_DISPOSITION.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
       "not_in_snapshot": "ai4s/programs/dsainet/research/subwindow_query_20261112/POST_WORKERFIX1_REASSESSMENT_20261112.md"
     },
     {
       "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
       "not_in_snapshot": "ai4s/programs/dsainet/research/subwindow_query_20261112/analysis_workerfix1/REPORT_ZH.md"
+    },
+    {
+      "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/dsainet/research/tokenizer_lag_mixing_20261118/RESULTS.md"
     },
     {
       "from": "ai4s/programs/dsainet/research/CURRENT_UNDERSTANDING.md",
@@ -3353,6 +4165,14 @@
       "not_in_snapshot": "refs/paper-cards/dsainet/DSAINet-paper.md"
     },
     {
+      "from": "ai4s/programs/mvcnet/PROJECT_PROMPT_v4.1.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/identity_freeze_20261118/README.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/PROJECT_PROMPT_v4.1.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/mvcnet-acm-r1-screen-lab10-checkrepair2_decision.yaml"
+    },
+    {
       "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
       "not_in_snapshot": "ai4s/programs/mvcnet/research/acm-r1/execution/checkrepair2/analysis_20261105/REPORT.md"
     },
@@ -3362,11 +4182,267 @@
     },
     {
       "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/acm-r1/factorial/S8_LOSO_QUALIFICATION_20261117.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/acm-r1/factorial/S8_LOSO_STABILITY_PLAN_20261117.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/anatomical_pair_supervision_20261122/ZERO_TRAINING_RESULT.json"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/asymmetric_auxiliary_rate_20261122/GPU_GATE_CLOSEOUT.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/asymmetric_auxiliary_rate_20261122/PRODUCTION_CPU_CLOSEOUT.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/asymmetric_auxiliary_rate_20261122/ZERO_TRAINING_RESULT.json"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/asymmetric_auxiliary_rate_20261122/research_brief.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
       "not_in_snapshot": "ai4s/programs/mvcnet/research/augmentation_readout/repair_resume69_oom_20261018/analysis_20261024/REPORT.md"
     },
     {
       "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/beta_episode_duration_20261121/ZERO_TRAINING_CLOSEOUT.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/beta_episode_duration_20261121/research_brief.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/bilateral_gain_20261120/ZERO_TRAINING_CLOSEOUT.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/bilateral_gain_20261120/research_brief.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/cmc_even_polarity_20261123/ZERO_TRAINING_RESULT.json"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/cmc_even_polarity_20261123/research_brief.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/common_waveform_sign_20261121/ZERO_TRAINING_CLOSEOUT.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/common_waveform_sign_20261121/research_brief.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/contrast_fir_20261123/ZERO_TRAINING_RESULT.json"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/contrast_fir_20261123/research_brief.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/cross_band_spatial_pattern_20261121/ZERO_TRAINING_CLOSEOUT.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/cross_band_spatial_pattern_20261121/research_brief.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/cross_subject_block_exchange_20261120/LAB10_QUALIFICATION_CLOSEOUT.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/cross_subject_block_exchange_20261120/MECHANISM_CLOSEOUT_20261121.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/cross_subject_block_exchange_20261120/PRODUCTION_CPU_CLOSEOUT.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/cross_subject_block_exchange_20261120/SCIENCE_CLOSEOUT_20261121.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/cross_subject_block_exchange_20261120/ZERO_STEP_CLOSEOUT.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/cross_subject_block_exchange_20261120/research_brief.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/cvc_encoder_partition_20261123/ZERO_TRAINING_RESULT.json"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/cvc_encoder_partition_20261123/research_brief.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/cvc_reflection_axis_20261123/LAUNCH_AND_QUALIFICATION.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/cvc_reflection_axis_20261123/PRODUCTION_CPU_CLOSEOUT.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/cvc_reflection_axis_20261123/SOURCE_GATE_CLOSEOUT.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/cvc_reflection_axis_20261123/repair1/SCIENCE_CLOSEOUT.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/cvc_reflection_axis_20261123/research_brief.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/cvc_shared_dropout_20261123/LAUNCH_AND_QUALIFICATION.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/cvc_shared_dropout_20261123/TARGETED_REVIEW.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/cvc_shared_dropout_20261123/ZERO_TRAINING_RESULT.json"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/cvc_shared_dropout_20261123/research_brief.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/deadline_boundary_consistency_20261122/ZERO_TRAINING_RESULT.json"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/deadline_boundary_consistency_20261122/research_brief.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/dual_bn_001/LAUNCH_AND_QUALIFICATION.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/dual_bn_001/RESEARCH_BRIEF.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/dual_bn_001/SCIENCE_CLOSEOUT_20261120.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/encoded_temporal_modes_20261123/ZERO_TRAINING_RESULT.json"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/encoded_temporal_modes_20261123/research_brief.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/envelope_preserving_rotation_20261122/EXECUTION_AUTHORITY.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/envelope_preserving_rotation_20261122/LAUNCH_AND_QUALIFICATION.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/envelope_preserving_rotation_20261122/ZERO_TRAINING_RESULT.json"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/envelope_preserving_rotation_20261122/research_brief.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/hand_conditional_reflection_20261122/ZERO_TRAINING_CLOSEOUT.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/hand_conditional_reflection_20261122/research_brief.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/head_orthogonal_class_template_20261121/ZERO_TRAINING_CLOSEOUT.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/head_orthogonal_class_template_20261121/research_brief.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/identity_freeze_20261118/README.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/lateral_auxiliary_basis_20261123/ZERO_TRAINING_CLOSEOUT.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/local_spectral_contrast_20261120/ZERO_TRAINING_CLOSEOUT.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/local_spectral_contrast_20261120/research_brief.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/local_time_readout_20261123/ZERO_TRAINING_RESULT.json"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/local_time_readout_20261123/research_brief.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/matched_complete_teacher_20261122/ZERO_TRAINING_RESULT.json"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/matched_complete_teacher_20261122/research_brief.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/missing_strip_conditioning_20261122/ZERO_TRAINING_RESULT.json"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/missing_strip_spatial_bn_20261122/ZERO_TRAINING_RESULT.json"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
       "not_in_snapshot": "ai4s/programs/mvcnet/research/mvcnet-cue-aligned-two-arm-full-lab10-r1-py39fix1-sealfix2_decision.yaml"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/mvcnet-envelope-rotation-001-development-v1_decision.yaml"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/native_flip_teacher_20261122/ZERO_TRAINING_RESULT.json"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/native_flip_teacher_20261122/research_brief.md"
     },
     {
       "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
@@ -3578,11 +4654,167 @@
     },
     {
       "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/physical_time_pooling_125hz_20261122/EXECUTION_AUTHORITY.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/physical_time_pooling_125hz_20261122/LAUNCH_AND_QUALIFICATION.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/physical_time_pooling_125hz_20261122/SCIENCE_CLOSEOUT.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/physical_time_pooling_125hz_20261122/ZERO_TRAINING_RESULT.json"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/postcue_compact_readout_20261122/ZERO_TRAINING_RESULT.json"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/relative_spatial_covariance_20261122/ZERO_TRAINING_PROTOCOL.json"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/relative_spatial_covariance_20261122/ZERO_TRAINING_RESULT.json"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/s0_paired_seed_consensus_20261122/ZERO_TRAINING_RESULT.json"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/source_channel_utility_20261121/ZERO_TRAINING_CLOSEOUT.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/source_channel_utility_20261121/research_brief.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/source_gradient_consensus_20261122/ZERO_TRAINING_CLOSEOUT.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/source_gradient_consensus_20261122/research_brief.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/source_neighbor_residual_20261121/ZERO_TRAINING_CLOSEOUT.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/source_neighbor_residual_20261121/research_brief.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/source_peak_transport_20261122/PAIRS.csv"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/source_peak_transport_20261122/research_brief.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/spatial_auxiliary_basis_20261122/FREEZE_RECEIPT.json"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/spatial_auxiliary_basis_20261122/LAUNCH_AND_QUALIFICATION.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/spatial_auxiliary_basis_20261122/MOTOR_DIAGNOSTIC_REPORT.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/spatial_auxiliary_basis_20261122/SCIENCE_CLOSEOUT.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/spatial_auxiliary_basis_20261122/ZERO_TRAINING_RESULT.json"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/spatial_auxiliary_basis_20261122/research_brief.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/stateless_trial_edge_20261122/ZERO_TRAINING_RESULT.json"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/stateless_trial_edge_20261122/research_brief.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/task_evidence_selection_20261119/CLOSEOUT.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/task_evidence_selection_20261119/DUAL_BN_FOLLOWUP.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/task_evidence_selection_20261119/dual_bn_004/CPU_ACCEPTANCE_AND_LAB10.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/task_evidence_selection_20261119/dual_bn_004/LAUNCH_AND_QUALIFICATION.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/task_evidence_selection_20261119/dual_bn_004/SCIENCE_CLOSEOUT_20261120.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/temporal_readout_prior_20261123/ZERO_TRAINING_RESULT.json"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/temporal_readout_prior_20261123/research_brief.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/trial_covariance_reference_20261122/REAL_PREDICTIONS.csv"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/trial_covariance_reference_20261122/research_brief.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/trial_gain_canonicalization_20261122/ZERO_TRAINING_RESULT.json"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/unpaired_fault_prototypes_20261122/ZERO_TRAINING_RESULT.json"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
       "not_in_snapshot": "ai4s/programs/mvcnet/research/vbr-r1/execution/repair3/analysis_20261029/REPORT.md"
     },
     {
       "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
       "not_in_snapshot": "ai4s/programs/mvcnet/research/vbr-r1/research_brief.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/within_person_conditional_loss_20261122/ZERO_TRAINING_RESULT.json"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/within_person_conditional_loss_20261122/research_brief.md"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/within_trial_sensor_repair_20261122/ZERO_TRAINING_RESULT.json"
+    },
+    {
+      "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "not_in_snapshot": "ai4s/programs/mvcnet/research/within_trial_sensor_repair_20261122/research_brief.md"
     },
     {
       "from": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
@@ -3833,6 +5065,10 @@
       "not_in_snapshot": "refs/paper-cards/sst-dpn/nature-reader/paper.md"
     },
     {
+      "from": "ai4s/prompts/MIEEG_AI4S_SKILL_ROUTER.md",
+      "not_in_snapshot": "ai4s/references/lab_literature_lookup.py"
+    },
+    {
       "from": "ai4s/prompts/TRANSACTION_RUNTIME.md",
       "not_in_snapshot": "ai4s/prompts/ALL_PROGRAMS_HISTORICAL_CLEANUP_AGENT_PROMPT.md"
     },
@@ -3894,35 +5130,23 @@
     },
     {
       "from": "refs/paper-cards/lidsn/LI-DSN-note.md",
-      "not_in_snapshot": "refs/paper-cards/lidsn/refs/paper-cards/lidsn/LI-DSN-paper-card.md"
+      "not_in_snapshot": "refs/paper-cards/lidsn/_work/note/QA.md"
     },
     {
       "from": "refs/paper-cards/lidsn/LI-DSN-note.md",
-      "not_in_snapshot": "refs/paper-cards/lidsn/refs/paper-cards/lidsn/LI-DSN-paper-xray.md"
+      "not_in_snapshot": "refs/paper-cards/lidsn/_work/note/source-inventory.json"
     },
     {
       "from": "refs/paper-cards/lidsn/LI-DSN-note.md",
-      "not_in_snapshot": "refs/paper-cards/lidsn/refs/paper-cards/lidsn/LI-DSN-paper.md"
+      "not_in_snapshot": "refs/paper-cards/lidsn/assets/fig2.png"
     },
     {
       "from": "refs/paper-cards/lidsn/LI-DSN-note.md",
-      "not_in_snapshot": "refs/paper-cards/lidsn/refs/paper-cards/lidsn/_work/note/QA.md"
+      "not_in_snapshot": "refs/paper-cards/lidsn/assets/fig6.png"
     },
     {
       "from": "refs/paper-cards/lidsn/LI-DSN-note.md",
-      "not_in_snapshot": "refs/paper-cards/lidsn/refs/paper-cards/lidsn/_work/note/source-inventory.json"
-    },
-    {
-      "from": "refs/paper-cards/lidsn/LI-DSN-note.md",
-      "not_in_snapshot": "refs/paper-cards/lidsn/refs/paper-cards/lidsn/assets/fig2.png"
-    },
-    {
-      "from": "refs/paper-cards/lidsn/LI-DSN-note.md",
-      "not_in_snapshot": "refs/paper-cards/lidsn/refs/paper-cards/lidsn/assets/fig6.png"
-    },
-    {
-      "from": "refs/paper-cards/lidsn/LI-DSN-note.md",
-      "not_in_snapshot": "refs/paper-cards/lidsn/refs/paper-cards/lidsn/source_map.json"
+      "not_in_snapshot": "refs/paper-cards/lidsn/source_map.json"
     }
   ],
   "warning": "Mechanical public snapshot only; not live server verification, complete evidence, new authorization, or a claim audit."

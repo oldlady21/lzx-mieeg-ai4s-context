@@ -2,7 +2,7 @@
 
 完整脱敏文件：`ai4s/programs/dsainet/research/STATE.yaml`（[原文件](../STATE.yaml)）。
 
-完整公开文件 SHA-256：`546294f490c37739bda04797b439fd05243a3b3cd8b4b5effc331321bba2400a`。UTF-8 字节范围：[0, 500000) / 1036464。
+完整公开文件 SHA-256：`5facb7140fb8c0d253b3f264b975d0fec60c9086af9553f6322c9439338ea52b`。UTF-8 字节范围：[0, 500000) / 1086722。
 
 这是连续文本片段，可能从 JSON 字段中间开始；按分段顺序拼接代码块可恢复完整脱敏正文。不是单独有效的 State，也不授予执行权限。
 
@@ -2062,6 +2062,324 @@
         "started_at": "2026-10-23T13:28:00+00:00"
       },
       "scientific_disposition_added": false
+    },
+    {
+      "campaign_id": "dsainet-ds07-r1",
+      "closed_at": "2026-11-21T17:55:31.071803+00:00",
+      "closing_decision": {
+        "decision": "STOP_FIXED_DS07_R1_NO_AUTOMATIC_EXPANSION",
+        "decision_record": "ai4s/programs/dsainet/research/ds07-r1/analysis_20261105/DECISION.json",
+        "evidence_id": "DSAINET-DS07-R1-MERGED-VERIFIED-ANALYSIS-20261105",
+        "new_experiment_authorized": false,
+        "role": "exposed_development_four_arm_system_net_utility_screen",
+        "round_id": "ds07-r1-audit18-r18fix1"
+      },
+      "closing_round": "ds07-r1-audit18-r18fix1",
+      "closing_run": {
+        "analysis_receipt_sha256": "50d281479aef6a12015c6c0c058c89b245db75e39326ab6107800b1c9c9d72d0",
+        "artifact_manifest_sha256": "472328bb9c78bbf8b431cfaa8d1c6dd01fc061b6ff56f24d03c7f873e36bcc9c",
+        "contract_sha256": "95372fc340bc257e5b42dd11c80ec909ab53e5f81defd1202693f750d6749caa",
+        "full_payload_local": false,
+        "intake_path": "results/logs/remote/2026-11-05_dsainet_ds07_r1_audit18-r18fix1-full-w1",
+        "intake_scope": "analysis_v1",
+        "run_id": "2026-11-05_dsainet_ds07_r1_audit18-r18fix1-full-w1",
+        "run_status": "complete",
+        "transaction_id": "dsainet-ds07-r1-audit18-r18fix1",
+        "transfer_bytes": 1101797,
+        "verified": true,
+        "verified_at": null
+      },
+      "closing_status": "COMPLETE_MAX_ROUNDS",
+      "closure_reason": "User authorized one qualified bounded source-only training round and upload-launch-probe"
+    },
+    {
+      "campaign_id": "dsainet-window-spatial-20261122",
+      "closed_at": "2026-11-21T17:57:47.449996+00:00",
+      "closing_decision": {
+        "decision": "STOP_FIXED_DS07_R1_NO_AUTOMATIC_EXPANSION",
+        "decision_record": "ai4s/programs/dsainet/research/ds07-r1/analysis_20261105/DECISION.json",
+        "evidence_id": "DSAINET-DS07-R1-MERGED-VERIFIED-ANALYSIS-20261105",
+        "new_experiment_authorized": false,
+        "role": "exposed_development_four_arm_system_net_utility_screen",
+        "round_id": "ds07-r1-audit18-r18fix1"
+      },
+      "closing_round": "ds07-r1-audit18-r18fix1",
+      "closing_run": {
+        "analysis_receipt_sha256": "50d281479aef6a12015c6c0c058c89b245db75e39326ab6107800b1c9c9d72d0",
+        "artifact_manifest_sha256": "472328bb9c78bbf8b431cfaa8d1c6dd01fc061b6ff56f24d03c7f873e36bcc9c",
+        "contract_sha256": "95372fc340bc257e5b42dd11c80ec909ab53e5f81defd1202693f750d6749caa",
+        "full_payload_local": false,
+        "intake_path": "results/logs/remote/2026-11-05_dsainet_ds07_r1_audit18-r18fix1-full-w1",
+        "intake_scope": "analysis_v1",
+        "run_id": "2026-11-05_dsainet_ds07_r1_audit18-r18fix1-full-w1",
+        "run_status": "complete",
+        "transaction_id": "dsainet-ds07-r1-audit18-r18fix1",
+        "transfer_bytes": 1101797,
+        "verified": true,
+        "verified_at": null
+      },
+      "closing_status": "PAUSED_FOR_HUMAN",
+      "closure_reason": "Replace undispatched 2h accounting envelope with 90 minute Transaction, same science; preserve prior preparation and zero tasks dispatched"
+    },
+    {
+      "campaign_id": "dsainet-window-spatial-20261122-dispatch1",
+      "closed_at": "2026-11-22T03:37:50.194640+00:00",
+      "closing_decision": {
+        "decision": "NO_SIGNAL",
+        "reason": "overall paired delta is below the frozen minimum meaningful effect",
+        "round_id": "dsainet-window-spatial-r1-dispatch1"
+      },
+      "closing_round": "dsainet-window-spatial-r1-dispatch1",
+      "closing_run": {
+        "analysis_receipt_sha256": "6ef705a0d5db07e61a6d3d522f3d2ff9d5152cb4350118351735aa8058466fad",
+        "artifact_manifest_sha256": "49e8850e9c98391552a454ae732a25285710085bf8988883f6326692330f7d3f",
+        "contract_sha256": "c73d6487de1a1a480b649bb6b3b4b0d9b2cf266eeeb1ee310336884992139d86",
+        "full_payload_local": false,
+        "intake_path": "results/logs/remote/2026-11-22_dsainet_window_spatial_r1-dispatch1-full-w1",
+        "intake_scope": "analysis_v1",
+        "run_id": "2026-11-22_dsainet_window_spatial_r1-dispatch1-full-w1",
+        "run_status": "complete",
+        "transaction_id": "2026-11-22_dsainet_window_spatial_r1-dispatch1-tx",
+        "transfer_bytes": 19398886,
+        "verified": true,
+        "verified_at": null
+      },
+      "closing_status": "COMPLETE_MAX_ROUNDS",
+      "closure_reason": "User-directed bounded training of qualified native B0 simplification, one source screen, Lab10"
+    },
+    {
+      "campaign_id": "dsainet-b0-convtime-decoupling-20261122",
+      "closed_at": "2026-11-22T09:38:32.905408+00:00",
+      "closing_decision": {
+        "decision": "PROMISING_INCOMPLETE",
+        "disposition": "BASELINE_INADEQUATE",
+        "round_id": "dsainet-b0-convtime-decoupling-r1"
+      },
+      "closing_round": "dsainet-b0-convtime-decoupling-r1",
+      "closing_run": {
+        "analysis_receipt_sha256": "b79407a37e0b4c1af719676f4b1cd638ef83794f7c37fd04404540bfc7e225db",
+        "artifact_manifest_sha256": "318a09191bd94d98cd9777e3eddeda1081267faf36f88c4627e148e51fab5be2",
+        "contract_sha256": "ab0b6240fdc8da9b4ec310e2913bd9a089f24be481e5dd70697827641c5524e9",
+        "full_payload_local": false,
+        "intake_path": "results/logs/remote/2026-11-22_dsainet_b0_convtime_decoupling_r1-full-w1",
+        "intake_scope": "analysis_v1",
+        "run_id": "2026-11-22_dsainet_b0_convtime_decoupling_r1-full-w1",
+        "run_status": "complete",
+        "transaction_id": "2026-11-22_dsainet_b0_convtime_decoupling_r1-tx",
+        "transfer_bytes": 304128,
+        "verified": true,
+        "verified_at": null
+      },
+      "closing_status": "COMPLETE_MAX_ROUNDS",
+      "closure_reason": "User-directed bounded training of qualified balanced native attention-grid compression, one source screen, Lab10"
+    },
+    {
+      "campaign_id": "dsainet-b0-attention-token-grid-20261122",
+      "closed_at": "2026-11-22T16:20:15.772316+00:00",
+      "closing_decision": {
+        "decision": "NO_SIGNAL",
+        "disposition": "STOP_UNIFORM_GRID_UTILITY_RISK",
+        "round_id": "dsainet-b0-attention-token-grid-r1-py39fix1"
+      },
+      "closing_round": "dsainet-b0-attention-token-grid-r1-py39fix1",
+      "closing_run": {
+        "analysis_receipt_sha256": "70792e9896c18fb97ca3cfdf97b6f6d7921d564ce61caa16d83255fe4c41731a",
+        "artifact_manifest_sha256": "dbdbcbf51506c6ff731e2691f7684f8caf9faacbbae3b29bb9a104e1b5b8a924",
+        "contract_sha256": "12b63a825011fbc1762c5a029554b6ef5d3ffb4a77396f96365c5d5fbfde1988",
+        "full_payload_local": false,
+        "intake_path": "results/logs/remote/2026-11-22_dsainet_b0_attention_token_grid_r1_py39fix1-full-w1",
+        "intake_scope": "analysis_v1",
+        "run_id": "2026-11-22_dsainet_b0_attention_token_grid_r1_py39fix1-full-w1",
+        "run_status": "complete",
+        "transaction_id": "2026-11-22_dsainet_b0_attention_token_grid_r1_py39fix1-tx",
+        "transfer_bytes": 404263,
+        "verified": true,
+        "verified_at": null
+      },
+      "closing_status": "COMPLETE_MAX_ROUNDS",
+      "closure_reason": "User-authorized Lab10 screen of first qualifying DSAINet spatial-first tokenizer, same source and matched convolution budget"
+    },
+    {
+      "campaign_id": "dsainet-b0-spatial-first-20261123",
+      "closed_at": "2026-11-23T02:28:31.639559+00:00",
+      "closing_decision": {
+        "decision": "NO_SIGNAL",
+        "disposition": "STOP_SPATIAL_FIRST_UTILITY_RISK",
+        "round_id": "dsainet-b0-spatial-first-r1"
+      },
+      "closing_round": "dsainet-b0-spatial-first-r1",
+      "closing_run": {
+        "analysis_receipt_sha256": "05b1915867cc504e96977a036347555887a10a9b2056fb3f0824a82d0ad30bd0",
+        "artifact_manifest_sha256": "226064469e6772ca2ac3ec747a582108f977da26307b79db0094298c50d17fe7",
+        "contract_sha256": "bbbbeb684477a8f26cd3afc0c3acda4ae312a4db4fda8d2935e16bebf280c440",
+        "full_payload_local": false,
+        "intake_path": "results/logs/remote/2026-11-23_dsainet_b0_spatial_first_r1-full-w1",
+        "intake_scope": "analysis_v1",
+        "run_id": "2026-11-23_dsainet_b0_spatial_first_r1-full-w1",
+        "run_status": "complete",
+        "transaction_id": "2026-11-23_dsainet_b0_spatial_first_r1-tx",
+        "transfer_bytes": 310668,
+        "verified": true,
+        "verified_at": null
+      },
+      "closing_status": "COMPLETE_MAX_ROUNDS",
+      "closure_reason": "User-authorized Lab10 screen of first qualifying ConvTime pointwise sharing, three arms, 001 A04-A06 only"
+    },
+    {
+      "campaign_id": "dsainet-b0-pointwise-tying-20261123",
+      "closed_at": "2026-11-23T06:50:40.169073+00:00",
+      "closing_decision": {
+        "decision": "NO_SIGNAL",
+        "disposition": "STOP_POINTWISE_SHARING_UTILITY_RISK",
+        "round_id": "dsainet-b0-convtime-pointwise-tying-r1"
+      },
+      "closing_round": "dsainet-b0-convtime-pointwise-tying-r1",
+      "closing_run": {
+        "analysis_receipt_sha256": "fa32040419c55dadcd395fb771d919c9ecf268967a7d376351f36c2d406e7858",
+        "artifact_manifest_sha256": "8f09bf9811e8541218011d8fd9486a90bf887b0b429933b609f79a669a2e997c",
+        "contract_sha256": "5047d967af17b3ca44800e1accb5d77f16bb560b804e769a05c3a7550a3b30c6",
+        "full_payload_local": false,
+        "intake_path": "results/logs/remote/2026-11-23_dsainet_b0_convtime_pointwise_tying_r1-full-w1",
+        "intake_scope": "analysis_v1",
+        "run_id": "2026-11-23_dsainet_b0_convtime_pointwise_tying_r1-full-w1",
+        "run_status": "complete",
+        "transaction_id": "2026-11-23_dsainet_b0_convtime_pointwise_tying_r1-tx",
+        "transfer_bytes": 320706,
+        "verified": true,
+        "verified_at": null
+      },
+      "closing_status": "COMPLETE_MAX_ROUNDS",
+      "closure_reason": "User authorized first qualified v4.1 candidate; one matching Lab10 source-only screen under the existing 1.75 h envelope."
+    },
+    {
+      "campaign_id": "dsainet-b0-spatial-filter-radius-20261123",
+      "closed_at": "2026-11-23T13:06:58.105951+00:00",
+      "closing_decision": {
+        "decision": "NO_SIGNAL",
+        "disposition": "STOP_FIXED_SPATIAL_RADIUS",
+        "round_id": "dsainet-b0-spatial-filter-radius-r1-repair1-gpu1"
+      },
+      "closing_round": "dsainet-b0-spatial-filter-radius-r1-repair1-gpu1",
+      "closing_run": {
+        "analysis_receipt_sha256": "873130bf291b629ab0648948ef490d124a86d4498fdcc350c313d8ae4e707b00",
+        "artifact_manifest_sha256": "0b701b105fef1b63dff5021fe6d2cdb6532c432356f3b051ab2dc60b73982acf",
+        "contract_sha256": "64640ec460385163defd6d5549025e63ee5fe4875002df7cecb6b1edd8d9edb7",
+        "full_payload_local": false,
+        "intake_path": "results/logs/remote/2026-11-23_dsainet_b0_spatial_filter_radius_r1_repair1_gpu1-full-w1",
+        "intake_scope": "analysis_v1",
+        "run_id": "2026-11-23_dsainet_b0_spatial_filter_radius_r1_repair1_gpu1-full-w1",
+        "run_status": "complete",
+        "transaction_id": "2026-11-23_dsainet_b0_spatial_filter_radius_r1_repair1_gpu1-tx",
+        "transfer_bytes": 249101,
+        "verified": true,
+        "verified_at": null
+      },
+      "closing_status": "COMPLETE_MAX_ROUNDS",
+      "closure_reason": "User authorized the first qualified v4.1 candidate for one source-only Lab10 screen within the previous 1.75h envelope."
+    },
+    {
+      "campaign_id": "dsainet-b0-convtime-dc-split-20261123",
+      "closed_at": "2026-11-23T16:15:50.875719+00:00",
+      "closing_decision": {
+        "decision": "NO_SIGNAL",
+        "disposition": "STOP_CONVTIME_DC_SPLIT",
+        "round_id": "dsainet-b0-convtime-dc-split-r1"
+      },
+      "closing_round": "dsainet-b0-convtime-dc-split-r1",
+      "closing_run": {
+        "analysis_receipt_sha256": "7d2352337192a27108d04bd4c5097112f8dcfeffda1d2e672ac51ecc81aff80e",
+        "artifact_manifest_sha256": "d8dcfd1fb0305c782758fcda1f97ee95e6d88d787932dee6284fe184f0064320",
+        "contract_sha256": "04314e4ed9ae7a985c7ad0b4a773c980ccd2100cc67f978eb223af88170c3666",
+        "full_payload_local": false,
+        "intake_path": "results/logs/remote/2026-11-23_dsainet_b0_convtime_dc_split_r1-full-w1",
+        "intake_scope": "analysis_v1",
+        "run_id": "2026-11-23_dsainet_b0_convtime_dc_split_r1-full-w1",
+        "run_status": "complete",
+        "transaction_id": "2026-11-23_dsainet_b0_convtime_dc_split_r1-tx",
+        "transfer_bytes": 320205,
+        "verified": true,
+        "verified_at": null
+      },
+      "closing_status": "COMPLETE_MAX_ROUNDS",
+      "closure_reason": "First qualified candidate in the serial DSAINet v4.1 source screen under the user direction"
+    },
+    {
+      "campaign_id": "dsainet-b0-spatial-graph-basis-20261124",
+      "closed_at": "2026-11-24T01:30:36.417395+00:00",
+      "closing_decision": {
+        "decision": "NO_SIGNAL",
+        "disposition": "STOP_SPATIAL_GRAPH_BASIS",
+        "round_id": "dsainet-b0-spatial-graph-basis-r1"
+      },
+      "closing_round": "dsainet-b0-spatial-graph-basis-r1",
+      "closing_run": {
+        "analysis_receipt_sha256": "f73b655427f8a57d338e2a412c78dc27f52bbed8964971aebfb75bca2e214c2c",
+        "artifact_manifest_sha256": "3a38b4e6ff67913b005b7cac153b1e6d91690b4f7bc341ec502751f368a39db0",
+        "contract_sha256": "18e785e969bb51545bcf7ff590cfe09fc21824a979e34dbde8449d968296fd5a",
+        "full_payload_local": false,
+        "intake_path": "results/logs/remote/2026-11-24_dsainet_b0_spatial_graph_basis_r1-full-w1",
+        "intake_scope": "analysis_v1",
+        "run_id": "2026-11-24_dsainet_b0_spatial_graph_basis_r1-full-w1",
+        "run_status": "complete",
+        "transaction_id": "2026-11-24_dsainet_b0_spatial_graph_basis_r1-tx",
+        "transfer_bytes": 319605,
+        "verified": true,
+        "verified_at": null
+      },
+      "closing_status": "COMPLETE_MAX_ROUNDS",
+      "closure_reason": "First qualified serial candidate under the user-authorized DSAINet v4.1 Lab10 source screen"
+    },
+    {
+      "campaign_id": "dsainet-b0-inter-ffn-center-20261124",
+      "closed_at": "2026-11-24T07:02:03.044488+00:00",
+      "closing_decision": {
+        "decision": "NO_SIGNAL",
+        "disposition": "STOP_INTER_FFN_CENTER",
+        "round_id": "dsainet-b0-inter-ffn-center-r1"
+      },
+      "closing_round": "dsainet-b0-inter-ffn-center-r1",
+      "closing_run": {
+        "analysis_receipt_sha256": "f56036497ccdaa76970b437291022d69d6c508f74c8aa4a71319a1ef3c96a77a",
+        "artifact_manifest_sha256": "7078dd962d983f81238cc28f0461da1fb2182451525a0adbdf9b7bdef1e4fdfd",
+        "contract_sha256": "b9e4bbb6c51ba171ba94d56065895854acd601375b088120bb9c9bcf5df5d6a6",
+        "full_payload_local": false,
+        "intake_path": "results/logs/remote/2026-11-24_dsainet_b0_inter_ffn_center_r1-full-w1",
+        "intake_scope": "analysis_v1",
+        "run_id": "2026-11-24_dsainet_b0_inter_ffn_center_r1-full-w1",
+        "run_status": "complete",
+        "transaction_id": "2026-11-24_dsainet_b0_inter_ffn_center_r1-tx",
+        "transfer_bytes": 321498,
+        "verified": true,
+        "verified_at": null
+      },
+      "closing_status": "COMPLETE_MAX_ROUNDS",
+      "closure_reason": "User authorized one source-only Lab10 screen for the first eligible serial candidate under DSAINet v4.1"
+    },
+    {
+      "campaign_id": "dsainet-b0-intra-ffn-affine-quotient-20261124",
+      "closed_at": "2026-11-24T14:25:30.387682+00:00",
+      "closing_decision": {
+        "decision": "NO_SIGNAL",
+        "disposition": "STOP_INTRA_FFN_AFFINE_QUOTIENT",
+        "round_id": "dsainet-b0-intra-ffn-affine-quotient-r1"
+      },
+      "closing_round": "dsainet-b0-intra-ffn-affine-quotient-r1",
+      "closing_run": {
+        "analysis_receipt_sha256": "e5c8f827f87e68a2d4449cdb985abf323a25f801bfafb93169b5c519454f5181",
+        "artifact_manifest_sha256": "0120561cf5f13fb4fd7d82de304ea16d9b797c08ed79ff38b56fc7105dcdfbb5",
+        "contract_sha256": "246b1d7f649255997325a9a8daff3b4bdbef75235f6ba46073487a804c064c48",
+        "full_payload_local": false,
+        "intake_path": "results/logs/remote/2026-11-24_dsainet_b0_intra_ffn_affine_quotient_r1-full-w1",
+        "intake_scope": "analysis_v1",
+        "run_id": "2026-11-24_dsainet_b0_intra_ffn_affine_quotient_r1-full-w1",
+        "run_status": "complete",
+        "transaction_id": "2026-11-24_dsainet_b0_intra_ffn_affine_quotient_r1-tx",
+        "transfer_bytes": 324411,
+        "verified": true,
+        "verified_at": null
+      },
+      "closing_status": "COMPLETE_MAX_ROUNDS",
+      "closure_reason": "First qualified source-only DSAINet v4.1 candidate for this user-authorized serial search"
     }
   ],
   "automatic_follow_up": false,
@@ -2158,14 +2476,11 @@
     "verified_at": "2026-10-06T16:52:49.207183+08:00"
   },
   "campaign": {
-    "activation_contract_sha256": "39305fc39830c027f59b70f430ca261c95c2a6528c327a0a45515216d324e059",
-    "authorization_reason": "DS07-R1-SCIENCE1-DEVICEFIX1-312H",
-    "budget_origin": "2026-10-23T13:28:00+00:00",
-    "budget_origin_total_hours": 312,
-    "budget_policy": {
-      "exclude_verified_stopped_seconds": true
-    },
-    "campaign_id": "dsainet-ds07-r1",
+    "allowed_transitions": [
+      "SCREEN_NEW"
+    ],
+    "authorization_reason": "First qualified source-only DSAINet v4.1 candidate for this user-authorized serial search",
+    "campaign_id": "dsainet-b0-patch-preelu-polyphase-20261124",
     "continuation_policy_version": "evidence_to_design_v1",
     "decision_policy": "stop_at_positive",
     "execution_authorization": {
@@ -2177,151 +2492,47 @@
         "intake"
       ],
       "allowed_transitions": [
-        "ENGINEERING_REPAIR"
+        "SCREEN_NEW"
       ],
-      "authorization_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/r18fix1/AUTHORIZATION.json",
-      "authorization_sha256": "2a1102c4f247c51f5db45a017278cc36dd6264ec787880a31b5d1ae47dd8de0b",
-      "campaign_id": "dsainet-ds07-r1",
+      "authorization_ref": "ai4s/programs/dsainet/research/b0_patch_preelu_polyphase_20261124/AUTHORIZATION.md",
+      "campaign_id": "dsainet-b0-patch-preelu-polyphase-20261124",
       "executor_id": "lab10",
-      "readerfix1_transport_authorization_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/readerfix1/EXPLICIT_TARGET_REPLY.json",
-      "readerfix1_transport_authorization_sha256": "9fc0e3927efa3392330815e43a25538c227b2cbd5fe9d3c0e97536c5a48463fb",
+      "recorded_at": "2026-11-24T14:25:33.309812+00:00",
       "research_scope": {
         "allow_new_module": false,
         "allowed_module_ids": [
-          "dsainet.ds07-r1.paired-four-arm-model"
+          "dsainet.native-patch-preelu-polyphase.r1"
         ],
         "allowed_stages": [
-          "screen"
+          "source_native_patch_preelu_polyphase"
         ],
-        "data_scope_id": "dsainet.ds07-r1-cue4-source6-select1-audit1-exposed-development",
-        "question_id": "dsainet.ds07-r1.ce100-four-arm-comparison"
+        "data_scope_id": "bnci001-cue4-exposed-A04-A06-no-target",
+        "question_id": "adjacent-versus-interleaved-preelu-phase-grouping"
       },
-      "summaryfix1_reply_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/summaryfix1/EXPLICIT_TARGET_REPLY.json",
-      "summaryfix1_reply_sha256": "600cc78238ff5e94a4c35bcd6b1109f5966cc17e8554f5f79f88039d21c838ed",
-      "telemetryfix1_transport_reply_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/telemetryfix1/EXPLICIT_TARGET_REPLY.json",
-      "telemetryfix1_transport_reply_sha256": "e5613e9df8044c3e259a58c32955ba30f8075cdf7eb70e170e7ac6f2a2868242"
+      "source_sha256": "7d903413a4b809eba45749331cb4d68c0fe325c9f5c98af35e0a59d483e1cb16"
     },
-    "governance_chain_id": "dsainet-transaction-v3.3",
+    "governance_chain_id": "dsainet-transaction-v4.1",
     "invalid_behavior": "fail_closed_without_advancing",
     "positive_signal_behavior": "pause_for_human_review",
-    "purpose": "User-authorized bounded DS07-R1 screen",
+    "purpose": "user-authorized bounded AI4S campaign",
     "queue_accounting": {
-      "2026-11-02_dsainet_ds07_r1_science1-full-w1": {
-        "contract_sha256": "2bb53a03bdaadd9040b7159254b2ddba1a707b98f8222f7a5e715dbf3897cdd8",
-        "proof_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/readerfix1/FAILURE_PROOF.json",
-        "proof_sha256": "603b251d599280190614e3de9bff7abca1a292d3e7f7308c94e7f3a1edece5dc",
-        "queue_seconds": 355.13456535339355,
-        "run_id": "2026-11-02_dsainet_ds07_r1_science1-full-w1",
-        "transaction_id": "dsainet-ds07-r1-science1"
-      },
-      "2026-11-02_dsainet_ds07_r1_science1-readerfix1-full-w1": {
-        "contract_sha256": "d82104284d7dadd6a47831998c32727a97bca76aff0236c224fd56bfad02f243",
-        "proof_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/telemetryfix1/FAILURE_PROOF.json",
-        "proof_sha256": "09c3bfa6b5498a16f01a7e306015e318c8e5af403f9937d9c5bd5d27a73c195c",
-        "queue_seconds": 5744.736851215363,
-        "run_id": "2026-11-02_dsainet_ds07_r1_science1-readerfix1-full-w1",
-        "transaction_id": "dsainet-ds07-r1-science1-readerfix1"
-      },
-      "2026-11-03_dsainet_ds07_r1_science1-summaryfix1-full-w1": {
-        "contract_sha256": "e72dd5f020f21d4b52fb749265c08a3759befee5507f392ccf5b7355e019b59e",
-        "proof_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/devicefix1/FAILURE_PROOF.json",
-        "proof_sha256": "3b73f29709b6e739e0306dd39a3ab2a93eae20f2a60f5228e747e0572fd7af2f",
-        "queue_seconds": 1498.042162656784,
-        "run_id": "2026-11-03_dsainet_ds07_r1_science1-summaryfix1-full-w1",
-        "transaction_id": "dsainet-ds07-r1-science1-summaryfix1"
-      },
-      "2026-11-03_dsainet_ds07_r1_science1-telemetryfix1-full-w1": {
-        "contract_sha256": "ee394e5bc6ddf2b0bf5603fd8dc10419e5b88e2e36f9c032db8df5e8d77afb68",
-        "proof_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/summaryfix1/FAILURE_PROOF.json",
-        "proof_sha256": "ddc071fdf3a34d914d644d1e72b403f01388fee0002883b0e41a3d9bb3270893",
-        "queue_seconds": 1763.9529342651367,
-        "run_id": "2026-11-03_dsainet_ds07_r1_science1-telemetryfix1-full-w1",
-        "transaction_id": "dsainet-ds07-r1-science1-telemetryfix1"
-      },
-      "2026-11-04_dsainet_ds07_r1_science1-devicefix1-full-w1": {
-        "contract_sha256": "b9824b039bc8dcaaaa907ac8a1c7cdfd0d03b90cbb7a73cc82438edce1c748ef",
-        "queue_seconds": 0.8287975788116455,
-        "run_id": "2026-11-04_dsainet_ds07_r1_science1-devicefix1-full-w1",
-        "transaction_id": "dsainet-ds07-r1-science1-devicefix1"
-      },
-      "2026-11-05_dsainet_ds07_r1_audit18-r18fix1-full-w1": {
-        "contract_sha256": "95372fc340bc257e5b42dd11c80ec909ab53e5f81defd1202693f750d6749caa",
-        "queue_seconds": 0.8470947742462158,
-        "run_id": "2026-11-05_dsainet_ds07_r1_audit18-r18fix1-full-w1",
-        "transaction_id": "dsainet-ds07-r1-audit18-r18fix1"
-      },
-      "historical-resource-credit-1": {
-        "proof_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/proofs/AUTHORIZATION212.json",
-        "proof_sha256": "5fd3c09766a8ace704933b0ef137b0abc173a6b5c716c4f2e19df4a92a1de745",
-        "queue_seconds": 32898.104853630066
-      },
-      "historical-resource-credit-2": {
-        "proof_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/proofs/packfix1_queue_clock.json",
-        "proof_sha256": "495d3fd9c8f21320d7d756879fb8da96fa50c05ec7cfc3a05b605b7e6c25250f",
-        "queue_seconds": 20067.248963356018
+      "2026-11-24_dsainet_b0_patch_preelu_polyphase_r1-full-w1": {
+        "contract_sha256": "9c6bc4425954a9520c116e432f404043d3860a3155bee8c15ce881d9dafbe59c",
+        "queue_seconds": 3.868722915649414,
+        "run_id": "2026-11-24_dsainet_b0_patch_preelu_polyphase_r1-full-w1",
+        "transaction_id": "2026-11-24_dsainet_b0_patch_preelu_polyphase_r1-tx"
       }
     },
     "round_decisions": [
       {
-        "decision": "STOP_FIXED_DS07_R1_NO_AUTOMATIC_EXPANSION",
-        "evidence_id": "DSAINET-DS07-R1-MERGED-VERIFIED-ANALYSIS-20261105",
-        "record": "ai4s/programs/dsainet/research/ds07-r1/analysis_20261105/DECISION.json",
-        "round_id": "ds07-r1-audit18-r18fix1"
+        "decision": "NO_SIGNAL",
+        "decision_record": "ai4s/programs/dsainet/research/dsainet-b0-patch-preelu-polyphase-r1_decision.yaml",
+        "evidence_id": "AI4S-DSAINET-dsainet-b0-patch-preelu-polyphase-r1",
+        "recorded_at": "2026-11-24T17:37:18.425137+00:00",
+        "round_id": "dsainet-b0-patch-preelu-polyphase-r1"
       }
     ],
-    "started_at": "2026-10-23T13:28:00+00:00",
-    "status": "CLOSED_FIXED_SCREEN_NO_SIGNAL",
-    "stopped_accounting": [
-      {
-        "authorization_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/proofs/manual_wait1_request.json",
-        "end": "2026-11-01T04:43:45.932671+00:00",
-        "evidence_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/proofs/manual_wait1_request.json",
-        "source_run_id": "2026-11-01_dsainet_ds07_r1_tech1-repair1-packfix1",
-        "start": "2026-11-01T04:41:50.000401+00:00"
-      },
-      {
-        "authorization_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/proofs/manual_wait2_request.json",
-        "end": "2026-11-01T15:34:11.239164+00:00",
-        "evidence_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/proofs/manual_wait2_request.json",
-        "source_run_id": "2026-11-01_dsainet_ds07_r1_tech1-repair1-packfix1",
-        "start": "2026-11-01T15:29:22.947289+00:00"
-      },
-      {
-        "authorization_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/proofs/USER_APPROVAL266.json",
-        "end": "2026-11-02T11:43:00.395+00:00",
-        "evidence_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/BUDGET_REQUEST_20261102.json",
-        "source_run_id": "2026-11-01_dsainet_ds07_r1_tech1-repair1-packfix1",
-        "start": "2026-11-02T11:42:31.033614+00:00"
-      },
-      {
-        "authorization_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/readerfix1/EXPLICIT_TARGET_REPLY.json",
-        "end": "2026-11-02T13:44:23.354000+00:00",
-        "evidence_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/readerfix1/TRANSPORT_REQUEST.json",
-        "source_run_id": "2026-11-02_dsainet_ds07_r1_science1-full-w1",
-        "start": "2026-11-02T13:22:18.396823+00:00"
-      },
-      {
-        "authorization_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/telemetryfix1/EXPLICIT_TARGET_REPLY.json",
-        "end": "2026-11-02T16:43:58.805000+00:00",
-        "evidence_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/telemetryfix1/BUDGET_TRANSPORT_REQUEST.json",
-        "source_run_id": "2026-11-02_dsainet_ds07_r1_science1-readerfix1-full-w1",
-        "start": "2026-11-02T16:43:41.167980+00:00"
-      },
-      {
-        "authorization_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/summaryfix1/EXPLICIT_TARGET_REPLY.json",
-        "end": "2026-11-03T14:08:00.226000+00:00",
-        "evidence_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/summaryfix1/BUDGET_TRANSPORT_REQUEST.json",
-        "source_run_id": "2026-11-03_dsainet_ds07_r1_science1-telemetryfix1-full-w1",
-        "start": "2026-11-03T14:00:45.114436+00:00"
-      },
-      {
-        "authorization_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/devicefix1/EXPLICIT_TARGET_REPLY.json",
-        "end": "2026-11-04T06:23:37.244000+00:00",
-        "evidence_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/devicefix1/BUDGET_TRANSPORT_REQUEST.json",
-        "source_run_id": "2026-11-03_dsainet_ds07_r1_science1-summaryfix1-full-w1",
-        "start": "2026-11-04T06:08:53.613403+00:00"
-      }
-    ]
+    "started_at": "2026-11-24T14:25:30.389063+00:00"
   },
   "capacity_calibration_recovery": {
     "added_budget_seconds": 0,
@@ -7918,6 +8129,1060 @@
           }
         ]
       }
+    },
+    {
+      "decision": {
+        "decision": "NO_SIGNAL",
+        "reason": "overall paired delta is below the frozen minimum meaningful effect",
+        "round_id": "dsainet-window-spatial-r1-dispatch1"
+      },
+      "decision_record": "ai4s/programs/dsainet/research/dsainet-window-spatial-r1-dispatch1_decision.yaml",
+      "evidence_id": "AI4S-DSAINET-dsainet-window-spatial-r1-dispatch1",
+      "round_id": "dsainet-window-spatial-r1-dispatch1",
+      "run": {
+        "bundle_id": "2026-11-22_dsainet_window_spatial_r1_bundle-dispatch1",
+        "dispatch_status": "REMOTE_ACCEPTED",
+        "estimated_training_hours": 1.5,
+        "execution_mode": "user_managed",
+        "executor_id": "lab10",
+        "planned_units": 25,
+        "recorded_at": "2026-11-21T17:57:55.718935+00:00",
+        "round_id": "dsainet-window-spatial-r1-dispatch1",
+        "run_prefix": "2026-11-22_dsainet_window_spatial_r1-dispatch1",
+        "transaction_operations": [
+          {
+            "operation": "upload",
+            "recorded_at": "2026-11-21T17:58:32.755119+00:00",
+            "result": {
+              "action": "UPLOADED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-22_dsainet_window_spatial_r1-dispatch1-full-w1"
+            }
+          },
+          {
+            "operation": "launch",
+            "recorded_at": "2026-11-21T17:58:36.062856+00:00",
+            "result": {
+              "action": "SUBMISSION_SENT_NOT_VERIFIED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-22_dsainet_window_spatial_r1-dispatch1-full-w1"
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-21T17:58:50.049602+00:00",
+            "result": {
+              "action": "WAIT_FOR_RESOURCES",
+              "node_id": "smoke",
+              "run_id": "2026-11-22_dsainet_window_spatial_r1-dispatch1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "c73d6487de1a1a480b649bb6b3b4b0d9b2cf266eeeb1ee310336884992139d86",
+                "execution_seconds": 2.0209758281707764,
+                "queue_seconds": 11.022992372512817,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-22_dsainet_window_spatial_r1-dispatch1-full-w1",
+                "transaction_id": "2026-11-22_dsainet_window_spatial_r1-dispatch1-tx",
+                "waiting_for_resources": true,
+                "wall_seconds": 13.043968200683594
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-21T18:00:28.565232+00:00",
+            "result": {
+              "action": "WAIT_FOR_RESOURCES",
+              "node_id": "smoke",
+              "run_id": "2026-11-22_dsainet_window_spatial_r1-dispatch1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "c73d6487de1a1a480b649bb6b3b4b0d9b2cf266eeeb1ee310336884992139d86",
+                "execution_seconds": 2.2597105503082275,
+                "queue_seconds": 109.2985532283783,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-22_dsainet_window_spatial_r1-dispatch1-full-w1",
+                "transaction_id": "2026-11-22_dsainet_window_spatial_r1-dispatch1-tx",
+                "waiting_for_resources": true,
+                "wall_seconds": 111.55826377868652
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-22T02:24:23.539474+00:00",
+            "result": {
+              "action": "FETCH_VERIFY_INTAKE",
+              "run_id": "2026-11-22_dsainet_window_spatial_r1-dispatch1-full-w1",
+              "scientific_stop_boundary": "NEXT_SCIENTIFIC_DECISION",
+              "timing": {
+                "contract_sha256": "c73d6487de1a1a480b649bb6b3b4b0d9b2cf266eeeb1ee310336884992139d86",
+                "execution_seconds": 522.7418484687805,
+                "queue_seconds": 5994.925134897232,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-22_dsainet_window_spatial_r1-dispatch1-full-w1",
+                "transaction_id": "2026-11-22_dsainet_window_spatial_r1-dispatch1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 6517.666983366013
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "decision": {
+        "decision": "PROMISING_INCOMPLETE",
+        "disposition": "BASELINE_INADEQUATE",
+        "round_id": "dsainet-b0-convtime-decoupling-r1"
+      },
+      "decision_record": "ai4s/programs/dsainet/research/dsainet-b0-convtime-decoupling-r1_decision.yaml",
+      "evidence_id": "AI4S-DSAINET-dsainet-b0-convtime-decoupling-r1",
+      "round_id": "dsainet-b0-convtime-decoupling-r1",
+      "run": {
+        "bundle_id": "2026-11-22_dsainet_b0_convtime_decoupling_r1_bundle",
+        "dispatch_status": "REMOTE_ACCEPTED",
+        "estimated_training_hours": 1.5,
+        "execution_mode": "user_managed",
+        "executor_id": "lab10",
+        "planned_units": 19,
+        "recorded_at": "2026-11-22T03:38:10.802530+00:00",
+        "round_id": "dsainet-b0-convtime-decoupling-r1",
+        "run_prefix": "2026-11-22_dsainet_b0_convtime_decoupling_r1",
+        "transaction_operations": [
+          {
+            "operation": "upload",
+            "recorded_at": "2026-11-22T03:38:50.515651+00:00",
+            "result": {
+              "action": "UPLOADED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-22_dsainet_b0_convtime_decoupling_r1-full-w1"
+            }
+          },
+          {
+            "operation": "launch",
+            "recorded_at": "2026-11-22T03:38:54.052681+00:00",
+            "result": {
+              "action": "SUBMISSION_SENT_NOT_VERIFIED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-22_dsainet_b0_convtime_decoupling_r1-full-w1"
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-22T03:39:10.408463+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "screen",
+              "run_id": "2026-11-22_dsainet_b0_convtime_decoupling_r1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "ab0b6240fdc8da9b4ec310e2913bd9a089f24be481e5dd70697827641c5524e9",
+                "execution_seconds": 13.683139562606812,
+                "queue_seconds": 1.914212942123413,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-22_dsainet_b0_convtime_decoupling_r1-full-w1",
+                "transaction_id": "2026-11-22_dsainet_b0_convtime_decoupling_r1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 15.597352504730225
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-22T08:41:27.725673+00:00",
+            "result": {
+              "action": "FETCH_VERIFY_INTAKE",
+              "run_id": "2026-11-22_dsainet_b0_convtime_decoupling_r1-full-w1",
+              "scientific_stop_boundary": "NEXT_SCIENTIFIC_DECISION",
+              "timing": {
+                "contract_sha256": "ab0b6240fdc8da9b4ec310e2913bd9a089f24be481e5dd70697827641c5524e9",
+                "execution_seconds": 707.0253300666809,
+                "queue_seconds": 2.821622133255005,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-22_dsainet_b0_convtime_decoupling_r1-full-w1",
+                "transaction_id": "2026-11-22_dsainet_b0_convtime_decoupling_r1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 709.8469521999359
+              }
+            }
+          },
+          {
+            "operation": "fetch",
+            "recorded_at": "2026-11-22T08:42:17.512156+00:00",
+            "result": {
+              "analysis_receipt_sha256": "b79407a37e0b4c1af719676f4b1cd638ef83794f7c37fd04404540bfc7e225db",
+              "artifact_manifest_sha256": "318a09191bd94d98cd9777e3eddeda1081267faf36f88c4627e148e51fab5be2",
+              "contract_sha256": "ab0b6240fdc8da9b4ec310e2913bd9a089f24be481e5dd70697827641c5524e9",
+              "full_payload_local": false,
+              "intake_scope": "analysis_v1",
+              "run_id": "2026-11-22_dsainet_b0_convtime_decoupling_r1-full-w1",
+              "transaction_id": "2026-11-22_dsainet_b0_convtime_decoupling_r1-tx",
+              "transfer_bytes": 304128,
+              "verified": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "decision": {
+        "decision": "NO_SIGNAL",
+        "disposition": "STOP_UNIFORM_GRID_UTILITY_RISK",
+        "round_id": "dsainet-b0-attention-token-grid-r1-py39fix1"
+      },
+      "decision_record": "ai4s/programs/dsainet/research/dsainet-b0-attention-token-grid-r1-py39fix1_decision.yaml",
+      "evidence_id": "AI4S-DSAINET-dsainet-b0-attention-token-grid-r1-py39fix1",
+      "round_id": "dsainet-b0-attention-token-grid-r1-py39fix1",
+      "run": {
+        "bundle_id": "2026-11-22_dsainet_b0_attention_token_grid_r1_py39fix1_bundle",
+        "dispatch_status": "REMOTE_ACCEPTED",
+        "estimated_training_hours": 1.5,
+        "execution_mode": "user_managed",
+        "executor_id": "lab10",
+        "planned_units": 25,
+        "recorded_at": "2026-11-22T14:56:41.625852+00:00",
+        "replacement_reason_class": "USER_AUTHORIZED_REDEPLOYMENT",
+        "replaces_interrupted_run": "2026-11-22_dsainet_b0_attention_token_grid_r1-full-w1",
+        "round_id": "dsainet-b0-attention-token-grid-r1-py39fix1",
+        "run_prefix": "2026-11-22_dsainet_b0_attention_token_grid_r1_py39fix1",
+        "transaction_operations": [
+          {
+            "operation": "upload",
+            "recorded_at": "2026-11-22T14:57:24.189070+00:00",
+            "result": {
+              "action": "UPLOADED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-22_dsainet_b0_attention_token_grid_r1_py39fix1-full-w1"
+            }
+          },
+          {
+            "operation": "launch",
+            "recorded_at": "2026-11-22T14:57:28.953692+00:00",
+            "result": {
+              "action": "SUBMISSION_SENT_NOT_VERIFIED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-22_dsainet_b0_attention_token_grid_r1_py39fix1-full-w1"
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-22T14:57:44.179204+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "smoke",
+              "run_id": "2026-11-22_dsainet_b0_attention_token_grid_r1_py39fix1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "12b63a825011fbc1762c5a029554b6ef5d3ffb4a77396f96365c5d5fbfde1988",
+                "execution_seconds": 12.524748802185059,
+                "queue_seconds": 1.636237382888794,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-22_dsainet_b0_attention_token_grid_r1_py39fix1-full-w1",
+                "transaction_id": "2026-11-22_dsainet_b0_attention_token_grid_r1_py39fix1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 14.160986185073853
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-22T14:58:16.378812+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "screen",
+              "run_id": "2026-11-22_dsainet_b0_attention_token_grid_r1_py39fix1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "12b63a825011fbc1762c5a029554b6ef5d3ffb4a77396f96365c5d5fbfde1988",
+                "execution_seconds": 43.07757639884949,
+                "queue_seconds": 3.2690937519073486,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-22_dsainet_b0_attention_token_grid_r1_py39fix1-full-w1",
+                "transaction_id": "2026-11-22_dsainet_b0_attention_token_grid_r1_py39fix1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 46.346670150756836
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-22T15:38:16.642315+00:00",
+            "result": {
+              "action": "FETCH_VERIFY_INTAKE",
+              "run_id": "2026-11-22_dsainet_b0_attention_token_grid_r1_py39fix1-full-w1",
+              "scientific_stop_boundary": "NEXT_SCIENTIFIC_DECISION",
+              "timing": {
+                "contract_sha256": "12b63a825011fbc1762c5a029554b6ef5d3ffb4a77396f96365c5d5fbfde1988",
+                "execution_seconds": 1462.9576227664948,
+                "queue_seconds": 4.869950771331787,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-22_dsainet_b0_attention_token_grid_r1_py39fix1-full-w1",
+                "transaction_id": "2026-11-22_dsainet_b0_attention_token_grid_r1_py39fix1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 1467.8275735378265
+              }
+            }
+          },
+          {
+            "operation": "fetch",
+            "recorded_at": "2026-11-22T15:43:36.143745+00:00",
+            "result": {
+              "analysis_receipt_sha256": "70792e9896c18fb97ca3cfdf97b6f6d7921d564ce61caa16d83255fe4c41731a",
+              "artifact_manifest_sha256": "dbdbcbf51506c6ff731e2691f7684f8caf9faacbbae3b29bb9a104e1b5b8a924",
+              "contract_sha256": "12b63a825011fbc1762c5a029554b6ef5d3ffb4a77396f96365c5d5fbfde1988",
+              "full_payload_local": false,
+              "intake_scope": "analysis_v1",
+              "run_id": "2026-11-22_dsainet_b0_attention_token_grid_r1_py39fix1-full-w1",
+              "transaction_id": "2026-11-22_dsainet_b0_attention_token_grid_r1_py39fix1-tx",
+              "transfer_bytes": 404263,
+              "verified": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "decision": {
+        "decision": "NO_SIGNAL",
+        "disposition": "STOP_SPATIAL_FIRST_UTILITY_RISK",
+        "round_id": "dsainet-b0-spatial-first-r1"
+      },
+      "decision_record": "ai4s/programs/dsainet/research/dsainet-b0-spatial-first-r1_decision.yaml",
+      "evidence_id": "AI4S-DSAINET-dsainet-b0-spatial-first-r1",
+      "round_id": "dsainet-b0-spatial-first-r1",
+      "run": {
+        "bundle_id": "2026-11-23_dsainet_b0_spatial_first_r1_bundle",
+        "dispatch_status": "REMOTE_ACCEPTED",
+        "estimated_training_hours": 1.5,
+        "execution_mode": "user_managed",
+        "executor_id": "lab10",
+        "planned_units": 19,
+        "recorded_at": "2026-11-22T16:20:26.791740+00:00",
+        "round_id": "dsainet-b0-spatial-first-r1",
+        "run_prefix": "2026-11-23_dsainet_b0_spatial_first_r1",
+        "transaction_operations": [
+          {
+            "operation": "upload",
+            "recorded_at": "2026-11-22T16:21:05.713457+00:00",
+            "result": {
+              "action": "UPLOADED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-23_dsainet_b0_spatial_first_r1-full-w1"
+            }
+          },
+          {
+            "operation": "launch",
+            "recorded_at": "2026-11-22T16:21:10.441420+00:00",
+            "result": {
+              "action": "SUBMISSION_SENT_NOT_VERIFIED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-23_dsainet_b0_spatial_first_r1-full-w1"
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-22T16:21:25.530926+00:00",
+            "result": {
+              "action": "WAIT_FOR_RESOURCES",
+              "node_id": "smoke",
+              "run_id": "2026-11-23_dsainet_b0_spatial_first_r1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "bbbbeb684477a8f26cd3afc0c3acda4ae312a4db4fda8d2935e16bebf280c440",
+                "execution_seconds": 1.89591646194458,
+                "queue_seconds": 12.366474628448486,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-23_dsainet_b0_spatial_first_r1-full-w1",
+                "transaction_id": "2026-11-23_dsainet_b0_spatial_first_r1-tx",
+                "waiting_for_resources": true,
+                "wall_seconds": 14.262391090393066
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-22T16:55:57.934814+00:00",
+            "result": {
+              "action": "WAIT_FOR_RESOURCES",
+              "node_id": "smoke",
+              "run_id": "2026-11-23_dsainet_b0_spatial_first_r1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "bbbbeb684477a8f26cd3afc0c3acda4ae312a4db4fda8d2935e16bebf280c440",
+                "execution_seconds": 6.813194751739502,
+                "queue_seconds": 2079.566842317581,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-23_dsainet_b0_spatial_first_r1-full-w1",
+                "transaction_id": "2026-11-23_dsainet_b0_spatial_first_r1-tx",
+                "waiting_for_resources": true,
+                "wall_seconds": 2086.3800370693207
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-23T01:46:05.461929+00:00",
+            "result": {
+              "action": "FETCH_VERIFY_INTAKE",
+              "run_id": "2026-11-23_dsainet_b0_spatial_first_r1-full-w1",
+              "scientific_stop_boundary": "NEXT_SCIENTIFIC_DECISION",
+              "timing": {
+                "contract_sha256": "bbbbeb684477a8f26cd3afc0c3acda4ae312a4db4fda8d2935e16bebf280c440",
+                "execution_seconds": 1280.6854801177979,
+                "queue_seconds": 14444.811123371124,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-23_dsainet_b0_spatial_first_r1-full-w1",
+                "transaction_id": "2026-11-23_dsainet_b0_spatial_first_r1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 15725.496603488922
+              }
+            }
+          },
+          {
+            "operation": "fetch",
+            "recorded_at": "2026-11-23T01:46:52.353568+00:00",
+            "result": {
+              "analysis_receipt_sha256": "05b1915867cc504e96977a036347555887a10a9b2056fb3f0824a82d0ad30bd0",
+              "artifact_manifest_sha256": "226064469e6772ca2ac3ec747a582108f977da26307b79db0094298c50d17fe7",
+              "contract_sha256": "bbbbeb684477a8f26cd3afc0c3acda4ae312a4db4fda8d2935e16bebf280c440",
+              "full_payload_local": false,
+              "intake_scope": "analysis_v1",
+              "run_id": "2026-11-23_dsainet_b0_spatial_first_r1-full-w1",
+              "transaction_id": "2026-11-23_dsainet_b0_spatial_first_r1-tx",
+              "transfer_bytes": 310668,
+              "verified": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "decision": {
+        "decision": "NO_SIGNAL",
+        "disposition": "STOP_POINTWISE_SHARING_UTILITY_RISK",
+        "round_id": "dsainet-b0-convtime-pointwise-tying-r1"
+      },
+      "decision_record": "ai4s/programs/dsainet/research/dsainet-b0-convtime-pointwise-tying-r1_decision.yaml",
+      "evidence_id": "AI4S-DSAINET-dsainet-b0-convtime-pointwise-tying-r1",
+      "round_id": "dsainet-b0-convtime-pointwise-tying-r1",
+      "run": {
+        "bundle_id": "2026-11-23_dsainet_b0_convtime_pointwise_tying_r1_gpucheck1_bundle",
+        "dispatch_status": "REMOTE_ACCEPTED",
+        "estimated_training_hours": 1.5,
+        "execution_mode": "user_managed",
+        "executor_id": "lab10",
+        "planned_units": 19,
+        "recorded_at": "2026-11-23T02:28:42.497814+00:00",
+        "round_id": "dsainet-b0-convtime-pointwise-tying-r1",
+        "run_prefix": "2026-11-23_dsainet_b0_convtime_pointwise_tying_r1",
+        "transaction_operations": [
+          {
+            "operation": "upload",
+            "recorded_at": "2026-11-23T02:28:58.761418+00:00",
+            "result": {
+              "action": "UPLOADED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-23_dsainet_b0_convtime_pointwise_tying_r1-full-w1"
+            }
+          },
+          {
+            "operation": "launch",
+            "recorded_at": "2026-11-23T02:29:03.139699+00:00",
+            "result": {
+              "action": "SUBMISSION_SENT_NOT_VERIFIED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-23_dsainet_b0_convtime_pointwise_tying_r1-full-w1"
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-23T02:29:21.231877+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "screen",
+              "run_id": "2026-11-23_dsainet_b0_convtime_pointwise_tying_r1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "5047d967af17b3ca44800e1accb5d77f16bb560b804e769a05c3a7550a3b30c6",
+                "execution_seconds": 13.681154251098633,
+                "queue_seconds": 3.6527915000915527,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-23_dsainet_b0_convtime_pointwise_tying_r1-full-w1",
+                "transaction_id": "2026-11-23_dsainet_b0_convtime_pointwise_tying_r1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 17.333945751190186
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-23T04:41:53.023610+00:00",
+            "result": {
+              "action": "FETCH_VERIFY_INTAKE",
+              "run_id": "2026-11-23_dsainet_b0_convtime_pointwise_tying_r1-full-w1",
+              "scientific_stop_boundary": "NEXT_SCIENTIFIC_DECISION",
+              "timing": {
+                "contract_sha256": "5047d967af17b3ca44800e1accb5d77f16bb560b804e769a05c3a7550a3b30c6",
+                "execution_seconds": 1446.8707582950592,
+                "queue_seconds": 7.3119120597839355,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-23_dsainet_b0_convtime_pointwise_tying_r1-full-w1",
+                "transaction_id": "2026-11-23_dsainet_b0_convtime_pointwise_tying_r1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 1454.1826703548431
+              }
+            }
+          },
+          {
+            "operation": "fetch",
+            "recorded_at": "2026-11-23T05:05:37.025612+00:00",
+            "result": {
+              "analysis_receipt_sha256": "fa32040419c55dadcd395fb771d919c9ecf268967a7d376351f36c2d406e7858",
+              "artifact_manifest_sha256": "8f09bf9811e8541218011d8fd9486a90bf887b0b429933b609f79a669a2e997c",
+              "contract_sha256": "5047d967af17b3ca44800e1accb5d77f16bb560b804e769a05c3a7550a3b30c6",
+              "full_payload_local": false,
+              "intake_scope": "analysis_v1",
+              "run_id": "2026-11-23_dsainet_b0_convtime_pointwise_tying_r1-full-w1",
+              "transaction_id": "2026-11-23_dsainet_b0_convtime_pointwise_tying_r1-tx",
+              "transfer_bytes": 320706,
+              "verified": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "decision": {
+        "decision": "NO_SIGNAL",
+        "disposition": "STOP_FIXED_SPATIAL_RADIUS",
+        "round_id": "dsainet-b0-spatial-filter-radius-r1-repair1-gpu1"
+      },
+      "decision_record": "ai4s/programs/dsainet/research/dsainet-b0-spatial-filter-radius-r1-repair1-gpu1_decision.yaml",
+      "evidence_id": "AI4S-DSAINET-dsainet-b0-spatial-filter-radius-r1-repair1-gpu1",
+      "round_id": "dsainet-b0-spatial-filter-radius-r1-repair1-gpu1",
+      "run": {
+        "bundle_id": "2026-11-23_dsainet_b0_spatial_filter_radius_r1_repair1_gpu1_bundle",
+        "dispatch_status": "REMOTE_ACCEPTED",
+        "estimated_training_hours": 0.2,
+        "execution_mode": "user_managed",
+        "executor_id": "lab10",
+        "planned_units": 2,
+        "recorded_at": "2026-11-23T12:36:38.694321+00:00",
+        "round_id": "dsainet-b0-spatial-filter-radius-r1-repair1-gpu1",
+        "run_prefix": "2026-11-23_dsainet_b0_spatial_filter_radius_r1_repair1_gpu1",
+        "transaction_operations": [
+          {
+            "operation": "upload",
+            "recorded_at": "2026-11-23T12:36:57.217848+00:00",
+            "result": {
+              "action": "UPLOADED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-23_dsainet_b0_spatial_filter_radius_r1_repair1_gpu1-full-w1"
+            }
+          },
+          {
+            "operation": "launch",
+            "recorded_at": "2026-11-23T12:37:00.892339+00:00",
+            "result": {
+              "action": "SUBMISSION_SENT_NOT_VERIFIED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-23_dsainet_b0_spatial_filter_radius_r1_repair1_gpu1-full-w1"
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-23T12:37:30.219241+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "screen",
+              "run_id": "2026-11-23_dsainet_b0_spatial_filter_radius_r1_repair1_gpu1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "64640ec460385163defd6d5549025e63ee5fe4875002df7cecb6b1edd8d9edb7",
+                "execution_seconds": 24.993239641189575,
+                "queue_seconds": 3.5369114875793457,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-23_dsainet_b0_spatial_filter_radius_r1_repair1_gpu1-full-w1",
+                "transaction_id": "2026-11-23_dsainet_b0_spatial_filter_radius_r1_repair1_gpu1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 28.53015112876892
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-23T12:40:47.148999+00:00",
+            "result": {
+              "action": "FETCH_VERIFY_INTAKE",
+              "run_id": "2026-11-23_dsainet_b0_spatial_filter_radius_r1_repair1_gpu1-full-w1",
+              "scientific_stop_boundary": "NEXT_SCIENTIFIC_DECISION",
+              "timing": {
+                "contract_sha256": "64640ec460385163defd6d5549025e63ee5fe4875002df7cecb6b1edd8d9edb7",
+                "execution_seconds": 189.94289135932922,
+                "queue_seconds": 3.5369114875793457,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-23_dsainet_b0_spatial_filter_radius_r1_repair1_gpu1-full-w1",
+                "transaction_id": "2026-11-23_dsainet_b0_spatial_filter_radius_r1_repair1_gpu1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 193.47980284690857
+              }
+            }
+          },
+          {
+            "operation": "fetch",
+            "recorded_at": "2026-11-23T12:41:31.154230+00:00",
+            "result": {
+              "analysis_receipt_sha256": "873130bf291b629ab0648948ef490d124a86d4498fdcc350c313d8ae4e707b00",
+              "artifact_manifest_sha256": "0b701b105fef1b63dff5021fe6d2cdb6532c432356f3b051ab2dc60b73982acf",
+              "contract_sha256": "64640ec460385163defd6d5549025e63ee5fe4875002df7cecb6b1edd8d9edb7",
+              "full_payload_local": false,
+              "intake_scope": "analysis_v1",
+              "run_id": "2026-11-23_dsainet_b0_spatial_filter_radius_r1_repair1_gpu1-full-w1",
+              "transaction_id": "2026-11-23_dsainet_b0_spatial_filter_radius_r1_repair1_gpu1-tx",
+              "transfer_bytes": 249101,
+              "verified": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "decision": {
+        "decision": "NO_SIGNAL",
+        "disposition": "STOP_CONVTIME_DC_SPLIT",
+        "round_id": "dsainet-b0-convtime-dc-split-r1"
+      },
+      "decision_record": "ai4s/programs/dsainet/research/dsainet-b0-convtime-dc-split-r1_decision.yaml",
+      "evidence_id": "AI4S-DSAINET-dsainet-b0-convtime-dc-split-r1",
+      "round_id": "dsainet-b0-convtime-dc-split-r1",
+      "run": {
+        "bundle_id": "2026-11-23_dsainet_b0_convtime_dc_split_r1_analyzefix1_bundle",
+        "dispatch_status": "REMOTE_ACCEPTED",
+        "estimated_training_hours": 1.5,
+        "execution_mode": "user_managed",
+        "executor_id": "lab10",
+        "planned_units": 19,
+        "recorded_at": "2026-11-23T13:07:07.215312+00:00",
+        "round_id": "dsainet-b0-convtime-dc-split-r1",
+        "run_prefix": "2026-11-23_dsainet_b0_convtime_dc_split_r1",
+        "transaction_operations": [
+          {
+            "operation": "upload",
+            "recorded_at": "2026-11-23T13:07:25.501698+00:00",
+            "result": {
+              "action": "UPLOADED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-23_dsainet_b0_convtime_dc_split_r1-full-w1"
+            }
+          },
+          {
+            "operation": "launch",
+            "recorded_at": "2026-11-23T13:07:28.929701+00:00",
+            "result": {
+              "action": "SUBMISSION_SENT_NOT_VERIFIED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-23_dsainet_b0_convtime_dc_split_r1-full-w1"
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-23T13:07:48.301517+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "screen",
+              "run_id": "2026-11-23_dsainet_b0_convtime_dc_split_r1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "04314e4ed9ae7a985c7ad0b4a773c980ccd2100cc67f978eb223af88170c3666",
+                "execution_seconds": 14.949247360229492,
+                "queue_seconds": 3.5171091556549072,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-23_dsainet_b0_convtime_dc_split_r1-full-w1",
+                "transaction_id": "2026-11-23_dsainet_b0_convtime_dc_split_r1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 18.4663565158844
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-23T14:33:51.615604+00:00",
+            "result": {
+              "action": "FETCH_VERIFY_INTAKE",
+              "run_id": "2026-11-23_dsainet_b0_convtime_dc_split_r1-full-w1",
+              "scientific_stop_boundary": "NEXT_SCIENTIFIC_DECISION",
+              "timing": {
+                "contract_sha256": "04314e4ed9ae7a985c7ad0b4a773c980ccd2100cc67f978eb223af88170c3666",
+                "execution_seconds": 1363.4385616779327,
+                "queue_seconds": 5.2341628074646,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-23_dsainet_b0_convtime_dc_split_r1-full-w1",
+                "transaction_id": "2026-11-23_dsainet_b0_convtime_dc_split_r1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 1368.6727244853973
+              }
+            }
+          },
+          {
+            "operation": "fetch",
+            "recorded_at": "2026-11-23T14:35:33.445084+00:00",
+            "result": {
+              "analysis_receipt_sha256": "7d2352337192a27108d04bd4c5097112f8dcfeffda1d2e672ac51ecc81aff80e",
+              "artifact_manifest_sha256": "d8dcfd1fb0305c782758fcda1f97ee95e6d88d787932dee6284fe184f0064320",
+              "contract_sha256": "04314e4ed9ae7a985c7ad0b4a773c980ccd2100cc67f978eb223af88170c3666",
+              "full_payload_local": false,
+              "intake_scope": "analysis_v1",
+              "run_id": "2026-11-23_dsainet_b0_convtime_dc_split_r1-full-w1",
+              "transaction_id": "2026-11-23_dsainet_b0_convtime_dc_split_r1-tx",
+              "transfer_bytes": 320205,
+              "verified": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "decision": {
+        "decision": "NO_SIGNAL",
+        "disposition": "STOP_SPATIAL_GRAPH_BASIS",
+        "round_id": "dsainet-b0-spatial-graph-basis-r1"
+      },
+      "decision_record": "ai4s/programs/dsainet/research/dsainet-b0-spatial-graph-basis-r1_decision.yaml",
+      "evidence_id": "AI4S-DSAINET-dsainet-b0-spatial-graph-basis-r1",
+      "round_id": "dsainet-b0-spatial-graph-basis-r1",
+      "run": {
+        "bundle_id": "2026-11-24_dsainet_b0_spatial_graph_basis_r1_bundle",
+        "dispatch_status": "REMOTE_ACCEPTED",
+        "estimated_training_hours": 1.5,
+        "execution_mode": "user_managed",
+        "executor_id": "lab10",
+        "planned_units": 19,
+        "recorded_at": "2026-11-23T16:16:00.680904+00:00",
+        "round_id": "dsainet-b0-spatial-graph-basis-r1",
+        "run_prefix": "2026-11-24_dsainet_b0_spatial_graph_basis_r1",
+        "transaction_operations": [
+          {
+            "operation": "upload",
+            "recorded_at": "2026-11-23T16:16:34.025672+00:00",
+            "result": {
+              "action": "UPLOADED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-24_dsainet_b0_spatial_graph_basis_r1-full-w1"
+            }
+          },
+          {
+            "operation": "launch",
+            "recorded_at": "2026-11-23T16:16:37.587285+00:00",
+            "result": {
+              "action": "SUBMISSION_SENT_NOT_VERIFIED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-24_dsainet_b0_spatial_graph_basis_r1-full-w1"
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-23T16:17:22.061984+00:00",
+            "result": {
+              "action": "WAIT_FOR_RESOURCES",
+              "node_id": "smoke",
+              "run_id": "2026-11-24_dsainet_b0_spatial_graph_basis_r1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "18e785e969bb51545bcf7ff590cfe09fc21824a979e34dbde8449d968296fd5a",
+                "execution_seconds": 1.939897060394287,
+                "queue_seconds": 41.6412410736084,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-24_dsainet_b0_spatial_graph_basis_r1-full-w1",
+                "transaction_id": "2026-11-24_dsainet_b0_spatial_graph_basis_r1-tx",
+                "waiting_for_resources": true,
+                "wall_seconds": 43.581138134002686
+              }
+            }
+          },
+          {
+            "operation": "fetch",
+            "recorded_at": "2026-11-24T01:12:05.605819+00:00",
+            "result": {
+              "analysis_receipt_sha256": "f73b655427f8a57d338e2a412c78dc27f52bbed8964971aebfb75bca2e214c2c",
+              "artifact_manifest_sha256": "3a38b4e6ff67913b005b7cac153b1e6d91690b4f7bc341ec502751f368a39db0",
+              "contract_sha256": "18e785e969bb51545bcf7ff590cfe09fc21824a979e34dbde8449d968296fd5a",
+              "full_payload_local": false,
+              "intake_scope": "analysis_v1",
+              "run_id": "2026-11-24_dsainet_b0_spatial_graph_basis_r1-full-w1",
+              "transaction_id": "2026-11-24_dsainet_b0_spatial_graph_basis_r1-tx",
+              "transfer_bytes": 319605,
+              "verified": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "decision": {
+        "decision": "NO_SIGNAL",
+        "disposition": "STOP_INTER_FFN_CENTER",
+        "round_id": "dsainet-b0-inter-ffn-center-r1"
+      },
+      "decision_record": "ai4s/programs/dsainet/research/dsainet-b0-inter-ffn-center-r1_decision.yaml",
+      "evidence_id": "AI4S-DSAINET-dsainet-b0-inter-ffn-center-r1",
+      "round_id": "dsainet-b0-inter-ffn-center-r1",
+      "run": {
+        "bundle_id": "2026-11-24_dsainet_b0_inter_ffn_center_r1_bundle",
+        "dispatch_status": "REMOTE_ACCEPTED",
+        "estimated_training_hours": 1.5,
+        "execution_mode": "user_managed",
+        "executor_id": "lab10",
+        "planned_units": 19,
+        "recorded_at": "2026-11-24T01:30:46.093364+00:00",
+        "round_id": "dsainet-b0-inter-ffn-center-r1",
+        "run_prefix": "2026-11-24_dsainet_b0_inter_ffn_center_r1",
+        "transaction_operations": [
+          {
+            "operation": "upload",
+            "recorded_at": "2026-11-24T01:31:13.376026+00:00",
+            "result": {
+              "action": "UPLOADED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-24_dsainet_b0_inter_ffn_center_r1-full-w1"
+            }
+          },
+          {
+            "operation": "launch",
+            "recorded_at": "2026-11-24T01:31:17.108078+00:00",
+            "result": {
+              "action": "SUBMISSION_SENT_NOT_VERIFIED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-24_dsainet_b0_inter_ffn_center_r1-full-w1"
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-24T01:31:49.219294+00:00",
+            "result": {
+              "action": "WAIT_FOR_RESOURCES",
+              "node_id": "smoke",
+              "run_id": "2026-11-24_dsainet_b0_inter_ffn_center_r1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "b9e4bbb6c51ba171ba94d56065895854acd601375b088120bb9c9bcf5df5d6a6",
+                "execution_seconds": 3.5913188457489014,
+                "queue_seconds": 26.794955730438232,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-24_dsainet_b0_inter_ffn_center_r1-full-w1",
+                "transaction_id": "2026-11-24_dsainet_b0_inter_ffn_center_r1-tx",
+                "waiting_for_resources": true,
+                "wall_seconds": 30.386274576187134
+              }
+            }
+          },
+          {
+            "operation": "fetch",
+            "recorded_at": "2026-11-24T06:17:37.353976+00:00",
+            "result": {
+              "analysis_receipt_sha256": "f56036497ccdaa76970b437291022d69d6c508f74c8aa4a71319a1ef3c96a77a",
+              "artifact_manifest_sha256": "7078dd962d983f81238cc28f0461da1fb2182451525a0adbdf9b7bdef1e4fdfd",
+              "contract_sha256": "b9e4bbb6c51ba171ba94d56065895854acd601375b088120bb9c9bcf5df5d6a6",
+              "full_payload_local": false,
+              "intake_scope": "analysis_v1",
+              "run_id": "2026-11-24_dsainet_b0_inter_ffn_center_r1-full-w1",
+              "transaction_id": "2026-11-24_dsainet_b0_inter_ffn_center_r1-tx",
+              "transfer_bytes": 321498,
+              "verified": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "decision": {
+        "decision": "NO_SIGNAL",
+        "disposition": "STOP_INTRA_FFN_AFFINE_QUOTIENT",
+        "round_id": "dsainet-b0-intra-ffn-affine-quotient-r1"
+      },
+      "decision_record": "ai4s/programs/dsainet/research/dsainet-b0-intra-ffn-affine-quotient-r1_decision.yaml",
+      "evidence_id": "AI4S-DSAINET-dsainet-b0-intra-ffn-affine-quotient-r1",
+      "round_id": "dsainet-b0-intra-ffn-affine-quotient-r1",
+      "run": {
+        "bundle_id": "2026-11-24_dsainet_b0_intra_ffn_affine_quotient_r1_bundle",
+        "dispatch_status": "REMOTE_ACCEPTED",
+        "estimated_training_hours": 1.5,
+        "execution_mode": "user_managed",
+        "executor_id": "lab10",
+        "planned_units": 19,
+        "recorded_at": "2026-11-24T07:02:12.946760+00:00",
+        "round_id": "dsainet-b0-intra-ffn-affine-quotient-r1",
+        "run_prefix": "2026-11-24_dsainet_b0_intra_ffn_affine_quotient_r1",
+        "transaction_operations": [
+          {
+            "operation": "upload",
+            "recorded_at": "2026-11-24T07:02:41.625873+00:00",
+            "result": {
+              "action": "UPLOADED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-24_dsainet_b0_intra_ffn_affine_quotient_r1-full-w1"
+            }
+          },
+          {
+            "operation": "launch",
+            "recorded_at": "2026-11-24T07:02:45.105685+00:00",
+            "result": {
+              "action": "SUBMISSION_SENT_NOT_VERIFIED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-24_dsainet_b0_intra_ffn_affine_quotient_r1-full-w1"
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-24T07:03:05.606305+00:00",
+            "result": {
+              "action": "WAIT_FOR_RESOURCES",
+              "node_id": "smoke",
+              "run_id": "2026-11-24_dsainet_b0_intra_ffn_affine_quotient_r1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "246b1d7f649255997325a9a8daff3b4bdbef75235f6ba46073487a804c064c48",
+                "execution_seconds": 2.0920727252960205,
+                "queue_seconds": 17.356343746185303,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-24_dsainet_b0_intra_ffn_affine_quotient_r1-full-w1",
+                "transaction_id": "2026-11-24_dsainet_b0_intra_ffn_affine_quotient_r1-tx",
+                "waiting_for_resources": true,
+                "wall_seconds": 19.448416471481323
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-24T12:03:46.506804+00:00",
+            "result": {
+              "action": "FETCH_VERIFY_INTAKE",
+              "run_id": "2026-11-24_dsainet_b0_intra_ffn_affine_quotient_r1-full-w1",
+              "scientific_stop_boundary": "NEXT_SCIENTIFIC_DECISION",
+              "timing": {
+                "contract_sha256": "246b1d7f649255997325a9a8daff3b4bdbef75235f6ba46073487a804c064c48",
+                "execution_seconds": 1407.2610478401184,
+                "queue_seconds": 5000.789640903473,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-24_dsainet_b0_intra_ffn_affine_quotient_r1-full-w1",
+                "transaction_id": "2026-11-24_dsainet_b0_intra_ffn_affine_quotient_r1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 6408.050688743591
+              }
+            }
+          },
+          {
+            "operation": "fetch",
+            "recorded_at": "2026-11-24T12:05:02.500735+00:00",
+            "result": {
+              "analysis_receipt_sha256": "e5c8f827f87e68a2d4449cdb985abf323a25f801bfafb93169b5c519454f5181",
+              "artifact_manifest_sha256": "0120561cf5f13fb4fd7d82de304ea16d9b797c08ed79ff38b56fc7105dcdfbb5",
+              "contract_sha256": "246b1d7f649255997325a9a8daff3b4bdbef75235f6ba46073487a804c064c48",
+              "full_payload_local": false,
+              "intake_scope": "analysis_v1",
+              "run_id": "2026-11-24_dsainet_b0_intra_ffn_affine_quotient_r1-full-w1",
+              "transaction_id": "2026-11-24_dsainet_b0_intra_ffn_affine_quotient_r1-tx",
+              "transfer_bytes": 324411,
+              "verified": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "decision": {
+        "decision": "NO_SIGNAL",
+        "disposition": "STOP_PATCH_PREELU_POLYPHASE",
+        "round_id": "dsainet-b0-patch-preelu-polyphase-r1"
+      },
+      "decision_record": "ai4s/programs/dsainet/research/dsainet-b0-patch-preelu-polyphase-r1_decision.yaml",
+      "evidence_id": "AI4S-DSAINET-dsainet-b0-patch-preelu-polyphase-r1",
+      "round_id": "dsainet-b0-patch-preelu-polyphase-r1",
+      "run": {
+        "bundle_id": "2026-11-24_dsainet_b0_patch_preelu_polyphase_r1_bundle",
+        "dispatch_status": "REMOTE_ACCEPTED",
+        "estimated_training_hours": 1.5,
+        "execution_mode": "user_managed",
+        "executor_id": "lab10",
+        "planned_units": 19,
+        "recorded_at": "2026-11-24T14:25:40.350010+00:00",
+        "round_id": "dsainet-b0-patch-preelu-polyphase-r1",
+        "run_prefix": "2026-11-24_dsainet_b0_patch_preelu_polyphase_r1",
+        "transaction_operations": [
+          {
+            "operation": "upload",
+            "recorded_at": "2026-11-24T14:26:12.626806+00:00",
+            "result": {
+              "action": "UPLOADED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-24_dsainet_b0_patch_preelu_polyphase_r1-full-w1"
+            }
+          },
+          {
+            "operation": "launch",
+            "recorded_at": "2026-11-24T14:26:16.237347+00:00",
+            "result": {
+              "action": "SUBMISSION_SENT_NOT_VERIFIED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-24_dsainet_b0_patch_preelu_polyphase_r1-full-w1"
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-24T14:27:16.954120+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "screen",
+              "run_id": "2026-11-24_dsainet_b0_patch_preelu_polyphase_r1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "9c6bc4425954a9520c116e432f404043d3860a3155bee8c15ce881d9dafbe59c",
+                "execution_seconds": 57.345739126205444,
+                "queue_seconds": 2.557934045791626,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-24_dsainet_b0_patch_preelu_polyphase_r1-full-w1",
+                "transaction_id": "2026-11-24_dsainet_b0_patch_preelu_polyphase_r1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 59.90367317199707
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-24T17:33:04.302507+00:00",
+            "result": {
+              "action": "FETCH_VERIFY_INTAKE",
+              "run_id": "2026-11-24_dsainet_b0_patch_preelu_polyphase_r1-full-w1",
+              "scientific_stop_boundary": "NEXT_SCIENTIFIC_DECISION",
+              "timing": {
+                "contract_sha256": "9c6bc4425954a9520c116e432f404043d3860a3155bee8c15ce881d9dafbe59c",
+                "execution_seconds": 884.5344159603119,
+                "queue_seconds": 3.868722915649414,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-24_dsainet_b0_patch_preelu_polyphase_r1-full-w1",
+                "transaction_id": "2026-11-24_dsainet_b0_patch_preelu_polyphase_r1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 888.4031388759613
+              }
+            }
+          },
+          {
+            "operation": "fetch",
+            "recorded_at": "2026-11-24T17:36:49.475013+00:00",
+            "result": {
+              "analysis_receipt_sha256": "b50c01287420d2e3fdea90944bada6495edf05645abd13197ccc22bfdd6fefd8",
+              "artifact_manifest_sha256": "4dc762972ecc9e0363a2fa66dbf1b6b43dd0704cbe8e335e1f03de1a64e804ea",
+              "contract_sha256": "9c6bc4425954a9520c116e432f404043d3860a3155bee8c15ce881d9dafbe59c",
+              "full_payload_local": false,
+              "intake_scope": "analysis_v1",
+              "run_id": "2026-11-24_dsainet_b0_patch_preelu_polyphase_r1-full-w1",
+              "transaction_id": "2026-11-24_dsainet_b0_patch_preelu_polyphase_r1-tx",
+              "transfer_bytes": 327586,
+              "verified": true
+            }
+          }
+        ]
+      }
     }
   ],
   "continuation_history": [
@@ -9747,18 +11012,272 @@
       "scientific_disposition": "NONE",
       "source_run_id": "2026-11-03_dsainet_ds07_r1_science1-summaryfix1-full-w1",
       "status": "ENGINEERING_INVALID_SOURCE_ARCHIVED"
+    },
+    {
+      "authorization_ref": "ai4s/programs/dsainet/research/b0_spatial_filter_radius_repair1_20261123/AUTHORIZATION.md",
+      "contract_sha256": "68c335464cec00edfac0b499a51964588e39e3a6fb0454ed15224a329b79ab1a",
+      "inherited_task_ids": [
+        "B0_s0_t3",
+        "B0_s0_t4",
+        "B0_s0_t5",
+        "B0_s1_t3",
+        "B0_s1_t4",
+        "B0_s1_t5",
+        "C0_s0_t3",
+        "C0_s0_t4",
+        "C0_s0_t5",
+        "C0_s1_t3",
+        "C0_s1_t4",
+        "C0_s1_t5",
+        "P0_s0_t3",
+        "P0_s0_t4",
+        "P0_s0_t5",
+        "P0_s1_t3",
+        "P0_s1_t5"
+      ],
+      "inventory_sha256": "7e4d942edaf25a728738e55504784a47818699d3f469e5651d2ecc1ccc1d727d",
+      "kind": "radius_cudnn_single_task_repair1",
+      "pinned_gpu": 7,
+      "previous_active_run": {
+        "bundle_id": "2026-11-23_dsainet_b0_spatial_filter_radius_r1_bundle",
+        "dispatch_status": "REMOTE_ACCEPTED",
+        "estimated_training_hours": 1.5,
+        "execution_mode": "user_managed",
+        "executor_id": "lab10",
+        "planned_units": 19,
+        "recorded_at": "2026-11-23T06:50:49.801581+00:00",
+        "round_id": "dsainet-b0-spatial-filter-radius-r1",
+        "run_prefix": "2026-11-23_dsainet_b0_spatial_filter_radius_r1",
+        "transaction_operations": [
+          {
+            "operation": "upload",
+            "recorded_at": "2026-11-23T06:55:31.861739+00:00",
+            "result": {
+              "action": "UPLOADED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-23_dsainet_b0_spatial_filter_radius_r1-full-w1"
+            }
+          },
+          {
+            "operation": "launch",
+            "recorded_at": "2026-11-23T06:55:54.981265+00:00",
+            "result": {
+              "action": "SUBMISSION_SENT_NOT_VERIFIED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-23_dsainet_b0_spatial_filter_radius_r1-full-w1"
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-23T06:57:20.596594+00:00",
+            "result": {
+              "action": "WAIT_FOR_RESOURCES",
+              "node_id": "smoke",
+              "run_id": "2026-11-23_dsainet_b0_spatial_filter_radius_r1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "4e426521b0b1e32dae933f6fc49cd85a51c29192885aa79ad6b40ee23ec15724",
+                "execution_seconds": 2.1204333305358887,
+                "queue_seconds": 82.03466510772705,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-23_dsainet_b0_spatial_filter_radius_r1-full-w1",
+                "transaction_id": "2026-11-23_dsainet_b0_spatial_filter_radius_r1-tx",
+                "waiting_for_resources": true,
+                "wall_seconds": 84.15509843826294
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-23T12:25:44.451725+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "screen",
+              "run_id": "2026-11-23_dsainet_b0_spatial_filter_radius_r1-full-w1",
+              "status": "FAILED",
+              "timing": {
+                "contract_sha256": "4e426521b0b1e32dae933f6fc49cd85a51c29192885aa79ad6b40ee23ec15724",
+                "execution_seconds": 2803.303638935089,
+                "queue_seconds": 10774.293335676193,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-23_dsainet_b0_spatial_filter_radius_r1-full-w1",
+                "transaction_id": "2026-11-23_dsainet_b0_spatial_filter_radius_r1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 13577.596974611282
+              }
+            }
+          }
+        ]
+      },
+      "previous_authorization": {
+        "allowed_operations": [
+          "upload",
+          "launch",
+          "probe",
+          "fetch",
+          "intake"
+        ],
+        "allowed_transitions": [
+          "SCREEN_NEW"
+        ],
+        "authorization_ref": "ai4s/programs/dsainet/research/b0_spatial_filter_radius_20261123/AUTHORIZATION.md",
+        "campaign_id": "dsainet-b0-spatial-filter-radius-20261123",
+        "executor_id": "lab10",
+        "recorded_at": "2026-11-23T06:50:42.923221+00:00",
+        "research_scope": {
+          "allow_new_module": false,
+          "allowed_module_ids": [
+            "dsainet.native-spatial-filter-radius.r1"
+          ],
+          "allowed_stages": [
+            "source_native_spatial_filter_radius"
+          ],
+          "data_scope_id": "bnci001-cue4-exposed-A04-A06-no-target",
+          "question_id": "tokenizer-fixed-radius-space-versus-time"
+        },
+        "source_sha256": "16e820ef2ced62b6e398e0d8b6f1d615668f0d3cc06dc8d3eb58b3ec214b3291"
+      },
+      "recorded_at": "2026-11-23T12:34:35.520834+00:00",
+      "retry_task_ids": [
+        "P0_s1_t4"
+      ],
+      "scientific_result": false,
+      "source_identity": {
+        "contract_sha256": "4e426521b0b1e32dae933f6fc49cd85a51c29192885aa79ad6b40ee23ec15724",
+        "run_id": "2026-11-23_dsainet_b0_spatial_filter_radius_r1-full-w1",
+        "transaction_id": "2026-11-23_dsainet_b0_spatial_filter_radius_r1-tx"
+      }
+    },
+    {
+      "authorization_ref": "ai4s/programs/dsainet/research/b0_spatial_filter_radius_repair1_20261123/AUTHORIZATION.md",
+      "contract_sha256": "64640ec460385163defd6d5549025e63ee5fe4875002df7cecb6b1edd8d9edb7",
+      "inherited_task_ids": [
+        "B0_s0_t3",
+        "B0_s0_t4",
+        "B0_s0_t5",
+        "B0_s1_t3",
+        "B0_s1_t4",
+        "B0_s1_t5",
+        "C0_s0_t3",
+        "C0_s0_t4",
+        "C0_s0_t5",
+        "C0_s1_t3",
+        "C0_s1_t4",
+        "C0_s1_t5",
+        "P0_s0_t3",
+        "P0_s0_t4",
+        "P0_s0_t5",
+        "P0_s1_t3",
+        "P0_s1_t5"
+      ],
+      "inventory_sha256": "7e4d942edaf25a728738e55504784a47818699d3f469e5651d2ecc1ccc1d727d",
+      "kind": "radius_cudnn_repair1_gpu_allowlist_preworker_fix",
+      "pinned_gpu": 7,
+      "previous_active_run": {
+        "bundle_id": "2026-11-23_dsainet_b0_spatial_filter_radius_r1_repair1_bundle",
+        "dispatch_status": "REMOTE_ACCEPTED",
+        "estimated_training_hours": 0.2,
+        "execution_mode": "user_managed",
+        "executor_id": "lab10",
+        "planned_units": 2,
+        "recorded_at": "2026-11-23T12:34:35.520834+00:00",
+        "round_id": "dsainet-b0-spatial-filter-radius-r1-repair1",
+        "run_prefix": "2026-11-23_dsainet_b0_spatial_filter_radius_r1_repair1",
+        "transaction_operations": [
+          {
+            "operation": "upload",
+            "recorded_at": "2026-11-23T12:34:54.229876+00:00",
+            "result": {
+              "action": "UPLOADED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-23_dsainet_b0_spatial_filter_radius_r1_repair1-full-w1"
+            }
+          },
+          {
+            "operation": "launch",
+            "recorded_at": "2026-11-23T12:34:57.723502+00:00",
+            "result": {
+              "action": "SUBMISSION_SENT_NOT_VERIFIED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-23_dsainet_b0_spatial_filter_radius_r1_repair1-full-w1"
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-23T12:35:30.425213+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "smoke",
+              "run_id": "2026-11-23_dsainet_b0_spatial_filter_radius_r1_repair1-full-w1",
+              "status": "FAILED",
+              "timing": {
+                "contract_sha256": "68c335464cec00edfac0b499a51964588e39e3a6fb0454ed15224a329b79ab1a",
+                "execution_seconds": 1.8123822212219238,
+                "queue_seconds": 0.0,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-23_dsainet_b0_spatial_filter_radius_r1_repair1-full-w1",
+                "transaction_id": "2026-11-23_dsainet_b0_spatial_filter_radius_r1_repair1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 1.8123822212219238
+              }
+            }
+          }
+        ]
+      },
+      "previous_authorization": {
+        "allowed_operations": [
+          "upload",
+          "launch",
+          "probe",
+          "fetch",
+          "intake"
+        ],
+        "allowed_transitions": [
+          "SCREEN_NEW"
+        ],
+        "authorization_ref": "ai4s/programs/dsainet/research/b0_spatial_filter_radius_repair1_20261123/AUTHORIZATION.md",
+        "campaign_id": "dsainet-b0-spatial-filter-radius-20261123",
+        "executor_id": "lab10",
+        "recorded_at": "2026-11-23T12:34:35.520834+00:00",
+        "repair_contract_sha256": "68c335464cec00edfac0b499a51964588e39e3a6fb0454ed15224a329b79ab1a",
+        "repair_task_ids": [
+          "P0_s1_t4"
+        ],
+        "research_scope": {
+          "allow_new_module": false,
+          "allowed_module_ids": [
+            "dsainet.native-spatial-filter-radius.r1"
+          ],
+          "allowed_stages": [
+            "source_native_spatial_filter_radius"
+          ],
+          "data_scope_id": "bnci001-cue4-exposed-A04-A06-no-target",
+          "question_id": "tokenizer-fixed-radius-space-versus-time"
+        },
+        "source_sha256": "16e820ef2ced62b6e398e0d8b6f1d615668f0d3cc06dc8d3eb58b3ec214b3291"
+      },
+      "recorded_at": "2026-11-23T12:36:38.693771+00:00",
+      "retry_task_ids": [
+        "P0_s1_t4"
+      ],
+      "scientific_result": false,
+      "source_identity": {
+        "contract_sha256": "4e426521b0b1e32dae933f6fc49cd85a51c29192885aa79ad6b40ee23ec15724",
+        "run_id": "2026-11-23_dsainet_b0_spatial_filter_radius_r1-full-w1",
+        "transaction_id": "2026-11-23_dsainet_b0_spatial_filter_radius_r1-tx"
+      }
     }
   ],
-  "evidence_status": "ds07_r1_mixed_verified_no_net_utility",
+  "evidence_status": "campaign_active_with_archived_evidence_only_no_claim_release",
   "external_interruption_recovery": {
-    "failed_run_id": "2026-10-13_dsainet_rcd_v0_1_resume1-full-w1",
+    "failed_run_id": "2026-11-22_dsainet_b0_attention_token_grid_r1-full-w1",
     "reason_class": "USER_AUTHORIZED_REDEPLOYMENT",
-    "recorded_at": "2026-10-14T00:14:24.748027+00:00",
-    "replacement_round_id": "dsa-rcd-v0.1-resume2",
-    "report": "ai4s/programs/dsainet/research/dsa-rcd-v0.1-resume2/REDEPLOYMENT_REPORT.json",
+    "recorded_at": "2026-11-22T14:56:41.625852+00:00",
+    "replacement_round_id": "dsainet-b0-attention-token-grid-r1-py39fix1",
+    "report": "ai4s/programs/dsainet/research/b0_asymmetric_token_grid_20261122_py39fix1/REDEPLOYMENT.json",
     "research_gate": {
-      "hypothesis_id": "raw-summary-conditioned-native-grid",
-      "module_id": "trial-conditioned-common-depthwise-spacing",
+      "hypothesis_id": "allocation-of-a-fixed-attention-grid-budget",
+      "module_id": "dsainet.native-attention-token-grid.r1",
       "paired_seed_cap": 5,
       "paired_seeds_after_freeze": [
         0,
@@ -9955,1611 +11474,5 @@
       "failed_run": {
         "bundle_id": "2026-09-01_dsainet_ai4s_role_specific_token_pooling_r3r2",
         "estimated_training_hours": 1.759,
-        "execution_mode": "ai4s_autopilot",
-        "executor_id": "ccmu_lab",
-        "planned_units": 36,
-        "recorded_at": "2026-09-01T12:13:28.844690+00:00",
-        "round_id": "dsainet-r03-role-specific-token-pooling-v0.1",
-        "run_prefix": "2026-09-01_dsainet_ai4s_role_specific_token_pooling_r3r2"
-      },
-      "failed_run_id": "2026-09-01_dsainet_ai4s_role_specific_token_pooling_r3r2-full-w1",
-      "formal_status": {
-        "formal_run_status_before_interruption": "running",
-        "status": "unarchived_external_interruption"
-      },
-      "interruption_evidence": {
-        "bundle_id": "2026-09-01_dsainet_ai4s_role_specific_token_pooling_r3r2",
-        "evidence_summary": "The third full attempt was absent after the host reboot. Formal status remained running and no transfer archive existed. Only six lane task logs were observed, so the full matrix was incomplete.",
-        "formal_run_status": "running",
-        "host_boot_at": "2026-09-01T22:07:20+08:00",
-        "host_reboot_observed": true,
-        "matrix_task_count": 36,
-        "observed_lane_task_logs": 6,
-        "observed_uptime_seconds_less_than": 660,
-        "process_not_running": true,
-        "remote_observed_at": "2026-09-01T22:17:53+08:00",
-        "run_id": "2026-09-01_dsainet_ai4s_role_specific_token_pooling_r3r2-full-w1",
-        "schema_version": "mieeg-ai4s-external-interruption-evidence-v1",
-        "scope_boundary": "This is engineering interruption evidence only. The six unarchived task artifacts are not eligible for scientific comparison, result freezing, decision, or claim.",
-        "stage": "full",
-        "transfer_archive_present": false
-      },
-      "retry_recorded_at": "2026-09-02T10:21:26.809453+00:00",
-      "round_id": "dsainet-r03-role-specific-token-pooling-v0.1"
-    },
-    {
-      "attempt_class": "external_host_interruption_unarchived",
-      "engineering_reason": "User authorized R03 continuation after server-side interruptions; preserve r3r3 as unarchived engineering evidence and rerun the unchanged frozen 36-unit matrix under a new immutable GPU0 Bundle.",
-      "failed_run": {
-        "bundle_id": "2026-09-02_dsainet_ai4s_role_specific_token_pooling_r3r3",
-        "estimated_training_hours": 1.759,
-        "execution_mode": "ai4s_autopilot",
-        "executor_id": "ccmu_lab",
-        "planned_units": 36,
-        "recorded_at": "2026-09-02T10:21:26.809453+00:00",
-        "round_id": "dsainet-r03-role-specific-token-pooling-v0.1",
-        "run_prefix": "2026-09-02_dsainet_ai4s_role_specific_token_pooling_r3r3"
-      },
-      "failed_run_id": "2026-09-02_dsainet_ai4s_role_specific_token_pooling_r3r3-full-w1",
-      "formal_status": {
-        "formal_run_status_before_interruption": "running",
-        "status": "unarchived_external_interruption"
-      },
-      "interruption_evidence": {
-        "bundle_id": "2026-09-02_dsainet_ai4s_role_specific_token_pooling_r3r3",
-        "evidence_summary": "The full-run process was absent, formal status remained running, and no transfer archive existed after the host rebooted at 22:13:53+08:00. The preceding boot at 21:41 also lasted only 31 minutes.",
-        "formal_run_status": "running",
-        "host_boot_at": "2026-09-02T22:13:53+08:00",
-        "host_reboot_observed": true,
-        "observed_uptime_seconds_less_than": 900,
-        "process_not_running": true,
-        "remote_observed_at": "2026-09-02T22:28:06+08:00",
-        "run_id": "2026-09-02_dsainet_ai4s_role_specific_token_pooling_r3r3-full-w1",
-        "schema_version": "mieeg-ai4s-external-interruption-evidence-v1",
-        "scope_boundary": "This is engineering interruption evidence only. Any partial full-run artifacts are not eligible for scientific comparison, result freezing, decision, or claim.",
-        "stage": "full",
-        "transfer_archive_present": false
-      },
-      "retry_recorded_at": "2026-09-05T02:55:15.841447+00:00",
-      "round_id": "dsainet-r03-role-specific-token-pooling-v0.1"
-    },
-    {
-      "attempt_class": "user_confirmed_external_host_interruption_unarchived",
-      "engineering_reason": "User explicitly authorized the Lab10 replacement after confirming the ccmu host reboot was manual; the full 54-task matrix replaces the interrupted unarchived Run and its partial artifacts remain ineligible.",
-      "failed_run": {
-        "bundle_id": "2026-09-07_dsainet_ttpp_v0_1",
-        "dispatch_status": "REMOTE_ACCEPTED",
-        "estimated_training_hours": 3.056,
-        "execution_mode": "ai4s_autopilot",
-        "executor_id": "ccmu_lab",
-        "planned_units": 55,
-        "recorded_at": "2026-09-07T07:58:41.100037+00:00",
-        "round_id": "dsainet-r01-ttpp-v0.1",
-        "run_prefix": "2026-09-07_dsainet_ttpp_v0_1",
-        "transaction_operations": [
-          {
-            "operation": "upload",
-            "recorded_at": "2026-09-07T08:00:09.551555+00:00",
-            "result": {
-              "action": "UPLOADED",
-              "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1"
-            }
-          },
-          {
-            "operation": "launch",
-            "recorded_at": "2026-09-07T08:00:26.332393+00:00",
-            "result": {
-              "action": "SUBMISSION_SENT_NOT_VERIFIED",
-              "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1"
-            }
-          },
-          {
-            "operation": "probe",
-            "recorded_at": "2026-09-07T08:00:53.811004+00:00",
-            "result": {
-              "action": "RECONCILE_SAME_NODE",
-              "node_id": "screen",
-              "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
-              "status": "RUNNING",
-              "timing": {
-                "contract_sha256": "67506f4e49013fb8da79b594b453692466cd594cc891ad16367f5277d5018075",
-                "execution_seconds": 27.32974934577942,
-                "queue_seconds": 0.0,
-                "queue_time_policy": "exclude_resource_wait",
-                "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
-                "transaction_id": "2026-09-07_dsainet_ttpp_v0_1-tx",
-                "waiting_for_resources": false,
-                "wall_seconds": 27.32974934577942
-              }
-            }
-          },
-          {
-            "operation": "probe",
-            "recorded_at": "2026-09-07T08:03:47.407482+00:00",
-            "result": {
-              "action": "RECONCILE_SAME_NODE",
-              "node_id": "screen",
-              "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
-              "status": "RUNNING",
-              "timing": {
-                "contract_sha256": "67506f4e49013fb8da79b594b453692466cd594cc891ad16367f5277d5018075",
-                "execution_seconds": 200.93548679351807,
-                "queue_seconds": 0.0,
-                "queue_time_policy": "exclude_resource_wait",
-                "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
-                "transaction_id": "2026-09-07_dsainet_ttpp_v0_1-tx",
-                "waiting_for_resources": false,
-                "wall_seconds": 200.93548679351807
-              }
-            }
-          },
-          {
-            "operation": "probe",
-            "recorded_at": "2026-09-07T08:04:04.686789+00:00",
-            "result": {
-              "action": "RECONCILE_SAME_NODE",
-              "node_id": "screen",
-              "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
-              "status": "RUNNING",
-              "timing": {
-                "contract_sha256": "67506f4e49013fb8da79b594b453692466cd594cc891ad16367f5277d5018075",
-                "execution_seconds": 218.2122642993927,
-                "queue_seconds": 0.0,
-                "queue_time_policy": "exclude_resource_wait",
-                "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
-                "transaction_id": "2026-09-07_dsainet_ttpp_v0_1-tx",
-                "waiting_for_resources": false,
-                "wall_seconds": 218.2122642993927
-              }
-            }
-          },
-          {
-            "operation": "probe",
-            "recorded_at": "2026-09-07T08:05:36.053365+00:00",
-            "result": {
-              "action": "RECONCILE_SAME_NODE",
-              "node_id": "screen",
-              "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
-              "status": "RUNNING",
-              "timing": {
-                "contract_sha256": "67506f4e49013fb8da79b594b453692466cd594cc891ad16367f5277d5018075",
-                "execution_seconds": 309.58458852767944,
-                "queue_seconds": 0.0,
-                "queue_time_policy": "exclude_resource_wait",
-                "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
-                "transaction_id": "2026-09-07_dsainet_ttpp_v0_1-tx",
-                "waiting_for_resources": false,
-                "wall_seconds": 309.58458852767944
-              }
-            }
-          },
-          {
-            "operation": "probe",
-            "recorded_at": "2026-09-07T08:07:07.537298+00:00",
-            "result": {
-              "action": "RECONCILE_SAME_NODE",
-              "node_id": "screen",
-              "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
-              "status": "RUNNING",
-              "timing": {
-                "contract_sha256": "67506f4e49013fb8da79b594b453692466cd594cc891ad16367f5277d5018075",
-                "execution_seconds": 401.0740888118744,
-                "queue_seconds": 0.0,
-                "queue_time_policy": "exclude_resource_wait",
-                "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
-                "transaction_id": "2026-09-07_dsainet_ttpp_v0_1-tx",
-                "waiting_for_resources": false,
-                "wall_seconds": 401.0740888118744
-              }
-            }
-          },
-          {
-            "operation": "probe",
-            "recorded_at": "2026-09-07T08:08:38.958837+00:00",
-            "result": {
-              "action": "RECONCILE_SAME_NODE",
-              "node_id": "screen",
-              "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
-              "status": "RUNNING",
-              "timing": {
-                "contract_sha256": "67506f4e49013fb8da79b594b453692466cd594cc891ad16367f5277d5018075",
-                "execution_seconds": 492.4795138835907,
-                "queue_seconds": 0.0,
-                "queue_time_policy": "exclude_resource_wait",
-                "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
-                "transaction_id": "2026-09-07_dsainet_ttpp_v0_1-tx",
-                "waiting_for_resources": false,
-                "wall_seconds": 492.4795138835907
-              }
-            }
-          },
-          {
-            "operation": "probe",
-            "recorded_at": "2026-09-07T08:10:10.243717+00:00",
-            "result": {
-              "action": "RECONCILE_SAME_NODE",
-              "node_id": "screen",
-              "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
-              "status": "RUNNING",
-              "timing": {
-                "contract_sha256": "67506f4e49013fb8da79b594b453692466cd594cc891ad16367f5277d5018075",
-                "execution_seconds": 583.7872195243835,
-                "queue_seconds": 0.0,
-                "queue_time_policy": "exclude_resource_wait",
-                "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
-                "transaction_id": "2026-09-07_dsainet_ttpp_v0_1-tx",
-                "waiting_for_resources": false,
-                "wall_seconds": 583.7872195243835
-              }
-            }
-          },
-          {
-            "operation": "probe",
-            "recorded_at": "2026-09-07T08:11:41.549187+00:00",
-            "result": {
-              "action": "RECONCILE_SAME_NODE",
-              "node_id": "screen",
-              "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
-              "status": "RUNNING",
-              "timing": {
-                "contract_sha256": "67506f4e49013fb8da79b594b453692466cd594cc891ad16367f5277d5018075",
-                "execution_seconds": 675.0961074829102,
-                "queue_seconds": 0.0,
-                "queue_time_policy": "exclude_resource_wait",
-                "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
-                "transaction_id": "2026-09-07_dsainet_ttpp_v0_1-tx",
-                "waiting_for_resources": false,
-                "wall_seconds": 675.0961074829102
-              }
-            }
-          },
-          {
-            "operation": "probe",
-            "recorded_at": "2026-09-07T08:13:12.764597+00:00",
-            "result": {
-              "action": "RECONCILE_SAME_NODE",
-              "node_id": "screen",
-              "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
-              "status": "RUNNING",
-              "timing": {
-                "contract_sha256": "67506f4e49013fb8da79b594b453692466cd594cc891ad16367f5277d5018075",
-                "execution_seconds": 766.3140320777893,
-                "queue_seconds": 0.0,
-                "queue_time_policy": "exclude_resource_wait",
-                "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
-                "transaction_id": "2026-09-07_dsainet_ttpp_v0_1-tx",
-                "waiting_for_resources": false,
-                "wall_seconds": 766.3140320777893
-              }
-            }
-          },
-          {
-            "operation": "probe",
-            "recorded_at": "2026-09-07T08:14:45.203541+00:00",
-            "result": {
-              "action": "RECONCILE_SAME_NODE",
-              "node_id": "screen",
-              "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
-              "status": "RUNNING",
-              "timing": {
-                "contract_sha256": "67506f4e49013fb8da79b594b453692466cd594cc891ad16367f5277d5018075",
-                "execution_seconds": 858.6954791545868,
-                "queue_seconds": 0.0,
-                "queue_time_policy": "exclude_resource_wait",
-                "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
-                "transaction_id": "2026-09-07_dsainet_ttpp_v0_1-tx",
-                "waiting_for_resources": false,
-                "wall_seconds": 858.6954791545868
-              }
-            }
-          },
-          {
-            "operation": "probe",
-            "recorded_at": "2026-09-07T08:16:16.547880+00:00",
-            "result": {
-              "action": "RECONCILE_SAME_NODE",
-              "node_id": "screen",
-              "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
-              "status": "RUNNING",
-              "timing": {
-                "contract_sha256": "67506f4e49013fb8da79b594b453692466cd594cc891ad16367f5277d5018075",
-                "execution_seconds": 950.1013650894165,
-                "queue_seconds": 0.0,
-                "queue_time_policy": "exclude_resource_wait",
-                "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
-                "transaction_id": "2026-09-07_dsainet_ttpp_v0_1-tx",
-                "waiting_for_resources": false,
-                "wall_seconds": 950.1013650894165
-              }
-            }
-          },
-          {
-            "operation": "probe",
-            "recorded_at": "2026-09-07T08:17:47.843749+00:00",
-            "result": {
-              "action": "RECONCILE_SAME_NODE",
-              "node_id": "screen",
-              "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
-              "status": "RUNNING",
-              "timing": {
-                "contract_sha256": "67506f4e49013fb8da79b594b453692466cd594cc891ad16367f5277d5018075",
-                "execution_seconds": 1041.3872587680817,
-                "queue_seconds": 0.0,
-                "queue_time_policy": "exclude_resource_wait",
-                "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
-                "transaction_id": "2026-09-07_dsainet_ttpp_v0_1-tx",
-                "waiting_for_resources": false,
-                "wall_seconds": 1041.3872587680817
-              }
-            }
-          },
-          {
-            "operation": "probe",
-            "recorded_at": "2026-09-07T08:19:19.170716+00:00",
-            "result": {
-              "action": "RECONCILE_SAME_NODE",
-              "node_id": "screen",
-              "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
-              "status": "RUNNING",
-              "timing": {
-                "contract_sha256": "67506f4e49013fb8da79b594b453692466cd594cc891ad16367f5277d5018075",
-                "execution_seconds": 1132.7187187671661,
-                "queue_seconds": 0.0,
-                "queue_time_policy": "exclude_resource_wait",
-                "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
-                "transaction_id": "2026-09-07_dsainet_ttpp_v0_1-tx",
-                "waiting_for_resources": false,
-                "wall_seconds": 1132.7187187671661
-              }
-            }
-          },
-          {
-            "operation": "probe",
-            "recorded_at": "2026-09-07T08:20:50.271624+00:00",
-            "result": {
-              "action": "RECONCILE_SAME_NODE",
-              "node_id": "screen",
-              "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
-              "status": "RUNNING",
-              "timing": {
-                "contract_sha256": "67506f4e49013fb8da79b594b453692466cd594cc891ad16367f5277d5018075",
-                "execution_seconds": 1223.8297233581543,
-                "queue_seconds": 0.0,
-                "queue_time_policy": "exclude_resource_wait",
-                "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
-                "transaction_id": "2026-09-07_dsainet_ttpp_v0_1-tx",
-                "waiting_for_resources": false,
-                "wall_seconds": 1223.8297233581543
-              }
-            }
-          },
-          {
-            "operation": "probe",
-            "recorded_at": "2026-09-07T08:22:21.472466+00:00",
-            "result": {
-              "action": "RECONCILE_SAME_NODE",
-              "node_id": "screen",
-              "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
-              "status": "RUNNING",
-              "timing": {
-                "contract_sha256": "67506f4e49013fb8da79b594b453692466cd594cc891ad16367f5277d5018075",
-                "execution_seconds": 1315.0340762138367,
-                "queue_seconds": 0.0,
-                "queue_time_policy": "exclude_resource_wait",
-                "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
-                "transaction_id": "2026-09-07_dsainet_ttpp_v0_1-tx",
-                "waiting_for_resources": false,
-                "wall_seconds": 1315.0340762138367
-              }
-            }
-          },
-          {
-            "operation": "probe",
-            "recorded_at": "2026-09-07T08:23:52.968553+00:00",
-            "result": {
-              "action": "RECONCILE_SAME_NODE",
-              "node_id": "screen",
-              "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
-              "status": "RUNNING",
-              "timing": {
-                "contract_sha256": "67506f4e49013fb8da79b594b453692466cd594cc891ad16367f5277d5018075",
-                "execution_seconds": 1406.5336124897003,
-                "queue_seconds": 0.0,
-                "queue_time_policy": "exclude_resource_wait",
-                "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
-                "transaction_id": "2026-09-07_dsainet_ttpp_v0_1-tx",
-                "waiting_for_resources": false,
-                "wall_seconds": 1406.5336124897003
-              }
-            }
-          },
-          {
-            "operation": "probe",
-            "recorded_at": "2026-09-07T08:25:24.493817+00:00",
-            "result": {
-              "action": "RECONCILE_SAME_NODE",
-              "node_id": "screen",
-              "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
-              "status": "RUNNING",
-              "timing": {
-                "contract_sha256": "67506f4e49013fb8da79b594b453692466cd594cc891ad16367f5277d5018075",
-                "execution_seconds": 1498.061488866806,
-                "queue_seconds": 0.0,
-                "queue_time_policy": "exclude_resource_wait",
-                "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
-                "transaction_id": "2026-09-07_dsainet_ttpp_v0_1-tx",
-                "waiting_for_resources": false,
-                "wall_seconds": 1498.061488866806
-              }
-            }
-          },
-          {
-            "operation": "probe",
-            "recorded_at": "2026-09-07T08:26:55.828406+00:00",
-            "result": {
-              "action": "RECONCILE_SAME_NODE",
-              "node_id": "screen",
-              "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
-              "status": "RUNNING",
-              "timing": {
-                "contract_sha256": "67506f4e49013fb8da79b594b453692466cd594cc891ad16367f5277d5018075",
-                "execution_seconds": 1589.4019961357117,
-                "queue_seconds": 0.0,
-                "queue_time_policy": "exclude_resource_wait",
-                "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
-                "transaction_id": "2026-09-07_dsainet_ttpp_v0_1-tx",
-                "waiting_for_resources": false,
-                "wall_seconds": 1589.4019961357117
-              }
-            }
-          },
-          {
-            "operation": "probe",
-            "recorded_at": "2026-09-07T08:28:27.209291+00:00",
-            "result": {
-              "action": "RECONCILE_SAME_NODE",
-              "node_id": "screen",
-              "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
-              "status": "RUNNING",
-              "timing": {
-                "contract_sha256": "67506f4e49013fb8da79b594b453692466cd594cc891ad16367f5277d5018075",
-                "execution_seconds": 1680.777736902237,
-                "queue_seconds": 0.0,
-                "queue_time_policy": "exclude_resource_wait",
-                "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
-                "transaction_id": "2026-09-07_dsainet_ttpp_v0_1-tx",
-                "waiting_for_resources": false,
-                "wall_seconds": 1680.777736902237
-              }
-            }
-          },
-          {
-            "operation": "probe",
-            "recorded_at": "2026-09-07T08:29:58.484512+00:00",
-            "result": {
-              "action": "RECONCILE_SAME_NODE",
-              "node_id": "screen",
-              "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
-              "status": "RUNNING",
-              "timing": {
-                "contract_sha256": "67506f4e49013fb8da79b594b453692466cd594cc891ad16367f5277d5018075",
-                "execution_seconds": 1772.063435792923,
-                "queue_seconds": 0.0,
-                "queue_time_policy": "exclude_resource_wait",
-                "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
-                "transaction_id": "2026-09-07_dsainet_ttpp_v0_1-tx",
-                "waiting_for_resources": false,
-                "wall_seconds": 1772.063435792923
-              }
-            }
-          },
-          {
-            "operation": "probe",
-            "recorded_at": "2026-09-07T08:31:29.665251+00:00",
-            "result": {
-              "action": "RECONCILE_SAME_NODE",
-              "node_id": "screen",
-              "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
-              "status": "RUNNING",
-              "timing": {
-                "contract_sha256": "67506f4e49013fb8da79b594b453692466cd594cc891ad16367f5277d5018075",
-                "execution_seconds": 1863.2491528987885,
-                "queue_seconds": 0.0,
-                "queue_time_policy": "exclude_resource_wait",
-                "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
-                "transaction_id": "2026-09-07_dsainet_ttpp_v0_1-tx",
-                "waiting_for_resources": false,
-                "wall_seconds": 1863.2491528987885
-              }
-            }
-          },
-          {
-            "operation": "probe",
-            "recorded_at": "2026-09-07T08:33:00.736332+00:00",
-            "result": {
-              "action": "RECONCILE_SAME_NODE",
-              "node_id": "screen",
-              "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
-              "status": "RUNNING",
-              "timing": {
-                "contract_sha256": "67506f4e49013fb8da79b594b453692466cd594cc891ad16367f5277d5018075",
-                "execution_seconds": 1954.320158958435,
-                "queue_seconds": 0.0,
-                "queue_time_policy": "exclude_resource_wait",
-                "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
-                "transaction_id": "2026-09-07_dsainet_ttpp_v0_1-tx",
-                "waiting_for_resources": false,
-                "wall_seconds": 1954.320158958435
-              }
-            }
-          },
-          {
-            "operation": "probe",
-            "recorded_at": "2026-09-07T08:34:32.026473+00:00",
-            "result": {
-              "action": "RECONCILE_SAME_NODE",
-              "node_id": "screen",
-              "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
-              "status": "RUNNING",
-              "timing": {
-                "contract_sha256": "67506f4e49013fb8da79b594b453692466cd594cc891ad16367f5277d5018075",
-                "execution_seconds": 2045.6141362190247,
-                "queue_seconds": 0.0,
-                "queue_time_policy": "exclude_resource_wait",
-                "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
-                "transaction_id": "2026-09-07_dsainet_ttpp_v0_1-tx",
-                "waiting_for_resources": false,
-                "wall_seconds": 2045.6141362190247
-              }
-            }
-          },
-          {
-            "operation": "probe",
-            "recorded_at": "2026-09-07T08:36:03.328090+00:00",
-            "result": {
-              "action": "RECONCILE_SAME_NODE",
-              "node_id": "screen",
-              "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
-              "status": "RUNNING",
-              "timing": {
-                "contract_sha256": "67506f4e49013fb8da79b594b453692466cd594cc891ad16367f5277d5018075",
-                "execution_seconds": 2136.9137768745422,
-                "queue_seconds": 0.0,
-                "queue_time_policy": "exclude_resource_wait",
-                "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
-                "transaction_id": "2026-09-07_dsainet_ttpp_v0_1-tx",
-                "waiting_for_resources": false,
-                "wall_seconds": 2136.9137768745422
-              }
-            }
-          },
-          {
-            "operation": "probe",
-            "recorded_at": "2026-09-07T08:37:34.875198+00:00",
-            "result": {
-              "action": "RECONCILE_SAME_NODE",
-              "node_id": "screen",
-              "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
-              "status": "RUNNING",
-              "timing": {
-                "contract_sha256": "67506f4e49013fb8da79b594b453692466cd594cc891ad16367f5277d5018075",
-                "execution_seconds": 2228.459602832794,
-                "queue_seconds": 0.0,
-                "queue_time_policy": "exclude_resource_wait",
-                "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
-                "transaction_id": "2026-09-07_dsainet_ttpp_v0_1-tx",
-                "waiting_for_resources": false,
-                "wall_seconds": 2228.459602832794
-              }
-            }
-          },
-          {
-            "operation": "probe",
-            "recorded_at": "2026-09-07T08:39:06.208149+00:00",
-            "result": {
-              "action": "RECONCILE_SAME_NODE",
-              "node_id": "screen",
-              "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
-              "status": "RUNNING",
-              "timing": {
-                "contract_sha256": "67506f4e49013fb8da79b594b453692466cd594cc891ad16367f5277d5018075",
-                "execution_seconds": 2319.804042339325,
-                "queue_seconds": 0.0,
-                "queue_time_policy": "exclude_resource_wait",
-                "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
-                "transaction_id": "2026-09-07_dsainet_ttpp_v0_1-tx",
-                "waiting_for_resources": false,
-                "wall_seconds": 2319.804042339325
-              }
-            }
-          },
-          {
-            "operation": "probe",
-            "recorded_at": "2026-09-07T08:40:37.454588+00:00",
-            "result": {
-              "action": "RECONCILE_SAME_NODE",
-              "node_id": "screen",
-              "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
-              "status": "RUNNING",
-              "timing": {
-                "contract_sha256": "67506f4e49013fb8da79b594b453692466cd594cc891ad16367f5277d5018075",
-                "execution_seconds": 2411.056348323822,
-                "queue_seconds": 0.0,
-                "queue_time_policy": "exclude_resource_wait",
-                "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
-                "transaction_id": "2026-09-07_dsainet_ttpp_v0_1-tx",
-                "waiting_for_resources": false,
-                "wall_seconds": 2411.056348323822
-              }
-            }
-          },
-          {
-            "operation": "probe",
-            "recorded_at": "2026-09-07T08:42:08.685453+00:00",
-            "result": {
-              "action": "RECONCILE_SAME_NODE",
-              "node_id": "screen",
-              "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
-              "status": "RUNNING",
-              "timing": {
-                "contract_sha256": "67506f4e49013fb8da79b594b453692466cd594cc891ad16367f5277d5018075",
-                "execution_seconds": 2502.293130636215,
-                "queue_seconds": 0.0,
-                "queue_time_policy": "exclude_resource_wait",
-                "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
-                "transaction_id": "2026-09-07_dsainet_ttpp_v0_1-tx",
-                "waiting_for_resources": false,
-                "wall_seconds": 2502.293130636215
-              }
-            }
-          },
-          {
-            "operation": "probe",
-            "recorded_at": "2026-09-07T10:52:31.438862+00:00",
-            "result": {
-              "action": "RECONCILE_SAME_NODE",
-              "node_id": "screen",
-              "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
-              "status": "RUNNING",
-              "timing": {
-                "contract_sha256": "67506f4e49013fb8da79b594b453692466cd594cc891ad16367f5277d5018075",
-                "execution_seconds": 10325.152110338211,
-                "queue_seconds": 0.0,
-                "queue_time_policy": "exclude_resource_wait",
-                "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
-                "transaction_id": "2026-09-07_dsainet_ttpp_v0_1-tx",
-                "waiting_for_resources": false,
-                "wall_seconds": 10325.152110338211
-              }
-            }
-          }
-        ]
-      },
-      "failed_run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
-      "interruption_report": "ai4s/programs/dsainet/research/train-time-position-prior/LAB10_RECOVERY.md",
-      "partial_artifacts_eligible": false,
-      "recorded_at": "2026-09-07T15:27:27.666744+00:00",
-      "round_id": "dsainet-r01-ttpp-v0.1"
-    },
-    {
-      "attempt_class": "engineering_capacity_recovery",
-      "campaign_id": "dsainet-cmcr-v0.1-2026-09-15",
-      "failed_run_id": "2026-09-16_dsainet_cmcr_v0_1_repair3-full-w1",
-      "recorded_at": "2026-09-16T15:49:22.447834+00:00",
-      "recovery_run_id": "2026-09-16_dsainet_cmcr_v0_1_recovery4-full-w1",
-      "retry_task_ids": [
-        "b0_s1_t8",
-        "c0_s1_t6",
-        "c0_s1_t7",
-        "c0_s1_t8",
-        "c0_s1_t5",
-        "b0_s1_t7",
-        "s0_s1_t8",
-        "n0_s1_t8"
-      ],
-      "reused_task_ids": [
-        "b0_s0_t0",
-        "b0_s0_t1",
-        "b0_s0_t2",
-        "b0_s0_t3",
-        "b0_s0_t4",
-        "b0_s0_t5",
-        "b0_s0_t6",
-        "b0_s0_t7",
-        "b0_s0_t8",
-        "b0_s1_t0",
-        "b0_s1_t1",
-        "b0_s1_t2",
-        "b0_s1_t3",
-        "b0_s1_t4",
-        "b0_s1_t5",
-        "b0_s1_t6",
-        "c0_s0_t0",
-        "c0_s0_t1",
-        "c0_s0_t2",
-        "c0_s0_t3",
-        "c0_s0_t4",
-        "c0_s0_t5",
-        "c0_s0_t6",
-        "c0_s0_t7",
-        "c0_s0_t8",
-        "c0_s1_t0",
-        "c0_s1_t1",
-        "c0_s1_t2",
-        "c0_s1_t3",
-        "c0_s1_t4",
-        "n0_s0_t0",
-        "n0_s0_t1",
-        "n0_s0_t2",
-        "n0_s0_t3",
-        "n0_s0_t4",
-        "n0_s0_t5",
-        "n0_s0_t6",
-        "n0_s0_t7",
-        "n0_s0_t8",
-        "n0_s1_t0",
-        "n0_s1_t1",
-        "n0_s1_t2",
-        "n0_s1_t3",
-        "n0_s1_t4",
-        "n0_s1_t5",
-        "n0_s1_t6",
-        "n0_s1_t7",
-        "p0_s0_t0",
-        "p0_s0_t1",
-        "p0_s0_t2",
-        "p0_s0_t3",
-        "p0_s0_t4",
-        "p0_s0_t5",
-        "p0_s0_t6",
-        "p0_s0_t7",
-        "p0_s0_t8",
-        "p0_s1_t0",
-        "p0_s1_t1",
-        "p0_s1_t2",
-        "p0_s1_t3",
-        "p0_s1_t4",
-        "p0_s1_t5",
-        "p0_s1_t6",
-        "p0_s1_t7",
-        "p0_s1_t8",
-        "s0_s0_t0",
-        "s0_s0_t1",
-        "s0_s0_t2",
-        "s0_s0_t3",
-        "s0_s0_t4",
-        "s0_s0_t5",
-        "s0_s0_t6",
-        "s0_s0_t7",
-        "s0_s0_t8",
-        "s0_s1_t0",
-        "s0_s1_t1",
-        "s0_s1_t2",
-        "s0_s1_t3",
-        "s0_s1_t4",
-        "s0_s1_t5",
-        "s0_s1_t6",
-        "s0_s1_t7"
-      ],
-      "scientific_decision": false
-    },
-    {
-      "attempt_class": "engineering_capacity_recovery",
-      "failed_run_id": "2026-09-16_dsainet_cmcr_v0_1_recovery4-full-w1",
-      "recorded_at": "2026-09-16T16:46:12.750352+00:00",
-      "recovery_run_id": "2026-09-17_dsainet_cmcr_v0_1_recovery5-full-w1",
-      "retry_task_ids": [
-        "b0_s1_t8",
-        "c0_s1_t6",
-        "c0_s1_t7",
-        "c0_s1_t8",
-        "c0_s1_t5",
-        "b0_s1_t7",
-        "s0_s1_t8",
-        "n0_s1_t8"
-      ],
-      "scientific_decision": false,
-      "source_results_from": "2026-09-16_dsainet_cmcr_v0_1_repair3-full-w1"
-    },
-    {
-      "attempt_class": "explicit_fut_capacity_repair",
-      "authorization_ref": "ai4s/programs/dsainet/research/dsa-fut-v0.1/repair2/AUTHORIZATION.md",
-      "campaign_id": "dsainet-fut-v0.1-20260924",
-      "failed_run_id": "2026-09-24_dsainet_fut_v0_1-full-w1",
-      "previous_active_run": {
-        "bundle_id": "2026-09-24_dsainet_fut_v0_1-bundle",
-        "dispatch_status": "REMOTE_ACCEPTED",
-        "estimated_training_hours": 3.884,
-        "execution_mode": "user_managed",
-        "executor_id": "lab10",
-        "planned_units": 433,
-        "recorded_at": "2026-09-24T01:43:59.044857+00:00",
-        "round_id": "dsa-fut-v0.1",
-        "run_prefix": "2026-09-24_dsainet_fut_v0_1",
-        "transaction_operations": [
-          {
-            "operation": "upload",
-            "recorded_at": "2026-09-24T01:44:45.516451+00:00",
-            "result": {
-              "action": "UPLOADED",
-              "monitor_powershell": "[REDACTED_MACHINE]",
-              "run_id": "2026-09-24_dsainet_fut_v0_1-full-w1"
-            }
-          },
-          {
-            "operation": "launch",
-            "recorded_at": "2026-09-24T01:44:46.931203+00:00",
-            "result": {
-              "action": "SUBMISSION_SENT_NOT_VERIFIED",
-              "monitor_powershell": "[REDACTED_MACHINE]",
-              "run_id": "2026-09-24_dsainet_fut_v0_1-full-w1"
-            }
-          },
-          {
-            "operation": "probe",
-            "recorded_at": "2026-09-24T01:45:02.199690+00:00",
-            "result": {
-              "action": "RECONCILE_SAME_NODE",
-              "node_id": "precheck",
-              "run_id": "2026-09-24_dsainet_fut_v0_1-full-w1",
-              "status": "RUNNING",
-              "timing": {
-                "contract_sha256": "da74c32481f4261c1a7529edda6e2366d4b29a3287aab98e9031ac8b9b5eb5a4",
-                "execution_seconds": 11.393534421920776,
-                "queue_seconds": 0.0,
-                "queue_time_policy": "exclude_resource_wait",
-                "run_id": "2026-09-24_dsainet_fut_v0_1-full-w1",
-                "transaction_id": "2026-09-24_dsainet_fut_v0_1-tx",
-                "waiting_for_resources": false,
-                "wall_seconds": 11.393534421920776
-              }
-            }
-          },
-          {
-            "operation": "probe",
-            "recorded_at": "2026-09-24T06:08:43.449960+00:00",
-            "result": {
-              "action": "RECONCILE_SAME_NODE",
-              "node_id": "diagnostic",
-              "run_id": "2026-09-24_dsainet_fut_v0_1-full-w1",
-              "status": "FAILED",
-              "timing": {
-                "contract_sha256": "da74c32481f4261c1a7529edda6e2366d4b29a3287aab98e9031ac8b9b5eb5a4",
-                "execution_seconds": 1660.6660592556,
-                "queue_seconds": 0.0,
-                "queue_time_policy": "exclude_resource_wait",
-                "run_id": "2026-09-24_dsainet_fut_v0_1-full-w1",
-                "transaction_id": "2026-09-24_dsainet_fut_v0_1-tx",
-                "waiting_for_resources": false,
-                "wall_seconds": 1660.6660592556
-              }
-            }
-          }
-        ]
-      },
-      "recorded_at": "2026-09-24T06:21:18.753117+00:00",
-      "rerun_task_ids": [
-        "P0_s0_t1__SELF__real",
-        "C0_s0_t1__SELF__real",
-        "B0_s0_t1__SELF__within_subject_permuted",
-        "C0_s0_t1__SELF__within_subject_permuted",
-        "S0_s0_t1__SELF__within_subject_permuted",
-        "B0_s0_t2__SELF__real",
-        "P0_s0_t2__SELF__real",
-        "C0_s0_t2__SELF__real",
-        "S0_s0_t2__SELF__real",
-        "B0_s0_t2__SELF__within_subject_permuted",
-        "P0_s0_t2__SELF__within_subject_permuted",
-        "C0_s0_t2__SELF__within_subject_permuted",
-        "S0_s0_t2__SELF__within_subject_permuted",
-        "B0_s0_t3__SELF__real",
-        "P0_s0_t3__SELF__real",
-        "C0_s0_t3__SELF__real",
-        "S0_s0_t3__SELF__real",
-        "B0_s0_t3__SELF__within_subject_permuted",
-        "P0_s0_t3__SELF__within_subject_permuted",
-        "S0_s0_t3__SELF__within_subject_permuted",
-        "B0_s0_t4__SELF__real",
-        "P0_s0_t4__SELF__real",
-        "C0_s0_t4__SELF__real",
-        "S0_s0_t4__SELF__real",
-        "B0_s0_t4__SELF__within_subject_permuted",
-        "P0_s0_t4__SELF__within_subject_permuted",
-        "C0_s0_t4__SELF__within_subject_permuted",
-        "S0_s0_t4__SELF__within_subject_permuted",
-        "B0_s0_t5__SELF__real",
-        "P0_s0_t5__SELF__real",
-        "C0_s0_t5__SELF__real",
-        "S0_s0_t5__SELF__real",
-        "B0_s0_t5__SELF__within_subject_permuted",
-        "P0_s0_t5__SELF__within_subject_permuted",
-        "C0_s0_t5__SELF__within_subject_permuted",
-        "S0_s0_t5__SELF__within_subject_permuted",
-        "B0_s0_t6__SELF__real",
-        "P0_s0_t6__SELF__real",
-        "C0_s0_t6__SELF__real",
-        "S0_s0_t6__SELF__real",
-        "B0_s0_t6__SELF__within_subject_permuted",
-        "P0_s0_t6__SELF__within_subject_permuted",
-        "C0_s0_t6__SELF__within_subject_permuted",
-        "S0_s0_t6__SELF__within_subject_permuted",
-        "B0_s0_t7__SELF__real",
-        "P0_s0_t7__SELF__real",
-        "C0_s0_t7__SELF__real",
-        "S0_s0_t7__SELF__real",
-        "B0_s0_t7__SELF__within_subject_permuted",
-        "P0_s0_t7__SELF__within_subject_permuted",
-        "C0_s0_t7__SELF__within_subject_permuted",
-        "S0_s0_t7__SELF__within_subject_permuted",
-        "B0_s0_t8__SELF__real",
-        "P0_s0_t8__SELF__real",
-        "C0_s0_t8__SELF__real",
-        "S0_s0_t8__SELF__real",
-        "B0_s0_t8__SELF__within_subject_permuted",
-        "P0_s0_t8__SELF__within_subject_permuted",
-        "C0_s0_t8__SELF__within_subject_permuted",
-        "S0_s0_t8__SELF__within_subject_permuted",
-        "B0_s1_t0__SELF__real",
-        "P0_s1_t0__SELF__real",
-        "C0_s1_t0__SELF__real",
-        "S0_s1_t0__SELF__real",
-        "B0_s1_t0__SELF__within_subject_permuted",
-        "P0_s1_t0__SELF__within_subject_permuted",
-        "C0_s1_t0__SELF__within_subject_permuted",
-        "S0_s1_t0__SELF__within_subject_permuted",
-        "B0_s1_t1__SELF__real",
-        "P0_s1_t1__SELF__real",
-        "C0_s1_t1__SELF__real",
-        "S0_s1_t1__SELF__real",
-        "B0_s1_t1__SELF__within_subject_permuted",
-        "P0_s1_t1__SELF__within_subject_permuted",
-        "C0_s1_t1__SELF__within_subject_permuted",
-        "S0_s1_t1__SELF__within_subject_permuted",
-        "B0_s1_t2__SELF__real",
-        "P0_s1_t2__SELF__real",
-        "C0_s1_t2__SELF__real",
-        "S0_s1_t2__SELF__real",
-        "B0_s1_t2__SELF__within_subject_permuted",
-        "P0_s1_t2__SELF__within_subject_permuted",
-        "C0_s1_t2__SELF__within_subject_permuted",
-        "S0_s1_t2__SELF__within_subject_permuted",
-        "B0_s1_t3__SELF__real",
-        "P0_s1_t3__SELF__real",
-        "C0_s1_t3__SELF__real",
-        "S0_s1_t3__SELF__real",
-        "B0_s1_t3__SELF__within_subject_permuted",
-        "P0_s1_t3__SELF__within_subject_permuted",
-        "C0_s1_t3__SELF__within_subject_permuted",
-        "S0_s1_t3__SELF__within_subject_permuted",
-        "B0_s1_t4__SELF__real",
-        "P0_s1_t4__SELF__real",
-        "C0_s1_t4__SELF__real",
-        "S0_s1_t4__SELF__real",
-        "B0_s1_t4__SELF__within_subject_permuted",
-        "P0_s1_t4__SELF__within_subject_permuted",
-        "C0_s1_t4__SELF__within_subject_permuted",
-        "S0_s1_t4__SELF__within_subject_permuted",
-        "B0_s1_t5__SELF__real",
-        "P0_s1_t5__SELF__real",
-        "C0_s1_t5__SELF__real",
-        "S0_s1_t5__SELF__real",
-        "B0_s1_t5__SELF__within_subject_permuted",
-        "P0_s1_t5__SELF__within_subject_permuted",
-        "C0_s1_t5__SELF__within_subject_permuted",
-        "S0_s1_t5__SELF__within_subject_permuted",
-        "B0_s1_t6__SELF__real",
-        "P0_s1_t6__SELF__real",
-        "C0_s1_t6__SELF__real",
-        "S0_s1_t6__SELF__real",
-        "B0_s1_t6__SELF__within_subject_permuted",
-        "P0_s1_t6__SELF__within_subject_permuted",
-        "C0_s1_t6__SELF__within_subject_permuted",
-        "S0_s1_t6__SELF__within_subject_permuted",
-        "B0_s1_t7__SELF__real",
-        "P0_s1_t7__SELF__real",
-        "C0_s1_t7__SELF__real",
-        "S0_s1_t7__SELF__real",
-        "B0_s1_t7__SELF__within_subject_permuted",
-        "P0_s1_t7__SELF__within_subject_permuted",
-        "C0_s1_t7__SELF__within_subject_permuted",
-        "S0_s1_t7__SELF__within_subject_permuted",
-        "B0_s1_t8__SELF__real",
-        "P0_s1_t8__SELF__real",
-        "C0_s1_t8__SELF__real",
-        "S0_s1_t8__SELF__real",
-        "B0_s1_t8__SELF__within_subject_permuted",
-        "P0_s1_t8__SELF__within_subject_permuted",
-        "C0_s1_t8__SELF__within_subject_permuted",
-        "S0_s1_t8__SELF__within_subject_permuted",
-        "S0_s0_t0__SELF__real",
-        "P0_s0_t0__SELF__real",
-        "C0_s0_t3__SELF__within_subject_permuted",
-        "P0_s0_t0__DIRECT__real",
-        "B0_s0_t2__DIRECT__real",
-        "C0_s0_t2__DIRECT__within_subject_permuted",
-        "B0_s0_t3__CROSS__within_subject_permuted",
-        "P0_s0_t3__CROSS__within_subject_permuted",
-        "C0_s0_t4__CROSS__within_subject_permuted",
-        "B0_s0_t5__DIRECT__real",
-        "P0_s0_t5__DIRECT__real",
-        "S0_s0_t5__DIRECT__real",
-        "B0_s0_t5__DIRECT__within_subject_permuted",
-        "P0_s0_t5__DIRECT__within_subject_permuted",
-        "C0_s0_t5__DIRECT__within_subject_permuted",
-        "S0_s0_t5__DIRECT__within_subject_permuted",
-        "B0_s0_t6__DIRECT__real",
-        "P0_s0_t6__DIRECT__real",
-        "C0_s0_t6__DIRECT__real",
-        "S0_s0_t6__DIRECT__real",
-        "B0_s0_t6__DIRECT__within_subject_permuted",
-        "P0_s0_t6__DIRECT__within_subject_permuted",
-        "C0_s0_t6__DIRECT__within_subject_permuted",
-        "S0_s0_t6__DIRECT__within_subject_permuted",
-        "B0_s0_t7__DIRECT__real",
-        "P0_s0_t7__DIRECT__real",
-        "C0_s0_t7__DIRECT__real",
-        "S0_s0_t7__DIRECT__real",
-        "B0_s0_t7__DIRECT__within_subject_permuted",
-        "P0_s0_t7__DIRECT__within_subject_permuted",
-        "C0_s0_t7__DIRECT__within_subject_permuted",
-        "S0_s0_t7__DIRECT__within_subject_permuted",
-        "B0_s0_t8__DIRECT__real",
-        "P0_s0_t8__DIRECT__real",
-        "C0_s0_t8__DIRECT__real",
-        "S0_s0_t8__DIRECT__real",
-        "B0_s0_t8__DIRECT__within_subject_permuted",
-        "P0_s0_t8__DIRECT__within_subject_permuted",
-        "C0_s0_t8__DIRECT__within_subject_permuted",
-        "S0_s0_t8__DIRECT__within_subject_permuted",
-        "B0_s1_t0__DIRECT__real",
-        "P0_s1_t0__DIRECT__real",
-        "C0_s1_t0__DIRECT__real",
-        "S0_s1_t0__DIRECT__real",
-        "B0_s1_t0__DIRECT__within_subject_permuted",
-        "P0_s1_t0__DIRECT__within_subject_permuted",
-        "C0_s1_t0__DIRECT__within_subject_permuted",
-        "S0_s1_t0__DIRECT__within_subject_permuted",
-        "B0_s1_t1__DIRECT__real",
-        "P0_s1_t1__DIRECT__real",
-        "C0_s1_t1__DIRECT__real",
-        "S0_s1_t1__DIRECT__real",
-        "B0_s1_t1__DIRECT__within_subject_permuted",
-        "P0_s1_t1__DIRECT__within_subject_permuted",
-        "C0_s1_t1__DIRECT__within_subject_permuted",
-        "S0_s1_t1__DIRECT__within_subject_permuted",
-        "B0_s1_t2__DIRECT__real",
-        "P0_s1_t2__DIRECT__real",
-        "C0_s1_t2__DIRECT__real",
-        "S0_s1_t2__DIRECT__real",
-        "B0_s1_t2__DIRECT__within_subject_permuted",
-        "P0_s1_t2__DIRECT__within_subject_permuted",
-        "C0_s1_t2__DIRECT__within_subject_permuted",
-        "S0_s1_t2__DIRECT__within_subject_permuted",
-        "B0_s1_t3__DIRECT__real",
-        "P0_s1_t3__DIRECT__real",
-        "C0_s1_t3__DIRECT__real",
-        "S0_s1_t3__DIRECT__real",
-        "B0_s1_t3__DIRECT__within_subject_permuted",
-        "P0_s1_t3__DIRECT__within_subject_permuted",
-        "C0_s1_t3__DIRECT__within_subject_permuted",
-        "S0_s1_t3__DIRECT__within_subject_permuted",
-        "B0_s1_t4__DIRECT__real",
-        "P0_s1_t4__DIRECT__real",
-        "C0_s1_t4__DIRECT__real",
-        "S0_s1_t4__DIRECT__real",
-        "B0_s1_t4__DIRECT__within_subject_permuted",
-        "P0_s1_t4__DIRECT__within_subject_permuted",
-        "C0_s1_t4__DIRECT__within_subject_permuted",
-        "S0_s1_t4__DIRECT__within_subject_permuted",
-        "B0_s1_t5__DIRECT__real",
-        "P0_s1_t5__DIRECT__real",
-        "C0_s1_t5__DIRECT__real",
-        "S0_s1_t5__DIRECT__real",
-        "B0_s1_t5__DIRECT__within_subject_permuted",
-        "P0_s1_t5__DIRECT__within_subject_permuted",
-        "C0_s1_t5__DIRECT__within_subject_permuted",
-        "S0_s1_t5__DIRECT__within_subject_permuted",
-        "B0_s1_t6__DIRECT__real",
-        "P0_s1_t6__DIRECT__real",
-        "C0_s1_t6__DIRECT__real",
-        "S0_s1_t6__DIRECT__real",
-        "B0_s1_t6__DIRECT__within_subject_permuted",
-        "P0_s1_t6__DIRECT__within_subject_permuted",
-        "C0_s1_t6__DIRECT__within_subject_permuted",
-        "S0_s1_t6__DIRECT__within_subject_permuted",
-        "B0_s1_t7__DIRECT__real",
-        "P0_s1_t7__DIRECT__real",
-        "C0_s1_t7__DIRECT__real",
-        "S0_s1_t7__DIRECT__real",
-        "B0_s1_t7__DIRECT__within_subject_permuted",
-        "P0_s1_t7__DIRECT__within_subject_permuted",
-        "C0_s1_t7__DIRECT__within_subject_permuted",
-        "S0_s1_t7__DIRECT__within_subject_permuted",
-        "B0_s1_t8__DIRECT__real",
-        "P0_s1_t8__DIRECT__real",
-        "C0_s1_t8__DIRECT__real",
-        "S0_s1_t8__DIRECT__real",
-        "B0_s1_t8__DIRECT__within_subject_permuted",
-        "P0_s1_t8__DIRECT__within_subject_permuted",
-        "C0_s1_t8__DIRECT__within_subject_permuted",
-        "S0_s1_t8__DIRECT__within_subject_permuted",
-        "C0_s0_t5__DIRECT__real",
-        "S0_s0_t5__CROSS__real",
-        "C0_s0_t6__CROSS__real",
-        "C0_s0_t6__CROSS__within_subject_permuted",
-        "C0_s0_t8__CROSS__within_subject_permuted",
-        "S0_s0_t8__CROSS__within_subject_permuted",
-        "B0_s1_t0__CROSS__real",
-        "P0_s1_t0__CROSS__real",
-        "C0_s1_t0__CROSS__real",
-        "S0_s1_t0__CROSS__real",
-        "B0_s1_t0__CROSS__within_subject_permuted",
-        "P0_s1_t0__CROSS__within_subject_permuted",
-        "C0_s1_t0__CROSS__within_subject_permuted",
-        "S0_s1_t0__CROSS__within_subject_permuted",
-        "B0_s1_t1__CROSS__real",
-        "P0_s1_t1__CROSS__real",
-        "C0_s1_t1__CROSS__real",
-        "S0_s1_t1__CROSS__real",
-        "B0_s1_t1__CROSS__within_subject_permuted",
-        "P0_s1_t1__CROSS__within_subject_permuted",
-        "S0_s1_t1__CROSS__within_subject_permuted",
-        "B0_s1_t2__CROSS__real",
-        "P0_s1_t2__CROSS__real",
-        "C0_s1_t2__CROSS__real",
-        "S0_s1_t2__CROSS__real",
-        "B0_s1_t2__CROSS__within_subject_permuted",
-        "P0_s1_t2__CROSS__within_subject_permuted",
-        "C0_s1_t2__CROSS__within_subject_permuted",
-        "S0_s1_t2__CROSS__within_subject_permuted",
-        "B0_s1_t3__CROSS__real",
-        "P0_s1_t3__CROSS__real",
-        "C0_s1_t3__CROSS__real",
-        "S0_s1_t3__CROSS__real",
-        "B0_s1_t3__CROSS__within_subject_permuted",
-        "P0_s1_t3__CROSS__within_subject_permuted",
-        "C0_s1_t3__CROSS__within_subject_permuted",
-        "S0_s1_t3__CROSS__within_subject_permuted",
-        "B0_s1_t4__CROSS__real",
-        "P0_s1_t4__CROSS__real",
-        "C0_s1_t4__CROSS__real",
-        "S0_s1_t4__CROSS__real",
-        "B0_s1_t4__CROSS__within_subject_permuted",
-        "P0_s1_t4__CROSS__within_subject_permuted",
-        "C0_s1_t4__CROSS__within_subject_permuted",
-        "S0_s1_t4__CROSS__within_subject_permuted",
-        "B0_s1_t5__CROSS__real",
-        "P0_s1_t5__CROSS__real",
-        "C0_s1_t5__CROSS__real",
-        "S0_s1_t5__CROSS__real",
-        "B0_s1_t5__CROSS__within_subject_permuted",
-        "P0_s1_t5__CROSS__within_subject_permuted",
-        "C0_s1_t5__CROSS__within_subject_permuted",
-        "S0_s1_t5__CROSS__within_subject_permuted",
-        "B0_s1_t6__CROSS__real",
-        "P0_s1_t6__CROSS__real",
-        "C0_s1_t6__CROSS__real",
-        "S0_s1_t6__CROSS__real",
-        "B0_s1_t6__CROSS__within_subject_permuted",
-        "P0_s1_t6__CROSS__within_subject_permuted",
-        "C0_s1_t6__CROSS__within_subject_permuted",
-        "S0_s1_t6__CROSS__within_subject_permuted",
-        "B0_s1_t7__CROSS__real",
-        "P0_s1_t7__CROSS__real",
-        "C0_s1_t7__CROSS__real",
-        "S0_s1_t7__CROSS__real",
-        "B0_s1_t7__CROSS__within_subject_permuted",
-        "P0_s1_t7__CROSS__within_subject_permuted",
-        "C0_s1_t7__CROSS__within_subject_permuted",
-        "S0_s1_t7__CROSS__within_subject_permuted",
-        "B0_s1_t8__CROSS__real",
-        "P0_s1_t8__CROSS__real",
-        "C0_s1_t8__CROSS__real",
-        "S0_s1_t8__CROSS__real",
-        "B0_s1_t8__CROSS__within_subject_permuted",
-        "P0_s1_t8__CROSS__within_subject_permuted",
-        "C0_s1_t8__CROSS__within_subject_permuted",
-        "S0_s1_t8__CROSS__within_subject_permuted",
-        "C0_s1_t1__CROSS__within_subject_permuted",
-        "S0_s0_t7__CROSS__within_subject_permuted"
-      ],
-      "reused_task_ids": [
-        "B0_s0_t0__CROSS__real",
-        "B0_s0_t0__CROSS__within_subject_permuted",
-        "B0_s0_t0__DIRECT__real",
-        "B0_s0_t0__DIRECT__within_subject_permuted",
-        "B0_s0_t0__SELF__real",
-        "B0_s0_t0__SELF__within_subject_permuted",
-        "B0_s0_t1__CROSS__real",
-        "B0_s0_t1__CROSS__within_subject_permuted",
-        "B0_s0_t1__DIRECT__real",
-        "B0_s0_t1__DIRECT__within_subject_permuted",
-        "B0_s0_t1__SELF__real",
-        "B0_s0_t2__CROSS__real",
-        "B0_s0_t2__CROSS__within_subject_permuted",
-        "B0_s0_t2__DIRECT__within_subject_permuted",
-        "B0_s0_t3__CROSS__real",
-        "B0_s0_t3__DIRECT__real",
-        "B0_s0_t3__DIRECT__within_subject_permuted",
-        "B0_s0_t4__CROSS__real",
-        "B0_s0_t4__CROSS__within_subject_permuted",
-        "B0_s0_t4__DIRECT__real",
-        "B0_s0_t4__DIRECT__within_subject_permuted",
-        "B0_s0_t5__CROSS__real",
-        "B0_s0_t5__CROSS__within_subject_permuted",
-        "B0_s0_t6__CROSS__real",
-        "B0_s0_t6__CROSS__within_subject_permuted",
-        "B0_s0_t7__CROSS__real",
-        "B0_s0_t7__CROSS__within_subject_permuted",
-        "B0_s0_t8__CROSS__real",
-        "B0_s0_t8__CROSS__within_subject_permuted",
-        "C0_s0_t0__CROSS__real",
-        "C0_s0_t0__CROSS__within_subject_permuted",
-        "C0_s0_t0__DIRECT__real",
-        "C0_s0_t0__DIRECT__within_subject_permuted",
-        "C0_s0_t0__SELF__real",
-        "C0_s0_t0__SELF__within_subject_permuted",
-        "C0_s0_t1__CROSS__real",
-        "C0_s0_t1__CROSS__within_subject_permuted",
-        "C0_s0_t1__DIRECT__real",
-        "C0_s0_t1__DIRECT__within_subject_permuted",
-        "C0_s0_t2__CROSS__real",
-        "C0_s0_t2__CROSS__within_subject_permuted",
-        "C0_s0_t2__DIRECT__real",
-        "C0_s0_t3__CROSS__real",
-        "C0_s0_t3__CROSS__within_subject_permuted",
-        "C0_s0_t3__DIRECT__real",
-        "C0_s0_t3__DIRECT__within_subject_permuted",
-        "C0_s0_t4__CROSS__real",
-        "C0_s0_t4__DIRECT__real",
-        "C0_s0_t4__DIRECT__within_subject_permuted",
-        "C0_s0_t5__CROSS__real",
-        "C0_s0_t5__CROSS__within_subject_permuted",
-        "C0_s0_t7__CROSS__real",
-        "C0_s0_t7__CROSS__within_subject_permuted",
-        "C0_s0_t8__CROSS__real",
-        "P0_s0_t0__CROSS__real",
-        "P0_s0_t0__CROSS__within_subject_permuted",
-        "P0_s0_t0__DIRECT__within_subject_permuted",
-        "P0_s0_t0__SELF__within_subject_permuted",
-        "P0_s0_t1__CROSS__real",
-        "P0_s0_t1__CROSS__within_subject_permuted",
-        "P0_s0_t1__DIRECT__real",
-        "P0_s0_t1__DIRECT__within_subject_permuted",
-        "P0_s0_t1__SELF__within_subject_permuted",
-        "P0_s0_t2__CROSS__real",
-        "P0_s0_t2__CROSS__within_subject_permuted",
-        "P0_s0_t2__DIRECT__real",
-        "P0_s0_t2__DIRECT__within_subject_permuted",
-        "P0_s0_t3__CROSS__real",
-        "P0_s0_t3__DIRECT__real",
-        "P0_s0_t3__DIRECT__within_subject_permuted",
-        "P0_s0_t4__CROSS__real",
-        "P0_s0_t4__CROSS__within_subject_permuted",
-        "P0_s0_t4__DIRECT__real",
-        "P0_s0_t4__DIRECT__within_subject_permuted",
-        "P0_s0_t5__CROSS__real",
-        "P0_s0_t5__CROSS__within_subject_permuted",
-        "P0_s0_t6__CROSS__real",
-        "P0_s0_t6__CROSS__within_subject_permuted",
-        "P0_s0_t7__CROSS__real",
-        "P0_s0_t7__CROSS__within_subject_permuted",
-        "P0_s0_t8__CROSS__real",
-        "P0_s0_t8__CROSS__within_subject_permuted",
-        "S0_s0_t0__CROSS__real",
-        "S0_s0_t0__CROSS__within_subject_permuted",
-        "S0_s0_t0__DIRECT__real",
-        "S0_s0_t0__DIRECT__within_subject_permuted",
-        "S0_s0_t0__SELF__within_subject_permuted",
-        "S0_s0_t1__CROSS__real",
-        "S0_s0_t1__CROSS__within_subject_permuted",
-        "S0_s0_t1__DIRECT__real",
-        "S0_s0_t1__DIRECT__within_subject_permuted",
-        "S0_s0_t1__SELF__real",
-        "S0_s0_t2__CROSS__real",
-        "S0_s0_t2__CROSS__within_subject_permuted",
-        "S0_s0_t2__DIRECT__real",
-        "S0_s0_t2__DIRECT__within_subject_permuted",
-        "S0_s0_t3__CROSS__real",
-        "S0_s0_t3__CROSS__within_subject_permuted",
-        "S0_s0_t3__DIRECT__real",
-        "S0_s0_t3__DIRECT__within_subject_permuted",
-        "S0_s0_t4__CROSS__real",
-        "S0_s0_t4__CROSS__within_subject_permuted",
-        "S0_s0_t4__DIRECT__real",
-        "S0_s0_t4__DIRECT__within_subject_permuted",
-        "S0_s0_t5__CROSS__within_subject_permuted",
-        "S0_s0_t6__CROSS__real",
-        "S0_s0_t6__CROSS__within_subject_permuted",
-        "S0_s0_t7__CROSS__real",
-        "S0_s0_t8__CROSS__real"
-      ],
-      "scientific_decision": false,
-      "source_ledger_ref": {
-        "path": "ai4s/programs/dsainet/research/dsa-fut-v0.1/repair2/SOURCE_REUSE_MANIFEST.json",
-        "sha256": "36ef5b973230cf11bb82779244c3b99e7b3b32930271ed7fe5a5cc78bfdc52b5"
-      }
-    },
-    {
-      "attempt_class": "explicit_fut_capacity_repair",
-      "authorization_ref": "ai4s/programs/dsainet/research/dsa-fut-v0.1/repair3/AUTHORIZATION.md",
-      "campaign_id": "dsainet-fut-v0.1-20260924",
-      "failed_run_id": "2026-09-24_dsainet_fut_v0_1_repair2-full-w1",
-      "previous_active_run": {
-        "bundle_id": "2026-09-24_dsainet_fut_v0_1_repair2-bundle",
-        "dispatch_status": "REMOTE_ACCEPTED",
-        "estimated_training_hours": 5.185,
-        "execution_mode": "user_managed",
-        "executor_id": "lab10",
-        "planned_units": 433,
-        "recorded_at": "2026-09-24T06:21:57.162734+00:00",
-        "round_id": "dsa-fut-v0.1-repair2",
-        "run_prefix": "2026-09-24_dsainet_fut_v0_1_repair2",
-        "transaction_operations": [
-          {
-            "operation": "upload",
-            "recorded_at": "2026-09-24T06:22:32.860792+00:00",
-            "result": {
-              "action": "UPLOADED",
-              "monitor_powershell": "[REDACTED_MACHINE]",
-              "run_id": "2026-09-24_dsainet_fut_v0_1_repair2-full-w1"
-            }
-          },
-          {
-            "operation": "launch",
-            "recorded_at": "2026-09-24T06:22:34.408878+00:00",
-            "result": {
-              "action": "SUBMISSION_SENT_NOT_VERIFIED",
-              "monitor_powershell": "[REDACTED_MACHINE]",
-              "run_id": "2026-09-24_dsainet_fut_v0_1_repair2-full-w1"
-            }
-          },
-          {
-            "operation": "probe",
-            "recorded_at": "2026-09-24T06:22:55.986257+00:00",
-            "result": {
-              "action": "RECONCILE_SAME_NODE",
-              "node_id": "precheck",
-              "run_id": "2026-09-24_dsainet_fut_v0_1_repair2-full-w1",
-              "status": "RUNNING",
-              "timing": {
-                "contract_sha256": "c0079193203e370a4c3534751d660f4c16f43a4373e42bc771172b46998085e3",
-                "execution_seconds": 17.31287980079651,
-                "queue_seconds": 0.0,
-                "queue_time_policy": "exclude_resource_wait",
-                "run_id": "2026-09-24_dsainet_fut_v0_1_repair2-full-w1",
-                "transaction_id": "2026-09-24_dsainet_fut_v0_1_repair2-tx",
-                "waiting_for_resources": false,
-                "wall_seconds": 17.31287980079651
-              }
-            }
-          },
-          {
-            "operation": "probe",
-            "recorded_at": "2026-09-24T06:24:17.294311+00:00",
-            "result": {
-              "action": "RECONCILE_SAME_NODE",
-              "node_id": "precheck",
-              "run_id": "2026-09-24_dsainet_fut_v0_1_repair2-full-w1",
-              "status": "RUNNING",
-              "timing": {
-                "contract_sha256": "c0079193203e370a4c3534751d660f4c16f43a4373e42bc771172b46998085e3",
-                "execution_seconds": 98.61843156814575,
-                "queue_seconds": 0.0,
-                "queue_time_policy": "exclude_resource_wait",
-                "run_id": "2026-09-24_dsainet_fut_v0_1_repair2-full-w1",
-                "transaction_id": "2026-09-24_dsainet_fut_v0_1_repair2-tx",
-                "waiting_for_resources": false,
-                "wall_seconds": 98.61843156814575
-              }
-            }
-          }
-        ]
-      },
-      "recorded_at": "2026-09-24T13:52:11.524544+00:00",
-      "rerun_task_ids": [
-        "P0_s0_t5__DIRECT__real",
-        "B0_s0_t5__DIRECT__within_subject_permuted",
-        "S0_s0_t6__DIRECT__real",
-        "P0_s0_t5__DIRECT__within_subject_permuted",
-        "C0_s0_t6__DIRECT__real",
-        "B0_s0_t6__DIRECT__real",
-        "S0_s0_t6__DIRECT__within_subject_permuted",
-        "P0_s0_t6__DIRECT__real",
-        "C0_s0_t6__DIRECT__within_subject_permuted",
-        "B0_s0_t6__DIRECT__within_subject_permuted",
-        "S0_s0_t7__DIRECT__real",
-        "P0_s0_t6__DIRECT__within_subject_permuted",
-        "C0_s0_t7__DIRECT__real",
-        "B0_s0_t7__DIRECT__real",
-        "S0_s0_t7__DIRECT__within_subject_permuted",
-        "P0_s0_t7__DIRECT__real",
-        "C0_s0_t7__DIRECT__within_subject_permuted",
-        "B0_s0_t7__DIRECT__within_subject_permuted",
-        "S0_s0_t8__DIRECT__real",
-        "P0_s0_t7__DIRECT__within_subject_permuted",
-        "C0_s0_t8__DIRECT__real",
-        "B0_s0_t8__DIRECT__real",
-        "S0_s0_t8__DIRECT__within_subject_permuted",
-        "P0_s0_t8__DIRECT__real",
-        "C0_s0_t8__DIRECT__within_subject_permuted",
-        "B0_s0_t8__DIRECT__within_subject_permuted",
-        "S0_s1_t0__DIRECT__real",
-        "P0_s0_t8__DIRECT__within_subject_permuted",
-        "C0_s1_t0__DIRECT__real",
-        "B0_s1_t0__DIRECT__real",
-        "S0_s1_t0__DIRECT__within_subject_permuted",
-        "P0_s1_t0__DIRECT__real",
-        "C0_s1_t0__DIRECT__within_subject_permuted",
-        "B0_s1_t0__DIRECT__within_subject_permuted",
-        "S0_s1_t1__DIRECT__real",
-        "P0_s1_t0__DIRECT__within_subject_permuted",
-        "C0_s1_t1__DIRECT__real",
-        "B0_s1_t1__DIRECT__real",
-        "S0_s1_t1__DIRECT__within_subject_permuted",
-        "P0_s1_t1__DIRECT__real",
-        "C0_s1_t1__DIRECT__within_subject_permuted",
-        "B0_s1_t1__DIRECT__within_subject_permuted",
-        "S0_s1_t2__DIRECT__real",
-        "P0_s1_t1__DIRECT__within_subject_permuted",
-        "C0_s1_t2__DIRECT__real",
-        "B0_s1_t2__DIRECT__real",
-        "S0_s1_t2__DIRECT__within_subject_permuted",
-        "P0_s1_t2__DIRECT__real",
-        "C0_s1_t2__DIRECT__within_subject_permuted",
-        "B0_s1_t2__DIRECT__within_subject_permuted",
-        "S0_s1_t3__DIRECT__real",
-        "P0_s1_t2__DIRECT__within_subject_permuted",
-        "C0_s1_t3__DIRECT__real",
-        "B0_s1_t3__DIRECT__real",
-        "S0_s1_t3__DIRECT__within_subject_permuted",
-        "P0_s1_t3__DIRECT__real",
-        "C0_s1_t3__DIRECT__within_subject_permuted",
-        "B0_s1_t3__DIRECT__within_subject_permuted",
-        "S0_s1_t4__DIRECT__real",
-        "P0_s1_t3__DIRECT__within_subject_permuted",
-        "C0_s1_t4__DIRECT__real",
-        "B0_s1_t4__DIRECT__real",
-        "S0_s1_t4__DIRECT__within_subject_permuted",
-        "P0_s1_t4__DIRECT__real",
-        "C0_s1_t4__DIRECT__within_subject_permuted",
-        "B0_s1_t4__DIRECT__within_subject_permuted",
-        "S0_s1_t5__DIRECT__real",
-        "P0_s1_t4__DIRECT__within_subject_permuted",
-        "C0_s1_t5__DIRECT__real",
-        "B0_s1_t5__DIRECT__real",
-        "S0_s1_t5__DIRECT__within_subject_permuted",
-        "P0_s1_t5__DIRECT__real",
-        "C0_s1_t5__DIRECT__within_subject_permuted",
-        "B0_s1_t5__DIRECT__within_subject_permuted",
-        "S0_s1_t6__DIRECT__real",
-        "P0_s1_t5__DIRECT__within_subject_permuted",
-        "C0_s1_t6__DIRECT__real",
-        "B0_s1_t6__DIRECT__real",
-        "S0_s1_t6__DIRECT__within_subject_permuted",
-        "P0_s1_t6__DIRECT__real",
-        "C0_s1_t6__DIRECT__within_subject_permuted",
-        "B0_s1_t6__DIRECT__within_subject_permuted",
-        "C0_s1_t7__DIRECT__real",
-        "B0_s1_t7__DIRECT__real",
-        "S0_s1_t7__DIRECT__within_subject_permuted",
-        "P0_s1_t7__DIRECT__real",
-        "C0_s1_t7__DIRECT__within_subject_permuted",
-        "B0_s1_t7__DIRECT__within_subject_permuted",
-        "S0_s1_t8__DIRECT__real",
-        "P0_s1_t7__DIRECT__within_subject_permuted",
-        "C0_s1_t8__DIRECT__real",
-        "B0_s1_t8__DIRECT__real",
-        "S0_s1_t8__DIRECT__within_subject_permuted",
-        "P0_s1_t8__DIRECT__real",
-        "C0_s1_t8__DIRECT__within_subject_permuted",
-        "B0_s1_t8__DIRECT__within_subject_permuted",
-        "P0_s1_t8__DIRECT__within_subject_permuted",
-        "C0_s0_t5__DIRECT__real",
-        "C0_s0_t5__DIRECT__within_subject_permuted"
-      ],
-      "reused_task_ids": [
-        "B0_s0_t0__CROSS__real",
-        "B0_s0_t0__CROSS__within_subject_permuted",
-        "B0_s0_t0__DIRECT__real",
-        "B0_s0_t0__DIRECT__within_subject_permuted",
-        "B0_s0_t0__SELF__real",
-        "B0_s0_t0__SELF__within_subject_permuted",
-        "B0_s0_t1__CROSS__real",
-        "B0_s0_t1__CROSS__within_subject_permuted",
-        "B0_s0_t1__DIRECT__real",
-        "B0_s0_t1__DIRECT__within_subject_permuted",
-        "B0_s0_t1__SELF__real",
-        "B0_s0_t1__SELF__within_subject_permuted",
-        "B0_s0_t2__CROSS__real",
-        "B0_s0_t2__CROSS__within_subject_permuted",
-        "B0_s0_t2__DIRECT__real",
-        "B0_s0_t2__DIRECT__within_subject_permuted",
-        "B0_s0_t2__SELF__real",
-        "B0_s0_t2__SELF__within_subject_permuted",
-        "B0_s0_t3__CROSS__real",
-        "B0_s0_t3__CROSS__within_subject_permuted",
-        "B0_s0_t3__DIRECT__real",
-        "B0_s0_t3__DIRECT__within_subject_permuted",
-        "B0_s0_t3__SELF__real",
-        "B0_s0_t3__SELF__within_subject_permuted",
-        "B0_s0_t4__CROSS__real",
-        "B0_s0_t4__CROSS__within_subject_permuted",
-        "B0_s0_t4__DIRECT__real",
-        "B0_s0_t4__DIRECT__within_subject_permuted",
-        "B0_s0_t4__SELF__real",
-        "B0_s0_t4__SELF__within_subject_permuted",
-        "B0_s0_t5__CROSS__real",
-        "B0_s0_t5__CROSS__within_subject_permuted",
-        "B0_s0_t5__DIRECT__real",
-        "B0_s0_t5__SELF__real",
-        "B0_s0_t5__SELF__within_subject_permuted",
-        "B0_s0_t6__CROSS__real",
-        "B0_s0_t6__CROSS__within_subject_permuted",
-        "B0_s0_t6__SELF__real",
-        "B0_s0_t6__SELF__within_subject_permuted",
-        "B0_s0_t7__CROSS__real",
-        "B0_s0_t7__CROSS__within_subject_permuted",
-        "B0_s0_t7__SELF__real",
-        "B0_s0_t7__SELF__within_subject_permuted",
-        "B0_s0_t8__CROSS__real",
-        "B0_s0_t8__CROSS__within_subject_permuted",
-        "B0_s0_t8__SELF__real",
-        "B0_s0_t8__SELF__within_subject_permuted",
-        "B0_s1_t0__CROSS__real",
-        "B0_s1_t0__CROSS__within_subject_permuted",
-        "B0_s1_t0__SELF__real",
-        "B0_s1_t0__SELF__within_subject_permuted",
-        "B0_s1_t1__CROSS__real",
-        "B0_s1_t1__CROSS__within_subject_permuted",
-        "B0_s1_t1__SELF__real",
-        "B0_s1_t1__SELF__within_subject_permuted",
-        "B0_s1_t2__CROSS__real",
-        "B0_s1_t2__CROSS__within_subject_permuted",
-        "B0_s1_t2__SELF__real",
-        "B0_s1_t2__SELF__within_subject_permuted",
-        "B0_s1_t3__CROSS__real",
-        "B0_s1_t3__CROSS__within_subject_permuted",
-        "B0_s1_t3__SELF__real",
-        "B0_s1_t3__SELF__within_subject_permuted",
-        "B0_s1_t4__CROSS__real",
-        "B0_s1_t4__CROSS__within_subject_permuted",
-        "B0_s1_t4__SELF__real",
-        "B0_s1_t4__SELF__within_subject_permuted",
-        "B0_s1_t5__CROSS__real",
-        "B0_s1_t5__CROSS__within_subject_permuted",
-        "B0_s1_t5__SELF__real",
-        "B0_s1_t5__SELF__within_subject_permuted",
-        "B0_s1_t6__CROSS__real",
-        "B0_s1_t6__CROSS__within_subject_permuted",
-        "B0_s1_t6__SELF__real",
-        "B0_s1_t6__SELF__within_subject_permuted",
-        "B0_s1_t7__CROSS__real",
-        "B0_s1_t7__CROSS__within_subject_permuted",
-        "B0_s1_t7__SELF__real",
-        "B0_s1_t7__SELF__within_subject_permuted",
-        "B0_s1_t8__CROSS__real",
-        "B0_s1_t8__CROSS__within_subject_permuted",
-        "B0_s1_t8__SELF__real",
-        "B0_s1_t8__SELF__within_subject_permuted",
-        "C0_s0_t0__CROSS__real",
-        "C0_s0_t0__CROSS__within_subject_permuted",
-        "C0_s0_t0__DIRECT__real",
-        "C0_s0_t0__DIRECT__within_subject_permuted",
-        "C0_s0_t0__SELF__real",
-        "C0_s0_t0__SELF__within_subject_permuted",
-        "C0_s0_t1__CROSS__real",
-        "C0_s0_t1__CROSS__within_subject_permuted",
-        "C0_s0_t1__DIRECT__real",
-        "C0_s0_t1__DIRECT__within_subject_permuted",
-        "C0_s0_t1__SELF__real",
-        "C0_s0_t1__SELF__within_subject_permuted",
-        "C0_s0_t2__CROSS__real",
-        "C0_s0_t2__CROSS__within_subject_permuted",
-        "C0_s0_t2__DIRECT__real",
-        "C0_s0_t2__DIRECT__within_subject_permuted",
-        "C0_s0_t2__SELF__real",
-        "C0_s0_t2__SELF__within_subject_permuted",
-        "C0_s0_t3__CROSS__real",
-        "C0_s0_t3__CROSS__within_sub
+        "ex
 ```

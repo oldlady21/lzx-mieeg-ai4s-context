@@ -2,12 +2,1618 @@
 
 完整脱敏文件：`ai4s/programs/dsainet/research/STATE.yaml`（[原文件](../STATE.yaml)）。
 
-完整公开文件 SHA-256：`546294f490c37739bda04797b439fd05243a3b3cd8b4b5effc331321bba2400a`。UTF-8 字节范围：[500000, 1000000) / 1036464。
+完整公开文件 SHA-256：`5facb7140fb8c0d253b3f264b975d0fec60c9086af9553f6322c9439338ea52b`。UTF-8 字节范围：[500000, 1000000) / 1086722。
 
 这是连续文本片段，可能从 JSON 字段中间开始；按分段顺序拼接代码块可恢复完整脱敏正文。不是单独有效的 State，也不授予执行权限。
 
 ```yaml
-ject_permuted",
+ecution_mode": "ai4s_autopilot",
+        "executor_id": "ccmu_lab",
+        "planned_units": 36,
+        "recorded_at": "2026-09-01T12:13:28.844690+00:00",
+        "round_id": "dsainet-r03-role-specific-token-pooling-v0.1",
+        "run_prefix": "2026-09-01_dsainet_ai4s_role_specific_token_pooling_r3r2"
+      },
+      "failed_run_id": "2026-09-01_dsainet_ai4s_role_specific_token_pooling_r3r2-full-w1",
+      "formal_status": {
+        "formal_run_status_before_interruption": "running",
+        "status": "unarchived_external_interruption"
+      },
+      "interruption_evidence": {
+        "bundle_id": "2026-09-01_dsainet_ai4s_role_specific_token_pooling_r3r2",
+        "evidence_summary": "The third full attempt was absent after the host reboot. Formal status remained running and no transfer archive existed. Only six lane task logs were observed, so the full matrix was incomplete.",
+        "formal_run_status": "running",
+        "host_boot_at": "2026-09-01T22:07:20+08:00",
+        "host_reboot_observed": true,
+        "matrix_task_count": 36,
+        "observed_lane_task_logs": 6,
+        "observed_uptime_seconds_less_than": 660,
+        "process_not_running": true,
+        "remote_observed_at": "2026-09-01T22:17:53+08:00",
+        "run_id": "2026-09-01_dsainet_ai4s_role_specific_token_pooling_r3r2-full-w1",
+        "schema_version": "mieeg-ai4s-external-interruption-evidence-v1",
+        "scope_boundary": "This is engineering interruption evidence only. The six unarchived task artifacts are not eligible for scientific comparison, result freezing, decision, or claim.",
+        "stage": "full",
+        "transfer_archive_present": false
+      },
+      "retry_recorded_at": "2026-09-02T10:21:26.809453+00:00",
+      "round_id": "dsainet-r03-role-specific-token-pooling-v0.1"
+    },
+    {
+      "attempt_class": "external_host_interruption_unarchived",
+      "engineering_reason": "User authorized R03 continuation after server-side interruptions; preserve r3r3 as unarchived engineering evidence and rerun the unchanged frozen 36-unit matrix under a new immutable GPU0 Bundle.",
+      "failed_run": {
+        "bundle_id": "2026-09-02_dsainet_ai4s_role_specific_token_pooling_r3r3",
+        "estimated_training_hours": 1.759,
+        "execution_mode": "ai4s_autopilot",
+        "executor_id": "ccmu_lab",
+        "planned_units": 36,
+        "recorded_at": "2026-09-02T10:21:26.809453+00:00",
+        "round_id": "dsainet-r03-role-specific-token-pooling-v0.1",
+        "run_prefix": "2026-09-02_dsainet_ai4s_role_specific_token_pooling_r3r3"
+      },
+      "failed_run_id": "2026-09-02_dsainet_ai4s_role_specific_token_pooling_r3r3-full-w1",
+      "formal_status": {
+        "formal_run_status_before_interruption": "running",
+        "status": "unarchived_external_interruption"
+      },
+      "interruption_evidence": {
+        "bundle_id": "2026-09-02_dsainet_ai4s_role_specific_token_pooling_r3r3",
+        "evidence_summary": "The full-run process was absent, formal status remained running, and no transfer archive existed after the host rebooted at 22:13:53+08:00. The preceding boot at 21:41 also lasted only 31 minutes.",
+        "formal_run_status": "running",
+        "host_boot_at": "2026-09-02T22:13:53+08:00",
+        "host_reboot_observed": true,
+        "observed_uptime_seconds_less_than": 900,
+        "process_not_running": true,
+        "remote_observed_at": "2026-09-02T22:28:06+08:00",
+        "run_id": "2026-09-02_dsainet_ai4s_role_specific_token_pooling_r3r3-full-w1",
+        "schema_version": "mieeg-ai4s-external-interruption-evidence-v1",
+        "scope_boundary": "This is engineering interruption evidence only. Any partial full-run artifacts are not eligible for scientific comparison, result freezing, decision, or claim.",
+        "stage": "full",
+        "transfer_archive_present": false
+      },
+      "retry_recorded_at": "2026-09-05T02:55:15.841447+00:00",
+      "round_id": "dsainet-r03-role-specific-token-pooling-v0.1"
+    },
+    {
+      "attempt_class": "user_confirmed_external_host_interruption_unarchived",
+      "engineering_reason": "User explicitly authorized the Lab10 replacement after confirming the ccmu host reboot was manual; the full 54-task matrix replaces the interrupted unarchived Run and its partial artifacts remain ineligible.",
+      "failed_run": {
+        "bundle_id": "2026-09-07_dsainet_ttpp_v0_1",
+        "dispatch_status": "REMOTE_ACCEPTED",
+        "estimated_training_hours": 3.056,
+        "execution_mode": "ai4s_autopilot",
+        "executor_id": "ccmu_lab",
+        "planned_units": 55,
+        "recorded_at": "2026-09-07T07:58:41.100037+00:00",
+        "round_id": "dsainet-r01-ttpp-v0.1",
+        "run_prefix": "2026-09-07_dsainet_ttpp_v0_1",
+        "transaction_operations": [
+          {
+            "operation": "upload",
+            "recorded_at": "2026-09-07T08:00:09.551555+00:00",
+            "result": {
+              "action": "UPLOADED",
+              "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1"
+            }
+          },
+          {
+            "operation": "launch",
+            "recorded_at": "2026-09-07T08:00:26.332393+00:00",
+            "result": {
+              "action": "SUBMISSION_SENT_NOT_VERIFIED",
+              "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1"
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-09-07T08:00:53.811004+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "screen",
+              "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "67506f4e49013fb8da79b594b453692466cd594cc891ad16367f5277d5018075",
+                "execution_seconds": 27.32974934577942,
+                "queue_seconds": 0.0,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
+                "transaction_id": "2026-09-07_dsainet_ttpp_v0_1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 27.32974934577942
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-09-07T08:03:47.407482+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "screen",
+              "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "67506f4e49013fb8da79b594b453692466cd594cc891ad16367f5277d5018075",
+                "execution_seconds": 200.93548679351807,
+                "queue_seconds": 0.0,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
+                "transaction_id": "2026-09-07_dsainet_ttpp_v0_1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 200.93548679351807
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-09-07T08:04:04.686789+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "screen",
+              "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "67506f4e49013fb8da79b594b453692466cd594cc891ad16367f5277d5018075",
+                "execution_seconds": 218.2122642993927,
+                "queue_seconds": 0.0,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
+                "transaction_id": "2026-09-07_dsainet_ttpp_v0_1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 218.2122642993927
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-09-07T08:05:36.053365+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "screen",
+              "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "67506f4e49013fb8da79b594b453692466cd594cc891ad16367f5277d5018075",
+                "execution_seconds": 309.58458852767944,
+                "queue_seconds": 0.0,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
+                "transaction_id": "2026-09-07_dsainet_ttpp_v0_1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 309.58458852767944
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-09-07T08:07:07.537298+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "screen",
+              "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "67506f4e49013fb8da79b594b453692466cd594cc891ad16367f5277d5018075",
+                "execution_seconds": 401.0740888118744,
+                "queue_seconds": 0.0,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
+                "transaction_id": "2026-09-07_dsainet_ttpp_v0_1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 401.0740888118744
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-09-07T08:08:38.958837+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "screen",
+              "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "67506f4e49013fb8da79b594b453692466cd594cc891ad16367f5277d5018075",
+                "execution_seconds": 492.4795138835907,
+                "queue_seconds": 0.0,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
+                "transaction_id": "2026-09-07_dsainet_ttpp_v0_1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 492.4795138835907
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-09-07T08:10:10.243717+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "screen",
+              "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "67506f4e49013fb8da79b594b453692466cd594cc891ad16367f5277d5018075",
+                "execution_seconds": 583.7872195243835,
+                "queue_seconds": 0.0,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
+                "transaction_id": "2026-09-07_dsainet_ttpp_v0_1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 583.7872195243835
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-09-07T08:11:41.549187+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "screen",
+              "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "67506f4e49013fb8da79b594b453692466cd594cc891ad16367f5277d5018075",
+                "execution_seconds": 675.0961074829102,
+                "queue_seconds": 0.0,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
+                "transaction_id": "2026-09-07_dsainet_ttpp_v0_1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 675.0961074829102
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-09-07T08:13:12.764597+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "screen",
+              "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "67506f4e49013fb8da79b594b453692466cd594cc891ad16367f5277d5018075",
+                "execution_seconds": 766.3140320777893,
+                "queue_seconds": 0.0,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
+                "transaction_id": "2026-09-07_dsainet_ttpp_v0_1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 766.3140320777893
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-09-07T08:14:45.203541+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "screen",
+              "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "67506f4e49013fb8da79b594b453692466cd594cc891ad16367f5277d5018075",
+                "execution_seconds": 858.6954791545868,
+                "queue_seconds": 0.0,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
+                "transaction_id": "2026-09-07_dsainet_ttpp_v0_1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 858.6954791545868
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-09-07T08:16:16.547880+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "screen",
+              "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "67506f4e49013fb8da79b594b453692466cd594cc891ad16367f5277d5018075",
+                "execution_seconds": 950.1013650894165,
+                "queue_seconds": 0.0,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
+                "transaction_id": "2026-09-07_dsainet_ttpp_v0_1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 950.1013650894165
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-09-07T08:17:47.843749+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "screen",
+              "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "67506f4e49013fb8da79b594b453692466cd594cc891ad16367f5277d5018075",
+                "execution_seconds": 1041.3872587680817,
+                "queue_seconds": 0.0,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
+                "transaction_id": "2026-09-07_dsainet_ttpp_v0_1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 1041.3872587680817
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-09-07T08:19:19.170716+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "screen",
+              "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "67506f4e49013fb8da79b594b453692466cd594cc891ad16367f5277d5018075",
+                "execution_seconds": 1132.7187187671661,
+                "queue_seconds": 0.0,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
+                "transaction_id": "2026-09-07_dsainet_ttpp_v0_1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 1132.7187187671661
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-09-07T08:20:50.271624+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "screen",
+              "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "67506f4e49013fb8da79b594b453692466cd594cc891ad16367f5277d5018075",
+                "execution_seconds": 1223.8297233581543,
+                "queue_seconds": 0.0,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
+                "transaction_id": "2026-09-07_dsainet_ttpp_v0_1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 1223.8297233581543
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-09-07T08:22:21.472466+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "screen",
+              "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "67506f4e49013fb8da79b594b453692466cd594cc891ad16367f5277d5018075",
+                "execution_seconds": 1315.0340762138367,
+                "queue_seconds": 0.0,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
+                "transaction_id": "2026-09-07_dsainet_ttpp_v0_1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 1315.0340762138367
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-09-07T08:23:52.968553+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "screen",
+              "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "67506f4e49013fb8da79b594b453692466cd594cc891ad16367f5277d5018075",
+                "execution_seconds": 1406.5336124897003,
+                "queue_seconds": 0.0,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
+                "transaction_id": "2026-09-07_dsainet_ttpp_v0_1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 1406.5336124897003
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-09-07T08:25:24.493817+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "screen",
+              "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "67506f4e49013fb8da79b594b453692466cd594cc891ad16367f5277d5018075",
+                "execution_seconds": 1498.061488866806,
+                "queue_seconds": 0.0,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
+                "transaction_id": "2026-09-07_dsainet_ttpp_v0_1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 1498.061488866806
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-09-07T08:26:55.828406+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "screen",
+              "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "67506f4e49013fb8da79b594b453692466cd594cc891ad16367f5277d5018075",
+                "execution_seconds": 1589.4019961357117,
+                "queue_seconds": 0.0,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
+                "transaction_id": "2026-09-07_dsainet_ttpp_v0_1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 1589.4019961357117
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-09-07T08:28:27.209291+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "screen",
+              "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "67506f4e49013fb8da79b594b453692466cd594cc891ad16367f5277d5018075",
+                "execution_seconds": 1680.777736902237,
+                "queue_seconds": 0.0,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
+                "transaction_id": "2026-09-07_dsainet_ttpp_v0_1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 1680.777736902237
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-09-07T08:29:58.484512+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "screen",
+              "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "67506f4e49013fb8da79b594b453692466cd594cc891ad16367f5277d5018075",
+                "execution_seconds": 1772.063435792923,
+                "queue_seconds": 0.0,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
+                "transaction_id": "2026-09-07_dsainet_ttpp_v0_1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 1772.063435792923
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-09-07T08:31:29.665251+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "screen",
+              "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "67506f4e49013fb8da79b594b453692466cd594cc891ad16367f5277d5018075",
+                "execution_seconds": 1863.2491528987885,
+                "queue_seconds": 0.0,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
+                "transaction_id": "2026-09-07_dsainet_ttpp_v0_1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 1863.2491528987885
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-09-07T08:33:00.736332+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "screen",
+              "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "67506f4e49013fb8da79b594b453692466cd594cc891ad16367f5277d5018075",
+                "execution_seconds": 1954.320158958435,
+                "queue_seconds": 0.0,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
+                "transaction_id": "2026-09-07_dsainet_ttpp_v0_1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 1954.320158958435
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-09-07T08:34:32.026473+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "screen",
+              "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "67506f4e49013fb8da79b594b453692466cd594cc891ad16367f5277d5018075",
+                "execution_seconds": 2045.6141362190247,
+                "queue_seconds": 0.0,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
+                "transaction_id": "2026-09-07_dsainet_ttpp_v0_1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 2045.6141362190247
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-09-07T08:36:03.328090+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "screen",
+              "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "67506f4e49013fb8da79b594b453692466cd594cc891ad16367f5277d5018075",
+                "execution_seconds": 2136.9137768745422,
+                "queue_seconds": 0.0,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
+                "transaction_id": "2026-09-07_dsainet_ttpp_v0_1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 2136.9137768745422
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-09-07T08:37:34.875198+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "screen",
+              "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "67506f4e49013fb8da79b594b453692466cd594cc891ad16367f5277d5018075",
+                "execution_seconds": 2228.459602832794,
+                "queue_seconds": 0.0,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
+                "transaction_id": "2026-09-07_dsainet_ttpp_v0_1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 2228.459602832794
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-09-07T08:39:06.208149+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "screen",
+              "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "67506f4e49013fb8da79b594b453692466cd594cc891ad16367f5277d5018075",
+                "execution_seconds": 2319.804042339325,
+                "queue_seconds": 0.0,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
+                "transaction_id": "2026-09-07_dsainet_ttpp_v0_1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 2319.804042339325
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-09-07T08:40:37.454588+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "screen",
+              "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "67506f4e49013fb8da79b594b453692466cd594cc891ad16367f5277d5018075",
+                "execution_seconds": 2411.056348323822,
+                "queue_seconds": 0.0,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
+                "transaction_id": "2026-09-07_dsainet_ttpp_v0_1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 2411.056348323822
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-09-07T08:42:08.685453+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "screen",
+              "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "67506f4e49013fb8da79b594b453692466cd594cc891ad16367f5277d5018075",
+                "execution_seconds": 2502.293130636215,
+                "queue_seconds": 0.0,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
+                "transaction_id": "2026-09-07_dsainet_ttpp_v0_1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 2502.293130636215
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-09-07T10:52:31.438862+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "screen",
+              "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "67506f4e49013fb8da79b594b453692466cd594cc891ad16367f5277d5018075",
+                "execution_seconds": 10325.152110338211,
+                "queue_seconds": 0.0,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
+                "transaction_id": "2026-09-07_dsainet_ttpp_v0_1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 10325.152110338211
+              }
+            }
+          }
+        ]
+      },
+      "failed_run_id": "2026-09-07_dsainet_ttpp_v0_1-full-w1",
+      "interruption_report": "ai4s/programs/dsainet/research/train-time-position-prior/LAB10_RECOVERY.md",
+      "partial_artifacts_eligible": false,
+      "recorded_at": "2026-09-07T15:27:27.666744+00:00",
+      "round_id": "dsainet-r01-ttpp-v0.1"
+    },
+    {
+      "attempt_class": "engineering_capacity_recovery",
+      "campaign_id": "dsainet-cmcr-v0.1-2026-09-15",
+      "failed_run_id": "2026-09-16_dsainet_cmcr_v0_1_repair3-full-w1",
+      "recorded_at": "2026-09-16T15:49:22.447834+00:00",
+      "recovery_run_id": "2026-09-16_dsainet_cmcr_v0_1_recovery4-full-w1",
+      "retry_task_ids": [
+        "b0_s1_t8",
+        "c0_s1_t6",
+        "c0_s1_t7",
+        "c0_s1_t8",
+        "c0_s1_t5",
+        "b0_s1_t7",
+        "s0_s1_t8",
+        "n0_s1_t8"
+      ],
+      "reused_task_ids": [
+        "b0_s0_t0",
+        "b0_s0_t1",
+        "b0_s0_t2",
+        "b0_s0_t3",
+        "b0_s0_t4",
+        "b0_s0_t5",
+        "b0_s0_t6",
+        "b0_s0_t7",
+        "b0_s0_t8",
+        "b0_s1_t0",
+        "b0_s1_t1",
+        "b0_s1_t2",
+        "b0_s1_t3",
+        "b0_s1_t4",
+        "b0_s1_t5",
+        "b0_s1_t6",
+        "c0_s0_t0",
+        "c0_s0_t1",
+        "c0_s0_t2",
+        "c0_s0_t3",
+        "c0_s0_t4",
+        "c0_s0_t5",
+        "c0_s0_t6",
+        "c0_s0_t7",
+        "c0_s0_t8",
+        "c0_s1_t0",
+        "c0_s1_t1",
+        "c0_s1_t2",
+        "c0_s1_t3",
+        "c0_s1_t4",
+        "n0_s0_t0",
+        "n0_s0_t1",
+        "n0_s0_t2",
+        "n0_s0_t3",
+        "n0_s0_t4",
+        "n0_s0_t5",
+        "n0_s0_t6",
+        "n0_s0_t7",
+        "n0_s0_t8",
+        "n0_s1_t0",
+        "n0_s1_t1",
+        "n0_s1_t2",
+        "n0_s1_t3",
+        "n0_s1_t4",
+        "n0_s1_t5",
+        "n0_s1_t6",
+        "n0_s1_t7",
+        "p0_s0_t0",
+        "p0_s0_t1",
+        "p0_s0_t2",
+        "p0_s0_t3",
+        "p0_s0_t4",
+        "p0_s0_t5",
+        "p0_s0_t6",
+        "p0_s0_t7",
+        "p0_s0_t8",
+        "p0_s1_t0",
+        "p0_s1_t1",
+        "p0_s1_t2",
+        "p0_s1_t3",
+        "p0_s1_t4",
+        "p0_s1_t5",
+        "p0_s1_t6",
+        "p0_s1_t7",
+        "p0_s1_t8",
+        "s0_s0_t0",
+        "s0_s0_t1",
+        "s0_s0_t2",
+        "s0_s0_t3",
+        "s0_s0_t4",
+        "s0_s0_t5",
+        "s0_s0_t6",
+        "s0_s0_t7",
+        "s0_s0_t8",
+        "s0_s1_t0",
+        "s0_s1_t1",
+        "s0_s1_t2",
+        "s0_s1_t3",
+        "s0_s1_t4",
+        "s0_s1_t5",
+        "s0_s1_t6",
+        "s0_s1_t7"
+      ],
+      "scientific_decision": false
+    },
+    {
+      "attempt_class": "engineering_capacity_recovery",
+      "failed_run_id": "2026-09-16_dsainet_cmcr_v0_1_recovery4-full-w1",
+      "recorded_at": "2026-09-16T16:46:12.750352+00:00",
+      "recovery_run_id": "2026-09-17_dsainet_cmcr_v0_1_recovery5-full-w1",
+      "retry_task_ids": [
+        "b0_s1_t8",
+        "c0_s1_t6",
+        "c0_s1_t7",
+        "c0_s1_t8",
+        "c0_s1_t5",
+        "b0_s1_t7",
+        "s0_s1_t8",
+        "n0_s1_t8"
+      ],
+      "scientific_decision": false,
+      "source_results_from": "2026-09-16_dsainet_cmcr_v0_1_repair3-full-w1"
+    },
+    {
+      "attempt_class": "explicit_fut_capacity_repair",
+      "authorization_ref": "ai4s/programs/dsainet/research/dsa-fut-v0.1/repair2/AUTHORIZATION.md",
+      "campaign_id": "dsainet-fut-v0.1-20260924",
+      "failed_run_id": "2026-09-24_dsainet_fut_v0_1-full-w1",
+      "previous_active_run": {
+        "bundle_id": "2026-09-24_dsainet_fut_v0_1-bundle",
+        "dispatch_status": "REMOTE_ACCEPTED",
+        "estimated_training_hours": 3.884,
+        "execution_mode": "user_managed",
+        "executor_id": "lab10",
+        "planned_units": 433,
+        "recorded_at": "2026-09-24T01:43:59.044857+00:00",
+        "round_id": "dsa-fut-v0.1",
+        "run_prefix": "2026-09-24_dsainet_fut_v0_1",
+        "transaction_operations": [
+          {
+            "operation": "upload",
+            "recorded_at": "2026-09-24T01:44:45.516451+00:00",
+            "result": {
+              "action": "UPLOADED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-09-24_dsainet_fut_v0_1-full-w1"
+            }
+          },
+          {
+            "operation": "launch",
+            "recorded_at": "2026-09-24T01:44:46.931203+00:00",
+            "result": {
+              "action": "SUBMISSION_SENT_NOT_VERIFIED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-09-24_dsainet_fut_v0_1-full-w1"
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-09-24T01:45:02.199690+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "precheck",
+              "run_id": "2026-09-24_dsainet_fut_v0_1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "da74c32481f4261c1a7529edda6e2366d4b29a3287aab98e9031ac8b9b5eb5a4",
+                "execution_seconds": 11.393534421920776,
+                "queue_seconds": 0.0,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-09-24_dsainet_fut_v0_1-full-w1",
+                "transaction_id": "2026-09-24_dsainet_fut_v0_1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 11.393534421920776
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-09-24T06:08:43.449960+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "diagnostic",
+              "run_id": "2026-09-24_dsainet_fut_v0_1-full-w1",
+              "status": "FAILED",
+              "timing": {
+                "contract_sha256": "da74c32481f4261c1a7529edda6e2366d4b29a3287aab98e9031ac8b9b5eb5a4",
+                "execution_seconds": 1660.6660592556,
+                "queue_seconds": 0.0,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-09-24_dsainet_fut_v0_1-full-w1",
+                "transaction_id": "2026-09-24_dsainet_fut_v0_1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 1660.6660592556
+              }
+            }
+          }
+        ]
+      },
+      "recorded_at": "2026-09-24T06:21:18.753117+00:00",
+      "rerun_task_ids": [
+        "P0_s0_t1__SELF__real",
+        "C0_s0_t1__SELF__real",
+        "B0_s0_t1__SELF__within_subject_permuted",
+        "C0_s0_t1__SELF__within_subject_permuted",
+        "S0_s0_t1__SELF__within_subject_permuted",
+        "B0_s0_t2__SELF__real",
+        "P0_s0_t2__SELF__real",
+        "C0_s0_t2__SELF__real",
+        "S0_s0_t2__SELF__real",
+        "B0_s0_t2__SELF__within_subject_permuted",
+        "P0_s0_t2__SELF__within_subject_permuted",
+        "C0_s0_t2__SELF__within_subject_permuted",
+        "S0_s0_t2__SELF__within_subject_permuted",
+        "B0_s0_t3__SELF__real",
+        "P0_s0_t3__SELF__real",
+        "C0_s0_t3__SELF__real",
+        "S0_s0_t3__SELF__real",
+        "B0_s0_t3__SELF__within_subject_permuted",
+        "P0_s0_t3__SELF__within_subject_permuted",
+        "S0_s0_t3__SELF__within_subject_permuted",
+        "B0_s0_t4__SELF__real",
+        "P0_s0_t4__SELF__real",
+        "C0_s0_t4__SELF__real",
+        "S0_s0_t4__SELF__real",
+        "B0_s0_t4__SELF__within_subject_permuted",
+        "P0_s0_t4__SELF__within_subject_permuted",
+        "C0_s0_t4__SELF__within_subject_permuted",
+        "S0_s0_t4__SELF__within_subject_permuted",
+        "B0_s0_t5__SELF__real",
+        "P0_s0_t5__SELF__real",
+        "C0_s0_t5__SELF__real",
+        "S0_s0_t5__SELF__real",
+        "B0_s0_t5__SELF__within_subject_permuted",
+        "P0_s0_t5__SELF__within_subject_permuted",
+        "C0_s0_t5__SELF__within_subject_permuted",
+        "S0_s0_t5__SELF__within_subject_permuted",
+        "B0_s0_t6__SELF__real",
+        "P0_s0_t6__SELF__real",
+        "C0_s0_t6__SELF__real",
+        "S0_s0_t6__SELF__real",
+        "B0_s0_t6__SELF__within_subject_permuted",
+        "P0_s0_t6__SELF__within_subject_permuted",
+        "C0_s0_t6__SELF__within_subject_permuted",
+        "S0_s0_t6__SELF__within_subject_permuted",
+        "B0_s0_t7__SELF__real",
+        "P0_s0_t7__SELF__real",
+        "C0_s0_t7__SELF__real",
+        "S0_s0_t7__SELF__real",
+        "B0_s0_t7__SELF__within_subject_permuted",
+        "P0_s0_t7__SELF__within_subject_permuted",
+        "C0_s0_t7__SELF__within_subject_permuted",
+        "S0_s0_t7__SELF__within_subject_permuted",
+        "B0_s0_t8__SELF__real",
+        "P0_s0_t8__SELF__real",
+        "C0_s0_t8__SELF__real",
+        "S0_s0_t8__SELF__real",
+        "B0_s0_t8__SELF__within_subject_permuted",
+        "P0_s0_t8__SELF__within_subject_permuted",
+        "C0_s0_t8__SELF__within_subject_permuted",
+        "S0_s0_t8__SELF__within_subject_permuted",
+        "B0_s1_t0__SELF__real",
+        "P0_s1_t0__SELF__real",
+        "C0_s1_t0__SELF__real",
+        "S0_s1_t0__SELF__real",
+        "B0_s1_t0__SELF__within_subject_permuted",
+        "P0_s1_t0__SELF__within_subject_permuted",
+        "C0_s1_t0__SELF__within_subject_permuted",
+        "S0_s1_t0__SELF__within_subject_permuted",
+        "B0_s1_t1__SELF__real",
+        "P0_s1_t1__SELF__real",
+        "C0_s1_t1__SELF__real",
+        "S0_s1_t1__SELF__real",
+        "B0_s1_t1__SELF__within_subject_permuted",
+        "P0_s1_t1__SELF__within_subject_permuted",
+        "C0_s1_t1__SELF__within_subject_permuted",
+        "S0_s1_t1__SELF__within_subject_permuted",
+        "B0_s1_t2__SELF__real",
+        "P0_s1_t2__SELF__real",
+        "C0_s1_t2__SELF__real",
+        "S0_s1_t2__SELF__real",
+        "B0_s1_t2__SELF__within_subject_permuted",
+        "P0_s1_t2__SELF__within_subject_permuted",
+        "C0_s1_t2__SELF__within_subject_permuted",
+        "S0_s1_t2__SELF__within_subject_permuted",
+        "B0_s1_t3__SELF__real",
+        "P0_s1_t3__SELF__real",
+        "C0_s1_t3__SELF__real",
+        "S0_s1_t3__SELF__real",
+        "B0_s1_t3__SELF__within_subject_permuted",
+        "P0_s1_t3__SELF__within_subject_permuted",
+        "C0_s1_t3__SELF__within_subject_permuted",
+        "S0_s1_t3__SELF__within_subject_permuted",
+        "B0_s1_t4__SELF__real",
+        "P0_s1_t4__SELF__real",
+        "C0_s1_t4__SELF__real",
+        "S0_s1_t4__SELF__real",
+        "B0_s1_t4__SELF__within_subject_permuted",
+        "P0_s1_t4__SELF__within_subject_permuted",
+        "C0_s1_t4__SELF__within_subject_permuted",
+        "S0_s1_t4__SELF__within_subject_permuted",
+        "B0_s1_t5__SELF__real",
+        "P0_s1_t5__SELF__real",
+        "C0_s1_t5__SELF__real",
+        "S0_s1_t5__SELF__real",
+        "B0_s1_t5__SELF__within_subject_permuted",
+        "P0_s1_t5__SELF__within_subject_permuted",
+        "C0_s1_t5__SELF__within_subject_permuted",
+        "S0_s1_t5__SELF__within_subject_permuted",
+        "B0_s1_t6__SELF__real",
+        "P0_s1_t6__SELF__real",
+        "C0_s1_t6__SELF__real",
+        "S0_s1_t6__SELF__real",
+        "B0_s1_t6__SELF__within_subject_permuted",
+        "P0_s1_t6__SELF__within_subject_permuted",
+        "C0_s1_t6__SELF__within_subject_permuted",
+        "S0_s1_t6__SELF__within_subject_permuted",
+        "B0_s1_t7__SELF__real",
+        "P0_s1_t7__SELF__real",
+        "C0_s1_t7__SELF__real",
+        "S0_s1_t7__SELF__real",
+        "B0_s1_t7__SELF__within_subject_permuted",
+        "P0_s1_t7__SELF__within_subject_permuted",
+        "C0_s1_t7__SELF__within_subject_permuted",
+        "S0_s1_t7__SELF__within_subject_permuted",
+        "B0_s1_t8__SELF__real",
+        "P0_s1_t8__SELF__real",
+        "C0_s1_t8__SELF__real",
+        "S0_s1_t8__SELF__real",
+        "B0_s1_t8__SELF__within_subject_permuted",
+        "P0_s1_t8__SELF__within_subject_permuted",
+        "C0_s1_t8__SELF__within_subject_permuted",
+        "S0_s1_t8__SELF__within_subject_permuted",
+        "S0_s0_t0__SELF__real",
+        "P0_s0_t0__SELF__real",
+        "C0_s0_t3__SELF__within_subject_permuted",
+        "P0_s0_t0__DIRECT__real",
+        "B0_s0_t2__DIRECT__real",
+        "C0_s0_t2__DIRECT__within_subject_permuted",
+        "B0_s0_t3__CROSS__within_subject_permuted",
+        "P0_s0_t3__CROSS__within_subject_permuted",
+        "C0_s0_t4__CROSS__within_subject_permuted",
+        "B0_s0_t5__DIRECT__real",
+        "P0_s0_t5__DIRECT__real",
+        "S0_s0_t5__DIRECT__real",
+        "B0_s0_t5__DIRECT__within_subject_permuted",
+        "P0_s0_t5__DIRECT__within_subject_permuted",
+        "C0_s0_t5__DIRECT__within_subject_permuted",
+        "S0_s0_t5__DIRECT__within_subject_permuted",
+        "B0_s0_t6__DIRECT__real",
+        "P0_s0_t6__DIRECT__real",
+        "C0_s0_t6__DIRECT__real",
+        "S0_s0_t6__DIRECT__real",
+        "B0_s0_t6__DIRECT__within_subject_permuted",
+        "P0_s0_t6__DIRECT__within_subject_permuted",
+        "C0_s0_t6__DIRECT__within_subject_permuted",
+        "S0_s0_t6__DIRECT__within_subject_permuted",
+        "B0_s0_t7__DIRECT__real",
+        "P0_s0_t7__DIRECT__real",
+        "C0_s0_t7__DIRECT__real",
+        "S0_s0_t7__DIRECT__real",
+        "B0_s0_t7__DIRECT__within_subject_permuted",
+        "P0_s0_t7__DIRECT__within_subject_permuted",
+        "C0_s0_t7__DIRECT__within_subject_permuted",
+        "S0_s0_t7__DIRECT__within_subject_permuted",
+        "B0_s0_t8__DIRECT__real",
+        "P0_s0_t8__DIRECT__real",
+        "C0_s0_t8__DIRECT__real",
+        "S0_s0_t8__DIRECT__real",
+        "B0_s0_t8__DIRECT__within_subject_permuted",
+        "P0_s0_t8__DIRECT__within_subject_permuted",
+        "C0_s0_t8__DIRECT__within_subject_permuted",
+        "S0_s0_t8__DIRECT__within_subject_permuted",
+        "B0_s1_t0__DIRECT__real",
+        "P0_s1_t0__DIRECT__real",
+        "C0_s1_t0__DIRECT__real",
+        "S0_s1_t0__DIRECT__real",
+        "B0_s1_t0__DIRECT__within_subject_permuted",
+        "P0_s1_t0__DIRECT__within_subject_permuted",
+        "C0_s1_t0__DIRECT__within_subject_permuted",
+        "S0_s1_t0__DIRECT__within_subject_permuted",
+        "B0_s1_t1__DIRECT__real",
+        "P0_s1_t1__DIRECT__real",
+        "C0_s1_t1__DIRECT__real",
+        "S0_s1_t1__DIRECT__real",
+        "B0_s1_t1__DIRECT__within_subject_permuted",
+        "P0_s1_t1__DIRECT__within_subject_permuted",
+        "C0_s1_t1__DIRECT__within_subject_permuted",
+        "S0_s1_t1__DIRECT__within_subject_permuted",
+        "B0_s1_t2__DIRECT__real",
+        "P0_s1_t2__DIRECT__real",
+        "C0_s1_t2__DIRECT__real",
+        "S0_s1_t2__DIRECT__real",
+        "B0_s1_t2__DIRECT__within_subject_permuted",
+        "P0_s1_t2__DIRECT__within_subject_permuted",
+        "C0_s1_t2__DIRECT__within_subject_permuted",
+        "S0_s1_t2__DIRECT__within_subject_permuted",
+        "B0_s1_t3__DIRECT__real",
+        "P0_s1_t3__DIRECT__real",
+        "C0_s1_t3__DIRECT__real",
+        "S0_s1_t3__DIRECT__real",
+        "B0_s1_t3__DIRECT__within_subject_permuted",
+        "P0_s1_t3__DIRECT__within_subject_permuted",
+        "C0_s1_t3__DIRECT__within_subject_permuted",
+        "S0_s1_t3__DIRECT__within_subject_permuted",
+        "B0_s1_t4__DIRECT__real",
+        "P0_s1_t4__DIRECT__real",
+        "C0_s1_t4__DIRECT__real",
+        "S0_s1_t4__DIRECT__real",
+        "B0_s1_t4__DIRECT__within_subject_permuted",
+        "P0_s1_t4__DIRECT__within_subject_permuted",
+        "C0_s1_t4__DIRECT__within_subject_permuted",
+        "S0_s1_t4__DIRECT__within_subject_permuted",
+        "B0_s1_t5__DIRECT__real",
+        "P0_s1_t5__DIRECT__real",
+        "C0_s1_t5__DIRECT__real",
+        "S0_s1_t5__DIRECT__real",
+        "B0_s1_t5__DIRECT__within_subject_permuted",
+        "P0_s1_t5__DIRECT__within_subject_permuted",
+        "C0_s1_t5__DIRECT__within_subject_permuted",
+        "S0_s1_t5__DIRECT__within_subject_permuted",
+        "B0_s1_t6__DIRECT__real",
+        "P0_s1_t6__DIRECT__real",
+        "C0_s1_t6__DIRECT__real",
+        "S0_s1_t6__DIRECT__real",
+        "B0_s1_t6__DIRECT__within_subject_permuted",
+        "P0_s1_t6__DIRECT__within_subject_permuted",
+        "C0_s1_t6__DIRECT__within_subject_permuted",
+        "S0_s1_t6__DIRECT__within_subject_permuted",
+        "B0_s1_t7__DIRECT__real",
+        "P0_s1_t7__DIRECT__real",
+        "C0_s1_t7__DIRECT__real",
+        "S0_s1_t7__DIRECT__real",
+        "B0_s1_t7__DIRECT__within_subject_permuted",
+        "P0_s1_t7__DIRECT__within_subject_permuted",
+        "C0_s1_t7__DIRECT__within_subject_permuted",
+        "S0_s1_t7__DIRECT__within_subject_permuted",
+        "B0_s1_t8__DIRECT__real",
+        "P0_s1_t8__DIRECT__real",
+        "C0_s1_t8__DIRECT__real",
+        "S0_s1_t8__DIRECT__real",
+        "B0_s1_t8__DIRECT__within_subject_permuted",
+        "P0_s1_t8__DIRECT__within_subject_permuted",
+        "C0_s1_t8__DIRECT__within_subject_permuted",
+        "S0_s1_t8__DIRECT__within_subject_permuted",
+        "C0_s0_t5__DIRECT__real",
+        "S0_s0_t5__CROSS__real",
+        "C0_s0_t6__CROSS__real",
+        "C0_s0_t6__CROSS__within_subject_permuted",
+        "C0_s0_t8__CROSS__within_subject_permuted",
+        "S0_s0_t8__CROSS__within_subject_permuted",
+        "B0_s1_t0__CROSS__real",
+        "P0_s1_t0__CROSS__real",
+        "C0_s1_t0__CROSS__real",
+        "S0_s1_t0__CROSS__real",
+        "B0_s1_t0__CROSS__within_subject_permuted",
+        "P0_s1_t0__CROSS__within_subject_permuted",
+        "C0_s1_t0__CROSS__within_subject_permuted",
+        "S0_s1_t0__CROSS__within_subject_permuted",
+        "B0_s1_t1__CROSS__real",
+        "P0_s1_t1__CROSS__real",
+        "C0_s1_t1__CROSS__real",
+        "S0_s1_t1__CROSS__real",
+        "B0_s1_t1__CROSS__within_subject_permuted",
+        "P0_s1_t1__CROSS__within_subject_permuted",
+        "S0_s1_t1__CROSS__within_subject_permuted",
+        "B0_s1_t2__CROSS__real",
+        "P0_s1_t2__CROSS__real",
+        "C0_s1_t2__CROSS__real",
+        "S0_s1_t2__CROSS__real",
+        "B0_s1_t2__CROSS__within_subject_permuted",
+        "P0_s1_t2__CROSS__within_subject_permuted",
+        "C0_s1_t2__CROSS__within_subject_permuted",
+        "S0_s1_t2__CROSS__within_subject_permuted",
+        "B0_s1_t3__CROSS__real",
+        "P0_s1_t3__CROSS__real",
+        "C0_s1_t3__CROSS__real",
+        "S0_s1_t3__CROSS__real",
+        "B0_s1_t3__CROSS__within_subject_permuted",
+        "P0_s1_t3__CROSS__within_subject_permuted",
+        "C0_s1_t3__CROSS__within_subject_permuted",
+        "S0_s1_t3__CROSS__within_subject_permuted",
+        "B0_s1_t4__CROSS__real",
+        "P0_s1_t4__CROSS__real",
+        "C0_s1_t4__CROSS__real",
+        "S0_s1_t4__CROSS__real",
+        "B0_s1_t4__CROSS__within_subject_permuted",
+        "P0_s1_t4__CROSS__within_subject_permuted",
+        "C0_s1_t4__CROSS__within_subject_permuted",
+        "S0_s1_t4__CROSS__within_subject_permuted",
+        "B0_s1_t5__CROSS__real",
+        "P0_s1_t5__CROSS__real",
+        "C0_s1_t5__CROSS__real",
+        "S0_s1_t5__CROSS__real",
+        "B0_s1_t5__CROSS__within_subject_permuted",
+        "P0_s1_t5__CROSS__within_subject_permuted",
+        "C0_s1_t5__CROSS__within_subject_permuted",
+        "S0_s1_t5__CROSS__within_subject_permuted",
+        "B0_s1_t6__CROSS__real",
+        "P0_s1_t6__CROSS__real",
+        "C0_s1_t6__CROSS__real",
+        "S0_s1_t6__CROSS__real",
+        "B0_s1_t6__CROSS__within_subject_permuted",
+        "P0_s1_t6__CROSS__within_subject_permuted",
+        "C0_s1_t6__CROSS__within_subject_permuted",
+        "S0_s1_t6__CROSS__within_subject_permuted",
+        "B0_s1_t7__CROSS__real",
+        "P0_s1_t7__CROSS__real",
+        "C0_s1_t7__CROSS__real",
+        "S0_s1_t7__CROSS__real",
+        "B0_s1_t7__CROSS__within_subject_permuted",
+        "P0_s1_t7__CROSS__within_subject_permuted",
+        "C0_s1_t7__CROSS__within_subject_permuted",
+        "S0_s1_t7__CROSS__within_subject_permuted",
+        "B0_s1_t8__CROSS__real",
+        "P0_s1_t8__CROSS__real",
+        "C0_s1_t8__CROSS__real",
+        "S0_s1_t8__CROSS__real",
+        "B0_s1_t8__CROSS__within_subject_permuted",
+        "P0_s1_t8__CROSS__within_subject_permuted",
+        "C0_s1_t8__CROSS__within_subject_permuted",
+        "S0_s1_t8__CROSS__within_subject_permuted",
+        "C0_s1_t1__CROSS__within_subject_permuted",
+        "S0_s0_t7__CROSS__within_subject_permuted"
+      ],
+      "reused_task_ids": [
+        "B0_s0_t0__CROSS__real",
+        "B0_s0_t0__CROSS__within_subject_permuted",
+        "B0_s0_t0__DIRECT__real",
+        "B0_s0_t0__DIRECT__within_subject_permuted",
+        "B0_s0_t0__SELF__real",
+        "B0_s0_t0__SELF__within_subject_permuted",
+        "B0_s0_t1__CROSS__real",
+        "B0_s0_t1__CROSS__within_subject_permuted",
+        "B0_s0_t1__DIRECT__real",
+        "B0_s0_t1__DIRECT__within_subject_permuted",
+        "B0_s0_t1__SELF__real",
+        "B0_s0_t2__CROSS__real",
+        "B0_s0_t2__CROSS__within_subject_permuted",
+        "B0_s0_t2__DIRECT__within_subject_permuted",
+        "B0_s0_t3__CROSS__real",
+        "B0_s0_t3__DIRECT__real",
+        "B0_s0_t3__DIRECT__within_subject_permuted",
+        "B0_s0_t4__CROSS__real",
+        "B0_s0_t4__CROSS__within_subject_permuted",
+        "B0_s0_t4__DIRECT__real",
+        "B0_s0_t4__DIRECT__within_subject_permuted",
+        "B0_s0_t5__CROSS__real",
+        "B0_s0_t5__CROSS__within_subject_permuted",
+        "B0_s0_t6__CROSS__real",
+        "B0_s0_t6__CROSS__within_subject_permuted",
+        "B0_s0_t7__CROSS__real",
+        "B0_s0_t7__CROSS__within_subject_permuted",
+        "B0_s0_t8__CROSS__real",
+        "B0_s0_t8__CROSS__within_subject_permuted",
+        "C0_s0_t0__CROSS__real",
+        "C0_s0_t0__CROSS__within_subject_permuted",
+        "C0_s0_t0__DIRECT__real",
+        "C0_s0_t0__DIRECT__within_subject_permuted",
+        "C0_s0_t0__SELF__real",
+        "C0_s0_t0__SELF__within_subject_permuted",
+        "C0_s0_t1__CROSS__real",
+        "C0_s0_t1__CROSS__within_subject_permuted",
+        "C0_s0_t1__DIRECT__real",
+        "C0_s0_t1__DIRECT__within_subject_permuted",
+        "C0_s0_t2__CROSS__real",
+        "C0_s0_t2__CROSS__within_subject_permuted",
+        "C0_s0_t2__DIRECT__real",
+        "C0_s0_t3__CROSS__real",
+        "C0_s0_t3__CROSS__within_subject_permuted",
+        "C0_s0_t3__DIRECT__real",
+        "C0_s0_t3__DIRECT__within_subject_permuted",
+        "C0_s0_t4__CROSS__real",
+        "C0_s0_t4__DIRECT__real",
+        "C0_s0_t4__DIRECT__within_subject_permuted",
+        "C0_s0_t5__CROSS__real",
+        "C0_s0_t5__CROSS__within_subject_permuted",
+        "C0_s0_t7__CROSS__real",
+        "C0_s0_t7__CROSS__within_subject_permuted",
+        "C0_s0_t8__CROSS__real",
+        "P0_s0_t0__CROSS__real",
+        "P0_s0_t0__CROSS__within_subject_permuted",
+        "P0_s0_t0__DIRECT__within_subject_permuted",
+        "P0_s0_t0__SELF__within_subject_permuted",
+        "P0_s0_t1__CROSS__real",
+        "P0_s0_t1__CROSS__within_subject_permuted",
+        "P0_s0_t1__DIRECT__real",
+        "P0_s0_t1__DIRECT__within_subject_permuted",
+        "P0_s0_t1__SELF__within_subject_permuted",
+        "P0_s0_t2__CROSS__real",
+        "P0_s0_t2__CROSS__within_subject_permuted",
+        "P0_s0_t2__DIRECT__real",
+        "P0_s0_t2__DIRECT__within_subject_permuted",
+        "P0_s0_t3__CROSS__real",
+        "P0_s0_t3__DIRECT__real",
+        "P0_s0_t3__DIRECT__within_subject_permuted",
+        "P0_s0_t4__CROSS__real",
+        "P0_s0_t4__CROSS__within_subject_permuted",
+        "P0_s0_t4__DIRECT__real",
+        "P0_s0_t4__DIRECT__within_subject_permuted",
+        "P0_s0_t5__CROSS__real",
+        "P0_s0_t5__CROSS__within_subject_permuted",
+        "P0_s0_t6__CROSS__real",
+        "P0_s0_t6__CROSS__within_subject_permuted",
+        "P0_s0_t7__CROSS__real",
+        "P0_s0_t7__CROSS__within_subject_permuted",
+        "P0_s0_t8__CROSS__real",
+        "P0_s0_t8__CROSS__within_subject_permuted",
+        "S0_s0_t0__CROSS__real",
+        "S0_s0_t0__CROSS__within_subject_permuted",
+        "S0_s0_t0__DIRECT__real",
+        "S0_s0_t0__DIRECT__within_subject_permuted",
+        "S0_s0_t0__SELF__within_subject_permuted",
+        "S0_s0_t1__CROSS__real",
+        "S0_s0_t1__CROSS__within_subject_permuted",
+        "S0_s0_t1__DIRECT__real",
+        "S0_s0_t1__DIRECT__within_subject_permuted",
+        "S0_s0_t1__SELF__real",
+        "S0_s0_t2__CROSS__real",
+        "S0_s0_t2__CROSS__within_subject_permuted",
+        "S0_s0_t2__DIRECT__real",
+        "S0_s0_t2__DIRECT__within_subject_permuted",
+        "S0_s0_t3__CROSS__real",
+        "S0_s0_t3__CROSS__within_subject_permuted",
+        "S0_s0_t3__DIRECT__real",
+        "S0_s0_t3__DIRECT__within_subject_permuted",
+        "S0_s0_t4__CROSS__real",
+        "S0_s0_t4__CROSS__within_subject_permuted",
+        "S0_s0_t4__DIRECT__real",
+        "S0_s0_t4__DIRECT__within_subject_permuted",
+        "S0_s0_t5__CROSS__within_subject_permuted",
+        "S0_s0_t6__CROSS__real",
+        "S0_s0_t6__CROSS__within_subject_permuted",
+        "S0_s0_t7__CROSS__real",
+        "S0_s0_t8__CROSS__real"
+      ],
+      "scientific_decision": false,
+      "source_ledger_ref": {
+        "path": "ai4s/programs/dsainet/research/dsa-fut-v0.1/repair2/SOURCE_REUSE_MANIFEST.json",
+        "sha256": "36ef5b973230cf11bb82779244c3b99e7b3b32930271ed7fe5a5cc78bfdc52b5"
+      }
+    },
+    {
+      "attempt_class": "explicit_fut_capacity_repair",
+      "authorization_ref": "ai4s/programs/dsainet/research/dsa-fut-v0.1/repair3/AUTHORIZATION.md",
+      "campaign_id": "dsainet-fut-v0.1-20260924",
+      "failed_run_id": "2026-09-24_dsainet_fut_v0_1_repair2-full-w1",
+      "previous_active_run": {
+        "bundle_id": "2026-09-24_dsainet_fut_v0_1_repair2-bundle",
+        "dispatch_status": "REMOTE_ACCEPTED",
+        "estimated_training_hours": 5.185,
+        "execution_mode": "user_managed",
+        "executor_id": "lab10",
+        "planned_units": 433,
+        "recorded_at": "2026-09-24T06:21:57.162734+00:00",
+        "round_id": "dsa-fut-v0.1-repair2",
+        "run_prefix": "2026-09-24_dsainet_fut_v0_1_repair2",
+        "transaction_operations": [
+          {
+            "operation": "upload",
+            "recorded_at": "2026-09-24T06:22:32.860792+00:00",
+            "result": {
+              "action": "UPLOADED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-09-24_dsainet_fut_v0_1_repair2-full-w1"
+            }
+          },
+          {
+            "operation": "launch",
+            "recorded_at": "2026-09-24T06:22:34.408878+00:00",
+            "result": {
+              "action": "SUBMISSION_SENT_NOT_VERIFIED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-09-24_dsainet_fut_v0_1_repair2-full-w1"
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-09-24T06:22:55.986257+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "precheck",
+              "run_id": "2026-09-24_dsainet_fut_v0_1_repair2-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "c0079193203e370a4c3534751d660f4c16f43a4373e42bc771172b46998085e3",
+                "execution_seconds": 17.31287980079651,
+                "queue_seconds": 0.0,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-09-24_dsainet_fut_v0_1_repair2-full-w1",
+                "transaction_id": "2026-09-24_dsainet_fut_v0_1_repair2-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 17.31287980079651
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-09-24T06:24:17.294311+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "precheck",
+              "run_id": "2026-09-24_dsainet_fut_v0_1_repair2-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "c0079193203e370a4c3534751d660f4c16f43a4373e42bc771172b46998085e3",
+                "execution_seconds": 98.61843156814575,
+                "queue_seconds": 0.0,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-09-24_dsainet_fut_v0_1_repair2-full-w1",
+                "transaction_id": "2026-09-24_dsainet_fut_v0_1_repair2-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 98.61843156814575
+              }
+            }
+          }
+        ]
+      },
+      "recorded_at": "2026-09-24T13:52:11.524544+00:00",
+      "rerun_task_ids": [
+        "P0_s0_t5__DIRECT__real",
+        "B0_s0_t5__DIRECT__within_subject_permuted",
+        "S0_s0_t6__DIRECT__real",
+        "P0_s0_t5__DIRECT__within_subject_permuted",
+        "C0_s0_t6__DIRECT__real",
+        "B0_s0_t6__DIRECT__real",
+        "S0_s0_t6__DIRECT__within_subject_permuted",
+        "P0_s0_t6__DIRECT__real",
+        "C0_s0_t6__DIRECT__within_subject_permuted",
+        "B0_s0_t6__DIRECT__within_subject_permuted",
+        "S0_s0_t7__DIRECT__real",
+        "P0_s0_t6__DIRECT__within_subject_permuted",
+        "C0_s0_t7__DIRECT__real",
+        "B0_s0_t7__DIRECT__real",
+        "S0_s0_t7__DIRECT__within_subject_permuted",
+        "P0_s0_t7__DIRECT__real",
+        "C0_s0_t7__DIRECT__within_subject_permuted",
+        "B0_s0_t7__DIRECT__within_subject_permuted",
+        "S0_s0_t8__DIRECT__real",
+        "P0_s0_t7__DIRECT__within_subject_permuted",
+        "C0_s0_t8__DIRECT__real",
+        "B0_s0_t8__DIRECT__real",
+        "S0_s0_t8__DIRECT__within_subject_permuted",
+        "P0_s0_t8__DIRECT__real",
+        "C0_s0_t8__DIRECT__within_subject_permuted",
+        "B0_s0_t8__DIRECT__within_subject_permuted",
+        "S0_s1_t0__DIRECT__real",
+        "P0_s0_t8__DIRECT__within_subject_permuted",
+        "C0_s1_t0__DIRECT__real",
+        "B0_s1_t0__DIRECT__real",
+        "S0_s1_t0__DIRECT__within_subject_permuted",
+        "P0_s1_t0__DIRECT__real",
+        "C0_s1_t0__DIRECT__within_subject_permuted",
+        "B0_s1_t0__DIRECT__within_subject_permuted",
+        "S0_s1_t1__DIRECT__real",
+        "P0_s1_t0__DIRECT__within_subject_permuted",
+        "C0_s1_t1__DIRECT__real",
+        "B0_s1_t1__DIRECT__real",
+        "S0_s1_t1__DIRECT__within_subject_permuted",
+        "P0_s1_t1__DIRECT__real",
+        "C0_s1_t1__DIRECT__within_subject_permuted",
+        "B0_s1_t1__DIRECT__within_subject_permuted",
+        "S0_s1_t2__DIRECT__real",
+        "P0_s1_t1__DIRECT__within_subject_permuted",
+        "C0_s1_t2__DIRECT__real",
+        "B0_s1_t2__DIRECT__real",
+        "S0_s1_t2__DIRECT__within_subject_permuted",
+        "P0_s1_t2__DIRECT__real",
+        "C0_s1_t2__DIRECT__within_subject_permuted",
+        "B0_s1_t2__DIRECT__within_subject_permuted",
+        "S0_s1_t3__DIRECT__real",
+        "P0_s1_t2__DIRECT__within_subject_permuted",
+        "C0_s1_t3__DIRECT__real",
+        "B0_s1_t3__DIRECT__real",
+        "S0_s1_t3__DIRECT__within_subject_permuted",
+        "P0_s1_t3__DIRECT__real",
+        "C0_s1_t3__DIRECT__within_subject_permuted",
+        "B0_s1_t3__DIRECT__within_subject_permuted",
+        "S0_s1_t4__DIRECT__real",
+        "P0_s1_t3__DIRECT__within_subject_permuted",
+        "C0_s1_t4__DIRECT__real",
+        "B0_s1_t4__DIRECT__real",
+        "S0_s1_t4__DIRECT__within_subject_permuted",
+        "P0_s1_t4__DIRECT__real",
+        "C0_s1_t4__DIRECT__within_subject_permuted",
+        "B0_s1_t4__DIRECT__within_subject_permuted",
+        "S0_s1_t5__DIRECT__real",
+        "P0_s1_t4__DIRECT__within_subject_permuted",
+        "C0_s1_t5__DIRECT__real",
+        "B0_s1_t5__DIRECT__real",
+        "S0_s1_t5__DIRECT__within_subject_permuted",
+        "P0_s1_t5__DIRECT__real",
+        "C0_s1_t5__DIRECT__within_subject_permuted",
+        "B0_s1_t5__DIRECT__within_subject_permuted",
+        "S0_s1_t6__DIRECT__real",
+        "P0_s1_t5__DIRECT__within_subject_permuted",
+        "C0_s1_t6__DIRECT__real",
+        "B0_s1_t6__DIRECT__real",
+        "S0_s1_t6__DIRECT__within_subject_permuted",
+        "P0_s1_t6__DIRECT__real",
+        "C0_s1_t6__DIRECT__within_subject_permuted",
+        "B0_s1_t6__DIRECT__within_subject_permuted",
+        "C0_s1_t7__DIRECT__real",
+        "B0_s1_t7__DIRECT__real",
+        "S0_s1_t7__DIRECT__within_subject_permuted",
+        "P0_s1_t7__DIRECT__real",
+        "C0_s1_t7__DIRECT__within_subject_permuted",
+        "B0_s1_t7__DIRECT__within_subject_permuted",
+        "S0_s1_t8__DIRECT__real",
+        "P0_s1_t7__DIRECT__within_subject_permuted",
+        "C0_s1_t8__DIRECT__real",
+        "B0_s1_t8__DIRECT__real",
+        "S0_s1_t8__DIRECT__within_subject_permuted",
+        "P0_s1_t8__DIRECT__real",
+        "C0_s1_t8__DIRECT__within_subject_permuted",
+        "B0_s1_t8__DIRECT__within_subject_permuted",
+        "P0_s1_t8__DIRECT__within_subject_permuted",
+        "C0_s0_t5__DIRECT__real",
+        "C0_s0_t5__DIRECT__within_subject_permuted"
+      ],
+      "reused_task_ids": [
+        "B0_s0_t0__CROSS__real",
+        "B0_s0_t0__CROSS__within_subject_permuted",
+        "B0_s0_t0__DIRECT__real",
+        "B0_s0_t0__DIRECT__within_subject_permuted",
+        "B0_s0_t0__SELF__real",
+        "B0_s0_t0__SELF__within_subject_permuted",
+        "B0_s0_t1__CROSS__real",
+        "B0_s0_t1__CROSS__within_subject_permuted",
+        "B0_s0_t1__DIRECT__real",
+        "B0_s0_t1__DIRECT__within_subject_permuted",
+        "B0_s0_t1__SELF__real",
+        "B0_s0_t1__SELF__within_subject_permuted",
+        "B0_s0_t2__CROSS__real",
+        "B0_s0_t2__CROSS__within_subject_permuted",
+        "B0_s0_t2__DIRECT__real",
+        "B0_s0_t2__DIRECT__within_subject_permuted",
+        "B0_s0_t2__SELF__real",
+        "B0_s0_t2__SELF__within_subject_permuted",
+        "B0_s0_t3__CROSS__real",
+        "B0_s0_t3__CROSS__within_subject_permuted",
+        "B0_s0_t3__DIRECT__real",
+        "B0_s0_t3__DIRECT__within_subject_permuted",
+        "B0_s0_t3__SELF__real",
+        "B0_s0_t3__SELF__within_subject_permuted",
+        "B0_s0_t4__CROSS__real",
+        "B0_s0_t4__CROSS__within_subject_permuted",
+        "B0_s0_t4__DIRECT__real",
+        "B0_s0_t4__DIRECT__within_subject_permuted",
+        "B0_s0_t4__SELF__real",
+        "B0_s0_t4__SELF__within_subject_permuted",
+        "B0_s0_t5__CROSS__real",
+        "B0_s0_t5__CROSS__within_subject_permuted",
+        "B0_s0_t5__DIRECT__real",
+        "B0_s0_t5__SELF__real",
+        "B0_s0_t5__SELF__within_subject_permuted",
+        "B0_s0_t6__CROSS__real",
+        "B0_s0_t6__CROSS__within_subject_permuted",
+        "B0_s0_t6__SELF__real",
+        "B0_s0_t6__SELF__within_subject_permuted",
+        "B0_s0_t7__CROSS__real",
+        "B0_s0_t7__CROSS__within_subject_permuted",
+        "B0_s0_t7__SELF__real",
+        "B0_s0_t7__SELF__within_subject_permuted",
+        "B0_s0_t8__CROSS__real",
+        "B0_s0_t8__CROSS__within_subject_permuted",
+        "B0_s0_t8__SELF__real",
+        "B0_s0_t8__SELF__within_subject_permuted",
+        "B0_s1_t0__CROSS__real",
+        "B0_s1_t0__CROSS__within_subject_permuted",
+        "B0_s1_t0__SELF__real",
+        "B0_s1_t0__SELF__within_subject_permuted",
+        "B0_s1_t1__CROSS__real",
+        "B0_s1_t1__CROSS__within_subject_permuted",
+        "B0_s1_t1__SELF__real",
+        "B0_s1_t1__SELF__within_subject_permuted",
+        "B0_s1_t2__CROSS__real",
+        "B0_s1_t2__CROSS__within_subject_permuted",
+        "B0_s1_t2__SELF__real",
+        "B0_s1_t2__SELF__within_subject_permuted",
+        "B0_s1_t3__CROSS__real",
+        "B0_s1_t3__CROSS__within_subject_permuted",
+        "B0_s1_t3__SELF__real",
+        "B0_s1_t3__SELF__within_subject_permuted",
+        "B0_s1_t4__CROSS__real",
+        "B0_s1_t4__CROSS__within_subject_permuted",
+        "B0_s1_t4__SELF__real",
+        "B0_s1_t4__SELF__within_subject_permuted",
+        "B0_s1_t5__CROSS__real",
+        "B0_s1_t5__CROSS__within_subject_permuted",
+        "B0_s1_t5__SELF__real",
+        "B0_s1_t5__SELF__within_subject_permuted",
+        "B0_s1_t6__CROSS__real",
+        "B0_s1_t6__CROSS__within_subject_permuted",
+        "B0_s1_t6__SELF__real",
+        "B0_s1_t6__SELF__within_subject_permuted",
+        "B0_s1_t7__CROSS__real",
+        "B0_s1_t7__CROSS__within_subject_permuted",
+        "B0_s1_t7__SELF__real",
+        "B0_s1_t7__SELF__within_subject_permuted",
+        "B0_s1_t8__CROSS__real",
+        "B0_s1_t8__CROSS__within_subject_permuted",
+        "B0_s1_t8__SELF__real",
+        "B0_s1_t8__SELF__within_subject_permuted",
+        "C0_s0_t0__CROSS__real",
+        "C0_s0_t0__CROSS__within_subject_permuted",
+        "C0_s0_t0__DIRECT__real",
+        "C0_s0_t0__DIRECT__within_subject_permuted",
+        "C0_s0_t0__SELF__real",
+        "C0_s0_t0__SELF__within_subject_permuted",
+        "C0_s0_t1__CROSS__real",
+        "C0_s0_t1__CROSS__within_subject_permuted",
+        "C0_s0_t1__DIRECT__real",
+        "C0_s0_t1__DIRECT__within_subject_permuted",
+        "C0_s0_t1__SELF__real",
+        "C0_s0_t1__SELF__within_subject_permuted",
+        "C0_s0_t2__CROSS__real",
+        "C0_s0_t2__CROSS__within_subject_permuted",
+        "C0_s0_t2__DIRECT__real",
+        "C0_s0_t2__DIRECT__within_subject_permuted",
+        "C0_s0_t2__SELF__real",
+        "C0_s0_t2__SELF__within_subject_permuted",
+        "C0_s0_t3__CROSS__real",
+        "C0_s0_t3__CROSS__within_subject_permuted",
         "C0_s0_t3__DIRECT__real",
         "C0_s0_t3__DIRECT__within_subject_permuted",
         "C0_s0_t3__SELF__real",
@@ -7988,6 +9594,90 @@ ject_permuted",
       "reusable_fits": 72,
       "scientific_decision": false,
       "training_repeated": false
+    },
+    {
+      "attempt_class": "user_authorized_dsainet_attention_grid_py39_failed_smoke_repair",
+      "engineering_reason": "User-authorized Python 3.9 repair of the sole failed smoke, original 24-fit matrix and gates preserved.",
+      "failed_run": {
+        "bundle_id": "2026-11-22_dsainet_b0_attention_token_grid_r1_bundle",
+        "dispatch_status": "REMOTE_ACCEPTED",
+        "estimated_training_hours": 1.5,
+        "execution_mode": "user_managed",
+        "executor_id": "lab10",
+        "planned_units": 25,
+        "recorded_at": "2026-11-22T09:38:50.845345+00:00",
+        "round_id": "dsainet-b0-attention-token-grid-r1",
+        "run_prefix": "2026-11-22_dsainet_b0_attention_token_grid_r1",
+        "transaction_operations": [
+          {
+            "operation": "upload",
+            "recorded_at": "2026-11-22T09:39:11.514024+00:00",
+            "result": {
+              "action": "UPLOADED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-22_dsainet_b0_attention_token_grid_r1-full-w1"
+            }
+          },
+          {
+            "operation": "launch",
+            "recorded_at": "2026-11-22T09:39:15.158318+00:00",
+            "result": {
+              "action": "SUBMISSION_SENT_NOT_VERIFIED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-22_dsainet_b0_attention_token_grid_r1-full-w1"
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-22T09:39:28.175241+00:00",
+            "result": {
+              "action": "WAIT_FOR_RESOURCES",
+              "node_id": "smoke",
+              "run_id": "2026-11-22_dsainet_b0_attention_token_grid_r1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "97ace9a39ab522246a841cb8a25f4738e68656dc139c34bfb5ee6e584034bfce",
+                "execution_seconds": 1.8964934349060059,
+                "queue_seconds": 10.340312957763672,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-22_dsainet_b0_attention_token_grid_r1-full-w1",
+                "transaction_id": "2026-11-22_dsainet_b0_attention_token_grid_r1-tx",
+                "waiting_for_resources": true,
+                "wall_seconds": 12.236806392669678
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-22T14:49:46.793157+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "smoke",
+              "run_id": "2026-11-22_dsainet_b0_attention_token_grid_r1-full-w1",
+              "status": "FAILED",
+              "timing": {
+                "contract_sha256": "97ace9a39ab522246a841cb8a25f4738e68656dc139c34bfb5ee6e584034bfce",
+                "execution_seconds": 20.793821573257446,
+                "queue_seconds": 3556.570862531662,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-22_dsainet_b0_attention_token_grid_r1-full-w1",
+                "transaction_id": "2026-11-22_dsainet_b0_attention_token_grid_r1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 3577.3646841049194
+              }
+            }
+          }
+        ]
+      },
+      "failed_run_id": "2026-11-22_dsainet_b0_attention_token_grid_r1-full-w1",
+      "partial_artifacts_eligible": false,
+      "recorded_at": "2026-11-22T14:56:41.625852+00:00",
+      "redeployment_report": "ai4s/programs/dsainet/research/b0_asymmetric_token_grid_20261122_py39fix1/REDEPLOYMENT.json",
+      "round_id": "dsainet-b0-attention-token-grid-r1",
+      "scientific_fits": 0,
+      "scientific_intake": false,
+      "source_contract_sha256": "97ace9a39ab522246a841cb8a25f4738e68656dc139c34bfb5ee6e584034bfce",
+      "task_attempts": 1
     }
   ],
   "follow_up": {
@@ -9057,12 +10747,9 @@ ject_permuted",
     ]
   },
   "last_decision": {
-    "decision": "STOP_FIXED_DS07_R1_NO_AUTOMATIC_EXPANSION",
-    "decision_record": "ai4s/programs/dsainet/research/ds07-r1/analysis_20261105/DECISION.json",
-    "evidence_id": "DSAINET-DS07-R1-MERGED-VERIFIED-ANALYSIS-20261105",
-    "new_experiment_authorized": false,
-    "role": "exposed_development_four_arm_system_net_utility_screen",
-    "round_id": "ds07-r1-audit18-r18fix1"
+    "decision": "NO_SIGNAL",
+    "disposition": "STOP_PATCH_PREELU_POLYPHASE",
+    "round_id": "dsainet-b0-patch-preelu-polyphase-r1"
   },
   "last_ds07_activation": {
     "authorization_id": "DS07-R1-SCIENCE1-266H-20261102",
@@ -9937,1784 +11624,5 @@ ject_permuted",
     "original_start": "2026-10-23T13:28:00+00:00",
     "remaining_hours": 29.61988012524904,
     "report": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/telemetryfix1/status_20261103_2110/STATUS_REPORT.md",
-    "run_id": "2026-11-03_dsainet_ds07_r1_science1-telemetryfix1-full-w1",
-    "scientific_training_completed": 0,
-    "status": "FAILED_TECH_SUMMARY_INTERFACE_AFTER_SUCCESSFUL_N_AND_COST"
-  },
-  "last_engineering_repair": {
-    "budget_extended": false,
-    "completed_at": "2026-09-30T04:36:39.133007+00:00",
-    "evaluation_complete": 252,
-    "evaluation_remaining": 0,
-    "evaluation_reused": 251,
-    "new_target_forward": 1,
-    "new_training": 0,
-    "recorded_at": "2026-09-30T04:16:56.739370+00:00",
-    "repair_id": "dsa-sid-v0.1-repair1",
-    "round_id": "dsa-sid-v0.1-repair1b",
-    "run_id": "2026-09-30_dsainet_sid_v0_1_repair1b-full-w1",
-    "scientific_result": true,
-    "status": "COMPLETE_VERIFIED",
-    "training_reused": 252
-  },
-  "last_fd_r1_analysis": {
-    "automatic_follow_up": false,
-    "checkpoint_replays": 36,
-    "claim_created": false,
-    "contract_sha256": "8bb24f5e5d65963bf44ab83881c516e3e4c90bb1d399ae8a2099cf1a4534c0a8",
-    "decision": "NO_SIGNAL_STOP_FIXED_READOUT_REPAIR",
-    "evidence_id": "DSAINET-P0-FD-R1-CROSSED-READOUT-20261029",
-    "full_payload_local": false,
-    "historical_failures_preserved": [
-      "2026-10-29_dsainet_p0_fd_r1-full-w1",
-      "2026-10-29_dsainet_p0_fd_r1-packfix1-full-w1"
-    ],
-    "intake_scope": "analysis_v1",
-    "matched_AA_pass": false,
-    "matrix_cells": 144,
-    "new_fits": 0,
-    "observed_at": "2026-10-29T12:59:33.828041+00:00",
-    "parent_retention_pass": false,
-    "remaining_budget_hours_snapshot": 22.100565107883455,
-    "report": "ai4s/programs/dsainet/research/p0-fd-r1/RESULTS_ZH.md",
-    "report_sha256": "e59e3a2d651016ea5ac4bf5910438334a18078090e996b3244e73bc479f19241",
-    "research_id": "p0-fd-r1",
-    "result_sha256": "142e6b4c0fe22c1ce079cf2bead518a77e13ffbfffa0ce323b5a6e52f145ed53",
-    "role": "exposed_development_fixed_checkpoint_diagnostic",
-    "run_id": "2026-10-29_dsainet_p0_fd_r1-packfix2-full-w1",
-    "standard_verified_intake": true,
-    "verification_sha256": "7f8e5268b37c0daa47d3c7e436fe9cfd40fef50fb6eff5b2a0f7657c08f3f5a0"
-  },
-  "last_missing_only_recovery": {
-    "additional_hours": 0,
-    "audits_required": 189,
-    "checked_at": "2026-10-22T07:08:27.630254+00:00",
-    "cumulative_budget_hours": 88,
-    "dispatch_observation": "WAITING_RESOURCE_ADMISSION_NO_WORKER_YET",
-    "dynamic_expansion_configured": true,
-    "dynamic_expansion_observed": false,
-    "historical_wait_deduction_authorized": false,
-    "original_campaign_start": 1792387110,
-    "original_completed_fits": 187,
-    "other_stages_authorized": false,
-    "phases": {
-      "audit": {
-        "completed": null,
-        "failed": null,
-        "families": null,
-        "journals": 0,
-        "pending": null,
-        "resource_admission": null,
-        "running": null,
-        "running_tasks": null,
-        "total": null,
-        "updated_at": null,
-        "verified_results": []
-      },
-      "fits_missing2": {
-        "completed": 0,
-        "failed": 0,
-        "families": {
-          "dsa-nrc-v0.1-NRC1:fit:a0c95f6604d28c48:99e31cab575ba5db:f3c06e0663085629": {
-            "calibration_source": "unknown_family_serial_start",
-            "commitment": 3072,
-            "expand_after_measurement": true,
-            "failed": false,
-            "limit": 1,
-            "max_family_jobs": 189,
-            "peak": 0
-          }
-        },
-        "journals": 0,
-        "pending": 2,
-        "resource_admission": {
-          "0": {
-            "eligibility": "eligible",
-            "existing_compute_processes": 1,
-            "observed_free_mib": 3965,
-            "observed_utilization_pct": 53,
-            "pool_capacity_available": false,
-            "post_launch_headroom_mib": 893,
-            "reserve_mib": 0,
-            "task_id": "L_s1_t6"
-          },
-          "1": {
-            "eligibility": "insufficient_reserved_memory",
-            "existing_compute_processes": 2,
-            "observed_free_mib": 616,
-            "observed_utilization_pct": 62,
-            "pool_capacity_available": false,
-            "post_launch_headroom_mib": -2456,
-            "reserve_mib": 0,
-            "task_id": "L_s1_t6"
-          },
-          "2": {
-            "eligibility": "eligible",
-            "existing_compute_processes": 1,
-            "observed_free_mib": 3965,
-            "observed_utilization_pct": 11,
-            "pool_capacity_available": false,
-            "post_launch_headroom_mib": 893,
-            "reserve_mib": 0,
-            "task_id": "L_s1_t6"
-          },
-          "3": {
-            "eligibility": "eligible",
-            "existing_compute_processes": 1,
-            "observed_free_mib": 3973,
-            "observed_utilization_pct": 12,
-            "pool_capacity_available": false,
-            "post_launch_headroom_mib": 901,
-            "reserve_mib": 0,
-            "task_id": "L_s1_t6"
-          },
-          "4": {
-            "eligibility": "insufficient_reserved_memory",
-            "existing_compute_processes": 2,
-            "observed_free_mib": 1062,
-            "observed_utilization_pct": 37,
-            "pool_capacity_available": false,
-            "post_launch_headroom_mib": -2010,
-            "reserve_mib": 0,
-            "task_id": "L_s1_t6"
-          },
-          "5": {
-            "eligibility": "insufficient_reserved_memory",
-            "existing_compute_processes": 2,
-            "observed_free_mib": 548,
-            "observed_utilization_pct": 89,
-            "pool_capacity_available": false,
-            "post_launch_headroom_mib": -2524,
-            "reserve_mib": 0,
-            "task_id": "L_s1_t6"
-          },
-          "6": {
-            "eligibility": "eligible",
-            "existing_compute_processes": 1,
-            "observed_free_mib": 3965,
-            "observed_utilization_pct": 71,
-            "pool_capacity_available": false,
-            "post_launch_headroom_mib": 893,
-            "reserve_mib": 0,
-            "task_id": "L_s1_t6"
-          },
-          "7": {
-            "eligibility": "eligible",
-            "existing_compute_processes": 1,
-            "observed_free_mib": 3973,
-            "observed_utilization_pct": 72,
-            "pool_capacity_available": false,
-            "post_launch_headroom_mib": 901,
-            "reserve_mib": 0,
-            "task_id": "L_s1_t6"
-          },
-          "8": {
-            "eligibility": "insufficient_reserved_memory",
-            "existing_compute_processes": 2,
-            "observed_free_mib": 616,
-            "observed_utilization_pct": 76,
-            "pool_capacity_available": false,
-            "post_launch_headroom_mib": -2456,
-            "reserve_mib": 0,
-            "task_id": "L_s1_t6"
-          },
-          "9": {
-            "eligibility": "eligible",
-            "existing_compute_processes": 1,
-            "observed_free_mib": 3973,
-            "observed_utilization_pct": 86,
-            "pool_capacity_available": false,
-            "post_launch_headroom_mib": 901,
-            "reserve_mib": 0,
-            "task_id": "L_s1_t6"
-          }
-        },
-        "running": 0,
-        "running_tasks": {},
-        "total": 2,
-        "updated_at": "2026-10-22T07:08:20.901804+00:00",
-        "verified_results": []
-      }
-    },
-    "pid": "[REDACTED_MACHINE]",
-    "preservation_errors": [],
-    "preserved_full_telemetry_fits": 12,
-    "preserved_original_files": 3147,
-    "preserved_resource_fit_count": 165,
-    "promoted_replays": 10,
-    "qualification": "ai4s/programs/dsainet/research/dsa-nrc-v0.1/execution/recovery_missing2_88/QUALIFICATION_FINAL.json",
-    "recovery_id": "2026-10-22_NRC1repair3_missing2_88_r1",
-    "remaining_fits_authorized": 2,
-    "remaining_seconds": 73539.74286389351,
-    "replay_dispatch_count": 0,
-    "report": "ai4s/programs/dsainet/research/dsa-nrc-v0.1/execution/recovery_missing2_88/REPAIR_NOTES.md",
-    "resource_admission_check": "ai4s/programs/dsainet/research/dsa-nrc-v0.1/execution/recovery_missing2_88/QUALIFICATION_FINAL.json",
-    "reused_successful_replays": 10,
-    "run_id": "2026-10-19_dsainet_dsa_nrc_v0_1_NRC1repair3-full-w1",
-    "scientific_effects_read": false,
-    "snapshot": "ai4s/programs/dsainet/research/dsa-nrc-v0.1/execution/recovery_missing2_88/STATUS.json",
-    "source_snapshot": "ai4s/programs/dsainet/research/dsa-nrc-v0.1/execution/recovery_missing2_88/SOURCE_SNAPSHOT.json",
-    "status": "RUNNING",
-    "supplement_sha256": "e4d3a090a138c66c393331d4ae75a94c140935ac001c051a752d05d7cdc161bb"
-  },
-  "last_nrc1_complete_intake": {
-    "analysis": "ai4s/programs/dsainet/research/dsa-nrc-v0.1/execution/recovery_audit3_96/ANALYSIS.json",
-    "analysis_sha256": "82ed2cdf8e2be595a495a5d7806374d44505950de37d0472f87762ba16a0818a",
-    "artifact_manifest_sha256": "0e3956d5028517ae7f8fc33e91be70cfdb46b433e945d3bbc6a55282b0c2315f",
-    "automation_enabled": false,
-    "budget_checked_at": "2026-10-23T12:45:19.136995+00:00",
-    "budget_compliance": "EXCEEDED_DURING_CLOSEOUT_INTAKE_ANALYSIS",
-    "budget_limit_hours": 96,
-    "budget_remaining_seconds_at_last_check": -1315.5931639671326,
-    "contract_sha256": "3666bec81ef4aab5bc6a437fb0fde27f9684f0c64f365b04be42ab29d40542ef",
-    "evidence_id": "dsainet-nrc1-repair3-complete-20261023",
-    "formal_claim_created": false,
-    "frozen_gate_pass": false,
-    "independent_metrics_sha256": "92cc39127b5f4d7808d44bec957c4a08ea9c79aff839d0f2184c3ba69541100a",
-    "intake": "ai4s/programs/dsainet/research/dsa-nrc-v0.1/intake/NRC1repair3_complete_20261023",
-    "matrix": {
-      "formal_audit_count": 189,
-      "formal_fit_count": 189,
-      "technical_audit_count": 8,
-      "technical_fit_count": 8,
-      "temperature_fit_count": 216
-    },
-    "other_stages_started": false,
-    "report": "ai4s/programs/dsainet/research/dsa-nrc-v0.1/execution/recovery_audit3_96/RESULTS_ZH.md",
-    "report_sha256": "be39afa7937a6debd8c2bae3b811dbac30f58fa7f0807baae68aabc1651507ac",
-    "run_id": "2026-10-19_dsainet_dsa_nrc_v0_1_NRC1repair3-full-w1",
-    "scientific_interpretation": "native fallback preserved; modest improvement; frozen effective complementarity gates not established",
-    "status": "ARTIFACTS_VERIFIED_ANALYSIS_COMPLETE_WITH_BUDGET_DEVIATION"
-  },
-  "last_ord_ec_r1_analysis": {
-    "A_pass": false,
-    "B_pass": false,
-    "P_accuracy": 0.5560378086419753,
-    "P_fallback_W0": 16,
-    "P_raw_nll": 1.19980785860034,
-    "P_selected_W": 2,
-    "P_vs_parent": {
-      "accuracy_delta_pp": 0.009645061728395335,
-      "nll_delta": 0.00046170620423291453
-    },
-    "archive_bytes": 10774803,
-    "artifact_manifest_sha256": "1400fc1ecac5224fa9f4a63a906f8095e1d194c065a24b89a4321f632d6a21a7",
-    "audit_count": 108,
-    "budget": {
-      "additional_authorization": false,
-      "clock_reset": false,
-      "original_started_at": "2026-10-23T13:28:00+00:00",
-      "prior_queue_seconds": 31055.862429380417,
-      "remaining_hours_at_closeout": -3.431080777394333,
-      "remaining_hours_at_science_completion": 3.8827191375361547,
-      "total_hours": 163
-    },
-    "checks": {
-      "excluded_forward_count": 0,
-      "frozen_analyzer_replay": "PASS",
-      "independent_metrics_and_gates": "PASS",
-      "max_native_replay_logit_error": 3.5762786865234375e-06,
-      "report_parent_gate_label_clarified": true,
-      "source_access_36fit_36select_36audit": "PASS"
-    },
-    "claim_created": false,
-    "closed_active_run": {
-      "bundle_id": "2026-10-30_dsainet_p0_ord_ec_r1_science1",
-      "completed_at": "2026-10-30T21:12:38.073534+08:00",
-      "contract": "ai4s/programs/dsainet/research/p0-ord-ec-r1/science_bundle163/transaction_contract.yaml",
-      "contract_sha256": "a12e54ae3ce0cf46bef48286ede40f6f1712d7dc231741e27922d71805a1dce5",
-      "dispatch_receipt": "ai4s/programs/dsainet/research/p0-ord-ec-r1/REMOTE_DISPATCH_RECEIPT.json",
-      "dispatch_status": "REMOTE_COMPLETED_AWAITING_INTAKE",
-      "dispatch_units": 108,
-      "estimated_training_hours": 2.8278,
-      "execution_mode": "user_managed",
-      "executor_id": "lab10",
-      "host": "[REDACTED_MACHINE]",
-      "last_probe_counts": {
-        "audits": 108,
-        "fits": 108,
-        "select_choices": 108
-      },
-      "last_probe_ref": "ai4s/programs/dsainet/research/p0-ord-ec-r1/STATUS_VERIFICATION_20261031.json",
-      "old_campaign_remains_paused": true,
-      "planned_units": 108,
-      "previous_program_status": "COMPLETE_MAX_ROUNDS",
-      "recorded_at": "2026-10-30T12:08:01.530201+00:00",
-      "remote_root": "[REDACTED_MACHINE]",
-      "round_id": "p0-ord-ec-r1-science-1",
-      "run_id": "2026-10-30_dsainet_p0_ord_ec_r1_science1-full-w1",
-      "run_prefix": "2026-10-30_dsainet_p0_ord_ec_r1_science1",
-      "scope": "108 bounded convex fits and108 audits; no neural training"
-    },
-    "contract_sha256": "a12e54ae3ce0cf46bef48286ede40f6f1712d7dc231741e27922d71805a1dce5",
-    "decision": "NO_SIGNAL_STOP_FIXED_ORD_EC",
-    "evidence_id": "DSAINET-P0-ORD-EC-R1-VERIFIED-ANALYSIS-20261031",
-    "external_result_review": "not_triggered_ordinary_negative_screen",
-    "failed_nodes": 0,
-    "fit_count": 108,
-    "frozen_replay": "ai4s/programs/dsainet/research/p0-ord-ec-r1/closeout_analysis/REPLAY_AND_FIT_CHECKS.json",
-    "full_payload_local": false,
-    "independent_recompute": "ai4s/programs/dsainet/research/p0-ord-ec-r1/closeout_analysis/INDEPENDENT_METRICS.json",
-    "independent_recompute_sha256": "7efb16611e03d2505e25a5267f53af8ae55c9287571f6a3a4f0005cbd10e3229",
-    "intake_path": "ai4s/programs/dsainet/research/p0-ord-ec-r1/verified_intake",
-    "intake_receipt_sha256": "69d69b9ea081523aa0663315d2a9f1fbee3b56498facd725242839815367b42e",
-    "intake_scope": "analysis_v1",
-    "new_closeout_fits_or_forward": 0,
-    "new_neural_fits": 0,
-    "next_action": "STOP_FIXED_ORD_EC_NO_NEW_EXPERIMENT",
-    "observed_at": "2026-10-30T20:31:27.753228+00:00",
-    "parent_count": 36,
-    "previous_last_decision": {
-      "decision": "NO_SIGNAL_STOP_FIXED_PHASE_TEMPLATE",
-      "evidence_id": "DSAINET-P0-WMP-D1-STAGE-A-20261029",
-      "neural_training_eligible": false,
-      "role": "exposed_source_development_nondegeneracy_diagnostic",
-      "round_id": "p0-wmp-d1-stage-a",
-      "stage_b_eligible": false
-    },
-    "previous_last_verified_intake": {
-      "analysis_receipt_sha256": "6a586b663219441c4a8c46c3105e1a05e5b36fecc0836488a0446a7e3ddf1cb6",
-      "artifact_manifest_sha256": "04cc708e1628f222d7a410e36a6d3a32762db8058c9e8c1dbfe6086ad9ab51eb",
-      "contract_sha256": "20dd39535800fc93e4ffb85baf2537945c59323e97083e61a99f7a31479afd25",
-      "full_payload_local": false,
-      "intake_path": "ai4s/programs/dsainet/research/p0-wmp-d1/stagea_verified_intake",
-      "intake_scope": "analysis_v1",
-      "run_id": "2026-10-29_dsainet_p0_wmp_d1_stagea-full-w1",
-      "transaction_id": "2026-10-29_dsainet_p0_wmp_d1_stagea-tx",
-      "transfer_bytes": 786429,
-      "verified": true,
-      "verified_at": "2026-10-29T16:17:25.223715+00:00"
-    },
-    "report": "ai4s/programs/dsainet/research/p0-ord-ec-r1/closeout_analysis/REPORT_ZH.md",
-    "research_id": "p0-ord-ec-r1",
-    "risk_context": 5,
-    "risk_correct_count": 796,
-    "risk_n": 1152,
-    "risk_original_subject_index": 7,
-    "role": "exposed_source_development_fixed_parent_bounded_readout_screen",
-    "run_id": "2026-10-30_dsainet_p0_ord_ec_r1_science1-full-w1",
-    "selected_file_count": 373,
-    "selection_count": 108,
-    "standard_verified_intake": true,
-    "transaction_id": "2026-10-30_dsainet_p0_ord_ec_r1_science1-tx",
-    "transfer_bytes": 13495094
-  },
-  "last_p0_pf_r1_budget_gate": {
-    "additional_hours": 4,
-    "authorization_ref": "ai4s/programs/dsainet/research/p0-pf-r1/execution/BUDGET_APPROVAL.md",
-    "authorization_sha256": "a2b65cb9dc07a37fae7d504c6702b90f1e5cb638bfcfe30b3945c0c93ce8d085",
-    "authorized_total_hours": 144,
-    "closeout_reserve_hours": 4,
-    "gate_report": "ai4s/programs/dsainet/research/p0-pf-r1/FINAL_BUDGET_GATE.json",
-    "gate_report_sha256": "dedeb5f2732816c1dd0bc9ba166556f0129a1d301b93dc9d706a4dec716aeb4e",
-    "gate_status": "BLOCK_CUMULATIVE_BUDGET",
-    "launched": false,
-    "original_started_at_preserved": "2026-10-23T13:28:00+00:00",
-    "previous_total_hours": 140,
-    "recorded_at": "2026-10-29T06:18:18.594097+00:00",
-    "research_id": "p0-pf-r1",
-    "round_extension_applied": false,
-    "run_registered": false,
-    "science_node_ceiling_hours": 23,
-    "transaction_ceiling_hours": 27,
-    "uploaded": false
-  },
-  "last_p0_pf_r1_readonly_check": {
-    "audits": {
-      "completed": 90,
-      "failed": 0,
-      "failed_ids": [],
-      "full_process_telemetry": 90,
-      "oom": 0,
-      "planned": 90,
-      "scheduler_wall_seconds": 225.71468925476074,
-      "task_count": 90,
-      "timeout": 0
-    },
-    "barrier": "SEALED",
-    "budget": {
-      "closeout_reserved_hours": 4.0,
-      "current_queue_hours": 0.0,
-      "original_start": "2026-10-23T21:28:00+08:00",
-      "paused_idle_or_stopped_refund_hours": 0,
-      "remaining_hours": 24.113142334272336,
-      "this_transaction_execution_hours": 0.6545794363816579,
-      "total_hours": 157,
-      "verified_prior_queue_hours": 8.626628452605672
-    },
-    "claim_created": false,
-    "contract_sha256": "259f683fa93b9910e311be410bbe058d394cb563b06fe38a5186624f1af03ccd",
-    "evidence_id": "DSAINET-P0-PF-R1-PACKFIX1-COMPLETE-STATUS-20261029T1858",
-    "fits": {
-      "completed": 90,
-      "failed": 0,
-      "failed_ids": [],
-      "full_process_telemetry": 90,
-      "oom": 0,
-      "planned": 90,
-      "scheduler_wall_seconds": 2053.531069755554,
-      "task_count": 90,
-      "timeout": 0
-    },
-    "local_verified_intake": false,
-    "next_action": "FETCH_VERIFY_INTAKE; no resubmission or new scientific task",
-    "observed_at": "2026-10-29T10:58:47.267663+00:00",
-    "remote_full_artifact_verification": true,
-    "report": "ai4s/programs/dsainet/research/p0-pf-r1/status/STATUS_20261029T1058Z.md",
-    "report_sha256": "f26a6a5b682f8148d6023728c091f437bba2388f66cb754b512e4735a013df6a",
-    "run_id": "2026-10-29_dsainet_p0_pf_r1_science1-packfix1-full-w1",
-    "scientific_effect_analysis": false,
-    "snapshot": "ai4s/programs/dsainet/research/p0-pf-r1/status/TERMINAL_VERIFIED_20261029T1058Z.json",
-    "snapshot_sha256": "f919081468fc997a7602ecf0153b80887ba3373ae8301662677e8ff532327534",
-    "status": "COMPLETE_VERIFIED_REMOTE",
-    "timing": {
-      "contract_sha256": "259f683fa93b9910e311be410bbe058d394cb563b06fe38a5186624f1af03ccd",
-      "execution_seconds": 2356.4859709739685,
-      "queue_seconds": 0.0,
-      "queue_time_policy": "exclude_resource_wait",
-      "run_id": "2026-10-29_dsainet_p0_pf_r1_science1-packfix1-full-w1",
-      "transaction_id": "2026-10-29_dsainet_p0_pf_r1_science1-packfix1-tx",
-      "waiting_for_resources": false,
-      "wall_seconds": 2356.4859709739685
-    }
-  },
-  "last_p0_pf_r1_revalidated_analysis": {
-    "G1": false,
-    "G2": true,
-    "G3": true,
-    "I": false,
-    "acceptance": {
-      "path": "ai4s/programs/dsainet/research/p0-pf-r1/analysis_closeout/reports/KEY_DELIVERY_ACCEPTANCE.json",
-      "sha256": "15e9cc9aa2b8ad9007c6fa8ce7bce324853e61d184c38c48bc47c114da3d16c4"
-    },
-    "audits": 90,
-    "automatic_follow_up": false,
-    "budget": {
-      "closeout_included_hours": 4,
-      "execution_seconds_this_run": 2356.4859709739685,
-      "idle_or_stopped_refund_hours": 0,
-      "original_start": "2026-10-23T13:28:00+00:00",
-      "remaining_campaign_hours_snapshot": 23.153421013439015,
-      "science_node_limit_hours": 23,
-      "snapshot_at": "2026-10-29T11:56:23.546781+00:00",
-      "total_hours": 157,
-      "transaction_limit_hours": 27,
-      "verified_resource_queue_seconds": 31055.862429380417
-    },
-    "contract_sha256": "259f683fa93b9910e311be410bbe058d394cb563b06fe38a5186624f1af03ccd",
-    "decision": "NO_SIGNAL_STOP_PF_R1",
-    "decision_record": {
-      "path": "ai4s/programs/dsainet/research/p0-pf-r1-science1-packfix1_decision.yaml",
-      "sha256": "395439da0f78dcd5dee102e645bf4b417c85001537cd2a90f68bb4c347179e15"
-    },
-    "delivery_receipt": {
-      "path": "ai4s/programs/dsainet/research/p0-pf-r1/analysis_closeout/KEY_EVIDENCE/DELIVERY_RECEIPT.json",
-      "sha256": "678cfc64ffb8f030faab880db994ee07babb6c4958f344c6d638cbd5098b70b1"
-    },
-    "evidence_id": "DSAINET-P0-PF-R1-PACKFIX1-REVALIDATED-ANALYSIS-20261029",
-    "external_review": {
-      "path": "ai4s/programs/dsainet/research/p0-pf-r1/analysis_closeout/review/REVIEW_RESPONSE.md",
-      "sha256": "e0793db95d8624d923bf3e50f8ce2b40777597ffaa0da7c4aea83b6e1f9199e3"
-    },
-    "failed_audits": 0,
-    "failed_fits": 0,
-    "fits": 90,
-    "follow_up_disposition": "STOP_FIXED_PF_R1; NO_NEW_EXPERIMENT; retain bounded structure clues, all old Runs and evidence",
-    "formal_claim": false,
-    "full_payload_local": false,
-    "historical_cells": 90,
-    "intake_scope": "remote_analysis_key_delivery_revalidated",
-    "key_files_verified": 682,
-    "observed_at": "2026-10-29T11:56:23.546781+00:00",
-    "remote_artifact_files": 2008,
-    "remote_full_artifact_verification": true,
-    "report": {
-      "path": "ai4s/programs/dsainet/research/p0-pf-r1/analysis_closeout/REPORT_ZH.md",
-      "sha256": "7bab1bd5244fabeec95a632bd3d2451d1dc87efce9ab406a30c7509a10855e37"
-    },
-    "revalidation_status": "PASS_REVALIDATED_KEY_DELIVERY",
-    "role": "exposed_development_revalidated_analysis",
-    "round_id": "p0-pf-r1-science1-packfix1",
-    "run_id": "2026-10-29_dsainet_p0_pf_r1_science1-packfix1-full-w1",
-    "source_run_status": "COMPLETE_PRESERVED",
-    "standard_analysis_v1_intake": false,
-    "standard_verified_intake": false
-  },
-  "last_p0_pf_r1_scientific_launch": {
-    "audit_barrier_present": false,
-    "audit_receipt_count": 0,
-    "claim_created": false,
-    "closeout_hours": 4,
-    "contract_sha256": "259f683fa93b9910e311be410bbe058d394cb563b06fe38a5186624f1af03ccd",
-    "evidence_id": "DSAINET-P0-PF-R1-PACKFIX1-SCIENCE-START-20261029",
-    "fits": {
-      "completed": 5,
-      "failed": 0,
-      "pending": 55,
-      "running": 30,
-      "total": 90
-    },
-    "gates": {
-      "old90_reuse": "PASS",
-      "original_five_arm_tech_reuse": "PASS",
-      "science_cost": "PASS",
-      "source_manifest": "PASS"
-    },
-    "next_action": "sameRun probe only;90fit success seal before90audit; no automatic next candidate or retry",
-    "observed_at": "2026-10-29T08:04:05.085232+00:00",
-    "old_run": "2026-10-29_dsainet_p0_pf_r1_science1-full-w1",
-    "old_run_status": "INVALID_ENGINEERING_FAILED_PRESERVED",
-    "original_start": "2026-10-23T21:28:00+08:00",
-    "remaining_campaign_hours_snapshot": 27.02520291538345,
-    "report": "ai4s/programs/dsainet/research/p0-pf-r1/PACKFIX1_LAUNCH_REPORT.md",
-    "report_sha256": "10be83da4bdda971c39e609c748d7aebd4f14b5e239a995359e8aec34e3a3da9",
-    "run_id": "2026-10-29_dsainet_p0_pf_r1_science1-packfix1-full-w1",
-    "science_hours": 23,
-    "scientific_effect_reading": false,
-    "snapshot": "ai4s/programs/dsainet/research/p0-pf-r1/status/PACKFIX1_20261029T0803Z.json",
-    "snapshot_sha256": "1a0b7c261805316117009c52223725a6979730ba7edb7335480914ce7549d314",
-    "technical_retraining": false,
-    "total_hours": 157,
-    "transaction_hours": 27
-  },
-  "last_p0_pf_r1_technical_recovery": {
-    "acceptance_path": "ai4s/programs/dsainet/research/p0-pf-r1/technical_closeout/PF_TECH_ACCEPTANCE.json",
-    "acceptance_sha256": "067d9de387f579353f4dcfbc988d4c4ada09134184e3f25cf1cf95f2c0dda553",
-    "bundle_id": "2026-10-29_dsainet_p0_pf_r1_tech1",
-    "contract": "ai4s/programs/dsainet/research/p0-pf-r1/TECHNICAL_CONTRACT.json",
-    "cost_sha256": "cea3f44e4a68b5c2ecfb9fc230f14b4bdd4981d797b8af88144d5c8a4879d24a",
-    "executor_id": "lab10",
-    "expected_artifact": "PF_TECH_ACCEPTANCE.json",
-    "kind": "engineering_preflight",
-    "operation_id": "dsainet:engineering_preflight:2026-10-29_dsainet_p0_pf_r1_tech1",
-    "original_error": "NameError json in technical summary",
-    "original_terminal_status": "FAILED_PRESERVED",
-    "recovered_read_only": true,
-    "reference_cells": 90,
-    "registered_at": "2026-10-28T18:09:41.110643+00:00",
-    "result_role": "engineering_preflight_only_no_performance_claim",
-    "resume_paused": true,
-    "resume_status": "COMPLETE_MAX_ROUNDS",
-    "run_id": "2026-10-29_dsainet_p0_pf_r1_tech1",
-    "science_fits_started": 0,
-    "standard_transaction_intake": false,
-    "status": "RECOVERED_ENGINEERING_ARTIFACTS_VERIFIED",
-    "technical_tasks": 5,
-    "transport_archive_sha256": "53f6361ac683efe13086faa80f4420d69815eb8e0ecb4763ca9d9d9dd4330650",
-    "verified_at": "2026-10-28T18:20:05.396760+00:00"
-  },
-  "last_recovery_analysis": {
-    "A_net_utility_pass": false,
-    "B_parent_retention_pass": false,
-    "audits": 18,
-    "contract_sha256": "607b8efa174bb0c68cd2d4757710f47e9f41547e9ae1a331548da001b4e39b9c",
-    "decision": "NO_SIGNAL_STOP_CUE4_CONTINUOUS_TUNING",
-    "evidence_id": "DSAINET-P0-CUE-R3-CVAR-RECOVERED-ANALYSIS-20261028",
-    "fits": 18,
-    "follow_up_disposition": "STOP_CUE4_CONTINUOUS_TUNING; no further dispatch; preserve historical candidate and prior negative evidence",
-    "formal_claim": false,
-    "independent_index_sha256": "c0be0ac1654bf609c8c810ad25138bbea053fb4122b56183549574b27257d22f",
-    "local_recompute_sha256": "e2ae64d16deaf9665e340079df26db78ff633439cb7041ee35ac5f4d102e99d0",
-    "observed_at": "2026-10-28T14:42:12.755782+00:00",
-    "original_run_status": "FAILED_PRESERVED",
-    "proof_sha256": "f9881f8964083876693a01b06f7de461b30f28e5b36e467bdfb23f7477db1275",
-    "reference_cells": 90,
-    "remaining_campaign_hours_snapshot": 27.389751846326718,
-    "report": "ai4s/programs/dsainet/research/p0-cue-r3-cvar/closeout/REPORT.md",
-    "report_sha256": "c99d3b82b30de9082896f1fcf48dc8b060928e075768113d3ebda7b5d38c51e1",
-    "result_sha256": "0ee56e29221335b331de32b050a410962ff396c900d779916aab594d574def29",
-    "revalidation_status": "PASS_EXISTING_ARTIFACT_REVALIDATION",
-    "run_id": "2026-10-28_dsainet_p0_cue_r3_cvar-full-w1",
-    "standard_verified_intake": false,
-    "transaction_id": "2026-10-28_dsainet_p0_cue_r3_cvar-tx"
-  },
-  "last_revalidated_key_delivery": {
-    "G1": false,
-    "G2": true,
-    "G3": true,
-    "I": false,
-    "acceptance": {
-      "path": "ai4s/programs/dsainet/research/p0-pf-r1/analysis_closeout/reports/KEY_DELIVERY_ACCEPTANCE.json",
-      "sha256": "15e9cc9aa2b8ad9007c6fa8ce7bce324853e61d184c38c48bc47c114da3d16c4"
-    },
-    "audits": 90,
-    "automatic_follow_up": false,
-    "budget": {
-      "closeout_included_hours": 4,
-      "execution_seconds_this_run": 2356.4859709739685,
-      "idle_or_stopped_refund_hours": 0,
-      "original_start": "2026-10-23T13:28:00+00:00",
-      "remaining_campaign_hours_snapshot": 23.153421013439015,
-      "science_node_limit_hours": 23,
-      "snapshot_at": "2026-10-29T11:56:23.546781+00:00",
-      "total_hours": 157,
-      "transaction_limit_hours": 27,
-      "verified_resource_queue_seconds": 31055.862429380417
-    },
-    "contract_sha256": "259f683fa93b9910e311be410bbe058d394cb563b06fe38a5186624f1af03ccd",
-    "decision": "NO_SIGNAL_STOP_PF_R1",
-    "decision_record": {
-      "path": "ai4s/programs/dsainet/research/p0-pf-r1-science1-packfix1_decision.yaml",
-      "sha256": "395439da0f78dcd5dee102e645bf4b417c85001537cd2a90f68bb4c347179e15"
-    },
-    "delivery_receipt": {
-      "path": "ai4s/programs/dsainet/research/p0-pf-r1/analysis_closeout/KEY_EVIDENCE/DELIVERY_RECEIPT.json",
-      "sha256": "678cfc64ffb8f030faab880db994ee07babb6c4958f344c6d638cbd5098b70b1"
-    },
-    "evidence_id": "DSAINET-P0-PF-R1-PACKFIX1-REVALIDATED-ANALYSIS-20261029",
-    "external_review": {
-      "path": "ai4s/programs/dsainet/research/p0-pf-r1/analysis_closeout/review/REVIEW_RESPONSE.md",
-      "sha256": "e0793db95d8624d923bf3e50f8ce2b40777597ffaa0da7c4aea83b6e1f9199e3"
-    },
-    "failed_audits": 0,
-    "failed_fits": 0,
-    "fits": 90,
-    "follow_up_disposition": "STOP_FIXED_PF_R1; NO_NEW_EXPERIMENT; retain bounded structure clues, all old Runs and evidence",
-    "formal_claim": false,
-    "full_payload_local": false,
-    "historical_cells": 90,
-    "intake_scope": "remote_analysis_key_delivery_revalidated",
-    "key_files_verified": 682,
-    "observed_at": "2026-10-29T11:56:23.546781+00:00",
-    "remote_artifact_files": 2008,
-    "remote_full_artifact_verification": true,
-    "report": {
-      "path": "ai4s/programs/dsainet/research/p0-pf-r1/analysis_closeout/REPORT_ZH.md",
-      "sha256": "7bab1bd5244fabeec95a632bd3d2451d1dc87efce9ab406a30c7509a10855e37"
-    },
-    "revalidation_status": "PASS_REVALIDATED_KEY_DELIVERY",
-    "role": "exposed_development_revalidated_analysis",
-    "round_id": "p0-pf-r1-science1-packfix1",
-    "run_id": "2026-10-29_dsainet_p0_pf_r1_science1-packfix1-full-w1",
-    "source_run_status": "COMPLETE_PRESERVED",
-    "standard_analysis_v1_intake": false,
-    "standard_verified_intake": false
-  },
-  "last_round_evidence": {
-    "PE_ablation_stage_eligible": false,
-    "R_diagnostics": 18,
-    "artifacts": {
-      "ANALYSIS_PLAN.json": {
-        "ref": "ai4s/programs/dsainet/research/ds07-r1/analysis_20261105/ANALYSIS_PLAN.json",
-        "sha256": "e2f2099a964e817e8bd615012d99220a1e277984d5f73255b91847321f30369f"
-      },
-      "GROK_CHAT_HISTORY.jsonl": {
-        "ref": "ai4s/programs/dsainet/research/ds07-r1/analysis_20261105/GROK_CHAT_HISTORY.jsonl",
-        "sha256": "65f88e555bd036165436fd581bc7d7996993eff2ab574ce75869b1e2475334de"
-      },
-      "GROK_REVIEW_REPORT.md": {
-        "ref": "ai4s/programs/dsainet/research/ds07-r1/analysis_20261105/GROK_REVIEW_REPORT.md",
-        "sha256": "ff646cb387cc6be8c4ccd6160c35a655845a5f73d72d06369dbd1cf50c8a9d68"
-      },
-      "INDEPENDENT_RECOMPUTE.json": {
-        "ref": "ai4s/programs/dsainet/research/ds07-r1/analysis_20261105/INDEPENDENT_RECOMPUTE.json",
-        "sha256": "b1ecdd6d4c191f0043866602175ad01e016e77157da7ff321dd8f93dfaa88a80"
-      },
-      "LOCAL_REPLAY_VERIFICATION.json": {
-        "ref": "ai4s/programs/dsainet/research/ds07-r1/analysis_20261105/LOCAL_REPLAY_VERIFICATION.json",
-        "sha256": "7b84a0dade6762ca098b23db3aadcf3a1f1b9b756bc07ce0541b016f134e8787"
-      },
-      "REPORT_ZH.md": {
-        "ref": "ai4s/programs/dsainet/research/ds07-r1/analysis_20261105/REPORT_ZH.md",
-        "sha256": "b763bd9f863c7762f212a51777817de40311abdeea2faca88fe956c55747f454"
-      },
-      "REVIEW_DISPOSITION.json": {
-        "ref": "ai4s/programs/dsainet/research/ds07-r1/analysis_20261105/REVIEW_DISPOSITION.json",
-        "sha256": "233923025a361912aa2f08c09d5ae1f4e58396969a6f8c010a9b7d1ddc958202"
-      },
-      "VERIFIED_MIXED_INTAKE.json": {
-        "ref": "ai4s/programs/dsainet/research/ds07-r1/analysis_20261105/VERIFIED_MIXED_INTAKE.json",
-        "sha256": "5d294612f5ed0fac2859fed1099e3366d953aa4e6213119592f61ecd748ff088"
-      },
-      "intake/critical_artifacts/INPUT_MANIFEST.json": {
-        "ref": "ai4s/programs/dsainet/research/ds07-r1/analysis_20261105/intake/critical_artifacts/INPUT_MANIFEST.json",
-        "sha256": "4406cb6b141233b8e226d93c4706e4f1066306b933c388c81556fcaaf8c3ff58"
-      },
-      "intake/critical_artifacts/PACKAGE_MANIFEST.json": {
-        "ref": "ai4s/programs/dsainet/research/ds07-r1/analysis_20261105/intake/critical_artifacts/PACKAGE_MANIFEST.json",
-        "sha256": "9407b496eac2d5cffadf4b5cfc7d7922532823f15e33f2d591d53f902728d64e"
-      },
-      "intake/critical_artifacts/RESULTS.json": {
-        "ref": "ai4s/programs/dsainet/research/ds07-r1/analysis_20261105/intake/critical_artifacts/RESULTS.json",
-        "sha256": "c36ef931dd3a1bd26919438149fc7deafae5e5a12d35024eb41d40daf1de7372"
-      }
-    },
-    "budget": {
-      "charged_hours": 293.512495809812,
-      "checked_at_beijing": "2026-11-05T21:09:08.803027+08:00",
-      "clock_reset": false,
-      "closeout_ceiling_hours": 4,
-      "closeout_spent_hours": 0.8258065226342943,
-      "new_budget_hours": 0,
-      "new_pause_seconds": 0,
-      "original_start": "2026-10-23T13:28:00+00:00",
-      "pipeline_closed_does_not_pause_budget_clock": true,
-      "previous_authorized_manual_pause_seconds": 3094.9218889999997,
-      "remaining_hours": 18.48750419018802,
-      "total_hours": 312,
-      "verified_resource_wait_seconds_once": 62328.89622282982
-    },
-    "checkpoints_local": false,
-    "claim_created": false,
-    "critical_file_count": 312,
-    "critical_selected_bytes": 7508066,
-    "decision": "STOP_FIXED_DS07_R1_NO_AUTOMATIC_EXPANSION",
-    "decision_record": "ai4s/programs/dsainet/research/ds07-r1/analysis_20261105/DECISION.json",
-    "decision_record_sha256": "4d60175d977f6d59762bda4149a34ff68ba69d0dcd9da720894b974e6132a689",
-    "evidence_id": "DSAINET-DS07-R1-MERGED-VERIFIED-ANALYSIS-20261105",
-    "four_arm_means": {
-      "C": {
-        "mean_acc": 0.5134066358024691,
-        "mean_nll": 1.3219667820019116,
-        "per_seed_mean_acc": {
-          "0": 0.5081018518518519,
-          "1": 0.5187114197530864
-        },
-        "per_seed_mean_nll": {
-          "0": 1.3867760152339288,
-          "1": 1.2571575487698945
-        },
-        "per_subject": {
-          "0": {
-            "mean_acc": 0.5920138888888888,
-            "mean_nll": 1.0830771009433517,
-            "seeds": {
-              "0": {
-                "acc": 0.5260416666666666,
-                "nll": 1.1840173711598223
-              },
-              "1": {
-                "acc": 0.6579861111111112,
-                "nll": 0.9821368307268811
-              }
-            }
-          },
-          "1": {
-            "mean_acc": 0.4626736111111111,
-            "mean_nll": 1.7070747618071698,
-            "seeds": {
-              "0": {
-                "acc": 0.4479166666666667,
-                "nll": 1.8734160611361537
-              },
-              "1": {
-                "acc": 0.4774305555555556,
-                "nll": 1.5407334624781859
-              }
-            }
-          },
-          "2": {
-            "mean_acc": 0.5555555555555556,
-            "mean_nll": 1.05010037461907,
-            "seeds": {
-              "0": {
-                "acc": 0.5173611111111112,
-                "nll": 1.1066704768025502
-              },
-              "1": {
-                "acc": 0.59375,
-                "nll": 0.9935302724355901
-              }
-            }
-          },
-          "3": {
-            "mean_acc": 0.5460069444444444,
-            "mean_nll": 1.6620615589108594,
-            "seeds": {
-              "0": {
-                "acc": 0.5538194444444444,
-                "nll": 1.6262229199482514
-              },
-              "1": {
-                "acc": 0.5381944444444444,
-                "nll": 1.6979001978734671
-              }
-            }
-          },
-          "4": {
-            "mean_acc": 0.4774305555555556,
-            "mean_nll": 1.5373613509106996,
-            "seeds": {
-              "0": {
-                "acc": 0.5,
-                "nll": 1.425924922672397
-              },
-              "1": {
-                "acc": 0.4548611111111111,
-                "nll": 1.6487977791490023
-              }
-            }
-          },
-          "5": {
-            "mean_acc": 0.3550347222222222,
-            "mean_nll": 1.633762962090324,
-            "seeds": {
-              "0": {
-                "acc": 0.4253472222222222,
-                "nll": 1.8784939025761105
-              },
-              "1": {
-                "acc": 0.2847222222222222,
-                "nll": 1.3890320216045375
-              }
-            }
-          },
-          "6": {
-            "mean_acc": 0.28125,
-            "mean_nll": 1.4609505464538035,
-            "seeds": {
-              "0": {
-                "acc": 0.3020833333333333,
-                "nll": 1.5180127814104876
-              },
-              "1": {
-                "acc": 0.2604166666666667,
-                "nll": 1.4038883114971195
-              }
-            }
-          },
-          "7": {
-            "mean_acc": 0.7482638888888888,
-            "mean_nll": 0.6983701949425452,
-            "seeds": {
-              "0": {
-                "acc": 0.7083333333333334,
-                "nll": 0.7819517207966198
-              },
-              "1": {
-                "acc": 0.7881944444444444,
-                "nll": 0.6147886690884704
-              }
-            }
-          },
-          "8": {
-            "mean_acc": 0.6024305555555556,
-            "mean_nll": 1.064942187339382,
-            "seeds": {
-              "0": {
-                "acc": 0.5920138888888888,
-                "nll": 1.0862739806029664
-              },
-              "1": {
-                "acc": 0.6128472222222222,
-                "nll": 1.0436103940757977
-              }
-            }
-          }
-        }
-      },
-      "N": {
-        "mean_acc": 0.5000964506172839,
-        "mean_nll": 1.413528101930077,
-        "per_seed_mean_acc": {
-          "0": 0.49151234567901236,
-          "1": 0.5086805555555556
-        },
-        "per_seed_mean_nll": {
-          "0": 1.424855814207753,
-          "1": 1.4022003896524007
-        },
-        "per_subject": {
-          "0": {
-            "mean_acc": 0.6848958333333334,
-            "mean_nll": 0.8221562461061508,
-            "seeds": {
-              "0": {
-                "acc": 0.6770833333333334,
-                "nll": 0.8193905618983202
-              },
-              "1": {
-                "acc": 0.6927083333333334,
-                "nll": 0.8249219303139814
-              }
-            }
-          },
-          "1": {
-            "mean_acc": 0.3958333333333333,
-            "mean_nll": 1.7452963732919073,
-            "seeds": {
-              "0": {
-                "acc": 0.3697916666666667,
-                "nll": 1.8559216607077162
-              },
-              "1": {
-                "acc": 0.421875,
-                "nll": 1.6346710858760984
-              }
-            }
-          },
-          "2": {
-            "mean_acc": 0.4045138888888889,
-            "mean_nll": 1.2967626848684013,
-            "seeds": {
-              "0": {
-                "acc": 0.4045138888888889,
-                "nll": 1.2584435344282083
-              },
-              "1": {
-                "acc": 0.4045138888888889,
-                "nll": 1.3350818353085945
-              }
-            }
-          },
-          "3": {
-            "mean_acc": 0.4878472222222222,
-            "mean_nll": 1.6158785444165153,
-            "seeds": {
-              "0": {
-                "acc": 0.4583333333333333,
-                "nll": 1.5460633977855405
-              },
-              "1": {
-                "acc": 0.5173611111111112,
-                "nll": 1.6856936910474902
-              }
-            }
-          },
-          "4": {
-            "mean_acc": 0.5008680555555556,
-            "mean_nll": 1.3809384867123748,
-            "seeds": {
-              "0": {
-                "acc": 0.4878472222222222,
-                "nll": 1.3850587598625692
-              },
-              "1": {
-                "acc": 0.5138888888888888,
-                "nll": 1.3768182135621805
-              }
-            }
-          },
-          "5": {
-            "mean_acc": 0.40625,
-            "mean_nll": 2.4270566562576072,
-            "seeds": {
-              "0": {
-                "acc": 0.4253472222222222,
-                "nll": 2.4903647095647243
-              },
-              "1": {
-                "acc": 0.3871527777777778,
-                "nll": 2.36374860295049
-              }
-            }
-          },
-          "6": {
-            "mean_acc": 0.3463541666666667,
-            "mean_nll": 1.4622903316273521,
-            "seeds": {
-              "0": {
-                "acc": 0.3576388888888889,
-                "nll": 1.4677261830366328
-              },
-              "1": {
-                "acc": 0.3350694444444444,
-                "nll": 1.4568544802180716
-              }
-            }
-          },
-          "7": {
-            "mean_acc": 0.6909722222222222,
-            "mean_nll": 0.8639787287817371,
-            "seeds": {
-              "0": {
-                "acc": 0.671875,
-                "nll": 0.9348600529489737
-              },
-              "1": {
-                "acc": 0.7100694444444444,
-                "nll": 0.7930974046145005
-              }
-            }
-          },
-          "8": {
-            "mean_acc": 0.5833333333333334,
-            "mean_nll": 1.1073948653086447,
-            "seeds": {
-              "0": {
-                "acc": 0.5711805555555556,
-                "nll": 1.0658734676370913
-              },
-              "1": {
-                "acc": 0.5954861111111112,
-                "nll": 1.148916262980198
-              }
-            }
-          }
-        }
-      },
-      "R": {
-        "mean_acc": 0.49594907407407407,
-        "mean_nll": 1.4088727677632145,
-        "per_seed_mean_acc": {
-          "0": 0.5100308641975309,
-          "1": 0.4818672839506173
-        },
-        "per_seed_mean_nll": {
-          "0": 1.337944748723781,
-          "1": 1.4798007868026481
-        },
-        "per_subject": {
-          "0": {
-            "mean_acc": 0.6449652777777778,
-            "mean_nll": 0.9061402941009085,
-            "seeds": {
-              "0": {
-                "acc": 0.6475694444444444,
-                "nll": 0.909225894411542
-              },
-              "1": {
-                "acc": 0.6423611111111112,
-                "nll": 0.9030546937902749
-              }
-            }
-          },
-          "1": {
-            "mean_acc": 0.4019097222222222,
-            "mean_nll": 1.506260242582158,
-            "seeds": {
-              "0": {
-                "acc": 0.4479166666666667,
-                "nll": 1.457591524725442
-              },
-              "1": {
-                "acc": 0.3559027777777778,
-                "nll": 1.5549289604388743
-              }
-            }
-          },
-          "2": {
-            "mean_acc": 0.3836805555555556,
-            "mean_nll": 1.2818725650134746,
-            "seeds": {
-              "0": {
-                "acc": 0.4149305555555556,
-                "nll": 1.2256352092956493
-              },
-              "1": {
-                "acc": 0.3524305555555556,
-                "nll": 1.3381099207312996
-              }
-            }
-          },
-          "3": {
-            "mean_acc": 0.4965277777777778,
-            "mean_nll": 1.4503506333837932,
-            "seeds": {
-              "0": {
-                "acc": 0.4895833333333333,
-                "nll": 1.3694442501454909
-              },
-              "1": {
-                "acc": 0.5034722222222222,
-                "nll": 1.5312570166220956
-              }
-            }
-          },
-          "4": {
-            "mean_acc": 0.5243055555555556,
-            "mean_nll": 1.2934965674653904,
-            "seeds": {
-              "0": {
-                "acc": 0.53125,
-                "nll": 1.1928161424910104
-              },
-              "1": {
-                "acc": 0.5173611111111112,
-                "nll": 1.3941769924397702
-              }
-            }
-          },
-          "5": {
-            "mean_acc": 0.4010416666666667,
-            "mean_nll": 2.8897427802166225,
-            "seeds": {
-              "0": {
-                "acc": 0.3993055555555556,
-                "nll": 2.5081903565376766
-              },
-              "1": {
-                "acc": 0.4027777777777778,
-                "nll": 3.2712952038955683
-              }
-            }
-          },
-          "6": {
-            "mean_acc": 0.2829861111111111,
-            "mean_nll": 1.3957447549064816,
-            "seeds": {
-              "0": {
-                "acc": 0.3125,
-                "nll": 1.4058591446233284
-              },
-              "1": {
-                "acc": 0.2534722222222222,
-                "nll": 1.385630365189635
-              }
-            }
-          },
-          "7": {
-            "mean_acc": 0.7421875,
-            "mean_nll": 0.9316422655538984,
-            "seeds": {
-              "0": {
-                "acc": 0.7482638888888888,
-                "nll": 0.9394724816445427
-              },
-              "1": {
-                "acc": 0.7361111111111112,
-                "nll": 0.9238120494632541
-              }
-            }
-          },
-          "8": {
-            "mean_acc": 0.5859375,
-            "mean_nll": 1.0246048066462041,
-            "seeds": {
-              "0": {
-                "acc": 0.5989583333333334,
-                "nll": 1.033267734639346
-              },
-              "1": {
-                "acc": 0.5729166666666666,
-                "nll": 1.015941878653062
-              }
-            }
-          }
-        }
-      },
-      "S": {
-        "mean_acc": 0.5072337962962963,
-        "mean_nll": 1.395202976580038,
-        "per_seed_mean_acc": {
-          "0": 0.5244984567901234,
-          "1": 0.48996913580246915
-        },
-        "per_seed_mean_nll": {
-          "0": 1.33272936154267,
-          "1": 1.457676591617406
-        },
-        "per_subject": {
-          "0": {
-            "mean_acc": 0.6614583333333334,
-            "mean_nll": 0.8891194613704286,
-            "seeds": {
-              "0": {
-                "acc": 0.671875,
-                "nll": 0.882997116217854
-              },
-              "1": {
-                "acc": 0.6510416666666666,
-                "nll": 0.8952418065230032
-              }
-            }
-          },
-          "1": {
-            "mean_acc": 0.4461805555555556,
-            "mean_nll": 1.584047743766611,
-            "seeds": {
-              "0": {
-                "acc": 0.4565972222222222,
-                "nll": 1.465376011550851
-              },
-              "1": {
-                "acc": 0.4357638888888889,
-                "nll": 1.7027194759823712
-              }
-            }
-          },
-          "2": {
-            "mean_acc": 0.3671875,
-            "mean_nll": 1.307867978669099,
-            "seeds": {
-              "0": {
-                "acc": 0.3715277777777778,
-                "nll": 1.3119878813331634
-              },
-              "1": {
-                "acc": 0.3628472222222222,
-                "nll": 1.3037480760050346
-              }
-            }
-          },
-          "3": {
-            "mean_acc": 0.5234375,
-            "mean_nll": 1.647757662637051,
-            "seeds": {
-              "0": {
-                "acc": 0.5538194444444444,
-                "nll": 1.496652672277226
-              },
-              "1": {
-                "acc": 0.4930555555555556,
-                "nll": 1.7988626529968756
-              }
-            }
-          },
-          "4": {
-            "mean_acc": 0.5095486111111112,
-            "mean_nll": 1.3984777145388598,
-            "seeds": {
-              "0": {
-                "acc": 0.5138888888888888,
-                "nll": 1.4703990431401879
-              },
-              "1": {
-                "acc": 0.5052083333333334,
-                "nll": 1.3265563859375318
-              }
-            }
-          },
-          "5": {
-            "mean_acc": 0.4053819444444444,
-            "mean_nll": 2.457077957516815,
-            "seeds": {
-              "0": {
-                "acc": 0.4149305555555556,
-                "nll": 2.2511150825875417
-              },
-              "1": {
-                "acc": 0.3958333333333333,
-                "nll": 2.663040832446088
-              }
-            }
-          },
-          "6": {
-            "mean_acc": 0.3107638888888889,
-            "mean_nll": 1.4990782130500147,
-            "seeds": {
-              "0": {
-                "acc": 0.34375,
-                "nll": 1.457869602568086
-              },
-              "1": {
-                "acc": 0.2777777777777778,
-                "nll": 1.5402868235319433
-              }
-            }
-          },
-          "7": {
-            "mean_acc": 0.7378472222222222,
-            "mean_nll": 0.7136707319615979,
-            "seeds": {
-              "0": {
-                "acc": 0.765625,
-                "nll": 0.6221730814910907
-              },
-              "1": {
-                "acc": 0.7100694444444444,
-                "nll": 0.8051683824321051
-              }
-            }
-          },
-          "8": {
-            "mean_acc": 0.6032986111111112,
-            "mean_nll": 1.0597293257098641,
-            "seeds": {
-              "0": {
-                "acc": 0.6284722222222222,
-                "nll": 1.0359937627180293
-              },
-              "1": {
-                "acc": 0.578125,
-                "nll": 1.0834648887016989
-              }
-            }
-          }
-        }
-      }
-    },
-    "full_payload_local": false,
-    "merged_audits": 72,
-    "mixed_provenance": true,
-    "negative_boundary": "fixed exposed DS07-R1 only; no universal relationship/graph/PE claim",
-    "new_R_audits": 18,
-    "new_closeout_inference": 0,
-    "new_closeout_training": 0,
-    "new_experiment_authorized": false,
-    "next_action": "STOP_FIXED_DS07_R1_NO_NEW_EXPERIMENT",
-    "parent_contract_sha256": "b9824b039bc8dcaaaa907ac8a1c7cdfd0d03b90cbb7a73cc82438edce1c748ef",
-    "parent_engineering_failed_preserved": true,
-    "parent_run_id": "2026-11-04_dsainet_ds07_r1_science1-devicefix1-full-w1",
-    "parent_standard_intake": false,
-    "program_id": "dsainet",
-    "recorded_at": "2026-11-05T13:09:08.803027+00:00",
-    "report": "ai4s/programs/dsainet/research/ds07-r1/analysis_20261105/REPORT_ZH.md",
-    "research_id": "ds07-r1",
-    "resume_contract_sha256": "95372fc340bc257e5b42dd11c80ec909ab53e5f81defd1202693f750d6749caa",
-    "resume_run_id": "2026-11-05_dsainet_ds07_r1_audit18-r18fix1-full-w1",
-    "reused_NCS_audits": 54,
-    "reused_fits": 72,
-    "role": "exposed_development_four_arm_system_net_utility_screen",
-    "round_id": "ds07-r1-audit18-r18fix1",
-    "sameP_readout_stage_eligible": false,
-    "single_run_claim_permitted": false,
-    "standard_R18_intake": {
-      "analysis_receipt_sha256": "50d281479aef6a12015c6c0c058c89b245db75e39326ab6107800b1c9c9d72d0",
-      "artifact_manifest_sha256": "472328bb9c78bbf8b431cfaa8d1c6dd01fc061b6ff56f24d03c7f873e36bcc9c",
-      "contract_sha256": "95372fc340bc257e5b42dd11c80ec909ab53e5f81defd1202693f750d6749caa",
-      "full_payload_local": false,
-      "intake_path": "results/logs/remote/2026-11-05_dsainet_ds07_r1_audit18-r18fix1-full-w1",
-      "intake_scope": "analysis_v1",
-      "run_id": "2026-11-05_dsainet_ds07_r1_audit18-r18fix1-full-w1",
-      "run_status": "complete",
-      "transaction_id": "dsainet-ds07-r1-audit18-r18fix1",
-      "transfer_bytes": 1101797,
-      "verified": true,
-      "verified_at": null
-    }
-  },
-  "last_status_check": {
-    "automatic_monitor_enabled": false,
-    "budget_limit_hours": 88,
-    "checked_at": "2026-10-22T18:37:20.462148+00:00",
-    "formal_audits_completed": 0,
-    "formal_audits_expected": 189,
-    "launched_epoch": 1792693988.5188887,
-    "parent_pid": 1336657,
-    "preservation_errors": [],
-    "preserved_audit_cache_count": 25,
-    "preserved_training_count": 189,
-    "recovery_id": "2026-10-23_NRC1repair3_auditcache2_88_r1",
-    "remaining_audit_cache_ids": [
-      "AUDITCACHE_s1_t7",
-      "AUDITCACHE_s2_t3"
-    ],
-    "remaining_seconds": 32302.186585903168,
-    "report": "ai4s/programs/dsainet/research/dsa-nrc-v0.1/execution/recovery_auditcache2_88/REPAIR_NOTES.md",
-    "run_id": "2026-10-19_dsainet_dsa_nrc_v0_1_NRC1repair3-full-w1",
-    "status": "RUNNING"
-  },
-  "last_technical_only_recovery": {
-    "contract_sha256": "6f134af566aed6182fdf84eb92f4f1539ce0f32342c1b2c25ac4af1450b309eb",
-    "cost_status": "BLOCK_NOT_AUTHORIZED",
-    "evidence_id": "DSAINET-S0TECH1-TECHACCEPT1-CPU-RECOVERY-20261028",
-    "follow_up_disposition": "CPU recovery complete. Preserve failed original Run; no training or scientific successor is authorized. Any later experiment needs separately frozen authorization and budget/cap decision.",
-    "new_training_or_remote_node_dispatch": false,
-    "recovery_receipt": "ai4s/programs/dsainet/research/p0-cue-r2-s0tech1-techaccept1/RECOVERY_ACCEPTANCE.json",
-    "recovery_receipt_sha256": "65939afba21818d9bdef5ab3dc14bcccdf841d4bf40224f4029924705ce749e1",
-    "report": "ai4s/programs/dsainet/research/p0-cue-r2-s0tech1-techaccept1/REPORT.md",
-    "run_id": "2026-10-27_dsainet_p0_cue_r2_s0tech1-full-w1",
-    "technical_acceptance": "PASS_OFFLINE_REPLAY"
-  },
-  "last_verified_intake": {
-    "analysis_receipt_sha256": "50d281479aef6a12015c6c0c058c89b245db75e39326ab6107800b1c9c9d72d0",
-    "artifact_manifest_sha256": "472328bb9c78bbf8b431cfaa8d1c6dd01fc061b6ff56f24d03c7f873e36bcc9c",
-    "contract_sha256": "95372fc340bc257e5b42dd11c80ec909ab53e5f81defd1202693f750d6749caa",
-    "full_payload_local": false,
-    "intake_path": "results/logs/remote/2026-11-05_dsainet_ds07_r1_audit18-r18fix1-full-w1",
-    "intake_scope": "analysis_v1",
-    "run_id": "2026-11-05_dsainet_ds07_r1_audit18-r18fix1-full-w1",
-    "run_status": "complete",
-    "transaction_id": "dsainet-ds07-r1-audit18-r18fix1",
-    "transfer_bytes": 1101797,
-    "verified": true,
-    "verified_at": null
-  },
-  "last_verified_preflight": {
-    "bundle_id": "2026-09-24_dsainet_fut_v0_1_profile_repair1-bundle",
-    "contract": "ai4s/programs/dsainet/research/dsa-fut-v0.1/repair1/PROFILE_CONTRACT.json",
-    "executor_id": "lab10",
-    "expected_artifact": "tail_profile.json",
-    "intake": {
-      "intake_path": "results/logs/remote/2026-09-24_dsainet_fut_v0_1_profile_repair1-r1",
-      "run_id": "2026-09-24_dsainet_fut_v0_1_profile_repair1-r1",
-      "run_status": "complete",
-      "verified": true,
-      "verified_at": "2026-09-24T01:39:09.316321+00:00"
-    },
-    "kind": "engineering_preflight",
-    "operation_id": "dsainet:engineering_preflight:2026-09-24_dsainet_fut_v0_1_profile_repair1-r1",
-    "preflight": {
-      "environment_fingerprint": "bf35bef4379ad992a7b03065ba2ee977a1d9f5954654e75690e3fe93b428739c",
-      "peak_memory_observed_mib": 909,
-      "profile_kind": "frozen_tail"
-    },
-    "registered_at": "2026-09-24T01:35:29.219586+00:00",
-    "repair_verification": {
-      "external_source_contract_sha256": "1e7119e8207cb0646c5e045d7ece40a96339ffcceb3cd3a30b8373ae18400d1d",
-      "logical_task_units": 3,
-      "manifest_files": 14,
-      "new_task_ids": [
-        "profile_SELF"
-      ],
-      "peak_memory_observed_mib": 909,
-      "reused_task_ids": [
-        "profile_CROSS",
-        "profile_DIRECT"
-      ],
-      "status": "VERIFIED"
-    },
-    "result_role": "engineering_frozen_tail_profile_only_no_performance_claim",
-    "resume_paused": false,
-    "resume_status": "READY",
-    "run_id": "2026-09-24_dsainet_fut_v0_1_profile_repair1-r1",
-    "status": "VERIFIED_INTAKE",
-    "verified_at": "2026-09-24T01:39:09.735321+00:00"
-  },
-  "last_wmp_d1_stage_a_analysis": {
-    "claim_created": false,
-    "contract_sha256": "20dd39535800fc93e4ffb85baf2537945c59323e97083e61a99f7a31479afd25",
-    "decision": "NO_SIGNAL_STOP_FIXED_PHASE_TEMPLATE",
-    "evidence_id": "DSAINET-P0-WMP-D1-STAGE-A-20261029",
-    "fit_checkpoint_extracts": 36,
-    "full_payload_local": false,
-    "intake_scope": "analysis_v1",
-    "neural_training_eligible": false,
-    "new_neural_fits": 0,
-    "next_action": "STOP_WMP_D1_NO_PROBES",
-    "observed_at": "2026-10-29T16:17:22.707588+00:00",
-    "paired_EA_context_count": 0,
-    "probe_fits": 0,
-    "remaining_budget_hours_snapshot": 18.80295534705013,
-    "report": "ai4s/programs/dsainet/research/p0-wmp-d1/stagea_analysis_local/REPORT_ZH.md",
-    "report_sha256": "d24ac8a072e0758ffad03d279021c5fdf843b85047828be803112d737bbb94b6",
-    "research_id": "p0-wmp-d1",
-    "result_sha256": "2bb3ba4db810ab4f48064dad03e166fd0123bf9dcc26ee7e9a901857c06e818e",
-    "role": "exposed_source_development_nondegeneracy_diagnostic",
-    "run_id": "2026-10-29_dsainet_p0_wmp_d1_stagea-full-w1",
-    "stage_a_pass": false,
-    "stage_b_authorized_conditionally": true,
-    "standard_verified_intake": true,
-    "verification_sha256": "2b5bacfaf6c14b2e858bdaa060f1830e028d82f94fe01761cb89198bcefcd4e9"
-  },
-  "lifecycle_closure": {
-    "analysis_sha256": "82ed2cdf8e2be595a495a5d7806374d44505950de37d0472f87762ba16a0818a",
-    "artifact_manifest_sha256": "0e3956d5028517ae7f8fc33e91be70cfdb46b433e945d3bbc6a55282b0c2315f",
-    "budget_compliance": "EXCEEDED_DURING_CLOSEOUT_INTAKE_ANALYSIS",
-    "budget_limit_hours": 96,
-    "budget_remaining_seconds_at_last_check": -1315.5931639671326,
-    "closed_at_utc": "20261023T134933Z",
-    "contract_sha256": "3666bec81ef4aab5bc6a437fb0fde27f9684f0c64f365b04be42ab29d40542ef",
-    "evidence_id": "dsainet-nrc1-repair3-complete-20261023",
-    "formal_claim_created": false,
-    "frozen_gate_pass": false,
-    "kind": "NRC1_LIFECYCLE_CLOSED_WITH_BUDGET_DEVIATION",
-    "prior_last_decision": {
-      "analysis_input_sha256": "2d2ac38afc3f615e160997d5eec8b7c6c060d58f9255a1bde893c6de12959d70",
-      "automatic_follow_up": false,
-      "decision": "LC1_SCREEN_RECORDED",
-      "lc1_disposition": {
-        "automatic_follow_up": false,
-        "diagnostic_only": true,
-        "exposure_pass": true,
-        "functional_direction_consistent": false,
-        "lc2_authorized": false,
-        "lc2_eligible_for_separate_authorization": false,
-        "same_bias_pass": {
-          "HH": false,
-          "SS": false
-        },
-        "utility_pass": false
-      },
-      "lc2_authorized": false,
-      "role": "diagnostic_observation",
-      "round_id": "dsa-lcb-v0.1-LC1"
-    },
-    "run_id": "2026-10-19_dsainet_dsa_nrc_v0_1_NRC1repair3-full-w1",
-    "scientific_decision": null,
-    "state_snapshot": {
-      "path": "programs\\dsainet\\research\\p0-cue-r1\\execution\\lifecycle_snapshots\\STATE_before_NRC1_lifecycle_reconcile_20261023T134933Z.bin",
-      "sha256": "67a74d9989ecae1bbee680b3025aff572042322e61e7725775799276ea26385a"
-    }
-  },
-  "local_performance_supplement_preparation": {
-    "authorization_ref": "ai4s/programs/dsainet/research/dsa-pfc-zhou-v0.1/AUTHORIZATION.json",
-    "baseline_exp_id": "2026-10-09_dsainet_zhou2016_loso_full_local_w2",
-    "candidate_id": "DSA-AEL-P0-FROZEN-20260927",
-    "evidence_id": "LOCAL-DSAINET-PFC-ZHOU-20261010",
-    "new_scientific_evidence": false,
-    "old_campaign_reopened": false,
-    "preparation_contract": {
-      "path": "output/local/2026-10-10_dsainet_p0_zhou2016_loso_local_w2/CONTRACT.json",
-      "sha256": "5f8f7cd9bff67ffa6bb1432e46b74606c936dbe731a6a5c605fa8ee4fdd27340"
-    },
-    "preparation_id": "DSA-PFC-ZHOU-20261010",
-    "proposed_execution": {
-      "automatic_retries": 0,
-      "executor": "local GPU0",
-      "max_seconds": 7200,
-      "workers": 2
-    },
-    "proposed_matrix": {
-      "epochs": 100,
-      "loso_targets": [
-        0,
-        1,
-        2,
-        3
-      ],
-      "new_formal_fits": 20,
-      "reused_B0_fits": 20,
-      "seeds": [
-        0,
-        1,
-        2,
-        3,
-        4
-      ],
-      "technical_fits": 1
-    },
-    "research_plan": "ai4s/programs/dsainet/research/dsa-pfc-zhou-v0.1/RESEARCH_PLAN.md",
-    "status": "ARCHIVED_ANALYZED_VERIFIED",
-    "user_request": "Add unchanged frozen P0 experiments on Zhou2016, using local GPU and the completed local DSAINet baseline."
-  },
-  "manual_budget_pause_accounting": [
-    {
-      "authorization": "explicit_user_approved_single_interval",
-      "end_boundary_basis": "conservative: 10 seconds before first tool receipt observation; registration/implementation processing is charged",
-      "end_utc": "2026-11-01T04:43:45.932671+00:00",
-      "first_receipt_observation_utc": "2026-11-01T04:43:55.932671+00:00",
-      "no_remote_tasks_running": true,
-      "resume_at_end": true,
-      "seconds": 115.93227,
-      "source_request": "ai4s/programs/dsainet/research/ds07-r1/preparation/PROPOSED_WAIT_BOUNDARY.json",
-      "source_request_sha256": "b31f1f05e808d07bb0a54e3b63ed5df343281f9db5e473bd56b962d4c4e50758",
-      "start_utc": "2026-11-01T04:41:50.000401+00:00"
-    },
-    {
-      "authorization": "explicit_user_approved_single_interval",
-      "end_boundary_basis": "10 seconds before first tool observation; registration processing remains charged",
-      "end_utc": "2026-11-01T15:34:11.239164+00:00",
-      "first_receipt_observation_utc": "2026-11-01T15:34:21.239164+00:00",
-      "no_remote_tasks_running": true,
-      "resume_at_end": true,
-      "seconds": 288.291875,
-      "source_request": "ai4s/programs/dsainet/research/ds07-r1/repair1/REPAIR_AND_BUDGET_PROPOSAL.json",
-      "source_request_sha256": "d265db99b537298a4a30f9a4b3019467996b4fa4be0bd770092051fc2bebb636",
-      "start_utc": "2026-11-01T15:29:22.947289+00:00"
-    },
-    {
-      "approval_source_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/proofs/USER_APPROVAL266.json",
-      "approval_source_sha256": "3da978a48b669541ea6fb4e831c1e90db762bc3a018a3303fb4887fff0589c69",
-      "authorization": "explicit_user_approved_single_interval",
-      "end_boundary_basis": "exact approval timestamp; subsequent processing is charged",
-      "end_utc": "2026-11-02T11:43:00.395+00:00",
-      "no_remote_tasks_running": true,
-      "resume_at_end": true,
-      "seconds": 29.361386,
-      "source_request": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/BUDGET_REQUEST_20261102.json",
-      "source_request_sha256": "731157931b5edc77618d96536fabf38e0823d4dceb05948dbf82da971a3d61ed",
-      "start_utc": "2026-11-02T11:42:31.033614+00:00"
-    },
-    {
-      "approval_source_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/readerfix1/EXPLICIT_TARGET_REPLY.json",
-      "approval_source_sha256": "9fc0e3927efa3392330815e43a25538c227b2cbd5fe9d3c0e97536c5a48463fb",
-      "authorization": "explicit_user_approved_single_interval",
-      "end_boundary_basis": "exact user approval; subsequent work is charged",
-      "end_utc": "2026-11-02T13:44:23.354000+00:00",
-      "no_remote_tasks_running": true,
-      "resume_at_end": true,
-      "seconds": 1324.957177,
-      "source_request": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/readerfix1/TRANSPORT_REQUEST.json",
-      "source_request_sha256": "4cd4bb3706bea6546ea66d4e35add7b6ec87a812ff6079d992dab448b62c9f9d",
-      "start_utc": "2026-11-02T13:22:18.396823+00:00"
-    },
-    {
-      "approval_source_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/telemetryfix1/EXPLICIT_TARGET_REPLY.json",
-      "approval_source_sha256": "e5613e9df8044c3e259a58c32955ba30f8075cdf7eb70e170e7ac6f2a2868242",
-      "authorization": "explicit_user_approved_single_interval",
-      "end_utc": "2026-11-02T16:43:58.805000+00:00",
-      "no_remote_tasks_running": true,
-      "resume_at_end": true,
-      "seconds": 17.63702,
-      "source_request": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/telemetryfix1/BUDGET_TRANSPORT_REQUEST.json",
-      "source_request_sha256": "af57fa49bd338444d9a7e8f569e6f69018050e0da50b72cb0424849f33c07495",
-      "start_utc": "2026-11-02T16:43:41.167980+00:00"
-    },
-    {
-      "approval_source_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/summaryfix1/EXPLICIT_TARGET_REPLY.json",
-      "approval_source_sha256": "600cc78238ff5e94a4c35bcd6b1109f5966cc17e8554f5f79f88039d21c838ed",
-      "authorization": "explicit_user_approved_single_interval",
-      "end_utc": "2026-11-03T14:08:00.226000+00:00",
-      "no_remote_tasks_running": true,
-      "resume_at_end": true,
-      "seconds": 435.111564,
-      "source_request": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/summaryfix1/BUDGET_TRANSPORT_REQUEST.json",
-      "source_request_sha256": "fcbd58420dbd3b8c25ac9a4baa0ee6a4d8e1e6321db9dbde8d4009e2afa3fa66",
-      "start_utc": "2026-11-03T14:00:45.114436+00:00"
-    },
-    {
-      "approval_source_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/devicefix1/EXPLICIT_TARGET_REPLY.json",
-      "approval_source_sha256": "181ee8c457ce45998cc06f3dabcad7c126a5ffeabde56d69974c5b7c64f25913",
-      "authorization": "explicit_user_approved_single_interval",
-      "end_utc": "2026-11-04T06:23:37.244000+00:00",
-      "no_remote_tasks_running": true,
-      "resume_at_end": true,
-      "seconds": 883.630597,
-      "source_request": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/devicefix1/BUDGET_TRANSPORT_REQUEST.json",
-      "source_request_sha256": "ce60ed7690718d2e675ef816570963d60acce2ef2f76e15569d09119121236f2",
-      "start_utc": "2026-11-04T06:08:53.613403+00:00"
-    }
-  ],
-  "manual_physionet_resume": {
-    "additional_recovery_window_hours": 72,
-    "authorization": "2026-10-02 user: restore remaining experiments with previous budget specification",
-    "automatic_retries": 0,
-    "capacity_unchanged": true,
-    "contract_sha256": "2378525f6fc972bd100baf48aa64f57f765829970a9661f8e41ef4310a3e1770",
-    "full_status": "RUNNING",
-    "independently_verified": false,
-    "launcher_alive_reported": true,
-    "launcher_pid": 670939,
-    "minimum_complete_fits_expected": 140,
-    "old_run_id": "2026-09-30_dsainet_pfc_xds_v0_1_physionet_resume1-full-w1",
-    "p0_unchanged": true,
-    "receipt": "ai4s/programs/dsainet/research/dsa-pfc-xds-v0.1-physionet-resume2/USER_SUBMISSION_RECEIPT.json",
-    "recorded_at": "2026-10-02T07:21:59.694263+00:00",
-    "remaining_formal_fits": 950,
-    "reused_formal_fits": 140,
-    "run_id": "2026-10-02_dsainet_pfc_xds_v0_1_physionet_resume2-full-w1",
-    "scientific_result": false,
-    "script": "ai4s/programs/dsainet/research/dsa-pfc-xds-v0.1-physionet-resume2/RESUME_PHYSIONET.ps1",
-    "script_sha256": "c3c3c8ccb7c2da99f33c5f78a486e37cbd8441fb1f432315b5775412bf5e881a",
-    "status": "USER_REPORTED_RUNNING",
-    "submitted_at": "2026-10-02T07:25:19.781988+00:00",
-    "target_units": 1090
-  },
-  "manual_physionet_resume3": {
-    "B0_failure_tasks": [
-      "physionet_B0_s4_t23",
-      "physionet_B0_s1_t24"
-    ],
-    "actual_failures": 2,
-    "added_budget_seconds": 0,
-    "automatic_training_retries": 0,
-    "blocked_unattempted": 388,
-    "contract_sha256": "aee609a64380758d4a035cee9c685b7012df890dbb9e655ce80f043d939fea28",
-    "failure_causes": [
-      "cuDNN backward algorithm failure",
-      "CUDA OOM, 126 MiB requested, 63.94 MiB free"
-    ],
-    "new_completed": 131,
-    "pending": 317,
-    "query_time": "2026-10-04T16:44:06+08:00",
-    "remaining_execution_hours_approx": 44.335,
-    "reused_fits": 234,
-    "run_id": "2026-10-04_dsainet_pfc_xds_v0_1_physionet_resume3-full-w1",
-    "running": 18,
-    "scientific_intake": false,
-    "status": "RUNNING_WITH_BLOCKED_B0_FAMILY",
-    "target_receipts": 0,
-    "total_completed": 365
-  },
-  "manual_physionet_resume4": {
-    "added_budget_seconds": 0,
-    "contract_sha256": "010305cae9048f2bc3080bc5bd77d666c3e278137409f4130971873f821199a2",
-    "explicit_failed_B0_recovery_complete": [
-      "physionet_B0_s4_t23",
-      "physionet_B0_s1_t24"
-    ],
-    "failed": 0,
-    "first_step_guards_failed": 0,
-    "first_step_guards_ready": 30,
-    "fit_commitment_mib": 2048,
-    "fit_receipts": 404,
-    "pending": 672,
-    "query_time": "2026-10-04T19:17:22+08:00",
-    "receipt_settlement_gap": 1,
-    "remaining_execution_hours_approx": 41.82,
-    "reused_fits": 388,
-    "run_id": "2026-10-04_dsainet_pfc_xds_v0_1_physionet_resume4-full-w1",
-    "running": 15,
-    "scheduler_completed": 15,
-    "scientific_intake": false,
-    "status": "RUNNING",
-    "target_receipts": 0
-  },
-  "next_execution_gpu_scope": {
-    "authorization": "User2026-10-06: include all GPUs except2; if interruption required leave current experiment unchanged",
-    "current_gpu_ids": [
-      1,
-      3,
-      4,
-      6,
-      7,
-      9
-    ],
-    "current_run": "2026-10-06_dsainet_pfc_xds_v0_1_physionet_resume9-full-w1",
-    "current_run_modified": false,
-    "deployed_scheduler_sha256": "57f2933cafb12967a7dbfd66cd46bc2d61a20c567b8dd1dcff28c836e3944cdc",
-    "fit_commitment_mib": 2048,
-    "public_reserve_mib": 0,
-    "reason": "Deployed scheduler parses GPU list once at startup and checks it against frozen contract; no hot reload",
-    "recorded_at": "2026-10-06T12:01:31.538681+00:00",
-    "requested_gpu_ids": [
-      0,
-      1,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9
-    ],
-    "status": "DEFERRED_UNTIL_NEXT_IMMUTABLE_CONTINUATION"
-  },
-  "next_research_preparation": {
-    "active_run_id": "2026-10-13_dsainet_rcd_v0_1_repair2-full-w1",
-    "actual_audits": 0,
-    "actual_new_fits": 0,
-    "actual_new_source_audits": 0,
-    "actual_new_technical_audits": 1,
-    "actual_new_technical_fits": 0,
-    "actual_new_training_fits": 0,
-    "authorization_ref": "ai4s/programs/dsainet/research/dsa-rcd-v0.1/AUTHORIZATION.md",
-    "authorization_scope": "User explicitly requested launching the selected RCD design; one closed four-arm source screen and necessary qualification.",
-    "budget_hours_authorized": 24,
-    "campaign_id": "dsainet-rcd-v0.1-20261012",
-    "chain_id": "dsainet-transaction-v3.1",
-    "claim_status": "no_paper_claim",
-    "contrast": [
-      "P0-B0",
-      "P0-S0",
-      "P0-N0"
-    ],
-    "data_preparation_check": "ai4s/programs/dsainet/research/dsa-rcd-v0.1/DATA_PREPARATION_CHECK.json",
-    "design_change": "One trial scalar conditions four native depthwise grids from band-power persistence; fresh cue asset and subject-disjoint source validation/audit.",
-    "design_check": "ai4s/programs/dsainet/research/dsa-rcd-v0.1/DESIGN_CHECK.json",
-    "design_spec": "ai4s/programs/dsainet/research/dsa-rcd-v0.1/DESIGN_SPEC.yaml",
-    "design_spec_sha256": "e3c7aebbe9ef9250a5f689bc20c831dd91cd9b7de288aee57547213c65f83874",
-    "execution_authorized": true,
-    "external_verdict": "REVISE",
-    "intervention_id": "DSA-RCD-v0.1-TRIAL-CONDITIONED-COMMON-DW-SPACING",
-    "judgment_change": "CRU is closed; structural preservation does not establish utility. RCD is an independently supplied hypothesis about same-trial conditional sampling spacing, distinct from fixed-tap KShape and tokenizer TKS.",
-    "launch_record": "ai4s/programs/dsainet/research/dsa-rcd-v0.1-repair1/LAUNCH_RECORD.json",
-    "new_run_authorized": true,
-    "new_scientific_evidence": false,
-    "next_stage": "source_subject_disjoint_development_screen",
-    "next_transition": "SCREEN_NEW",
-    "old_budget_transferred": false,
-    "old_campaign_reopened": false,
-    "planned_formal_fits": 72,
-    "planned_source_audits": 72,
-    "planned_technical_audits": 4,
-    "planned_technical_fits": 4,
-    "preparation_id": "DSA-RCD-20261012",
-    "recorded_at": "2026-10-12T11:44:04.403939+00:00",
-    "remaining_requirements": [
-      "production consumer closure",
-      "immutable bundle qualification",
-      "remote GPU technical lifecycle"
-    ],
-    "remote_asset_check": "ai4s/programs/dsainet/research/dsa-rcd-v0.1/REMOTE_ASSET_CHECK.json",
-    "repair_record": "ai4s/programs/dsainet/research/dsa-rcd-v0.1-repair2/REPAIR_CLOSURE.json",
-    "research_brief": "ai4s/programs/dsainet/research/dsa-rcd-v0.1/research_brief.md",
-    "research_brief_sha256": "88d133c8f87e897d7bc9251d27c0c850f4ec034f77f463bee7d125ab19de6058",
-    "research_id": "dsa-rcd-v0.1",
-    "review_disposition": "ai4s/programs/dsainet/research/dsa-rcd-v0.1/refine-logs/DISPOSITION.json",
-    "review_status": "COMPLETED_WITH_REVISE_AND_WRAPPER_PROTECTION_WARNING",
-    "role": "research_preparation_not_scientific_evidence",
-    "run_id": null,
-    "scientific_evidence": false,
-    "source_bindings": "ai4s/programs/dsainet/research/dsa-rcd-v0.1/SOURCE_BINDINGS.json",
-    "source_evidence_ids": [
-      "AI4S-DSAINET-dsa-cru-v0.1-resume2",
-      "AI4S-DSAINET-dsa-kshape-v0.1-repair5",
-      "AI4S-DSAINET-dsainet-r01-tks-v0.1"
-    ],
-    "status": "TECHNICAL_REPAIR_PASSED_SCIENCE_RESOURCE_WAIT",
-    "target_evaluation": false,
-    "updated_at": "2026-10-12T12:17:43.164825+00:00"
+    "run_id": "2026-11-03_d
 ```

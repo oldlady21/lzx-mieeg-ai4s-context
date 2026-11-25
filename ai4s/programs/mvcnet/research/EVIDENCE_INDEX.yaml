@@ -324,6 +324,831 @@
   ],
   "imports": [
     {
+      "claim_release": false,
+      "evidence_id": "MVCNET-CVCDROPOUT-001-LAB10-GPU-20261123",
+      "report": "ai4s/programs/mvcnet/research/cvc_shared_dropout_20261123/COST_SIZING.json",
+      "role": "three_arm_source_only_five_epoch_cost_qualification",
+      "run_id": "2026-11-23_mvcnet_cvcdropout_001_lab10_qualification-full-w1",
+      "source_evidence_ids": [
+        "MVCNET-CVCDROPOUT-001-LAB10-CPU-20261123",
+        "MVCNET-CVCDROPOUT-001-SOURCE-20261123"
+      ],
+      "status": "VERIFIED_INTAKE"
+    },
+    {
+      "claim_release": false,
+      "evidence_id": "MVCNET-CVCDROPOUT-001-LAB10-CPU-20261123",
+      "report": "ai4s/programs/mvcnet/research/cvc_shared_dropout_20261123/PRODUCTION_CPU_CLOSEOUT.md",
+      "role": "production_cpu_technical_acceptance",
+      "source_evidence_ids": [
+        "MVCNET-CVCDROPOUT-001-SOURCE-20261123"
+      ],
+      "status": "PASS"
+    },
+    {
+      "claim_release": false,
+      "disposition": "Proceed to bounded production qualification for shared and independent CVC masks using 001 exposed development only.",
+      "evidence_id": "MVCNET-CVCDROPOUT-001-SOURCE-20261123",
+      "report": "ai4s/programs/mvcnet/research/cvc_shared_dropout_20261123/ZERO_TRAINING_RESULT.json",
+      "role": "source_only_frozen_dropout_cvc_pair_fidelity_diagnostic",
+      "source_evidence_ids": [
+        "AI4S-MVCNET-mvcnet-auxspace-001-development-v1",
+        "MVCNET-REFLECTCVC-001-REPAIR-CLOSURE-20261123"
+      ],
+      "status": "PASS_SOURCE_GATE"
+    },
+    {
+      "claim_release": false,
+      "disposition": "Close the fixed full-capacity adjacency penalty after the matched NLL comparison.",
+      "evidence_id": "MVCNET-TEMPORAL-READOUT-PRIOR-001-SOURCE-20261123",
+      "report": "ai4s/programs/mvcnet/research/temporal_readout_prior_20261123/ZERO_TRAINING_RESULT.json",
+      "role": "source_only_equal_update_temporal_readout_diagnostic",
+      "status": "STOP_SOURCE_GATE"
+    },
+    {
+      "claim_release": false,
+      "disposition": "Close hard temporal weight sharing. Adjacent pooling preserved more task evidence than reflected pairs.",
+      "evidence_id": "MVCNET-LOCAL-TIME-READOUT-001-SOURCE-20261123",
+      "report": "ai4s/programs/mvcnet/research/local_time_readout_20261123/ZERO_TRAINING_RESULT.json",
+      "role": "source_only_held_person_constrained_readout_diagnostic",
+      "status": "STOP_SOURCE_GATE"
+    },
+    {
+      "claim_release": false,
+      "disposition": "Close the fixed post-encoder DCT bottleneck after the geometry retention comparison.",
+      "evidence_id": "MVCNET-ENCODED-TIME-MODES-001-SOURCE-20261123",
+      "report": "ai4s/programs/mvcnet/research/encoded_temporal_modes_20261123/ZERO_TRAINING_RESULT.json",
+      "role": "source_only_post_encoder_equal_rank_temporal_projection_diagnostic",
+      "status": "STOP_SOURCE_GATE"
+    },
+    {
+      "claim_release": false,
+      "disposition": "Close encoder partition after failure against the equal-size mixed group on native positive retrieval.",
+      "evidence_id": "MVCNET-CVC-ENCODER-001-SOURCE-20261123",
+      "report": "ai4s/programs/mvcnet/research/cvc_encoder_partition_20261123/ZERO_TRAINING_RESULT.json",
+      "role": "source_only_contrastive_partition_diagnostic",
+      "status": "STOP_SOURCE_GATE"
+    },
+    {
+      "claim_release": false,
+      "disposition": "Close fixed polarity-even CMC pooling on trial alignment and matched-control class evidence.",
+      "evidence_id": "MVCNET-CMC-POLARITY-001-SOURCE-20261123",
+      "report": "ai4s/programs/mvcnet/research/cmc_even_polarity_20261123/ZERO_TRAINING_RESULT.json",
+      "role": "source_only_equal_order_cross_modal_diagnostic",
+      "status": "STOP_SOURCE_GATE"
+    },
+    {
+      "claim_release": false,
+      "disposition": "Close intervention under the native shuffled B64 recipe for lack of affected examples.",
+      "evidence_id": "MVCNET-CONTRAST-FIR-001-SOURCE-20261123",
+      "report": "ai4s/programs/mvcnet/research/contrast_fir_20261123/ZERO_TRAINING_RESULT.json",
+      "role": "source_metadata_only_native_batch_overlap_coverage",
+      "status": "STOP_COVERAGE"
+    },
+    {
+      "claim_release": false,
+      "evidence_id": "MVCNET-REFLECTCVC-001-REPAIR-CLOSURE-20261123",
+      "report": "ai4s/programs/mvcnet/research/cvc_reflection_axis_20261123/repair1/SCIENCE_CLOSEOUT.md",
+      "role": "bounded_fit_recovery_and_zero_rerun_artifact_closure",
+      "run_id": "2026-11-23_mvcnet_reflectcvc_001_lab10_repair1-full-w1",
+      "source_evidence_ids": [
+        "AI4S-MVCNET-mvcnet-reflectcvc-001-development-v1"
+      ],
+      "status": "VERIFIED_INTAKE"
+    },
+    {
+      "claim_release": false,
+      "evidence_id": "MVCNET-REFLECTCVC-001-LAB10-GPU-20261123",
+      "report": "ai4s/programs/mvcnet/research/cvc_reflection_axis_20261123/COST_SIZING.json",
+      "role": "three_arm_source_only_five_epoch_cost_qualification",
+      "run_id": "2026-11-23_mvcnet_reflectcvc_001_lab10_qualification-full-w1",
+      "source_evidence_ids": [
+        "MVCNET-REFLECTCVC-001-LAB10-CPU-20261123",
+        "MVCNET-REFLECTCVC-001-SOURCE-20261123"
+      ],
+      "status": "VERIFIED_INTAKE"
+    },
+    {
+      "claim_release": false,
+      "evidence_id": "MVCNET-REFLECTCVC-001-LAB10-CPU-20261123",
+      "report": "ai4s/programs/mvcnet/research/cvc_reflection_axis_20261123/PRODUCTION_LAB10_CPU_RESULT.json",
+      "role": "production_cpu_technical_acceptance",
+      "source_evidence_ids": [
+        "MVCNET-REFLECTCVC-001-SOURCE-20261123"
+      ],
+      "status": "PASS"
+    },
+    {
+      "claim_release": false,
+      "evidence_id": "MVCNET-REFLECTCVC-001-SOURCE-20261123",
+      "report": "ai4s/programs/mvcnet/research/cvc_reflection_axis_20261123/SOURCE_GATE_CLOSEOUT.md",
+      "role": "held_source_contrastive_pair_and_classification_gradient_diagnostic",
+      "source_evidence_ids": [
+        "MVCNET-AUXSPACE-001-LATERAL-BASIS-ZERO-TRAINING-20261123"
+      ],
+      "status": "PASS_SOURCE_GATE"
+    },
+    {
+      "claim_release": false,
+      "disposition": "Close the fixed rank-eight lateral rotation. Frozen cross-view geometry passed, but hand discrimination did not clear the original-rank and equal-dose controls across sessions. Retain 250 Hz S0.",
+      "evidence_id": "MVCNET-AUXSPACE-001-LATERAL-BASIS-ZERO-TRAINING-20261123",
+      "report": "ai4s/programs/mvcnet/research/lateral_auxiliary_basis_20261123/ZERO_TRAINING_CLOSEOUT.md",
+      "role": "source_only_two_session_held_person_diagnostic",
+      "source_evidence_ids": [
+        "MVCNET-AUXSPACE-001-MOTOR-DIAGNOSTIC-20261123",
+        "AI4S-MVCNET-mvcnet-auxspace-001-development-v1"
+      ],
+      "status": "STOP_SOURCE_GATE"
+    },
+    {
+      "claim_release": false,
+      "disposition": "Retain scoped source evidence of attenuated lateral discrimination. Higher source reconstruction fidelity did not yield consistently lower opposite-hand confusion. Preserve the fixed P8 decision.",
+      "evidence_id": "MVCNET-AUXSPACE-001-MOTOR-DIAGNOSTIC-20261123",
+      "report": "ai4s/programs/mvcnet/research/spatial_auxiliary_basis_20261122/MOTOR_DIAGNOSTIC_REPORT.md",
+      "role": "post_closeout_exposed_prediction_and_source_waveform_diagnostic",
+      "run_id": "2026-11-22_mvcnet_auxspace_001_lab10-full-w1",
+      "source_evidence_ids": [
+        "AI4S-MVCNET-mvcnet-auxspace-001-development-v1",
+        "MVCNET-AUXSPACE-001-SOURCE-20261122"
+      ],
+      "status": "LIMITED_LEAD_ONLY"
+    },
+    {
+      "claim_release": false,
+      "evidence_id": "MVCNET-AUXSPACE-001-LAB10-GPU-20261122",
+      "report": "ai4s/programs/mvcnet/research/spatial_auxiliary_basis_20261122/QUALIFICATION_SPEED_DECISION.json",
+      "role": "source_only_gpu_engineering_qualification",
+      "run_id": "2026-11-22_mvcnet_auxspace_001_lab10_qualification-full-w1",
+      "source_evidence_ids": [
+        "MVCNET-AUXSPACE-001-SOURCE-20261122",
+        "MVCNET-AUXSPACE-001-LAB10-CPU-20261122"
+      ],
+      "status": "PASS_ENGINEERING_RUNTIME_GATE"
+    },
+    {
+      "claim_release": false,
+      "evidence_id": "MVCNET-AUXSPACE-001-LAB10-CPU-20261122",
+      "report": "ai4s/programs/mvcnet/research/spatial_auxiliary_basis_20261122/PRODUCTION_LAB10_CPU_RESULT.json",
+      "role": "production_cpu_technical_acceptance",
+      "source_evidence_ids": [
+        "MVCNET-AUXSPACE-001-SOURCE-20261122"
+      ],
+      "status": "PASS"
+    },
+    {
+      "claim_release": false,
+      "disposition": "Qualify a matched rank-eight source-aligned versus electrode-mismatched auxiliary at constant native acquisition rate.",
+      "evidence_id": "MVCNET-AUXSPACE-001-SOURCE-20261122",
+      "report": "ai4s/programs/mvcnet/research/spatial_auxiliary_basis_20261122/ZERO_TRAINING_RESULT.json",
+      "role": "zero_training_source_only_contrastive_geometry",
+      "source_evidence_ids": [
+        "MVCNET-AUXRATE-001-LAB10-GPU-20261122",
+        "MVCNET-RATE125-001-DEVELOPMENT-EFFICIENCY-20261122"
+      ],
+      "status": "PASS_SOURCE_GATE"
+    },
+    {
+      "claim_release": false,
+      "evidence_id": "MVCNET-AUXRATE-001-LAB10-GPU-20261122",
+      "report": "ai4s/programs/mvcnet/research/asymmetric_auxiliary_rate_20261122/GPU_GATE_CLOSEOUT.md",
+      "role": "source_only_gpu_engineering_qualification",
+      "run_id": "2026-11-22_mvcnet_auxrate_001_lab10_qualification-full-w1",
+      "source_evidence_ids": [
+        "MVCNET-AUXRATE-001-SOURCE-20261122",
+        "MVCNET-AUXRATE-001-LAB10-CPU-20261122"
+      ],
+      "status": "STOP_ENGINEERING_RUNTIME_GATE"
+    },
+    {
+      "claim_release": false,
+      "evidence_id": "MVCNET-AUXRATE-001-LAB10-CPU-20261122",
+      "report": "ai4s/programs/mvcnet/research/asymmetric_auxiliary_rate_20261122/PRODUCTION_LAB10_CPU_RESULT.json",
+      "role": "production_cpu_technical_acceptance",
+      "status": "PASS"
+    },
+    {
+      "claim_release": false,
+      "disposition": "Qualify a matched full-duration versus late-window auxiliary encoder at fixed 250 Hz classification.",
+      "evidence_id": "MVCNET-AUXRATE-001-SOURCE-20261122",
+      "report": "ai4s/programs/mvcnet/research/asymmetric_auxiliary_rate_20261122/ZERO_TRAINING_RESULT.json",
+      "role": "zero_training_source_only_contrastive_geometry",
+      "source_evidence_ids": [
+        "MVCNET-RATE125-001-DEVELOPMENT-EFFICIENCY-20261122"
+      ],
+      "status": "PASS_SOURCE_GATE"
+    },
+    {
+      "claim_release": false,
+      "disposition": "Close the fixed physical pooling direction. Retain its limited 001 accuracy preservation and source-qualification compute observations. Use 250 Hz S0 as the development scaffold.",
+      "evidence_id": "MVCNET-RATE125-001-DEVELOPMENT-EFFICIENCY-20261122",
+      "report": "ai4s/programs/mvcnet/research/physical_time_pooling_125hz_20261122/SCIENCE_CLOSEOUT.md",
+      "role": "scoped_development_efficiency_evidence",
+      "source_evidence_ids": [
+        "AI4S-MVCNET-mvcnet-rate125-001-development-v1",
+        "MVCNET-RATE125-001-LAB10-GPU-20261122"
+      ],
+      "status": "NONINFERIOR_AND_SUBJECT_RISK_PASS"
+    },
+    {
+      "claim_release": false,
+      "evidence_id": "MVCNET-RATE125-001-LAB10-GPU-20261122",
+      "report": "ai4s/programs/mvcnet/research/physical_time_pooling_125hz_20261122/QUALIFICATION_BUDGET.json",
+      "role": "three_arm_source_only_five_epoch_cost_qualification",
+      "run_id": "2026-11-22_mvcnet_rate125_001_lab10_qualification-full-w1",
+      "status": "VERIFIED_INTAKE"
+    },
+    {
+      "claim_release": false,
+      "evidence_id": "MVCNET-RATE125-001-LAB10-CPU-20261122",
+      "report": "ai4s/programs/mvcnet/research/physical_time_pooling_125hz_20261122/PRODUCTION_LAB10_CPU_RESULT.json",
+      "role": "production_cpu_technical_acceptance",
+      "status": "PASS"
+    },
+    {
+      "disposition": "First eligible development candidate in this continuation. Qualify the paired S0/A125/T125 comparison.",
+      "evidence_id": "MVCNET-RATE125-001-SOURCE-20261122",
+      "report": "ai4s/programs/mvcnet/research/physical_time_pooling_125hz_20261122/ZERO_TRAINING_RESULT.json",
+      "role": "zero_training_development_diagnostic",
+      "status": "PASS_SOURCE_GATE"
+    },
+    {
+      "disposition": "Close the fixed two-second late crop.",
+      "evidence_id": "MVCNET-POSTCUE-COMPACT-001-SEED51-20261122",
+      "report": "ai4s/programs/mvcnet/research/postcue_compact_readout_20261122/ZERO_TRAINING_RESULT.json",
+      "role": "zero_training_development_diagnostic",
+      "status": "STOP_SOURCE_GATE"
+    },
+    {
+      "disposition": "Close the fixed cross-seed same-trial ensemble distillation rationale.",
+      "evidence_id": "MVCNET-S0-PAIRED-SEED-CONSENSUS-001-20261122",
+      "report": "ai4s/programs/mvcnet/research/s0_paired_seed_consensus_20261122/ZERO_TRAINING_RESULT.json",
+      "role": "zero_training_development_diagnostic",
+      "status": "STOP_SOURCE_GATE"
+    },
+    {
+      "disposition": "No evidence of a useful additional edge module; retain stateless even reflection as a bounded reference.",
+      "evidence_id": "MVCNET-STATELESS-TRIAL-EDGE-001-SEED51-20261122",
+      "report": "ai4s/programs/mvcnet/research/stateless_trial_edge_20261122/ZERO_TRAINING_RESULT.json",
+      "role": "zero_training_development_diagnostic",
+      "status": "STOP_SOURCE_GATE"
+    },
+    {
+      "disposition": "Close fixed anatomical group supervision after directional and matched dose gates fail.",
+      "evidence_id": "MVCNET-ANATOMICAL-PAIR-SUPERVISION-001-SEED51-20261122",
+      "report": "ai4s/programs/mvcnet/research/anatomical_pair_supervision_20261122/ZERO_TRAINING_RESULT.json",
+      "role": "zero_training_development_diagnostic",
+      "status": "STOP_SOURCE_GATE"
+    },
+    {
+      "disposition": "Close the fixed two-completion consistency proposal; retain single even reflection as a bounded reference.",
+      "evidence_id": "MVCNET-DEADLINE-BOUNDARY-CONSISTENCY-001-SEED51-20261122",
+      "report": "ai4s/programs/mvcnet/research/deadline_boundary_consistency_20261122/ZERO_TRAINING_RESULT.json",
+      "role": "zero_training_development_diagnostic",
+      "status": "STOP_SOURCE_GATE"
+    },
+    {
+      "disposition": "Close fixed class-mean neighbor correction after host, score-only and vote controls.",
+      "evidence_id": "MVCNET-UNPAIRED-FAULT-PROTOTYPES-001-SEED51-20261122",
+      "report": "ai4s/programs/mvcnet/research/unpaired_fault_prototypes_20261122/ZERO_TRAINING_RESULT.json",
+      "role": "zero_training_development_diagnostic",
+      "status": "STOP_SOURCE_GATE"
+    },
+    {
+      "disposition": "Close the same-trial teacher mechanism after matched derangement comparison fails.",
+      "evidence_id": "MVCNET-MATCHED-COMPLETE-TEACHER-001-SEED51-20261122",
+      "report": "ai4s/programs/mvcnet/research/matched_complete_teacher_20261122/ZERO_TRAINING_RESULT.json",
+      "role": "zero_training_development_diagnostic",
+      "status": "STOP_SOURCE_GATE"
+    },
+    {
+      "disposition": "Close fixed pattern-specific moment correction after consistency and subject-risk gates fail.",
+      "evidence_id": "MVCNET-MISSING-STRIP-SPATIAL-BN-001-SEED51-20261122",
+      "report": "ai4s/programs/mvcnet/research/missing_strip_spatial_bn_20261122/ZERO_TRAINING_RESULT.json",
+      "role": "zero_training_development_diagnostic",
+      "status": "STOP_SOURCE_GATE"
+    },
+    {
+      "disposition": "Close the fixed location-conditioned calibration table.",
+      "evidence_id": "MVCNET-MISSING-STRIP-CONDITIONING-001-SEED51-20261122",
+      "report": "ai4s/programs/mvcnet/research/missing_strip_conditioning_20261122/ZERO_TRAINING_RESULT.json",
+      "role": "zero_training_development_diagnostic",
+      "status": "STOP_SOURCE_GATE"
+    },
+    {
+      "disposition": "Close the fixed same-trial prefix sensor repair; ordinary spatial interpolation recovers most single-site loss.",
+      "evidence_id": "MVCNET-WITHIN-TRIAL-SENSOR-REPAIR-001-SEED51-20261122",
+      "report": "ai4s/programs/mvcnet/research/within_trial_sensor_repair_20261122/ZERO_TRAINING_RESULT.json",
+      "role": "zero_training_development_diagnostic",
+      "status": "STOP_SOURCE_GATE"
+    },
+    {
+      "disposition": "Close the fixed gain readout after accuracy fails all three contrasts.",
+      "evidence_id": "MVCNET-TRIAL-GAIN-CANONICALIZATION-001-SEED51-20261122",
+      "report": "ai4s/programs/mvcnet/research/trial_gain_canonicalization_20261122/ZERO_TRAINING_RESULT.json",
+      "role": "zero_training_development_diagnostic",
+      "status": "STOP_SOURCE_GATE"
+    },
+    {
+      "disposition": "Close the fixed log-covariance difference readout after host utility and risk gates fail.",
+      "evidence_id": "MVCNET-RELATIVE-SPATIAL-COVARIANCE-001-SEED51-20261122",
+      "report": "ai4s/programs/mvcnet/research/relative_spatial_covariance_20261122/ZERO_TRAINING_RESULT.json",
+      "role": "zero_training_development_diagnostic",
+      "status": "STOP_SOURCE_GATE"
+    },
+    {
+      "claim_release": false,
+      "disposition": "Close the fixed five-of-six gradient sign filter. The mean, matched sparsity and pseudo-person controls win in both directions. Retain S0.",
+      "evidence_id": "MVCNET-SOURCE-GRADIENT-CONSENSUS-001-SEED51-20261122",
+      "governance_chain_id": "mvcnet-transaction-v4.1",
+      "report": "ai4s/programs/mvcnet/research/source_gradient_consensus_20261122/ZERO_TRAINING_CLOSEOUT.md",
+      "role": "zero_training_development_diagnostic",
+      "source_evidence_ids": [
+        "AI4S-MVCNET-mvcnet-envelope-rotation-001-development-v1",
+        "AI4S-MVCNET-mvcnet-source-head-meta-screen-ccmu-r4",
+        "AI4S-MVCNET-mvcnet-source-risk-screen-lab10-r1"
+      ],
+      "source_scope": "001, nine archived seed 51 S0 source validation libraries, 126 source-only direction comparisons",
+      "status": "STOP_SOURCE_GATE"
+    },
+    {
+      "claim_release": false,
+      "evidence_id": "MVCNET-ENVELOPE-ROTATION-001-LAB10-GPU-20261122",
+      "report": "ai4s/programs/mvcnet/research/envelope_preserving_rotation_20261122/QUALIFICATION_BUDGET.json",
+      "role": "three_arm_source_only_five_epoch_cost_qualification",
+      "run_id": "2026-11-22_mvcnet_envelope_rotation_001_lab10_qualification-full-w1",
+      "status": "VERIFIED_INTAKE"
+    },
+    {
+      "claim_release": false,
+      "evidence_id": "MVCNET-ENVELOPE-ROTATION-001-LAB10-CPU-20261122",
+      "report": "ai4s/programs/mvcnet/research/envelope_preserving_rotation_20261122/PRODUCTION_LAB10_CPU_RESULT.json",
+      "role": "production_cpu_technical_acceptance",
+      "status": "PASS"
+    },
+    {
+      "claim_release": false,
+      "disposition": "First eligible development candidate. Prepare the contemporaneous S0/I0/C0 training comparison.",
+      "evidence_id": "MVCNET-ENVELOPE-ROTATION-001-SOURCE-20261122",
+      "governance_chain_id": "mvcnet-transaction-v4.1",
+      "report": "ai4s/programs/mvcnet/research/envelope_preserving_rotation_20261122/ZERO_TRAINING_RESULT.json",
+      "role": "zero_training_development_diagnostic",
+      "status": "PASS_SOURCE_GATE"
+    },
+    {
+      "claim_release": false,
+      "disposition": "Close the native flip teacher. Three net correct trials over S0 in 5184 and four of nine positive people.",
+      "evidence_id": "MVCNET-NATIVE-FLIP-TEACHER-SEED51-20261122",
+      "governance_chain_id": "mvcnet-transaction-v4.1",
+      "report": "ai4s/programs/mvcnet/research/native_flip_teacher_20261122/ZERO_TRAINING_RESULT.json",
+      "role": "zero_training_development_diagnostic",
+      "status": "STOP_EFFECT_GATE"
+    },
+    {
+      "claim_release": false,
+      "disposition": "Close. Neither session favors within-person assignment in any of the nine frozen readers.",
+      "evidence_id": "MVCNET-WITHIN-PERSON-CONDITIONAL-LOSS-SOURCE-20261122",
+      "governance_chain_id": "mvcnet-transaction-v4.1",
+      "report": "ai4s/programs/mvcnet/research/within_person_conditional_loss_20261122/ZERO_TRAINING_RESULT.json",
+      "role": "zero_training_development_diagnostic",
+      "status": "STOP_SCIENTIFIC_GATE"
+    },
+    {
+      "claim_release": false,
+      "disposition": "E-to-T passed, T-to-E failed all contrasts and subject coverage. Close this fixed augmentation.",
+      "evidence_id": "MVCNET-SOURCE-PEAK-TRANSPORT-001-ZERO-TRAINING-20261122",
+      "governance_chain_id": "mvcnet-transaction-v4.1",
+      "report": "ai4s/programs/mvcnet/research/source_peak_transport_20261122/ZERO_TRAINING_RESULT.json",
+      "role": "zero_training_development_diagnostic",
+      "status": "STOP_SOURCE_GATE"
+    },
+    {
+      "claim_release": false,
+      "disposition": "Close the frozen trial broadband whitening candidate. Retain S0.",
+      "evidence_id": "MVCNET-TRIAL-COVARIANCE-REFERENCE-001-SOURCE-20261122",
+      "governance_chain_id": "mvcnet-transaction-v4.1",
+      "report": "ai4s/programs/mvcnet/research/trial_covariance_reference_20261122/ZERO_TRAINING_RESULT.json",
+      "role": "zero_training_development_diagnostic",
+      "source_waveform_scope": "seed0-outer0, 3680 source-train rows, 6 electrodes x 500 samples",
+      "status": "STOP_SOURCE_GATE"
+    },
+    {
+      "claim_release": false,
+      "disposition": "Close the hand-conditional reflection readout at its confidence-control qualification gate. Retain S0.",
+      "evidence_id": "MVCNET-HAND-CONDITIONAL-REFLECTION-001-DIRECTION-CLOSE-20261122",
+      "governance_chain_id": "mvcnet-transaction-v4.1",
+      "next_design_only": "ai4s/programs/mvcnet/research/trial_covariance_reference_20261122/research_brief.md",
+      "report": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "role": "user_directed_scientific_disposition",
+      "section": "U93",
+      "source_evidence_ids": [
+        "MVCNET-HAND-CONDITIONAL-REFLECTION-001-SEED51-ZERO-TRAINING-20261122"
+      ],
+      "status": "DIRECTION_CLOSED"
+    },
+    {
+      "claim_release": false,
+      "dataset": "BNCI2014001",
+      "evidence_id": "MVCNET-HAND-CONDITIONAL-REFLECTION-001-SEED51-ZERO-TRAINING-20261122",
+      "frozen_diagnostic_sha256": "80ddde2c3564a054cfa18674b518974a5eda4a64bcaa31fb4ad18d5b63f1ee37",
+      "governance_chain_id": "mvcnet-transaction-v4.1",
+      "outcome_exposure": "historical_reference_validation_rows_only_for_qualification",
+      "outer_target_scores": 0,
+      "qualification_seal_sha256": "cb100b6c25740e3fbe611fc199804d1b7a23971421d9d5f12b1fc12cd63bedb3",
+      "report": "ai4s/programs/mvcnet/research/hand_conditional_reflection_20261122/ZERO_TRAINING_CLOSEOUT.md",
+      "result_sha256": "870f2d35163c769ac396f3c97810ce57e166ccbfa945b22b51bf9778bad77159",
+      "role": "zero_training_development_diagnostic",
+      "scientific_fits": 0,
+      "seed": 51,
+      "source_evidence_ids": [
+        "MVCNET-HEAD-ORTHOGONAL-CLASS-TEMPLATE-001-DIRECTION-CLOSE-20261122",
+        "AI4S-MVCNET-mvcnet-temporal-tied-head-screen-lab10-r1",
+        "MVCNET-SOURCE-NEIGHBOR-RESIDUAL-001-SEED51-ZERO-TRAINING-20261121"
+      ],
+      "status": "STOP_NONDEGENERACY_GATE"
+    },
+    {
+      "claim_release": false,
+      "disposition": "Close the fixed head-orthogonal class-template readout after the utility gate failure. Preserve the two positive equal-dose direction comparisons. Retain S0 as development scaffold.",
+      "evidence_id": "MVCNET-HEAD-ORTHOGONAL-CLASS-TEMPLATE-001-DIRECTION-CLOSE-20261122",
+      "governance_chain_id": "mvcnet-transaction-v4.1",
+      "next_design_only": "ai4s/programs/mvcnet/research/hand_conditional_reflection_20261122/research_brief.md",
+      "outer_target_scores": 0,
+      "report": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "role": "user_directed_scientific_disposition",
+      "scientific_fits": 0,
+      "section": "U91",
+      "source_evidence_ids": [
+        "MVCNET-HEAD-ORTHOGONAL-CLASS-TEMPLATE-001-SEED51-ZERO-TRAINING-20261121"
+      ],
+      "status": "DIRECTION_CLOSED"
+    },
+    {
+      "claim_release": false,
+      "dataset": "BNCI2014001",
+      "evidence_id": "MVCNET-HEAD-ORTHOGONAL-CLASS-TEMPLATE-001-SEED51-ZERO-TRAINING-20261121",
+      "frozen_diagnostic_sha256": "8414c92bab6bb517939730f66e58b3fd1cbc9523e289fa231a5ab8b49b9df79f",
+      "governance_chain_id": "mvcnet-transaction-v4.1",
+      "outcome_exposure": "historical_seven_source_development_check_subjects",
+      "outer_target_scores": 0,
+      "reference_seal_sha256": "89c75ea29a5a65f9304fac28d56b75a6b9f2190d9099860fdc3cb9ee11b1ccf4",
+      "report": "ai4s/programs/mvcnet/research/head_orthogonal_class_template_20261121/ZERO_TRAINING_CLOSEOUT.md",
+      "result_sha256": "135316d2efaeb764b956cd495f54128f45cb550d4ea179d6b667dc880058c6f3",
+      "role": "zero_training_development_diagnostic",
+      "scientific_fits": 0,
+      "seed": 51,
+      "source_evidence_ids": [
+        "AI4S-MVCNET-mvcnet-temporal-tied-head-screen-lab10-r1",
+        "MVCNET-SOURCE-NEIGHBOR-RESIDUAL-001-SEED51-ZERO-TRAINING-20261121",
+        "MVCNET-CROSS-BAND-SPATIAL-PATTERN-001-DIRECTION-CLOSE-20261121"
+      ],
+      "status": "STOP_EFFECT_GATE"
+    },
+    {
+      "claim_release": false,
+      "disposition": "Close the fixed six-electrode same-side mu/high-beta spatial pattern readout after its amplitude coverage gate. Classification was unscored. Retain S0 as development scaffold.",
+      "evidence_id": "MVCNET-CROSS-BAND-SPATIAL-PATTERN-001-DIRECTION-CLOSE-20261121",
+      "governance_chain_id": "mvcnet-transaction-v4.1",
+      "next_design_only": "ai4s/programs/mvcnet/research/head_orthogonal_class_template_20261121/research_brief.md",
+      "outer_target_scores": 0,
+      "report": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "role": "user_directed_scientific_disposition",
+      "scientific_fits": 0,
+      "section": "U89",
+      "source_evidence_ids": [
+        "MVCNET-CROSS-BAND-SPATIAL-PATTERN-001-ZERO-TRAINING-20261121"
+      ],
+      "status": "DIRECTION_CLOSED"
+    },
+    {
+      "claim_release": false,
+      "dataset": "BNCI2014001",
+      "evidence_id": "MVCNET-CROSS-BAND-SPATIAL-PATTERN-001-ZERO-TRAINING-20261121",
+      "frozen_diagnostic_sha256": "fd8696ba99032564ba685000a9b44780c18f11370d65092374a72f44c0be2c3f",
+      "governance_chain_id": "mvcnet-transaction-v4.1",
+      "outcome_exposure": "historical_source_train_only_for_qualification",
+      "outer_subject_zero_based": 0,
+      "outer_target_scores": 0,
+      "report": "ai4s/programs/mvcnet/research/cross_band_spatial_pattern_20261121/ZERO_TRAINING_CLOSEOUT.md",
+      "result_sha256": "842fd076d27ce9a94dca751f747e6994d303efda9908088074b39e9456673dbd",
+      "role": "zero_training_development_diagnostic",
+      "scientific_fits": 0,
+      "seed": 0,
+      "source_evidence_ids": [
+        "MVCNET-SOURCE-NEIGHBOR-RESIDUAL-001-DIRECTION-CLOSE-20261121",
+        "MVCNET-BETA-EPISODE-DURATION-001-ZERO-TRAINING-20261121"
+      ],
+      "status": "STOP_NONDEGENERACY_GATE"
+    },
+    {
+      "claim_release": false,
+      "disposition": "Close source-neighbor prediction residual correction and retain S0 as development scaffold.",
+      "evidence_id": "MVCNET-SOURCE-NEIGHBOR-RESIDUAL-001-DIRECTION-CLOSE-20261121",
+      "governance_chain_id": "mvcnet-transaction-v4.1",
+      "next_design_only": "ai4s/programs/mvcnet/research/cross_band_spatial_pattern_20261121/research_brief.md",
+      "outer_target_scores": 0,
+      "report": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "role": "user_directed_scientific_disposition",
+      "scientific_fits": 0,
+      "section": "U87",
+      "source_evidence_ids": [
+        "MVCNET-SOURCE-NEIGHBOR-RESIDUAL-001-SEED51-ZERO-TRAINING-20261121"
+      ],
+      "status": "DIRECTION_CLOSED"
+    },
+    {
+      "claim_release": false,
+      "dataset": "BNCI2014001",
+      "evidence_id": "MVCNET-SOURCE-NEIGHBOR-RESIDUAL-001-SEED51-ZERO-TRAINING-20261121",
+      "frozen_diagnostic_sha256": "e9a5b74af1b7a3f385c13dbc571ce66263fde637ccdfb21351248d218b8774b0",
+      "governance_chain_id": "mvcnet-transaction-v4.1",
+      "outcome_exposure": "historical_seven_source_development_check_subjects",
+      "outer_target_scores": 0,
+      "reference_seal_sha256": "2c1f2e446e6e92231d4cafb008e10e919cb16efd472f348a6f0f136164070021",
+      "report": "ai4s/programs/mvcnet/research/source_neighbor_residual_20261121/ZERO_TRAINING_CLOSEOUT.md",
+      "result_sha256": "7f8ec5311820bb4706db4e64e3d07932eb69dc6e727edd897298666b3fab003c",
+      "role": "zero_training_development_diagnostic",
+      "scientific_fits": 0,
+      "seed": 51,
+      "source_evidence_ids": [
+        "AI4S-MVCNET-mvcnet-temporal-tied-head-screen-lab10-r1",
+        "MVCNET-COMMON-WAVEFORM-SIGN-001-DIRECTION-CLOSE-20261121"
+      ],
+      "status": "STOP_EFFECT_GATE"
+    },
+    {
+      "claim_release": false,
+      "disposition": "Close the common-waveform sign direction and retain S0 as development scaffold.",
+      "evidence_id": "MVCNET-COMMON-WAVEFORM-SIGN-001-DIRECTION-CLOSE-20261121",
+      "governance_chain_id": "mvcnet-transaction-v4.1",
+      "next_design_only": "ai4s/programs/mvcnet/research/source_neighbor_residual_20261121/research_brief.md",
+      "outer_target_scores": 0,
+      "report": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "role": "user_directed_scientific_disposition",
+      "scientific_fits": 0,
+      "section": "U85",
+      "source_evidence_ids": [
+        "MVCNET-COMMON-WAVEFORM-SIGN-001-SEED51-ZERO-TRAINING-20261121"
+      ],
+      "status": "DIRECTION_CLOSED"
+    },
+    {
+      "claim_release": false,
+      "dataset": "BNCI2014001",
+      "evidence_id": "MVCNET-COMMON-WAVEFORM-SIGN-001-SEED51-ZERO-TRAINING-20261121",
+      "frozen_diagnostic_sha256": "4cf20471355e6d3c4bb47a6bc2f5aab3bdd4ca8d4ee5a0c501bc31ed1fda12c8",
+      "governance_chain_id": "mvcnet-transaction-v4.1",
+      "outcome_exposure": "historical_seven_source_development_check_subjects",
+      "outer_target_scores": 0,
+      "qualification_seal_sha256": "a1baefb45d52bc0dffe3fcf204f7ecb9fbdbc850f0c6ed9f41a7d2e0e6954eab",
+      "report": "ai4s/programs/mvcnet/research/common_waveform_sign_20261121/ZERO_TRAINING_CLOSEOUT.md",
+      "result_sha256": "02841e3de80f17b20f15539af3649021ef2036c0f0a45e466b72ffcf1322e686",
+      "role": "zero_training_development_diagnostic",
+      "scientific_fits": 0,
+      "seed": 51,
+      "source_evidence_ids": [
+        "AI4S-MVCNET-mvcnet-temporal-tied-head-screen-lab10-r1",
+        "MVCNET-S0-SOURCE-CHANNEL-UTILITY-001-DIRECTION-CLOSE-20261121"
+      ],
+      "status": "STOP_EFFECT_GATE"
+    },
+    {
+      "claim_release": false,
+      "disposition": "Close subject-wise S0 feature channel contribution screening and retain S0 as development scaffold.",
+      "evidence_id": "MVCNET-S0-SOURCE-CHANNEL-UTILITY-001-DIRECTION-CLOSE-20261121",
+      "governance_chain_id": "mvcnet-transaction-v4.1",
+      "next_design_only": "ai4s/programs/mvcnet/research/common_waveform_sign_20261121/research_brief.md",
+      "outer_target_scores": 0,
+      "report": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "role": "user_directed_scientific_disposition",
+      "scientific_fits": 0,
+      "section": "U83",
+      "source_evidence_ids": [
+        "MVCNET-S0-SOURCE-CHANNEL-UTILITY-001-SEED51-ZERO-TRAINING-20261121"
+      ],
+      "status": "DIRECTION_CLOSED"
+    },
+    {
+      "claim_release": false,
+      "dataset": "BNCI2014001",
+      "evidence_id": "MVCNET-S0-SOURCE-CHANNEL-UTILITY-001-SEED51-ZERO-TRAINING-20261121",
+      "frozen_diagnostic_sha256": "5986566c3138bbce30595fd0f1a64e5f3f60b69716e942da35bc8bd5035a09cd",
+      "governance_chain_id": "mvcnet-transaction-v4.1",
+      "outcome_exposure": "historical_seven_source_development_check_subjects",
+      "outer_target_scores": 0,
+      "reference_seal_sha256": "aad3a0c536b14dda8ded71e97ff563ac5b164409c0fefef92b813648df0e26ec",
+      "report": "ai4s/programs/mvcnet/research/source_channel_utility_20261121/ZERO_TRAINING_CLOSEOUT.md",
+      "result_sha256": "b57f5a391e9d285521ad7f9cdc07eb24f0ee23638147f9f9e7d216941c6ec898",
+      "role": "zero_training_development_diagnostic",
+      "scientific_fits": 0,
+      "seed": 51,
+      "source_evidence_ids": [
+        "AI4S-MVCNET-mvcnet-temporal-tied-head-screen-lab10-r1",
+        "MVCNET-BETA-EPISODE-DURATION-001-DIRECTION-CLOSE-20261121"
+      ],
+      "status": "STOP_EFFECT_GATE"
+    },
+    {
+      "claim_release": false,
+      "disposition": "Close beta episode duration distribution and retain S0 as development scaffold.",
+      "evidence_id": "MVCNET-BETA-EPISODE-DURATION-001-DIRECTION-CLOSE-20261121",
+      "governance_chain_id": "mvcnet-transaction-v4.1",
+      "next_design_only": "ai4s/programs/mvcnet/research/source_channel_utility_20261121/research_brief.md",
+      "outer_target_scores": 0,
+      "report": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "role": "user_directed_scientific_disposition",
+      "scientific_fits": 0,
+      "section": "U81",
+      "source_evidence_ids": [
+        "MVCNET-BETA-EPISODE-DURATION-001-ZERO-TRAINING-20261121"
+      ],
+      "status": "DIRECTION_CLOSED"
+    },
+    {
+      "claim_release": false,
+      "dataset": "BNCI2014001",
+      "evidence_id": "MVCNET-BETA-EPISODE-DURATION-001-ZERO-TRAINING-20261121",
+      "frozen_diagnostic_sha256": "82c5ff0219b2afc1880cbe8aa5be5a2dea418e9af8a408bd080e107382b1b689",
+      "governance_chain_id": "mvcnet-transaction-v4.1",
+      "outcome_exposure": "historical_source_train_only_for_effect_probe",
+      "outer_subject_zero_based": 0,
+      "outer_target_scores": 0,
+      "report": "ai4s/programs/mvcnet/research/beta_episode_duration_20261121/ZERO_TRAINING_CLOSEOUT.md",
+      "result_sha256": "22d54ca41a5ac7c2c484d79cabcdf868916e370ac9dbff232b6fd4bf5678f64f",
+      "role": "zero_training_development_diagnostic",
+      "scientific_fits": 0,
+      "seed": 0,
+      "source_evidence_ids": [
+        "MVCNET-CSBE-001-DIRECTION-CLOSE-20261121",
+        "AI4S-MVCNET-mvcnet-dual-bn-001-development-v1"
+      ],
+      "status": "STOP_SOURCE_GATE"
+    },
+    {
+      "claim_release": false,
+      "disposition": "Close cross-subject late-block exchange and retain S0 as development scaffold.",
+      "evidence_id": "MVCNET-CSBE-001-DIRECTION-CLOSE-20261121",
+      "governance_chain_id": "mvcnet-transaction-v4.1",
+      "next_design_only": "ai4s/programs/mvcnet/research/beta_episode_duration_20261121/research_brief.md",
+      "outer_target_scores": 0,
+      "report": "ai4s/programs/mvcnet/research/CURRENT_UNDERSTANDING.md",
+      "role": "user_directed_scientific_disposition",
+      "scientific_fits": 0,
+      "section": "U79",
+      "source_evidence_ids": [
+        "AI4S-MVCNET-mvcnet-cross-subject-block-exchange-001-development-v1",
+        "MVCNET-CSBE-001-SOURCE-MECHANISM-CHECK-20261121"
+      ],
+      "status": "DIRECTION_CLOSED"
+    },
+    {
+      "claim_release": false,
+      "dataset": "BNCI2014001",
+      "evidence_id": "MVCNET-CSBE-001-SOURCE-MECHANISM-CHECK-20261121",
+      "frozen_diagnostic_sha256": "7cf6a7aeea9473dea598debdb8423daf1e00fc7f48b622ce887b6fa23a267352",
+      "governance_chain_id": "mvcnet-transaction-v4.1",
+      "outcome_exposure": "source_validation_used_for_original_model_selection",
+      "outer_target_scores": 0,
+      "report": "ai4s/programs/mvcnet/research/cross_subject_block_exchange_20261120/MECHANISM_CLOSEOUT_20261121.md",
+      "result_sha256": "7260698a7789f606dd129ffd4120dbd65c51129bf9f463fc9885e6be501ff208",
+      "role": "sealed_checkpoint_source_only_mechanism_diagnostic",
+      "run_id": "2026-11-20_mvcnet_block_exchange_001_lab10-full-w1",
+      "scientific_fits": 0,
+      "seeds": [
+        0,
+        4
+      ],
+      "source_evidence_ids": [
+        "AI4S-MVCNET-mvcnet-cross-subject-block-exchange-001-development-v1"
+      ],
+      "status": "LATE_SPECIFICITY_NOT_SUPPORTED"
+    },
+    {
+      "artifact_manifest_sha256": "6aaa3015eedfbee3ad5dd649851f4c3a104d889f5176a8cccd57826b308e64f5",
+      "claim_release": false,
+      "dataset": "BNCI2014001",
+      "evidence_id": "MVCNET-CROSS-SUBJECT-BLOCK-EXCHANGE-001-LAB10-GPU-QUALIFICATION-20261120",
+      "governance_chain_id": "mvcnet-transaction-v4.1",
+      "outer_subject_zero_based": 0,
+      "report": "ai4s/programs/mvcnet/research/cross_subject_block_exchange_20261120/LAB10_QUALIFICATION_CLOSEOUT.md",
+      "role": "source_only_gpu_resource_qualification",
+      "run_id": "2026-11-20_mvcnet_block_exchange_001_lab10_qualification_r2-full-w1",
+      "scientific_fits": 0,
+      "seed": 0,
+      "source_evidence_ids": [
+        "MVCNET-CROSS-SUBJECT-BLOCK-EXCHANGE-001-LAB10-CPU-20261120"
+      ],
+      "status": "VERIFIED_QUALIFICATION"
+    },
+    {
+      "claim_release": false,
+      "dataset": "BNCI2014001",
+      "evidence_id": "MVCNET-CROSS-SUBJECT-BLOCK-EXCHANGE-001-LAB10-CPU-20261120",
+      "governance_chain_id": "mvcnet-transaction-v4.1",
+      "outer_subject_zero_based": 0,
+      "result": "ai4s/programs/mvcnet/research/cross_subject_block_exchange_20261120/PRODUCTION_LAB10_CPU_RESULT.json",
+      "result_sha256": "6d8fd35e57924ab46392b08e9f56393362c1e6aac6f7a486863de720848d1e68",
+      "role": "target_stack_zero_step_qualification",
+      "scientific_fits": 0,
+      "seed": 0,
+      "source_evidence_ids": [
+        "MVCNET-CROSS-SUBJECT-BLOCK-EXCHANGE-001-PRODUCTION-ENTRY-CPU-20261120"
+      ],
+      "status": "PRODUCTION_ENTRY_CPU_PASS"
+    },
+    {
+      "claim_release": false,
+      "dataset": "BNCI2014001",
+      "evidence_id": "MVCNET-CROSS-SUBJECT-BLOCK-EXCHANGE-001-PRODUCTION-ENTRY-CPU-20261120",
+      "governance_chain_id": "mvcnet-transaction-v4.1",
+      "outer_subject_zero_based": 0,
+      "report": "ai4s/programs/mvcnet/research/cross_subject_block_exchange_20261120/PRODUCTION_CPU_CLOSEOUT.md",
+      "result_sha256": "52bdfc63be7497ff95a5e5428b66e9733e7c32812c0a064e99876453b8ad5b20",
+      "role": "zero_step_technical_qualification",
+      "scientific_fits": 0,
+      "seed": 0,
+      "source_evidence_ids": [
+        "MVCNET-CROSS-SUBJECT-BLOCK-EXCHANGE-001-CPU-ZERO-STEP-20261120"
+      ],
+      "source_manifest_sha256": "f1a529569cabee8f2c2386db4adbe9f9da2a6acdf45e413d1daf51422fa87cd6",
+      "status": "PRODUCTION_ENTRY_CPU_PASS",
+      "target_stack_qualification": "PENDING"
+    },
+    {
+      "claim_release": false,
+      "dataset": "BNCI2014001",
+      "evidence_id": "MVCNET-CROSS-SUBJECT-BLOCK-EXCHANGE-001-CPU-ZERO-STEP-20261120",
+      "frozen_diagnostic_sha256": "b5a1129f7891b257ced3d04b31f2d9bad78199ca962d29f7eb412babc4f1fd29",
+      "governance_chain_id": "mvcnet-transaction-v4.1",
+      "outcome_exposure": "source_train_rows_only",
+      "outer_subject_zero_based": 0,
+      "report": "ai4s/programs/mvcnet/research/cross_subject_block_exchange_20261120/ZERO_STEP_CLOSEOUT.md",
+      "result_sha256": "e548aae64a6bafa62f070a70b99346cafe84f085f8d3d22fb839d676df2fe4ec",
+      "role": "zero_step_technical_qualification",
+      "scientific_fits": 0,
+      "seed": 0,
+      "source_evidence_ids": [
+        "AI4S-MVCNET-mvcnet-dual-bn-001-development-v1"
+      ],
+      "status": "LOCAL_ZERO_STEP_PASS"
+    },
+    {
+      "claim_release": false,
+      "dataset": "BNCI2014001",
+      "evidence_id": "MVCNET-LOCAL-SPECTRAL-CONTRAST-001-ZERO-TRAINING-20261120",
+      "frozen_diagnostic_sha256": "0e0aeca97b6b57dd0716a6e15e24821a621817d3ca1d8e8f42f0bd883946a095",
+      "governance_chain_id": "mvcnet-transaction-v4.1",
+      "outcome_exposure": "historical_source_train_only_for_effect_probe",
+      "outer_subject_zero_based": 0,
+      "report": "ai4s/programs/mvcnet/research/local_spectral_contrast_20261120/ZERO_TRAINING_CLOSEOUT.md",
+      "result_sha256": "7bda5b6459dee03f0cdd66a699747f0afd7a6ee855204d501e1bcf766ed5b37c",
+      "role": "zero_training_development_diagnostic",
+      "scientific_fits": 0,
+      "seed": 0,
+      "source_evidence_ids": [
+        "AI4S-MVCNET-mvcnet-dual-bn-001-development-v1"
+      ],
+      "status": "STOP_SOURCE_GATE"
+    },
+    {
+      "claim_release": false,
+      "dataset": "BNCI2014001",
+      "evidence_id": "MVCNET-BILATERAL-GAIN-001-ZERO-TRAINING-20261120",
+      "frozen_diagnostic_sha256": "9d532a080259b4fb09b05f75eebba158c607dab2de5d5dd3de36466144a34a02",
+      "governance_chain_id": "mvcnet-transaction-v4.1",
+      "outcome_exposure": "historical_source_train_only_for_effect_probe",
+      "outer_subject_zero_based": 0,
+      "report": "ai4s/programs/mvcnet/research/bilateral_gain_20261120/ZERO_TRAINING_CLOSEOUT.md",
+      "result_sha256": "6ba0f7b30d07dcf22a10af51c7c3f27d7d318f2b9ad7b1f6700ca69cd8dffdcc",
+      "role": "zero_training_development_diagnostic",
+      "scientific_fits": 0,
+      "seed": 0,
+      "source_evidence_ids": [
+        "AI4S-MVCNET-mvcnet-dual-bn-001-development-v1"
+      ],
+      "status": "STOP_SOURCE_GATE"
+    },
+    {
+      "claim_release": false,
+      "cpu_seconds": 33.46875,
+      "dataset": "BNCI2014004",
+      "evidence_id": "MVCNET-TASK-EVIDENCE-SELECTION-004-ZERO-TRAINING-20261119",
+      "frozen_diagnostic_sha256": "63e6dbe188541345aa4352060b0b9ace4f60a5fffd90a9757db0f3657e1a35f8",
+      "governance_chain_id": "mvcnet-transaction-v4.1",
+      "next_design": "ai4s/programs/mvcnet/research/task_evidence_selection_20261119/DUAL_BN_FOLLOWUP.md",
+      "outcome_exposure": "historical_source_valid_used_for_checkpoint_selection",
+      "prior_acm_r1": "NO_SIGNAL",
+      "registered_at": "2026-11-19T06:50:54.037512+00:00",
+      "report": "ai4s/programs/mvcnet/research/task_evidence_selection_20261119/CLOSEOUT.md",
+      "result_sha256": "36948f0a21dd57daffb55780c996b7e2d281de487e9e51ac25d88968ee8d9f1f",
+      "role": "zero_training_development_diagnostic",
+      "scientific_fits": 0,
+      "seeds": [
+        0,
+        4
+      ],
+      "status": "STOP_BOTH_FROZEN_GATES"
+    },
+    {
       "claim_status": "no_paper_claim",
       "controller_status": "COMPLETE_MAX_ROUNDS",
       "decision_record": "ai4s/programs/mvcnet/research/mvcnet-acm-factorial-development_decision.yaml",
@@ -507,6 +1332,101 @@
   },
   "program_id": "mvcnet",
   "research_preparations": [
+    {
+      "claim_release": false,
+      "contract_canonical_sha256": "30329075e7b0c8530966aff6da5a842fb21d9c75d5753d2c80a58de7a408086a",
+      "evidence_id": "MVCNET-VCN-DUAL-BN-004-LAB10-QUALIFIED-AND-LAUNCHED-20261119",
+      "fixed_card_cap": false,
+      "governance_chain_id": "mvcnet-transaction-v4.1",
+      "initial_fit_tasks_running": 10,
+      "peak_driver_mib": {
+        "D2": 6133,
+        "S0": 6133
+      },
+      "planned_checks": 36,
+      "planned_fits": 36,
+      "program_id": "mvcnet",
+      "qualification_manifest_sha256": "fddd8ca73c0c69b1d0031dbdf9736af894ca1966d3835411fe8880ad560226af",
+      "qualification_run_id": "2026-11-19_mvcnet_dual_bn_004_lab10_qualification-importfix1-full-w1",
+      "report": "ai4s/programs/mvcnet/research/task_evidence_selection_20261119/dual_bn_004/LAUNCH_AND_QUALIFICATION.md",
+      "report_sha256": "d686e2041f14bd7aa903fc6385a893d07005e2e006cfe3320aa8469312e30d11",
+      "role": "verified_gpu_qualification_and_science_launch",
+      "run_id": "2026-11-19_mvcnet_dual_bn_004_lab10-full-w1",
+      "scientific_effects_read": false,
+      "source_evidence_ids": [
+        "MVCNET-VCN-DUAL-BN-004-CPU-ZERO-STEP-20261119"
+      ],
+      "status": "QUALIFICATION_VERIFIED_SCIENCE_RUNNING"
+    },
+    {
+      "claim_release": false,
+      "cpu_gate_tests_passed": 7,
+      "cpu_partition_hash_checks": 54,
+      "development_matrix": {
+        "arms": [
+          "S0",
+          "D2"
+        ],
+        "dataset": "BNCI2014004",
+        "outer_folds": 9,
+        "planned_checks": 36,
+        "planned_fits": 36,
+        "seeds": [
+          0,
+          4
+        ]
+      },
+      "evidence_id": "MVCNET-VCN-DUAL-BN-004-CPU-ZERO-STEP-20261119",
+      "governance_chain_id": "mvcnet-transaction-v4.1",
+      "lab10_qualification": "pending",
+      "new_training_authorized": false,
+      "optimizer_steps": 0,
+      "preparation_record": "ai4s/programs/mvcnet/research/task_evidence_selection_20261119/dual_bn_004/CPU_ACCEPTANCE_AND_LAB10.md",
+      "preparation_record_sha256": "79c38bc58ce110b0e5d03c89d271781b5bb2d94f5511788e9dcd9ab76a0cb85c",
+      "program_id": "mvcnet",
+      "real_target_predictions": 0,
+      "role": "cpu_operability_and_scientific_gate_acceptance",
+      "scientific_fits": 0,
+      "shared_interface_tests_passed": 62,
+      "source_evidence_ids": [
+        "MVCNET-VCN-DUAL-BN-DESIGN-20261119",
+        "MVCNET-TASK-EVIDENCE-SELECTION-004-ZERO-TRAINING-20261119"
+      ],
+      "status": "CPU_ZERO_STEP_PASS_LAB10_QUALIFICATION_PENDING",
+      "transaction_draft": "ai4s/programs/mvcnet/research/task_evidence_selection_20261119/dual_bn_004/TRANSACTION_DRAFT.json",
+      "transaction_draft_sha256": "6119a9a4d20d79fe418f52daada6281cd682b823508428908a1181afde2d5c52",
+      "verified_compact_intake_fixture": true
+    },
+    {
+      "claim_release": false,
+      "development_dataset": "BNCI2014004",
+      "development_seeds_proposed": [
+        0,
+        4
+      ],
+      "evidence_id": "MVCNET-VCN-DUAL-BN-DESIGN-20261119",
+      "governance_chain_id": "mvcnet-transaction-v4.1",
+      "historical_internal_pairs_verified": 45,
+      "historical_pairs_in_proposed_scope": 18,
+      "new_training_authorized": false,
+      "optimizer_steps": 0,
+      "program_id": "mvcnet",
+      "qualified_independent_assets_found": 0,
+      "report": "ai4s/programs/mvcnet/research/task_evidence_selection_20261119/DUAL_BN_FOLLOWUP.md",
+      "report_sha256": "df7dacaa6349b591a896157e26780f84859d0c2508b585bc69e6ec5863687500",
+      "role": "development_pairing_audit_and_zero_step_control_design",
+      "scientific_fits": 0,
+      "source_evidence_ids": [
+        "MVCNET-TASK-EVIDENCE-SELECTION-004-ZERO-TRAINING-20261119",
+        "MVCNET-VCN-MINIMAL-STRUCTURE-READONLY-ZERO-TRAINING-20261106",
+        "VCN-P1-S8-USB-CHECKPOINT-IMPORT-20261116",
+        "VCN-P1-S8-SCOPED-2026-08-28",
+        "AI4S-MVCNET-mvcnet-acm-s8-loso-stability",
+        "AI4S-MVCNET-mvcnet-acm-s8-loso-extension-gpu10-pack1-checkfix1"
+      ],
+      "status": "DESIGN_ONLY_CONFIRMATION_ASSET_PENDING",
+      "strict_historical_pairs_for_new_d2_cleared": 0
+    },
     {
       "budget_hours": 12,
       "budget_started_at": "2026-11-12T15:48:00.175401+00:00",
@@ -3388,6 +4308,141 @@
       "round_contract": "ai4s/programs/mvcnet/research/mvcnet-nonadjacent-context-filter-development.yaml",
       "round_id": "mvcnet-nonadjacent-context-filter-development",
       "run_id": "2026-11-12_mvcnet_context_filter_lab10_development-full-w1"
+    },
+    {
+      "claim_status": "no_paper_claim",
+      "decision": "NO_SIGNAL",
+      "decision_record": "ai4s/programs/mvcnet/research/mvcnet-acm-s8-loso-stability_decision.yaml",
+      "evidence_id": "AI4S-MVCNET-mvcnet-acm-s8-loso-stability",
+      "executor_id": "lab10",
+      "follow_up_status": "v3_record_design_constraint_or_precise_closure",
+      "intake_status": "verified_ai4s_round",
+      "interpretation_boundary": "See frozen decision record.",
+      "prohibited_follow_up": "exact_candidate_rescue_or_recombination_under_the_frozen_contract",
+      "role": "exact_negative_boundary",
+      "round_contract": "ai4s/programs/mvcnet/research/mvcnet-acm-s8-loso-stability.yaml",
+      "round_id": "mvcnet-acm-s8-loso-stability",
+      "run_id": "2026-11-17_mvcnet_acm_s8_loso_lab10-full-w1"
+    },
+    {
+      "claim_status": "no_paper_claim",
+      "decision": "NO_SIGNAL",
+      "decision_record": "ai4s/programs/mvcnet/research/mvcnet-acm-s8-loso-extension-gpu10-pack1-checkfix1_decision.yaml",
+      "evidence_id": "AI4S-MVCNET-mvcnet-acm-s8-loso-extension-gpu10-pack1-checkfix1",
+      "executor_id": "lab10",
+      "follow_up_status": "v3_record_design_constraint_or_precise_closure",
+      "intake_status": "verified_ai4s_round",
+      "interpretation_boundary": "See frozen decision record.",
+      "prohibited_follow_up": "exact_candidate_rescue_or_recombination_under_the_frozen_contract",
+      "role": "exact_negative_boundary",
+      "round_contract": "ai4s/programs/mvcnet/research/mvcnet-acm-s8-loso-extension-gpu10-pack1-checkfix1.yaml",
+      "round_id": "mvcnet-acm-s8-loso-extension-gpu10-pack1-checkfix1",
+      "run_id": "2026-11-18_mvcnet_acm_s8_loso_extension_lab10-gpu10-pack1-checkfix1-full-w1"
+    },
+    {
+      "claim_status": "no_paper_claim",
+      "decision": "NO_SIGNAL",
+      "decision_record": "ai4s/programs/mvcnet/research/mvcnet-dual-bn-004-development-v1_decision.yaml",
+      "evidence_id": "AI4S-MVCNET-mvcnet-dual-bn-004-development-v1",
+      "executor_id": "lab10",
+      "follow_up_status": "v3_record_design_constraint_or_precise_closure",
+      "intake_status": "verified_ai4s_round",
+      "interpretation_boundary": "See frozen decision record.",
+      "prohibited_follow_up": "exact_candidate_rescue_or_recombination_under_the_frozen_contract",
+      "role": "exact_negative_boundary",
+      "round_contract": "ai4s/programs/mvcnet/research/mvcnet-dual-bn-004-development-v1.yaml",
+      "round_id": "mvcnet-dual-bn-004-development-v1",
+      "run_id": "2026-11-19_mvcnet_dual_bn_004_lab10-full-w1"
+    },
+    {
+      "claim_status": "no_paper_claim",
+      "decision": "NO_SIGNAL",
+      "decision_record": "ai4s/programs/mvcnet/research/mvcnet-dual-bn-001-development-v1_decision.yaml",
+      "evidence_id": "AI4S-MVCNET-mvcnet-dual-bn-001-development-v1",
+      "executor_id": "lab10",
+      "follow_up_status": "v3_record_design_constraint_or_precise_closure",
+      "intake_status": "verified_ai4s_round",
+      "interpretation_boundary": "See frozen decision record.",
+      "prohibited_follow_up": "exact_candidate_rescue_or_recombination_under_the_frozen_contract",
+      "role": "exact_negative_boundary",
+      "round_contract": "ai4s/programs/mvcnet/research/mvcnet-dual-bn-001-development-v1.yaml",
+      "round_id": "mvcnet-dual-bn-001-development-v1",
+      "run_id": "2026-11-20_mvcnet_dual_bn_001_lab10-full-w1"
+    },
+    {
+      "claim_status": "no_paper_claim",
+      "decision": "NO_SIGNAL",
+      "decision_record": "ai4s/programs/mvcnet/research/mvcnet-cross-subject-block-exchange-001-development-v1_decision.yaml",
+      "evidence_id": "AI4S-MVCNET-mvcnet-cross-subject-block-exchange-001-development-v1",
+      "executor_id": "lab10",
+      "follow_up_status": "v3_record_design_constraint_or_precise_closure",
+      "intake_status": "verified_ai4s_round",
+      "interpretation_boundary": "See frozen decision record.",
+      "prohibited_follow_up": "exact_candidate_rescue_or_recombination_under_the_frozen_contract",
+      "role": "exact_negative_boundary",
+      "round_contract": "ai4s/programs/mvcnet/research/mvcnet-cross-subject-block-exchange-001-development-v1.yaml",
+      "round_id": "mvcnet-cross-subject-block-exchange-001-development-v1",
+      "run_id": "2026-11-20_mvcnet_block_exchange_001_lab10-full-w1"
+    },
+    {
+      "claim_status": "no_paper_claim",
+      "decision": "NO_SIGNAL",
+      "decision_record": "ai4s/programs/mvcnet/research/mvcnet-envelope-rotation-001-development-v1_decision.yaml",
+      "evidence_id": "AI4S-MVCNET-mvcnet-envelope-rotation-001-development-v1",
+      "executor_id": "lab10",
+      "follow_up_status": "v3_record_design_constraint_or_precise_closure",
+      "intake_status": "verified_ai4s_round",
+      "interpretation_boundary": "See frozen decision record.",
+      "prohibited_follow_up": "exact_candidate_rescue_or_recombination_under_the_frozen_contract",
+      "role": "exact_negative_boundary",
+      "round_contract": "ai4s/programs/mvcnet/research/mvcnet-envelope-rotation-001-development-v1.yaml",
+      "round_id": "mvcnet-envelope-rotation-001-development-v1",
+      "run_id": "2026-11-22_mvcnet_envelope_rotation_001_lab10-full-w1"
+    },
+    {
+      "claim_status": "no_paper_claim",
+      "decision": "NO_SIGNAL",
+      "decision_record": "ai4s/programs/mvcnet/research/mvcnet-rate125-001-development-v1_decision.yaml",
+      "evidence_id": "AI4S-MVCNET-mvcnet-rate125-001-development-v1",
+      "executor_id": "lab10",
+      "follow_up_status": "v3_record_design_constraint_or_precise_closure",
+      "intake_status": "verified_ai4s_round",
+      "interpretation_boundary": "See frozen decision record.",
+      "prohibited_follow_up": "exact_candidate_rescue_or_recombination_under_the_frozen_contract",
+      "role": "exact_negative_boundary",
+      "round_contract": "ai4s/programs/mvcnet/research/mvcnet-rate125-001-development-v1.yaml",
+      "round_id": "mvcnet-rate125-001-development-v1",
+      "run_id": "2026-11-22_mvcnet_rate125_001_lab10-full-w1"
+    },
+    {
+      "claim_status": "no_paper_claim",
+      "decision": "NO_SIGNAL",
+      "decision_record": "ai4s/programs/mvcnet/research/mvcnet-auxspace-001-development-v1_decision.yaml",
+      "evidence_id": "AI4S-MVCNET-mvcnet-auxspace-001-development-v1",
+      "executor_id": "lab10",
+      "follow_up_status": "v3_record_design_constraint_or_precise_closure",
+      "intake_status": "verified_ai4s_round",
+      "interpretation_boundary": "See frozen decision record.",
+      "prohibited_follow_up": "exact_candidate_rescue_or_recombination_under_the_frozen_contract",
+      "role": "exact_negative_boundary",
+      "round_contract": "ai4s/programs/mvcnet/research/mvcnet-auxspace-001-development-v1.yaml",
+      "round_id": "mvcnet-auxspace-001-development-v1",
+      "run_id": "2026-11-22_mvcnet_auxspace_001_lab10-full-w1"
+    },
+    {
+      "claim_status": "no_paper_claim",
+      "decision": "NO_SIGNAL",
+      "decision_record": "ai4s/programs/mvcnet/research/mvcnet-reflectcvc-001-development-v1_decision.yaml",
+      "evidence_id": "AI4S-MVCNET-mvcnet-reflectcvc-001-development-v1",
+      "executor_id": "lab10",
+      "follow_up_status": "v3_record_design_constraint_or_precise_closure",
+      "intake_status": "verified_ai4s_round",
+      "interpretation_boundary": "See frozen decision record.",
+      "prohibited_follow_up": "exact_candidate_rescue_or_recombination_under_the_frozen_contract",
+      "role": "exact_negative_boundary",
+      "round_contract": "ai4s/programs/mvcnet/research/cvc_reflection_axis_20261123/repair1/transaction_contract.yaml",
+      "round_id": "mvcnet-reflectcvc-001-development-v1",
+      "run_id": "2026-11-23_mvcnet_reflectcvc_001_lab10_repair1-full-w1"
     }
   ],
   "schema_version": "mieeg-ai4s-evidence-index-v1",

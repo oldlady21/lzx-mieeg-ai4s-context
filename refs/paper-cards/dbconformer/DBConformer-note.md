@@ -34,7 +34,7 @@ DBConformer 面对的问题是：EEG 同时含有时间变化和通道之间的�
 
 ## 2. 先把背景和问题讲清
 
-一个 EEG trial 可以写成 $X\in\mathbb R^{C\times T}$：$C$ 个电极通道，每个通道有 $T$ 个采样点。运动想象（motor imagery，MI）分类要从这一段信号判断想象动作类别。卷积擅长提取局部变化，Transformer 自注意力则让一组 token 相互比较、交换信息。关键在于，Transformer 并不知道“什么是电极、什么是时间”：它只能比较输入时定义好的 token。
+一个 EEG trial 可以写成 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>∈</mo><msup><mi mathvariant="double-struck">R</mi><mrow><mi>C</mi><mo>×</mo><mi>T</mi></mrow></msup></mrow><annotation encoding="application/x-tex">X\in\mathbb R^{C\times T}</annotation></semantics></math>：<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math> 个电极通道，每个通道有 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi></mrow><annotation encoding="application/x-tex">T</annotation></semantics></math> 个采样点。运动想象（motor imagery，MI）分类要从这一段信号判断想象动作类别。卷积擅长提取局部变化，Transformer 自注意力则让一组 token 相互比较、交换信息。关键在于，Transformer 并不知道“什么是电极、什么是时间”：它只能比较输入时定义好的 token。
 
 如果卷积已经把全部通道混成若干特征，再沿时间切块，那么一个 token 表示某个时间片的混合特征。它仍然可能包含空间信息，却不再与一个原始电极一一对应。因此，“时间分支没有空间信息”不准确；更准确的说法是，“原通道不再作为独立 token 直接参与后续注意力”。[原文：III-C；Table II；PDF 第 4–5 页]
 
@@ -46,15 +46,15 @@ DBConformer 面对的问题是：EEG 同时含有时间变化和通道之间的�
 |---|---|---|
 | T-Conformer | 以时间 patch 为 token 的分支 | 仍含通道混合，不是“纯时间信息” |
 | S-Conformer | 以通道表示为 token 的分支 | 通道内先提取时间特征，不是直接输入裸电极值 |
-| 空间自注意力 | 通道 token 之间的信息交换，矩阵形状为 $C\times C$ | 不等于最终的通道加权汇聚 |
-| 通道注意力汇聚 | 为最终通道 token 打分后求加权和，权重为 $\alpha_c$ | 不等于 Fig. 6(c) 的通道重要性图 |
+| 空间自注意力 | 通道 token 之间的信息交换，矩阵形状为 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo>×</mo><mi>C</mi></mrow><annotation encoding="application/x-tex">C\times C</annotation></semantics></math> | 不等于最终的通道加权汇聚 |
+| 通道注意力汇聚 | 为最终通道 token 打分后求加权和，权重为 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>α</mi><mi>c</mi></msub></mrow><annotation encoding="application/x-tex">\alpha_c</annotation></semantics></math> | 不等于 Fig. 6(c) 的通道重要性图 |
 | 欧氏对齐（Euclidean alignment，EA） | 用被试参考矩阵变换 EEG 的前处理 | 不保证类别分布一致，也不是网络内的注意力 |
 
 <a id="reading-section-03"></a>
 
 ## 3. 沿着一个 trial 走过网络
 
-用 $B$ 表示 batch 大小、$P$ 表示时间 patch 数、$D$ 表示 token 特征维度。主流程如下；维度说明来自 Table II，$P$ 随输入长度与池化配置而变，不能无依据固定为某个值。[原文：Fig. 2、Table II、式 (3)–(15)；PDF 第 4–6 页]
+用 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math> 表示 batch 大小、<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi></mrow><annotation encoding="application/x-tex">P</annotation></semantics></math> 表示时间 patch 数、<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi></mrow><annotation encoding="application/x-tex">D</annotation></semantics></math> 表示 token 特征维度。主流程如下；维度说明来自 Table II，<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi></mrow><annotation encoding="application/x-tex">P</annotation></semantics></math> 随输入长度与池化配置而变，不能无依据固定为某个值。[原文：Fig. 2、Table II、式 (3)–(15)；PDF 第 4–6 页]
 
 ```text
 预处理 / EA 后的 EEG：B × C × T
@@ -74,13 +74,13 @@ DBConformer 面对的问题是：EEG 同时含有时间变化和通道之间的�
 
 ### 时间分支：先混合通道，保留时间片
 
-T 分支先进行空间混合和深度时间卷积，再经过批归一化、GELU、dropout 和不重叠平均池化，将信号变成一串时间 token。加入可学习的位置编码后，Transformer 在这些 token 之间计算注意力，最后沿 token 维求均值得到 $F_t$。Dropout 概率在该结构中为 0.5。[原文：III-C.2、Table II、式 (6)–(8)；PDF 第 5 页]
+T 分支先进行空间混合和深度时间卷积，再经过批归一化、GELU、dropout 和不重叠平均池化，将信号变成一串时间 token。加入可学习的位置编码后，Transformer 在这些 token 之间计算注意力，最后沿 token 维求均值得到 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>t</mi></msub></mrow><annotation encoding="application/x-tex">F_t</annotation></semantics></math>。Dropout 概率在该结构中为 0.5。[原文：III-C.2、Table II、式 (6)–(8)；PDF 第 5 页]
 
 这里的取舍很具体：保留不同时间片作为可比较的对象，但不再保留每个原通道的独立 token 身份。Transformer 可以利用较远时间片的信息，不过“具备这种计算能力”和“实验已经证明某个长程依赖机制”是两回事。
 
 ### 空间分支：先压缩时间，保留通道 token
 
-S 分支把每个通道暂时看作一条独立的一维信号，使用 16 个长度为 25 的卷积核提取局部时间特征，再沿时间平均。每个通道由此得到 16 维描述，经线性投影变为 $D$ 维 token。空间位置编码提供通道位置身份，空间 Transformer 建模不同通道 token 的关系，最后由通道注意力汇聚为 $F_s$。[原文：III-C.3、Table II、式 (9)–(13)；PDF 第 5–6 页]
+S 分支把每个通道暂时看作一条独立的一维信号，使用 16 个长度为 25 的卷积核提取局部时间特征，再沿时间平均。每个通道由此得到 16 维描述，经线性投影变为 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi></mrow><annotation encoding="application/x-tex">D</annotation></semantics></math> 维 token。空间位置编码提供通道位置身份，空间 Transformer 建模不同通道 token 的关系，最后由通道注意力汇聚为 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>s</mi></msub></mrow><annotation encoding="application/x-tex">F_s</annotation></semantics></math>。[原文：III-C.3、Table II、式 (9)–(13)；PDF 第 5–6 页]
 
 这一分支并不保留全部时间细节。假如两条通道特征轨迹经时间平均后完全相同，后续 S-Transformer 就不能仅凭这些相同 token 恢复它们原先的细粒度顺序。这是从池化操作直接得到的阅读解释，也说明了它为什么需要与时间分支配合。
 
@@ -88,7 +88,7 @@ S 分支把每个通道暂时看作一条独立的一维信号，使用 16 个�
 
 ### 融合：两种表示一起分类，不是训练两个互相独立的系统
 
-模型将 $F_t,F_s\in\mathbb R^{B\times D}$ 拼接，送入三层 MLP，其维度链为 $2D\rightarrow64\rightarrow32\rightarrow N_c$，使用 ELU 和 dropout，并以交叉熵训练。两分支在分类前没有论文所描述的早期交叉注意力交换，也没有显式去相关或独立性损失。[原文：III-C.4、Table II、式 (14)–(15)；PDF 第 5–6 页]
+模型将 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>t</mi></msub><mo separator="true">,</mo><msub><mi>F</mi><mi>s</mi></msub><mo>∈</mo><msup><mi mathvariant="double-struck">R</mi><mrow><mi>B</mi><mo>×</mo><mi>D</mi></mrow></msup></mrow><annotation encoding="application/x-tex">F_t,F_s\in\mathbb R^{B\times D}</annotation></semantics></math> 拼接，送入三层 MLP，其维度链为 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>D</mi><mo>→</mo><mn>64</mn><mo>→</mo><mn>32</mn><mo>→</mo><msub><mi>N</mi><mi>c</mi></msub></mrow><annotation encoding="application/x-tex">2D\rightarrow64\rightarrow32\rightarrow N_c</annotation></semantics></math>，使用 ELU 和 dropout，并以交叉熵训练。两分支在分类前没有论文所描述的早期交叉注意力交换，也没有显式去相关或独立性损失。[原文：III-C.4、Table II、式 (14)–(15)；PDF 第 5–6 页]
 
 所以“并行解耦”是计算路径分开，不是已经实现了统计独立或严格的信息解耦；分类损失仍会同时塑造两支。它是一种相对节省 token 数的互补表示方案，而不是证明了时空因素可以完全分离。
 
@@ -102,20 +102,17 @@ S 分支把每个通道暂时看作一条独立的一维信号，使用 16 个�
 
 论文先计算被试参考矩阵，再左乘其逆平方根：
 
-$$
-\bar R=\frac1n\sum_{i=1}^n X_iX_i^\top,\qquad
-\tilde X_i=\bar R^{-1/2}X_i.
-$$
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mover accent="true"><mi>R</mi><mo>ˉ</mo></mover><mo>=</mo><mfrac><mn>1</mn><mi>n</mi></mfrac><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msub><mi>X</mi><mi>i</mi></msub><msubsup><mi>X</mi><mi>i</mi><mi mathvariant="normal">⊤</mi></msubsup><mo separator="true">,</mo><mspace width="2em"/><msub><mover accent="true"><mi>X</mi><mo>~</mo></mover><mi>i</mi></msub><mo>=</mo><msup><mover accent="true"><mi>R</mi><mo>ˉ</mo></mover><mrow><mo>−</mo><mn>1</mn><mi mathvariant="normal">/</mi><mn>2</mn></mrow></msup><msub><mi>X</mi><mi>i</mi></msub><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">\bar R=\frac1n\sum_{i=1}^n X_iX_i^\top,\qquad \tilde X_i=\bar R^{-1/2}X_i.</annotation></semantics></math>
 
-其中 $X_i\in\mathbb R^{C\times T}$，$\bar R\in\mathbb R^{C\times C}$。以上沿用论文写法，不额外补入原式没有写出的中心化或除以时间长度操作。[原文：式 (1)–(2)；PDF 第 4 页]
+其中 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>X</mi><mi>i</mi></msub><mo>∈</mo><msup><mi mathvariant="double-struck">R</mi><mrow><mi>C</mi><mo>×</mo><mi>T</mi></mrow></msup></mrow><annotation encoding="application/x-tex">X_i\in\mathbb R^{C\times T}</annotation></semantics></math>，<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi>R</mi><mo>ˉ</mo></mover><mo>∈</mo><msup><mi mathvariant="double-struck">R</mi><mrow><mi>C</mi><mo>×</mo><mi>C</mi></mrow></msup></mrow><annotation encoding="application/x-tex">\bar R\in\mathbb R^{C\times C}</annotation></semantics></math>。以上沿用论文写法，不额外补入原式没有写出的中心化或除以时间长度操作。[原文：式 (1)–(2)；PDF 第 4 页]
 
-设只有一个二维样本 $X=\operatorname{diag}(2,1)$。此时 $\bar R=\operatorname{diag}(4,1)$，逆平方根是 $\operatorname{diag}(0.5,1)$，于是 $\tilde X=I$：第一维较大的尺度被压下来。在参考矩阵可逆且使用同一组参考样本时，变换后的平均二阶矩为单位阵；这不保证不同类别或不同被试的高阶分布也相同。
+设只有一个二维样本 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>=</mo><mi mathvariant="normal">diag</mi><mo>⁡</mo><mo stretchy="false">(</mo><mn>2</mn><mo separator="true">,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">X=\operatorname{diag}(2,1)</annotation></semantics></math>。此时 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi>R</mi><mo>ˉ</mo></mover><mo>=</mo><mi mathvariant="normal">diag</mi><mo>⁡</mo><mo stretchy="false">(</mo><mn>4</mn><mo separator="true">,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\bar R=\operatorname{diag}(4,1)</annotation></semantics></math>，逆平方根是 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">diag</mi><mo>⁡</mo><mo stretchy="false">(</mo><mn>0.5</mn><mo separator="true">,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\operatorname{diag}(0.5,1)</annotation></semantics></math>，于是 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi>X</mi><mo>~</mo></mover><mo>=</mo><mi>I</mi></mrow><annotation encoding="application/x-tex">\tilde X=I</annotation></semantics></math>：第一维较大的尺度被压下来。在参考矩阵可逆且使用同一组参考样本时，变换后的平均二阶矩为单位阵；这不保证不同类别或不同被试的高阶分布也相同。
 
-另一个容易忽略的结果是：一般情况下，$\bar R^{-1/2}$ 不是对角阵，会混合原通道。因此，后续“通道 token”应理解为对齐后的通道坐标表示，不能未经验证就把它的权重解释为某个原电极的独立因果贡献。
+另一个容易忽略的结果是：一般情况下，<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mover accent="true"><mi>R</mi><mo>ˉ</mo></mover><mrow><mo>−</mo><mn>1</mn><mi mathvariant="normal">/</mi><mn>2</mn></mrow></msup></mrow><annotation encoding="application/x-tex">\bar R^{-1/2}</annotation></semantics></math> 不是对角阵，会混合原通道。因此，后续“通道 token”应理解为对齐后的通道坐标表示，不能未经验证就把它的权重解释为某个原电极的独立因果贡献。
 
 ### 4.2 池化和位置编码：把一段响应变成一个有位置的 token
 
-以某一特征轨迹 $[1,3,5,7]$ 为例，池化窗口为 2 时，两个时间 patch 的均值是 $[2,6]$。若对应位置编码是 $[0.1,0.2]$，送入下一步的数值就是 $[2.1,6.2]$。真实模型中每个 token 是 $D$ 维向量，位置编码同样为向量。[原文：式 (6)–(7)、Table II；PDF 第 5 页]
+以某一特征轨迹 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mn>1</mn><mo separator="true">,</mo><mn>3</mn><mo separator="true">,</mo><mn>5</mn><mo separator="true">,</mo><mn>7</mn><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[1,3,5,7]</annotation></semantics></math> 为例，池化窗口为 2 时，两个时间 patch 的均值是 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mn>2</mn><mo separator="true">,</mo><mn>6</mn><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[2,6]</annotation></semantics></math>。若对应位置编码是 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mn>0.1</mn><mo separator="true">,</mo><mn>0.2</mn><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[0.1,0.2]</annotation></semantics></math>，送入下一步的数值就是 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mn>2.1</mn><mo separator="true">,</mo><mn>6.2</mn><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[2.1,6.2]</annotation></semantics></math>。真实模型中每个 token 是 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi></mrow><annotation encoding="application/x-tex">D</annotation></semantics></math> 维向量，位置编码同样为向量。[原文：式 (6)–(7)、Table II；PDF 第 5 页]
 
 池化保留粗时间位置，却损失窗口内细节；位置编码为剩下的 token 提供顺序信息，不会把已被平均掉的细节重新找回来。
 
@@ -123,37 +120,29 @@ $$
 
 单头缩放点积注意力可写成：
 
-$$
-A=\operatorname{softmax}_{\text{row}}\left(\frac{QK^\top}{\sqrt{d_k}}\right),\qquad O=AV.
-$$
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>A</mi><mo>=</mo><msub><mrow><mi mathvariant="normal">softmax</mi><mo>⁡</mo></mrow><mtext>row</mtext></msub><mrow><mo fence="true">(</mo><mfrac><mrow><mi>Q</mi><msup><mi>K</mi><mi mathvariant="normal">⊤</mi></msup></mrow><msqrt><msub><mi>d</mi><mi>k</mi></msub></msqrt></mfrac><mo fence="true">)</mo></mrow><mo separator="true">,</mo><mspace width="2em"/><mi>O</mi><mo>=</mo><mi>A</mi><mi>V</mi><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">A=\operatorname{softmax}_{\text{row}}\left(\frac{QK^\top}{\sqrt{d_k}}\right),\qquad O=AV.</annotation></semantics></math>
 
-$Q,K$ 分别是查询和键，决定每个 token 从哪些 token 读取信息；$V$ 是被加权汇总的值。T 分支的注意力矩阵沿时间 token 展开，S 分支则沿通道 token 展开。这是对论文 Transformer 模块的计算展开，不另冒充论文中的新增编号公式。[原文：III-C.2–3；PDF 第 5–6 页]
+<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Q</mi><mo separator="true">,</mo><mi>K</mi></mrow><annotation encoding="application/x-tex">Q,K</annotation></semantics></math> 分别是查询和键，决定每个 token 从哪些 token 读取信息；<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi></mrow><annotation encoding="application/x-tex">V</annotation></semantics></math> 是被加权汇总的值。T 分支的注意力矩阵沿时间 token 展开，S 分支则沿通道 token 展开。这是对论文 Transformer 模块的计算展开，不另冒充论文中的新增编号公式。[原文：III-C.2–3；PDF 第 5–6 页]
 
-设两个 token 满足 $Q=\sqrt2 I_2,K=I_2,d_k=2$，则得分矩阵为 $I_2$。逐行 softmax 后：
+设两个 token 满足 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Q</mi><mo>=</mo><msqrt><mn>2</mn></msqrt><msub><mi>I</mi><mn>2</mn></msub><mo separator="true">,</mo><mi>K</mi><mo>=</mo><msub><mi>I</mi><mn>2</mn></msub><mo separator="true">,</mo><msub><mi>d</mi><mi>k</mi></msub><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">Q=\sqrt2 I_2,K=I_2,d_k=2</annotation></semantics></math>，则得分矩阵为 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>I</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">I_2</annotation></semantics></math>。逐行 softmax 后：
 
-$$
-A\approx\begin{bmatrix}0.7311&0.2689\\0.2689&0.7311\end{bmatrix}.
-$$
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>A</mi><mo>≈</mo><mrow><mo fence="true">[</mo><mtable rowspacing="0.16em" columnalign="center center" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0.7311</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0.2689</mn></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0.2689</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0.7311</mn></mstyle></mtd></mtr></mtable><mo fence="true">]</mo></mrow><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">A\approx\begin{bmatrix}0.7311&amp;0.2689\\0.2689&amp;0.7311\end{bmatrix}.</annotation></semantics></math>
 
-若 $V=[2,4]^\top$，输出就是 $[2.5379,3.4621]^\top$。第一个 token 保留了较多自己的值，也借用了第二个 token 的信息；第二个同理。这个小算例没有展开多头拼接、残差、归一化和前馈层，因此只说明注意力加权这一步。
+若 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>=</mo><mo stretchy="false">[</mo><mn>2</mn><mo separator="true">,</mo><mn>4</mn><msup><mo stretchy="false">]</mo><mi mathvariant="normal">⊤</mi></msup></mrow><annotation encoding="application/x-tex">V=[2,4]^\top</annotation></semantics></math>，输出就是 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mn>2.5379</mn><mo separator="true">,</mo><mn>3.4621</mn><msup><mo stretchy="false">]</mo><mi mathvariant="normal">⊤</mi></msup></mrow><annotation encoding="application/x-tex">[2.5379,3.4621]^\top</annotation></semantics></math>。第一个 token 保留了较多自己的值，也借用了第二个 token 的信息；第二个同理。这个小算例没有展开多头拼接、残差、归一化和前馈层，因此只说明注意力加权这一步。
 
 ### 4.4 两种汇聚：均值保留平均响应，通道注意力学习如何加权
 
-T 分支使用均值。若两个最终时间 token 为 $(2,0)$ 和 $(0,4)$，则 $F_t=(1,2)$。S 分支则给每个最终通道 token $z_c\in\mathbb R^D$ 打分：
+T 分支使用均值。若两个最终时间 token 为 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>2</mn><mo separator="true">,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(2,0)</annotation></semantics></math> 和 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>0</mn><mo separator="true">,</mo><mn>4</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(0,4)</annotation></semantics></math>，则 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>t</mi></msub><mo>=</mo><mo stretchy="false">(</mo><mn>1</mn><mo separator="true">,</mo><mn>2</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">F_t=(1,2)</annotation></semantics></math>。S 分支则给每个最终通道 token <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>z</mi><mi>c</mi></msub><mo>∈</mo><msup><mi mathvariant="double-struck">R</mi><mi>D</mi></msup></mrow><annotation encoding="application/x-tex">z_c\in\mathbb R^D</annotation></semantics></math> 打分：
 
-$$
-k_c=w_2^\top\tanh(W_1z_c),\qquad
-\alpha_c=\frac{e^{k_c}}{\sum_j e^{k_j}},\qquad
-F_s=\sum_c\alpha_c z_c.
-$$
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>k</mi><mi>c</mi></msub><mo>=</mo><msubsup><mi>w</mi><mn>2</mn><mi mathvariant="normal">⊤</mi></msubsup><mi>tanh</mi><mo>⁡</mo><mo stretchy="false">(</mo><msub><mi>W</mi><mn>1</mn></msub><msub><mi>z</mi><mi>c</mi></msub><mo stretchy="false">)</mo><mo separator="true">,</mo><mspace width="2em"/><msub><mi>α</mi><mi>c</mi></msub><mo>=</mo><mfrac><msup><mi>e</mi><msub><mi>k</mi><mi>c</mi></msub></msup><mrow><munder><mo>∑</mo><mi>j</mi></munder><msup><mi>e</mi><msub><mi>k</mi><mi>j</mi></msub></msup></mrow></mfrac><mo separator="true">,</mo><mspace width="2em"/><msub><mi>F</mi><mi>s</mi></msub><mo>=</mo><munder><mo>∑</mo><mi>c</mi></munder><msub><mi>α</mi><mi>c</mi></msub><msub><mi>z</mi><mi>c</mi></msub><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">k_c=w_2^\top\tanh(W_1z_c),\qquad \alpha_c=\frac{e^{k_c}}{\sum_j e^{k_j}},\qquad F_s=\sum_c\alpha_c z_c.</annotation></semantics></math>
 
-这里省略 batch 下标；$W_1\in\mathbb R^{d_a\times D}$、$w_2\in\mathbb R^{d_a}$，其中 $d_a$ 是打分网络隐层维度。所有通道的 $\alpha_c$ 加起来为 1。[原文：式 (8)、(11)–(13)、Fig. 3；PDF 第 5–6 页]
+这里省略 batch 下标；<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>W</mi><mn>1</mn></msub><mo>∈</mo><msup><mi mathvariant="double-struck">R</mi><mrow><msub><mi>d</mi><mi>a</mi></msub><mo>×</mo><mi>D</mi></mrow></msup></mrow><annotation encoding="application/x-tex">W_1\in\mathbb R^{d_a\times D}</annotation></semantics></math>、<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>w</mi><mn>2</mn></msub><mo>∈</mo><msup><mi mathvariant="double-struck">R</mi><msub><mi>d</mi><mi>a</mi></msub></msup></mrow><annotation encoding="application/x-tex">w_2\in\mathbb R^{d_a}</annotation></semantics></math>，其中 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mi>a</mi></msub></mrow><annotation encoding="application/x-tex">d_a</annotation></semantics></math> 是打分网络隐层维度。所有通道的 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>α</mi><mi>c</mi></msub></mrow><annotation encoding="application/x-tex">\alpha_c</annotation></semantics></math> 加起来为 1。[原文：式 (8)、(11)–(13)、Fig. 3；PDF 第 5–6 页]
 
-设 $z_1=(1,0),z_2=(0,2),W_1=I_2,w_2=(1,0)^\top$。分数为 $k_1=\tanh(1)\approx0.7616,k_2=0$，于是 $\alpha_1\approx0.6817,\alpha_2\approx0.3183$，得到 $F_s\approx(0.6817,0.6366)$。若直接均值汇聚，则结果为 $(0.5,1)$。可学习汇聚改变的是各 token 对最终表示的贡献；它不保证产生的权重就是电极的重要性真值。
+设 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>z</mi><mn>1</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mn>1</mn><mo separator="true">,</mo><mn>0</mn><mo stretchy="false">)</mo><mo separator="true">,</mo><msub><mi>z</mi><mn>2</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mn>0</mn><mo separator="true">,</mo><mn>2</mn><mo stretchy="false">)</mo><mo separator="true">,</mo><msub><mi>W</mi><mn>1</mn></msub><mo>=</mo><msub><mi>I</mi><mn>2</mn></msub><mo separator="true">,</mo><msub><mi>w</mi><mn>2</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mn>1</mn><mo separator="true">,</mo><mn>0</mn><msup><mo stretchy="false">)</mo><mi mathvariant="normal">⊤</mi></msup></mrow><annotation encoding="application/x-tex">z_1=(1,0),z_2=(0,2),W_1=I_2,w_2=(1,0)^\top</annotation></semantics></math>。分数为 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>k</mi><mn>1</mn></msub><mo>=</mo><mi>tanh</mi><mo>⁡</mo><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo><mo>≈</mo><mn>0.7616</mn><mo separator="true">,</mo><msub><mi>k</mi><mn>2</mn></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">k_1=\tanh(1)\approx0.7616,k_2=0</annotation></semantics></math>，于是 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>α</mi><mn>1</mn></msub><mo>≈</mo><mn>0.6817</mn><mo separator="true">,</mo><msub><mi>α</mi><mn>2</mn></msub><mo>≈</mo><mn>0.3183</mn></mrow><annotation encoding="application/x-tex">\alpha_1\approx0.6817,\alpha_2\approx0.3183</annotation></semantics></math>，得到 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>s</mi></msub><mo>≈</mo><mo stretchy="false">(</mo><mn>0.6817</mn><mo separator="true">,</mo><mn>0.6366</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">F_s\approx(0.6817,0.6366)</annotation></semantics></math>。若直接均值汇聚，则结果为 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>0.5</mn><mo separator="true">,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(0.5,1)</annotation></semantics></math>。可学习汇聚改变的是各 token 对最终表示的贡献；它不保证产生的权重就是电极的重要性真值。
 
 ### 4.5 拼接与损失：把两种表示交给同一个分类目标
 
-接上前面的示例，拼接向量为 $(1,2,0.6817,0.6366)$。假设经过分类器后得到二分类 logits $(\ln4,0)$，则 softmax 概率为 $(0.8,0.2)$。若真实类别是第一类，单样本交叉熵为 $-\ln0.8\approx0.2231$。[原文：式 (14)–(15)；PDF 第 6 页]
+接上前面的示例，拼接向量为 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>1</mn><mo separator="true">,</mo><mn>2</mn><mo separator="true">,</mo><mn>0.6817</mn><mo separator="true">,</mo><mn>0.6366</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(1,2,0.6817,0.6366)</annotation></semantics></math>。假设经过分类器后得到二分类 logits <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>ln</mi><mo>⁡</mo><mn>4</mn><mo separator="true">,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\ln4,0)</annotation></semantics></math>，则 softmax 概率为 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>0.8</mn><mo separator="true">,</mo><mn>0.2</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(0.8,0.2)</annotation></semantics></math>。若真实类别是第一类，单样本交叉熵为 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>−</mo><mi>ln</mi><mo>⁡</mo><mn>0.8</mn><mo>≈</mo><mn>0.2231</mn></mrow><annotation encoding="application/x-tex">-\ln0.8\approx0.2231</annotation></semantics></math>。[原文：式 (14)–(15)；PDF 第 6 页]
 
 这一损失只要求整体把类别判对，并没有单独要求时间支和空间支互补。所谓“互补”需要从对照实验与表示分析中寻找证据，不能只由拼接操作推出来。
 
@@ -173,7 +162,7 @@ $$
 | CV：交叉验证 | 按时间组织的五折划分 | 给定分块规则下的被试内泛化；不等于只用过去预测未来 |
 | LOSO：留一被试 | 留出一位被试，其余用于训练 | 该数据与前处理条件下的跨被试泛化 |
 
-跨数据集（CD）结果仅指向补充 Table S1，当前不能复核。MI 配置为 100 epochs、Adam、学习率 $10^{-3}$、batch size 32，报告使用五个随机种子 1–5。Table IV 虽含均值与 ± 项，但对 ± 的统计含义和跨 seed／被试聚合层级说明不足，本笔记不擅自指定其置信解释。[原文：IV-C、Table IV；PDF 第 7–9 页]
+跨数据集（CD）结果仅指向补充 Table S1，当前不能复核。MI 配置为 100 epochs、Adam、学习率 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>10</mn><mrow><mo>−</mo><mn>3</mn></mrow></msup></mrow><annotation encoding="application/x-tex">10^{-3}</annotation></semantics></math>、batch size 32，报告使用五个随机种子 1–5。Table IV 虽含均值与 ± 项，但对 ± 的统计含义和跨 seed／被试聚合层级说明不足，本笔记不擅自指定其置信解释。[原文：IV-C、Table IV；PDF 第 7–9 页]
 
 EA 也属于评估管线。正文既给出被试参考矩阵的定义，又描述测试样本到来时在线更新；但本轮没有核验代码中的更新先后顺序和参考样本范围。因此既不能据此断言存在信息泄漏，也不能宣布已经排除。完整复现还需要补充逐数据集配置和实际实现。[原文：III-B、IV-C；PDF 第 4、7–8 页]
 
@@ -191,7 +180,7 @@ EA 也属于评估管线。正文既给出被试参考矩阵的定义，又描�
 
 具体到 BNCI2014001，三种设置为 80.16%、83.66%、77.67%；BNCI2014004 为 75.09%、74.17%、69.85%。但 Zhou2016 的 LOSO 中，DBConformer 85.37% 低于 IFNet 86.21%。Table V 中对应的显著性不能被解释为 DBConformer 显著更好，方向必须回到 Table IV 判断。
 
-还有一些领先非常小：BNCI2014001 CV 相对 EEG Conformer 仅高 0.04 pp，$p=0.08$；同数据集 LOSO 相对 TMSA-Net 高 0.35 pp，$p=0.059$，相对 MSVTNet 高 0.57 pp，$p=0.14$。因此，适当的结论是“整体均值较好，局部收益和显著性不一致”，而不是“全面显著胜出”。[原文：Table IV–V；PDF 第 9–10 页]
+还有一些领先非常小：BNCI2014001 CV 相对 EEG Conformer 仅高 0.04 pp，<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>=</mo><mn>0.08</mn></mrow><annotation encoding="application/x-tex">p=0.08</annotation></semantics></math>；同数据集 LOSO 相对 TMSA-Net 高 0.35 pp，<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>=</mo><mn>0.059</mn></mrow><annotation encoding="application/x-tex">p=0.059</annotation></semantics></math>，相对 MSVTNet 高 0.57 pp，<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>=</mo><mn>0.14</mn></mrow><annotation encoding="application/x-tex">p=0.14</annotation></semantics></math>。因此，适当的结论是“整体均值较好，局部收益和显著性不一致”，而不是“全面显著胜出”。[原文：Table IV–V；PDF 第 9–10 页]
 
 ### 5.3 跨任务结果支持架构适用性，不代表一个统一模型跨范式使用
 
@@ -215,7 +204,7 @@ Fig. 6 尤其值得分开看：
 
 - **时间注意力图**：BNCI2014001 的 8 个 token 对应均匀权重为 0.125，而显示色值约为 0.118–0.130，差异并不大。不能把视觉色差直接说成强烈长程机制。
 - **空间自注意力图**：显示通道 token 之间的关系，是信息交换矩阵，不是最终汇聚权重。
-- **通道重要性图**：正文说明其来自空间自注意力矩阵去掉对角项后的入向关注汇总，不是式 (11)–(13) 的 $\alpha_c$。其图示尺度和具体缩放过程未充分报告，不能据图恢复一组归一化汇聚概率。
+- **通道重要性图**：正文说明其来自空间自注意力矩阵去掉对角项后的入向关注汇总，不是式 (11)–(13) 的 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>α</mi><mi>c</mi></msub></mrow><annotation encoding="application/x-tex">\alpha_c</annotation></semantics></math>。其图示尺度和具体缩放过程未充分报告，不能据图恢复一组归一化汇聚概率。
 
 因而，“模型图上强调 C3、Cz、C4 等感觉运动区域”可以作为与任务先验相符的观察；要进一步说这些原电极对预测具有因果重要性，还需要明确作用于原输入的干预、遮蔽或其他验证，并考虑 EA 和 Transformer 已经混合信息。[原文：IV-H、Fig. 6；PDF 第 10–12 页]
 

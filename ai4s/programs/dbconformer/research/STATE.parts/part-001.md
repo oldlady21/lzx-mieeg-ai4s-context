@@ -2,14 +2,14 @@
 
 完整脱敏文件：`ai4s/programs/dbconformer/research/STATE.yaml`（[原文件](../STATE.yaml)）。
 
-完整公开文件 SHA-256：`57de2a9f43d5a19010bb5ed726d92ddfa0f4308878c7559200b892fb881fdb1a`。UTF-8 字节范围：[0, 500000) / 1184815。
+完整公开文件 SHA-256：`5c1745b0f312c6c287b59e4373865066c2a479f1cbe5b36e16d76ba9a3522e22`。UTF-8 字节范围：[0, 500000) / 1211892。
 
 这是连续文本片段，可能从 JSON 字段中间开始；按分段顺序拼接代码块可恢复完整脱敏正文。不是单独有效的 State，也不授予执行权限。
 
 ```yaml
 {
   "active_operation": null,
-  "active_research": "source_geometry_r1",
+  "active_research": "closure_phase_r1",
   "active_round": null,
   "active_run": null,
   "active_run_history": [
@@ -7739,6 +7739,95 @@
       },
       "closing_status": "COMPLETE_MAX_ROUNDS",
       "closure_reason": "User authorized exactly four source-only encoder fits after qualification; SGP direct optimization remains stopped."
+    },
+    {
+      "campaign_id": "dbconformer-source-geometry-r1-campaign",
+      "closed_at": "2026-11-17T15:07:33.947637+00:00",
+      "closing_decision": {
+        "automatic_continuation": false,
+        "claim_release": false,
+        "decision": "INCONCLUSIVE",
+        "interpretation": "descriptive_noise_relative_investment_gate_only_no_significance_no_unbiased_estimate_no_utility_no_claim",
+        "next_training_authorized": false,
+        "no_paper_claim": true,
+        "round_id": "dbconformer-source-geometry-r1",
+        "run_action": "STOP"
+      },
+      "closing_round": "dbconformer-source-geometry-r1",
+      "closing_run": {
+        "analysis_receipt_sha256": "3c218016cf23912cd52294c04fcde5d3d5ea6ab01d68cee5ea631ac586e4e8de",
+        "artifact_manifest_sha256": "bdbb1203dd07e3340c639382ff422e7806288b489d5ba1ed7fa47897f3ed0d56",
+        "contract_sha256": "fb7a6bee05afc75997d53233a9b70e4b7ac87fc14c608742cc9ff043e6bef74c",
+        "full_payload_local": false,
+        "intake_path": "results/logs/remote/2026-11-04_dbconformer_source_geometry_r1_lab10-full-w1",
+        "intake_scope": "analysis_v1",
+        "run_id": "2026-11-04_dbconformer_source_geometry_r1_lab10-full-w1",
+        "run_status": "complete",
+        "transaction_id": "dbconformer-source-geometry-r1-tx",
+        "transfer_bytes": 2891722,
+        "verified": true,
+        "verified_at": null
+      },
+      "closing_status": "COMPLETE_MAX_ROUNDS",
+      "closure_reason": "User authorized 16h closure-phase 64-fit screen and waived this round external review; GPU TECH remains mandatory."
+    },
+    {
+      "campaign_id": "dbconformer-closure-phase-r1-campaign",
+      "closed_at": "2026-11-18T08:37:07.039308+00:00",
+      "closing_decision": {
+        "decision": "NO_SIGNAL",
+        "reason": "STOP_FIXED_SCREEN: failed individual-risk and both matched structure comparisons.",
+        "role": "exact_negative_boundary",
+        "round_id": "dbconformer-closure-edge-wd0"
+      },
+      "closing_round": "dbconformer-closure-edge-wd0",
+      "closing_run": {
+        "analysis_receipt_sha256": "b5fba9e8fd6d9b3e16bb664402fbea55e8d73a7f3d17be6edc8fc9ba12974bad",
+        "artifact_manifest_sha256": "ec887cf7b35b2f20649c7255e3d4204c13a3f8d6eb26a4e1dc6cbad03c33b445",
+        "contract_sha256": "3f5f082822cc7318772365a95137cd0313de5c0921eae4f76cac824ca685b8f4",
+        "full_payload_local": false,
+        "intake_path": "results/logs/remote/2026-11-18_dbconformer_closure_edge_wd0_lab10-full-w1",
+        "intake_scope": "analysis_v1",
+        "run_id": "2026-11-18_dbconformer_closure_edge_wd0_lab10-full-w1",
+        "run_status": "complete",
+        "transaction_id": "dbconformer-closure-edge-wd0-tx",
+        "transfer_bytes": 555153,
+        "verified": true,
+        "verified_at": null
+      },
+      "closing_status": "COMPLETE_MAX_ROUNDS",
+      "closure_reason": "User-confirmed Wang MI4 four fits and one paired score under 4h"
+    },
+    {
+      "campaign_id": "dbconformer-wang-late-r1-campaign",
+      "closed_at": "2026-11-18T17:16:41.654235+00:00",
+      "closing_decision": {
+        "decision": "EVALUATION_COMPLETE",
+        "evaluation_plan": {
+          "path": "ai4s/programs/dbconformer/research/closure_late_validation_20261118/WANG_LATE_EVALUATION_PLAN.json",
+          "scope_id": "wang-mi4-calibration-2a-source",
+          "sha256": "a1ef9fa00df41813c8d914f3e784be59b148eed2aeadf4f117deb11e2975353f"
+        },
+        "reason": "STOP_WANG_CROSS_DAY_RISK",
+        "round_id": "dbconformer-wang-late-r1"
+      },
+      "closing_round": "dbconformer-wang-late-r1",
+      "closing_run": {
+        "analysis_receipt_sha256": "19f8773b2701d147f9d0e3762bd86909cf66ceb17b2ca71015dea6b4d2c16e0c",
+        "artifact_manifest_sha256": "d94ce343a56f63af5ca9be9fc4a2910eaaa7d6c6e4abb0c22a46657525624899",
+        "contract_sha256": "9e12143f7b71ea01542714f1dcc3e9e9db78b5e470d506668b89398e7e0860f8",
+        "full_payload_local": false,
+        "intake_path": "results/logs/remote/2026-11-18_dbconformer_wang_late_r1_lab10-full-w1",
+        "intake_scope": "analysis_v1",
+        "run_id": "2026-11-18_dbconformer_wang_late_r1_lab10-full-w1",
+        "run_status": "complete",
+        "transaction_id": "dbconformer-wang-late-r1-tx",
+        "transfer_bytes": 3147152,
+        "verified": true,
+        "verified_at": null
+      },
+      "closing_status": "COMPLETE_MAX_ROUNDS",
+      "closure_reason": "User authorized exact 72 source fits and 22-hour cumulative cap; target scoring remains locked."
     }
   ],
   "bounded_recovery": {
@@ -7830,11 +7919,7 @@
     "allowed_transitions": [
       "SCREEN_NEW"
     ],
-    "authorization_reason": "User authorized exactly four source-only encoder fits after qualification; SGP direct optimization remains stopped.",
-    "campaign_id": "dbconformer-source-geometry-r1-campaign",
-    "continuation_policy_version": "evidence_to_design_v1",
-    "decision_policy": "stop_at_positive",
-    "execution_authorization": {
+    "archived_execution_authorization": {
       "allowed_operations": [
         "upload",
         "launch",
@@ -7845,45 +7930,64 @@
       "allowed_transitions": [
         "SCREEN_NEW"
       ],
-      "authorization_ref": "ai4s/programs/dbconformer/research/source_geometry_r1/EXECUTION_AUTHORIZATION.md",
-      "campaign_id": "dbconformer-source-geometry-r1-campaign",
+      "authorization_ref": "ai4s/programs/dbconformer/research/gahst_pair_d0_20261118/GAHST_SCIENCE_AUTHORIZATION.md",
+      "campaign_id": "dbconformer-gahst-source-r1-campaign",
       "executor_id": "lab10",
-      "recorded_at": "2026-11-04T15:56:01.659586+00:00",
+      "recorded_at": "2026-11-18T17:17:20.405115+00:00",
       "research_scope": {
         "allow_new_module": false,
         "allowed_module_ids": [
-          "CE-only-class-geometry-descriptor-v1"
+          "gahst-tied-anchor-two-five-lead"
         ],
         "allowed_stages": [
-          "source_geometry_identifiability"
+          "gahst_source_fitting"
         ],
-        "data_scope_id": "bnci2014001-cue0_4s-source1_8",
-        "question_id": "source-session-class-geometry-identifiability"
+        "data_scope_id": "bnci2014001-source-loso-hands-cue4",
+        "question_id": "dbconformer-gahst-source-r1"
       },
-      "source_sha256": "611f0f8afe0bffcf6e36983617645850eb62c21c9e2d11d77bdb6d6640822237"
+      "source_sha256": "b68c8a8febb3245d66c30d0c2c72806b8cf7bc0e0ffd1cdbbd5a3e96bddf0cef"
     },
-    "governance_chain_id": "dbconformer-transaction-v3.3",
+    "authorization_reason": "User authorized exact 72 source fits and 22-hour cumulative cap; target scoring remains locked.",
+    "campaign_id": "dbconformer-gahst-source-r1-campaign",
+    "closed_at": "2026-11-19T10:42:06.846103+00:00",
+    "continuation_policy_version": "evidence_to_design_v1",
+    "decision_policy": "stop_at_positive",
+    "execution_authorization": null,
+    "governance_chain_id": "dbconformer-transaction-v4.0",
     "invalid_behavior": "fail_closed_without_advancing",
     "positive_signal_behavior": "pause_for_human_review",
     "purpose": "user-authorized bounded AI4S campaign",
     "queue_accounting": {
-      "2026-11-04_dbconformer_source_geometry_r1_lab10-full-w1": {
-        "contract_sha256": "fb7a6bee05afc75997d53233a9b70e4b7ac87fc14c608742cc9ff043e6bef74c",
-        "queue_seconds": 5.630229949951172,
-        "run_id": "2026-11-04_dbconformer_source_geometry_r1_lab10-full-w1",
-        "transaction_id": "dbconformer-source-geometry-r1-tx"
+      "2026-11-19_dbconformer_gahst_source_r1_lab10-full-w1": {
+        "contract_sha256": "43bcb6fac53839c4018f792fc843a45cdc49c9e37a8f3f244f75433d26a4f55b",
+        "queue_seconds": 1.604321002960205,
+        "run_id": "2026-11-19_dbconformer_gahst_source_r1_lab10-full-w1",
+        "transaction_id": "dbconformer-gahst-source-r1-tx"
+      },
+      "2026-11-19_dbconformer_gahst_source_r1_tracefix1_lab10-full-w1": {
+        "contract_sha256": "5978af3273802aeb45214807fac660ed6a8bb64c44111684c56a6aef7509f4a6",
+        "queue_seconds": 0.0,
+        "run_id": "2026-11-19_dbconformer_gahst_source_r1_tracefix1_lab10-full-w1",
+        "transaction_id": "dbconformer-gahst-source-r1-tracefix1-tx"
+      },
+      "2026-11-19_dbconformer_gahst_source_r1_tracefix3_lab10-full-w1": {
+        "contract_sha256": "18c9454478b3fdf2472e3dbf9c11f4ccf8a5f4479daf8f235eaecd3de1ef8e01",
+        "queue_seconds": 0.8026297092437744,
+        "run_id": "2026-11-19_dbconformer_gahst_source_r1_tracefix3_lab10-full-w1",
+        "transaction_id": "dbconformer-gahst-source-r1-tracefix3-tx"
       }
     },
     "round_decisions": [
       {
-        "decision": "INCONCLUSIVE",
-        "decision_record": "ai4s/programs/dbconformer/research/dbconformer-source-geometry-r1_decision.yaml",
-        "evidence_id": "AI4S-DBCONFORMER-dbconformer-source-geometry-r1",
-        "recorded_at": "2026-11-05T11:39:27.618042+00:00",
-        "round_id": "dbconformer-source-geometry-r1"
+        "decision": "STOP_NO_PROMOTION",
+        "decision_record": "ai4s/programs/dbconformer/research/dbconformer-gahst-source-r1-tracefix3_decision.yaml",
+        "evidence_id": "DBCONFORMER-GAHST-R1-ARCHIVED-20261119",
+        "recorded_at": "2026-11-19T10:42:06.846103+00:00",
+        "round_id": "dbconformer-gahst-source-r1-tracefix3"
       }
     ],
-    "started_at": "2026-11-04T15:55:51.329902+00:00"
+    "started_at": "2026-11-18T17:16:41.654235+00:00",
+    "status": "CLOSED_BY_USER"
   },
   "closure_budget_accounting": {
     "accounted_hours": 82.67377071914012,
@@ -7898,6 +8002,152 @@
     "verified_queue_excluded_hours": 16.871274032526546,
     "verified_stopped_excluded_hours": 0.0
   },
+  "closure_edge_wd0_revisions": [
+    {
+      "budget_at_registration": {
+        "allowed": true,
+        "blockers": [],
+        "estimate_basis": "frozen_transaction_timeout",
+        "estimate_note": "frozen timeout ceiling is a conservative upper bound, not measured runtime",
+        "excluded": {
+          "queue_hours": 0.004,
+          "verified_stopped_hours": 0.0
+        },
+        "excluded_hours": 0.004,
+        "expected_training_hours": 6.0,
+        "reason": "fits remaining budget",
+        "remaining_hours": 11.854,
+        "shortfall_hours": 0.0,
+        "spent_hours": 12.146,
+        "total_hours": 24.0
+      },
+      "contract": "ai4s/programs/dbconformer/research/dbconformer-closure-edge-wd0.yaml",
+      "prior_authorization": {
+        "allowed_operations": [
+          "upload",
+          "launch",
+          "probe",
+          "fetch",
+          "intake"
+        ],
+        "allowed_transitions": [
+          "SCREEN_NEW"
+        ],
+        "authorization_ref": "ai4s/programs/dbconformer/research/closure_phase_measurability_20261117/EXECUTION_AUTHORIZATION.md",
+        "campaign_id": "dbconformer-closure-phase-r1-campaign",
+        "executor_id": "lab10",
+        "recorded_at": "2026-11-17T15:07:38.069512+00:00",
+        "research_scope": {
+          "allow_new_module": false,
+          "allowed_module_ids": [
+            "closure-phase-early-late-complex-edge-v1"
+          ],
+          "allowed_stages": [
+            "closure_phase_development_screen"
+          ],
+          "data_scope_id": "bnci2014001-uep-a02t-a09t-runwise-validation",
+          "question_id": "dbconformer-electrode-closing-phase-writeback"
+        },
+        "source_sha256": "c2a4ff4c8e28b3c8d11e17ebaee61c26b4d991e0ab3f1d6adac12cf480771de9"
+      },
+      "prior_invalid_decision": {
+        "decision": "INVALID",
+        "reason": "engineering transaction failure recorded from metadata-only forensic intake",
+        "role": "invalid_non_scientific_record",
+        "round_id": "dbconformer-closure-phase-r1"
+      },
+      "reuse_48": {
+        "path": "ai4s/programs/dbconformer/research/closure_edge_wd0_20261118/REUSE_48.json",
+        "sha256": "fe4649a352852e59725cdd7a5c7e629a2e649ccc90859743ba3641a3f246f066"
+      },
+      "sha256": "3f5f082822cc7318772365a95137cd0313de5c0921eae4f76cac824ca685b8f4"
+    }
+  ],
+  "closure_phase_publisher_recoveries": [
+    {
+      "authorization": "User confirmed repair and cumulative 24 hours; original campaign and accounting retained.",
+      "science_started": 0,
+      "source_ledger": {
+        "contract_sha256": "fcb7a00de773c1054b5e212db919f89c344ae6517c4c6b9fdcd6c6968c34bdf7",
+        "nodes": {
+          "smoke": {
+            "completed_at": 1794928878.8919234,
+            "reason": "node failed exit=1",
+            "started_at": 1794928234.6054173,
+            "status": "FAILED"
+          }
+        },
+        "run_id": "2026-11-17_dbconformer_closure_phase_r1_lab10-full-w1",
+        "started_at": 1794928234.6051178,
+        "timing": {
+          "contract_sha256": "fcb7a00de773c1054b5e212db919f89c344ae6517c4c6b9fdcd6c6968c34bdf7",
+          "execution_seconds": 75.59247136116028,
+          "queue_seconds": 568.69433426857,
+          "queue_time_policy": "exclude_resource_wait",
+          "run_id": "2026-11-17_dbconformer_closure_phase_r1_lab10-full-w1",
+          "transaction_id": "dbconformer-closure-phase-r1-tx",
+          "waiting_for_resources": false,
+          "wall_seconds": 644.2868056297302
+        },
+        "transaction_id": "dbconformer-closure-phase-r1-tx"
+      },
+      "source_ledger_sha256": "8148bd72896e1b7ec5cad2f2b5e80fa8987e00eee93b8740f613aec36974ed89",
+      "source_run": {
+        "bundle_id": "2026-11-17_dbconformer_closure_phase_r1_bundle_v4",
+        "dispatch_status": "REMOTE_ACCEPTED",
+        "estimated_training_hours": 12.0,
+        "execution_mode": "user_managed",
+        "executor_id": "lab10",
+        "planned_units": 68,
+        "recorded_at": "2026-11-17T15:10:13.952500+00:00",
+        "round_id": "dbconformer-closure-phase-r1",
+        "run_prefix": "2026-11-17_dbconformer_closure_phase_r1_lab10",
+        "transaction_operations": [
+          {
+            "operation": "upload",
+            "recorded_at": "2026-11-17T15:10:33.338756+00:00",
+            "result": {
+              "action": "UPLOADED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-17_dbconformer_closure_phase_r1_lab10-full-w1"
+            }
+          },
+          {
+            "operation": "launch",
+            "recorded_at": "2026-11-17T15:10:36.740347+00:00",
+            "result": {
+              "action": "SUBMISSION_SENT_NOT_VERIFIED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-17_dbconformer_closure_phase_r1_lab10-full-w1"
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-17T15:10:51.473753+00:00",
+            "result": {
+              "action": "WAIT_FOR_RESOURCES",
+              "node_id": "smoke",
+              "run_id": "2026-11-17_dbconformer_closure_phase_r1_lab10-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "fcb7a00de773c1054b5e212db919f89c344ae6517c4c6b9fdcd6c6968c34bdf7",
+                "execution_seconds": 0.976952075958252,
+                "queue_seconds": 12.779696702957153,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-17_dbconformer_closure_phase_r1_lab10-full-w1",
+                "transaction_id": "dbconformer-closure-phase-r1-tx",
+                "waiting_for_resources": true,
+                "wall_seconds": 13.756648778915405
+              }
+            }
+          }
+        ]
+      },
+      "successor_contract_sha256": "e8219248faa3104667e6f259b74f046bd1171a3c6bd1fc862fcb15315204e95b",
+      "successor_run_id": "2026-11-18_dbconformer_closure_phase_r1_publisherfix_lab10-full-w1",
+      "tech_reused": 4
+    }
+  ],
   "completed_rounds": [
     {
       "decision": {
@@ -11222,296 +11472,5 @@
               "target_missing_per_channel_acc_pp": [
                 56.25,
                 54.6875,
-                56.770833333333336,
-                59.02777777777778,
-                56.423611111111114,
-                46.875,
-                60.06944444444444,
-                28.47222222222222,
-                45.3125,
-                38.88888888888889,
-                51.90972222222222,
-                48.95833333333333,
-                52.43055555555556,
-                33.50694444444444,
-                53.47222222222222,
-                33.15972222222222,
-                46.875,
-                46.52777777777778,
-                37.15277777777778,
-                59.375,
-                42.1875,
-                42.01388888888889
-              ],
-              "task_id": "B0_s0_seed1"
-            },
-            {
-              "backbone_seed": 2,
-              "checkpoint_sha256": "bf2d5a11c1abc85427a00a8ce981a9c37c80249e29c4e095f27e0efa3fb11f15",
-              "difference_vs_seed0_clean_pp": -2.256944444444443,
-              "difference_vs_seed0_missing_pp": 0.4419191919191974,
-              "historical_seed0_clean_acc_pp": 62.15277777777778,
-              "historical_seed0_missing_acc_pp": 48.07449494949494,
-              "source_valid_best_epoch": 89,
-              "source_valid_clean_acc_pp": 78.125,
-              "subject": 0,
-              "target_clean_acc_pp": 59.895833333333336,
-              "target_missing_acc_pp": 48.51641414141414,
-              "target_missing_per_channel_acc_pp": [
-                57.8125,
-                55.208333333333336,
-                57.986111111111114,
-                55.03472222222222,
-                55.729166666666664,
-                46.875,
-                58.15972222222222,
-                27.77777777777778,
-                48.78472222222222,
-                37.84722222222222,
-                58.68055555555556,
-                45.65972222222222,
-                58.68055555555556,
-                36.45833333333333,
-                59.201388888888886,
-                43.40277777777778,
-                43.22916666666667,
-                48.61111111111111,
-                45.48611111111111,
-                49.82638888888889,
-                42.53472222222222,
-                34.375
-              ],
-              "task_id": "B0_s0_seed2"
-            },
-            {
-              "backbone_seed": 1,
-              "checkpoint_sha256": "a941537ccff0ebbffd3773550b14d6466a43329fa1bc71667328debb81c8c531",
-              "difference_vs_seed0_clean_pp": -0.6944444444444429,
-              "difference_vs_seed0_missing_pp": 0.6313131313131315,
-              "historical_seed0_clean_acc_pp": 42.88194444444444,
-              "historical_seed0_missing_acc_pp": 31.723484848484848,
-              "source_valid_best_epoch": 97,
-              "source_valid_clean_acc_pp": 82.11206896551724,
-              "subject": 1,
-              "target_clean_acc_pp": 42.1875,
-              "target_missing_acc_pp": 32.35479797979798,
-              "target_missing_per_channel_acc_pp": [
-                35.59027777777778,
-                31.25,
-                31.944444444444443,
-                40.10416666666667,
-                35.9375,
-                37.84722222222222,
-                37.84722222222222,
-                37.15277777777778,
-                30.90277777777778,
-                28.125,
-                30.729166666666668,
-                34.54861111111111,
-                35.41666666666667,
-                25.17361111111111,
-                31.07638888888889,
-                31.770833333333332,
-                25.0,
-                25.694444444444443,
-                28.819444444444443,
-                40.10416666666667,
-                26.041666666666668,
-                30.729166666666668
-              ],
-              "task_id": "B0_s1_seed1"
-            },
-            {
-              "backbone_seed": 2,
-              "checkpoint_sha256": "b6e915b22d74eeef22c7c26ae6f41fdea8cb0af80b88dfa6918b96191b4e6dd2",
-              "difference_vs_seed0_clean_pp": -1.2152777777777715,
-              "difference_vs_seed0_missing_pp": -0.2840909090909136,
-              "historical_seed0_clean_acc_pp": 42.88194444444444,
-              "historical_seed0_missing_acc_pp": 31.723484848484848,
-              "source_valid_best_epoch": 97,
-              "source_valid_clean_acc_pp": 82.86637931034483,
-              "subject": 1,
-              "target_clean_acc_pp": 41.66666666666667,
-              "target_missing_acc_pp": 31.439393939393934,
-              "target_missing_per_channel_acc_pp": [
-                34.02777777777778,
-                33.50694444444444,
-                40.10416666666667,
-                33.33333333333333,
-                32.29166666666667,
-                27.604166666666668,
-                30.208333333333332,
-                31.944444444444443,
-                31.42361111111111,
-                24.479166666666664,
-                37.84722222222222,
-                34.54861111111111,
-                37.67361111111111,
-                25.520833333333332,
-                33.33333333333333,
-                25.0,
-                30.03472222222222,
-                26.5625,
-                26.90972222222222,
-                37.5,
-                26.5625,
-                31.25
-              ],
-              "task_id": "B0_s1_seed2"
-            },
-            {
-              "backbone_seed": 1,
-              "checkpoint_sha256": "459a3377d0fed180b12cf708a364fecc91d144de74e57a49cc5bdd2920c58387",
-              "difference_vs_seed0_clean_pp": -1.5625,
-              "difference_vs_seed0_missing_pp": 2.3674242424242493,
-              "historical_seed0_clean_acc_pp": 81.07638888888889,
-              "historical_seed0_missing_acc_pp": 57.930871212121204,
-              "source_valid_best_epoch": 96,
-              "source_valid_clean_acc_pp": 77.37068965517241,
-              "subject": 2,
-              "target_clean_acc_pp": 79.51388888888889,
-              "target_missing_acc_pp": 60.29829545454545,
-              "target_missing_per_channel_acc_pp": [
-                73.4375,
-                65.97222222222221,
-                78.29861111111111,
-                79.34027777777779,
-                71.875,
-                81.59722222222221,
-                55.38194444444444,
-                44.27083333333333,
-                63.541666666666664,
-                41.84027777777778,
-                75.52083333333334,
-                64.40972222222221,
-                80.90277777777779,
-                40.79861111111111,
-                68.75,
-                45.3125,
-                49.65277777777778,
-                57.638888888888886,
-                45.48611111111111,
-                53.125,
-                42.53472222222222,
-                46.875
-              ],
-              "task_id": "B0_s2_seed1"
-            },
-            {
-              "backbone_seed": 2,
-              "checkpoint_sha256": "0817f219b8ce3e81c3977984c4dea417245203f214f1144ea773a209e4e57838",
-              "difference_vs_seed0_clean_pp": 1.3888888888889,
-              "difference_vs_seed0_missing_pp": -0.3472222222222143,
-              "historical_seed0_clean_acc_pp": 81.07638888888889,
-              "historical_seed0_missing_acc_pp": 57.930871212121204,
-              "source_valid_best_epoch": 89,
-              "source_valid_clean_acc_pp": 75.86206896551724,
-              "subject": 2,
-              "target_clean_acc_pp": 82.46527777777779,
-              "target_missing_acc_pp": 57.58364898989899,
-              "target_missing_per_channel_acc_pp": [
-                79.16666666666666,
-                63.541666666666664,
-                82.46527777777779,
-                74.13194444444444,
-                76.73611111111111,
-                76.5625,
-                49.30555555555556,
-                39.40972222222222,
-                52.604166666666664,
-                45.65972222222222,
-                64.0625,
-                63.541666666666664,
-                82.46527777777779,
-                30.555555555555557,
-                64.0625,
-                47.91666666666667,
-                47.74305555555556,
-                40.79861111111111,
-                32.63888888888889,
-                59.72222222222222,
-                40.45138888888889,
-                53.298611111111114
-              ],
-              "task_id": "B0_s2_seed2"
-            },
-            {
-              "backbone_seed": 1,
-              "checkpoint_sha256": "4aea046c5051a104f0bc6d1166c777722eaa92269ce31f0a3948e060960d2e08",
-              "difference_vs_seed0_clean_pp": 1.3888888888888928,
-              "difference_vs_seed0_missing_pp": -0.38667929292930125,
-              "historical_seed0_clean_acc_pp": 50.34722222222222,
-              "historical_seed0_missing_acc_pp": 38.99147727272727,
-              "source_valid_best_epoch": 91,
-              "source_valid_clean_acc_pp": 79.84913793103449,
-              "subject": 3,
-              "target_clean_acc_pp": 51.736111111111114,
-              "target_missing_acc_pp": 38.60479797979797,
-              "target_missing_per_channel_acc_pp": [
-                46.875,
-                45.83333333333333,
-                50.69444444444444,
-                43.57638888888889,
-                44.44444444444444,
-                39.0625,
-                44.27083333333333,
-                27.430555555555557,
-                33.85416666666667,
-                34.375,
-                40.27777777777778,
-                31.25,
-                47.74305555555556,
-                27.77777777777778,
-                47.56944444444444,
-                44.61805555555556,
-                27.604166666666668,
-                37.5,
-                26.041666666666668,
-                53.81944444444444,
-                25.520833333333332,
-                29.166666666666668
-              ],
-              "task_id": "B0_s3_seed1"
-            },
-            {
-              "backbone_seed": 2,
-              "checkpoint_sha256": "4959383f762e094f21b93bcbf657d3f7da48930928d566f2e8c497ce289212ea",
-              "difference_vs_seed0_clean_pp": -3.2986111111111143,
-              "difference_vs_seed0_missing_pp": -2.012310606060602,
-              "historical_seed0_clean_acc_pp": 50.34722222222222,
-              "historical_seed0_missing_acc_pp": 38.99147727272727,
-              "source_valid_best_epoch": 92,
-              "source_valid_clean_acc_pp": 80.60344827586206,
-              "subject": 3,
-              "target_clean_acc_pp": 47.04861111111111,
-              "target_missing_acc_pp": 36.97916666666667,
-              "target_missing_per_channel_acc_pp": [
-                43.75,
-                39.0625,
-                43.40277777777778,
-                47.04861111111111,
-                41.49305555555556,
-                36.11111111111111,
-                41.14583333333333,
-                26.73611111111111,
-                37.15277777777778,
-                33.68055555555556,
-                37.15277777777778,
-                29.86111111111111,
-                43.75,
-                30.03472222222222,
-                46.35416666666667,
-                42.88194444444444,
-                34.20138888888889,
-                38.54166666666667,
-                25.520833333333332,
-                42.01388888888889,
-                28.645833333333332,
-                25.0
-              ],
-              "task_id": "B0_s3_seed2"
-            },
-            {
-              "backbone_seed": 1,
-              "checkpoint_sha256": "c4627c2430e588927
+                56.77083333333333
 ```

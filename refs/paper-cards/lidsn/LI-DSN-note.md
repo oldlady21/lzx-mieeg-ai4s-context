@@ -62,15 +62,15 @@ LI-DSN 想解决的问题是：两条网络分支如果一直各自处理 EEG，
 
 ## 3. 核心思路：空间先形成摘要，再调制时间表示
 
-![LI-DSN 架构与 TSIA 内部结构](<./refs/paper-cards/lidsn/assets/fig2.png>)
+![LI-DSN 架构与 TSIA 内部结构](<assets/fig2.png>)
 
-[打开原图，放大查看](<./refs/paper-cards/lidsn/assets/fig2.png>)
+[打开原图，放大查看](<assets/fig2.png>)
 
 图 2，PDF 第 5 页。左边是整体网络，右下是 TSIA。看图时先追踪空间分支的输出如何进入时间分支，再看最后的融合头。
 
 ### 3.1 两条分支保留不同索引
 
-输入为 $X\in\mathbb R^{C\times T}$，$C$ 是电极数，$T$ 是序列长度。时间 tokenizer 经过逐点投影、时间卷积、激活和下采样，形成 $P\times D$ 的时间 token；空间 tokenizer 先为每个电极编码并池化，再映射到共同宽度，形成 $C\times D$ 的电极 token。$P$ 是时间片数量，$D$ 是潜在特征维数。[原文：PDF 第 3–4 页，Eq. 1–3]
+输入为 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>∈</mo><msup><mi mathvariant="double-struck">R</mi><mrow><mi>C</mi><mo>×</mo><mi>T</mi></mrow></msup></mrow><annotation encoding="application/x-tex">X\in\mathbb R^{C\times T}</annotation></semantics></math>，<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math> 是电极数，<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi></mrow><annotation encoding="application/x-tex">T</annotation></semantics></math> 是序列长度。时间 tokenizer 经过逐点投影、时间卷积、激活和下采样，形成 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>×</mo><mi>D</mi></mrow><annotation encoding="application/x-tex">P\times D</annotation></semantics></math> 的时间 token；空间 tokenizer 先为每个电极编码并池化，再映射到共同宽度，形成 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo>×</mo><mi>D</mi></mrow><annotation encoding="application/x-tex">C\times D</annotation></semantics></math> 的电极 token。<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi></mrow><annotation encoding="application/x-tex">P</annotation></semantics></math> 是时间片数量，<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi></mrow><annotation encoding="application/x-tex">D</annotation></semantics></math> 是潜在特征维数。[原文：PDF 第 3–4 页，Eq. 1–3]
 
 因此，两流的区别是保留的组织轴不同。时间流并非不看空间，空间流也并非不看时间。它们都是同一个 trial 的两种压缩表示。
 
@@ -90,7 +90,7 @@ LI-DSN 想解决的问题是：两条网络分支如果一直各自处理 EEG，
 
 ### 3.4 最后的“自适应融合”包含两种不同权重
 
-空间流用训练得到的通道参数加权求和，这组参数对输入样本是共享的；时间流根据当前样本的 token 计算注意力权重，再加权求和。两边汇成两个 $D$ 维向量，拼成 $2D$ 维分类输入。[原文：PDF 第 5–6 页，Eq. 12–14]
+空间流用训练得到的通道参数加权求和，这组参数对输入样本是共享的；时间流根据当前样本的 token 计算注意力权重，再加权求和。两边汇成两个 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi></mrow><annotation encoding="application/x-tex">D</annotation></semantics></math> 维向量，拼成 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>D</mi></mrow><annotation encoding="application/x-tex">2D</annotation></semantics></math> 维分类输入。[原文：PDF 第 5–6 页，Eq. 12–14]
 
 这也澄清了本文的取舍：一次 TSIA 使用同一个空间摘要调制全部时间片，计算比较紧凑，却没有为不同时间片显式选择不同电极关系。末端融合仍保留空间流的直接分类路径。[阅读解释；依据：Eq. 6、10、12–14]
 
@@ -104,53 +104,33 @@ LI-DSN 想解决的问题是：两条网络分支如果一直各自处理 EEG，
 
 设
 
-$$
-Z_s=\begin{bmatrix}2&0\\0&1\end{bmatrix},\qquad
-Z_t=\begin{bmatrix}1&2\\3&4\end{bmatrix}.
-$$
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>Z</mi><mi>s</mi></msub><mo>=</mo><mrow><mo fence="true">[</mo><mtable rowspacing="0.16em" columnalign="center center" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>2</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0</mn></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>1</mn></mstyle></mtd></mtr></mtable><mo fence="true">]</mo></mrow><mo separator="true">,</mo><mspace width="2em"/><msub><mi>Z</mi><mi>t</mi></msub><mo>=</mo><mrow><mo fence="true">[</mo><mtable rowspacing="0.16em" columnalign="center center" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>1</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>2</mn></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>3</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>4</mn></mstyle></mtd></mtr></mtable><mo fence="true">]</mo></mrow><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">Z_s=\begin{bmatrix}2&amp;0\\0&amp;1\end{bmatrix},\qquad Z_t=\begin{bmatrix}1&amp;2\\3&amp;4\end{bmatrix}.</annotation></semantics></math>
 
-$Z_s$ 每行是一个电极 token，$Z_t$ 每行是一个时间 token；它们的两列都是潜在特征。
+<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>Z</mi><mi>s</mi></msub></mrow><annotation encoding="application/x-tex">Z_s</annotation></semantics></math> 每行是一个电极 token，<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>Z</mi><mi>t</mi></msub></mrow><annotation encoding="application/x-tex">Z_t</annotation></semantics></math> 每行是一个时间 token；它们的两列都是潜在特征。
 
 SACM 的用途是比较电极表示。原文的核心公式是
 
-$$
-Y_1=Z_sW_1+E_{pos},\qquad Y_2=Z_sW_2+E_{pos},\qquad
-A_s=\operatorname{softmax}\left(\frac{Y_1Y_2^\top}{\sqrt{d_h}}\right).
-$$
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>Y</mi><mn>1</mn></msub><mo>=</mo><msub><mi>Z</mi><mi>s</mi></msub><msub><mi>W</mi><mn>1</mn></msub><mo>+</mo><msub><mi>E</mi><mrow><mi>p</mi><mi>o</mi><mi>s</mi></mrow></msub><mo separator="true">,</mo><mspace width="2em"/><msub><mi>Y</mi><mn>2</mn></msub><mo>=</mo><msub><mi>Z</mi><mi>s</mi></msub><msub><mi>W</mi><mn>2</mn></msub><mo>+</mo><msub><mi>E</mi><mrow><mi>p</mi><mi>o</mi><mi>s</mi></mrow></msub><mo separator="true">,</mo><mspace width="2em"/><msub><mi>A</mi><mi>s</mi></msub><mo>=</mo><mi mathvariant="normal">softmax</mi><mo>⁡</mo><mrow><mo fence="true">(</mo><mfrac><mrow><msub><mi>Y</mi><mn>1</mn></msub><msubsup><mi>Y</mi><mn>2</mn><mi mathvariant="normal">⊤</mi></msubsup></mrow><msqrt><msub><mi>d</mi><mi>h</mi></msub></msqrt></mfrac><mo fence="true">)</mo></mrow><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">Y_1=Z_sW_1+E_{pos},\qquad Y_2=Z_sW_2+E_{pos},\qquad A_s=\operatorname{softmax}\left(\frac{Y_1Y_2^\top}{\sqrt{d_h}}\right).</annotation></semantics></math>
 
-$W_1,W_2\in\mathbb R^{D\times d_h}$ 为学习投影，$E_{pos}\in\mathbb R^{C\times d_h}$ 为电极嵌入，$d_h$ 为每头宽度。单头本例取 $d_h=2$、两个投影为恒等、嵌入为零。于是打分矩阵为
+<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>W</mi><mn>1</mn></msub><mo separator="true">,</mo><msub><mi>W</mi><mn>2</mn></msub><mo>∈</mo><msup><mi mathvariant="double-struck">R</mi><mrow><mi>D</mi><mo>×</mo><msub><mi>d</mi><mi>h</mi></msub></mrow></msup></mrow><annotation encoding="application/x-tex">W_1,W_2\in\mathbb R^{D\times d_h}</annotation></semantics></math> 为学习投影，<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mrow><mi>p</mi><mi>o</mi><mi>s</mi></mrow></msub><mo>∈</mo><msup><mi mathvariant="double-struck">R</mi><mrow><mi>C</mi><mo>×</mo><msub><mi>d</mi><mi>h</mi></msub></mrow></msup></mrow><annotation encoding="application/x-tex">E_{pos}\in\mathbb R^{C\times d_h}</annotation></semantics></math> 为电极嵌入，<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mi>h</mi></msub></mrow><annotation encoding="application/x-tex">d_h</annotation></semantics></math> 为每头宽度。单头本例取 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mi>h</mi></msub><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">d_h=2</annotation></semantics></math>、两个投影为恒等、嵌入为零。于是打分矩阵为
 
-$$
-\begin{bmatrix}4/\sqrt2&0\\0&1/\sqrt2\end{bmatrix}
-\approx\begin{bmatrix}2.828427&0\\0&0.707107\end{bmatrix}.
-$$
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow><mo fence="true">[</mo><mtable rowspacing="0.16em" columnalign="center center" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mn>4</mn><mi mathvariant="normal">/</mi><msqrt><mn>2</mn></msqrt></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0</mn></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mn>1</mn><mi mathvariant="normal">/</mi><msqrt><mn>2</mn></msqrt></mrow></mstyle></mtd></mtr></mtable><mo fence="true">]</mo></mrow><mo>≈</mo><mrow><mo fence="true">[</mo><mtable rowspacing="0.16em" columnalign="center center" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>2.828427</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0</mn></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0.707107</mn></mstyle></mtd></mtr></mtable><mo fence="true">]</mo></mrow><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">\begin{bmatrix}4/\sqrt2&amp;0\\0&amp;1/\sqrt2\end{bmatrix} \approx\begin{bmatrix}2.828427&amp;0\\0&amp;0.707107\end{bmatrix}.</annotation></semantics></math>
 
 逐行 softmax 后，
 
-$$
-A_s\approx\begin{bmatrix}0.944193&0.055807\\0.330238&0.669762\end{bmatrix}.
-$$
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>A</mi><mi>s</mi></msub><mo>≈</mo><mrow><mo fence="true">[</mo><mtable rowspacing="0.16em" columnalign="center center" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0.944193</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0.055807</mn></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0.330238</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0.669762</mn></mstyle></mtd></mtr></mtable><mo fence="true">]</mo></mrow><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">A_s\approx\begin{bmatrix}0.944193&amp;0.055807\\0.330238&amp;0.669762\end{bmatrix}.</annotation></semantics></math>
 
-softmax 只是把一行分数变成和为 1 的权重，例如第一行的首项是 $e^{2.828427}/(e^{2.828427}+1)\approx0.944193$。
+softmax 只是把一行分数变成和为 1 的权重，例如第一行的首项是 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>e</mi><mn>2.828427</mn></msup><mi mathvariant="normal">/</mi><mo stretchy="false">(</mo><msup><mi>e</mi><mn>2.828427</mn></msup><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo><mo>≈</mo><mn>0.944193</mn></mrow><annotation encoding="application/x-tex">e^{2.828427}/(e^{2.828427}+1)\approx0.944193</annotation></semantics></math>。
 
 接着用特征范数决定电极摘要权重：
 
-$$
-\omega=\operatorname{softmax}(\lVert Y_1\rVert_2),\qquad
-s_{pool}=\sum_c\omega_c(A_sY_1)_{c,:}.
-$$
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>ω</mi><mo>=</mo><mi mathvariant="normal">softmax</mi><mo>⁡</mo><mo stretchy="false">(</mo><mo stretchy="false">∥</mo><msub><mi>Y</mi><mn>1</mn></msub><msub><mo stretchy="false">∥</mo><mn>2</mn></msub><mo stretchy="false">)</mo><mo separator="true">,</mo><mspace width="2em"/><msub><mi>s</mi><mrow><mi>p</mi><mi>o</mi><mi>o</mi><mi>l</mi></mrow></msub><mo>=</mo><munder><mo>∑</mo><mi>c</mi></munder><msub><mi>ω</mi><mi>c</mi></msub><mo stretchy="false">(</mo><msub><mi>A</mi><mi>s</mi></msub><msub><mi>Y</mi><mn>1</mn></msub><msub><mo stretchy="false">)</mo><mrow><mi>c</mi><mo separator="true">,</mo><mo>:</mo></mrow></msub><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">\omega=\operatorname{softmax}(\lVert Y_1\rVert_2),\qquad s_{pool}=\sum_c\omega_c(A_sY_1)_{c,:}.</annotation></semantics></math>
 
-本例两行范数为 2 和 1，所以 $\omega\approx(0.731059,0.268941)$。先算混合后的电极表示，再加权：
+本例两行范数为 2 和 1，所以 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ω</mi><mo>≈</mo><mo stretchy="false">(</mo><mn>0.731059</mn><mo separator="true">,</mo><mn>0.268941</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\omega\approx(0.731059,0.268941)</annotation></semantics></math>。先算混合后的电极表示，再加权：
 
-$$
-A_sY_1\approx\begin{bmatrix}1.888386&0.055807\\0.660477&0.669762\end{bmatrix},
-$$
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>A</mi><mi>s</mi></msub><msub><mi>Y</mi><mn>1</mn></msub><mo>≈</mo><mrow><mo fence="true">[</mo><mtable rowspacing="0.16em" columnalign="center center" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>1.888386</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0.055807</mn></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0.660477</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0.669762</mn></mstyle></mtd></mtr></mtable><mo fence="true">]</mo></mrow><mo separator="true">,</mo></mrow><annotation encoding="application/x-tex">A_sY_1\approx\begin{bmatrix}1.888386&amp;0.055807\\0.660477&amp;0.669762\end{bmatrix},</annotation></semantics></math>
 
-$$
-s_{pool}\approx0.731059(1.888386,0.055807)
-+0.268941(0.660477,0.669762)
-=(1.558150,0.220925).
-$$
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>s</mi><mrow><mi>p</mi><mi>o</mi><mi>o</mi><mi>l</mi></mrow></msub><mo>≈</mo><mn>0.731059</mn><mo stretchy="false">(</mo><mn>1.888386</mn><mo separator="true">,</mo><mn>0.055807</mn><mo stretchy="false">)</mo><mo>+</mo><mn>0.268941</mn><mo stretchy="false">(</mo><mn>0.660477</mn><mo separator="true">,</mo><mn>0.669762</mn><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mn>1.558150</mn><mo separator="true">,</mo><mn>0.220925</mn><mo stretchy="false">)</mo><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">s_{pool}\approx0.731059(1.888386,0.055807) +0.268941(0.660477,0.669762) =(1.558150,0.220925).</annotation></semantics></math>
 
 这个两维摘要复制到两个时间片。它已经压缩掉电极索引，不能再把第一维简单叫作电极一。[原文：PDF 第 4 页，Eq. 4–6；上述为教学计算]
 
@@ -158,90 +138,59 @@ $$
 
 余弦门控的用途，是在潜在投影上施加周期非线性：
 
-$$
-X_1=Z_tW_{t1},\qquad X'_1=X_1\odot\cos(Z_tW_\phi).
-$$
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>X</mi><mn>1</mn></msub><mo>=</mo><msub><mi>Z</mi><mi>t</mi></msub><msub><mi>W</mi><mrow><mi>t</mi><mn>1</mn></mrow></msub><mo separator="true">,</mo><mspace width="2em"/><msubsup><mi>X</mi><mn>1</mn><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msubsup><mo>=</mo><msub><mi>X</mi><mn>1</mn></msub><mo>⊙</mo><mi>cos</mi><mo>⁡</mo><mo stretchy="false">(</mo><msub><mi>Z</mi><mi>t</mi></msub><msub><mi>W</mi><mi>ϕ</mi></msub><mo stretchy="false">)</mo><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">X_1=Z_tW_{t1},\qquad X&#x27;_1=X_1\odot\cos(Z_tW_\phi).</annotation></semantics></math>
 
-取 $W_{t1}=I$，并指定
+取 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>W</mi><mrow><mi>t</mi><mn>1</mn></mrow></msub><mo>=</mo><mi>I</mi></mrow><annotation encoding="application/x-tex">W_{t1}=I</annotation></semantics></math>，并指定
 
-$$
-W_\phi=\begin{bmatrix}0&0\\0&\pi/4\end{bmatrix}.
-$$
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>W</mi><mi>ϕ</mi></msub><mo>=</mo><mrow><mo fence="true">[</mo><mtable rowspacing="0.16em" columnalign="center center" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0</mn></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mi>π</mi><mi mathvariant="normal">/</mi><mn>4</mn></mrow></mstyle></mtd></mtr></mtable><mo fence="true">]</mo></mrow><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">W_\phi=\begin{bmatrix}0&amp;0\\0&amp;\pi/4\end{bmatrix}.</annotation></semantics></math>
 
-于是两行相位分别为 $(0,\pi/2)$ 和 $(0,\pi)$，余弦门为 $(1,0)$ 和 $(1,-1)$，得到
+于是两行相位分别为 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>0</mn><mo separator="true">,</mo><mi>π</mi><mi mathvariant="normal">/</mi><mn>2</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(0,\pi/2)</annotation></semantics></math> 和 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>0</mn><mo separator="true">,</mo><mi>π</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(0,\pi)</annotation></semantics></math>，余弦门为 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>1</mn><mo separator="true">,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(1,0)</annotation></semantics></math> 和 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>1</mn><mo separator="true">,</mo><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(1,-1)</annotation></semantics></math>，得到
 
-$$
-X'_1=\begin{bmatrix}1&0\\3&-4\end{bmatrix}.
-$$
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msubsup><mi>X</mi><mn>1</mn><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msubsup><mo>=</mo><mrow><mo fence="true">[</mo><mtable rowspacing="0.16em" columnalign="center center" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>1</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0</mn></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>3</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mo>−</mo><mn>4</mn></mrow></mstyle></mtd></mtr></mtable><mo fence="true">]</mo></mrow><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">X&#x27;_1=\begin{bmatrix}1&amp;0\\3&amp;-4\end{bmatrix}.</annotation></semantics></math>
 
 它可以清零，也可以翻转符号；不是只在 0 到 1 之间选择。这里的角度来自潜在特征投影，原文没有把它校准成某个 Hz 频率的生理相位。[原文：PDF 第 4 页，Eq. 7；阅读解释]
 
 TCAM 先计算两特征维在整段时间上的关系：
 
-$$
-K_t=Z_tW_t^k,\qquad
-A_c=\operatorname{softmax}\left(\frac{(X'_1)^\top K_t}{\sqrt P}\right),\qquad
-\widetilde Z_t=X'_1A_c.
-$$
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>K</mi><mi>t</mi></msub><mo>=</mo><msub><mi>Z</mi><mi>t</mi></msub><msubsup><mi>W</mi><mi>t</mi><mi>k</mi></msubsup><mo separator="true">,</mo><mspace width="2em"/><msub><mi>A</mi><mi>c</mi></msub><mo>=</mo><mi mathvariant="normal">softmax</mi><mo>⁡</mo><mrow><mo fence="true">(</mo><mfrac><mrow><mo stretchy="false">(</mo><msubsup><mi>X</mi><mn>1</mn><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msubsup><msup><mo stretchy="false">)</mo><mi mathvariant="normal">⊤</mi></msup><msub><mi>K</mi><mi>t</mi></msub></mrow><msqrt><mi>P</mi></msqrt></mfrac><mo fence="true">)</mo></mrow><mo separator="true">,</mo><mspace width="2em"/><msub><mover accent="true"><mi>Z</mi><mo stretchy="true">~</mo></mover><mi>t</mi></msub><mo>=</mo><msubsup><mi>X</mi><mn>1</mn><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msubsup><msub><mi>A</mi><mi>c</mi></msub><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">K_t=Z_tW_t^k,\qquad A_c=\operatorname{softmax}\left(\frac{(X&#x27;_1)^\top K_t}{\sqrt P}\right),\qquad \widetilde Z_t=X&#x27;_1A_c.</annotation></semantics></math>
 
-$K_t$ 为另一套时间投影；本例取 $W_t^k=I$。则
+<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>K</mi><mi>t</mi></msub></mrow><annotation encoding="application/x-tex">K_t</annotation></semantics></math> 为另一套时间投影；本例取 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>W</mi><mi>t</mi><mi>k</mi></msubsup><mo>=</mo><mi>I</mi></mrow><annotation encoding="application/x-tex">W_t^k=I</annotation></semantics></math>。则
 
-$$
-(X'_1)^\top K_t=\begin{bmatrix}10&14\\-12&-16\end{bmatrix}.
-$$
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mo stretchy="false">(</mo><msubsup><mi>X</mi><mn>1</mn><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msubsup><msup><mo stretchy="false">)</mo><mi mathvariant="normal">⊤</mi></msup><msub><mi>K</mi><mi>t</mi></msub><mo>=</mo><mrow><mo fence="true">[</mo><mtable rowspacing="0.16em" columnalign="center center" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>10</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>14</mn></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mo>−</mo><mn>12</mn></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mo>−</mo><mn>16</mn></mrow></mstyle></mtd></mtr></mtable><mo fence="true">]</mo></mrow><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">(X&#x27;_1)^\top K_t=\begin{bmatrix}10&amp;14\\-12&amp;-16\end{bmatrix}.</annotation></semantics></math>
 
-除以 $\sqrt2$ 后逐行 softmax，可得
+除以 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><mn>2</mn></msqrt></mrow><annotation encoding="application/x-tex">\sqrt2</annotation></semantics></math> 后逐行 softmax，可得
 
-$$
-A_c\approx\begin{bmatrix}0.055807&0.944193\\0.944193&0.055807\end{bmatrix},\qquad
-\widetilde Z_t\approx\begin{bmatrix}0.055807&0.944193\\-3.609349&2.609349\end{bmatrix}.
-$$
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>A</mi><mi>c</mi></msub><mo>≈</mo><mrow><mo fence="true">[</mo><mtable rowspacing="0.16em" columnalign="center center" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0.055807</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0.944193</mn></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0.944193</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0.055807</mn></mstyle></mtd></mtr></mtable><mo fence="true">]</mo></mrow><mo separator="true">,</mo><mspace width="2em"/><msub><mover accent="true"><mi>Z</mi><mo stretchy="true">~</mo></mover><mi>t</mi></msub><mo>≈</mo><mrow><mo fence="true">[</mo><mtable rowspacing="0.16em" columnalign="center center" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0.055807</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0.944193</mn></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mo>−</mo><mn>3.609349</mn></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>2.609349</mn></mstyle></mtd></mtr></mtable><mo fence="true">]</mo></mrow><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">A_c\approx\begin{bmatrix}0.055807&amp;0.944193\\0.944193&amp;0.055807\end{bmatrix},\qquad \widetilde Z_t\approx\begin{bmatrix}0.055807&amp;0.944193\\-3.609349&amp;2.609349\end{bmatrix}.</annotation></semantics></math>
 
-例如第二行第一维，是 $3\times0.055807-4\times0.944193=-3.609349$。这一项直接说明了：**TCAM 让一个时间 token 内的特征维发生混合，它不是电极连接矩阵。**[原文：PDF 第 4 页，Eq. 8–9]
+例如第二行第一维，是 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mo>×</mo><mn>0.055807</mn><mo>−</mo><mn>4</mn><mo>×</mo><mn>0.944193</mn><mo>=</mo><mo>−</mo><mn>3.609349</mn></mrow><annotation encoding="application/x-tex">3\times0.055807-4\times0.944193=-3.609349</annotation></semantics></math>。这一项直接说明了：**TCAM 让一个时间 token 内的特征维发生混合，它不是电极连接矩阵。**[原文：PDF 第 4 页，Eq. 8–9]
 
 ### 4.3 两流整合，再进入分类头
 
 跨流整合将每个时间 token 的特征，与空间摘要逐元素相乘，然后做输出投影：
 
-$$
-O_{TSIA}=\operatorname{Concat}_{heads}(\widetilde Z_t\odot S_{exp})W_{out}.
-$$
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>O</mi><mrow><mi>T</mi><mi>S</mi><mi>I</mi><mi>A</mi></mrow></msub><mo>=</mo><msub><mrow><mi mathvariant="normal">Concat</mi><mo>⁡</mo></mrow><mrow><mi>h</mi><mi>e</mi><mi>a</mi><mi>d</mi><mi>s</mi></mrow></msub><mo stretchy="false">(</mo><msub><mover accent="true"><mi>Z</mi><mo stretchy="true">~</mo></mover><mi>t</mi></msub><mo>⊙</mo><msub><mi>S</mi><mrow><mi>e</mi><mi>x</mi><mi>p</mi></mrow></msub><mo stretchy="false">)</mo><msub><mi>W</mi><mrow><mi>o</mi><mi>u</mi><mi>t</mi></mrow></msub><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">O_{TSIA}=\operatorname{Concat}_{heads}(\widetilde Z_t\odot S_{exp})W_{out}.</annotation></semantics></math>
 
 本例单头、输出投影为恒等，结果为
 
-$$
-O_{TSIA}\approx\begin{bmatrix}
-0.055807\times1.558150&0.944193\times0.220925\\
--3.609349\times1.558150&2.609349\times0.220925
-\end{bmatrix}
-=\begin{bmatrix}0.086956&0.208596\\-5.623908&0.576470\end{bmatrix}.
-$$
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>O</mi><mrow><mi>T</mi><mi>S</mi><mi>I</mi><mi>A</mi></mrow></msub><mo>≈</mo><mrow><mo fence="true">[</mo><mtable rowspacing="0.16em" columnalign="center center" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mn>0.055807</mn><mo>×</mo><mn>1.558150</mn></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mn>0.944193</mn><mo>×</mo><mn>0.220925</mn></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mo>−</mo><mn>3.609349</mn><mo>×</mo><mn>1.558150</mn></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mn>2.609349</mn><mo>×</mo><mn>0.220925</mn></mrow></mstyle></mtd></mtr></mtable><mo fence="true">]</mo></mrow><mo>=</mo><mrow><mo fence="true">[</mo><mtable rowspacing="0.16em" columnalign="center center" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0.086956</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0.208596</mn></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mo>−</mo><mn>5.623908</mn></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0.576470</mn></mstyle></mtd></mtr></mtable><mo fence="true">]</mo></mrow><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">O_{TSIA}\approx\begin{bmatrix} 0.055807\times1.558150&amp;0.944193\times0.220925\\ -3.609349\times1.558150&amp;2.609349\times0.220925 \end{bmatrix} =\begin{bmatrix}0.086956&amp;0.208596\\-5.623908&amp;0.576470\end{bmatrix}.</annotation></semantics></math>
 
 空间摘要把第一特征维放大，第二维缩小。图 2 另外画了时间残差，正文公式没有完整展开其位置；为了手算明确，这里采用公式输出，不额外叠加残差，也不把这一选择当作官方实现。[原文：PDF 第 4–5 页，Eq. 10–11、Fig. 2]
 
 最后的池化为
 
-$$
-z_s=\sum_c w_{sp}^{(c)}Z_s^{(N,c)},\qquad
-\alpha=\operatorname{softmax}(\operatorname{MLP}_{pool}(Z_t^{(N)})),
-$$
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>z</mi><mi>s</mi></msub><mo>=</mo><munder><mo>∑</mo><mi>c</mi></munder><msubsup><mi>w</mi><mrow><mi>s</mi><mi>p</mi></mrow><mrow><mo stretchy="false">(</mo><mi>c</mi><mo stretchy="false">)</mo></mrow></msubsup><msubsup><mi>Z</mi><mi>s</mi><mrow><mo stretchy="false">(</mo><mi>N</mi><mo separator="true">,</mo><mi>c</mi><mo stretchy="false">)</mo></mrow></msubsup><mo separator="true">,</mo><mspace width="2em"/><mi>α</mi><mo>=</mo><mi mathvariant="normal">softmax</mi><mo>⁡</mo><mo stretchy="false">(</mo><msub><mrow><mi mathvariant="normal">MLP</mi><mo>⁡</mo></mrow><mrow><mi>p</mi><mi>o</mi><mi>o</mi><mi>l</mi></mrow></msub><mo stretchy="false">(</mo><msubsup><mi>Z</mi><mi>t</mi><mrow><mo stretchy="false">(</mo><mi>N</mi><mo stretchy="false">)</mo></mrow></msubsup><mo stretchy="false">)</mo><mo stretchy="false">)</mo><mo separator="true">,</mo></mrow><annotation encoding="application/x-tex">z_s=\sum_c w_{sp}^{(c)}Z_s^{(N,c)},\qquad \alpha=\operatorname{softmax}(\operatorname{MLP}_{pool}(Z_t^{(N)})),</annotation></semantics></math>
 
-$$
-z_t=\sum_p\alpha_p Z_t^{(N,p)},\qquad u=[z_t;z_s].
-$$
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>z</mi><mi>t</mi></msub><mo>=</mo><munder><mo>∑</mo><mi>p</mi></munder><msub><mi>α</mi><mi>p</mi></msub><msubsup><mi>Z</mi><mi>t</mi><mrow><mo stretchy="false">(</mo><mi>N</mi><mo separator="true">,</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></msubsup><mo separator="true">,</mo><mspace width="2em"/><mi>u</mi><mo>=</mo><mo stretchy="false">[</mo><msub><mi>z</mi><mi>t</mi></msub><mo separator="true">;</mo><msub><mi>z</mi><mi>s</mi></msub><mo stretchy="false">]</mo><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">z_t=\sum_p\alpha_p Z_t^{(N,p)},\qquad u=[z_t;z_s].</annotation></semantics></math>
 
-这里 $N$ 是层数，$w_{sp}$ 是静态通道参数，$\alpha$ 是当前样本的时间权重。教学中用单层输出，取 $w_{sp}=(0.25,0.75)$，得 $z_s=(0.5,0.75)$；时间池化 MLP 取两行第二维为分数，即 $(0.208596,0.576470)$，得到 $\alpha\approx(0.409055,0.590945)$。加权后
+这里 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math> 是层数，<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>w</mi><mrow><mi>s</mi><mi>p</mi></mrow></msub></mrow><annotation encoding="application/x-tex">w_{sp}</annotation></semantics></math> 是静态通道参数，<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi></mrow><annotation encoding="application/x-tex">\alpha</annotation></semantics></math> 是当前样本的时间权重。教学中用单层输出，取 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>w</mi><mrow><mi>s</mi><mi>p</mi></mrow></msub><mo>=</mo><mo stretchy="false">(</mo><mn>0.25</mn><mo separator="true">,</mo><mn>0.75</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">w_{sp}=(0.25,0.75)</annotation></semantics></math>，得 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>z</mi><mi>s</mi></msub><mo>=</mo><mo stretchy="false">(</mo><mn>0.5</mn><mo separator="true">,</mo><mn>0.75</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">z_s=(0.5,0.75)</annotation></semantics></math>；时间池化 MLP 取两行第二维为分数，即 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>0.208596</mn><mo separator="true">,</mo><mn>0.576470</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(0.208596,0.576470)</annotation></semantics></math>，得到 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>≈</mo><mo stretchy="false">(</mo><mn>0.409055</mn><mo separator="true">,</mo><mn>0.590945</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\alpha\approx(0.409055,0.590945)</annotation></semantics></math>。加权后
 
-$$
-z_t\approx(-3.287852,0.425990),\qquad
-u\approx(-3.287852,0.425990,0.5,0.75).
-$$
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>z</mi><mi>t</mi></msub><mo>≈</mo><mo stretchy="false">(</mo><mo>−</mo><mn>3.287852</mn><mo separator="true">,</mo><mn>0.425990</mn><mo stretchy="false">)</mo><mo separator="true">,</mo><mspace width="2em"/><mi>u</mi><mo>≈</mo><mo stretchy="false">(</mo><mo>−</mo><mn>3.287852</mn><mo separator="true">,</mo><mn>0.425990</mn><mo separator="true">,</mo><mn>0.5</mn><mo separator="true">,</mo><mn>0.75</mn><mo stretchy="false">)</mo><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">z_t\approx(-3.287852,0.425990),\qquad u\approx(-3.287852,0.425990,0.5,0.75).</annotation></semantics></math>
 
-若教学分类器两个 logit 为 $u_1+u_3$ 和 $u_2+u_4$，就是 $(−2.787852,1.175990)$；softmax 后类别概率为 $(0.018636,0.981364)$。真实类别若是第二类，交叉熵为 $-\log(0.981364)\approx0.018812$。到这里，一次从两流 token 到类别预测的计算就走完了。[原文：PDF 第 6 页，Eq. 12–15；数字均为教学计算]
+若教学分类器两个 logit 为 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>u</mi><mn>1</mn></msub><mo>+</mo><msub><mi>u</mi><mn>3</mn></msub></mrow><annotation encoding="application/x-tex">u_1+u_3</annotation></semantics></math> 和 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>u</mi><mn>2</mn></msub><mo>+</mo><msub><mi>u</mi><mn>4</mn></msub></mrow><annotation encoding="application/x-tex">u_2+u_4</annotation></semantics></math>，就是 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mo>−</mo><mn>2.787852</mn><mo separator="true">,</mo><mn>1.175990</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(−2.787852,1.175990)</annotation></semantics></math>；softmax 后类别概率为 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>0.018636</mn><mo separator="true">,</mo><mn>0.981364</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(0.018636,0.981364)</annotation></semantics></math>。真实类别若是第二类，交叉熵为 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>−</mo><mi>log</mi><mo>⁡</mo><mo stretchy="false">(</mo><mn>0.981364</mn><mo stretchy="false">)</mo><mo>≈</mo><mn>0.018812</mn></mrow><annotation encoding="application/x-tex">-\log(0.981364)\approx0.018812</annotation></semantics></math>。到这里，一次从两流 token 到类别预测的计算就走完了。[原文：PDF 第 6 页，Eq. 12–15；数字均为教学计算]
 
 ### 这个例子说明什么，又没有说明什么
 
-它说明空间流以什么形式影响时间流，也说明 SACM、TCAM 和最终融合头的权重各自指向什么。它没有说明训练一定能找到有用的权重，也没有说明这种运算比别的结构更好；这些必须由下面的实验判断。更多 tokenizer、残差、梯度和时间置换的手算细节，见 [X-Ray 第四、五部分](<./refs/paper-cards/lidsn/LI-DSN-paper-xray.md>)。
+它说明空间流以什么形式影响时间流，也说明 SACM、TCAM 和最终融合头的权重各自指向什么。它没有说明训练一定能找到有用的权重，也没有说明这种运算比别的结构更好；这些必须由下面的实验判断。更多 tokenizer、残差、梯度和时间置换的手算细节，见 [X-Ray 第四、五部分](<LI-DSN-paper-xray.md>)。
 
 <a id="reading-section-05"></a>
 
@@ -301,9 +250,9 @@ Table V 的完整模型数值与 LOSO 主表一致，但其表题和 V-B 未独�
 
 ### 5.4 图形和计算量应当怎样读
 
-![Fig. 6：注意力矩阵与交互前后特征](<./refs/paper-cards/lidsn/assets/fig6.png>)
+![Fig. 6：注意力矩阵与交互前后特征](<assets/fig6.png>)
 
-[打开原图，放大查看](<./refs/paper-cards/lidsn/assets/fig6.png>)
+[打开原图，放大查看](<assets/fig6.png>)
 
 图 6，PDF 第 11 页。上排 8×8 的 SACM 对应电极 token，4×4 的 TCAM 对应潜在维；不能因为坐标都写 channel 就赋予两者相同脑区含义。下排是交互前后矩阵，前后颜色范围不同，近似分别为 0.05–0.165 和 0.07–0.29；同一种颜色不代表同一个幅值。
 
@@ -358,20 +307,20 @@ Table V 的完整模型数值与 LOSO 主表一致，但其表题和 V-B 未独�
 
 | 阶段 | 实际文件 | 本轮状态 | 覆盖与核对 |
 |---|---|---|---|
-| Reader | [LI-DSN-paper.md](<./refs/paper-cards/lidsn/LI-DSN-paper.md>)、[source map](<./refs/paper-cards/lidsn/source_map.json>) | updated | 将原页级概述补全为正文段落/跨页片段双语对照；保留旧页锚点及 7 图 5 表；修前版本已备份 |
-| Card | [LI-DSN-paper-card.md](<./refs/paper-cards/lidsn/LI-DSN-paper-card.md>) | reused | 01–16 节、原 `source_bundle.json` 与原审计报告保留；关键结果按 PDF 回查 |
-| X-Ray | [LI-DSN-paper-xray.md](<./refs/paper-cards/lidsn/LI-DSN-paper-xray.md>) | reused | 完整设计解释与小算例；本笔记沿用已复算的教学链，未重写长文 |
+| Reader | [LI-DSN-paper.md](<LI-DSN-paper.md>)、[source map](<source_map.json>) | updated | 将原页级概述补全为正文段落/跨页片段双语对照；保留旧页锚点及 7 图 5 表；修前版本已备份 |
+| Card | [LI-DSN-paper-card.md](<LI-DSN-paper-card.md>) | reused | 01–16 节、原 `source_bundle.json` 与原审计报告保留；关键结果按 PDF 回查 |
+| X-Ray | [LI-DSN-paper-xray.md](<LI-DSN-paper-xray.md>) | reused | 完整设计解释与小算例；本笔记沿用已复算的教学链，未重写长文 |
 | Note | 本文件 `LI-DSN-note.md` | generated | 按问题、机制、例子、证据和边界重新组织；为本版本提供独立可读的中文笔记 |
 | DeepXiv | 未生成新文件 | skipped | 原文完整具备，无需再检索摘要或定位章节 |
 
-Reader 修前的页级概述不冒充完整译文。本轮补全历史及旧/新哈希记录在 [本轮来源记录](<./refs/paper-cards/lidsn/_work/note/source-inventory.json>)；旧稿位于同目录 `history/20261029-paper-note-reader-repair/`。保留 `S001–S014` 页锚点，细段落使用新 `R` 系列 ID，未改变旧锚点对应的 PDF 页。引用公式与表格时仍以原文页序和编号为准。
+Reader 修前的页级概述不冒充完整译文。本轮补全历史及旧/新哈希记录在 [本轮来源记录](<_work/note/source-inventory.json>)；旧稿位于同目录 `history/20261029-paper-note-reader-repair/`。保留 `S001–S014` 页锚点，细段落使用新 `R` 系列 ID，未改变旧锚点对应的 PDF 页。引用公式与表格时仍以原文页序和编号为准。
 
 ### 实际适配和验证边界
 
 - `wait-what-adapted: 中文重述、背景补全、术语核对；原 Skill 未被自动调用`。本轮没有发现项目相关 GLOSSARY 文件，沿用 Reader 的规范术语；区分电极通道与潜在特征通道、动态空间权重与静态末端权重。
 - Reader/Card 的旧 manifest 所指共享术语文件缺失，本轮只读适配到全局 `nature-shared/core/terminology-ledger.md`，确认其为 Terminology Ledger，未修改 manifest 或全局 Skill。
 - Card 的原审计结果是结构检查通过（14 项、0 错误、0 警告）。其自动图表库存为空，因此 7 图 5 表的实际覆盖依靠人工盘点；它不构成独立科学审查。
-- 本轮核对原文身份、主要数值及条件、教学算术、source map、公式语法、图片和本地链接。精确机器检查结果见 [本轮 QA](<./refs/paper-cards/lidsn/_work/note/QA.md>)。X-Ray 阶段的 Edge 预览启动失败不追记为通过；本轮若未取得视口渲染，也只报告静态解析和资源检查。
+- 本轮核对原文身份、主要数值及条件、教学算术、source map、公式语法、图片和本地链接。精确机器检查结果见 [本轮 QA](<_work/note/QA.md>)。X-Ray 阶段的 Edge 预览启动失败不追记为通过；本轮若未取得视口渲染，也只报告静态解析和资源检查。
 - 未运行外部查新、正式外审、训练或项目状态变更。笔记的完成范围是本 v1 材料的阅读与综合；原文未报告的事项仍按第 6 节保留。
 
 [返回章节导航](#reading-top)

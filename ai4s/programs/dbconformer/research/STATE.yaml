@@ -1,6 +1,6 @@
 {
   "active_operation": null,
-  "active_research": "source_geometry_r1",
+  "active_research": "closure_phase_r1",
   "active_round": null,
   "active_run": null,
   "active_run_history": [
@@ -7730,6 +7730,95 @@
       },
       "closing_status": "COMPLETE_MAX_ROUNDS",
       "closure_reason": "User authorized exactly four source-only encoder fits after qualification; SGP direct optimization remains stopped."
+    },
+    {
+      "campaign_id": "dbconformer-source-geometry-r1-campaign",
+      "closed_at": "2026-11-17T15:07:33.947637+00:00",
+      "closing_decision": {
+        "automatic_continuation": false,
+        "claim_release": false,
+        "decision": "INCONCLUSIVE",
+        "interpretation": "descriptive_noise_relative_investment_gate_only_no_significance_no_unbiased_estimate_no_utility_no_claim",
+        "next_training_authorized": false,
+        "no_paper_claim": true,
+        "round_id": "dbconformer-source-geometry-r1",
+        "run_action": "STOP"
+      },
+      "closing_round": "dbconformer-source-geometry-r1",
+      "closing_run": {
+        "analysis_receipt_sha256": "3c218016cf23912cd52294c04fcde5d3d5ea6ab01d68cee5ea631ac586e4e8de",
+        "artifact_manifest_sha256": "bdbb1203dd07e3340c639382ff422e7806288b489d5ba1ed7fa47897f3ed0d56",
+        "contract_sha256": "fb7a6bee05afc75997d53233a9b70e4b7ac87fc14c608742cc9ff043e6bef74c",
+        "full_payload_local": false,
+        "intake_path": "results/logs/remote/2026-11-04_dbconformer_source_geometry_r1_lab10-full-w1",
+        "intake_scope": "analysis_v1",
+        "run_id": "2026-11-04_dbconformer_source_geometry_r1_lab10-full-w1",
+        "run_status": "complete",
+        "transaction_id": "dbconformer-source-geometry-r1-tx",
+        "transfer_bytes": 2891722,
+        "verified": true,
+        "verified_at": null
+      },
+      "closing_status": "COMPLETE_MAX_ROUNDS",
+      "closure_reason": "User authorized 16h closure-phase 64-fit screen and waived this round external review; GPU TECH remains mandatory."
+    },
+    {
+      "campaign_id": "dbconformer-closure-phase-r1-campaign",
+      "closed_at": "2026-11-18T08:37:07.039308+00:00",
+      "closing_decision": {
+        "decision": "NO_SIGNAL",
+        "reason": "STOP_FIXED_SCREEN: failed individual-risk and both matched structure comparisons.",
+        "role": "exact_negative_boundary",
+        "round_id": "dbconformer-closure-edge-wd0"
+      },
+      "closing_round": "dbconformer-closure-edge-wd0",
+      "closing_run": {
+        "analysis_receipt_sha256": "b5fba9e8fd6d9b3e16bb664402fbea55e8d73a7f3d17be6edc8fc9ba12974bad",
+        "artifact_manifest_sha256": "ec887cf7b35b2f20649c7255e3d4204c13a3f8d6eb26a4e1dc6cbad03c33b445",
+        "contract_sha256": "3f5f082822cc7318772365a95137cd0313de5c0921eae4f76cac824ca685b8f4",
+        "full_payload_local": false,
+        "intake_path": "results/logs/remote/2026-11-18_dbconformer_closure_edge_wd0_lab10-full-w1",
+        "intake_scope": "analysis_v1",
+        "run_id": "2026-11-18_dbconformer_closure_edge_wd0_lab10-full-w1",
+        "run_status": "complete",
+        "transaction_id": "dbconformer-closure-edge-wd0-tx",
+        "transfer_bytes": 555153,
+        "verified": true,
+        "verified_at": null
+      },
+      "closing_status": "COMPLETE_MAX_ROUNDS",
+      "closure_reason": "User-confirmed Wang MI4 four fits and one paired score under 4h"
+    },
+    {
+      "campaign_id": "dbconformer-wang-late-r1-campaign",
+      "closed_at": "2026-11-18T17:16:41.654235+00:00",
+      "closing_decision": {
+        "decision": "EVALUATION_COMPLETE",
+        "evaluation_plan": {
+          "path": "ai4s/programs/dbconformer/research/closure_late_validation_20261118/WANG_LATE_EVALUATION_PLAN.json",
+          "scope_id": "wang-mi4-calibration-2a-source",
+          "sha256": "a1ef9fa00df41813c8d914f3e784be59b148eed2aeadf4f117deb11e2975353f"
+        },
+        "reason": "STOP_WANG_CROSS_DAY_RISK",
+        "round_id": "dbconformer-wang-late-r1"
+      },
+      "closing_round": "dbconformer-wang-late-r1",
+      "closing_run": {
+        "analysis_receipt_sha256": "19f8773b2701d147f9d0e3762bd86909cf66ceb17b2ca71015dea6b4d2c16e0c",
+        "artifact_manifest_sha256": "d94ce343a56f63af5ca9be9fc4a2910eaaa7d6c6e4abb0c22a46657525624899",
+        "contract_sha256": "9e12143f7b71ea01542714f1dcc3e9e9db78b5e470d506668b89398e7e0860f8",
+        "full_payload_local": false,
+        "intake_path": "results/logs/remote/2026-11-18_dbconformer_wang_late_r1_lab10-full-w1",
+        "intake_scope": "analysis_v1",
+        "run_id": "2026-11-18_dbconformer_wang_late_r1_lab10-full-w1",
+        "run_status": "complete",
+        "transaction_id": "dbconformer-wang-late-r1-tx",
+        "transfer_bytes": 3147152,
+        "verified": true,
+        "verified_at": null
+      },
+      "closing_status": "COMPLETE_MAX_ROUNDS",
+      "closure_reason": "User authorized exact 72 source fits and 22-hour cumulative cap; target scoring remains locked."
     }
   ],
   "bounded_recovery": {
@@ -7821,11 +7910,7 @@
     "allowed_transitions": [
       "SCREEN_NEW"
     ],
-    "authorization_reason": "User authorized exactly four source-only encoder fits after qualification; SGP direct optimization remains stopped.",
-    "campaign_id": "dbconformer-source-geometry-r1-campaign",
-    "continuation_policy_version": "evidence_to_design_v1",
-    "decision_policy": "stop_at_positive",
-    "execution_authorization": {
+    "archived_execution_authorization": {
       "allowed_operations": [
         "upload",
         "launch",
@@ -7836,45 +7921,64 @@
       "allowed_transitions": [
         "SCREEN_NEW"
       ],
-      "authorization_ref": "ai4s/programs/dbconformer/research/source_geometry_r1/EXECUTION_AUTHORIZATION.md",
-      "campaign_id": "dbconformer-source-geometry-r1-campaign",
+      "authorization_ref": "ai4s/programs/dbconformer/research/gahst_pair_d0_20261118/GAHST_SCIENCE_AUTHORIZATION.md",
+      "campaign_id": "dbconformer-gahst-source-r1-campaign",
       "executor_id": "lab10",
-      "recorded_at": "2026-11-04T15:56:01.659586+00:00",
+      "recorded_at": "2026-11-18T17:17:20.405115+00:00",
       "research_scope": {
         "allow_new_module": false,
         "allowed_module_ids": [
-          "CE-only-class-geometry-descriptor-v1"
+          "gahst-tied-anchor-two-five-lead"
         ],
         "allowed_stages": [
-          "source_geometry_identifiability"
+          "gahst_source_fitting"
         ],
-        "data_scope_id": "bnci2014001-cue0_4s-source1_8",
-        "question_id": "source-session-class-geometry-identifiability"
+        "data_scope_id": "bnci2014001-source-loso-hands-cue4",
+        "question_id": "dbconformer-gahst-source-r1"
       },
-      "source_sha256": "611f0f8afe0bffcf6e36983617645850eb62c21c9e2d11d77bdb6d6640822237"
+      "source_sha256": "b68c8a8febb3245d66c30d0c2c72806b8cf7bc0e0ffd1cdbbd5a3e96bddf0cef"
     },
-    "governance_chain_id": "dbconformer-transaction-v3.3",
+    "authorization_reason": "User authorized exact 72 source fits and 22-hour cumulative cap; target scoring remains locked.",
+    "campaign_id": "dbconformer-gahst-source-r1-campaign",
+    "closed_at": "2026-11-19T10:42:06.846103+00:00",
+    "continuation_policy_version": "evidence_to_design_v1",
+    "decision_policy": "stop_at_positive",
+    "execution_authorization": null,
+    "governance_chain_id": "dbconformer-transaction-v4.0",
     "invalid_behavior": "fail_closed_without_advancing",
     "positive_signal_behavior": "pause_for_human_review",
     "purpose": "user-authorized bounded AI4S campaign",
     "queue_accounting": {
-      "2026-11-04_dbconformer_source_geometry_r1_lab10-full-w1": {
-        "contract_sha256": "fb7a6bee05afc75997d53233a9b70e4b7ac87fc14c608742cc9ff043e6bef74c",
-        "queue_seconds": 5.630229949951172,
-        "run_id": "2026-11-04_dbconformer_source_geometry_r1_lab10-full-w1",
-        "transaction_id": "dbconformer-source-geometry-r1-tx"
+      "2026-11-19_dbconformer_gahst_source_r1_lab10-full-w1": {
+        "contract_sha256": "43bcb6fac53839c4018f792fc843a45cdc49c9e37a8f3f244f75433d26a4f55b",
+        "queue_seconds": 1.604321002960205,
+        "run_id": "2026-11-19_dbconformer_gahst_source_r1_lab10-full-w1",
+        "transaction_id": "dbconformer-gahst-source-r1-tx"
+      },
+      "2026-11-19_dbconformer_gahst_source_r1_tracefix1_lab10-full-w1": {
+        "contract_sha256": "5978af3273802aeb45214807fac660ed6a8bb64c44111684c56a6aef7509f4a6",
+        "queue_seconds": 0.0,
+        "run_id": "2026-11-19_dbconformer_gahst_source_r1_tracefix1_lab10-full-w1",
+        "transaction_id": "dbconformer-gahst-source-r1-tracefix1-tx"
+      },
+      "2026-11-19_dbconformer_gahst_source_r1_tracefix3_lab10-full-w1": {
+        "contract_sha256": "18c9454478b3fdf2472e3dbf9c11f4ccf8a5f4479daf8f235eaecd3de1ef8e01",
+        "queue_seconds": 0.8026297092437744,
+        "run_id": "2026-11-19_dbconformer_gahst_source_r1_tracefix3_lab10-full-w1",
+        "transaction_id": "dbconformer-gahst-source-r1-tracefix3-tx"
       }
     },
     "round_decisions": [
       {
-        "decision": "INCONCLUSIVE",
-        "decision_record": "ai4s/programs/dbconformer/research/dbconformer-source-geometry-r1_decision.yaml",
-        "evidence_id": "AI4S-DBCONFORMER-dbconformer-source-geometry-r1",
-        "recorded_at": "2026-11-05T11:39:27.618042+00:00",
-        "round_id": "dbconformer-source-geometry-r1"
+        "decision": "STOP_NO_PROMOTION",
+        "decision_record": "ai4s/programs/dbconformer/research/dbconformer-gahst-source-r1-tracefix3_decision.yaml",
+        "evidence_id": "DBCONFORMER-GAHST-R1-ARCHIVED-20261119",
+        "recorded_at": "2026-11-19T10:42:06.846103+00:00",
+        "round_id": "dbconformer-gahst-source-r1-tracefix3"
       }
     ],
-    "started_at": "2026-11-04T15:55:51.329902+00:00"
+    "started_at": "2026-11-18T17:16:41.654235+00:00",
+    "status": "CLOSED_BY_USER"
   },
   "closure_budget_accounting": {
     "accounted_hours": 82.67377071914012,
@@ -7889,6 +7993,152 @@
     "verified_queue_excluded_hours": 16.871274032526546,
     "verified_stopped_excluded_hours": 0.0
   },
+  "closure_edge_wd0_revisions": [
+    {
+      "budget_at_registration": {
+        "allowed": true,
+        "blockers": [],
+        "estimate_basis": "frozen_transaction_timeout",
+        "estimate_note": "frozen timeout ceiling is a conservative upper bound, not measured runtime",
+        "excluded": {
+          "queue_hours": 0.004,
+          "verified_stopped_hours": 0.0
+        },
+        "excluded_hours": 0.004,
+        "expected_training_hours": 6.0,
+        "reason": "fits remaining budget",
+        "remaining_hours": 11.854,
+        "shortfall_hours": 0.0,
+        "spent_hours": 12.146,
+        "total_hours": 24.0
+      },
+      "contract": "ai4s/programs/dbconformer/research/dbconformer-closure-edge-wd0.yaml",
+      "prior_authorization": {
+        "allowed_operations": [
+          "upload",
+          "launch",
+          "probe",
+          "fetch",
+          "intake"
+        ],
+        "allowed_transitions": [
+          "SCREEN_NEW"
+        ],
+        "authorization_ref": "ai4s/programs/dbconformer/research/closure_phase_measurability_20261117/EXECUTION_AUTHORIZATION.md",
+        "campaign_id": "dbconformer-closure-phase-r1-campaign",
+        "executor_id": "lab10",
+        "recorded_at": "2026-11-17T15:07:38.069512+00:00",
+        "research_scope": {
+          "allow_new_module": false,
+          "allowed_module_ids": [
+            "closure-phase-early-late-complex-edge-v1"
+          ],
+          "allowed_stages": [
+            "closure_phase_development_screen"
+          ],
+          "data_scope_id": "bnci2014001-uep-a02t-a09t-runwise-validation",
+          "question_id": "dbconformer-electrode-closing-phase-writeback"
+        },
+        "source_sha256": "c2a4ff4c8e28b3c8d11e17ebaee61c26b4d991e0ab3f1d6adac12cf480771de9"
+      },
+      "prior_invalid_decision": {
+        "decision": "INVALID",
+        "reason": "engineering transaction failure recorded from metadata-only forensic intake",
+        "role": "invalid_non_scientific_record",
+        "round_id": "dbconformer-closure-phase-r1"
+      },
+      "reuse_48": {
+        "path": "ai4s/programs/dbconformer/research/closure_edge_wd0_20261118/REUSE_48.json",
+        "sha256": "fe4649a352852e59725cdd7a5c7e629a2e649ccc90859743ba3641a3f246f066"
+      },
+      "sha256": "3f5f082822cc7318772365a95137cd0313de5c0921eae4f76cac824ca685b8f4"
+    }
+  ],
+  "closure_phase_publisher_recoveries": [
+    {
+      "authorization": "User confirmed repair and cumulative 24 hours; original campaign and accounting retained.",
+      "science_started": 0,
+      "source_ledger": {
+        "contract_sha256": "fcb7a00de773c1054b5e212db919f89c344ae6517c4c6b9fdcd6c6968c34bdf7",
+        "nodes": {
+          "smoke": {
+            "completed_at": 1794928878.8919234,
+            "reason": "node failed exit=1",
+            "started_at": 1794928234.6054173,
+            "status": "FAILED"
+          }
+        },
+        "run_id": "2026-11-17_dbconformer_closure_phase_r1_lab10-full-w1",
+        "started_at": 1794928234.6051178,
+        "timing": {
+          "contract_sha256": "fcb7a00de773c1054b5e212db919f89c344ae6517c4c6b9fdcd6c6968c34bdf7",
+          "execution_seconds": 75.59247136116028,
+          "queue_seconds": 568.69433426857,
+          "queue_time_policy": "exclude_resource_wait",
+          "run_id": "2026-11-17_dbconformer_closure_phase_r1_lab10-full-w1",
+          "transaction_id": "dbconformer-closure-phase-r1-tx",
+          "waiting_for_resources": false,
+          "wall_seconds": 644.2868056297302
+        },
+        "transaction_id": "dbconformer-closure-phase-r1-tx"
+      },
+      "source_ledger_sha256": "8148bd72896e1b7ec5cad2f2b5e80fa8987e00eee93b8740f613aec36974ed89",
+      "source_run": {
+        "bundle_id": "2026-11-17_dbconformer_closure_phase_r1_bundle_v4",
+        "dispatch_status": "REMOTE_ACCEPTED",
+        "estimated_training_hours": 12.0,
+        "execution_mode": "user_managed",
+        "executor_id": "lab10",
+        "planned_units": 68,
+        "recorded_at": "2026-11-17T15:10:13.952500+00:00",
+        "round_id": "dbconformer-closure-phase-r1",
+        "run_prefix": "2026-11-17_dbconformer_closure_phase_r1_lab10",
+        "transaction_operations": [
+          {
+            "operation": "upload",
+            "recorded_at": "2026-11-17T15:10:33.338756+00:00",
+            "result": {
+              "action": "UPLOADED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-17_dbconformer_closure_phase_r1_lab10-full-w1"
+            }
+          },
+          {
+            "operation": "launch",
+            "recorded_at": "2026-11-17T15:10:36.740347+00:00",
+            "result": {
+              "action": "SUBMISSION_SENT_NOT_VERIFIED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-17_dbconformer_closure_phase_r1_lab10-full-w1"
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-17T15:10:51.473753+00:00",
+            "result": {
+              "action": "WAIT_FOR_RESOURCES",
+              "node_id": "smoke",
+              "run_id": "2026-11-17_dbconformer_closure_phase_r1_lab10-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "fcb7a00de773c1054b5e212db919f89c344ae6517c4c6b9fdcd6c6968c34bdf7",
+                "execution_seconds": 0.976952075958252,
+                "queue_seconds": 12.779696702957153,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-17_dbconformer_closure_phase_r1_lab10-full-w1",
+                "transaction_id": "dbconformer-closure-phase-r1-tx",
+                "waiting_for_resources": true,
+                "wall_seconds": 13.756648778915405
+              }
+            }
+          }
+        ]
+      },
+      "successor_contract_sha256": "e8219248faa3104667e6f259b74f046bd1171a3c6bd1fc862fcb15315204e95b",
+      "successor_run_id": "2026-11-18_dbconformer_closure_phase_r1_publisherfix_lab10-full-w1",
+      "tech_reused": 4
+    }
+  ],
   "completed_rounds": [
     {
       "decision": {
@@ -17925,6 +18175,302 @@
           }
         ]
       }
+    },
+    {
+      "decision": {
+        "decision": "NO_SIGNAL",
+        "reason": "STOP_FIXED_SCREEN: failed individual-risk and both matched structure comparisons.",
+        "role": "exact_negative_boundary",
+        "round_id": "dbconformer-closure-edge-wd0"
+      },
+      "decision_record": "ai4s/programs/dbconformer/research/dbconformer-closure-edge-wd0_decision.yaml",
+      "evidence_id": "AI4S-DBCONFORMER-dbconformer-closure-edge-wd0",
+      "round_id": "dbconformer-closure-edge-wd0",
+      "run": {
+        "bundle_id": "2026-11-18_dbconformer_closure_edge_wd0_bundle",
+        "dispatch_status": "REMOTE_ACCEPTED",
+        "estimated_training_hours": 6.0,
+        "execution_mode": "user_managed",
+        "executor_id": "lab10",
+        "planned_units": 17,
+        "recorded_at": "2026-11-18T03:16:36.832973+00:00",
+        "round_id": "dbconformer-closure-edge-wd0",
+        "run_prefix": "2026-11-18_dbconformer_closure_edge_wd0_lab10",
+        "transaction_operations": [
+          {
+            "operation": "upload",
+            "recorded_at": "2026-11-18T03:16:55.984095+00:00",
+            "result": {
+              "action": "UPLOADED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-18_dbconformer_closure_edge_wd0_lab10-full-w1"
+            }
+          },
+          {
+            "operation": "launch",
+            "recorded_at": "2026-11-18T03:16:58.381411+00:00",
+            "result": {
+              "action": "SUBMISSION_SENT_NOT_VERIFIED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-18_dbconformer_closure_edge_wd0_lab10-full-w1"
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-18T03:17:34.512455+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "screen",
+              "run_id": "2026-11-18_dbconformer_closure_edge_wd0_lab10-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "3f5f082822cc7318772365a95137cd0313de5c0921eae4f76cac824ca685b8f4",
+                "execution_seconds": 32.77297353744507,
+                "queue_seconds": 2.737109899520874,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-18_dbconformer_closure_edge_wd0_lab10-full-w1",
+                "transaction_id": "dbconformer-closure-edge-wd0-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 35.51008343696594
+              }
+            }
+          },
+          {
+            "operation": "fetch",
+            "recorded_at": "2026-11-18T04:47:35.712062+00:00",
+            "result": {
+              "analysis_receipt_sha256": "b5fba9e8fd6d9b3e16bb664402fbea55e8d73a7f3d17be6edc8fc9ba12974bad",
+              "artifact_manifest_sha256": "ec887cf7b35b2f20649c7255e3d4204c13a3f8d6eb26a4e1dc6cbad03c33b445",
+              "contract_sha256": "3f5f082822cc7318772365a95137cd0313de5c0921eae4f76cac824ca685b8f4",
+              "full_payload_local": false,
+              "intake_scope": "analysis_v1",
+              "run_id": "2026-11-18_dbconformer_closure_edge_wd0_lab10-full-w1",
+              "transaction_id": "dbconformer-closure-edge-wd0-tx",
+              "transfer_bytes": 555153,
+              "verified": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "decision": {
+        "decision": "EVALUATION_COMPLETE",
+        "evaluation_plan": {
+          "path": "ai4s/programs/dbconformer/research/closure_late_validation_20261118/WANG_LATE_EVALUATION_PLAN.json",
+          "scope_id": "wang-mi4-calibration-2a-source",
+          "sha256": "a1ef9fa00df41813c8d914f3e784be59b148eed2aeadf4f117deb11e2975353f"
+        },
+        "reason": "STOP_WANG_CROSS_DAY_RISK",
+        "round_id": "dbconformer-wang-late-r1"
+      },
+      "decision_record": "ai4s/programs/dbconformer/research/dbconformer-wang-late-r1_decision.yaml",
+      "evidence_id": "AI4S-DBCONFORMER-dbconformer-wang-late-r1",
+      "round_id": "dbconformer-wang-late-r1",
+      "run": {
+        "bundle_id": "2026-11-18_dbconformer_wang_late_r1_bundle",
+        "dispatch_status": "REMOTE_ACCEPTED",
+        "estimated_training_hours": 2.333,
+        "execution_mode": "user_managed",
+        "executor_id": "lab10",
+        "planned_units": 62,
+        "recorded_at": "2026-11-18T08:40:08.399057+00:00",
+        "round_id": "dbconformer-wang-late-r1",
+        "run_prefix": "2026-11-18_dbconformer_wang_late_r1_lab10",
+        "transaction_operations": [
+          {
+            "operation": "upload",
+            "recorded_at": "2026-11-18T08:43:02.569526+00:00",
+            "result": {
+              "action": "UPLOADED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-18_dbconformer_wang_late_r1_lab10-full-w1"
+            }
+          },
+          {
+            "operation": "launch",
+            "recorded_at": "2026-11-18T08:43:04.556744+00:00",
+            "result": {
+              "action": "SUBMISSION_SENT_NOT_VERIFIED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-18_dbconformer_wang_late_r1_lab10-full-w1"
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-18T08:43:30.160604+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "screen",
+              "run_id": "2026-11-18_dbconformer_wang_late_r1_lab10-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "9e12143f7b71ea01542714f1dcc3e9e9db78b5e470d506668b89398e7e0860f8",
+                "execution_seconds": 23.19039487838745,
+                "queue_seconds": 1.6494181156158447,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-18_dbconformer_wang_late_r1_lab10-full-w1",
+                "transaction_id": "dbconformer-wang-late-r1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 24.839812994003296
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-18T08:57:51.241137+00:00",
+            "result": {
+              "action": "FETCH_VERIFY_INTAKE",
+              "run_id": "2026-11-18_dbconformer_wang_late_r1_lab10-full-w1",
+              "scientific_stop_boundary": "NEXT_SCIENTIFIC_DECISION",
+              "timing": {
+                "contract_sha256": "9e12143f7b71ea01542714f1dcc3e9e9db78b5e470d506668b89398e7e0860f8",
+                "execution_seconds": 864.3748939037323,
+                "queue_seconds": 1.6494181156158447,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-18_dbconformer_wang_late_r1_lab10-full-w1",
+                "transaction_id": "dbconformer-wang-late-r1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 866.0243120193481
+              }
+            }
+          },
+          {
+            "operation": "fetch",
+            "recorded_at": "2026-11-18T08:57:56.752357+00:00",
+            "result": {
+              "analysis_receipt_sha256": "19f8773b2701d147f9d0e3762bd86909cf66ceb17b2ca71015dea6b4d2c16e0c",
+              "artifact_manifest_sha256": "d94ce343a56f63af5ca9be9fc4a2910eaaa7d6c6e4abb0c22a46657525624899",
+              "contract_sha256": "9e12143f7b71ea01542714f1dcc3e9e9db78b5e470d506668b89398e7e0860f8",
+              "full_payload_local": false,
+              "intake_scope": "analysis_v1",
+              "run_id": "2026-11-18_dbconformer_wang_late_r1_lab10-full-w1",
+              "transaction_id": "dbconformer-wang-late-r1-tx",
+              "transfer_bytes": 3147152,
+              "verified": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "decision": {
+        "claim_release": false,
+        "decision": "STOP_NO_PROMOTION",
+        "reason": "User-authorized archive of the frozen target utility and risk decision.",
+        "role": "archived_exposed_development_screen",
+        "round_id": "dbconformer-gahst-source-r1-tracefix3"
+      },
+      "decision_record": "ai4s/programs/dbconformer/research/dbconformer-gahst-source-r1-tracefix3_decision.yaml",
+      "evidence_id": "DBCONFORMER-GAHST-R1-ARCHIVED-20261119",
+      "round_id": "dbconformer-gahst-source-r1-tracefix3",
+      "run": {
+        "bundle_id": "2026-11-19_dbconformer_gahst_source_r1_tracefix3_bundle",
+        "dispatch_status": "REMOTE_ACCEPTED",
+        "estimated_training_hours": 12.933,
+        "execution_mode": "user_managed",
+        "executor_id": "lab10",
+        "planned_units": 55,
+        "recorded_at": "2026-11-18T17:32:46.640650+00:00",
+        "replacement_reason_class": "USER_AUTHORIZED_REDEPLOYMENT",
+        "replaces_interrupted_run": "2026-11-19_dbconformer_gahst_source_r1_tracefix2_lab10-full-w1",
+        "round_id": "dbconformer-gahst-source-r1-tracefix3",
+        "run_prefix": "2026-11-19_dbconformer_gahst_source_r1_tracefix3_lab10",
+        "transaction_operations": [
+          {
+            "operation": "upload",
+            "recorded_at": "2026-11-18T17:32:51.009958+00:00",
+            "result": {
+              "action": "UPLOADED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-19_dbconformer_gahst_source_r1_tracefix3_lab10-full-w1"
+            }
+          },
+          {
+            "operation": "launch",
+            "recorded_at": "2026-11-18T17:32:53.760074+00:00",
+            "result": {
+              "action": "SUBMISSION_SENT_NOT_VERIFIED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-19_dbconformer_gahst_source_r1_tracefix3_lab10-full-w1"
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-18T17:33:05.235979+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "screen",
+              "run_id": "2026-11-19_dbconformer_gahst_source_r1_tracefix3_lab10-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "18c9454478b3fdf2472e3dbf9c11f4ccf8a5f4479daf8f235eaecd3de1ef8e01",
+                "execution_seconds": 10.095884561538696,
+                "queue_seconds": 0.8026297092437744,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-19_dbconformer_gahst_source_r1_tracefix3_lab10-full-w1",
+                "transaction_id": "dbconformer-gahst-source-r1-tracefix3-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 10.89851427078247
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-18T17:39:41.847419+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "screen",
+              "run_id": "2026-11-19_dbconformer_gahst_source_r1_tracefix3_lab10-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "18c9454478b3fdf2472e3dbf9c11f4ccf8a5f4479daf8f235eaecd3de1ef8e01",
+                "execution_seconds": 406.3153290748596,
+                "queue_seconds": 0.8026297092437744,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-19_dbconformer_gahst_source_r1_tracefix3_lab10-full-w1",
+                "transaction_id": "dbconformer-gahst-source-r1-tracefix3-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 407.1179587841034
+              }
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-18T17:39:53.055392+00:00",
+            "result": {
+              "action": "FETCH_VERIFY_INTAKE",
+              "run_id": "2026-11-19_dbconformer_gahst_source_r1_tracefix3_lab10-full-w1",
+              "scientific_stop_boundary": "NEXT_SCIENTIFIC_DECISION",
+              "timing": {
+                "contract_sha256": "18c9454478b3fdf2472e3dbf9c11f4ccf8a5f4479daf8f235eaecd3de1ef8e01",
+                "execution_seconds": 406.3153290748596,
+                "queue_seconds": 0.8026297092437744,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-19_dbconformer_gahst_source_r1_tracefix3_lab10-full-w1",
+                "transaction_id": "dbconformer-gahst-source-r1-tracefix3-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 407.1179587841034
+              }
+            }
+          },
+          {
+            "operation": "fetch",
+            "recorded_at": "2026-11-18T17:45:47.295172+00:00",
+            "result": {
+              "analysis_receipt_sha256": "614893edacb8f3df36833d0840fc76e7076d91f0e11d5363b57ca297f0a3eef0",
+              "artifact_manifest_sha256": "6c415a5631d69980694e9db4d0bbd33b2fc3ee532689fbab509a8061737fca59",
+              "contract_sha256": "18c9454478b3fdf2472e3dbf9c11f4ccf8a5f4479daf8f235eaecd3de1ef8e01",
+              "full_payload_local": false,
+              "intake_scope": "analysis_v1",
+              "run_id": "2026-11-19_dbconformer_gahst_source_r1_tracefix3_lab10-full-w1",
+              "transaction_id": "dbconformer-gahst-source-r1-tracefix3-tx",
+              "transfer_bytes": 3246163,
+              "verified": true
+            }
+          }
+        ]
+      }
     }
   ],
   "deployment_continuation_history": [
@@ -20396,7 +20942,7 @@
       "transaction_timeout_seconds": 14400
     }
   ],
-  "evidence_status": "campaign_active_with_archived_evidence_only_no_claim_release",
+  "evidence_status": "archived_stop_no_promotion",
   "execution_block_history": [
     {
       "authorization_ref": "ai4s/programs/dbconformer/research/bas_r1/DESTINATION_AUTHORIZATION.json",
@@ -20411,17 +20957,18 @@
     }
   ],
   "external_interruption_recovery": {
-    "failed_run_id": "2026-10-12_dbconformer_sgr_r1_lab10_r1-full-w1",
+    "failed_run_id": "2026-11-19_dbconformer_gahst_source_r1_tracefix2_lab10-full-w1",
     "reason_class": "USER_AUTHORIZED_REDEPLOYMENT",
-    "recorded_at": "2026-10-12T12:13:54.343196+00:00",
-    "replacement_round_id": "dbconformer-sgr-r1-repair1",
-    "report": "ai4s/programs/dbconformer/research/sgr_r1_repair1/SOURCE_ZERO_ATTEMPT_REPORT.json",
+    "recorded_at": "2026-11-18T17:32:46.640650+00:00",
+    "replacement_round_id": "dbconformer-gahst-source-r1-tracefix3",
+    "report": "ai4s/programs/dbconformer/research/gahst_pair_d0_20261118/tracefix2/PRETRAINING_REDEPLOYMENT.json",
     "research_gate": {
-      "hypothesis_id": "source-risk-weighting-beyond-balanced-batches",
-      "module_id": "source-subject-risk-weighted-training-v01",
+      "hypothesis_id": "dbconformer-gahst-source-r1",
+      "module_id": "gahst-tied-anchor-two-five-lead",
       "paired_seed_cap": 5,
       "paired_seeds_after_freeze": [
-        0
+        3,
+        4
       ],
       "transition": "SCREEN_NEW"
     }
@@ -20759,6 +21306,26 @@
       "source_contract_sha256": "6f9e6fea42781c442530511fed798c6b3e2a97147651c54fc9ef9b4965228977",
       "technical_fits": 3,
       "technical_qualification_reusable": true
+    },
+    {
+      "attempt_class": "user_authorized_pretraining_repair_registered_unuploaded",
+      "engineering_reason": "Pretraining safe-load field encoding repair; prior local bundle was never uploaded; launch original authorized remaining 54 heads using exact validated T; same 22-hour cap and target lock.",
+      "failed_run": {
+        "bundle_id": "2026-11-19_dbconformer_gahst_source_r1_tracefix2_bundle",
+        "dispatch_status": "PENDING_UPLOAD",
+        "estimated_training_hours": 12.933,
+        "execution_mode": "user_managed",
+        "executor_id": "lab10",
+        "planned_units": 55,
+        "recorded_at": "2026-11-18T17:30:22.683016+00:00",
+        "round_id": "dbconformer-gahst-source-r1-tracefix2",
+        "run_prefix": "2026-11-19_dbconformer_gahst_source_r1_tracefix2_lab10"
+      },
+      "failed_run_id": "2026-11-19_dbconformer_gahst_source_r1_tracefix2_lab10-full-w1",
+      "partial_artifacts_eligible": false,
+      "recorded_at": "2026-11-18T17:32:46.640650+00:00",
+      "redeployment_report": "ai4s/programs/dbconformer/research/gahst_pair_d0_20261118/tracefix2/PRETRAINING_REDEPLOYMENT.json",
+      "round_id": "dbconformer-gahst-source-r1-tracefix2"
     }
   ],
   "handoff": {
@@ -21000,6 +21567,24 @@
       "source_decision_record": "ai4s/programs/dbconformer/research/dbconformer-svs-r1_decision.yaml",
       "source_round_id": "dbconformer-svs-r1",
       "source_run_id": "2026-10-23_dbconformer_svs_r1_lab10_r1-full-w1"
+    },
+    {
+      "authorized_at": "2026-11-18T17:27:26.769941+00:00",
+      "reason": "Fix producer/consumer trace step convention. Preserve original completed T artifacts. Fit only the 54 unattempted heads.",
+      "repair_contract": "ai4s/programs/dbconformer/research/dbconformer-gahst-source-r1-tracefix1.yaml",
+      "repair_round_id": "dbconformer-gahst-source-r1-tracefix1",
+      "source_decision_record": "ai4s/programs/dbconformer/research/dbconformer-gahst-source-r1_decision.yaml",
+      "source_round_id": "dbconformer-gahst-source-r1",
+      "source_run_id": "2026-11-19_dbconformer_gahst_source_r1_lab10-full-w1"
+    },
+    {
+      "authorized_at": "2026-11-18T17:30:17.953794+00:00",
+      "reason": "Fix producer/consumer trace step convention. Preserve original completed T artifacts. Fit only the 54 unattempted heads.",
+      "repair_contract": "ai4s/programs/dbconformer/research/dbconformer-gahst-source-r1-tracefix2.yaml",
+      "repair_round_id": "dbconformer-gahst-source-r1-tracefix2",
+      "source_decision_record": "ai4s/programs/dbconformer/research/dbconformer-gahst-source-r1-tracefix1_decision.yaml",
+      "source_round_id": "dbconformer-gahst-source-r1-tracefix1",
+      "source_run_id": "2026-11-19_dbconformer_gahst_source_r1_tracefix1_lab10-full-w1"
     }
   ],
   "invalid_research_revision_authorizations": [
@@ -21020,14 +21605,11 @@
   ],
   "last_analysis_evidence": "AI4S-DBCONFORMER-RCS-R1-PREDICTION-REANALYSIS-20261029",
   "last_decision": {
-    "automatic_continuation": false,
     "claim_release": false,
-    "decision": "INCONCLUSIVE",
-    "interpretation": "descriptive_noise_relative_investment_gate_only_no_significance_no_unbiased_estimate_no_utility_no_claim",
-    "next_training_authorized": false,
-    "no_paper_claim": true,
-    "round_id": "dbconformer-source-geometry-r1",
-    "run_action": "STOP"
+    "decision": "STOP_NO_PROMOTION",
+    "reason": "User-authorized archive of the frozen target utility and risk decision.",
+    "role": "archived_exposed_development_screen",
+    "round_id": "dbconformer-gahst-source-r1-tracefix3"
   },
   "last_failure_analysis": {
     "partial_effects_analyzed": false,
@@ -21039,21 +21621,21 @@
     "task_id": "s2_seed1"
   },
   "last_round_evidence": {
-    "decision_record": "ai4s/programs/dbconformer/research/dbconformer-source-geometry-r1_decision.yaml",
-    "evidence_id": "AI4S-DBCONFORMER-dbconformer-source-geometry-r1",
-    "role": "source_only_geometry_identification_no_claim"
+    "decision_record": "ai4s/programs/dbconformer/research/dbconformer-gahst-source-r1-tracefix3_decision.yaml",
+    "evidence_id": "DBCONFORMER-GAHST-R1-ARCHIVED-20261119",
+    "role": "archived_exposed_development_screen"
   },
   "last_verified_intake": {
-    "analysis_receipt_sha256": "3c218016cf23912cd52294c04fcde5d3d5ea6ab01d68cee5ea631ac586e4e8de",
-    "artifact_manifest_sha256": "bdbb1203dd07e3340c639382ff422e7806288b489d5ba1ed7fa47897f3ed0d56",
-    "contract_sha256": "fb7a6bee05afc75997d53233a9b70e4b7ac87fc14c608742cc9ff043e6bef74c",
+    "analysis_receipt_sha256": "614893edacb8f3df36833d0840fc76e7076d91f0e11d5363b57ca297f0a3eef0",
+    "artifact_manifest_sha256": "6c415a5631d69980694e9db4d0bbd33b2fc3ee532689fbab509a8061737fca59",
+    "contract_sha256": "18c9454478b3fdf2472e3dbf9c11f4ccf8a5f4479daf8f235eaecd3de1ef8e01",
     "full_payload_local": false,
-    "intake_path": "results/logs/remote/2026-11-04_dbconformer_source_geometry_r1_lab10-full-w1",
+    "intake_path": "results/logs/remote/2026-11-19_dbconformer_gahst_source_r1_tracefix3_lab10-full-w1",
     "intake_scope": "analysis_v1",
-    "run_id": "2026-11-04_dbconformer_source_geometry_r1_lab10-full-w1",
+    "run_id": "2026-11-19_dbconformer_gahst_source_r1_tracefix3_lab10-full-w1",
     "run_status": "complete",
-    "transaction_id": "dbconformer-source-geometry-r1-tx",
-    "transfer_bytes": 2891722,
+    "transaction_id": "dbconformer-gahst-source-r1-tracefix3-tx",
+    "transfer_bytes": 3246163,
     "verified": true,
     "verified_at": null
   },
@@ -22209,16 +22791,14 @@
     }
   ],
   "run_control": {
-    "accounting_anchor_basis": "Conservative hour-floor before first budget check 15:15:46UTC; includes preparation already done in this authorized turn. New independent budget, no SGP cost transfer.",
     "continuation_policy_version": "evidence_to_design_v1",
     "continue_after_positive": false,
     "max_rounds": 1,
     "monitor": "blocking",
-    "night_budget_hours": 24.0,
-    "preparation_included": true,
+    "night_budget_hours": 22.0,
     "queue_time_policy": "exclude_resource_wait",
     "round_index": 1,
-    "started_at": "2026-11-04T15:00:00+00:00"
+    "started_at": "2026-11-18T17:16:41.654235+00:00"
   },
   "schema_version": "mieeg-ai4s-state-v1",
   "sgp_direct_optimization": "STOPPED",
@@ -25451,12 +26031,12 @@
     }
   ],
   "status": "COMPLETE_MAX_ROUNDS",
-  "updated_at": "2026-11-05T11:39:27.618042+00:00",
+  "updated_at": "2026-11-19T10:42:06.891086+00:00",
   "v3_follow_up": {
-    "decision_record": "ai4s/programs/dbconformer/research/dbconformer-source-geometry-r1_decision.yaml",
-    "evidence_id": "AI4S-DBCONFORMER-dbconformer-source-geometry-r1",
+    "decision_record": "ai4s/programs/dbconformer/research/dbconformer-gahst-source-r1-tracefix3_decision.yaml",
+    "evidence_id": "DBCONFORMER-GAHST-R1-ARCHIVED-20261119",
     "next_design": null,
-    "reason": "round_limit"
+    "reason": "Explicit user closure"
   },
   "verified_intake_history": [
     {
