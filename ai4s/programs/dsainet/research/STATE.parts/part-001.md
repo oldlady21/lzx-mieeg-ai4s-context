@@ -2,7 +2,7 @@
 
 完整脱敏文件：`ai4s/programs/dsainet/research/STATE.yaml`（[原文件](../STATE.yaml)）。
 
-完整公开文件 SHA-256：`5facb7140fb8c0d253b3f264b975d0fec60c9086af9553f6322c9439338ea52b`。UTF-8 字节范围：[0, 500000) / 1086722。
+完整公开文件 SHA-256：`fcded7c1abd1290fb1ba0415842fc5329c4491c61983ad6cf9c264c282954d32`。UTF-8 字节范围：[0, 500000) / 1117445。
 
 这是连续文本片段，可能从 JSON 字段中间开始；按分段顺序拼接代码块可恢复完整脱敏正文。不是单独有效的 State，也不授予执行权限。
 
@@ -11,8 +11,509 @@
   "active_local_experiment": null,
   "active_operation": null,
   "active_research": null,
-  "active_round": null,
-  "active_run": null,
+  "active_round": "dsainet-b0-spatial-person-gradient-r1-budget2",
+  "active_run": {
+    "bundle_id": "2026-11-27_dsainet_b0_spatial_person_gradient_r1_budget2_bundle",
+    "dispatch_status": "REMOTE_ACCEPTED",
+    "estimated_training_hours": 3.5,
+    "execution_mode": "user_managed",
+    "executor_id": "lab10",
+    "planned_units": 19,
+    "recorded_at": "2026-11-27T06:19:31.796507+00:00",
+    "recovery_parent_contract_sha256": "d05e713363f6eb31316338a88a7c3c161fc64734955fd4e22fa7f1cd9926170e",
+    "recovery_parent_run_id": "2026-11-27_dsainet_b0_spatial_person_gradient_r1_budget1-full-w1",
+    "round_id": "dsainet-b0-spatial-person-gradient-r1-budget2",
+    "run_prefix": "2026-11-27_dsainet_b0_spatial_person_gradient_r1_budget2",
+    "transaction_operations": [
+      {
+        "operation": "upload",
+        "recorded_at": "2026-11-27T06:20:07.007074+00:00",
+        "result": {
+          "action": "UPLOADED",
+          "monitor_powershell": "[REDACTED_MACHINE]",
+          "run_id": "2026-11-27_dsainet_b0_spatial_person_gradient_r1_budget2-full-w1"
+        }
+      },
+      {
+        "operation": "launch",
+        "recorded_at": "2026-11-27T06:20:10.569560+00:00",
+        "result": {
+          "action": "SUBMISSION_SENT_NOT_VERIFIED",
+          "monitor_powershell": "[REDACTED_MACHINE]",
+          "run_id": "2026-11-27_dsainet_b0_spatial_person_gradient_r1_budget2-full-w1"
+        }
+      },
+      {
+        "operation": "probe",
+        "recorded_at": "2026-11-27T06:20:16.453828+00:00",
+        "result": {
+          "action": "RECONCILE_SAME_NODE",
+          "node_id": "smoke",
+          "run_id": "2026-11-27_dsainet_b0_spatial_person_gradient_r1_budget2-full-w1",
+          "status": "RUNNING",
+          "timing": {
+            "contract_sha256": "f92b4cedeb2a71499ce73ebdfcaa342bbb1bce7313532777fff89f7f2622704a",
+            "execution_seconds": 3.9031822681427,
+            "queue_seconds": 1.1475164890289307,
+            "queue_time_policy": "exclude_resource_wait",
+            "run_id": "2026-11-27_dsainet_b0_spatial_person_gradient_r1_budget2-full-w1",
+            "transaction_id": "2026-11-27_dsainet_b0_spatial_person_gradient_r1_budget2-tx",
+            "waiting_for_resources": false,
+            "wall_seconds": 5.050698757171631
+          }
+        }
+      }
+    ]
+  },
+  "active_run_history": [
+    {
+      "bundle_id": "2026-11-26_dsainet_b0_masked_central_aux_r1_bundle",
+      "dispatch_status": "REMOTE_ACCEPTED",
+      "estimated_training_hours": 1.5,
+      "execution_mode": "user_managed",
+      "executor_id": "lab10",
+      "planned_units": 19,
+      "recorded_at": "2026-11-25T16:45:57.879233+00:00",
+      "replaced_by": "2026-11-26_dsainet_b0_masked_central_aux_r1_repair1-full-w1",
+      "round_id": "dsainet-b0-masked-central-aux-r1",
+      "run_prefix": "2026-11-26_dsainet_b0_masked_central_aux_r1",
+      "terminal_ledger": "./ai4s\\programs\\dsainet\\research\\b0_masked_central_aux_20261126\\recovery_45m\\PARENT_TERMINAL_LEDGER.json",
+      "terminal_ledger_sha256": "94cb64991ba34a712f150b0cd15b7b11fcc39825367d54d2f14a5ecc011d8b5f",
+      "terminal_status": "FAILED",
+      "transaction_operations": [
+        {
+          "operation": "upload",
+          "recorded_at": "2026-11-25T16:46:38.185990+00:00",
+          "result": {
+            "action": "UPLOADED",
+            "monitor_powershell": "[REDACTED_MACHINE]",
+            "run_id": "2026-11-26_dsainet_b0_masked_central_aux_r1-full-w1"
+          }
+        },
+        {
+          "operation": "launch",
+          "recorded_at": "2026-11-25T16:46:42.033010+00:00",
+          "result": {
+            "action": "SUBMISSION_SENT_NOT_VERIFIED",
+            "monitor_powershell": "[REDACTED_MACHINE]",
+            "run_id": "2026-11-26_dsainet_b0_masked_central_aux_r1-full-w1"
+          }
+        },
+        {
+          "operation": "probe",
+          "recorded_at": "2026-11-25T16:47:10.162320+00:00",
+          "result": {
+            "action": "WAIT_FOR_RESOURCES",
+            "node_id": "smoke",
+            "run_id": "2026-11-26_dsainet_b0_masked_central_aux_r1-full-w1",
+            "status": "RUNNING",
+            "timing": {
+              "contract_sha256": "3a607d99d3beb83111e164e9cf6672843ccc097a69461cc91f411d7828523b84",
+              "execution_seconds": 3.443485736846924,
+              "queue_seconds": 22.871602535247803,
+              "queue_time_policy": "exclude_resource_wait",
+              "run_id": "2026-11-26_dsainet_b0_masked_central_aux_r1-full-w1",
+              "transaction_id": "2026-11-26_dsainet_b0_masked_central_aux_r1-tx",
+              "waiting_for_resources": true,
+              "wall_seconds": 26.315088272094727
+            }
+          }
+        },
+        {
+          "operation": "probe",
+          "recorded_at": "2026-11-26T06:35:18.365822+00:00",
+          "result": {
+            "action": "RECONCILE_SAME_NODE",
+            "node_id": "screen",
+            "run_id": "2026-11-26_dsainet_b0_masked_central_aux_r1-full-w1",
+            "status": "FAILED",
+            "timing": {
+              "contract_sha256": "3a607d99d3beb83111e164e9cf6672843ccc097a69461cc91f411d7828523b84",
+              "execution_seconds": 5069.212052345276,
+              "queue_seconds": 1519.3339467048645,
+              "queue_time_policy": "exclude_resource_wait",
+              "run_id": "2026-11-26_dsainet_b0_masked_central_aux_r1-full-w1",
+              "transaction_id": "2026-11-26_dsainet_b0_masked_central_aux_r1-tx",
+              "waiting_for_resources": false,
+              "wall_seconds": 6588.54599905014
+            }
+          }
+        }
+      ]
+    },
+    {
+      "bundle_id": "2026-11-26_dsainet_b0_masked_central_aux_r1_repair1_bundle",
+      "dispatch_status": "REMOTE_ACCEPTED",
+      "estimated_training_hours": 0.75,
+      "execution_mode": "user_managed",
+      "executor_id": "lab10",
+      "planned_units": 4,
+      "recorded_at": "2026-11-26T08:05:30.940536+00:00",
+      "recovery_parent_contract_sha256": "3a607d99d3beb83111e164e9cf6672843ccc097a69461cc91f411d7828523b84",
+      "recovery_parent_run_id": "2026-11-26_dsainet_b0_masked_central_aux_r1-full-w1",
+      "recovery_tasks": [
+        "B0_s1_t5",
+        "C0_s1_t5",
+        "P0_s1_t5"
+      ],
+      "replaced_by": "2026-11-26_dsainet_b0_masked_central_aux_r1_repair2-full-w1",
+      "round_id": "dsainet-b0-masked-central-aux-r1-repair1",
+      "run_prefix": "2026-11-26_dsainet_b0_masked_central_aux_r1_repair1",
+      "terminal_ledger": "./ai4s\\programs\\dsainet\\research\\b0_masked_central_aux_20261126\\recovery_45m\\REPAIR1_TERMINAL_LEDGER.json",
+      "terminal_ledger_sha256": "969d9d5d6b1c540bb8c5d01badd0a5b0a2da668085af8966ad079dc64d9dc45c",
+      "terminal_status": "FAILED",
+      "transaction_operations": [
+        {
+          "operation": "upload",
+          "recorded_at": "2026-11-26T08:12:37.977894+00:00",
+          "result": {
+            "action": "UPLOADED",
+            "monitor_powershell": "[REDACTED_MACHINE]",
+            "run_id": "2026-11-26_dsainet_b0_masked_central_aux_r1_repair1-full-w1"
+          }
+        },
+        {
+          "operation": "launch",
+          "recorded_at": "2026-11-26T08:13:03.335586+00:00",
+          "result": {
+            "action": "SUBMISSION_SENT_NOT_VERIFIED",
+            "monitor_powershell": "[REDACTED_MACHINE]",
+            "run_id": "2026-11-26_dsainet_b0_masked_central_aux_r1_repair1-full-w1"
+          }
+        },
+        {
+          "operation": "probe",
+          "recorded_at": "2026-11-26T08:13:46.337494+00:00",
+          "result": {
+            "action": "RECONCILE_SAME_NODE",
+            "node_id": "preflight",
+            "run_id": "2026-11-26_dsainet_b0_masked_central_aux_r1_repair1-full-w1",
+            "status": "FAILED",
+            "timing": {
+              "contract_sha256": "af536c569a51d1da97178b33d83e661f50b36fce255f5d6240d72e8050d53e3f",
+              "execution_seconds": 3.9975078105926514,
+              "queue_seconds": 0.8215837478637695,
+              "queue_time_policy": "exclude_resource_wait",
+              "run_id": "2026-11-26_dsainet_b0_masked_central_aux_r1_repair1-full-w1",
+              "transaction_id": "2026-11-26_dsainet_b0_masked_central_aux_r1_repair1-tx",
+              "waiting_for_resources": false,
+              "wall_seconds": 4.819091558456421
+            }
+          }
+        }
+      ]
+    },
+    {
+      "bundle_id": "2026-11-26_dsainet_b0_masked_central_aux_r1_repair2_bundle",
+      "dispatch_status": "PENDING_UPLOAD",
+      "estimated_training_hours": 0.749,
+      "execution_mode": "user_managed",
+      "executor_id": "lab10",
+      "launch_block_evidence": "./ai4s\\programs\\dsainet\\research\\b0_masked_central_aux_20261126\\recovery_45m\\REPAIR2_LAUNCH_BLOCK.json",
+      "launch_block_evidence_sha256": "c643bb57bbcee4df3ff9eaa9a1c466634e5df6783d5c14f67eeb09d4a7b28b2f",
+      "launch_performed": false,
+      "planned_units": 4,
+      "preserved_campaign_queue_seconds": 1520.1555304527283,
+      "recorded_at": "2026-11-26T08:29:13.003408+00:00",
+      "recovery_parent_contract_sha256": "af536c569a51d1da97178b33d83e661f50b36fce255f5d6240d72e8050d53e3f",
+      "recovery_parent_run_id": "2026-11-26_dsainet_b0_masked_central_aux_r1_repair1-full-w1",
+      "recovery_tasks": [
+        "B0_s1_t5",
+        "P0_s1_t5",
+        "C0_s1_t5"
+      ],
+      "registration_receipt": "./ai4s\\programs\\dsainet\\research\\b0_masked_central_aux_20261126\\recovery_45m\\REPAIR2_REGISTRATION_PREFLIGHT_RECEIPT.json",
+      "registration_receipt_sha256": "15b960a6879c4b5b1a5af4607dc25ffb61726a447c026972b7d020207d953e31",
+      "replaced_by": "2026-11-26_dsainet_b0_masked_central_aux_r1_repair3-full-w1",
+      "round_id": "dsainet-b0-masked-central-aux-r1-repair2",
+      "run_prefix": "2026-11-26_dsainet_b0_masked_central_aux_r1_repair2",
+      "terminal_status": "UPLOADED_LAUNCH_BLOCKED_BUDGET",
+      "transaction_operations": [
+        {
+          "operation": "upload",
+          "recorded_at": "2026-11-26T08:36:23.417261+00:00",
+          "result": {
+            "action": "UPLOADED",
+            "monitor_powershell": "[REDACTED_MACHINE]",
+            "run_id": "2026-11-26_dsainet_b0_masked_central_aux_r1_repair2-full-w1"
+          }
+        }
+      ]
+    },
+    {
+      "bundle_id": "2026-11-26_dsainet_b0_masked_central_aux_r1_repair3_bundle",
+      "dispatch_status": "REMOTE_ACCEPTED",
+      "estimated_training_hours": 0.444,
+      "execution_mode": "user_managed",
+      "executor_id": "lab10",
+      "planned_units": 4,
+      "predecessor_launch_block_sha256": "c643bb57bbcee4df3ff9eaa9a1c466634e5df6783d5c14f67eeb09d4a7b28b2f",
+      "predecessor_launch_performed": false,
+      "predecessor_upload_run_id": "2026-11-26_dsainet_b0_masked_central_aux_r1_repair2-full-w1",
+      "preserved_campaign_queue_seconds": 1520.1555304527283,
+      "recorded_at": "2026-11-26T08:43:41.136152+00:00",
+      "recovery_parent_contract_sha256": "312f7d8b85993a694c11e4de764431a9ad08786ec57648b1f9df03a3c7af422f",
+      "recovery_parent_run_id": "2026-11-26_dsainet_b0_masked_central_aux_r1_repair2-full-w1",
+      "recovery_tasks": [
+        "B0_s1_t5",
+        "C0_s1_t5",
+        "P0_s1_t5"
+      ],
+      "replaced_by": "2026-11-26_dsainet_b0_masked_central_aux_r1_repair4-full-w1",
+      "round_id": "dsainet-b0-masked-central-aux-r1-repair3",
+      "run_prefix": "2026-11-26_dsainet_b0_masked_central_aux_r1_repair3",
+      "terminal_ledger_ref": "./ai4s\\programs\\dsainet\\research\\b0_masked_central_aux_20261126\\recovery_45m\\REPAIR3_TERMINAL_LEDGER.json",
+      "terminal_ledger_sha256": "cbadf0926cbbe551dda43d3825a9c6af7fb90dfd279b6b8dc202782d52a3ba51",
+      "terminal_status": "PREFLIGHT_FAILED",
+      "transaction_operations": [
+        {
+          "operation": "upload",
+          "recorded_at": "2026-11-26T08:55:55.626689+00:00",
+          "result": {
+            "action": "UPLOADED",
+            "monitor_powershell": "[REDACTED_MACHINE]",
+            "run_id": "2026-11-26_dsainet_b0_masked_central_aux_r1_repair3-full-w1"
+          }
+        },
+        {
+          "operation": "launch",
+          "recorded_at": "2026-11-26T09:17:25.123294+00:00",
+          "result": {
+            "action": "SUBMISSION_SENT_NOT_VERIFIED",
+            "monitor_powershell": "[REDACTED_MACHINE]",
+            "run_id": "2026-11-26_dsainet_b0_masked_central_aux_r1_repair3-full-w1"
+          }
+        },
+        {
+          "operation": "probe",
+          "recorded_at": "2026-11-26T09:18:09.894561+00:00",
+          "result": {
+            "action": "WAIT_FOR_RESOURCES",
+            "node_id": "preflight",
+            "run_id": "2026-11-26_dsainet_b0_masked_central_aux_r1_repair3-full-w1",
+            "status": "RUNNING",
+            "timing": {
+              "contract_sha256": "fd00cd55389864135485b26931c2d675c7411742f0720bc0ae4ca62ea964366c",
+              "execution_seconds": 2.063498020172119,
+              "queue_seconds": 42.068156719207764,
+              "queue_time_policy": "exclude_resource_wait",
+              "run_id": "2026-11-26_dsainet_b0_masked_central_aux_r1_repair3-full-w1",
+              "transaction_id": "2026-11-26_dsainet_b0_masked_central_aux_r1_repair3-tx",
+              "waiting_for_resources": true,
+              "wall_seconds": 44.13165473937988
+            }
+          }
+        }
+      ]
+    },
+    {
+      "bundle_id": "2026-11-26_dsainet_b0_masked_central_aux_r1_repair4_bundle",
+      "dispatch_status": "PENDING_UPLOAD",
+      "estimated_training_hours": 0.443,
+      "evidence_ref": "./ai4s\\programs\\dsainet\\research\\b0_masked_central_aux_20261126\\recovery_45m\\REPAIR4_REMOTE_NOT_LAUNCHED.json",
+      "evidence_sha256": "6c26ab187418fcd934e7e73fb4ba4e63d187efe6b45ddf5543a4ee8d8d1eaf09",
+      "execution_mode": "user_managed",
+      "executor_id": "lab10",
+      "launch_performed": false,
+      "planned_units": 4,
+      "recorded_at": "2026-11-26T09:48:27.539906+00:00",
+      "recovery_parent_contract_sha256": "fd00cd55389864135485b26931c2d675c7411742f0720bc0ae4ca62ea964366c",
+      "recovery_parent_run_id": "2026-11-26_dsainet_b0_masked_central_aux_r1_repair3-full-w1",
+      "recovery_tasks": [
+        "B0_s1_t5",
+        "C0_s1_t5",
+        "P0_s1_t5"
+      ],
+      "replaced_by": "2026-11-26_dsainet_b0_masked_central_aux_r1_repair5-full-w1",
+      "round_id": "dsainet-b0-masked-central-aux-r1-repair4",
+      "run_prefix": "2026-11-26_dsainet_b0_masked_central_aux_r1_repair4",
+      "terminal_status": "UPLOADED_NOT_LAUNCHED_CPU_PREFLIGHT_FAILED",
+      "transaction_operations": [
+        {
+          "operation": "upload",
+          "recorded_at": "2026-11-26T09:56:04.319138+00:00",
+          "result": {
+            "action": "UPLOADED",
+            "monitor_powershell": "[REDACTED_MACHINE]",
+            "run_id": "2026-11-26_dsainet_b0_masked_central_aux_r1_repair4-full-w1"
+          }
+        }
+      ]
+    },
+    {
+      "bundle_id": "2026-11-26_dsainet_b0_masked_central_aux_r1_repair5_bundle",
+      "dispatch_status": "REMOTE_ACCEPTED",
+      "estimated_training_hours": 0.443,
+      "execution_mode": "user_managed",
+      "executor_id": "lab10",
+      "planned_units": 4,
+      "recorded_at": "2026-11-26T12:14:39.586797+00:00",
+      "recovery_parent_run_id": "2026-11-26_dsainet_b0_masked_central_aux_r1_repair4-full-w1",
+      "recovery_tasks": [
+        "B0_s1_t5",
+        "C0_s1_t5",
+        "P0_s1_t5"
+      ],
+      "replaced_by": "2026-11-26_dsainet_b0_masked_central_aux_r1_repair6-full-w1",
+      "round_id": "dsainet-b0-masked-central-aux-r1-repair5",
+      "run_prefix": "2026-11-26_dsainet_b0_masked_central_aux_r1_repair5",
+      "terminal_ledger_ref": "./ai4s\\programs\\dsainet\\research\\b0_masked_central_aux_20261126\\recovery_45m\\REPAIR5_TERMINAL_LEDGER.json",
+      "terminal_ledger_sha256": "a470e8529f0a583c2b97ad8fe4c9c3bcee07dd6a397cb94fd27a5621c2240b3a",
+      "terminal_status": "PREFLIGHT_FAILED",
+      "transaction_operations": [
+        {
+          "operation": "upload",
+          "recorded_at": "2026-11-26T12:15:47.331356+00:00",
+          "result": {
+            "action": "UPLOADED",
+            "monitor_powershell": "[REDACTED_MACHINE]",
+            "run_id": "2026-11-26_dsainet_b0_masked_central_aux_r1_repair5-full-w1"
+          }
+        },
+        {
+          "operation": "launch",
+          "recorded_at": "2026-11-26T12:15:57.679964+00:00",
+          "result": {
+            "action": "SUBMISSION_SENT_NOT_VERIFIED",
+            "monitor_powershell": "[REDACTED_MACHINE]",
+            "run_id": "2026-11-26_dsainet_b0_masked_central_aux_r1_repair5-full-w1"
+          }
+        },
+        {
+          "operation": "probe",
+          "recorded_at": "2026-11-26T12:16:04.177251+00:00",
+          "result": {
+            "action": "WAIT_FOR_RESOURCES",
+            "node_id": "preflight",
+            "run_id": "2026-11-26_dsainet_b0_masked_central_aux_r1_repair5-full-w1",
+            "status": "RUNNING",
+            "timing": {
+              "contract_sha256": "2245edea48bdb1b45e7f999caba049514e3a768afad645a86003f04d1424fc44",
+              "execution_seconds": 3.6539390087127686,
+              "queue_seconds": 1.2888820171356201,
+              "queue_time_policy": "exclude_resource_wait",
+              "run_id": "2026-11-26_dsainet_b0_masked_central_aux_r1_repair5-full-w1",
+              "transaction_id": "2026-11-26_dsainet_b0_masked_central_aux_r1_repair5-tx",
+              "waiting_for_resources": true,
+              "wall_seconds": 4.942821025848389
+            }
+          }
+        }
+      ]
+    },
+    {
+      "bundle_id": "2026-11-26_dsainet_b0_spatial_person_gradient_r1_bundle",
+      "dispatch_status": "REMOTE_ACCEPTED",
+      "estimated_training_hours": 1.5,
+      "execution_mode": "user_managed",
+      "executor_id": "lab10",
+      "planned_units": 19,
+      "recorded_at": "2026-11-26T13:54:58.314040+00:00",
+      "replaced_by": "2026-11-27_dsainet_b0_spatial_person_gradient_r1_budget1-full-w1",
+      "round_id": "dsainet-b0-spatial-person-gradient-r1",
+      "run_prefix": "2026-11-26_dsainet_b0_spatial_person_gradient_r1",
+      "terminal_ledger_ref": "ai4s/programs/dsainet/research/serial_screen_20261126/ORIGINAL_COST_GATE_LEDGER.json",
+      "terminal_ledger_sha256": "3a0a81325208b55c173366711012baf2cc64b61374a372f3025ae1f5814061d4",
+      "terminal_status": "COST_GATE_FAILED",
+      "transaction_operations": [
+        {
+          "operation": "upload",
+          "recorded_at": "2026-11-26T13:55:45.382529+00:00",
+          "result": {
+            "action": "UPLOADED",
+            "monitor_powershell": "[REDACTED_MACHINE]",
+            "run_id": "2026-11-26_dsainet_b0_spatial_person_gradient_r1-full-w1"
+          }
+        },
+        {
+          "operation": "launch",
+          "recorded_at": "2026-11-26T13:55:49.685929+00:00",
+          "result": {
+            "action": "SUBMISSION_SENT_NOT_VERIFIED",
+            "monitor_powershell": "[REDACTED_MACHINE]",
+            "run_id": "2026-11-26_dsainet_b0_spatial_person_gradient_r1-full-w1"
+          }
+        },
+        {
+          "operation": "probe",
+          "recorded_at": "2026-11-26T13:55:56.456928+00:00",
+          "result": {
+            "action": "WAIT_FOR_RESOURCES",
+            "node_id": "smoke",
+            "run_id": "2026-11-26_dsainet_b0_spatial_person_gradient_r1-full-w1",
+            "status": "RUNNING",
+            "timing": {
+              "contract_sha256": "6d07ce79eeafb095c9a6927d4cedcc6e7d6ac659d1e7c8b36a7afded848c1632",
+              "execution_seconds": 4.001822233200073,
+              "queue_seconds": 0.13460946083068848,
+              "queue_time_policy": "exclude_resource_wait",
+              "run_id": "2026-11-26_dsainet_b0_spatial_person_gradient_r1-full-w1",
+              "transaction_id": "2026-11-26_dsainet_b0_spatial_person_gradient_r1-tx",
+              "waiting_for_resources": true,
+              "wall_seconds": 4.136431694030762
+            }
+          }
+        }
+      ]
+    },
+    {
+      "bundle_id": "2026-11-27_dsainet_b0_spatial_person_gradient_r1_budget1_bundle",
+      "dispatch_status": "REMOTE_ACCEPTED",
+      "estimated_training_hours": 1.75,
+      "execution_mode": "user_managed",
+      "executor_id": "lab10",
+      "planned_units": 19,
+      "recorded_at": "2026-11-26T17:32:41.336029+00:00",
+      "recovery_parent_contract_sha256": "6d07ce79eeafb095c9a6927d4cedcc6e7d6ac659d1e7c8b36a7afded848c1632",
+      "recovery_parent_run_id": "2026-11-26_dsainet_b0_spatial_person_gradient_r1-full-w1",
+      "replaced_by": "2026-11-27_dsainet_b0_spatial_person_gradient_r1_budget2-full-w1",
+      "round_id": "dsainet-b0-spatial-person-gradient-r1-budget1",
+      "run_prefix": "2026-11-27_dsainet_b0_spatial_person_gradient_r1_budget1",
+      "terminal_ledger_ref": "ai4s/programs/dsainet/research/serial_screen_20261126/BUDGET1_TERMINAL_LEDGER.json",
+      "terminal_ledger_sha256": "1ae18c33b0316801da2c62b5ba117e63df6985ae352236c682a0a1369704907f",
+      "terminal_status": "COST_GATE_FAILED",
+      "transaction_operations": [
+        {
+          "operation": "upload",
+          "recorded_at": "2026-11-26T17:33:03.794621+00:00",
+          "result": {
+            "action": "UPLOADED",
+            "monitor_powershell": "[REDACTED_MACHINE]",
+            "run_id": "2026-11-27_dsainet_b0_spatial_person_gradient_r1_budget1-full-w1"
+          }
+        },
+        {
+          "operation": "launch",
+          "recorded_at": "2026-11-26T17:33:07.869687+00:00",
+          "result": {
+            "action": "SUBMISSION_SENT_NOT_VERIFIED",
+            "monitor_powershell": "[REDACTED_MACHINE]",
+            "run_id": "2026-11-27_dsainet_b0_spatial_person_gradient_r1_budget1-full-w1"
+          }
+        },
+        {
+          "operation": "probe",
+          "recorded_at": "2026-11-26T17:33:14.239302+00:00",
+          "result": {
+            "action": "WAIT_FOR_RESOURCES",
+            "node_id": "smoke",
+            "run_id": "2026-11-27_dsainet_b0_spatial_person_gradient_r1_budget1-full-w1",
+            "status": "RUNNING",
+            "timing": {
+              "contract_sha256": "d05e713363f6eb31316338a88a7c3c161fc64734955fd4e22fa7f1cd9926170e",
+              "execution_seconds": 3.7795448303222656,
+              "queue_seconds": 0.19938325881958008,
+              "queue_time_policy": "exclude_resource_wait",
+              "run_id": "2026-11-27_dsainet_b0_spatial_person_gradient_r1_budget1-full-w1",
+              "transaction_id": "2026-11-27_dsainet_b0_spatial_person_gradient_r1_budget1-tx",
+              "waiting_for_resources": true,
+              "wall_seconds": 3.9789280891418457
+            }
+          }
+        }
+      ]
+    }
+  ],
   "archived_campaigns": [
     {
       "campaign_id": "pre-campaign-c1-exploration",
@@ -2380,6 +2881,58 @@
       },
       "closing_status": "COMPLETE_MAX_ROUNDS",
       "closure_reason": "First qualified source-only DSAINet v4.1 candidate for this user-authorized serial search"
+    },
+    {
+      "campaign_id": "dsainet-b0-patch-preelu-polyphase-20261124",
+      "closed_at": "2026-11-25T16:40:22.393383+00:00",
+      "closing_decision": {
+        "decision": "NO_SIGNAL",
+        "disposition": "STOP_PATCH_PREELU_POLYPHASE",
+        "round_id": "dsainet-b0-patch-preelu-polyphase-r1"
+      },
+      "closing_round": "dsainet-b0-patch-preelu-polyphase-r1",
+      "closing_run": {
+        "analysis_receipt_sha256": "b50c01287420d2e3fdea90944bada6495edf05645abd13197ccc22bfdd6fefd8",
+        "artifact_manifest_sha256": "4dc762972ecc9e0363a2fa66dbf1b6b43dd0704cbe8e335e1f03de1a64e804ea",
+        "contract_sha256": "9c6bc4425954a9520c116e432f404043d3860a3155bee8c15ce881d9dafbe59c",
+        "full_payload_local": false,
+        "intake_path": "results/logs/remote/2026-11-24_dsainet_b0_patch_preelu_polyphase_r1-full-w1",
+        "intake_scope": "analysis_v1",
+        "run_id": "2026-11-24_dsainet_b0_patch_preelu_polyphase_r1-full-w1",
+        "run_status": "complete",
+        "transaction_id": "2026-11-24_dsainet_b0_patch_preelu_polyphase_r1-tx",
+        "transfer_bytes": 327586,
+        "verified": true,
+        "verified_at": null
+      },
+      "closing_status": "COMPLETE_MAX_ROUNDS",
+      "closure_reason": "User authorized first qualified source candidate only; 18 paired source fits plus one GPU smoke; stop after verified Lab10 dispatch."
+    },
+    {
+      "campaign_id": "dsainet-b0-masked-central-aux-20261126",
+      "closed_at": "2026-11-26T13:54:46.480499+00:00",
+      "closing_decision": {
+        "decision": "NO_SIGNAL",
+        "disposition": "STOP_MASKED_CENTRAL_AUX",
+        "round_id": "dsainet-b0-masked-central-aux-r1"
+      },
+      "closing_round": "dsainet-b0-masked-central-aux-r1",
+      "closing_run": {
+        "analysis_receipt_sha256": "6d197ea0e5dd670ced0d1335981769f24e471da6bd6ce1841faba2afdf89ad16",
+        "artifact_manifest_sha256": "3bd658c70ce616407c635aeaf2182cd754f10151de79fb0910fe0f74b7a5db1a",
+        "contract_sha256": "c008db6ae84a449e832fd396362d43896cbfc879594a39f8336ecaf2a307af4f",
+        "full_payload_local": false,
+        "intake_path": "ai4s/programs/dsainet/research/b0_masked_central_aux_20261126/recovery_45m/closeout/repair6_intake",
+        "intake_scope": "analysis_v1",
+        "run_id": "2026-11-26_dsainet_b0_masked_central_aux_r1_repair6-full-w1",
+        "run_status": "complete",
+        "transaction_id": "2026-11-26_dsainet_b0_masked_central_aux_r1_repair6-tx",
+        "transfer_bytes": 70085,
+        "verified": true,
+        "verified_at": "2026-11-26T13:29:38.167694+00:00"
+      },
+      "closing_status": "COMPLETE_MAX_ROUNDS",
+      "closure_reason": "programs/dsainet/research/serial_screen_20261126/AUTHORIZATION.md"
     }
   ],
   "automatic_follow_up": false,
@@ -2479,8 +3032,11 @@
     "allowed_transitions": [
       "SCREEN_NEW"
     ],
-    "authorization_reason": "First qualified source-only DSAINet v4.1 candidate for this user-authorized serial search",
-    "campaign_id": "dsainet-b0-patch-preelu-polyphase-20261124",
+    "authorization_reason": "programs/dsainet/research/serial_screen_20261126/AUTHORIZATION.md",
+    "budget_policy": {
+      "exclude_verified_stopped_seconds": true
+    },
+    "campaign_id": "dsainet-b0-spatial-person-gradient-r1-20261126",
     "continuation_policy_version": "evidence_to_design_v1",
     "decision_policy": "stop_at_positive",
     "execution_authorization": {
@@ -2494,45 +3050,65 @@
       "allowed_transitions": [
         "SCREEN_NEW"
       ],
-      "authorization_ref": "ai4s/programs/dsainet/research/b0_patch_preelu_polyphase_20261124/AUTHORIZATION.md",
-      "campaign_id": "dsainet-b0-patch-preelu-polyphase-20261124",
+      "authorization_ref": "ai4s/programs/dsainet/research/serial_screen_20261126/AUTHORIZATION.md",
+      "campaign_id": "dsainet-b0-spatial-person-gradient-r1-20261126",
       "executor_id": "lab10",
-      "recorded_at": "2026-11-24T14:25:33.309812+00:00",
+      "recorded_at": "2026-11-26T13:54:49.622177+00:00",
       "research_scope": {
         "allow_new_module": false,
         "allowed_module_ids": [
-          "dsainet.native-patch-preelu-polyphase.r1"
+          "dsainet.spatial-person-gradient.r1"
         ],
         "allowed_stages": [
-          "source_native_patch_preelu_polyphase"
+          "B0_SPATIAL_PERSON_GRADIENT_SOURCE_SCREEN"
         ],
         "data_scope_id": "bnci001-cue4-exposed-A04-A06-no-target",
-        "question_id": "adjacent-versus-interleaved-preelu-phase-grouping"
+        "question_id": "fit-person-shared-spatial-gradient-edit"
       },
-      "source_sha256": "7d903413a4b809eba45749331cb4d68c0fe325c9f5c98af35e0a59d483e1cb16"
+      "source_sha256": "55f29b27fcf5cfed7c88afdb0e561d2e60fdc281508c4f4122554de81be50d96"
     },
     "governance_chain_id": "dsainet-transaction-v4.1",
     "invalid_behavior": "fail_closed_without_advancing",
     "positive_signal_behavior": "pause_for_human_review",
     "purpose": "user-authorized bounded AI4S campaign",
     "queue_accounting": {
-      "2026-11-24_dsainet_b0_patch_preelu_polyphase_r1-full-w1": {
-        "contract_sha256": "9c6bc4425954a9520c116e432f404043d3860a3155bee8c15ce881d9dafbe59c",
-        "queue_seconds": 3.868722915649414,
-        "run_id": "2026-11-24_dsainet_b0_patch_preelu_polyphase_r1-full-w1",
-        "transaction_id": "2026-11-24_dsainet_b0_patch_preelu_polyphase_r1-tx"
+      "2026-11-26_dsainet_b0_spatial_person_gradient_r1-full-w1": {
+        "contract_sha256": "6d07ce79eeafb095c9a6927d4cedcc6e7d6ac659d1e7c8b36a7afded848c1632",
+        "queue_seconds": 1542.8305232524872,
+        "run_id": "2026-11-26_dsainet_b0_spatial_person_gradient_r1-full-w1",
+        "transaction_id": "2026-11-26_dsainet_b0_spatial_person_gradient_r1-tx"
+      },
+      "2026-11-27_dsainet_b0_spatial_person_gradient_r1_budget1-full-w1": {
+        "contract_sha256": "d05e713363f6eb31316338a88a7c3c161fc64734955fd4e22fa7f1cd9926170e",
+        "queue_seconds": 9972.426011323929,
+        "run_id": "2026-11-27_dsainet_b0_spatial_person_gradient_r1_budget1-full-w1",
+        "transaction_id": "2026-11-27_dsainet_b0_spatial_person_gradient_r1_budget1-tx"
+      },
+      "2026-11-27_dsainet_b0_spatial_person_gradient_r1_budget2-full-w1": {
+        "contract_sha256": "f92b4cedeb2a71499ce73ebdfcaa342bbb1bce7313532777fff89f7f2622704a",
+        "queue_seconds": 1.1475164890289307,
+        "run_id": "2026-11-27_dsainet_b0_spatial_person_gradient_r1_budget2-full-w1",
+        "transaction_id": "2026-11-27_dsainet_b0_spatial_person_gradient_r1_budget2-tx"
       }
     },
-    "round_decisions": [
+    "round_decisions": [],
+    "started_at": "2026-11-26T13:54:46.480499+00:00",
+    "stopped_accounting": [
       {
-        "decision": "NO_SIGNAL",
-        "decision_record": "ai4s/programs/dsainet/research/dsainet-b0-patch-preelu-polyphase-r1_decision.yaml",
-        "evidence_id": "AI4S-DSAINET-dsainet-b0-patch-preelu-polyphase-r1",
-        "recorded_at": "2026-11-24T17:37:18.425137+00:00",
-        "round_id": "dsainet-b0-patch-preelu-polyphase-r1"
+        "authorization_ref": "ai4s/programs/dsainet/research/serial_screen_20261126/STOPPED_INTERVAL_AUTHORIZATION.md",
+        "end": "2026-11-26T17:32:41.336029+00:00",
+        "evidence_ref": "ai4s/programs/dsainet/research/serial_screen_20261126/STOPPED_INTERVAL_CONFIRMATION.json",
+        "source_run_id": "2026-11-26_dsainet_b0_spatial_person_gradient_r1-full-w1",
+        "start": 1795702934.4999714
+      },
+      {
+        "authorization_ref": "ai4s/programs/dsainet/research/serial_screen_20261126/BUDGET2_AUTHORIZATION.md",
+        "end": "2026-11-27T06:19:31.796507+00:00",
+        "evidence_ref": "ai4s/programs/dsainet/research/serial_screen_20261126/BUDGET1_TERMINAL_LEDGER.json",
+        "source_run_id": "2026-11-27_dsainet_b0_spatial_person_gradient_r1_budget1-full-w1",
+        "start": 1795724426.5241776
       }
-    ],
-    "started_at": "2026-11-24T14:25:30.389063+00:00"
+    ]
   },
   "capacity_calibration_recovery": {
     "added_budget_seconds": 0,
@@ -9183,6 +9759,91 @@
           }
         ]
       }
+    },
+    {
+      "decision": {
+        "decision": "NO_SIGNAL",
+        "disposition": "STOP_MASKED_CENTRAL_AUX",
+        "round_id": "dsainet-b0-masked-central-aux-r1"
+      },
+      "decision_record": "ai4s/programs/dsainet/research/b0_masked_central_aux_20261126/recovery_45m/closeout/DECISION.json",
+      "evidence_id": "AI4S-DSAINET-MASKED-CENTRAL-AUX-R1-RECOVERED-SCREEN",
+      "round_id": "dsainet-b0-masked-central-aux-r1",
+      "run": {
+        "bundle_id": "2026-11-26_dsainet_b0_masked_central_aux_r1_repair6_bundle",
+        "dispatch_status": "REMOTE_ACCEPTED",
+        "estimated_training_hours": 0.44,
+        "execution_mode": "user_managed",
+        "executor_id": "lab10",
+        "planned_units": 4,
+        "recorded_at": "2026-11-26T12:56:06.573054+00:00",
+        "recovery_parent_contract_sha256": "2245edea48bdb1b45e7f999caba049514e3a768afad645a86003f04d1424fc44",
+        "recovery_parent_run_id": "2026-11-26_dsainet_b0_masked_central_aux_r1_repair5-full-w1",
+        "recovery_tasks": [
+          "B0_s1_t5",
+          "C0_s1_t5",
+          "P0_s1_t5"
+        ],
+        "round_id": "dsainet-b0-masked-central-aux-r1-repair6",
+        "run_prefix": "2026-11-26_dsainet_b0_masked_central_aux_r1_repair6",
+        "terminal_status": "COMPLETE_VERIFIED",
+        "transaction_operations": [
+          {
+            "operation": "upload",
+            "recorded_at": "2026-11-26T12:56:55.726463+00:00",
+            "result": {
+              "action": "UPLOADED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-26_dsainet_b0_masked_central_aux_r1_repair6-full-w1"
+            }
+          },
+          {
+            "operation": "launch",
+            "recorded_at": "2026-11-26T12:57:00.066742+00:00",
+            "result": {
+              "action": "SUBMISSION_SENT_NOT_VERIFIED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-26_dsainet_b0_masked_central_aux_r1_repair6-full-w1"
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-26T12:57:05.624011+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "preflight",
+              "run_id": "2026-11-26_dsainet_b0_masked_central_aux_r1_repair6-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "c008db6ae84a449e832fd396362d43896cbfc879594a39f8336ecaf2a307af4f",
+                "execution_seconds": 2.5811214447021484,
+                "queue_seconds": 1.986557960510254,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-26_dsainet_b0_masked_central_aux_r1_repair6-full-w1",
+                "transaction_id": "2026-11-26_dsainet_b0_masked_central_aux_r1_repair6-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 4.567679405212402
+              }
+            }
+          },
+          {
+            "operation": "fetch",
+            "recorded_at": "2026-11-26T13:29:38.167694+00:00",
+            "result": {
+              "analysis_receipt_sha256": "6d197ea0e5dd670ced0d1335981769f24e471da6bd6ce1841faba2afdf89ad16",
+              "artifact_manifest_sha256": "3bd658c70ce616407c635aeaf2182cd754f10151de79fb0910fe0f74b7a5db1a",
+              "contract_sha256": "c008db6ae84a449e832fd396362d43896cbfc879594a39f8336ecaf2a307af4f",
+              "full_payload_local": false,
+              "intake_path": "ai4s/programs/dsainet/research/b0_masked_central_aux_20261126/recovery_45m/closeout/repair6_intake",
+              "intake_scope": "analysis_v1",
+              "run_id": "2026-11-26_dsainet_b0_masked_central_aux_r1_repair6-full-w1",
+              "transaction_id": "2026-11-26_dsainet_b0_masked_central_aux_r1_repair6-tx",
+              "transfer_bytes": 70085,
+              "verified": true
+            }
+          }
+        ]
+      }
     }
   ],
   "continuation_history": [
@@ -10823,656 +11484,5 @@
   ],
   "engineering_operation_history": [
     {
-      "authorization_ref": "ai4s/programs/dsainet/research/ds07-r1/preparation/AUTHORIZATION.json",
-      "authorized_tasks": [
-        "N",
-        "C",
-        "S",
-        "R"
-      ],
-      "completed_technical_arms": [],
-      "contract": "ai4s/programs/dsainet/research/ds07-r1/preparation/engineering_contract.json",
-      "contract_sha256": "076e3b6b8bb44455fbf4d910e6c6dcf217687cefcab9c53a601367ec80f003f1",
-      "epochs_each": 5,
-      "executor_id": "lab10",
-      "failure": "NameError timezone undefined in runner budget consumer before model initialization",
-      "governance_chain_id": "dsainet-transaction-v3.3",
-      "host": "[REDACTED_MACHINE]",
-      "kind": "engineering_technical_qualification",
-      "last_observed_resource_wait_seconds": 1842.242424249649,
-      "last_probe_at": "2026-11-01T23:11:22.419684+08:00",
-      "last_verified_resource_wait_seconds": 1842.242424249649,
-      "launched": true,
-      "operation_id": "dsainet:ds07-r1:tech1",
-      "postprocess_pid": "[REDACTED_MACHINE]",
-      "postprocess_receipt": "ai4s/programs/dsainet/research/ds07-r1/preparation/POSTPROCESS_LAUNCH_RECEIPT.json",
-      "postprocess_status": "STOP_TECH_CLOSURE_FAILED",
-      "qualification_batches_each": 8,
-      "registered_at": "2026-11-01T04:50:56.179587+00:00",
-      "remaining_budget_hours_at_last_probe": -6.552328478906549,
-      "remote_manifest_sha256": "30f866a2f95270cf9c28a019c89ece4cab1dd3ebb83a600271194cf527176cfb",
-      "remote_pid": "[REDACTED_MACHINE]",
-      "remote_root": "[REDACTED_MACHINE]",
-      "remote_status": "TECH_DRIVER_FAILED",
-      "repair_preparation": {
-        "run_id": "2026-11-01_dsainet_ds07_r1_tech1-repair1",
-        "science_dispatch_allowed": false,
-        "status": "AUTHORIZED_PREPARING"
-      },
-      "research_id": "ds07-r1",
-      "run_id": "2026-11-01_dsainet_ds07_r1_tech1",
-      "science_cost_estimate": "UNKNOWN_NO_EPOCH_MEASUREMENT",
-      "scientific_dispatch_allowed": false,
-      "status": "FAILED",
-      "status_report": "ai4s/programs/dsainet/research/ds07-r1/preparation/STATUS_REPORT_20261101_LATE.md",
-      "technical_acceptance": "FAILED_BEFORE_QUALIFICATION",
-      "technical_scope_only": true,
-      "uploaded": true
-    },
-    {
-      "authorization_ref": "ai4s/programs/dsainet/research/ds07-r1/preparation/AUTHORIZATION.json",
-      "authorized_tasks": [
-        "N",
-        "C",
-        "S",
-        "R"
-      ],
-      "completed_technical_arms": [],
-      "contract": "ai4s/programs/dsainet/research/ds07-r1/preparation/engineering_contract.json",
-      "contract_sha256": "1c5a607320df4657f07225434990e013dc55f723aaf9b1984da6e2cca3b7efbc",
-      "epochs_each": 5,
-      "executor_id": "lab10",
-      "failure": "unexpected authorized bundle destination; guard retained old Run suffix; zero children and qualifications",
-      "governance_chain_id": "dsainet-transaction-v3.3",
-      "host": "[REDACTED_MACHINE]",
-      "kind": "engineering_technical_qualification",
-      "last_observed_resource_wait_seconds": 0,
-      "last_probe_at": null,
-      "last_verified_resource_wait_seconds": 0,
-      "launched": true,
-      "operation_id": "dsainet:ds07-r1:tech1-repair1",
-      "parent_failed_run": "2026-11-01_dsainet_ds07_r1_tech1",
-      "postprocess_pid": null,
-      "postprocess_status": "STOP_TECH_CLOSURE_FAILED",
-      "qualification_batches_each": 8,
-      "real_budget_preflight": "PASS",
-      "registered_at": "2026-11-01T15:41:48.747461+00:00",
-      "remaining_budget_at_launch": 3.0133486600895734,
-      "remote_manifest_sha256": "cd7812cfa9477fb9dd327638e3be8f3addcbebcb9d3788eb7d2f21906c6a9790",
-      "remote_pid": "[REDACTED_MACHINE]",
-      "remote_root": "[REDACTED_MACHINE]",
-      "remote_status": "FAILED_BEFORE_QUEUE",
-      "research_id": "ds07-r1",
-      "run_id": "2026-11-01_dsainet_ds07_r1_tech1-repair1",
-      "science_cost_estimate": "PENDING_REPAIR_TECH",
-      "scientific_dispatch_allowed": false,
-      "status": "FAILED",
-      "technical_acceptance": "PENDING_REPAIR_TECH",
-      "technical_scope_only": true,
-      "uploaded": true
-    },
-    {
-      "authorization_ref": "ai4s/programs/dsainet/research/ds07-r1/preparation/AUTHORIZATION.json",
-      "authorized_tasks": [
-        "N",
-        "C",
-        "S",
-        "R"
-      ],
-      "budget_report_time_utc": "2026-11-02T06:45:44.981441+00:00",
-      "closed_for_followup_at": "2026-11-02T11:43:00.395+00:00",
-      "completed_technical_arms": [
-        "N",
-        "C",
-        "S",
-        "R"
-      ],
-      "contract": "ai4s/programs/dsainet/research/ds07-r1/preparation/engineering_contract.json",
-      "contract_sha256": "95cca71e70b08b6da3c134d1fcf15591df084bc16b781f2c9388af6d19a8fc6d",
-      "epochs_each": 5,
-      "executor_id": "lab10",
-      "governance_chain_id": "dsainet-transaction-v3.3",
-      "host": "[REDACTED_MACHINE]",
-      "kind": "engineering_technical_qualification",
-      "last_observed_resource_wait_seconds": 20067.248963356018,
-      "last_probe_at": "2026-11-02T14:28:29.072162+08:00",
-      "last_verified_resource_wait_seconds": 20067.248963356018,
-      "launched": true,
-      "monitor_powershell": "[REDACTED_MACHINE]",
-      "operation_id": "dsainet:ds07-r1:tech1-repair1-packfix1",
-      "original_status": "FAILED_TECH_CLOSURE",
-      "parent_failed_run": "2026-11-01_dsainet_ds07_r1_tech1-repair1",
-      "postprocess_pid": "[REDACTED_MACHINE]",
-      "postprocess_status": "STOP_TECH_CLOSURE_FAILED",
-      "qualification_batches_each": 8,
-      "real_budget_preflight": "PASS_ON_LAB10_REAL_CONSUMER",
-      "registered_at": "2026-11-01T15:47:25.299688+00:00",
-      "remaining_budget_hours_at_last_probe": -6.183192823180224,
-      "remaining_budget_hours_at_report_time": -6.470945410837203,
-      "remote_manifest_sha256": "1412aac8206873e4adf1349893e42b01957b93d714ab616736a23d555fe2b85a",
-      "remote_pid": "[REDACTED_MACHINE]",
-      "remote_root": "[REDACTED_MACHINE]",
-      "remote_status": "FOUR_ARMS_COMPLETED_CLOSURE_BLOCKED",
-      "research_id": "ds07-r1",
-      "run_id": "2026-11-01_dsainet_ds07_r1_tech1-repair1-packfix1",
-      "science_cost_estimate": "PROVISIONAL_NOT_GATE_ELIGIBLE",
-      "scientific_dispatch_allowed": false,
-      "scientific_interpretation": "NONE; telemetry closure failure preserved",
-      "status": "FAILED",
-      "status_report": "ai4s/programs/dsainet/research/ds07-r1/repair1/STATUS_REPORT_20261102.md",
-      "technical_acceptance": "BLOCKED_N_FULL_PROCESS_MEMORY_TAIL",
-      "technical_scope_only": true,
-      "technical_startup_preflight": "PASS_TO_CAPACITY_BOUNDARY_NO_GPU_CHILD",
-      "uploaded": true
-    }
-  ],
-  "engineering_recovery": {
-    "attempt_class": "external_host_interruption_unarchived",
-    "reason": "User authorized R03 continuation after server-side interruptions; preserve r3r3 as unarchived engineering evidence and rerun the unchanged frozen 36-unit matrix under a new immutable GPU0 Bundle.",
-    "recorded_at": "2026-09-05T02:55:15.841447+00:00",
-    "recovered_from": "2026-09-02_dsainet_ai4s_role_specific_token_pooling_r3r3-full-w1"
-  },
-  "engineering_recovery_history": [
-    {
-      "contract_sha256": "d82104284d7dadd6a47831998c32727a97bca76aff0236c224fd56bfad02f243",
-      "failure_proof_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/readerfix1/FAILURE_PROOF.json",
-      "failure_proof_sha256": "603b251d599280190614e3de9bff7abca1a292d3e7f7308c94e7f3a1edece5dc",
-      "repair_id": "readerfix1",
-      "replacement_round_id": "ds07-r1-science1-readerfix1",
-      "scientific_disposition": "NONE",
-      "source_run_id": "2026-11-02_dsainet_ds07_r1_science1-full-w1",
-      "status": "ENGINEERING_INVALID_SOURCE_ARCHIVED"
-    },
-    {
-      "contract_sha256": "ee394e5bc6ddf2b0bf5603fd8dc10419e5b88e2e36f9c032db8df5e8d77afb68",
-      "failure_proof_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/telemetryfix1/FAILURE_PROOF.json",
-      "failure_proof_sha256": "09c3bfa6b5498a16f01a7e306015e318c8e5af403f9937d9c5bd5d27a73c195c",
-      "repair_id": "telemetryfix1",
-      "replacement_round_id": "ds07-r1-science1-telemetryfix1",
-      "scientific_disposition": "NONE",
-      "source_run_id": "2026-11-02_dsainet_ds07_r1_science1-readerfix1-full-w1",
-      "status": "ENGINEERING_INVALID_SOURCE_ARCHIVED"
-    },
-    {
-      "contract_sha256": "e72dd5f020f21d4b52fb749265c08a3759befee5507f392ccf5b7355e019b59e",
-      "failure_proof_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/summaryfix1/FAILURE_PROOF.json",
-      "failure_proof_sha256": "ddc071fdf3a34d914d644d1e72b403f01388fee0002883b0e41a3d9bb3270893",
-      "repair_id": "summaryfix1",
-      "replacement_round_id": "ds07-r1-science1-summaryfix1",
-      "scientific_disposition": "NONE",
-      "source_run_id": "2026-11-03_dsainet_ds07_r1_science1-telemetryfix1-full-w1",
-      "status": "ENGINEERING_INVALID_SOURCE_ARCHIVED"
-    },
-    {
-      "contract_sha256": "b9824b039bc8dcaaaa907ac8a1c7cdfd0d03b90cbb7a73cc82438edce1c748ef",
-      "failure_proof_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/devicefix1/FAILURE_PROOF.json",
-      "failure_proof_sha256": "3b73f29709b6e739e0306dd39a3ab2a93eae20f2a60f5228e747e0572fd7af2f",
-      "repair_id": "devicefix1",
-      "replacement_round_id": "ds07-r1-science1-devicefix1",
-      "scientific_disposition": "NONE",
-      "source_run_id": "2026-11-03_dsainet_ds07_r1_science1-summaryfix1-full-w1",
-      "status": "ENGINEERING_INVALID_SOURCE_ARCHIVED"
-    },
-    {
-      "authorization_ref": "ai4s/programs/dsainet/research/b0_spatial_filter_radius_repair1_20261123/AUTHORIZATION.md",
-      "contract_sha256": "68c335464cec00edfac0b499a51964588e39e3a6fb0454ed15224a329b79ab1a",
-      "inherited_task_ids": [
-        "B0_s0_t3",
-        "B0_s0_t4",
-        "B0_s0_t5",
-        "B0_s1_t3",
-        "B0_s1_t4",
-        "B0_s1_t5",
-        "C0_s0_t3",
-        "C0_s0_t4",
-        "C0_s0_t5",
-        "C0_s1_t3",
-        "C0_s1_t4",
-        "C0_s1_t5",
-        "P0_s0_t3",
-        "P0_s0_t4",
-        "P0_s0_t5",
-        "P0_s1_t3",
-        "P0_s1_t5"
-      ],
-      "inventory_sha256": "7e4d942edaf25a728738e55504784a47818699d3f469e5651d2ecc1ccc1d727d",
-      "kind": "radius_cudnn_single_task_repair1",
-      "pinned_gpu": 7,
-      "previous_active_run": {
-        "bundle_id": "2026-11-23_dsainet_b0_spatial_filter_radius_r1_bundle",
-        "dispatch_status": "REMOTE_ACCEPTED",
-        "estimated_training_hours": 1.5,
-        "execution_mode": "user_managed",
-        "executor_id": "lab10",
-        "planned_units": 19,
-        "recorded_at": "2026-11-23T06:50:49.801581+00:00",
-        "round_id": "dsainet-b0-spatial-filter-radius-r1",
-        "run_prefix": "2026-11-23_dsainet_b0_spatial_filter_radius_r1",
-        "transaction_operations": [
-          {
-            "operation": "upload",
-            "recorded_at": "2026-11-23T06:55:31.861739+00:00",
-            "result": {
-              "action": "UPLOADED",
-              "monitor_powershell": "[REDACTED_MACHINE]",
-              "run_id": "2026-11-23_dsainet_b0_spatial_filter_radius_r1-full-w1"
-            }
-          },
-          {
-            "operation": "launch",
-            "recorded_at": "2026-11-23T06:55:54.981265+00:00",
-            "result": {
-              "action": "SUBMISSION_SENT_NOT_VERIFIED",
-              "monitor_powershell": "[REDACTED_MACHINE]",
-              "run_id": "2026-11-23_dsainet_b0_spatial_filter_radius_r1-full-w1"
-            }
-          },
-          {
-            "operation": "probe",
-            "recorded_at": "2026-11-23T06:57:20.596594+00:00",
-            "result": {
-              "action": "WAIT_FOR_RESOURCES",
-              "node_id": "smoke",
-              "run_id": "2026-11-23_dsainet_b0_spatial_filter_radius_r1-full-w1",
-              "status": "RUNNING",
-              "timing": {
-                "contract_sha256": "4e426521b0b1e32dae933f6fc49cd85a51c29192885aa79ad6b40ee23ec15724",
-                "execution_seconds": 2.1204333305358887,
-                "queue_seconds": 82.03466510772705,
-                "queue_time_policy": "exclude_resource_wait",
-                "run_id": "2026-11-23_dsainet_b0_spatial_filter_radius_r1-full-w1",
-                "transaction_id": "2026-11-23_dsainet_b0_spatial_filter_radius_r1-tx",
-                "waiting_for_resources": true,
-                "wall_seconds": 84.15509843826294
-              }
-            }
-          },
-          {
-            "operation": "probe",
-            "recorded_at": "2026-11-23T12:25:44.451725+00:00",
-            "result": {
-              "action": "RECONCILE_SAME_NODE",
-              "node_id": "screen",
-              "run_id": "2026-11-23_dsainet_b0_spatial_filter_radius_r1-full-w1",
-              "status": "FAILED",
-              "timing": {
-                "contract_sha256": "4e426521b0b1e32dae933f6fc49cd85a51c29192885aa79ad6b40ee23ec15724",
-                "execution_seconds": 2803.303638935089,
-                "queue_seconds": 10774.293335676193,
-                "queue_time_policy": "exclude_resource_wait",
-                "run_id": "2026-11-23_dsainet_b0_spatial_filter_radius_r1-full-w1",
-                "transaction_id": "2026-11-23_dsainet_b0_spatial_filter_radius_r1-tx",
-                "waiting_for_resources": false,
-                "wall_seconds": 13577.596974611282
-              }
-            }
-          }
-        ]
-      },
-      "previous_authorization": {
-        "allowed_operations": [
-          "upload",
-          "launch",
-          "probe",
-          "fetch",
-          "intake"
-        ],
-        "allowed_transitions": [
-          "SCREEN_NEW"
-        ],
-        "authorization_ref": "ai4s/programs/dsainet/research/b0_spatial_filter_radius_20261123/AUTHORIZATION.md",
-        "campaign_id": "dsainet-b0-spatial-filter-radius-20261123",
-        "executor_id": "lab10",
-        "recorded_at": "2026-11-23T06:50:42.923221+00:00",
-        "research_scope": {
-          "allow_new_module": false,
-          "allowed_module_ids": [
-            "dsainet.native-spatial-filter-radius.r1"
-          ],
-          "allowed_stages": [
-            "source_native_spatial_filter_radius"
-          ],
-          "data_scope_id": "bnci001-cue4-exposed-A04-A06-no-target",
-          "question_id": "tokenizer-fixed-radius-space-versus-time"
-        },
-        "source_sha256": "16e820ef2ced62b6e398e0d8b6f1d615668f0d3cc06dc8d3eb58b3ec214b3291"
-      },
-      "recorded_at": "2026-11-23T12:34:35.520834+00:00",
-      "retry_task_ids": [
-        "P0_s1_t4"
-      ],
-      "scientific_result": false,
-      "source_identity": {
-        "contract_sha256": "4e426521b0b1e32dae933f6fc49cd85a51c29192885aa79ad6b40ee23ec15724",
-        "run_id": "2026-11-23_dsainet_b0_spatial_filter_radius_r1-full-w1",
-        "transaction_id": "2026-11-23_dsainet_b0_spatial_filter_radius_r1-tx"
-      }
-    },
-    {
-      "authorization_ref": "ai4s/programs/dsainet/research/b0_spatial_filter_radius_repair1_20261123/AUTHORIZATION.md",
-      "contract_sha256": "64640ec460385163defd6d5549025e63ee5fe4875002df7cecb6b1edd8d9edb7",
-      "inherited_task_ids": [
-        "B0_s0_t3",
-        "B0_s0_t4",
-        "B0_s0_t5",
-        "B0_s1_t3",
-        "B0_s1_t4",
-        "B0_s1_t5",
-        "C0_s0_t3",
-        "C0_s0_t4",
-        "C0_s0_t5",
-        "C0_s1_t3",
-        "C0_s1_t4",
-        "C0_s1_t5",
-        "P0_s0_t3",
-        "P0_s0_t4",
-        "P0_s0_t5",
-        "P0_s1_t3",
-        "P0_s1_t5"
-      ],
-      "inventory_sha256": "7e4d942edaf25a728738e55504784a47818699d3f469e5651d2ecc1ccc1d727d",
-      "kind": "radius_cudnn_repair1_gpu_allowlist_preworker_fix",
-      "pinned_gpu": 7,
-      "previous_active_run": {
-        "bundle_id": "2026-11-23_dsainet_b0_spatial_filter_radius_r1_repair1_bundle",
-        "dispatch_status": "REMOTE_ACCEPTED",
-        "estimated_training_hours": 0.2,
-        "execution_mode": "user_managed",
-        "executor_id": "lab10",
-        "planned_units": 2,
-        "recorded_at": "2026-11-23T12:34:35.520834+00:00",
-        "round_id": "dsainet-b0-spatial-filter-radius-r1-repair1",
-        "run_prefix": "2026-11-23_dsainet_b0_spatial_filter_radius_r1_repair1",
-        "transaction_operations": [
-          {
-            "operation": "upload",
-            "recorded_at": "2026-11-23T12:34:54.229876+00:00",
-            "result": {
-              "action": "UPLOADED",
-              "monitor_powershell": "[REDACTED_MACHINE]",
-              "run_id": "2026-11-23_dsainet_b0_spatial_filter_radius_r1_repair1-full-w1"
-            }
-          },
-          {
-            "operation": "launch",
-            "recorded_at": "2026-11-23T12:34:57.723502+00:00",
-            "result": {
-              "action": "SUBMISSION_SENT_NOT_VERIFIED",
-              "monitor_powershell": "[REDACTED_MACHINE]",
-              "run_id": "2026-11-23_dsainet_b0_spatial_filter_radius_r1_repair1-full-w1"
-            }
-          },
-          {
-            "operation": "probe",
-            "recorded_at": "2026-11-23T12:35:30.425213+00:00",
-            "result": {
-              "action": "RECONCILE_SAME_NODE",
-              "node_id": "smoke",
-              "run_id": "2026-11-23_dsainet_b0_spatial_filter_radius_r1_repair1-full-w1",
-              "status": "FAILED",
-              "timing": {
-                "contract_sha256": "68c335464cec00edfac0b499a51964588e39e3a6fb0454ed15224a329b79ab1a",
-                "execution_seconds": 1.8123822212219238,
-                "queue_seconds": 0.0,
-                "queue_time_policy": "exclude_resource_wait",
-                "run_id": "2026-11-23_dsainet_b0_spatial_filter_radius_r1_repair1-full-w1",
-                "transaction_id": "2026-11-23_dsainet_b0_spatial_filter_radius_r1_repair1-tx",
-                "waiting_for_resources": false,
-                "wall_seconds": 1.8123822212219238
-              }
-            }
-          }
-        ]
-      },
-      "previous_authorization": {
-        "allowed_operations": [
-          "upload",
-          "launch",
-          "probe",
-          "fetch",
-          "intake"
-        ],
-        "allowed_transitions": [
-          "SCREEN_NEW"
-        ],
-        "authorization_ref": "ai4s/programs/dsainet/research/b0_spatial_filter_radius_repair1_20261123/AUTHORIZATION.md",
-        "campaign_id": "dsainet-b0-spatial-filter-radius-20261123",
-        "executor_id": "lab10",
-        "recorded_at": "2026-11-23T12:34:35.520834+00:00",
-        "repair_contract_sha256": "68c335464cec00edfac0b499a51964588e39e3a6fb0454ed15224a329b79ab1a",
-        "repair_task_ids": [
-          "P0_s1_t4"
-        ],
-        "research_scope": {
-          "allow_new_module": false,
-          "allowed_module_ids": [
-            "dsainet.native-spatial-filter-radius.r1"
-          ],
-          "allowed_stages": [
-            "source_native_spatial_filter_radius"
-          ],
-          "data_scope_id": "bnci001-cue4-exposed-A04-A06-no-target",
-          "question_id": "tokenizer-fixed-radius-space-versus-time"
-        },
-        "source_sha256": "16e820ef2ced62b6e398e0d8b6f1d615668f0d3cc06dc8d3eb58b3ec214b3291"
-      },
-      "recorded_at": "2026-11-23T12:36:38.693771+00:00",
-      "retry_task_ids": [
-        "P0_s1_t4"
-      ],
-      "scientific_result": false,
-      "source_identity": {
-        "contract_sha256": "4e426521b0b1e32dae933f6fc49cd85a51c29192885aa79ad6b40ee23ec15724",
-        "run_id": "2026-11-23_dsainet_b0_spatial_filter_radius_r1-full-w1",
-        "transaction_id": "2026-11-23_dsainet_b0_spatial_filter_radius_r1-tx"
-      }
-    }
-  ],
-  "evidence_status": "campaign_active_with_archived_evidence_only_no_claim_release",
-  "external_interruption_recovery": {
-    "failed_run_id": "2026-11-22_dsainet_b0_attention_token_grid_r1-full-w1",
-    "reason_class": "USER_AUTHORIZED_REDEPLOYMENT",
-    "recorded_at": "2026-11-22T14:56:41.625852+00:00",
-    "replacement_round_id": "dsainet-b0-attention-token-grid-r1-py39fix1",
-    "report": "ai4s/programs/dsainet/research/b0_asymmetric_token_grid_20261122_py39fix1/REDEPLOYMENT.json",
-    "research_gate": {
-      "hypothesis_id": "allocation-of-a-fixed-attention-grid-budget",
-      "module_id": "dsainet.native-attention-token-grid.r1",
-      "paired_seed_cap": 5,
-      "paired_seeds_after_freeze": [
-        0,
-        1
-      ],
-      "transition": "SCREEN_NEW"
-    }
-  },
-  "failed_attempts": [
-    {
-      "engineering_reason": "Pilot task plan must be a JSON list; repaired only its one-element PowerShell serialization.",
-      "failed_run": {
-        "bundle_id": "2026-08-29_dsainet_ai4s_capacity_structure_r2",
-        "estimated_training_hours": 0.879,
-        "planned_units": 18,
-        "recorded_at": "2026-08-29T13:13:47.266947+00:00",
-        "round_id": "dsainet-r02-shared-mean-vs-generic-residual-v0.1",
-        "run_prefix": "2026-08-29_dsainet_ai4s_capacity_structure_r2"
-      },
-      "failed_run_id": "2026-08-29_dsainet_ai4s_capacity_structure_r2-pilot-w1",
-      "formal_status": {
-        "detail": "entrypoint exit=2",
-        "stage": "pilot",
-        "status": "failed",
-        "updated_at": "2026-08-29T13:15:20.241731+00:00"
-      },
-      "retry_recorded_at": "2026-08-29T13:18:25.129656+00:00",
-      "round_id": "dsainet-r02-shared-mean-vs-generic-residual-v0.1"
-    },
-    {
-      "engineering_reason": "User-authorized engineering-only recovery: repair the verified singleton pilot task-plan serialization; preserve O1 scientific contract and failed r3 evidence.",
-      "failed_run": {
-        "bundle_id": "2026-08-30_dsainet_ai4s_crossed_intra_ownership_r3",
-        "estimated_training_hours": 0.879,
-        "planned_units": 18,
-        "recorded_at": "2026-08-29T22:43:45.875543+00:00",
-        "round_id": "dsainet-r03-crossed-intra-ownership-v0.1",
-        "run_prefix": "2026-08-30_dsainet_ai4s_crossed_intra_ownership_r3"
-      },
-      "failed_run_id": "2026-08-30_dsainet_ai4s_crossed_intra_ownership_r3-pilot-w1",
-      "formal_status": {
-        "detail": "entrypoint exit=2",
-        "stage": "pilot",
-        "status": "failed",
-        "updated_at": "2026-08-29T22:44:53.399894+00:00"
-      },
-      "retry_recorded_at": "2026-08-30T02:00:50.408618+00:00",
-      "round_id": "dsainet-r03-crossed-intra-ownership-v0.1"
-    },
-    {
-      "attempt_class": "scheduler_contract_invalid",
-      "engineering_reason": "User authorized engineering-only r2 recovery: route the unchanged zero-training B0 diagnostic matrix through ccmu_lane_executor so the mandatory scheduler_metrics and scheduler_report are emitted; preserve r1 archive.",
-      "failed_run": {
-        "bundle_id": "2026-08-31_dsainet_ai4s_branch_conditioned_spatial_sensitivity_r1",
-        "estimated_training_hours": 0.879,
-        "execution_mode": "ai4s_autopilot",
-        "executor_id": "ccmu_lab",
-        "planned_units": 18,
-        "recorded_at": "2026-08-31T12:10:18.557884+00:00",
-        "round_id": "dsainet-r01-branch-conditioned-spatial-sensitivity-v0.1",
-        "run_prefix": "2026-08-31_dsainet_ai4s_branch_conditioned_spatial_sensitivity_r1"
-      },
-      "failed_run_id": "2026-08-31_dsainet_ai4s_branch_conditioned_spatial_sensitivity_r1-pilot-w1",
-      "formal_status": {
-        "detail": "branch-conditioned spatial sensitivity pilot completed with identity parity",
-        "stage": "pilot",
-        "status": "complete",
-        "updated_at": "2026-08-31T12:11:28.143407+00:00"
-      },
-      "retry_recorded_at": "2026-08-31T12:18:08.252275+00:00",
-      "round_id": "dsainet-r01-branch-conditioned-spatial-sensitivity-v0.1",
-      "scheduler_report": {
-        "algorithm_id": "ccmu-lane-autopilot-v3",
-        "autopilot_eligible": false,
-        "bundle_id": "2026-08-31_dsainet_ai4s_branch_conditioned_spatial_sensitivity_r1",
-        "classification": "invalid",
-        "controller_status": "process_succeeded",
-        "formal_run_status": "complete",
-        "generated_at": "2026-08-31T12:11:29.315078+00:00",
-        "observed": {},
-        "plan_id": "2026-08-31_dsainet_ai4s_branch_conditioned_spatial_sensitivity_r1-schedule",
-        "profile_fingerprint": "de31bf612d965172c9fee7e4e9bb77efc0b29cbe2252d00101ebf11658fe2802",
-        "reasons": [
-          "scheduler_metrics.json is missing"
-        ],
-        "run_id": "2026-08-31_dsainet_ai4s_branch_conditioned_spatial_sensitivity_r1-pilot-w1",
-        "schema_version": "ccmu-scheduler-report-v2",
-        "stage": "pilot",
-        "workers_per_gpu": 1
-      }
-    },
-    {
-      "engineering_reason": "User-authorized engineering-only r3 recovery: serialize the unchanged one-unit pilot plan as an explicit JSON list; preserve r2 failed archive and frozen diagnostic contract.",
-      "failed_run": {
-        "bundle_id": "2026-08-31_dsainet_ai4s_branch_conditioned_spatial_sensitivity_r2",
-        "estimated_training_hours": 0.879,
-        "execution_mode": "ai4s_autopilot",
-        "executor_id": "ccmu_lab",
-        "planned_units": 18,
-        "recorded_at": "2026-08-31T12:18:08.252275+00:00",
-        "round_id": "dsainet-r01-branch-conditioned-spatial-sensitivity-v0.1",
-        "run_prefix": "2026-08-31_dsainet_ai4s_branch_conditioned_spatial_sensitivity_r2"
-      },
-      "failed_run_id": "2026-08-31_dsainet_ai4s_branch_conditioned_spatial_sensitivity_r2-pilot-w1",
-      "formal_status": {
-        "detail": "entrypoint exit=2",
-        "stage": "pilot",
-        "status": "failed",
-        "updated_at": "2026-08-31T12:19:42.649002+00:00"
-      },
-      "retry_recorded_at": "2026-08-31T12:22:15.027529+00:00",
-      "round_id": "dsainet-r01-branch-conditioned-spatial-sensitivity-v0.1"
-    },
-    {
-      "attempt_class": "external_host_interruption_unarchived",
-      "engineering_reason": "Host reboot terminated the unarchived full run before formal failure or archive generation; rerun the unchanged frozen R03 matrix under a new immutable Bundle.",
-      "failed_run": {
-        "bundle_id": "2026-09-01_dsainet_ai4s_role_specific_token_pooling_r3",
-        "estimated_training_hours": 1.759,
-        "execution_mode": "ai4s_autopilot",
-        "executor_id": "ccmu_lab",
-        "planned_units": 36,
-        "recorded_at": "2026-09-01T02:31:40.352686+00:00",
-        "round_id": "dsainet-r03-role-specific-token-pooling-v0.1",
-        "run_prefix": "2026-09-01_dsainet_ai4s_role_specific_token_pooling_r3"
-      },
-      "failed_run_id": "2026-09-01_dsainet_ai4s_role_specific_token_pooling_r3-full-w1",
-      "formal_status": {
-        "formal_run_status_before_interruption": "running",
-        "status": "unarchived_external_interruption"
-      },
-      "interruption_evidence": {
-        "bundle_id": "2026-09-01_dsainet_ai4s_role_specific_token_pooling_r3",
-        "evidence_summary": "At remote observation the active full-run process was absent, no transfer archive existed, and host uptime was below 11 minutes. The started P2 task log predated the inferred reboot. The host reboot therefore terminated the run before the remote runner could write a formal failure or archive.",
-        "formal_run_status": "running",
-        "host_reboot_observed": true,
-        "last_task_log_at": "2026-09-01T12:26:17.579+08:00",
-        "observed_uptime_seconds_less_than": 660,
-        "process_not_running": true,
-        "remote_observed_at": "2026-09-01T13:13:15+08:00",
-        "run_id": "2026-09-01_dsainet_ai4s_role_specific_token_pooling_r3-full-w1",
-        "schema_version": "mieeg-ai4s-external-interruption-evidence-v1",
-        "scope_boundary": "This is engineering interruption evidence only. No partial C2/P2 output may be reused for scientific comparison, decision, or claim.",
-        "stage": "full",
-        "transfer_archive_present": false
-      },
-      "retry_recorded_at": "2026-09-01T05:17:44.161706+00:00",
-      "round_id": "dsainet-r03-role-specific-token-pooling-v0.1"
-    },
-    {
-      "attempt_class": "external_host_interruption_unarchived",
-      "engineering_reason": "Second host reboot interrupted an unarchived full run after P2 seed0 subject8 stopped progressing; rerun the unchanged frozen matrix under a fresh Bundle with the audited 900-second per-task failure bound.",
-      "failed_run": {
-        "bundle_id": "2026-09-01_dsainet_ai4s_role_specific_token_pooling_r3r1",
-        "estimated_training_hours": 1.759,
-        "execution_mode": "ai4s_autopilot",
-        "executor_id": "ccmu_lab",
-        "planned_units": 36,
-        "recorded_at": "2026-09-01T05:17:44.161706+00:00",
-        "round_id": "dsainet-r03-role-specific-token-pooling-v0.1",
-        "run_prefix": "2026-09-01_dsainet_ai4s_role_specific_token_pooling_r3r1"
-      },
-      "failed_run_id": "2026-09-01_dsainet_ai4s_role_specific_token_pooling_r3r1-full-w1",
-      "formal_status": {
-        "formal_run_status_before_interruption": "running",
-        "status": "unarchived_external_interruption"
-      },
-      "interruption_evidence": {
-        "bundle_id": "2026-09-01_dsainet_ai4s_role_specific_token_pooling_r3r1",
-        "evidence_summary": "C2 completed 18 lane task launches and P2 seed-0 launched 9 tasks. The final P2 seed-0 subject-8 task wrote epochs through 33/100, then made no further progress. The host booted at 18:00:09 and was only six minutes old at observation; the active process was absent, formal status was still running, and no transfer archive existed.",
-        "formal_run_status": "running",
-        "host_boot_at": "2026-09-01T18:00:09+08:00",
-        "host_reboot_observed": true,
-        "last_task_progress_at": "2026-09-01T16:27:43+08:00",
-        "matrix_task_count": 36,
-        "observed_lane_task_logs": 27,
-        "observed_uptime_seconds_less_than": 420,
-        "process_not_running": true,
-        "remote_observed_at": "2026-09-01T18:07:05+08:00",
-        "run_id": "2026-09-01_dsainet_ai4s_role_specific_token_pooling_r3r1-full-w1",
-        "schema_version": "mieeg-ai4s-external-interruption-evidence-v1",
-        "scope_boundary": "This is engineering interruption evidence only. The 27 unarchived task artifacts are not eligible for scientific comparison, result freezing, decision, or claim.",
-        "stage": "full",
-        "stalled_task": "screen_p2_s0_t8",
-        "stalled_task_last_epoch": 33,
-        "transfer_archive_present": false
-      },
-      "retry_recorded_at": "2026-09-01T12:13:28.844690+00:00",
-      "round_id": "dsainet-r03-role-specific-token-pooling-v0.1"
-    },
-    {
-      "attempt_class": "external_host_interruption_unarchived",
-      "engineering_reason": "User authorized continuation on isolated GPU0; preserve third reboot as unarchived engineering interruption and rerun unchanged frozen R03 matrix under a new immutable Bundle.",
-      "failed_run": {
-        "bundle_id": "2026-09-01_dsainet_ai4s_role_specific_token_pooling_r3r2",
-        "estimated_training_hours": 1.759,
-        "ex
+      "authorization_ref": "ai4s/programs/dsainet/research/ds07-r
 ```

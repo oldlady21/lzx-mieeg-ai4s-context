@@ -325,6 +325,148 @@
   "imports": [
     {
       "claim_release": false,
+      "contract_canonical_sha256": "1fc9a9961bbd63ed7d9ba32d3b383c78fe252593007c606b2bd2765deda64f6f",
+      "evidence_id": "MVCNET-POOL-ANTIALIAS-001-LAB10-DISPATCH-20261127",
+      "observed_at": "2026-11-27T07:09:01.667237+00:00",
+      "report": "ai4s/programs/mvcnet/research/ifnet_pool_antialias_20261127/SELECTION_AND_DISPATCH.md",
+      "role": "dispatch_snapshot_no_scientific_effect",
+      "run_id": "2026-11-27_mvcnet_pool_antialias_001_lab10-full-w1",
+      "snapshot": "ai4s/programs/mvcnet/research/ifnet_pool_antialias_20261127/FIT_PHASE_PROBE.json",
+      "source_evidence_ids": [
+        "MVCNET-POOL-ANTIALIAS-001-LAB10-GPU-20261127"
+      ],
+      "status": "RUNNING_VERIFIED",
+      "transaction_id": "2026-11-27_mvcnet_pool_antialias_001_lab10-tx"
+    },
+    {
+      "artifact_manifest_sha256": "aba09233f09b234fa61a830934c1c5963fe7a58005a6a82a3c80b520c1925596",
+      "claim_release": false,
+      "evidence_id": "MVCNET-POOL-ANTIALIAS-001-LAB10-GPU-20261127",
+      "intake": "ai4s/programs/mvcnet/research/ifnet_pool_antialias_20261127/QUALIFICATION_INTAKE.json",
+      "peak_driver_memory_mib": {
+        "G0": 7695,
+        "J0": 7619,
+        "S0": 7619
+      },
+      "report": "ai4s/programs/mvcnet/research/ifnet_pool_antialias_20261127/COST_SIZING.json",
+      "role": "source_only_gpu_engineering_qualification",
+      "run_id": "2026-11-27_mvcnet_pool_antialias_001_lab10_qualification-full-w1",
+      "source_evidence_ids": [
+        "MVCNET-POOL-ANTIALIAS-001-SOURCE-20261127",
+        "MVCNET-POOL-ANTIALIAS-001-LAB10-CPU-20261127"
+      ],
+      "status": "PASS_ENGINEERING_RUNTIME_GATE",
+      "target_samples_scored": 0
+    },
+    {
+      "claim_release": false,
+      "evidence_id": "MVCNET-POOL-ANTIALIAS-001-LAB10-CPU-20261127",
+      "report": "ai4s/programs/mvcnet/research/ifnet_pool_antialias_20261127/PRODUCTION_CPU_CLOSEOUT.md",
+      "role": "production_cpu_technical_acceptance",
+      "source_evidence_ids": [
+        "MVCNET-POOL-ANTIALIAS-001-SOURCE-20261127"
+      ],
+      "status": "PASS"
+    },
+    {
+      "claim_release": false,
+      "disposition": "All eight source people passed the fixed necessity gate; stop serial candidate selection, qualify one limited three-arm fit and check matrix.",
+      "evidence_id": "MVCNET-POOL-ANTIALIAS-001-SOURCE-20261127",
+      "report": "ai4s/programs/mvcnet/research/serial_selection_20261127/POOL_ALIAS_SOURCE_RESULT.json",
+      "role": "source_train_only_frozen_activation_alias_necessity",
+      "source_evidence_ids": [
+        "MVCNET-ADJACENT-PRODUCT-001-SOURCE-20261127",
+        "MVCNET-MATCHED-POSITIVE-001-SOURCE-BOUND-20261127"
+      ],
+      "status": "PASS_SOURCE_GATE"
+    },
+    {
+      "claim_release": false,
+      "disposition": "The per-class and session relaxed upper bounds 0.3758–0.4181 were below 0.50 in the first required fold on both Windows and Lab10. Close this fixed mapping and loader instance without learning.",
+      "evidence_id": "MVCNET-MATCHED-POSITIVE-001-SOURCE-BOUND-20261127",
+      "report": "ai4s/programs/mvcnet/research/serial_selection_20261127/MATCHED_PAIR_CLOSEOUT.md",
+      "role": "source_metadata_only_production_matching_coverage_bound",
+      "status": "STOP_SOURCE_COVERAGE_BOUND"
+    },
+    {
+      "claim_release": false,
+      "disposition": "Frozen adjacent products did not beat the marginally matched distant association in the E session. Close this fixed hypothesis and move to a distinct mechanism.",
+      "evidence_id": "MVCNET-ADJACENT-PRODUCT-001-SOURCE-20261127",
+      "report": "ai4s/programs/mvcnet/research/serial_selection_20261127/ADJACENT_CLOSEOUT.md",
+      "role": "source_train_only_checkpoint_coordinate_geometry",
+      "status": "STOP_SOURCE_GATE"
+    },
+    {
+      "claim_release": false,
+      "contract_canonical_sha256": "83e76e54b73dc2ab298cecc85342c600359e31daa4724646fa87d3bc1670528f",
+      "evidence_id": "MVCNET-CENTRALROW-001-LAB10-DISPATCH-20261126",
+      "observed_at": "2026-11-26T09:08:55.380813+00:00",
+      "report": "ai4s/programs/mvcnet/research/central_row_augmentation_20261126/SELECTION_AND_DISPATCH.md",
+      "role": "dispatch_snapshot_no_scientific_effect",
+      "run_id": "2026-11-26_mvcnet_centralrow_001_lab10-full-w1",
+      "snapshot": "ai4s/programs/mvcnet/research/central_row_augmentation_20261126/FIT_PHASE_PROBE.json",
+      "source_evidence_ids": [
+        "MVCNET-CENTRALROW-001-LAB10-GPU-20261126"
+      ],
+      "status": "RUNNING_VERIFIED",
+      "transaction_id": "2026-11-26_mvcnet_centralrow_001_lab10-tx"
+    },
+    {
+      "artifact_manifest_sha256": "a9315022707d9bc6c89a4618fe2ce4efa9933632c53e844ef5f6ce3930e208f6",
+      "claim_release": false,
+      "evidence_id": "MVCNET-CENTRALROW-001-LAB10-GPU-20261126",
+      "intake": "ai4s/programs/mvcnet/research/central_row_augmentation_20261126/QUALIFICATION_INTAKE.json",
+      "peak_driver_memory_mib": {
+        "G0": 7627,
+        "J0": 7627,
+        "S0": 7619
+      },
+      "report": "ai4s/programs/mvcnet/research/central_row_augmentation_20261126/COST_SIZING.json",
+      "role": "source_only_gpu_engineering_qualification",
+      "run_id": "2026-11-26_mvcnet_centralrow_001_lab10_qualification-full-w1",
+      "source_evidence_ids": [
+        "MVCNET-CENTRALROW-001-SOURCE-20261126",
+        "MVCNET-CENTRALROW-001-LAB10-CPU-20261126"
+      ],
+      "status": "PASS_ENGINEERING_RUNTIME_GATE",
+      "target_samples_scored": 0
+    },
+    {
+      "claim_release": false,
+      "evidence_id": "MVCNET-CENTRALROW-001-LAB10-CPU-20261126",
+      "report": "ai4s/programs/mvcnet/research/central_row_augmentation_20261126/PRODUCTION_CPU_CLOSEOUT.md",
+      "role": "production_cpu_technical_acceptance",
+      "source_evidence_ids": [
+        "MVCNET-CENTRALROW-001-SOURCE-20261126"
+      ],
+      "status": "PASS"
+    },
+    {
+      "claim_release": false,
+      "disposition": "First selected candidate for a bounded joint-training development test. Matched column marginals, nondegenerate joint waveforms, preserved hand readout. Clean utility awaits paired training.",
+      "evidence_id": "MVCNET-CENTRALROW-001-SOURCE-20261126",
+      "report": "ai4s/programs/mvcnet/research/central_row_augmentation_20261126/SOURCE_RESULT.json",
+      "role": "source_only_matched_augmentation_qualification",
+      "status": "PASS_SOURCE_GATE"
+    },
+    {
+      "claim_release": false,
+      "disposition": "Close prioritization of cue-timed temporal kernels on the stipulated class spectral-map rationale. Both directions favored the offset control.",
+      "evidence_id": "MVCNET-CUE-TEMPORAL-BANKS-001-SOURCE-20261126",
+      "report": "ai4s/programs/mvcnet/research/cue_temporal_banks_20261126/SOURCE_RESULT.json",
+      "role": "source_only_two_session_held_person_diagnostic",
+      "status": "STOP_SOURCE_GATE"
+    },
+    {
+      "claim_release": false,
+      "disposition": "Close prioritization of homologous weight tying from six-site hand map correspondence. Only one of eight source people favored true pairing in both directions.",
+      "evidence_id": "MVCNET-MIRROR-SPATIAL-001-SOURCE-20261126",
+      "report": "ai4s/programs/mvcnet/research/mirror_spatial_filters_20261126/SOURCE_RESULT.json",
+      "role": "source_only_two_session_held_person_diagnostic",
+      "status": "STOP_SOURCE_GATE"
+    },
+    {
+      "claim_release": false,
       "evidence_id": "MVCNET-CVCDROPOUT-001-LAB10-GPU-20261123",
       "report": "ai4s/programs/mvcnet/research/cvc_shared_dropout_20261123/COST_SIZING.json",
       "role": "three_arm_source_only_five_epoch_cost_qualification",
@@ -4443,6 +4585,36 @@
       "round_contract": "ai4s/programs/mvcnet/research/cvc_reflection_axis_20261123/repair1/transaction_contract.yaml",
       "round_id": "mvcnet-reflectcvc-001-development-v1",
       "run_id": "2026-11-23_mvcnet_reflectcvc_001_lab10_repair1-full-w1"
+    },
+    {
+      "claim_status": "no_paper_claim",
+      "decision": "NO_SIGNAL",
+      "decision_record": "ai4s/programs/mvcnet/research/mvcnet-cvcdropout-001-development-v1_decision.yaml",
+      "evidence_id": "AI4S-MVCNET-mvcnet-cvcdropout-001-development-v1",
+      "executor_id": "lab10",
+      "follow_up_status": "v3_record_design_constraint_or_precise_closure",
+      "intake_status": "verified_ai4s_round",
+      "interpretation_boundary": "See frozen decision record.",
+      "prohibited_follow_up": "exact_candidate_rescue_or_recombination_under_the_frozen_contract",
+      "role": "exact_negative_boundary",
+      "round_contract": "ai4s/programs/mvcnet/research/cvc_shared_dropout_20261123/repair2/transaction_contract.yaml",
+      "round_id": "mvcnet-cvcdropout-001-development-v1",
+      "run_id": "2026-11-23_mvcnet_cvcdropout_001_lab10_repair2-full-w1"
+    },
+    {
+      "claim_status": "no_paper_claim",
+      "decision": "NO_SIGNAL",
+      "decision_record": "ai4s/programs/mvcnet/research/mvcnet-centralrow-001-development-v1_decision.yaml",
+      "evidence_id": "AI4S-MVCNET-mvcnet-centralrow-001-development-v1",
+      "executor_id": "lab10",
+      "follow_up_status": "v3_record_design_constraint_or_precise_closure",
+      "intake_status": "verified_ai4s_round",
+      "interpretation_boundary": "See frozen decision record.",
+      "prohibited_follow_up": "exact_candidate_rescue_or_recombination_under_the_frozen_contract",
+      "role": "exact_negative_boundary",
+      "round_contract": "ai4s/programs/mvcnet/research/mvcnet-centralrow-001-development-v1.yaml",
+      "round_id": "mvcnet-centralrow-001-development-v1",
+      "run_id": "2026-11-26_mvcnet_centralrow_001_lab10-full-w1"
     }
   ],
   "schema_version": "mieeg-ai4s-evidence-index-v1",
