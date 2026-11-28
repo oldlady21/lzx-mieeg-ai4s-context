@@ -744,3 +744,52 @@ S0、J0、G0 的 Lab10 源侧五轮资格均通过，实测整进程峰值为 7,
 ### U146 IFNet 抽取前抗混叠进入 Lab10 三臂开发比较
 
 三臂生产 CPU 验收和 Lab10 真五轮资格通过。一次正式 Run `2026-11-27_mvcnet_pool_antialias_001_lab10-full-w1` 已启动，11 月 27 日 15:09 北京时间为 7 项拟合运行、47 项待执行、0 项失败。仅在全部 54 拟合封存后做干净试次比较。本轮三臂为原池化、抽取后平滑、抽取前滤波，保留事前优效与个体风险门。科学结果待封存。[资格及派发记录](ifnet_pool_antialias_20261127/SELECTION_AND_DISPATCH.md)
+
+### U147 抽取前抗混叠未达到干净试次开发门
+
+54 项拟合及 54 项干净试次检查完整封存，精简包和 31,104 条预测重算通过。G0 对 S0 平均 −0.511 个百分点，对抽取后平滑 J0 为 −0.193 个百分点，两比较在两个种子上均为负，逐被试风险门通过。源侧高频残留确实可降低，联合训练未带来预定干净试次增益。在已暴露 001 的固定三角核、步长及宿主下登记 `NO_SIGNAL / STOP`。[科学收尾](ifnet_pool_antialias_20261127/SCIENCE_CLOSEOUT.md) · [正式判定记录](mvcnet-pool-antialias-001-development-v1_decision.yaml)
+
+### U148 等剂量偶部的跨人类别对比弱于奇部
+
+原封存 S0 的 3,680 条源训练试次中，逐试次配平后，GELU 偶部的同类减异类质心余弦差为 0.56325，奇部为 0.69108。候选的净差 −0.12783 未达事前 +0.02，关闭该固定剂量的偶部加权。一期技术恢复保留，零优化及外层评分。下一项转查 raw 与 flip 的 CE 监督权重分配。[源侧收尾](ifnet_polarity_components_20261127/SOURCE_CLOSEOUT.md)
+
+### U149 raw 与 flip 的 CE 等剂量交换通过源侧可辨识门
+
+封存 S0 回放 3,680 条源训练试次。57 个 B64 加末个 B32 实际使用原四个视图与 CR 标签，两套 CE 权重相对 S0 的增量为等幅反向，最大相对误差 8.04e-16。58/58 批的完整 CE 头梯度可区分非共线。保留固定正反监督剂量进入一次有限开发比较，源侧检查只核实相同数据与前向上的干预生效，效果由干净 raw 判断。[事前设计](ifnet_view_ce_balance_20261127/research_brief.md) · [源侧结果](ifnet_view_ce_balance_20261127/SOURCE_GATE.json)
+
+### U150 raw/flip CE 配比进入 Lab10 干净 raw 开发比较
+
+本机及 Lab10 真实源侧零步、Lab10 三臂各五轮工程资格均通过。源侧可辨识门已登记。固定四视图分类 CE 权重的 S0／J0／G0 进入 `2026-11-27_mvcnet_view_ce_balance_001_lab10-full-w1`，11 月 27 日 22:44:58（北京时间）核验 RUNNING，1 项拟合执行、53 待调度、0 失败。评估保留两个种子、九折、干净 raw 及预先冻结的双对照和个体风险门。等待完整拟合封存及 54 项干净检查。[资格及派发记录](ifnet_view_ce_balance_20261127/SELECTION_AND_DISPATCH.md)
+
+### U151 raw/flip 分类监督配比通过干净 raw 开发门
+
+54 项拟合与 54 项干净试次检查已封存，经精简包核验及 31,104 条预测重算。G0 对等权 S0 与反向 J0 分别高 1.235、1.254 个百分点，均过均值门、双种子方向门和 S0 个体风险门。登记 SCREEN_POSITIVE / STOP，证据限于已暴露 001 的原宿主和固定剂量。[科学收尾](ifnet_view_ce_balance_20261127/SCIENCE_CLOSEOUT.md)
+
+### U152 raw/flip 配比开始四库开发复核
+
+001 原封存核验后保留为开发来源。004、002、Zhou 沿各自精确绑定的历史协议、两个种子和同期三臂，前置零步及源侧 GPU 资格通过。正式 Run 2026-11-28_mvcnet_view_ce_balance_xdataset_lab10-full-w1 已核验为 RUNNING。162 拟合全部封存后开始 162 干净试次检查，逐库执行已冻结效用、方向与风险门。[资格及派发](ifnet_view_ce_balance_xdataset_20261128/SELECTION_AND_DISPATCH.md)
+
+### U153 raw/flip 配比在三个追加协议均未复现过门增量
+
+复用原 001 正筛查。新增 004／002／Zhou 的 G0 对 S0 分别为 +0.292／+0.179／+0.321 pp，对 J0 为 +0.199／+1.049／−0.468 pp。各库均过个体风险门，均未过等权增量门。002 保留对反向配比的方向证据。精简核验并重算 55,014 条新预测，按单轮登记 NO_SIGNAL / STOP。[四库科学收尾](ifnet_view_ce_balance_xdataset_20261128/SCIENCE_CLOSEOUT.md)
+
+
+### U154 raw／flip 配比收束，G0 留作消融
+
+按用户决定，保留 001 固定配比正筛查和三个追加库的 NO_SIGNAL，结束配比研发，不补 CO、CV。[方向处置](ifnet_view_ce_balance_xdataset_20261128/DIRECTION_CLOSEOUT.md)
+
+### U155 试次级归一化读出止于旧案去重和可辨识性
+
+旧 Lab10 三臂已比较权重归一化和同时归一化样本。旧 P0 相对原头 +0.251 pp、对仅权重归一化 −0.048 pp。无偏置的去幅值读出又与按试次调节温度等价。本次设计停止，零新评分、零训练。[首项关闭](serial_selection_20261128/01_COSINE_READOUT_CLOSEOUT.md)
+
+### U156 IFNet 共同参考约束通过源侧与生产零步验收
+
+001 原八源人两个会话均为 8/8 通过。完整参考方向和指定等秩控制的真实移除幅度不同，主要问题限定为前者相对完整 S0 的清洁留人效用。四视图注入及本机、Lab10 源侧 B64／B32 零步通过。技术准备在 GPU 资格预算内推进，正负科学判定仍待正式比较。[冻结源核查](serial_selection_20261128/02_SOURCE_CLOSEOUT.md) · [生产验收](ifnet_reference_rank1_20261128/PRODUCTION_CPU_CLOSEOUT.md)
+
+### U157 共同参考约束按显存准入进入正式 Lab10 拟合
+
+依用户明确更新，取消外部进程独占限制和每卡固定任务数。原 GPU 资格零尝试终止，新资格三臂五轮封存通过，完整进程峰值 7,619–7,647 MiB，预算上限 18 小时。正式 Run 2026-11-28_mvcnet_reference_rank1_001_lab10-full-w1 已核验 RUNNING，14:00:27 为 3 项拟合运行、51 项待调度、0 失败。54 项拟合封存后进入 54 项干净 raw 检查。[资格成本](ifnet_reference_rank1_20261128/COST_SIZING.json) · [正式远端快照](ifnet_reference_rank1_20261128/FIT_PHASE_PROBE.json)
+
+### U158 共同参考约束未达到干净留人开发门
+
+54 项拟合与 54 项干净 raw 检查已封存。精简入库后独立复算 31,104 条预测。G0 对 S0／J0 平均为 −0.231／−0.434 个百分点，两比较的两个种子均不同向。个体风险门通过，均值与方向门失败，登记 NO_SIGNAL / STOP，关闭该固定完整投影实例。[科学收尾](ifnet_reference_rank1_20261128/SCIENCE_CLOSEOUT.md)

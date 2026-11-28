@@ -2,7 +2,7 @@
 
 完整脱敏文件：`ai4s/programs/dsainet/research/STATE.yaml`（[原文件](../STATE.yaml)）。
 
-完整公开文件 SHA-256：`fcded7c1abd1290fb1ba0415842fc5329c4491c61983ad6cf9c264c282954d32`。UTF-8 字节范围：[0, 500000) / 1117445。
+完整公开文件 SHA-256：`f82348654ac8c6f7aa650bb18e93964fe7d7ff12011e22926810756e98c7e30f`。UTF-8 字节范围：[0, 500000) / 1146765。
 
 这是连续文本片段，可能从 JSON 字段中间开始；按分段顺序拼接代码块可恢复完整脱敏正文。不是单独有效的 State，也不授予执行权限。
 
@@ -11,60 +11,8 @@
   "active_local_experiment": null,
   "active_operation": null,
   "active_research": null,
-  "active_round": "dsainet-b0-spatial-person-gradient-r1-budget2",
-  "active_run": {
-    "bundle_id": "2026-11-27_dsainet_b0_spatial_person_gradient_r1_budget2_bundle",
-    "dispatch_status": "REMOTE_ACCEPTED",
-    "estimated_training_hours": 3.5,
-    "execution_mode": "user_managed",
-    "executor_id": "lab10",
-    "planned_units": 19,
-    "recorded_at": "2026-11-27T06:19:31.796507+00:00",
-    "recovery_parent_contract_sha256": "d05e713363f6eb31316338a88a7c3c161fc64734955fd4e22fa7f1cd9926170e",
-    "recovery_parent_run_id": "2026-11-27_dsainet_b0_spatial_person_gradient_r1_budget1-full-w1",
-    "round_id": "dsainet-b0-spatial-person-gradient-r1-budget2",
-    "run_prefix": "2026-11-27_dsainet_b0_spatial_person_gradient_r1_budget2",
-    "transaction_operations": [
-      {
-        "operation": "upload",
-        "recorded_at": "2026-11-27T06:20:07.007074+00:00",
-        "result": {
-          "action": "UPLOADED",
-          "monitor_powershell": "[REDACTED_MACHINE]",
-          "run_id": "2026-11-27_dsainet_b0_spatial_person_gradient_r1_budget2-full-w1"
-        }
-      },
-      {
-        "operation": "launch",
-        "recorded_at": "2026-11-27T06:20:10.569560+00:00",
-        "result": {
-          "action": "SUBMISSION_SENT_NOT_VERIFIED",
-          "monitor_powershell": "[REDACTED_MACHINE]",
-          "run_id": "2026-11-27_dsainet_b0_spatial_person_gradient_r1_budget2-full-w1"
-        }
-      },
-      {
-        "operation": "probe",
-        "recorded_at": "2026-11-27T06:20:16.453828+00:00",
-        "result": {
-          "action": "RECONCILE_SAME_NODE",
-          "node_id": "smoke",
-          "run_id": "2026-11-27_dsainet_b0_spatial_person_gradient_r1_budget2-full-w1",
-          "status": "RUNNING",
-          "timing": {
-            "contract_sha256": "f92b4cedeb2a71499ce73ebdfcaa342bbb1bce7313532777fff89f7f2622704a",
-            "execution_seconds": 3.9031822681427,
-            "queue_seconds": 1.1475164890289307,
-            "queue_time_policy": "exclude_resource_wait",
-            "run_id": "2026-11-27_dsainet_b0_spatial_person_gradient_r1_budget2-full-w1",
-            "transaction_id": "2026-11-27_dsainet_b0_spatial_person_gradient_r1_budget2-tx",
-            "waiting_for_resources": false,
-            "wall_seconds": 5.050698757171631
-          }
-        }
-      }
-    ]
-  },
+  "active_round": null,
+  "active_run": null,
   "active_run_history": [
     {
       "bundle_id": "2026-11-26_dsainet_b0_masked_central_aux_r1_bundle",
@@ -2933,6 +2881,162 @@
       },
       "closing_status": "COMPLETE_MAX_ROUNDS",
       "closure_reason": "programs/dsainet/research/serial_screen_20261126/AUTHORIZATION.md"
+    },
+    {
+      "campaign_id": "dsainet-b0-spatial-person-gradient-r1-20261126",
+      "closed_at": "2026-11-27T08:39:01.737688+00:00",
+      "closing_decision": {
+        "decision": "NO_SIGNAL",
+        "disposition": "STOP_SPATIAL_PERSON_GRADIENT",
+        "round_id": "dsainet-b0-spatial-person-gradient-r1-budget2"
+      },
+      "closing_round": "dsainet-b0-spatial-person-gradient-r1-budget2",
+      "closing_run": {
+        "analysis_receipt_sha256": "3daa473411ea0daeda132162de9a6f49f455bba8854dc2777ffed236950c5b94",
+        "artifact_manifest_sha256": "ce30046af333e58153f1d59ab986abb498914e1b20e54357eb709b1e65dda36e",
+        "contract_sha256": "f92b4cedeb2a71499ce73ebdfcaa342bbb1bce7313532777fff89f7f2622704a",
+        "full_payload_local": false,
+        "intake_path": "ai4s/programs/dsainet/research/serial_screen_20261126/closeout/budget2_intake",
+        "intake_scope": "analysis_v1",
+        "run_id": "2026-11-27_dsainet_b0_spatial_person_gradient_r1_budget2-full-w1",
+        "run_status": "complete",
+        "transaction_id": "2026-11-27_dsainet_b0_spatial_person_gradient_r1_budget2-tx",
+        "transfer_bytes": 321966,
+        "verified": true,
+        "verified_at": "2026-11-27T08:16:06.375635+00:00"
+      },
+      "closing_status": "COMPLETE_MAX_ROUNDS",
+      "closure_reason": "programs/dsainet/research/serial_screen_20261127/AUTHORIZATION.md"
+    },
+    {
+      "campaign_id": "dsainet-b0-inter-token-amplitude-r1-20261127",
+      "closed_at": "2026-11-27T14:06:07.860538+00:00",
+      "closing_decision": {
+        "decision": "NO_SIGNAL",
+        "disposition": "STOP_INTER_TOKEN_AMPLITUDE",
+        "round_id": "dsainet-b0-inter-token-amplitude-r1"
+      },
+      "closing_round": "dsainet-b0-inter-token-amplitude-r1",
+      "closing_run": {
+        "analysis_receipt_sha256": "cfb4db8a71be221090f56c42bce26daa6f463fbbce347127475510f8d1b0e4b8",
+        "artifact_manifest_sha256": "6543950aa73adcf9c71575206f569e07f88edd0463cbe7169f65f14256549bc0",
+        "contract_sha256": "e3a5f89ef867670c344f3da40e0fa90f75f4402858209717189e334872ca33fc",
+        "full_payload_local": false,
+        "intake_path": "ai4s/programs/dsainet/research/serial_screen_20261127/closeout/intake",
+        "intake_scope": "analysis_v1",
+        "run_id": "2026-11-27_dsainet_b0_inter_token_amplitude_r1-full-w1",
+        "run_status": "complete",
+        "transaction_id": "2026-11-27_dsainet_b0_inter_token_amplitude_r1-tx",
+        "transfer_bytes": 319599,
+        "verified": true,
+        "verified_at": "2026-11-27T13:06:27.142787+00:00"
+      },
+      "closing_status": "COMPLETE_MAX_ROUNDS",
+      "closure_reason": "用户已授权候选 09 按原额度派发，5400 秒实际执行，6300 秒单轮累计。"
+    },
+    {
+      "campaign_id": "dsainet-b0-central-waveform-completion-r1-20261127",
+      "closed_at": "2026-11-27T17:07:59.642804+00:00",
+      "closing_decision": {
+        "decision": "NO_SIGNAL",
+        "disposition": "STOP_CENTRAL_WAVEFORM_COMPLETION",
+        "round_id": "dsainet-b0-central-waveform-completion-r1"
+      },
+      "closing_round": "dsainet-b0-central-waveform-completion-r1",
+      "closing_run": {
+        "analysis_receipt_sha256": "e778d26f716b994db6def32e73f432fa26e3682c5f85aa03e95edcef4576e3fc",
+        "artifact_manifest_sha256": "f3a3b6a871ab656b7288134703d498f2b7dd1b61426b90d788a5781657b1cc59",
+        "contract_sha256": "f750b909d54bbf5252845f35cfc50c7ee2a5bbcc6ea92cd723a142b57bd741e1",
+        "full_payload_local": false,
+        "intake_path": "ai4s/programs/dsainet/research/serial_screen_20261127b/closeout/intake",
+        "intake_scope": "analysis_v1",
+        "run_id": "2026-11-27_dsainet_b0_central_waveform_completion_r1-full-w1",
+        "run_status": "complete",
+        "transaction_id": "2026-11-27_dsainet_b0_central_waveform_completion_r1-tx",
+        "transfer_bytes": 323650,
+        "verified": true,
+        "verified_at": "2026-11-27T16:17:01.657226+00:00"
+      },
+      "closing_status": "COMPLETE_MAX_ROUNDS",
+      "closure_reason": "First qualified candidate authorized by current request, 90 min execution cap and 105 min campaign."
+    },
+    {
+      "campaign_id": "dsainet-b0-matched-scale-init-r1-20261128",
+      "closed_at": "2026-11-28T03:21:50.261848+00:00",
+      "closing_decision": {
+        "decision": "NO_SIGNAL",
+        "disposition": "STOP_MATCHED_SCALE_INIT",
+        "round_id": "dsainet-b0-matched-scale-init-r1"
+      },
+      "closing_round": "dsainet-b0-matched-scale-init-r1",
+      "closing_run": {
+        "analysis_receipt_sha256": "52b6876ece33d03e17bfd206ce873c60628526cdd97ad0d0eafffed3152a1b83",
+        "artifact_manifest_sha256": "3c2876a1671e95cae5ace8caa17b8ae017e1aee282f8cfc7512ada5e8e317d16",
+        "contract_sha256": "3b787dee63459858360f72d3efb410386f56ee33cd304c468eb9b3d30013d547",
+        "full_payload_local": false,
+        "intake_path": "ai4s/programs/dsainet/research/serial_screen_20261128/closeout/intake",
+        "intake_scope": "analysis_v1",
+        "run_id": "2026-11-28_dsainet_b0_matched_scale_init_r1-full-w1",
+        "run_status": "complete",
+        "transaction_id": "2026-11-28_dsainet_b0_matched_scale_init_r1-tx",
+        "transfer_bytes": 321331,
+        "verified": true,
+        "verified_at": "2026-11-28T03:07:09.062249+00:00"
+      },
+      "closing_status": "COMPLETE_MAX_ROUNDS",
+      "closure_reason": "First qualified candidate from current serial mandate, 90 min execution and 105 min campaign."
+    },
+    {
+      "campaign_id": "dsainet-b0-paired-lag-shape-r1-20261128",
+      "closed_at": "2026-11-28T06:06:55.107968+00:00",
+      "closing_decision": {
+        "decision": "NO_SIGNAL",
+        "disposition": "STOP_PAIRED_LAG_SHAPE",
+        "round_id": "dsainet-b0-paired-lag-shape-r1"
+      },
+      "closing_round": "dsainet-b0-paired-lag-shape-r1",
+      "closing_run": {
+        "analysis_receipt_sha256": "12572115142ac1f81c26192258a01014ef602adb3f5cace43da69d4f2f5952ac",
+        "artifact_manifest_sha256": "4883cfea744802bbbf2e35a896ab7c39c8cc9ca8a395e175347d787cca718b58",
+        "contract_sha256": "5d3e2201ad0ed133394d4102ce24d5121b902194db3484e3fbae5aa9a5da3402",
+        "full_payload_local": false,
+        "intake_path": "ai4s/programs/dsainet/research/serial_screen_20261128b/closeout/intake",
+        "intake_scope": "analysis_v1",
+        "run_id": "2026-11-28_dsainet_b0_paired_lag_shape_r1-full-w1",
+        "run_status": "complete",
+        "transaction_id": "2026-11-28_dsainet_b0_paired_lag_shape_r1-tx",
+        "transfer_bytes": 332946,
+        "verified": true,
+        "verified_at": "2026-11-28T05:53:37.902478+00:00"
+      },
+      "closing_status": "COMPLETE_MAX_ROUNDS",
+      "closure_reason": "First eligible candidate from current user request. Original 90 min execution and 105 min campaign budgets."
+    },
+    {
+      "campaign_id": "dsainet-b0-phase-center-bank-r1-20261128",
+      "closed_at": "2026-11-28T08:38:23.662030+00:00",
+      "closing_decision": {
+        "decision": "NO_SIGNAL",
+        "disposition": "STOP_PHASE_CENTER_BANK",
+        "round_id": "dsainet-b0-phase-center-bank-r1"
+      },
+      "closing_round": "dsainet-b0-phase-center-bank-r1",
+      "closing_run": {
+        "analysis_receipt_sha256": "e93433f314b7f7898d88db1570356648b618d68a30fb0b7c0c6e05cdf086553f",
+        "artifact_manifest_sha256": "d739d626f0d968cb7fd699c7610ee3804759ef4754d6db99576cb216e499cfe8",
+        "contract_sha256": "9fb01090b967a066884286e2cb289373167dfcfad98df5ff2c57c3871c744c19",
+        "full_payload_local": false,
+        "intake_path": "ai4s/programs/dsainet/research/serial_screen_20261128c/closeout/intake",
+        "intake_scope": "analysis_v1",
+        "run_id": "2026-11-28_dsainet_b0_phase_center_bank_r1-full-w1",
+        "run_status": "complete",
+        "transaction_id": "2026-11-28_dsainet_b0_phase_center_bank_r1-tx",
+        "transfer_bytes": 814595,
+        "verified": true,
+        "verified_at": "2026-11-28T08:28:57.095484+00:00"
+      },
+      "closing_status": "COMPLETE_MAX_ROUNDS",
+      "closure_reason": "First v4.1 serial candidate qualified under current user-authorized Lab10 envelope"
     }
   ],
   "automatic_follow_up": false,
@@ -3032,83 +3136,57 @@
     "allowed_transitions": [
       "SCREEN_NEW"
     ],
-    "authorization_reason": "programs/dsainet/research/serial_screen_20261126/AUTHORIZATION.md",
-    "budget_policy": {
-      "exclude_verified_stopped_seconds": true
-    },
-    "campaign_id": "dsainet-b0-spatial-person-gradient-r1-20261126",
+    "authorization_reason": "First v4.1 serial candidate qualified under current user-authorized Lab10 envelope",
+    "campaign_id": "dsainet-b0-lateral-hand-readout-r1-20261128",
     "continuation_policy_version": "evidence_to_design_v1",
     "decision_policy": "stop_at_positive",
     "execution_authorization": {
       "allowed_operations": [
         "upload",
         "launch",
-        "probe",
-        "fetch",
-        "intake"
+        "probe"
       ],
       "allowed_transitions": [
         "SCREEN_NEW"
       ],
-      "authorization_ref": "ai4s/programs/dsainet/research/serial_screen_20261126/AUTHORIZATION.md",
-      "campaign_id": "dsainet-b0-spatial-person-gradient-r1-20261126",
+      "authorization_ref": "ai4s/programs/dsainet/research/serial_screen_20261128d/AUTHORIZATION.md",
+      "campaign_id": "dsainet-b0-lateral-hand-readout-r1-20261128",
       "executor_id": "lab10",
-      "recorded_at": "2026-11-26T13:54:49.622177+00:00",
+      "recorded_at": "2026-11-28T08:38:26.685142+00:00",
       "research_scope": {
         "allow_new_module": false,
         "allowed_module_ids": [
-          "dsainet.spatial-person-gradient.r1"
+          "dsainet.lateral-hand-readout.r1"
         ],
         "allowed_stages": [
-          "B0_SPATIAL_PERSON_GRADIENT_SOURCE_SCREEN"
+          "B0_LATERAL_HAND_READOUT_SOURCE_SCREEN"
         ],
         "data_scope_id": "bnci001-cue4-exposed-A04-A06-no-target",
-        "question_id": "fit-person-shared-spatial-gradient-edit"
+        "question_id": "explicit-lateralized-eeg-evidence-for-hand-decoding"
       },
-      "source_sha256": "55f29b27fcf5cfed7c88afdb0e561d2e60fdc281508c4f4122554de81be50d96"
+      "source_sha256": "45dfa4142022205b9108952debe8161c6c67f4cc6e92e4ce2bc91f1caaa62f13"
     },
     "governance_chain_id": "dsainet-transaction-v4.1",
     "invalid_behavior": "fail_closed_without_advancing",
     "positive_signal_behavior": "pause_for_human_review",
     "purpose": "user-authorized bounded AI4S campaign",
     "queue_accounting": {
-      "2026-11-26_dsainet_b0_spatial_person_gradient_r1-full-w1": {
-        "contract_sha256": "6d07ce79eeafb095c9a6927d4cedcc6e7d6ac659d1e7c8b36a7afded848c1632",
-        "queue_seconds": 1542.8305232524872,
-        "run_id": "2026-11-26_dsainet_b0_spatial_person_gradient_r1-full-w1",
-        "transaction_id": "2026-11-26_dsainet_b0_spatial_person_gradient_r1-tx"
-      },
-      "2026-11-27_dsainet_b0_spatial_person_gradient_r1_budget1-full-w1": {
-        "contract_sha256": "d05e713363f6eb31316338a88a7c3c161fc64734955fd4e22fa7f1cd9926170e",
-        "queue_seconds": 9972.426011323929,
-        "run_id": "2026-11-27_dsainet_b0_spatial_person_gradient_r1_budget1-full-w1",
-        "transaction_id": "2026-11-27_dsainet_b0_spatial_person_gradient_r1_budget1-tx"
-      },
-      "2026-11-27_dsainet_b0_spatial_person_gradient_r1_budget2-full-w1": {
-        "contract_sha256": "f92b4cedeb2a71499ce73ebdfcaa342bbb1bce7313532777fff89f7f2622704a",
-        "queue_seconds": 1.1475164890289307,
-        "run_id": "2026-11-27_dsainet_b0_spatial_person_gradient_r1_budget2-full-w1",
-        "transaction_id": "2026-11-27_dsainet_b0_spatial_person_gradient_r1_budget2-tx"
+      "2026-11-28_dsainet_b0_lateral_hand_readout_r1-full-w1": {
+        "contract_sha256": "e41316d9cbd5e9c994c5c3d26d9909e88182b9674c68f97d883c8ae7e47986e4",
+        "queue_seconds": 12.49248480796814,
+        "run_id": "2026-11-28_dsainet_b0_lateral_hand_readout_r1-full-w1",
+        "transaction_id": "2026-11-28_dsainet_b0_lateral_hand_readout_r1-tx"
       }
     },
-    "round_decisions": [],
-    "started_at": "2026-11-26T13:54:46.480499+00:00",
-    "stopped_accounting": [
+    "round_decisions": [
       {
-        "authorization_ref": "ai4s/programs/dsainet/research/serial_screen_20261126/STOPPED_INTERVAL_AUTHORIZATION.md",
-        "end": "2026-11-26T17:32:41.336029+00:00",
-        "evidence_ref": "ai4s/programs/dsainet/research/serial_screen_20261126/STOPPED_INTERVAL_CONFIRMATION.json",
-        "source_run_id": "2026-11-26_dsainet_b0_spatial_person_gradient_r1-full-w1",
-        "start": 1795702934.4999714
-      },
-      {
-        "authorization_ref": "ai4s/programs/dsainet/research/serial_screen_20261126/BUDGET2_AUTHORIZATION.md",
-        "end": "2026-11-27T06:19:31.796507+00:00",
-        "evidence_ref": "ai4s/programs/dsainet/research/serial_screen_20261126/BUDGET1_TERMINAL_LEDGER.json",
-        "source_run_id": "2026-11-27_dsainet_b0_spatial_person_gradient_r1_budget1-full-w1",
-        "start": 1795724426.5241776
+        "decision": "NO_SIGNAL",
+        "decision_record": "ai4s/programs/dsainet/research/serial_screen_20261128d/closeout/DECISION.json",
+        "evidence_id": "AI4S-DSAINET-LATERAL-HAND-READOUT-R1",
+        "round_id": "dsainet-b0-lateral-hand-readout-r1"
       }
-    ]
+    ],
+    "started_at": "2026-11-28T08:38:23.662030+00:00"
   },
   "capacity_calibration_recovery": {
     "added_budget_seconds": 0,
@@ -9844,6 +9922,554 @@
           }
         ]
       }
+    },
+    {
+      "decision": {
+        "decision": "NO_SIGNAL",
+        "disposition": "STOP_SPATIAL_PERSON_GRADIENT",
+        "round_id": "dsainet-b0-spatial-person-gradient-r1-budget2"
+      },
+      "decision_record": "ai4s/programs/dsainet/research/serial_screen_20261126/closeout/DECISION.json",
+      "evidence_id": "AI4S-DSAINET-SPATIAL-PERSON-GRADIENT-R1-BUDGET2",
+      "round_id": "dsainet-b0-spatial-person-gradient-r1-budget2",
+      "run": {
+        "bundle_id": "2026-11-27_dsainet_b0_spatial_person_gradient_r1_budget2_bundle",
+        "dispatch_status": "REMOTE_ACCEPTED",
+        "estimated_training_hours": 3.5,
+        "execution_mode": "user_managed",
+        "executor_id": "lab10",
+        "planned_units": 19,
+        "recorded_at": "2026-11-27T06:19:31.796507+00:00",
+        "recovery_parent_contract_sha256": "d05e713363f6eb31316338a88a7c3c161fc64734955fd4e22fa7f1cd9926170e",
+        "recovery_parent_run_id": "2026-11-27_dsainet_b0_spatial_person_gradient_r1_budget1-full-w1",
+        "round_id": "dsainet-b0-spatial-person-gradient-r1-budget2",
+        "run_prefix": "2026-11-27_dsainet_b0_spatial_person_gradient_r1_budget2",
+        "terminal_status": "COMPLETE_VERIFIED",
+        "transaction_operations": [
+          {
+            "operation": "upload",
+            "recorded_at": "2026-11-27T06:20:07.007074+00:00",
+            "result": {
+              "action": "UPLOADED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-27_dsainet_b0_spatial_person_gradient_r1_budget2-full-w1"
+            }
+          },
+          {
+            "operation": "launch",
+            "recorded_at": "2026-11-27T06:20:10.569560+00:00",
+            "result": {
+              "action": "SUBMISSION_SENT_NOT_VERIFIED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-27_dsainet_b0_spatial_person_gradient_r1_budget2-full-w1"
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-27T06:20:16.453828+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "smoke",
+              "run_id": "2026-11-27_dsainet_b0_spatial_person_gradient_r1_budget2-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "f92b4cedeb2a71499ce73ebdfcaa342bbb1bce7313532777fff89f7f2622704a",
+                "execution_seconds": 3.9031822681427,
+                "queue_seconds": 1.1475164890289307,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-27_dsainet_b0_spatial_person_gradient_r1_budget2-full-w1",
+                "transaction_id": "2026-11-27_dsainet_b0_spatial_person_gradient_r1_budget2-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 5.050698757171631
+              }
+            }
+          },
+          {
+            "operation": "fetch",
+            "recorded_at": "2026-11-27T08:16:06.375635+00:00",
+            "result": {
+              "analysis_receipt_sha256": "3daa473411ea0daeda132162de9a6f49f455bba8854dc2777ffed236950c5b94",
+              "artifact_manifest_sha256": "ce30046af333e58153f1d59ab986abb498914e1b20e54357eb709b1e65dda36e",
+              "contract_sha256": "f92b4cedeb2a71499ce73ebdfcaa342bbb1bce7313532777fff89f7f2622704a",
+              "full_payload_local": false,
+              "intake_path": "ai4s/programs/dsainet/research/serial_screen_20261126/closeout/budget2_intake",
+              "intake_scope": "analysis_v1",
+              "run_id": "2026-11-27_dsainet_b0_spatial_person_gradient_r1_budget2-full-w1",
+              "transaction_id": "2026-11-27_dsainet_b0_spatial_person_gradient_r1_budget2-tx",
+              "transfer_bytes": 321966,
+              "verified": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "decision": {
+        "decision": "NO_SIGNAL",
+        "disposition": "STOP_INTER_TOKEN_AMPLITUDE",
+        "round_id": "dsainet-b0-inter-token-amplitude-r1"
+      },
+      "decision_record": "ai4s/programs/dsainet/research/serial_screen_20261127/closeout/DECISION.json",
+      "evidence_id": "AI4S-DSAINET-INTER-TOKEN-AMPLITUDE-R1",
+      "round_id": "dsainet-b0-inter-token-amplitude-r1",
+      "run": {
+        "bundle_id": "2026-11-27_dsainet_b0_inter_token_amplitude_r1_bundle",
+        "dispatch_status": "REMOTE_ACCEPTED",
+        "estimated_training_hours": 1.5,
+        "execution_mode": "user_managed",
+        "executor_id": "lab10",
+        "planned_units": 19,
+        "recorded_at": "2026-11-27T08:39:12.201432+00:00",
+        "round_id": "dsainet-b0-inter-token-amplitude-r1",
+        "run_prefix": "2026-11-27_dsainet_b0_inter_token_amplitude_r1",
+        "terminal_status": "COMPLETE_VERIFIED",
+        "transaction_operations": [
+          {
+            "operation": "upload",
+            "recorded_at": "2026-11-27T08:39:45.572871+00:00",
+            "result": {
+              "action": "UPLOADED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-27_dsainet_b0_inter_token_amplitude_r1-full-w1"
+            }
+          },
+          {
+            "operation": "launch",
+            "recorded_at": "2026-11-27T08:39:49.324803+00:00",
+            "result": {
+              "action": "SUBMISSION_SENT_NOT_VERIFIED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-27_dsainet_b0_inter_token_amplitude_r1-full-w1"
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-27T08:39:54.948577+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "smoke",
+              "run_id": "2026-11-27_dsainet_b0_inter_token_amplitude_r1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "e3a5f89ef867670c344f3da40e0fa90f75f4402858209717189e334872ca33fc",
+                "execution_seconds": 2.646787405014038,
+                "queue_seconds": 2.0093719959259033,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-27_dsainet_b0_inter_token_amplitude_r1-full-w1",
+                "transaction_id": "2026-11-27_dsainet_b0_inter_token_amplitude_r1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 4.656159400939941
+              }
+            }
+          },
+          {
+            "operation": "fetch",
+            "recorded_at": "2026-11-27T13:06:27.142787+00:00",
+            "result": {
+              "analysis_receipt_sha256": "cfb4db8a71be221090f56c42bce26daa6f463fbbce347127475510f8d1b0e4b8",
+              "artifact_manifest_sha256": "6543950aa73adcf9c71575206f569e07f88edd0463cbe7169f65f14256549bc0",
+              "contract_sha256": "e3a5f89ef867670c344f3da40e0fa90f75f4402858209717189e334872ca33fc",
+              "full_payload_local": false,
+              "intake_path": "ai4s/programs/dsainet/research/serial_screen_20261127/closeout/intake",
+              "intake_scope": "analysis_v1",
+              "run_id": "2026-11-27_dsainet_b0_inter_token_amplitude_r1-full-w1",
+              "transaction_id": "2026-11-27_dsainet_b0_inter_token_amplitude_r1-tx",
+              "transfer_bytes": 319599,
+              "verified": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "decision": {
+        "decision": "NO_SIGNAL",
+        "disposition": "STOP_CENTRAL_WAVEFORM_COMPLETION",
+        "round_id": "dsainet-b0-central-waveform-completion-r1"
+      },
+      "decision_record": "ai4s/programs/dsainet/research/serial_screen_20261127b/closeout/DECISION.json",
+      "evidence_id": "AI4S-DSAINET-CENTRAL-WAVEFORM-COMPLETION-R1",
+      "round_id": "dsainet-b0-central-waveform-completion-r1",
+      "run": {
+        "bundle_id": "2026-11-27_dsainet_b0_central_waveform_completion_r1_bundle",
+        "dispatch_status": "REMOTE_ACCEPTED",
+        "estimated_training_hours": 1.5,
+        "execution_mode": "user_managed",
+        "executor_id": "lab10",
+        "planned_units": 19,
+        "recorded_at": "2026-11-27T14:06:18.266888+00:00",
+        "round_id": "dsainet-b0-central-waveform-completion-r1",
+        "run_prefix": "2026-11-27_dsainet_b0_central_waveform_completion_r1",
+        "terminal_status": "COMPLETE_VERIFIED",
+        "transaction_operations": [
+          {
+            "operation": "upload",
+            "recorded_at": "2026-11-27T14:07:12.410975+00:00",
+            "result": {
+              "action": "UPLOADED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-27_dsainet_b0_central_waveform_completion_r1-full-w1"
+            }
+          },
+          {
+            "operation": "launch",
+            "recorded_at": "2026-11-27T14:07:17.148336+00:00",
+            "result": {
+              "action": "SUBMISSION_SENT_NOT_VERIFIED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-27_dsainet_b0_central_waveform_completion_r1-full-w1"
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-27T14:07:59.755031+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "smoke",
+              "run_id": "2026-11-27_dsainet_b0_central_waveform_completion_r1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "f750b909d54bbf5252845f35cfc50c7ee2a5bbcc6ea92cd723a142b57bd741e1",
+                "execution_seconds": 3.049639940261841,
+                "queue_seconds": 38.220099449157715,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-27_dsainet_b0_central_waveform_completion_r1-full-w1",
+                "transaction_id": "2026-11-27_dsainet_b0_central_waveform_completion_r1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 41.269739389419556
+              }
+            }
+          },
+          {
+            "operation": "fetch",
+            "recorded_at": "2026-11-27T16:17:01.657226+00:00",
+            "result": {
+              "analysis_receipt_sha256": "e778d26f716b994db6def32e73f432fa26e3682c5f85aa03e95edcef4576e3fc",
+              "artifact_manifest_sha256": "f3a3b6a871ab656b7288134703d498f2b7dd1b61426b90d788a5781657b1cc59",
+              "contract_sha256": "f750b909d54bbf5252845f35cfc50c7ee2a5bbcc6ea92cd723a142b57bd741e1",
+              "full_payload_local": false,
+              "intake_path": "ai4s/programs/dsainet/research/serial_screen_20261127b/closeout/intake",
+              "intake_scope": "analysis_v1",
+              "run_id": "2026-11-27_dsainet_b0_central_waveform_completion_r1-full-w1",
+              "transaction_id": "2026-11-27_dsainet_b0_central_waveform_completion_r1-tx",
+              "transfer_bytes": 323650,
+              "verified": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "decision": {
+        "decision": "NO_SIGNAL",
+        "disposition": "STOP_MATCHED_SCALE_INIT",
+        "round_id": "dsainet-b0-matched-scale-init-r1"
+      },
+      "decision_record": "ai4s/programs/dsainet/research/serial_screen_20261128/closeout/DECISION.json",
+      "evidence_id": "AI4S-DSAINET-MATCHED-SCALE-INIT-R1",
+      "round_id": "dsainet-b0-matched-scale-init-r1",
+      "run": {
+        "bundle_id": "2026-11-28_dsainet_b0_matched_scale_init_r1_bundle",
+        "dispatch_status": "REMOTE_ACCEPTED",
+        "estimated_training_hours": 1.5,
+        "execution_mode": "user_managed",
+        "executor_id": "lab10",
+        "planned_units": 19,
+        "recorded_at": "2026-11-27T17:09:17.498115+00:00",
+        "round_id": "dsainet-b0-matched-scale-init-r1",
+        "run_prefix": "2026-11-28_dsainet_b0_matched_scale_init_r1",
+        "terminal_status": "COMPLETE_VERIFIED",
+        "transaction_operations": [
+          {
+            "operation": "upload",
+            "recorded_at": "2026-11-27T17:09:56.752878+00:00",
+            "result": {
+              "action": "UPLOADED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-28_dsainet_b0_matched_scale_init_r1-full-w1"
+            }
+          },
+          {
+            "operation": "launch",
+            "recorded_at": "2026-11-27T17:10:01.150035+00:00",
+            "result": {
+              "action": "SUBMISSION_SENT_NOT_VERIFIED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-28_dsainet_b0_matched_scale_init_r1-full-w1"
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-27T17:10:19.029452+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "screen",
+              "run_id": "2026-11-28_dsainet_b0_matched_scale_init_r1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "3b787dee63459858360f72d3efb410386f56ee33cd304c468eb9b3d30013d547",
+                "execution_seconds": 15.340334177017212,
+                "queue_seconds": 1.6395483016967773,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-28_dsainet_b0_matched_scale_init_r1-full-w1",
+                "transaction_id": "2026-11-28_dsainet_b0_matched_scale_init_r1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 16.97988247871399
+              }
+            }
+          },
+          {
+            "operation": "fetch",
+            "recorded_at": "2026-11-28T03:07:09.062249+00:00",
+            "result": {
+              "analysis_receipt_sha256": "52b6876ece33d03e17bfd206ce873c60628526cdd97ad0d0eafffed3152a1b83",
+              "artifact_manifest_sha256": "3c2876a1671e95cae5ace8caa17b8ae017e1aee282f8cfc7512ada5e8e317d16",
+              "contract_sha256": "3b787dee63459858360f72d3efb410386f56ee33cd304c468eb9b3d30013d547",
+              "full_payload_local": false,
+              "intake_path": "ai4s/programs/dsainet/research/serial_screen_20261128/closeout/intake",
+              "intake_scope": "analysis_v1",
+              "run_id": "2026-11-28_dsainet_b0_matched_scale_init_r1-full-w1",
+              "transaction_id": "2026-11-28_dsainet_b0_matched_scale_init_r1-tx",
+              "transfer_bytes": 321331,
+              "verified": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "decision": {
+        "decision": "NO_SIGNAL",
+        "disposition": "STOP_PAIRED_LAG_SHAPE",
+        "round_id": "dsainet-b0-paired-lag-shape-r1"
+      },
+      "decision_record": "ai4s/programs/dsainet/research/serial_screen_20261128b/closeout/DECISION.json",
+      "evidence_id": "AI4S-DSAINET-PAIRED-LAG-SHAPE-R1",
+      "round_id": "dsainet-b0-paired-lag-shape-r1",
+      "run": {
+        "bundle_id": "2026-11-28_dsainet_b0_paired_lag_shape_r1_bundle",
+        "dispatch_status": "REMOTE_ACCEPTED",
+        "estimated_training_hours": 1.5,
+        "execution_mode": "user_managed",
+        "executor_id": "lab10",
+        "planned_units": 19,
+        "recorded_at": "2026-11-28T03:22:02.399065+00:00",
+        "round_id": "dsainet-b0-paired-lag-shape-r1",
+        "run_prefix": "2026-11-28_dsainet_b0_paired_lag_shape_r1",
+        "terminal_status": "COMPLETE_VERIFIED",
+        "transaction_operations": [
+          {
+            "operation": "upload",
+            "recorded_at": "2026-11-28T03:23:51.689365+00:00",
+            "result": {
+              "action": "UPLOADED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-28_dsainet_b0_paired_lag_shape_r1-full-w1"
+            }
+          },
+          {
+            "operation": "launch",
+            "recorded_at": "2026-11-28T03:23:56.742179+00:00",
+            "result": {
+              "action": "SUBMISSION_SENT_NOT_VERIFIED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-28_dsainet_b0_paired_lag_shape_r1-full-w1"
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-28T03:24:19.842609+00:00",
+            "result": {
+              "action": "WAIT_FOR_RESOURCES",
+              "node_id": "screen",
+              "run_id": "2026-11-28_dsainet_b0_paired_lag_shape_r1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "5d3e2201ad0ed133394d4102ce24d5121b902194db3484e3fbae5aa9a5da3402",
+                "execution_seconds": 18.533995866775513,
+                "queue_seconds": 3.1892049312591553,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-28_dsainet_b0_paired_lag_shape_r1-full-w1",
+                "transaction_id": "2026-11-28_dsainet_b0_paired_lag_shape_r1-tx",
+                "waiting_for_resources": true,
+                "wall_seconds": 21.723200798034668
+              }
+            }
+          },
+          {
+            "operation": "fetch",
+            "recorded_at": "2026-11-28T05:53:37.902478+00:00",
+            "result": {
+              "analysis_receipt_sha256": "12572115142ac1f81c26192258a01014ef602adb3f5cace43da69d4f2f5952ac",
+              "artifact_manifest_sha256": "4883cfea744802bbbf2e35a896ab7c39c8cc9ca8a395e175347d787cca718b58",
+              "contract_sha256": "5d3e2201ad0ed133394d4102ce24d5121b902194db3484e3fbae5aa9a5da3402",
+              "full_payload_local": false,
+              "intake_path": "ai4s/programs/dsainet/research/serial_screen_20261128b/closeout/intake",
+              "intake_scope": "analysis_v1",
+              "run_id": "2026-11-28_dsainet_b0_paired_lag_shape_r1-full-w1",
+              "transaction_id": "2026-11-28_dsainet_b0_paired_lag_shape_r1-tx",
+              "transfer_bytes": 332946,
+              "verified": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "decision": {
+        "decision": "NO_SIGNAL",
+        "disposition": "STOP_PHASE_CENTER_BANK",
+        "round_id": "dsainet-b0-phase-center-bank-r1"
+      },
+      "decision_record": "ai4s/programs/dsainet/research/serial_screen_20261128c/closeout/DECISION.json",
+      "evidence_id": "AI4S-DSAINET-PHASE-CENTER-BANK-R1",
+      "round_id": "dsainet-b0-phase-center-bank-r1",
+      "run": {
+        "bundle_id": "2026-11-28_dsainet_b0_phase_center_bank_r1_bundle",
+        "dispatch_status": "REMOTE_ACCEPTED",
+        "estimated_training_hours": 1.5,
+        "execution_mode": "user_managed",
+        "executor_id": "lab10",
+        "planned_units": 19,
+        "recorded_at": "2026-11-28T06:07:05.115515+00:00",
+        "round_id": "dsainet-b0-phase-center-bank-r1",
+        "run_prefix": "2026-11-28_dsainet_b0_phase_center_bank_r1",
+        "terminal_status": "COMPLETE_VERIFIED",
+        "transaction_operations": [
+          {
+            "operation": "upload",
+            "recorded_at": "2026-11-28T06:08:04.374989+00:00",
+            "result": {
+              "action": "UPLOADED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-28_dsainet_b0_phase_center_bank_r1-full-w1"
+            }
+          },
+          {
+            "operation": "launch",
+            "recorded_at": "2026-11-28T06:08:08.396185+00:00",
+            "result": {
+              "action": "SUBMISSION_SENT_NOT_VERIFIED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-28_dsainet_b0_phase_center_bank_r1-full-w1"
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-28T06:08:25.448067+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "smoke",
+              "run_id": "2026-11-28_dsainet_b0_phase_center_bank_r1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "9fb01090b967a066884286e2cb289373167dfcfad98df5ff2c57c3871c744c19",
+                "execution_seconds": 12.391982555389404,
+                "queue_seconds": 3.7437076568603516,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-28_dsainet_b0_phase_center_bank_r1-full-w1",
+                "transaction_id": "2026-11-28_dsainet_b0_phase_center_bank_r1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 16.135690212249756
+              }
+            }
+          },
+          {
+            "operation": "fetch",
+            "recorded_at": "2026-11-28T08:28:57.095484+00:00",
+            "result": {
+              "analysis_receipt_sha256": "e93433f314b7f7898d88db1570356648b618d68a30fb0b7c0c6e05cdf086553f",
+              "artifact_manifest_sha256": "d739d626f0d968cb7fd699c7610ee3804759ef4754d6db99576cb216e499cfe8",
+              "contract_sha256": "9fb01090b967a066884286e2cb289373167dfcfad98df5ff2c57c3871c744c19",
+              "full_payload_local": false,
+              "intake_path": "ai4s/programs/dsainet/research/serial_screen_20261128c/closeout/intake",
+              "intake_scope": "analysis_v1",
+              "run_id": "2026-11-28_dsainet_b0_phase_center_bank_r1-full-w1",
+              "transaction_id": "2026-11-28_dsainet_b0_phase_center_bank_r1-tx",
+              "transfer_bytes": 814595,
+              "verified": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "decision": {
+        "decision": "NO_SIGNAL",
+        "disposition": "STOP_LATERAL_HAND_READOUT",
+        "round_id": "dsainet-b0-lateral-hand-readout-r1"
+      },
+      "decision_record": "ai4s/programs/dsainet/research/serial_screen_20261128d/closeout/DECISION.json",
+      "evidence_id": "AI4S-DSAINET-LATERAL-HAND-READOUT-R1",
+      "round_id": "dsainet-b0-lateral-hand-readout-r1",
+      "run": {
+        "bundle_id": "2026-11-28_dsainet_b0_lateral_hand_readout_r1_bundle",
+        "dispatch_status": "REMOTE_ACCEPTED",
+        "estimated_training_hours": 1.5,
+        "execution_mode": "user_managed",
+        "executor_id": "lab10",
+        "planned_units": 19,
+        "recorded_at": "2026-11-28T08:38:35.834885+00:00",
+        "round_id": "dsainet-b0-lateral-hand-readout-r1",
+        "run_prefix": "2026-11-28_dsainet_b0_lateral_hand_readout_r1",
+        "terminal_status": "COMPLETE_VERIFIED",
+        "transaction_operations": [
+          {
+            "operation": "upload",
+            "recorded_at": "2026-11-28T08:39:22.147335+00:00",
+            "result": {
+              "action": "UPLOADED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-28_dsainet_b0_lateral_hand_readout_r1-full-w1"
+            }
+          },
+          {
+            "operation": "launch",
+            "recorded_at": "2026-11-28T08:39:27.301735+00:00",
+            "result": {
+              "action": "SUBMISSION_SENT_NOT_VERIFIED",
+              "monitor_powershell": "[REDACTED_MACHINE]",
+              "run_id": "2026-11-28_dsainet_b0_lateral_hand_readout_r1-full-w1"
+            }
+          },
+          {
+            "operation": "probe",
+            "recorded_at": "2026-11-28T08:40:01.078533+00:00",
+            "result": {
+              "action": "RECONCILE_SAME_NODE",
+              "node_id": "screen",
+              "run_id": "2026-11-28_dsainet_b0_lateral_hand_readout_r1-full-w1",
+              "status": "RUNNING",
+              "timing": {
+                "contract_sha256": "e41316d9cbd5e9c994c5c3d26d9909e88182b9674c68f97d883c8ae7e47986e4",
+                "execution_seconds": 24.218071460723877,
+                "queue_seconds": 7.883708953857422,
+                "queue_time_policy": "exclude_resource_wait",
+                "run_id": "2026-11-28_dsainet_b0_lateral_hand_readout_r1-full-w1",
+                "transaction_id": "2026-11-28_dsainet_b0_lateral_hand_readout_r1-tx",
+                "waiting_for_resources": false,
+                "wall_seconds": 32.1017804145813
+              }
+            }
+          },
+          {
+            "operation": "fetch",
+            "recorded_at": "2026-11-28T11:05:58.563273+00:00",
+            "result": {
+              "analysis_receipt_sha256": "4503cdd61c1f4130e82fdbaa406bccf9b168bd78258e40918783309a0e656425",
+              "artifact_manifest_sha256": "906b206b5070f51531984e71d8b8efce7e8fe48abe80f56e5d68247c94af1efe",
+              "contract_sha256": "e41316d9cbd5e9c994c5c3d26d9909e88182b9674c68f97d883c8ae7e47986e4",
+              "full_payload_local": false,
+              "intake_path": "ai4s/programs/dsainet/research/serial_screen_20261128d/closeout/intake",
+              "intake_scope": "analysis_v1",
+              "run_id": "2026-11-28_dsainet_b0_lateral_hand_readout_r1-full-w1",
+              "transaction_id": "2026-11-28_dsainet_b0_lateral_hand_readout_r1-tx",
+              "transfer_bytes": 322145,
+              "verified": true
+            }
+          }
+        ]
+      }
     }
   ],
   "continuation_history": [
@@ -10772,717 +11398,5 @@
               "exit_code": 0,
               "full_process_memory": true,
               "peak_memory_mib": 895,
-              "physical_gpu": 3,
-              "task_id": "LW_s0_t2"
-            }
-          ]
-        }
-      },
-      "pid": "[REDACTED_MACHINE]",
-      "preserved_full_telemetry_fits": 12,
-      "preserved_original_files": 886,
-      "qualification": "ai4s/programs/dsainet/research/dsa-nrc-v0.1/execution/recovery_scope88/QUALIFICATION_FINAL.json",
-      "recovery_id": "2026-10-21_NRC1repair3_scope88_r1",
-      "remaining_other_fits": 167,
-      "report": "ai4s/programs/dsainet/research/dsa-nrc-v0.1/execution/recovery_scope88/REPAIR_NOTES.md",
-      "run_id": "2026-10-19_dsainet_dsa_nrc_v0_1_NRC1repair3-full-w1",
-      "scientific_effects_read": false,
-      "snapshot": "ai4s/programs/dsainet/research/dsa-nrc-v0.1/execution/recovery_scope88/STATUS.json",
-      "status": "FAILED",
-      "supplement_sha256": "4a7d7655706ffc01019e941a9fcab5f19b44a71621040d6986900bdadfb135d6"
-    },
-    {
-      "additional_hours": 0,
-      "audits_required": 189,
-      "checked_at": "2026-10-21T11:46:16.383126+00:00",
-      "cumulative_budget_hours": 88,
-      "dispatch_observation": "WAITING_RESOURCE_ADMISSION_NO_WORKER_YET",
-      "dynamic_expansion_configured": true,
-      "dynamic_expansion_observed": false,
-      "original_campaign_start": 1792387110,
-      "original_completed_fits": 22,
-      "other_stages_authorized": false,
-      "phases": {
-        "audit": {
-          "completed": null,
-          "failed": null,
-          "families": null,
-          "journals": 0,
-          "pending": null,
-          "resource_admission": null,
-          "running": null,
-          "running_tasks": null,
-          "total": null,
-          "updated_at": null,
-          "verified_results": []
-        },
-        "fits_remaining167": {
-          "completed": null,
-          "failed": null,
-          "families": null,
-          "journals": 0,
-          "pending": null,
-          "resource_admission": null,
-          "running": null,
-          "running_tasks": null,
-          "total": null,
-          "updated_at": null,
-          "verified_results": []
-        }
-      },
-      "pid": "[REDACTED_MACHINE]",
-      "preservation_errors": [],
-      "preserved_full_telemetry_fits": 12,
-      "preserved_original_files": 1021,
-      "promoted_replays": 10,
-      "qualification": "ai4s/programs/dsainet/research/dsa-nrc-v0.1/execution/recovery_intake88/QUALIFICATION_FINAL.json",
-      "recovery_id": "2026-10-21_NRC1repair3_intake88_r1",
-      "remaining_fits_authorized": 167,
-      "remaining_seconds": 122556.2725687027,
-      "replay_dispatch_count": 0,
-      "report": "ai4s/programs/dsainet/research/dsa-nrc-v0.1/execution/recovery_intake88/REPAIR_NOTES.md",
-      "resource_admission_check": "ai4s/programs/dsainet/research/dsa-nrc-v0.1/execution/recovery_intake88/RESOURCE_ADMISSION_CHECK.json",
-      "reused_successful_replays": 10,
-      "run_id": "2026-10-19_dsainet_dsa_nrc_v0_1_NRC1repair3-full-w1",
-      "scientific_effects_read": false,
-      "snapshot": "ai4s/programs/dsainet/research/dsa-nrc-v0.1/execution/recovery_intake88/STATUS.json",
-      "status": "RUNNING",
-      "supplement_sha256": "f9fe47411a0186d751a29f6739d529f048b16b259158a0415d0749c8630edddb"
-    },
-    {
-      "additional_hours": 0,
-      "audits_required": 189,
-      "checked_at": "2026-10-21T16:01:20.847881+00:00",
-      "cumulative_budget_hours": 88,
-      "dispatch_observation": "WAITING_RESOURCE_ADMISSION_NO_WORKER_YET",
-      "dynamic_expansion_configured": true,
-      "dynamic_expansion_observed": false,
-      "historical_wait_deduction_authorized": false,
-      "old_scheduler_stop_receipt": "ai4s/programs/dsainet/research/dsa-nrc-v0.1/execution/recovery_resource88/STOP_RECEIPT.json",
-      "original_campaign_start": 1792387110,
-      "original_completed_fits": 22,
-      "other_stages_authorized": false,
-      "phases": {
-        "audit": {
-          "completed": null,
-          "failed": null,
-          "families": null,
-          "journals": 0,
-          "pending": null,
-          "resource_admission": null,
-          "running": null,
-          "running_tasks": null,
-          "total": null,
-          "updated_at": null,
-          "verified_results": []
-        },
-        "fits_remaining167": {
-          "completed": 0,
-          "failed": 0,
-          "families": {
-            "dsa-nrc-v0.1-NRC1:fit:a0c95f6604d28c48:99e31cab575ba5db:f3c06e0663085629": {
-              "calibration_source": "unknown_family_serial_start",
-              "commitment": 3072,
-              "expand_after_measurement": true,
-              "failed": false,
-              "limit": 1,
-              "max_family_jobs": 189,
-              "peak": 0
-            }
-          },
-          "journals": 0,
-          "pending": 167,
-          "resource_admission": {
-            "0": {
-              "eligibility": "insufficient_reserved_memory",
-              "existing_compute_processes": 4,
-              "observed_free_mib": 166,
-              "observed_utilization_pct": 89,
-              "pool_capacity_available": false,
-              "post_launch_headroom_mib": -2906,
-              "reserve_mib": 0,
-              "task_id": "GL_s0_t1"
-            },
-            "1": {
-              "eligibility": "insufficient_reserved_memory",
-              "existing_compute_processes": 5,
-              "observed_free_mib": 289,
-              "observed_utilization_pct": 98,
-              "pool_capacity_available": false,
-              "post_launch_headroom_mib": -2783,
-              "reserve_mib": 0,
-              "task_id": "GL_s0_t1"
-            },
-            "2": {
-              "eligibility": "insufficient_reserved_memory",
-              "existing_compute_processes": 4,
-              "observed_free_mib": 172,
-              "observed_utilization_pct": 94,
-              "pool_capacity_available": false,
-              "post_launch_headroom_mib": -2900,
-              "reserve_mib": 0,
-              "task_id": "GL_s0_t1"
-            },
-            "3": {
-              "eligibility": "insufficient_reserved_memory",
-              "existing_compute_processes": 4,
-              "observed_free_mib": 32,
-              "observed_utilization_pct": 89,
-              "pool_capacity_available": false,
-              "post_launch_headroom_mib": -3040,
-              "reserve_mib": 0,
-              "task_id": "GL_s0_t1"
-            },
-            "4": {
-              "eligibility": "insufficient_reserved_memory",
-              "existing_compute_processes": 5,
-              "observed_free_mib": 289,
-              "observed_utilization_pct": 99,
-              "pool_capacity_available": false,
-              "post_launch_headroom_mib": -2783,
-              "reserve_mib": 0,
-              "task_id": "GL_s0_t1"
-            },
-            "5": {
-              "eligibility": "insufficient_reserved_memory",
-              "existing_compute_processes": 4,
-              "observed_free_mib": 170,
-              "observed_utilization_pct": 91,
-              "pool_capacity_available": false,
-              "post_launch_headroom_mib": -2902,
-              "reserve_mib": 0,
-              "task_id": "GL_s0_t1"
-            },
-            "6": {
-              "eligibility": "insufficient_reserved_memory",
-              "existing_compute_processes": 4,
-              "observed_free_mib": 164,
-              "observed_utilization_pct": 93,
-              "pool_capacity_available": false,
-              "post_launch_headroom_mib": -2908,
-              "reserve_mib": 0,
-              "task_id": "GL_s0_t1"
-            },
-            "7": {
-              "eligibility": "insufficient_reserved_memory",
-              "existing_compute_processes": 4,
-              "observed_free_mib": 164,
-              "observed_utilization_pct": 67,
-              "pool_capacity_available": false,
-              "post_launch_headroom_mib": -2908,
-              "reserve_mib": 0,
-              "task_id": "GL_s0_t1"
-            },
-            "8": {
-              "eligibility": "insufficient_reserved_memory",
-              "existing_compute_processes": 4,
-              "observed_free_mib": 168,
-              "observed_utilization_pct": 91,
-              "pool_capacity_available": false,
-              "post_launch_headroom_mib": -2904,
-              "reserve_mib": 0,
-              "task_id": "GL_s0_t1"
-            },
-            "9": {
-              "eligibility": "insufficient_reserved_memory",
-              "existing_compute_processes": 5,
-              "observed_free_mib": 293,
-              "observed_utilization_pct": 99,
-              "pool_capacity_available": false,
-              "post_launch_headroom_mib": -2779,
-              "reserve_mib": 0,
-              "task_id": "GL_s0_t1"
-            }
-          },
-          "running": 0,
-          "running_tasks": {},
-          "total": 167,
-          "updated_at": "2026-10-21T16:01:16.739897+00:00",
-          "verified_results": []
-        }
-      },
-      "pid": "[REDACTED_MACHINE]",
-      "preservation_errors": [],
-      "preserved_full_telemetry_fits": 12,
-      "preserved_original_files": 1155,
-      "promoted_replays": 10,
-      "qualification": "ai4s/programs/dsainet/research/dsa-nrc-v0.1/execution/recovery_resource88/QUALIFICATION_FINAL.json",
-      "recovery_id": "2026-10-21_NRC1repair3_resource88_r1",
-      "remaining_fits_authorized": 167,
-      "remaining_seconds": 111200.98102760315,
-      "replay_dispatch_count": 0,
-      "report": "ai4s/programs/dsainet/research/dsa-nrc-v0.1/execution/recovery_resource88/REPAIR_NOTES.md",
-      "resource_admission_check": "ai4s/programs/dsainet/research/dsa-nrc-v0.1/execution/recovery_resource88/CLOCK_SCAN_CHECK.json",
-      "reused_successful_replays": 10,
-      "run_id": "2026-10-19_dsainet_dsa_nrc_v0_1_NRC1repair3-full-w1",
-      "scientific_effects_read": false,
-      "snapshot": "ai4s/programs/dsainet/research/dsa-nrc-v0.1/execution/recovery_resource88/STATUS.json",
-      "status": "RUNNING",
-      "supplement_sha256": "d0994874ea99b7e3453dd48ea240b0593122b9585f06386c3f0c6c1a51320e2f"
-    }
-  ],
-  "continuation_preparation": {
-    "automatic_continuation_authorized": true,
-    "expected_reused_formal_fits": 1087,
-    "helper_alive": true,
-    "helper_pid": 2241926,
-    "record": "ai4s/programs/dsainet/research/dsa-pfc-xds-v0.1-physionet-resume11/WITHDRAWAL_RECEIPT.json",
-    "remaining_execution_hours": 21.13990393982993,
-    "remaining_formal_fits": 3,
-    "retained_epochs": [
-      93,
-      96
-    ],
-    "round_id": "dsa-pfc-xds-v0.1-physionet-resume11",
-    "status": "REMOTE_RUNNING"
-  },
-  "controlled_withdrawal": {
-    "added_budget_seconds": 0,
-    "automatic_training_retries": 0,
-    "gpu_ids": [
-      0,
-      1,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9
-    ],
-    "helper_pid": 2241926,
-    "helper_script_sha256": "bddf42a54ad15a27d1bd3a3bfa7068fbb08d4f13f629b089290e1eb059581620",
-    "retained_initialized_tasks": [
-      "physionet_B0_s2_t59",
-      "physionet_B0_s4_t59"
-    ],
-    "retained_tasks_first_real_step_pass": true,
-    "scientific_intake": false,
-    "status": "REQUEUE_RUNNING",
-    "successful_fit_count": 1085,
-    "training_configuration_changed": false,
-    "updated_at": "2026-10-07T15:49:36.583151+00:00",
-    "withdrawn": [
-      {
-        "actual_cuda_mib": 0,
-        "capacity": {
-          "assessment": {
-            "eligibility": "eligible",
-            "existing_compute_processes": 3,
-            "post_launch_headroom_mib": 2123,
-            "reserve_mib": 0
-          },
-          "callback_completed_under_lock": false,
-          "checks": 873,
-          "commitment_mib": 2048,
-          "contract_commitment_mib": 2048,
-          "free_mib": 4171,
-          "gpu": 3,
-          "gpu_uuid": "GPU-b97c52a6-7497-cd20-3475-d9a15ec08f84",
-          "new_reservation_created": false,
-          "own_mib": 0,
-          "peer_pending_mib": 5390,
-          "required_mib": 7438,
-          "reserve_once_mib": 0,
-          "status": "WAITING_CAPACITY_BEFORE_FIT",
-          "wait_seconds": 4047.2349444292486
-        },
-        "files": [
-          "pre_cuda_capacity.json"
-        ],
-        "pid": "[REDACTED_MACHINE]",
-        "pid_starttimes": {
-          "2018308": 2577289616
-        },
-        "task_id": "physionet_B0_s1_t92",
-        "zero_training_steps_proven": true
-      },
-      {
-        "actual_cuda_mib": 0,
-        "capacity": {
-          "assessment": {
-            "eligibility": "eligible",
-            "existing_compute_processes": 3,
-            "post_launch_headroom_mib": 2123,
-            "reserve_mib": 0
-          },
-          "callback_completed_under_lock": false,
-          "checks": 873,
-          "commitment_mib": 2048,
-          "contract_commitment_mib": 2048,
-          "free_mib": 4171,
-          "gpu": 3,
-          "gpu_uuid": "GPU-b97c52a6-7497-cd20-3475-d9a15ec08f84",
-          "new_reservation_created": false,
-          "own_mib": 0,
-          "peer_pending_mib": 5390,
-          "required_mib": 7438,
-          "reserve_once_mib": 0,
-          "status": "WAITING_CAPACITY_BEFORE_FIT",
-          "wait_seconds": 4048.801216699183
-        },
-        "files": [
-          "pre_cuda_capacity.json"
-        ],
-        "pid": "[REDACTED_MACHINE]",
-        "pid_starttimes": {
-          "2018328": 2577289659
-        },
-        "task_id": "physionet_B0_s4_t101",
-        "zero_training_steps_proven": true
-      },
-      {
-        "actual_cuda_mib": 0,
-        "capacity": {
-          "assessment": {
-            "eligibility": "eligible",
-            "existing_compute_processes": 3,
-            "post_launch_headroom_mib": 2123,
-            "reserve_mib": 0
-          },
-          "callback_completed_under_lock": false,
-          "checks": 873,
-          "commitment_mib": 2048,
-          "contract_commitment_mib": 2048,
-          "free_mib": 4171,
-          "gpu": 3,
-          "gpu_uuid": "GPU-b97c52a6-7497-cd20-3475-d9a15ec08f84",
-          "new_reservation_created": false,
-          "own_mib": 0,
-          "peer_pending_mib": 5390,
-          "required_mib": 7438,
-          "reserve_once_mib": 0,
-          "status": "WAITING_CAPACITY_BEFORE_FIT",
-          "wait_seconds": 4044.8290573097765
-        },
-        "files": [
-          "pre_cuda_capacity.json"
-        ],
-        "pid": "[REDACTED_MACHINE]",
-        "pid_starttimes": {
-          "2018344": 2577289701
-        },
-        "task_id": "physionet_B0_s3_t102",
-        "zero_training_steps_proven": true
-      }
-    ]
-  },
-  "current_research_preparation": {
-    "budget_authorization_ref": "ai4s/programs/dsainet/research/p0-ord-ec-r1/preparation/BUDGET_AUTHORIZATION_163.json",
-    "continuation_status_ref": "programs\\dsainet\\research\\p0-ord-ec-r1\\CONTINUATION_STATUS.json",
-    "execution_authorization_ref": "programs\\dsainet\\research\\p0-ord-ec-r1\\science_bundle\\EXECUTION_AUTHORIZATION.json",
-    "external_review": "PASS_LIMITED_DATA_ROLE_AND_SEAL_SCOPE",
-    "necessary_reachability_pass": true,
-    "new_science_authorized": true,
-    "parent_qualification": 36,
-    "prediction_qualification": 108,
-    "record": "ai4s/programs/dsainet/research/p0-ord-ec-r1/PREPARATION_REPORT.md",
-    "research_id": "p0-ord-ec-r1",
-    "scientific_fits": 0,
-    "ssh_host": "[REDACTED_MACHINE]",
-    "status": "COMPLETE_VERIFIED_NO_SIGNAL",
-    "technical_fits": 6,
-    "upload_performed": true
-  },
-  "dataset_recovery_runs": {
-    "004": {
-      "active_run": {
-        "bundle_id": "2026-09-29_dsainet_pfc_xds_v0_1_repair4_004-bundle",
-        "dispatch_status": "REMOTE_ACCEPTED",
-        "estimated_training_hours": 53.401,
-        "execution_mode": "user_managed",
-        "executor_id": "lab10",
-        "planned_units": 92,
-        "recorded_at": "2026-09-29T11:52:52.302678+00:00",
-        "round_id": "dsa-pfc-xds-v0.1-repair4-004",
-        "run_prefix": "2026-09-29_dsainet_pfc_xds_v0_1_repair4_004",
-        "transaction_operations": [
-          {
-            "operation": "upload",
-            "recorded_at": "2026-09-29T11:53:17.289895+00:00",
-            "result": {
-              "action": "UPLOADED",
-              "monitor_powershell": "[REDACTED_MACHINE]",
-              "run_id": "2026-09-29_dsainet_pfc_xds_v0_1_repair4_004-full-w1"
-            }
-          },
-          {
-            "operation": "launch",
-            "recorded_at": "2026-09-29T11:54:10.792201+00:00",
-            "result": {
-              "action": "SUBMISSION_SENT_NOT_VERIFIED",
-              "monitor_powershell": "[REDACTED_MACHINE]",
-              "run_id": "2026-09-29_dsainet_pfc_xds_v0_1_repair4_004-full-w1"
-            }
-          },
-          {
-            "operation": "probe",
-            "recorded_at": "2026-09-29T11:54:29.764645+00:00",
-            "result": {
-              "action": "RECONCILE_SAME_NODE",
-              "node_id": "full",
-              "run_id": "2026-09-29_dsainet_pfc_xds_v0_1_repair4_004-full-w1",
-              "status": "RUNNING",
-              "timing": {
-                "contract_sha256": "81d9426ef27c33099478873049bb2e01bd7071822ff85a49b4772a95970cfc37",
-                "execution_seconds": 8.670788764953613,
-                "queue_seconds": 0.0,
-                "queue_time_policy": "exclude_resource_wait",
-                "run_id": "2026-09-29_dsainet_pfc_xds_v0_1_repair4_004-full-w1",
-                "transaction_id": "2026-09-29_dsainet_pfc_xds_v0_1_repair4_004-tx",
-                "waiting_for_resources": false,
-                "wall_seconds": 8.670788764953613
-              }
-            }
-          },
-          {
-            "operation": "probe",
-            "recorded_at": "2026-09-29T11:59:07.915109+00:00",
-            "result": {
-              "action": "RECONCILE_SAME_NODE",
-              "node_id": "full",
-              "run_id": "2026-09-29_dsainet_pfc_xds_v0_1_repair4_004-full-w1",
-              "status": "RUNNING",
-              "timing": {
-                "contract_sha256": "81d9426ef27c33099478873049bb2e01bd7071822ff85a49b4772a95970cfc37",
-                "execution_seconds": 286.8270494937897,
-                "queue_seconds": 0.0,
-                "queue_time_policy": "exclude_resource_wait",
-                "run_id": "2026-09-29_dsainet_pfc_xds_v0_1_repair4_004-full-w1",
-                "transaction_id": "2026-09-29_dsainet_pfc_xds_v0_1_repair4_004-tx",
-                "waiting_for_resources": false,
-                "wall_seconds": 286.8270494937897
-              }
-            }
-          },
-          {
-            "operation": "probe",
-            "recorded_at": "2026-09-29T11:59:59.895810+00:00",
-            "result": {
-              "action": "RECONCILE_SAME_NODE",
-              "node_id": "full",
-              "run_id": "2026-09-29_dsainet_pfc_xds_v0_1_repair4_004-full-w1",
-              "status": "RUNNING",
-              "timing": {
-                "contract_sha256": "81d9426ef27c33099478873049bb2e01bd7071822ff85a49b4772a95970cfc37",
-                "execution_seconds": 338.80351996421814,
-                "queue_seconds": 0.0,
-                "queue_time_policy": "exclude_resource_wait",
-                "run_id": "2026-09-29_dsainet_pfc_xds_v0_1_repair4_004-full-w1",
-                "transaction_id": "2026-09-29_dsainet_pfc_xds_v0_1_repair4_004-tx",
-                "waiting_for_resources": false,
-                "wall_seconds": 338.80351996421814
-              }
-            }
-          },
-          {
-            "operation": "probe",
-            "recorded_at": "2026-09-29T12:00:52.393675+00:00",
-            "result": {
-              "action": "RECONCILE_SAME_NODE",
-              "node_id": "full",
-              "run_id": "2026-09-29_dsainet_pfc_xds_v0_1_repair4_004-full-w1",
-              "status": "RUNNING",
-              "timing": {
-                "contract_sha256": "81d9426ef27c33099478873049bb2e01bd7071822ff85a49b4772a95970cfc37",
-                "execution_seconds": 391.31048250198364,
-                "queue_seconds": 0.0,
-                "queue_time_policy": "exclude_resource_wait",
-                "run_id": "2026-09-29_dsainet_pfc_xds_v0_1_repair4_004-full-w1",
-                "transaction_id": "2026-09-29_dsainet_pfc_xds_v0_1_repair4_004-tx",
-                "waiting_for_resources": false,
-                "wall_seconds": 391.31048250198364
-              }
-            }
-          },
-          {
-            "operation": "probe",
-            "recorded_at": "2026-09-29T12:01:43.317791+00:00",
-            "result": {
-              "action": "FETCH_VERIFY_INTAKE",
-              "run_id": "2026-09-29_dsainet_pfc_xds_v0_1_repair4_004-full-w1",
-              "scientific_stop_boundary": "NEXT_SCIENTIFIC_DECISION",
-              "timing": {
-                "contract_sha256": "81d9426ef27c33099478873049bb2e01bd7071822ff85a49b4772a95970cfc37",
-                "execution_seconds": 431.8802402019501,
-                "queue_seconds": 0.0,
-                "queue_time_policy": "exclude_resource_wait",
-                "run_id": "2026-09-29_dsainet_pfc_xds_v0_1_repair4_004-full-w1",
-                "transaction_id": "2026-09-29_dsainet_pfc_xds_v0_1_repair4_004-tx",
-                "waiting_for_resources": false,
-                "wall_seconds": 431.8802402019501
-              }
-            }
-          },
-          {
-            "operation": "fetch",
-            "recorded_at": "2026-09-29T12:02:33.984315+00:00",
-            "result": {
-              "artifact_manifest_sha256": "980380a769bee64ba871c5e42c4311c3356676c35e68e5a2c1389d395f4e5a7a",
-              "contract_sha256": "81d9426ef27c33099478873049bb2e01bd7071822ff85a49b4772a95970cfc37",
-              "run_id": "2026-09-29_dsainet_pfc_xds_v0_1_repair4_004-full-w1",
-              "transaction_id": "2026-09-29_dsainet_pfc_xds_v0_1_repair4_004-tx",
-              "verified": true
-            }
-          }
-        ]
-      },
-      "analysis": "ai4s/programs/dsainet/research/dsa-pfc-xds-v0.1-repair4/RESULT_ANALYSIS_004.md",
-      "analysis_pending": false,
-      "claim_release": false,
-      "does_not_control_physionet_recipe": true,
-      "evidence_id": "AI4S-DSAINET-dsa-pfc-xds-v0.1-repair4-004",
-      "intake": {
-        "artifact_manifest_sha256": "980380a769bee64ba871c5e42c4311c3356676c35e68e5a2c1389d395f4e5a7a",
-        "contract_sha256": "81d9426ef27c33099478873049bb2e01bd7071822ff85a49b4772a95970cfc37",
-        "intake_path": "results/logs/remote/2026-09-29_dsainet_pfc_xds_v0_1_repair4_004-full-w1",
-        "run_id": "2026-09-29_dsainet_pfc_xds_v0_1_repair4_004-full-w1",
-        "run_status": "complete",
-        "transaction_id": "2026-09-29_dsainet_pfc_xds_v0_1_repair4_004-tx",
-        "verified": true,
-        "verified_at": null
-      }
-    }
-  },
-  "dataset_separation_authorization": {
-    "authorization_ref": "ai4s/programs/dsainet/research/dsa-pfc-xds-v0.1-repair4/AUTHORIZATION.md",
-    "budget_extended": false,
-    "registered_at": "2026-09-29T12:02:54.050134+00:00",
-    "scopes": [
-      "004",
-      "physionet"
-    ],
-    "whole_claim_requires_both": true
-  },
-  "devicefix1_recovery": {
-    "budget_authority_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/devicefix1/BUDGET_AUTHORITY.json",
-    "budget_authority_sha256": "0d5cd9313870c766edfc238d571b1147ff8cebe6d830ff677104a0c31a1cf7f5",
-    "campaign_id": "dsainet-ds07-r1",
-    "failure_proof_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/devicefix1/FAILURE_PROOF.json",
-    "failure_proof_sha256": "3b73f29709b6e739e0306dd39a3ab2a93eae20f2a60f5228e747e0572fd7af2f",
-    "local_replay_receipt_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/devicefix1/LOCAL_REPLAY_RECEIPT.json",
-    "local_replay_receipt_sha256": "5d3399bea2811185d5071a37f1ffba4c49a188c8b4aab1fa88df34b137420a7c",
-    "previous_total_hours": 296,
-    "recovered_at": "2026-11-04T06:25:28.927092+00:00",
-    "replacement_round_id": "ds07-r1-science1-devicefix1",
-    "reuse_contract_ref": "ai4s/programs/dsainet/research/ds07-r1/science_preparation/summaryfix1/REUSE_CONTRACT.json",
-    "reuse_contract_sha256": "80030c85e3f00bbdb57d50c7076cbcc65d70a4e93ca74bd45efaccf4733dba77",
-    "science_ceiling_hours": 41,
-    "source_run_id": "2026-11-03_dsainet_ds07_r1_science1-summaryfix1-full-w1",
-    "status": "READY_NOT_REGISTERED",
-    "technical_ceiling_hours": 2,
-    "total_hours": 312,
-    "transaction_ceiling_hours": 47
-  },
-  "direction_control": {
-    "attention_scale": {
-      "date": "2026-09-17",
-      "record": "ai4s/programs/dsainet/research/ATTENTION_SCALE_PAUSE_20260917.md",
-      "scope": "new research, diagnostics and submissions in attention-scale; resume only on explicit user request",
-      "status": "PAUSED_BY_USER"
-    },
-    "mechanism_research": {
-      "authority": "User: 停止机制挖掘，回到原样冻结P0，开始性能确认，进行下一轮扩大研究",
-      "date": "2026-09-28",
-      "scope": "No further A/E complementarity, Coarse-E specificity, attention-scale or gain-attribution mechanism studies; retain historical evidence.",
-      "status": "STOPPED_BY_USER"
-    },
-    "next_direction": {
-      "active_run": null,
-      "closure_record": "ai4s/programs/dsainet/research/P0_CANDIDATE_RETENTION_20261010.md",
-      "entry": "ai4s/programs/dsainet/research/dsa-pfc-xds-v0.1/RESEARCH_PLAN.md",
-      "execution_authorized": false,
-      "inherits_previous_campaign_budget": false,
-      "name": "DSA-PFC-XDS-v0.1",
-      "proposed_hours": 72,
-      "scientific_result": true,
-      "selected_scope": "unchanged P0/native B0, five seeds, all9 BNCI004 and all109 PhysioNet subject LOSO",
-      "status": "CLOSED_BY_USER",
-      "user_selected_scientific_scope": true
-    },
-    "p0_candidate_disposition": {
-      "authority": "User explicitly retains P0 as historical performance candidate, structural experience and candidate innovation while closing its unchanged broad cross-dataset stable superiority claim.",
-      "candidate_id": "DSA-AEL-P0-FROZEN-20260927",
-      "candidate_innovation_verified": false,
-      "claim_disposition": "CLOSE_UNCHANGED_P0_BROAD_CROSS_DATASET_STABLE_SUPERIORITY",
-      "claim_ledger_reviews_unchanged": true,
-      "date": "2026-10-10",
-      "design_disposition": "Retain unchanged P0 implementation, all artifacts, dataset-specific historical evidence, candidate innovation and structural design lessons.",
-      "direction_id": "P0-RETAIN-INNOVATION-CANDIDATE-CLOSE-BROAD-CLAIM-20261010",
-      "formal_claim_release": false,
-      "historical_verdicts_unchanged": true,
-      "new_execution_authorized": false,
-      "next_contrast": null,
-      "next_design": null,
-      "record": "ai4s/programs/dsainet/research/P0_CANDIDATE_RETENTION_20261010.md",
-      "role": "user_direction_control_not_external_claim_judgement",
-      "source_evidence_ids": [
-        "AI4S-DSAINET-dsa-pfc-xds-v0.1-repair4-004",
-        "AI4S-DSAINET-dsa-pfc-xds-v0.1-physionet-target-resume16",
-        "LOCAL-DSAINET-PFC-ZHOU-20261010"
-      ]
-    },
-    "post_checkpoint_gain_attribution": {
-      "branches": [
-        "PCR",
-        "FRA",
-        "SPAR",
-        "DSA-OT"
-      ],
-      "date": "2026-09-21",
-      "record": "ai4s/programs/dsainet/research/ATTRIBUTION_BRANCH_CLOSURE_20260921.md",
-      "scope": "no new fits, diagnostic expansions or rescue; retain historical conclusions and evidence",
-      "status": "STOPPED_BY_USER"
-    }
-  },
-  "direction_control_history": [
-    {
-      "field": "next_direction",
-      "prior": {
-        "active_run": "2026-09-29_dsainet_pfc_xds_v0_1_repair1-full-w1",
-        "entry": "ai4s/programs/dsainet/research/dsa-pfc-xds-v0.1/RESEARCH_PLAN.md",
-        "execution_authorized": true,
-        "inherits_previous_campaign_budget": false,
-        "name": "DSA-PFC-XDS-v0.1",
-        "proposed_hours": 72,
-        "scientific_result": false,
-        "selected_scope": "unchanged P0/native B0, five seeds, all9 BNCI004 and all109 PhysioNet subject LOSO",
-        "status": "RUNNING",
-        "user_selected_scientific_scope": true
-      },
-      "reason": "Reconcile stale historical RUNNING pointer after completed campaign and current user closure",
-      "record": "ai4s/programs/dsainet/research/P0_CANDIDATE_RETENTION_20261010.md"
-    },
-    {
-      "field": "next_research_preparation",
-      "prior": {
-        "authorization_ref": "ai4s/programs/dsainet/research/dsa-pfc-xds-v0.1-physionet-resume1/AUTHORIZATION.md",
-        "budget_extended": false,
-        "new_formal_fits": 1052,
-        "note": "ai4s/programs/dsainet/research/dsa-pfc-xds-v0.1-physionet-resume1/RESUME_NOTE.md",
-        "p0_preserved": true,
-        "recorded_at": "2026-09-30T05:53:38.338268+00:00",
-        "research_id": "dsa-pfc-xds-v0.1",
-        "reused_formal_fits": 38,
-        "round_id": "dsa-pfc-xds-v0.1-physionet-resume1",
-        "run_id": "2026-09-30_dsainet_pfc_xds_v0_1_physionet_resume1-full-w1",
-        "scientific_result": false,
-        "scope_id": "physionet-all-subjects-five-seed-loso",
-        "seeds": [
-          0,
-          1,
-          2,
-          3,
-          4
-        ],
-        "status": "RUNNING_PHYSIONET_FROZEN_CONFIRMATION",
-        "subject_count": 109
-      },
-      "reason": "Preserve historical preparation pointer while registering the user-requested next RCD design; no historical result or execution state changed",
-      "record": "ai4s/programs/dsainet/research/dsa-rcd-v0.1/DESIGN_TRANSITION.json"
-    }
-  ],
-  "engineering_operation_history": [
-    {
-      "authorization_ref": "ai4s/programs/dsainet/research/ds07-r
+              "physi
 ```
